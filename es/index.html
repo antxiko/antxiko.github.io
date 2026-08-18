@@ -1,0 +1,129 @@
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>antxiko &mdash; desensamblados comentados de juegos de 8 bits</title>
+<style>
+:root{--tinta:#cfd0d4;--suave:#83868f;--fondo:#000;--panel:#0c0e13;--linea:#23262e;
+  --rojo:#ff897d;--cyan:#65dbef;--verde:#3eb849;--oro:#ded087}
+@media (prefers-color-scheme:light){:root{--tinta:#191a1e;--suave:#5a5d66;--fondo:#e9e7e1;
+  --panel:#f7f6f2;--linea:#d0cdc5;--rojo:#b23f34;--cyan:#1c6b7c;--verde:#2b7734;--oro:#8a7420}}
+:root[data-theme="dark"]{--tinta:#cfd0d4;--suave:#83868f;--fondo:#000;--panel:#0c0e13;
+  --linea:#23262e;--rojo:#ff897d;--cyan:#65dbef;--verde:#3eb849;--oro:#ded087}
+:root[data-theme="light"]{--tinta:#191a1e;--suave:#5a5d66;--fondo:#e9e7e1;--panel:#f7f6f2;
+  --linea:#d0cdc5;--rojo:#b23f34;--cyan:#1c6b7c;--verde:#2b7734;--oro:#8a7420}
+*{box-sizing:border-box}
+body{margin:0;background:var(--fondo);color:var(--tinta);padding:0 1.25rem 6rem;
+  font:15px/1.7 ui-monospace,"SF Mono",Menlo,Consolas,monospace}
+.w{max-width:1120px;margin:0 auto}
+.n{max-width:68ch}
+h1,h2,h3,h4{font-weight:400;text-wrap:balance}
+a{color:var(--cyan)}
+img{image-rendering:pixelated;max-width:100%;height:auto;display:block}
+header.top{display:flex;flex-direction:column;align-items:center;gap:1.5rem;
+  padding:4rem 0 2rem;text-align:center}
+header.top img{width:min(100%,642px)}
+.claim{max-width:60ch;color:var(--suave);font-size:1.05rem}
+.claim b{color:var(--tinta);font-weight:400}
+.ficha{display:flex;flex-wrap:wrap;justify-content:center;gap:0 1.5rem;width:100%;
+  font-size:12px;letter-spacing:.08em;text-transform:uppercase;color:var(--suave);
+  border-top:1px solid var(--linea);border-bottom:1px solid var(--linea);padding:.85rem 0}
+.ficha b{color:var(--rojo);font-weight:400}
+nav{display:flex;flex-wrap:wrap;gap:1.25rem;justify-content:center;padding:1.25rem 0;
+  font-size:12px;letter-spacing:.08em;text-transform:uppercase}
+nav a{color:var(--suave);text-decoration:none;border-bottom:1px solid transparent}
+nav a:hover,nav a:focus{color:var(--tinta);border-bottom-color:var(--rojo)}
+nav.docs{border-top:1px solid var(--linea);border-bottom:1px solid var(--linea);
+  margin-bottom:1rem}
+section{margin-top:4.5rem;scroll-margin-top:1rem}
+section>h2{font-size:1rem;letter-spacing:.1em;text-transform:uppercase;
+  border-left:3px solid var(--rojo);padding-left:.9rem;margin:0 0 1.5rem}
+.cifras{display:grid;gap:1px;background:var(--linea);border:1px solid var(--linea);
+  grid-template-columns:repeat(auto-fit,minmax(160px,1fr))}
+.cifra{background:var(--panel);padding:1.1rem}
+.cifra b{display:block;font-size:1.7rem;color:var(--oro);font-weight:400;
+  font-variant-numeric:tabular-nums;line-height:1.2}
+.cifra span{font-size:11px;letter-spacing:.07em;text-transform:uppercase;color:var(--suave)}
+.hall{border-top:1px solid var(--linea);padding-top:1.75rem;margin-top:2.5rem}
+.hall:first-of-type{border-top:0;padding-top:0;margin-top:0}
+.hall h3{margin:0 0 .75rem;font-size:1.15rem;color:var(--rojo)}
+.hall h4{color:var(--oro);margin:1.5rem 0 .5rem;font-size:.95rem}
+.hall p{margin:0 0 1rem}
+pre.asm{background:var(--panel);border-left:2px solid var(--verde);margin:1.25rem 0;
+  padding:1rem 1.1rem;overflow-x:auto;font-size:13px;line-height:1.6;color:var(--tinta)}
+.par{display:grid;gap:1.25rem;grid-template-columns:1fr}
+@media(min-width:820px){.par{grid-template-columns:1fr 1fr}}
+.par figure{margin:0}
+table{border-collapse:collapse;width:100%;margin:1.25rem 0;font-size:13px;display:block;
+  overflow-x:auto}
+th,td{text-align:left;padding:.5rem .75rem;border-bottom:1px solid var(--linea)}
+th{color:var(--suave);font-weight:400;font-size:11px;letter-spacing:.07em;text-transform:uppercase}
+td.num{font-variant-numeric:tabular-nums;color:var(--oro)}
+.nivel{margin-top:2rem}
+.nivel h3{margin:0 0 .9rem;font-size:.95rem;letter-spacing:.06em;text-transform:uppercase}
+.nivel em{color:var(--cyan);font-style:normal}
+.sep{color:var(--suave);margin:0 .6rem}
+.rejilla{display:grid;gap:.9rem;grid-template-columns:repeat(auto-fill,minmax(250px,1fr))}
+.rejilla figure{margin:0;background:var(--panel);box-shadow:0 0 0 1px var(--linea)}
+.rejilla figcaption{display:flex;justify-content:space-between;padding:.45rem .65rem;
+  font-size:11px;color:var(--suave);border-top:1px solid var(--linea)}
+.dir{font-variant-numeric:tabular-nums;color:var(--verde)}
+footer{margin-top:5rem;padding-top:1.5rem;border-top:1px solid var(--linea);
+  color:var(--suave);font-size:12px}
+
+/* Aviso de trabajo en curso: tiene que verse antes que las cifras, porque un
+   100% mal leido hace mas dano que no ponerlo. */
+.aviso{background:#3a2a10;border-left:3px solid var(--oro);margin:1.5rem auto;
+  padding:1rem 1.2rem;max-width:900px;border-radius:4px}
+.aviso p{margin:0;color:var(--tinta);font-size:15px;line-height:1.65}
+.galeria{display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
+  gap:1.5rem;margin:1.5rem 0}
+.galeria figure{margin:0}
+.galeria img{width:100%;height:auto;image-rendering:pixelated;
+  border:1px solid var(--linea);border-radius:3px}
+.galeria figcaption{color:var(--suave);font-size:13px;margin-top:.5rem}
+audio{display:block;width:100%;max-width:640px;margin:.75rem 0 1.5rem}
+
+header.top h1{margin:0;font-size:2.3rem;letter-spacing:.04em}
+header.top h1 span{color:var(--rojo)}
+.proyectos{display:grid;gap:1px;background:var(--linea);border:1px solid var(--linea);
+  grid-template-columns:repeat(auto-fit,minmax(min(300px,100%),1fr))}
+.proy{background:var(--panel);padding:1.4rem 1.3rem;display:flex;flex-direction:column}
+.proy h3{margin:0 0 .35rem;font-size:1.15rem;color:var(--rojo)}
+.proy h3 span{color:var(--suave);font-size:12px;letter-spacing:.08em}
+.proy p.meta{margin:0 0 .9rem;font-size:11px;letter-spacing:.07em;
+  text-transform:uppercase;color:var(--suave)}
+.proy p.claim{margin:0 0 1rem;max-width:none;font-size:15px;color:var(--tinta)}
+.proy p.datos{margin:0;padding-top:.85rem;border-top:1px solid var(--linea);
+  font-size:13px;color:var(--suave)}
+.proy p.datos b{color:var(--oro);font-weight:400;font-variant-numeric:tabular-nums}
+.proy p.enlaces{margin:auto 0 0;padding-top:1rem;font-size:12px;letter-spacing:.07em;
+  text-transform:uppercase}
+.proy p.enlaces a{margin-right:1.1rem}
+.proy p.enlaces em{color:var(--suave);font-style:normal}
+</style>
+
+<div class="w">
+<header class="top">
+  <h1>antxiko<span>/</span></h1>
+  <p class="claim">Binarios viejos de 8 bits desmontados byte a byte y comentados, con las herramientas para volver a montarlos: no se afirma nada que el binario no enseñe, y el código fuente tiene que devolver el original, byte a byte. Ahora mismo son ocho juegos de MSX.</p>
+  <div class="ficha"><span><b>8</b> juegos</span><span><b>1984-1989</b></span><span>MSX &middot; MSX1</span><span><b>5</b> cintas &middot; <b>3</b> cartuchos</span></div>
+</header>
+<nav><a href="#numbers">Las cifras</a><a href="#disassemblies">Desensamblados</a><a href="#method">Cómo están hechos</a><a href="https://github.com/antxiko">GitHub</a><a href="../" style="margin-left:auto;color:var(--oro)">In English</a></nav>
+
+<section id="numbers">
+  <h2>La serie en cifras</h2>
+  <div class="cifras"><div class="cifra"><b>8</b><span>juegos desmontados</span></div><div class="cifra"><b>7</b><span>terminados al 100 %</span></div><div class="cifra"><b>6</b><span>con web publicada</span></div><div class="cifra"><b>5</b><span>cintas de cassette</span></div><div class="cifra"><b>3</b><span>cartuchos</span></div><div class="cifra"><b>3</b><span>compilaciones de Antarctic Adventure</span></div></div>
+</section>
+
+<section id="disassemblies">
+  <h2>Los desensamblados</h2>
+  <p class="n" style="margin-bottom:2rem;color:var(--suave)">Ocho juegos de MSX, cinco de cinta de cassette y tres de cartucho, desmontados byte a byte y comentados. Siete están terminados: cada byte explicado y el código fuente devolviendo el original byte a byte. El octavo sigue en marcha, y lo dice.</p>
+  <div class="proyectos"><article class="proy"><h3>Athletic Land <span>1984</span></h3><p class="meta">Konami &middot; MSX1 &middot; cartucho de 16 KB &middot; RC-700</p><p class="claim">El primer cartucho de Konami para MSX. El juego es una tabla de treinta y dos pantallas, no un mapa, y lo que te mata no es la altura a la que caes, sino la altura desde la que caíste. La liana son nueve dibujos, cada uno con tres bytes al final que dicen dónde está su punta.</p><p class="datos"><b>16.384</b> bytes &middot; <b>0</b> sin explicar &middot; reensambla <b>byte a byte</b> &middot; <b>7.448</b> de código, <b>8.936</b> de datos &middot; <b>296</b> etiquetas</p><p class="enlaces"><a href="https://github.com/antxiko/AthleticLand-disassembly">Repositorio</a><em>web sin publicar todavía</em></p></article><article class="proy"><h3>Antarctic Adventure <span>1984</span></h3><p class="meta">Konami &middot; MSX1 &middot; cartucho de 16 KB &middot; RC-701</p><p class="claim">Aquí se desmontan tres compilaciones distintas del cartucho, cada una en su carpeta, y las tres reensamblan byte a byte. La demostración va grabada: 64 bytes con los bits del propio joystick, leídos uno cada 32 fotogramas. Y NEW ZEALAND está escrito dentro para una base a la que no se llega nunca.</p><p class="datos"><b>16.384</b> bytes &middot; <b>0</b> sin explicar &middot; <b>tres compilaciones</b>, las tres <b>byte a byte</b> &middot; listado principal: <b>5.947</b> de código, <b>10.437</b> de datos</p><p class="enlaces"><a href="https://github.com/antxiko/AntarcticAdventure-disassembly">Repositorio</a><a href="https://antxiko.github.io/AntarcticAdventure-disassembly/">Web</a><em>cuál es cuál no está cerrado</em></p></article><article class="proy"><h3>Pitfall! <span>1984</span></h3><p class="meta">Activision &middot; MSX1 &middot; cartucho de 16 KB</p><p class="claim">Dentro no hay ni un mapa guardado: las 255 pantallas de la selva salen de un registro de desplazamiento de ocho bits, y los 32 tesoros son exactamente las 32 escenas de un tipo. La liana se dibuja fotograma a fotograma en un bitmap en RAM: la cuerda que se ve es aritmética, no un gráfico.</p><p class="datos"><b>16.384</b> bytes &middot; <b>0</b> sin explicar &middot; reensambla <b>byte a byte</b> &middot; <b>9.467</b> de código, <b>6.917</b> de datos &middot; <b>337</b> etiquetas</p><p class="enlaces"><a href="https://github.com/antxiko/Pitfall-MSX-disassembly">Repositorio</a><a href="https://antxiko.github.io/Pitfall-MSX-disassembly/">Web</a></p></article><article class="proy"><h3>Colt 36 <span>1987</span></h3><p class="meta">Topo Soft &middot; MSX1 &middot; cinta de cassette</p><p class="claim">El juego resultó estar escrito en BASIC: un programa MSX-BASIC tokenizado de 63 líneas, con 45 bytes de Z80 al final para arrancar el intérprete, y un motor de scroll de diecisiete bytes. De los 34.239 bytes de la cinta hay 1.566 cuyo contenido nadie ha identificado, publicados como un cartel de SE BUSCA con todas las medidas al lado.</p><p class="datos"><b>34.239</b> bytes &middot; <b>100 %</b> explicado &middot; reensamblado y retokenizado <b>byte a byte</b> &middot; solo <b>997</b> bytes de código máquina &middot; <b>1.566</b> bytes sin identificar</p><p class="enlaces"><a href="https://github.com/antxiko/Colt36-disassembly">Repositorio</a><a href="https://antxiko.github.io/Colt36-disassembly/">Web</a></p></article><article class="proy"><h3>Stardust <span>1987</span></h3><p class="meta">Topo Soft &middot; MSX &middot; cinta de cassette</p><p class="claim">Una conversión del ZX Spectrum que se trajo el sistema de cinta del Spectrum, no solo los gráficos: bloques del Spectrum en vez de los del MSX, un cargador que reimplementa LD-BYTES con el mismo interfaz de registros, y RAM mapeada en las páginas 1 y 2 para tener los 48K planos que el Spectrum da de serie. Y es multicarga: dos programas distintos en un mismo cassette.</p><p class="datos"><b>93.861</b> bytes &middot; <b>100 %</b> explicado &middot; <b>cinco listados</b>, todos <b>byte a byte</b> &middot; <b>335</b> rutinas comentadas</p><p class="enlaces"><a href="https://github.com/antxiko/Stardust-MSX-disassembly">Repositorio</a><a href="https://antxiko.github.io/Stardust-MSX-disassembly/">Web</a></p></article><article class="proy"><h3>Temptations <span>1988</span></h3><p class="meta">Topo Soft &middot; MSX &middot; cinta de cassette</p><p class="claim">El castigo por hacer trampas no salta nunca, y no porque lo quisieran así: se olvidaron de inicializar la bandera que lo dispara, la única variable del juego que se lee y nunca se escribe. Y el único truco publicado del juego, de un libro de 1988, tiene una errata &mdash;B4CC por 84CC&mdash; comprobada en el emulador.</p><p class="datos"><b>40.449</b> bytes &middot; <b>100 %</b> explicado &middot; reensambla <b>byte a byte</b> &middot; <b>137</b> rutinas, <b>74</b> bloques de datos &middot; <b>29</b> pantallas dibujadas desde el binario</p><p class="enlaces"><a href="https://github.com/antxiko/temptations-disassembly">Repositorio</a><a href="https://antxiko.github.io/temptations-disassembly/">Web</a></p></article><article class="proy"><h3>Ale Hop! <span>1988</span></h3><p class="meta">Topo Soft &middot; MSX &middot; cinta de cassette</p><p class="claim">El juego carga encima de la ROM: los 42.645 bytes van a la página 0, donde vive la BIOS del MSX, y los 35 KB de gráficos y mapas se quedan escondidos debajo, al descubierto solo un instante cada vez que carga un nivel. Esa decisión es la razón de que este desensamblado sean varios listados y no uno. 135 bytes no se ejecutan nunca.</p><p class="datos"><b>42.645</b> bytes en el bloque del juego &middot; <b>0</b> sin explicar &middot; los módulos reensamblan <b>byte a byte</b> y la cinta regenerada tiene el <b>mismo sha256</b> &middot; <b>4.588</b> de código, <b>38.057</b> de datos</p><p class="enlaces"><a href="https://github.com/antxiko/AleHop-disassembly">Repositorio</a><a href="https://antxiko.github.io/AleHop-disassembly/">Web</a></p></article><article class="proy"><h3>War in Middle Earth <span>1989</span></h3><p class="meta">Melbourne House / Dro Soft &middot; MSX1 &middot; cinta de cassette</p><p class="claim">En marcha, y aparcado. Corre con las cuatro páginas en RAM y sin BIOS, cargado por un cargador estilo Spectrum que busca RAM página por página; los cinco listados ya reensamblan byte a byte y la recolocación se confirmó en el emulador. Lo que falta son los gráficos del bloque bajo, que todavía no se ha visto quién los lee: espera una partida completa grabada que llegue a la batalla y a las pantallas de cargar y salvar.</p><p class="datos"><b>48.437</b> de <b>62.261</b> bytes explicados (<b>77,80 %</b>) &middot; <b>cinco listados</b>, todos <b>byte a byte</b> &middot; <b>13.824</b> bytes de gráficos sin lector conocido todavía</p><p class="enlaces"><em>sin terminar: el repositorio es un respaldo privado y todavía no tiene web</em></p></article></div>
+</section>
+
+<section id="method">
+  <h2>Cómo están hechos</h2>
+  <div class="n"><p>Todos los proyectos siguen la misma regla: no se afirma nada que el binario no enseñe. <code>make</code> extrae el juego de la cinta o del cartucho, traza el código desde sus puntos de entrada de verdad, genera los listados comentados y luego los reensambla y exige que vuelva a salir el original, byte a byte.</p><p>Esa prueba decide si un listado es de fiar, pero no si es correcto: si unos gráficos se leen como instrucciones, los bytes salen idénticos igual y lo único que miente es el listado. Por eso cada proyecto lleva una segunda comprobación, distinta &mdash;un presupuesto en el que cada byte tiene que ser o código al que el trazador llega de verdad, o un rango de datos con nombre y explicación&mdash;, más unos tests que cotejan contra el binario lo que dice la documentación.</p><p>Los comentarios viven aparte de los listados, anclados a la dirección que describen, así que sobreviven a un reanálisis del binario. Y buena parte de lo que se afirma no se dedujo leyendo, sino midiendo con el emulador openMSX: watchpoints en memoria para ver qué código toca cada variable, y muestreo del contador de programa mientras se juega para saber qué se ejecuta de verdad.</p><p>En ninguno de estos repositorios se distribuye la cinta ni la imagen del cartucho. Para reconstruir un proyecto hace falta una copia propia del juego; cada repositorio dice el sha256 que espera.</p></div>
+</section>
+
+<footer>Trabajo de documentación y preservación sobre software de 8 bits. El código, los gráficos y el sonido de cada juego siguen siendo de sus autores y titulares de derechos; lo que se publica aquí es el análisis, los comentarios y las herramientas. No se distribuye ninguna cinta ni imagen de cartucho.</footer>
+</div>

@@ -1,0 +1,129 @@
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>antxiko &mdash; commented disassemblies of 8-bit games</title>
+<style>
+:root{--tinta:#cfd0d4;--suave:#83868f;--fondo:#000;--panel:#0c0e13;--linea:#23262e;
+  --rojo:#ff897d;--cyan:#65dbef;--verde:#3eb849;--oro:#ded087}
+@media (prefers-color-scheme:light){:root{--tinta:#191a1e;--suave:#5a5d66;--fondo:#e9e7e1;
+  --panel:#f7f6f2;--linea:#d0cdc5;--rojo:#b23f34;--cyan:#1c6b7c;--verde:#2b7734;--oro:#8a7420}}
+:root[data-theme="dark"]{--tinta:#cfd0d4;--suave:#83868f;--fondo:#000;--panel:#0c0e13;
+  --linea:#23262e;--rojo:#ff897d;--cyan:#65dbef;--verde:#3eb849;--oro:#ded087}
+:root[data-theme="light"]{--tinta:#191a1e;--suave:#5a5d66;--fondo:#e9e7e1;--panel:#f7f6f2;
+  --linea:#d0cdc5;--rojo:#b23f34;--cyan:#1c6b7c;--verde:#2b7734;--oro:#8a7420}
+*{box-sizing:border-box}
+body{margin:0;background:var(--fondo);color:var(--tinta);padding:0 1.25rem 6rem;
+  font:15px/1.7 ui-monospace,"SF Mono",Menlo,Consolas,monospace}
+.w{max-width:1120px;margin:0 auto}
+.n{max-width:68ch}
+h1,h2,h3,h4{font-weight:400;text-wrap:balance}
+a{color:var(--cyan)}
+img{image-rendering:pixelated;max-width:100%;height:auto;display:block}
+header.top{display:flex;flex-direction:column;align-items:center;gap:1.5rem;
+  padding:4rem 0 2rem;text-align:center}
+header.top img{width:min(100%,642px)}
+.claim{max-width:60ch;color:var(--suave);font-size:1.05rem}
+.claim b{color:var(--tinta);font-weight:400}
+.ficha{display:flex;flex-wrap:wrap;justify-content:center;gap:0 1.5rem;width:100%;
+  font-size:12px;letter-spacing:.08em;text-transform:uppercase;color:var(--suave);
+  border-top:1px solid var(--linea);border-bottom:1px solid var(--linea);padding:.85rem 0}
+.ficha b{color:var(--rojo);font-weight:400}
+nav{display:flex;flex-wrap:wrap;gap:1.25rem;justify-content:center;padding:1.25rem 0;
+  font-size:12px;letter-spacing:.08em;text-transform:uppercase}
+nav a{color:var(--suave);text-decoration:none;border-bottom:1px solid transparent}
+nav a:hover,nav a:focus{color:var(--tinta);border-bottom-color:var(--rojo)}
+nav.docs{border-top:1px solid var(--linea);border-bottom:1px solid var(--linea);
+  margin-bottom:1rem}
+section{margin-top:4.5rem;scroll-margin-top:1rem}
+section>h2{font-size:1rem;letter-spacing:.1em;text-transform:uppercase;
+  border-left:3px solid var(--rojo);padding-left:.9rem;margin:0 0 1.5rem}
+.cifras{display:grid;gap:1px;background:var(--linea);border:1px solid var(--linea);
+  grid-template-columns:repeat(auto-fit,minmax(160px,1fr))}
+.cifra{background:var(--panel);padding:1.1rem}
+.cifra b{display:block;font-size:1.7rem;color:var(--oro);font-weight:400;
+  font-variant-numeric:tabular-nums;line-height:1.2}
+.cifra span{font-size:11px;letter-spacing:.07em;text-transform:uppercase;color:var(--suave)}
+.hall{border-top:1px solid var(--linea);padding-top:1.75rem;margin-top:2.5rem}
+.hall:first-of-type{border-top:0;padding-top:0;margin-top:0}
+.hall h3{margin:0 0 .75rem;font-size:1.15rem;color:var(--rojo)}
+.hall h4{color:var(--oro);margin:1.5rem 0 .5rem;font-size:.95rem}
+.hall p{margin:0 0 1rem}
+pre.asm{background:var(--panel);border-left:2px solid var(--verde);margin:1.25rem 0;
+  padding:1rem 1.1rem;overflow-x:auto;font-size:13px;line-height:1.6;color:var(--tinta)}
+.par{display:grid;gap:1.25rem;grid-template-columns:1fr}
+@media(min-width:820px){.par{grid-template-columns:1fr 1fr}}
+.par figure{margin:0}
+table{border-collapse:collapse;width:100%;margin:1.25rem 0;font-size:13px;display:block;
+  overflow-x:auto}
+th,td{text-align:left;padding:.5rem .75rem;border-bottom:1px solid var(--linea)}
+th{color:var(--suave);font-weight:400;font-size:11px;letter-spacing:.07em;text-transform:uppercase}
+td.num{font-variant-numeric:tabular-nums;color:var(--oro)}
+.nivel{margin-top:2rem}
+.nivel h3{margin:0 0 .9rem;font-size:.95rem;letter-spacing:.06em;text-transform:uppercase}
+.nivel em{color:var(--cyan);font-style:normal}
+.sep{color:var(--suave);margin:0 .6rem}
+.rejilla{display:grid;gap:.9rem;grid-template-columns:repeat(auto-fill,minmax(250px,1fr))}
+.rejilla figure{margin:0;background:var(--panel);box-shadow:0 0 0 1px var(--linea)}
+.rejilla figcaption{display:flex;justify-content:space-between;padding:.45rem .65rem;
+  font-size:11px;color:var(--suave);border-top:1px solid var(--linea)}
+.dir{font-variant-numeric:tabular-nums;color:var(--verde)}
+footer{margin-top:5rem;padding-top:1.5rem;border-top:1px solid var(--linea);
+  color:var(--suave);font-size:12px}
+
+/* Aviso de trabajo en curso: tiene que verse antes que las cifras, porque un
+   100% mal leido hace mas dano que no ponerlo. */
+.aviso{background:#3a2a10;border-left:3px solid var(--oro);margin:1.5rem auto;
+  padding:1rem 1.2rem;max-width:900px;border-radius:4px}
+.aviso p{margin:0;color:var(--tinta);font-size:15px;line-height:1.65}
+.galeria{display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
+  gap:1.5rem;margin:1.5rem 0}
+.galeria figure{margin:0}
+.galeria img{width:100%;height:auto;image-rendering:pixelated;
+  border:1px solid var(--linea);border-radius:3px}
+.galeria figcaption{color:var(--suave);font-size:13px;margin-top:.5rem}
+audio{display:block;width:100%;max-width:640px;margin:.75rem 0 1.5rem}
+
+header.top h1{margin:0;font-size:2.3rem;letter-spacing:.04em}
+header.top h1 span{color:var(--rojo)}
+.proyectos{display:grid;gap:1px;background:var(--linea);border:1px solid var(--linea);
+  grid-template-columns:repeat(auto-fit,minmax(min(300px,100%),1fr))}
+.proy{background:var(--panel);padding:1.4rem 1.3rem;display:flex;flex-direction:column}
+.proy h3{margin:0 0 .35rem;font-size:1.15rem;color:var(--rojo)}
+.proy h3 span{color:var(--suave);font-size:12px;letter-spacing:.08em}
+.proy p.meta{margin:0 0 .9rem;font-size:11px;letter-spacing:.07em;
+  text-transform:uppercase;color:var(--suave)}
+.proy p.claim{margin:0 0 1rem;max-width:none;font-size:15px;color:var(--tinta)}
+.proy p.datos{margin:0;padding-top:.85rem;border-top:1px solid var(--linea);
+  font-size:13px;color:var(--suave)}
+.proy p.datos b{color:var(--oro);font-weight:400;font-variant-numeric:tabular-nums}
+.proy p.enlaces{margin:auto 0 0;padding-top:1rem;font-size:12px;letter-spacing:.07em;
+  text-transform:uppercase}
+.proy p.enlaces a{margin-right:1.1rem}
+.proy p.enlaces em{color:var(--suave);font-style:normal}
+</style>
+
+<div class="w">
+<header class="top">
+  <h1>antxiko<span>/</span></h1>
+  <p class="claim">Old 8-bit binaries taken apart byte by byte and commented, with the tools to rebuild them: nothing gets claimed that the binary does not show, and the source has to give the original back, byte for byte. Right now that means eight MSX games.</p>
+  <div class="ficha"><span><b>8</b> games</span><span><b>1984-1989</b></span><span>MSX &middot; MSX1</span><span><b>5</b> tapes &middot; <b>3</b> cartridges</span></div>
+</header>
+<nav><a href="#numbers">The numbers</a><a href="#disassemblies">Disassemblies</a><a href="#method">How they are made</a><a href="https://github.com/antxiko">GitHub</a><a href="es/" style="margin-left:auto;color:var(--oro)">En castellano</a></nav>
+
+<section id="numbers">
+  <h2>The series in numbers</h2>
+  <div class="cifras"><div class="cifra"><b>8</b><span>games taken apart</span></div><div class="cifra"><b>7</b><span>finished at 100%</span></div><div class="cifra"><b>6</b><span>with a website</span></div><div class="cifra"><b>5</b><span>cassette tapes</span></div><div class="cifra"><b>3</b><span>cartridges</span></div><div class="cifra"><b>3</b><span>builds of Antarctic Adventure</span></div></div>
+</section>
+
+<section id="disassemblies">
+  <h2>The disassemblies</h2>
+  <p class="n" style="margin-bottom:2rem;color:var(--suave)">Eight games for the MSX, five off cassette tapes and three off cartridges, taken apart byte by byte and commented. Seven are finished: every byte accounted for, and the source giving the original back byte for byte. The eighth is still in progress, and says so.</p>
+  <div class="proyectos"><article class="proy"><h3>Athletic Land <span>1984</span></h3><p class="meta">Konami &middot; MSX1 &middot; 16 KB cartridge &middot; RC-700</p><p class="claim">Konami's first MSX cartridge. The game is a table of thirty-two screens, not a map, and what kills you is not the height you fall to but the height you fell from. The vine is nine drawings, each ending with the three bytes that say where its tip is.</p><p class="datos"><b>16,384</b> bytes &middot; <b>0</b> unexplained &middot; reassembles <b>byte for byte</b> &middot; <b>7,448</b> of code, <b>8,936</b> of data &middot; <b>296</b> labels</p><p class="enlaces"><a href="https://github.com/antxiko/AthleticLand-disassembly">Repository</a><em>site not published yet</em></p></article><article class="proy"><h3>Antarctic Adventure <span>1984</span></h3><p class="meta">Konami &middot; MSX1 &middot; 16 KB cartridge &middot; RC-701</p><p class="claim">Three different builds of this cartridge are taken apart here, each in its own folder, and all three reassemble byte for byte. The attract mode is a recording: 64 bytes carrying the joystick's own bits, read one every 32 frames. And NEW ZEALAND is spelled out inside for a research base nobody visits.</p><p class="datos"><b>16,384</b> bytes &middot; <b>0</b> unexplained &middot; <b>three builds</b>, all <b>byte for byte</b> &middot; main listing: <b>5,947</b> of code, <b>10,437</b> of data</p><p class="enlaces"><a href="https://github.com/antxiko/AntarcticAdventure-disassembly">Repository</a><a href="https://antxiko.github.io/AntarcticAdventure-disassembly/">Website</a><em>which build is which is not settled</em></p></article><article class="proy"><h3>Pitfall! <span>1984</span></h3><p class="meta">Activision &middot; MSX1 &middot; 16 KB cartridge</p><p class="claim">There is no map inside: the jungle's 255 screens come out of an eight-bit shift register, and the 32 treasures are exactly the 32 scenes of one kind. The vine is drawn frame by frame onto a bitmap in RAM, so the rope you see is arithmetic, not a graphic.</p><p class="datos"><b>16,384</b> bytes &middot; <b>0</b> unexplained &middot; reassembles <b>byte for byte</b> &middot; <b>9,467</b> of code, <b>6,917</b> of data &middot; <b>337</b> labels</p><p class="enlaces"><a href="https://github.com/antxiko/Pitfall-MSX-disassembly">Repository</a><a href="https://antxiko.github.io/Pitfall-MSX-disassembly/">Website</a></p></article><article class="proy"><h3>Colt 36 <span>1987</span></h3><p class="meta">Topo Soft &middot; MSX1 &middot; cassette tape</p><p class="claim">The game turned out to be written in BASIC: a tokenised MSX-BASIC program 63 lines long, with 45 bytes of Z80 at the end to start the interpreter, and a scrolling engine seventeen bytes long. Of the 34,239 bytes on the tape there are 1,566 whose contents nobody has identified, published as a WANTED poster with every measurement next to it.</p><p class="datos"><b>34,239</b> bytes &middot; <b>100%</b> accounted for &middot; reassembled and re-tokenised <b>byte for byte</b> &middot; only <b>997</b> bytes of machine code &middot; <b>1,566</b> bytes unidentified</p><p class="enlaces"><a href="https://github.com/antxiko/Colt36-disassembly">Repository</a><a href="https://antxiko.github.io/Colt36-disassembly/">Website</a></p></article><article class="proy"><h3>Stardust <span>1987</span></h3><p class="meta">Topo Soft &middot; MSX &middot; cassette tape</p><p class="claim">A ZX Spectrum conversion that brought the Spectrum's tape system across with it, not just the graphics: Spectrum blocks instead of the MSX's own, a loader that reimplements LD-BYTES with the same register interface, and RAM mapped into pages 1 and 2 to get the flat 48K the Spectrum has as standard. And it is multiload: two different programs on one cassette.</p><p class="datos"><b>93,861</b> bytes &middot; <b>100%</b> accounted for &middot; <b>five listings</b>, all <b>byte for byte</b> &middot; <b>335</b> routines commented</p><p class="enlaces"><a href="https://github.com/antxiko/Stardust-MSX-disassembly">Repository</a><a href="https://antxiko.github.io/Stardust-MSX-disassembly/">Website</a></p></article><article class="proy"><h3>Temptations <span>1988</span></h3><p class="meta">Topo Soft &middot; MSX &middot; cassette tape</p><p class="claim">The punishment for cheating never fires, and not because they meant it that way: they forgot to initialise the flag that triggers it, the only variable in the game that is read but never set. And the only published cheat for the game, from a 1988 book, has a typo &mdash; B4CC for 84CC &mdash; confirmed in an emulator.</p><p class="datos"><b>40,449</b> bytes &middot; <b>100%</b> accounted for &middot; reassembles <b>byte for byte</b> &middot; <b>137</b> routines, <b>74</b> data blocks &middot; <b>29</b> screens drawn from the binary</p><p class="enlaces"><a href="https://github.com/antxiko/temptations-disassembly">Repository</a><a href="https://antxiko.github.io/temptations-disassembly/">Website</a></p></article><article class="proy"><h3>Ale Hop! <span>1988</span></h3><p class="meta">Topo Soft &middot; MSX &middot; cassette tape</p><p class="claim">The game loads on top of the ROM: all 42,645 bytes go into page 0, where the MSX BIOS lives, and the 35 KB of graphics and maps stay hidden underneath it, uncovered for an instant each time a level loads. That one decision is why this disassembly is several listings and not one. 135 bytes never execute.</p><p class="datos"><b>42,645</b> bytes in the game block &middot; <b>0</b> unexplained &middot; the modules reassemble <b>byte for byte</b> and the rebuilt tape has the <b>same sha256</b> &middot; <b>4,588</b> of code, <b>38,057</b> of data</p><p class="enlaces"><a href="https://github.com/antxiko/AleHop-disassembly">Repository</a><a href="https://antxiko.github.io/AleHop-disassembly/">Website</a></p></article><article class="proy"><h3>War in Middle Earth <span>1989</span></h3><p class="meta">Melbourne House / Dro Soft &middot; MSX1 &middot; cassette tape</p><p class="claim">In progress, and parked. It runs with all four pages in RAM and no BIOS at all, loaded by a Spectrum-style loader that hunts for RAM page by page; the five listings already reassemble byte for byte and the relocation was confirmed in the emulator. What is missing is the low block's graphics, which nothing has yet been seen to read: it waits on a full recorded game reaching the battle and the load/save screens.</p><p class="datos"><b>48,437</b> of <b>62,261</b> bytes explained (<b>77.80%</b>) &middot; <b>five listings</b>, all <b>byte for byte</b> &middot; <b>13,824</b> bytes of graphics with no reader found yet</p><p class="enlaces"><em>unfinished: the repository is a private backup, and there is no site yet</em></p></article></div>
+</section>
+
+<section id="method">
+  <h2>How they are made</h2>
+  <div class="n"><p>Every project follows the same rule: nothing gets claimed that the binary does not show. <code>make</code> extracts the game from the tape or the cartridge, traces the code from its real entry points, generates the commented listings, then reassembles them and demands the original back, byte for byte.</p><p>That test settles whether a listing can be trusted, but not whether it is right: if graphics are read as instructions, the bytes still come out identical and only the listing lies. So each project carries a second, different check &mdash; a budget where every byte has to be either code the tracer genuinely reaches, or a data range with a name and an explanation &mdash; plus tests that check what the documentation says against the binary.</p><p>The comments live apart from the listings, anchored to the address they describe, so they survive a re-analysis of the binary. And much of what is claimed was not deduced by reading but measured with the openMSX emulator: watchpoints on memory to see which code touches each variable, and sampling the program counter during play to know what actually executes.</p><p>No tape or cartridge image is distributed in any of these repositories. To rebuild a project you need your own copy of the game; each repository states the sha256 it expects.</p></div>
+</section>
+
+<footer>Documentation and preservation work on 8-bit software. Each game's code, graphics and sound belong to its authors and rights holders; what is published here is the analysis, the comments and the tools. No tape or cartridge image is distributed.</footer>
+</div>
