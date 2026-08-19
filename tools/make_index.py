@@ -69,7 +69,7 @@ DESENSAMBLADOS = [
         titulo="Athletic Land",
         anio=1984,
         repo="https://github.com/antxiko/AthleticLand-disassembly",
-        web=None,
+        web="https://antxiko.github.io/AthleticLand-disassembly/",
         meta=dict(
             en="Konami &middot; MSX1 &middot; 16 KB cartridge &middot; RC-700",
             es="Konami &middot; MSX1 &middot; cartucho de 16 KB &middot; RC-700",
@@ -95,10 +95,7 @@ DESENSAMBLADOS = [
                           f"{cif(7448, i)} de código, {cif(8936, i)} de datos "
                           f"&middot; {cif(296, i)} etiquetas"),
         ),
-        nota=dict(
-            en="site not published yet",
-            es="web sin publicar todavía",
-        ),
+        nota=dict(en=None, es=None),
     ),
     dict(
         clave="antarctic",
@@ -136,6 +133,38 @@ DESENSAMBLADOS = [
             en="which build is which is not settled",
             es="cuál es cuál no está cerrado",
         ),
+    ),
+    dict(
+        clave="monkey",
+        titulo="Monkey Academy",
+        anio=1984,
+        repo="https://github.com/antxiko/MonkeyAcademy-disassembly",
+        web="https://antxiko.github.io/MonkeyAcademy-disassembly/",
+        meta=dict(
+            en="Konami &middot; MSX1 &middot; 16 KB cartridge &middot; RC-702",
+            es="Konami &middot; MSX1 &middot; cartucho de 16 KB &middot; RC-702",
+        ),
+        claim=dict(
+            en="Konami's arithmetic cartridge. The five levels are five scripts "
+               "of three to five bytes, the digit that gets hidden depends on "
+               "the one you can see, and the fruit gets thrown back and forth "
+               "between the monkey and the crabs.",
+            es="El cartucho de aritmética de Konami. Los cinco niveles son cinco "
+               "guiones de tres a cinco bytes, la cifra que se tapa depende de "
+               "la que se ve, y las frutas se las tiran unos a otros el mono y "
+               "los cangrejos.",
+        ),
+        datos=dict(
+            en=lambda i: (f"{cif(16384, i)} bytes &middot; <b>0</b> unexplained "
+                          f"&middot; reassembles <b>byte for byte</b> &middot; "
+                          f"{cif(8962, i)} of code, {cif(7422, i)} of data "
+                          f"&middot; {cif(498, i)} labels"),
+            es=lambda i: (f"{cif(16384, i)} bytes &middot; <b>0</b> sin explicar "
+                          f"&middot; reensambla <b>byte a byte</b> &middot; "
+                          f"{cif(8962, i)} de código, {cif(7422, i)} de datos "
+                          f"&middot; {cif(498, i)} etiquetas"),
+        ),
+        nota=dict(en=None, es=None),
     ),
     dict(
         clave="pitfall",
