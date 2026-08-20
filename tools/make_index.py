@@ -310,6 +310,54 @@ DESENSAMBLADOS = [
         nota=dict(en=None, es=None),
     ),
     dict(
+        clave="f1spirit",
+        titulo="F-1 Spirit &mdash; The Way to Formula 1",
+        anio=1987,
+        terminado=False,
+        repo="https://github.com/antxiko/F1Spirit-disassembly",
+        web="https://antxiko.github.io/F1Spirit-disassembly/",
+        meta=dict(
+            en="Konami &middot; MSX1 &middot; 128 KB MegaROM &middot; RC-752",
+            es="Konami &middot; MSX1 &middot; MegaROM de 128 KB &middot; RC-752",
+        ),
+        claim=dict(
+            en="The first MegaROM in this series, with the Konami SCC mapper and "
+               "the SCC sound chip: sixteen 8 KB pages the game swaps in and out, "
+               "so there is not one listing but sixteen. The depth of the road is "
+               "not perspective: SCREEN 2 keeps three pattern banks, one per third "
+               "of the screen, and the cartridge loads <b>different drawings under "
+               "the same index</b> at the top and at the bottom. And its 21 "
+               "circuits are lists of pieces that can be rewritten &mdash; there is "
+               "an editor to do it, and it runs in the browser.",
+            es="El primer MegaROM de la serie, con mapper Konami SCC y chip de "
+               "sonido SCC: dieciséis páginas de 8 KB que el juego va metiendo y "
+               "sacando, así que aquí no hay un listado sino dieciséis. La "
+               "profundidad de la carretera no es perspectiva: en SCREEN 2 hay tres "
+               "bancos de patrones, uno por tercio de pantalla, y el cartucho carga "
+               "<b>dibujos distintos bajo el mismo índice</b> arriba y abajo. Y sus "
+               "21 circuitos son listas de piezas que se pueden reescribir: hay un "
+               "editor para hacerlo, y funciona en el navegador.",
+        ),
+        datos=dict(
+            en=lambda i: (f"{cif(131072, i)} bytes &middot; <b>97.7%</b> explained "
+                          f"&middot; reassembles <b>byte for byte</b> &middot; "
+                          f"{cif(30658, i)} of code, {cif(100414, i)} of data "
+                          f"&middot; {cif(964, i)} routines &middot; "
+                          f"<b>21</b> circuits"),
+            es=lambda i: (f"{cif(131072, i)} bytes &middot; <b>97,7 %</b> explicado "
+                          f"&middot; reensambla <b>byte a byte</b> &middot; "
+                          f"{cif(30658, i)} de código, {cif(100414, i)} de datos "
+                          f"&middot; {cif(964, i)} rutinas &middot; "
+                          f"<b>21</b> circuitos"),
+        ),
+        nota=dict(
+            en="in progress: 3,067 bytes (2.3%) are still marked as pending to "
+               "trace, and the listing is not commented yet",
+            es="en marcha: quedan 3.067 bytes (2,3 %) marcados como pendientes de "
+               "trazar, y el listado todavía está sin comentar",
+        ),
+    ),
+    dict(
         clave="colt36",
         titulo="Colt 36",
         anio=1987,
