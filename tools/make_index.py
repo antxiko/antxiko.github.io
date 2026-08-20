@@ -339,21 +339,21 @@ DESENSAMBLADOS = [
                "editor para hacerlo, y funciona en el navegador.",
         ),
         datos=dict(
-            en=lambda i: (f"{cif(131072, i)} bytes &middot; <b>97.7%</b> explained "
+            en=lambda i: (f"{cif(131072, i)} bytes &middot; <b>99.6%</b> explained "
                           f"&middot; reassembles <b>byte for byte</b> &middot; "
-                          f"{cif(30658, i)} of code, {cif(100414, i)} of data "
-                          f"&middot; {cif(964, i)} routines &middot; "
+                          f"{cif(31591, i)} of code, {cif(99481, i)} of data "
+                          f"&middot; {cif(977, i)} routines &middot; "
                           f"<b>21</b> circuits"),
-            es=lambda i: (f"{cif(131072, i)} bytes &middot; <b>97,7 %</b> explicado "
+            es=lambda i: (f"{cif(131072, i)} bytes &middot; <b>99,6 %</b> explicado "
                           f"&middot; reensambla <b>byte a byte</b> &middot; "
-                          f"{cif(30658, i)} de código, {cif(100414, i)} de datos "
-                          f"&middot; {cif(964, i)} rutinas &middot; "
+                          f"{cif(31591, i)} de código, {cif(99481, i)} de datos "
+                          f"&middot; {cif(977, i)} rutinas &middot; "
                           f"<b>21</b> circuitos"),
         ),
         nota=dict(
-            en="in progress: 3,067 bytes (2.3%) are still marked as pending to "
+            en="in progress: 504 bytes (0.4%) are still marked as pending to "
                "trace, and the listing is not commented yet",
-            es="en marcha: quedan 3.067 bytes (2,3 %) marcados como pendientes de "
+            es="en marcha: quedan 504 bytes (0,4 %) marcados como pendientes de "
                "trazar, y el listado todavía está sin comentar",
         ),
     ),
