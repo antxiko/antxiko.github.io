@@ -200,6 +200,41 @@ DESENSAMBLADOS = [
         nota=dict(en=None, es=None),
     ),
     dict(
+        clave="pippols",
+        titulo="Pippols",
+        anio=1985,
+        repo="https://github.com/antxiko/Pippols-disassembly",
+        web="https://antxiko.github.io/Pippols-disassembly/",
+        meta=dict(
+            en="Konami &middot; MSX1 &middot; 16 KB cartridge &middot; RC-729",
+            es="Konami &middot; MSX1 &middot; cartucho de 16 KB &middot; RC-729",
+        ),
+        claim=dict(
+            en="It scrolls one pixel at a time in a video mode with no scroll "
+               "register: the background sits in video memory eight times over, "
+               "each copy a pixel lower, and the whole screen is rewritten every "
+               "frame. That costs three quarters of the machine's time, measured "
+               "in the emulator, and the road of every stage fits in 328 bytes.",
+            es="Se desplaza de pixel en pixel en un modo de vídeo que no tiene "
+               "registro de desplazamiento: el fondo está ocho veces en la memoria "
+               "de vídeo, cada copia bajada un pixel más, y la pantalla entera se "
+               "reescribe cada fotograma. Eso cuesta tres cuartas partes del tiempo "
+               "de la máquina, medido en el emulador, y el camino de todas las "
+               "fases cabe en 328 bytes.",
+        ),
+        datos=dict(
+            en=lambda i: (f"{cif(16384, i)} bytes &middot; <b>0</b> unexplained "
+                          f"&middot; reassembles <b>byte for byte</b> &middot; "
+                          f"{cif(9099, i)} of code, {cif(7285, i)} of data "
+                          f"&middot; {cif(676, i)} labels"),
+            es=lambda i: (f"{cif(16384, i)} bytes &middot; <b>0</b> sin explicar "
+                          f"&middot; reensambla <b>byte a byte</b> &middot; "
+                          f"{cif(9099, i)} de código, {cif(7285, i)} de datos "
+                          f"&middot; {cif(676, i)} etiquetas"),
+        ),
+        nota=dict(en=None, es=None),
+    ),
+    dict(
         clave="colt36",
         titulo="Colt 36",
         anio=1987,
@@ -392,15 +427,15 @@ CATEGORIAS = [
         titulo=dict(en="The disassemblies", es="Los desensamblados"),
         menu=dict(en="Disassemblies", es="Desensamblados"),
         intro=dict(
-            en="Eight games for the MSX, five off cassette tapes and three off "
-               "cartridges, taken apart byte by byte and commented. Seven are "
+            en="Ten games for the MSX, five off cassette tapes and five off "
+               "cartridges, taken apart byte by byte and commented. Nine are "
                "finished: every byte accounted for, and the source giving the "
-               "original back byte for byte. The eighth is still in progress, and "
+               "original back byte for byte. The tenth is still in progress, and "
                "says so.",
-            es="Ocho juegos de MSX, cinco de cinta de cassette y tres de cartucho, "
-               "desmontados byte a byte y comentados. Siete están terminados: cada "
+            es="Diez juegos de MSX, cinco de cinta de cassette y cinco de cartucho, "
+               "desmontados byte a byte y comentados. Nueve están terminados: cada "
                "byte explicado y el código fuente devolviendo el original byte a "
-               "byte. El octavo sigue en marcha, y lo dice.",
+               "byte. El décimo sigue en marcha, y lo dice.",
         ),
         proyectos=DESENSAMBLADOS,
     ),
@@ -414,15 +449,15 @@ TXT = dict(
         claim="Old 8-bit binaries taken apart byte by byte and commented, with the "
               "tools to rebuild them: nothing gets claimed that the binary does not "
               "show, and the source has to give the original back, byte for byte. "
-              "Right now that means eight MSX games.",
-        ficha=["<b>8</b> games", "<b>1984-1989</b>", "MSX &middot; MSX1",
-               "<b>5</b> tapes &middot; <b>3</b> cartridges"],
+              "Right now that means ten MSX games.",
+        ficha=["<b>10</b> games", "<b>1984-1989</b>", "MSX &middot; MSX1",
+               "<b>5</b> tapes &middot; <b>5</b> cartridges"],
         menu_num="The numbers", menu_met="How they are made", menu_gh="GitHub",
         otro=("es/", "En castellano"),
         h_num="The series in numbers",
-        cifras=[("8", "games taken apart"), ("7", "finished at 100%"),
-                ("6", "with a website"), ("5", "cassette tapes"),
-                ("3", "cartridges"), ("3", "builds of Antarctic Adventure")],
+        cifras=[("10", "games taken apart"), ("9", "finished at 100%"),
+                ("9", "with a website"), ("5", "cassette tapes"),
+                ("5", "cartridges"), ("3", "builds of Antarctic Adventure")],
         h_met="How they are made",
         met=["Every project follows the same rule: nothing gets claimed that the "
              "binary does not show. <code>make</code> extracts the game from the "
@@ -456,15 +491,15 @@ TXT = dict(
         claim="Binarios viejos de 8 bits desmontados byte a byte y comentados, con "
               "las herramientas para volver a montarlos: no se afirma nada que el "
               "binario no enseñe, y el código fuente tiene que devolver el "
-              "original, byte a byte. Ahora mismo son ocho juegos de MSX.",
-        ficha=["<b>8</b> juegos", "<b>1984-1989</b>", "MSX &middot; MSX1",
-               "<b>5</b> cintas &middot; <b>3</b> cartuchos"],
+              "original, byte a byte. Ahora mismo son diez juegos de MSX.",
+        ficha=["<b>10</b> juegos", "<b>1984-1989</b>", "MSX &middot; MSX1",
+               "<b>5</b> cintas &middot; <b>5</b> cartuchos"],
         menu_num="Las cifras", menu_met="Cómo están hechos", menu_gh="GitHub",
         otro=("../", "In English"),
         h_num="La serie en cifras",
-        cifras=[("8", "juegos desmontados"), ("7", "terminados al 100 %"),
-                ("6", "con web publicada"), ("5", "cintas de cassette"),
-                ("3", "cartuchos"), ("3", "compilaciones de Antarctic Adventure")],
+        cifras=[("10", "juegos desmontados"), ("9", "terminados al 100 %"),
+                ("9", "con web publicada"), ("5", "cintas de cassette"),
+                ("5", "cartuchos"), ("3", "compilaciones de Antarctic Adventure")],
         h_met="Cómo están hechos",
         met=["Todos los proyectos siguen la misma regla: no se afirma nada que el "
              "binario no enseñe. <code>make</code> extrae el juego de la cinta o "

@@ -2,7 +2,7 @@
 
 The home page: an index of the projects, in English and Spanish.
 
-Right now it lists one category, **Disassemblies** — eight MSX games taken apart
+Right now it lists one category, **Disassemblies** — ten MSX games taken apart
 byte by byte — and the structure is ready for more: categories are a list in the
 generator, and the menu and the sections are built from it.
 
