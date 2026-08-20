@@ -105,6 +105,37 @@ class TestPortada(unittest.TestCase):
         self.assertEqual(cifras[0], cifras[1],
                          "las dos portadas publican cifras distintas")
 
+    def test_las_cifras_de_la_cabecera_no_se_contradicen(self):
+        """Las cuentas se calculan de la lista; aqui se comprueba que salen.
+
+        Se publico una vez un "0 terminados al 100 %" por contar mal: la
+        bandera estaba en un campo que llevaban todos. Esto lo caza.
+        """
+        import sys
+        sys.path.insert(0, os.path.join(RAIZ, "tools"))
+        import make_index as mi
+
+        self.assertEqual(mi.N_JUEGOS, len(mi.DESENSAMBLADOS))
+        self.assertEqual(mi.N_CINTAS + mi.N_CARTUCHOS, mi.N_JUEGOS,
+                         "cintas + cartuchos tiene que dar el total")
+        for nombre, n in (("terminados", mi.N_TERMINADOS),
+                          ("con web", mi.N_CON_WEB),
+                          ("cintas", mi.N_CINTAS),
+                          ("cartuchos", mi.N_CARTUCHOS)):
+            self.assertGreater(n, 0, "%s no puede ser cero" % nombre)
+            self.assertLessEqual(n, mi.N_JUEGOS,
+                                 "%s no puede pasar del total" % nombre)
+        # y lo que se publica es lo que se ha calculado
+        for ruta in PAGINAS:
+            with open(ruta, encoding="utf-8") as f:
+                pagina = f.read()
+            for n, rotulo in ((mi.N_TERMINADOS, "terminados al 100 %"),
+                              (mi.N_TERMINADOS, "finished at 100%")):
+                if rotulo in pagina:
+                    self.assertIn("<b>%d</b><span>%s</span>" % (n, rotulo),
+                                  pagina, "%s no publica %d %s"
+                                  % (os.path.basename(ruta), n, rotulo))
+
     def test_cada_pagina_lleva_al_otro_idioma(self):
         self.assertIn('href="es/', lee(PAGINAS[0]))
         self.assertIn('href="../', lee(PAGINAS[1]))

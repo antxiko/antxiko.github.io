@@ -455,6 +455,7 @@ DESENSAMBLADOS = [
         clave="war",
         titulo="War in Middle Earth",
         anio=1989,
+        terminado=False,
         repo=None,
         web=None,
         meta=dict(
@@ -497,12 +498,14 @@ DESENSAMBLADOS = [
 ]
 
 # Las cuentas de la cabecera salen de la lista, no de escribirlas a mano: al
-# anadir un proyecto se ponen al dia solas. Un proyecto lleva 'nota' cuando no
-# esta terminado, y 'web' a None cuando todavia no tiene sitio publicado.
+# anadir un proyecto se ponen al dia solas. Un proyecto lleva 'terminado=False'
+# cuando no esta al 100 %, y 'web' a None cuando todavia no tiene sitio
+# publicado. Ojo: 'nota' NO sirve para esto, porque la llevan tambien los
+# terminados que tienen alguna pregunta abierta.
 N_JUEGOS = len(DESENSAMBLADOS)
 N_CINTAS = sum(1 for p in DESENSAMBLADOS if "cinta" in p["meta"]["es"])
 N_CARTUCHOS = N_JUEGOS - N_CINTAS
-N_TERMINADOS = sum(1 for p in DESENSAMBLADOS if not p.get("nota"))
+N_TERMINADOS = sum(1 for p in DESENSAMBLADOS if p.get("terminado", True))
 N_CON_WEB = sum(1 for p in DESENSAMBLADOS if p.get("web"))
 ANIOS = "%d-%d" % (min(p["anio"] for p in DESENSAMBLADOS),
                    max(p["anio"] for p in DESENSAMBLADOS))
