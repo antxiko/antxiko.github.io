@@ -101,6 +101,42 @@ DESENSAMBLADOS = [
         nota=dict(en=None, es=None),
     ),
     dict(
+        clave="frogger",
+        titulo="Frogger",
+        anio=1983,
+        repo="https://github.com/antxiko/Frogger-disassembly",
+        web="https://antxiko.github.io/Frogger-disassembly/",
+        meta=dict(
+            en="Konami &middot; MSX1 &middot; 8 KB cartridge &middot; RC-704",
+            es="Konami &middot; MSX1 &middot; cartucho de 8 KB &middot; RC-704",
+        ),
+        claim=dict(
+            en="Half the size of any other Konami cartridge here, and it "
+               "carries the very same sound player as Time Pilot: 163 bytes "
+               "with only three different. Logs and cars do not spend a single "
+               "sprite &mdash; four pre-generated versions of every drawing, "
+               "shifted two pixels at a time &mdash; and the whole attract "
+               "mode fits in fifteen bytes.",
+            es="La mitad de grande que cualquier otro Konami de aquí, y lleva "
+               "dentro el mismo reproductor de sonido que Time Pilot: 163 "
+               "bytes con solo tres distintos. Los troncos y los coches no "
+               "gastan un solo sprite &mdash;cuatro versiones pregeneradas de "
+               "cada dibujo, de dos en dos píxeles&mdash; y la demo entera "
+               "cabe en quince bytes.",
+        ),
+        datos=dict(
+            en=lambda i: (f"{cif(8192, i)} bytes &middot; <b>0</b> unexplained "
+                          f"&middot; reassembles <b>byte for byte</b> &middot; "
+                          f"{cif(4880, i)} of code, {cif(3312, i)} of data "
+                          f"&middot; {cif(314, i)} labels"),
+            es=lambda i: (f"{cif(8192, i)} bytes &middot; <b>0</b> sin explicar "
+                          f"&middot; reensambla <b>byte a byte</b> &middot; "
+                          f"{cif(4880, i)} de código, {cif(3312, i)} de datos "
+                          f"&middot; {cif(314, i)} etiquetas"),
+        ),
+        nota=dict(en=None, es=None),
+    ),
+    dict(
         clave="athletic",
         titulo="Athletic Land",
         anio=1984,
