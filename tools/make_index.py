@@ -140,6 +140,44 @@ DESENSAMBLADOS = [
         nota=dict(en=None, es=None),
     ),
     dict(
+        clave="supercobra",
+        titulo="Super Cobra",
+        anio=1983,
+        repo="https://github.com/antxiko/SuperCobra-disassembly",
+        web="https://antxiko.github.io/SuperCobra-disassembly/",
+        meta=dict(
+            en="Konami &middot; MSX1 &middot; 8 KB cartridge &middot; RC-705",
+            es="Konami &middot; MSX1 &middot; cartucho de 8 KB &middot; RC-705",
+        ),
+        claim=dict(
+            en="The main thread does nothing: it hooks the interrupt and "
+               "settles into a <code>jr $</code> forever, so the whole game "
+               "runs inside the video hook. It shares 400 bytes with Athletic "
+               "Land and <b>not one run of bytes with Frogger</b>, from the "
+               "same year and the same 8 KB. And the letters are not even in "
+               "the cartridge: they are copied from the BASIC ROM.",
+            es="El hilo principal no hace nada: engancha la interrupción y se "
+               "queda en un <code>jr $</code> para siempre, así que el juego "
+               "entero corre dentro del gancho de vídeo. Comparte 400 bytes "
+               "con Athletic Land y <b>ni un byte seguido con Frogger</b>, del "
+               "mismo año y de los mismos 8 KB. Y las letras ni siquiera están "
+               "en el cartucho: se copian de la ROM del BASIC.",
+        ),
+        datos=dict(
+            en=lambda i: (f"{cif(8192, i)} bytes &middot; <b>0</b> unexplained "
+                          f"&middot; reassembles <b>byte for byte</b> &middot; "
+                          f"{cif(5783, i)} of code, {cif(2409, i)} of data "
+                          f"&middot; {cif(407, i)} labels &middot; commented "
+                          f"to <b>24.2%</b>"),
+            es=lambda i: (f"{cif(8192, i)} bytes &middot; <b>0</b> sin explicar "
+                          f"&middot; reensambla <b>byte a byte</b> &middot; "
+                          f"{cif(5783, i)} de código, {cif(2409, i)} de datos "
+                          f"&middot; {cif(407, i)} etiquetas &middot; comentado "
+                          f"al <b>24,2 %</b>"),
+        ),
+        nota=dict(en=None, es=None),
+    ),
+    dict(
         clave="athletic",
         titulo="Athletic Land",
         anio=1984,
