@@ -352,9 +352,11 @@ DESENSAMBLADOS = [
         ),
         nota=dict(
             en="in progress: 504 bytes (0.4%) are still marked as pending to "
-               "trace, and the listing is not commented yet",
+               "trace. The six code pages are commented, with no routine below "
+               "the 10% line",
             es="en marcha: quedan 504 bytes (0,4 %) marcados como pendientes de "
-               "trazar, y el listado todavía está sin comentar",
+               "trazar. Las seis páginas con código están comentadas, sin "
+               "ninguna rutina por debajo del listón del 10 %",
         ),
     ),
     dict(
