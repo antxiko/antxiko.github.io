@@ -280,6 +280,47 @@ DESENSAMBLADOS = [
         nota=dict(en=None, es=None),
     ),
     dict(
+        clave="billiards",
+        titulo="Konami&rsquo;s Billiards",
+        anio=1984,
+        repo="https://github.com/antxiko/KonamisBilliards-disassembly",
+        web="https://antxiko.github.io/KonamisBilliards-disassembly/",
+        meta=dict(
+            en="Konami &middot; MSX1 &middot; 16 KB cartridge &middot; RC-706",
+            es="Konami &middot; MSX1 &middot; cartucho de 16 KB &middot; RC-706",
+        ),
+        claim=dict(
+            en="Collision physics in the eight kilobytes the game uses: trigonometry by slope, "
+               "a twelve-byte square root that <b>rounds</b>, and 45&deg; "
+               "bounces done by swapping the two velocity components, without "
+               "one multiplication. There are only <b>seven balls</b> — the "
+               "eighth entry is the point you aim at — and the attract mode "
+               "plays by <b>writing the fire button</b> into the same "
+               "variables where the player&rsquo;s keys land.",
+            es="Una física de choques en los ocho kilobytes que ocupa el juego: trigonometría por "
+               "pendiente, una raíz cuadrada de doce bytes que <b>redondea</b>, "
+               "y rebotes a 45&deg; resueltos intercambiando las dos "
+               "componentes de la velocidad, sin una sola multiplicación. Solo "
+               "hay <b>siete bolas</b> —la octava entrada es el punto al que "
+               "se apunta— y el attract juega <b>escribiendo el botón de "
+               "tiro</b> en las mismas variables donde caen las teclas del "
+               "jugador.",
+        ),
+        datos=dict(
+            en=lambda i: (f"{cif(16384, i)} bytes &middot; <b>0</b> unexplained "
+                          f"&middot; reassembles <b>byte for byte</b> &middot; "
+                          f"{cif(5343, i)} of code, {cif(11041, i)} of data "
+                          f"&middot; {cif(332, i)} labels &middot; commented "
+                          f"to <b>39.3%</b>"),
+            es=lambda i: (f"{cif(16384, i)} bytes &middot; <b>0</b> sin explicar "
+                          f"&middot; reensambla <b>byte a byte</b> &middot; "
+                          f"{cif(5343, i)} de código, {cif(11041, i)} de datos "
+                          f"&middot; {cif(332, i)} etiquetas &middot; comentado "
+                          f"al <b>39,3 %</b>"),
+        ),
+        nota=dict(en=None, es=None),
+    ),
+    dict(
         clave="pitfall",
         titulo="Pitfall!",
         anio=1984,
