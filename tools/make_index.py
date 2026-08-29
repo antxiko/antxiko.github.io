@@ -363,6 +363,82 @@ DESENSAMBLADOS = [
         nota=dict(en=None, es=None),
     ),
     dict(
+        clave="hyperolympic1",
+        titulo="Hyper Olympic 1",
+        anio=1984,
+        repo="https://github.com/antxiko/HyperOlympic1-disassembly",
+        web="https://antxiko.github.io/HyperOlympic1-disassembly/",
+        meta=dict(
+            en="Konami &middot; MSX1 &middot; 16 KB cartridge &middot; RC-710",
+            es="Konami &middot; MSX1 &middot; cartucho de 16 KB &middot; RC-710",
+        ),
+        claim=dict(
+            en="Almost nothing here is drawn: the screens are scripts that get "
+               "interpreted, and the large letters are manufactured by "
+               "stretching the small ones. The 400 metres does not exist in the "
+               "arcade &mdash; it is the 100 metres label with <b>one glyph "
+               "changed</b>. And the stopwatch was worked out for 60 Hz, so in "
+               "Europe a &laquo;12.00&raquo; is really 14.4 seconds.",
+            es="Aquí casi nada está dibujado: las pantallas son guiones que se "
+               "interpretan, y las letras grandes se fabrican estirando las "
+               "pequeñas. Los 400 metros no existen en el arcade &mdash;son el "
+               "rótulo de los 100 con <b>un glifo cambiado</b>&mdash;. Y el "
+               "cronómetro está calculado para 60 Hz, así que en Europa un "
+               "&laquo;12,00&raquo; son 14,4 segundos de verdad.",
+        ),
+        datos=dict(
+            en=lambda i: (f"{cif(16384, i)} bytes &middot; <b>0</b> unexplained "
+                          f"&middot; reassembles <b>byte for byte</b> &middot; "
+                          f"{cif(9335, i)} of code, {cif(7049, i)} of data "
+                          f"&middot; {cif(569, i)} labels &middot; commented "
+                          f"to <b>33.4%</b>"),
+            es=lambda i: (f"{cif(16384, i)} bytes &middot; <b>0</b> sin explicar "
+                          f"&middot; reensambla <b>byte a byte</b> &middot; "
+                          f"{cif(9335, i)} de código, {cif(7049, i)} de datos "
+                          f"&middot; {cif(569, i)} etiquetas &middot; comentado "
+                          f"al <b>33,4 %</b>"),
+        ),
+        nota=dict(en=None, es=None),
+    ),
+    dict(
+        clave="hyperolympic2",
+        titulo="Hyper Olympic 2",
+        anio=1984,
+        repo="https://github.com/antxiko/HyperOlympic2-disassembly",
+        web="https://antxiko.github.io/HyperOlympic2-disassembly/",
+        meta=dict(
+            en="Konami &middot; MSX1 &middot; 16 KB cartridge &middot; RC-711",
+            es="Konami &middot; MSX1 &middot; cartucho de 16 KB &middot; RC-711",
+        ),
+        claim=dict(
+            en="Four new events on the previous cartridge&rsquo;s program: "
+               "<b>83.4 % of its instructions are here</b>, and the motor that "
+               "span the hammer over there is the one that lifts the high "
+               "jumper. What belongs to this one fits in 1,519 bytes &mdash; "
+               "and in the first event&rsquo;s label, which reads <b>110 "
+               "HURDLERS</b>, with the typo written into the ROM.",
+            es="Cuatro pruebas nuevas sobre el programa del cartucho anterior: "
+               "<b>el 83,4 % de sus instrucciones están aquí</b>, y el motor "
+               "que allí hacía girar el martillo es el que aquí levanta al "
+               "saltador de altura. Lo propio de éste cabe en 1.519 bytes "
+               "&mdash;y en el rótulo de la primera prueba, que dice <b>110 "
+               "HURDLERS</b>, con la errata escrita en la ROM.",
+        ),
+        datos=dict(
+            en=lambda i: (f"{cif(16384, i)} bytes &middot; <b>0</b> unexplained "
+                          f"&middot; reassembles <b>byte for byte</b> &middot; "
+                          f"{cif(9872, i)} of code, {cif(6512, i)} of data "
+                          f"&middot; {cif(647, i)} labels &middot; commented "
+                          f"to <b>29.9%</b>"),
+            es=lambda i: (f"{cif(16384, i)} bytes &middot; <b>0</b> sin explicar "
+                          f"&middot; reensambla <b>byte a byte</b> &middot; "
+                          f"{cif(9872, i)} de código, {cif(6512, i)} de datos "
+                          f"&middot; {cif(647, i)} etiquetas &middot; comentado "
+                          f"al <b>29,9 %</b>"),
+        ),
+        nota=dict(en=None, es=None),
+    ),
+    dict(
         clave="pitfall",
         titulo="Pitfall!",
         anio=1984,

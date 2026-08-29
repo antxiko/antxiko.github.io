@@ -2,9 +2,13 @@
 
 The home page: an index of the projects, in English and Spanish.
 
-Right now it lists one category, **Disassemblies** — eleven MSX games taken apart
-byte by byte — and the structure is ready for more: categories are a list in the
-generator, and the menu and the sections are built from it.
+It lists two categories, **Disassemblies** — MSX games taken apart byte by
+byte — and **Patches**, and the structure is ready for more: categories are a
+list in the generator, and the menu and the sections are built from it.
+
+The counts on the page are not written by hand anywhere: they are worked out
+from the project list, which is why they do not go stale. The same is not true
+of a number typed into this README, so there is none.
 
 ## What's here
 
