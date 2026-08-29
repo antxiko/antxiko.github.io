@@ -13,9 +13,12 @@ frases, de su README; la URL del repositorio, de su remote de git; y la URL de s
 web, del remote mas la existencia de docs/index.html. Un proyecto sin web se
 queda sin enlace de web, y no se inventa ninguna.
 
-Para anadir otra categoria de proyectos (no desensamblados): otra lista con los
-mismos campos que DESENSAMBLADOS y otra entrada en CATEGORIAS. El menu y las
-secciones se generan de esa lista.
+La pagina son secciones de primer nivel (CATEGORIAS: hoy los desensamblados y
+los parches). Una seccion puede ir en partes: la de los desensamblados lleva las
+cifras, tres grupos de juegos (Konami, exclusivos de MSX, conversiones) y el
+metodo, y cada juego dice su grupo en el campo 'grupo'. Para anadir otra clase
+de proyecto: otra lista con los mismos campos que DESENSAMBLADOS y otra entrada
+en CATEGORIAS. El menu, las secciones y sus partes se generan de esas listas.
 """
 
 import os
@@ -47,6 +50,10 @@ header.top h1 span{color:var(--rojo)}
   text-transform:uppercase}
 .proy p.enlaces a{margin-right:1.1rem}
 .proy p.enlaces em{color:var(--suave);font-style:normal}
+.parte{margin-top:3rem;scroll-margin-top:1rem}
+.parte h3{margin:0 0 1rem;font-size:.95rem;letter-spacing:.1em;text-transform:uppercase;
+  color:var(--oro)}
+.parte h3 span{color:var(--suave);font-size:12px;letter-spacing:.08em;margin-left:.6rem}
 """
 
 
@@ -66,13 +73,14 @@ def cif(n, idioma):
 DESENSAMBLADOS = [
     dict(
         clave="timepilot",
+        grupo="konami",
         titulo="Time Pilot",
         anio=1983,
         repo="https://github.com/antxiko/TimePilot-disassembly",
         web="https://antxiko.github.io/TimePilot-disassembly/",
         meta=dict(
-            en="Konami &middot; MSX1 &middot; 16 KB cartridge &middot; RC-703",
-            es="Konami &middot; MSX1 &middot; cartucho de 16 KB &middot; RC-703",
+            en="Konami &middot; MSX &middot; 16 KB cartridge &middot; RC-703",
+            es="Konami &middot; MSX &middot; cartucho de 16 KB &middot; RC-703",
         ),
         claim=dict(
             en="The plane does not move: it turns, one step at a time between "
@@ -105,13 +113,14 @@ DESENSAMBLADOS = [
     ),
     dict(
         clave="frogger",
+        grupo="konami",
         titulo="Frogger",
         anio=1983,
         repo="https://github.com/antxiko/Frogger-disassembly",
         web="https://antxiko.github.io/Frogger-disassembly/",
         meta=dict(
-            en="Konami &middot; MSX1 &middot; 8 KB cartridge &middot; RC-704",
-            es="Konami &middot; MSX1 &middot; cartucho de 8 KB &middot; RC-704",
+            en="Konami &middot; MSX &middot; 8 KB cartridge &middot; RC-704",
+            es="Konami &middot; MSX &middot; cartucho de 8 KB &middot; RC-704",
         ),
         claim=dict(
             en="Half the size of any other Konami cartridge here, and it "
@@ -141,13 +150,14 @@ DESENSAMBLADOS = [
     ),
     dict(
         clave="supercobra",
+        grupo="konami",
         titulo="Super Cobra",
         anio=1983,
         repo="https://github.com/antxiko/SuperCobra-disassembly",
         web="https://antxiko.github.io/SuperCobra-disassembly/",
         meta=dict(
-            en="Konami &middot; MSX1 &middot; 8 KB cartridge &middot; RC-705",
-            es="Konami &middot; MSX1 &middot; cartucho de 8 KB &middot; RC-705",
+            en="Konami &middot; MSX &middot; 8 KB cartridge &middot; RC-705",
+            es="Konami &middot; MSX &middot; cartucho de 8 KB &middot; RC-705",
         ),
         claim=dict(
             en="The main thread does nothing: it hooks the interrupt and "
@@ -179,13 +189,14 @@ DESENSAMBLADOS = [
     ),
     dict(
         clave="athletic",
+        grupo="konami",
         titulo="Athletic Land",
         anio=1984,
         repo="https://github.com/antxiko/AthleticLand-disassembly",
         web="https://antxiko.github.io/AthleticLand-disassembly/",
         meta=dict(
-            en="Konami &middot; MSX1 &middot; 16 KB cartridge &middot; RC-700",
-            es="Konami &middot; MSX1 &middot; cartucho de 16 KB &middot; RC-700",
+            en="Konami &middot; MSX &middot; 16 KB cartridge &middot; RC-700",
+            es="Konami &middot; MSX &middot; cartucho de 16 KB &middot; RC-700",
         ),
         claim=dict(
             en="Konami's first MSX cartridge. The game is a table of thirty-two "
@@ -212,13 +223,14 @@ DESENSAMBLADOS = [
     ),
     dict(
         clave="antarctic",
+        grupo="konami",
         titulo="Antarctic Adventure",
         anio=1984,
         repo="https://github.com/antxiko/AntarcticAdventure-disassembly",
         web="https://antxiko.github.io/AntarcticAdventure-disassembly/",
         meta=dict(
-            en="Konami &middot; MSX1 &middot; 16 KB cartridge &middot; RC-701",
-            es="Konami &middot; MSX1 &middot; cartucho de 16 KB &middot; RC-701",
+            en="Konami &middot; MSX &middot; 16 KB cartridge &middot; RC-701",
+            es="Konami &middot; MSX &middot; cartucho de 16 KB &middot; RC-701",
         ),
         claim=dict(
             en="Three different builds of this cartridge are taken apart here, "
@@ -249,13 +261,14 @@ DESENSAMBLADOS = [
     ),
     dict(
         clave="monkey",
+        grupo="konami",
         titulo="Monkey Academy",
         anio=1984,
         repo="https://github.com/antxiko/MonkeyAcademy-disassembly",
         web="https://antxiko.github.io/MonkeyAcademy-disassembly/",
         meta=dict(
-            en="Konami &middot; MSX1 &middot; 16 KB cartridge &middot; RC-702",
-            es="Konami &middot; MSX1 &middot; cartucho de 16 KB &middot; RC-702",
+            en="Konami &middot; MSX &middot; 16 KB cartridge &middot; RC-702",
+            es="Konami &middot; MSX &middot; cartucho de 16 KB &middot; RC-702",
         ),
         claim=dict(
             en="Konami's arithmetic cartridge. The five levels are five scripts "
@@ -281,13 +294,14 @@ DESENSAMBLADOS = [
     ),
     dict(
         clave="billiards",
+        grupo="konami",
         titulo="Konami&rsquo;s Billiards",
         anio=1984,
         repo="https://github.com/antxiko/KonamisBilliards-disassembly",
         web="https://antxiko.github.io/KonamisBilliards-disassembly/",
         meta=dict(
-            en="Konami &middot; MSX1 &middot; 16 KB cartridge &middot; RC-706",
-            es="Konami &middot; MSX1 &middot; cartucho de 16 KB &middot; RC-706",
+            en="Konami &middot; MSX &middot; 16 KB cartridge &middot; RC-706",
+            es="Konami &middot; MSX &middot; cartucho de 16 KB &middot; RC-706",
         ),
         claim=dict(
             en="Collision physics in the eight kilobytes the game uses: trigonometry by slope, "
@@ -322,13 +336,14 @@ DESENSAMBLADOS = [
     ),
     dict(
         clave="mahjong",
+        grupo="konami",
         titulo="Konami&rsquo;s Mahjong Dojo",
         anio=1984,
         repo="https://github.com/antxiko/KonamisMahjongDojo-disassembly",
         web="https://antxiko.github.io/KonamisMahjongDojo-disassembly/",
         meta=dict(
-            en="Konami &middot; MSX1 &middot; 32 KB cartridge &middot; RC-707",
-            es="Konami &middot; MSX1 &middot; cartucho de 32 KB &middot; RC-707",
+            en="Konami &middot; MSX &middot; 32 KB cartridge &middot; RC-707",
+            es="Konami &middot; MSX &middot; cartucho de 32 KB &middot; RC-707",
         ),
         claim=dict(
             en="The whole game runs <b>inside the interrupt</b> &mdash; the deal, the "
@@ -364,13 +379,14 @@ DESENSAMBLADOS = [
     ),
     dict(
         clave="hyperolympic1",
+        grupo="konami",
         titulo="Hyper Olympic 1",
         anio=1984,
         repo="https://github.com/antxiko/HyperOlympic1-disassembly",
         web="https://antxiko.github.io/HyperOlympic1-disassembly/",
         meta=dict(
-            en="Konami &middot; MSX1 &middot; 16 KB cartridge &middot; RC-710",
-            es="Konami &middot; MSX1 &middot; cartucho de 16 KB &middot; RC-710",
+            en="Konami &middot; MSX &middot; 16 KB cartridge &middot; RC-710",
+            es="Konami &middot; MSX &middot; cartucho de 16 KB &middot; RC-710",
         ),
         claim=dict(
             en="Almost nothing here is drawn: the screens are scripts that get "
@@ -402,13 +418,14 @@ DESENSAMBLADOS = [
     ),
     dict(
         clave="hyperolympic2",
+        grupo="konami",
         titulo="Hyper Olympic 2",
         anio=1984,
         repo="https://github.com/antxiko/HyperOlympic2-disassembly",
         web="https://antxiko.github.io/HyperOlympic2-disassembly/",
         meta=dict(
-            en="Konami &middot; MSX1 &middot; 16 KB cartridge &middot; RC-711",
-            es="Konami &middot; MSX1 &middot; cartucho de 16 KB &middot; RC-711",
+            en="Konami &middot; MSX &middot; 16 KB cartridge &middot; RC-711",
+            es="Konami &middot; MSX &middot; cartucho de 16 KB &middot; RC-711",
         ),
         claim=dict(
             en="Four new events on the previous cartridge&rsquo;s program: "
@@ -440,13 +457,14 @@ DESENSAMBLADOS = [
     ),
     dict(
         clave="pitfall",
+        grupo="ports",
         titulo="Pitfall!",
         anio=1984,
         repo="https://github.com/antxiko/Pitfall-MSX-disassembly",
         web="https://antxiko.github.io/Pitfall-MSX-disassembly/",
         meta=dict(
-            en="Activision &middot; MSX1 &middot; 16 KB cartridge",
-            es="Activision &middot; MSX1 &middot; cartucho de 16 KB",
+            en="Activision &middot; MSX &middot; 16 KB cartridge",
+            es="Activision &middot; MSX &middot; cartucho de 16 KB",
         ),
         claim=dict(
             en="There is no map inside: the jungle's 255 screens come out of an "
@@ -473,13 +491,14 @@ DESENSAMBLADOS = [
     ),
     dict(
         clave="pippols",
+        grupo="konami",
         titulo="Pippols",
         anio=1985,
         repo="https://github.com/antxiko/Pippols-disassembly",
         web="https://antxiko.github.io/Pippols-disassembly/",
         meta=dict(
-            en="Konami &middot; MSX1 &middot; 16 KB cartridge &middot; RC-729",
-            es="Konami &middot; MSX1 &middot; cartucho de 16 KB &middot; RC-729",
+            en="Konami &middot; MSX &middot; 16 KB cartridge &middot; RC-729",
+            es="Konami &middot; MSX &middot; cartucho de 16 KB &middot; RC-729",
         ),
         claim=dict(
             en="It scrolls one pixel at a time in a video mode with no scroll "
@@ -508,13 +527,14 @@ DESENSAMBLADOS = [
     ),
     dict(
         clave="demonia",
+        grupo="msx-exclusive",
         titulo="Demonia",
         anio=1986,
         repo="https://github.com/antxiko/Demonia-disassembly",
         web="https://antxiko.github.io/Demonia-disassembly/",
         meta=dict(
-            en="Microids &middot; MSX1 &middot; 58,334-byte cassette",
-            es="Microids &middot; MSX1 &middot; cinta de 58.334 bytes",
+            en="Microids &middot; MSX &middot; 58,334-byte cassette",
+            es="Microids &middot; MSX &middot; cinta de 58.334 bytes",
         ),
         claim=dict(
             en="It does not fit in the RAM an MSX booted into BASIC can see, so "
@@ -553,14 +573,15 @@ DESENSAMBLADOS = [
     ),
     dict(
         clave="f1spirit",
+        grupo="konami",
         titulo="F-1 Spirit &mdash; The Way to Formula 1",
         anio=1987,
         terminado=False,
         repo="https://github.com/antxiko/F1Spirit-disassembly",
         web="https://antxiko.github.io/F1Spirit-disassembly/",
         meta=dict(
-            en="Konami &middot; MSX1 &middot; 128 KB MegaROM &middot; RC-752",
-            es="Konami &middot; MSX1 &middot; MegaROM de 128 KB &middot; RC-752",
+            en="Konami &middot; MSX &middot; 128 KB MegaROM &middot; RC-752",
+            es="Konami &middot; MSX &middot; MegaROM de 128 KB &middot; RC-752",
         ),
         claim=dict(
             en="The first MegaROM in this series, with the Konami SCC mapper and "
@@ -603,13 +624,14 @@ DESENSAMBLADOS = [
     ),
     dict(
         clave="colt36",
+        grupo="msx-exclusive",
         titulo="Colt 36",
         anio=1987,
         repo="https://github.com/antxiko/Colt36-disassembly",
         web="https://antxiko.github.io/Colt36-disassembly/",
         meta=dict(
-            en="Topo Soft &middot; MSX1 &middot; cassette tape",
-            es="Topo Soft &middot; MSX1 &middot; cinta de cassette",
+            en="Topo Soft &middot; MSX &middot; cassette tape",
+            es="Topo Soft &middot; MSX &middot; cinta de cassette",
         ),
         claim=dict(
             en="The game turned out to be written in BASIC: a tokenised MSX-BASIC "
@@ -639,6 +661,7 @@ DESENSAMBLADOS = [
     ),
     dict(
         clave="stardust",
+        grupo="ports",
         titulo="Stardust",
         anio=1987,
         repo="https://github.com/antxiko/Stardust-MSX-disassembly",
@@ -673,6 +696,7 @@ DESENSAMBLADOS = [
     ),
     dict(
         clave="temptations",
+        grupo="msx-exclusive",
         titulo="Temptations",
         anio=1988,
         repo="https://github.com/antxiko/temptations-disassembly",
@@ -708,6 +732,7 @@ DESENSAMBLADOS = [
     ),
     dict(
         clave="alehop",
+        grupo="msx-exclusive",
         titulo="Ale Hop!",
         anio=1988,
         repo="https://github.com/antxiko/AleHop-disassembly",
@@ -745,13 +770,14 @@ DESENSAMBLADOS = [
     ),
     dict(
         clave="war",
+        grupo="ports",
         titulo="War in Middle Earth",
         anio=1989,
         repo="https://github.com/antxiko/WarinMiddleEarth-MSX-disassembly",
         web="https://antxiko.github.io/WarinMiddleEarth-MSX-disassembly/",
         meta=dict(
-            en="Melbourne House / Dro Soft &middot; MSX1 &middot; 62,261-byte cassette",
-            es="Melbourne House / Dro Soft &middot; MSX1 &middot; cinta de 62.261 bytes",
+            en="Melbourne House / Dro Soft &middot; MSX &middot; 62,261-byte cassette",
+            es="Melbourne House / Dro Soft &middot; MSX &middot; cinta de 62.261 bytes",
         ),
         claim=dict(
             en="A ZX Spectrum conversion that brought the whole tape system across "
@@ -791,6 +817,25 @@ DESENSAMBLADOS = [
     ),
 ]
 
+# Los desensamblados van en tres grupos, cada uno una parte de su seccion. Aqui
+# esta el orden y el rotulo de cada grupo; a que grupo va cada juego lo dice el
+# propio juego en 'grupo'. Un grupo que no este aqui, o que se quede sin juegos,
+# para la generacion (ver comprueba()).
+GRUPOS = [
+    dict(id="konami", titulo=dict(en="Konami", es="Konami")),
+    dict(id="msx-exclusive", titulo=dict(en="MSX Exclusive", es="Exclusivos de MSX")),
+    dict(id="ports", titulo=dict(en="Ports", es="Conversiones")),
+]
+
+
+def del_grupo(gid):
+    return [p for p in DESENSAMBLADOS if p.get("grupo") == gid]
+
+
+def es_cinta(p):
+    return "cinta" in p["meta"]["es"]
+
+
 # LOS PARCHES. Otra clase de proyecto: aqui no se documenta un cartucho, se
 # MODIFICA. Van en su propia seccion y NO cuentan en las cifras de la serie de
 # desensamblados, que son de juegos desmontados.
@@ -802,8 +847,8 @@ PARCHES = [
         repo="https://github.com/antxiko/KonamisMahjongDojo-ENPatch",
         web="https://antxiko.github.io/KonamisMahjongDojo-ENPatch/",
         meta=dict(
-            en="Konami &middot; MSX1 &middot; RC-707 &middot; IPS patch, unofficial",
-            es="Konami &middot; MSX1 &middot; RC-707 &middot; parche IPS, extraoficial",
+            en="Konami &middot; MSX &middot; RC-707 &middot; IPS patch, unofficial",
+            es="Konami &middot; MSX &middot; RC-707 &middot; parche IPS, extraoficial",
         ),
         claim=dict(
             en="The cartridge is in Japanese, and so is the screen that tells you "
@@ -847,13 +892,45 @@ PARCHES = [
 # publicado. Ojo: 'nota' NO sirve para esto, porque la llevan tambien los
 # terminados que tienen alguna pregunta abierta.
 N_JUEGOS = len(DESENSAMBLADOS)
-N_CINTAS = sum(1 for p in DESENSAMBLADOS if "cinta" in p["meta"]["es"])
+N_CINTAS = sum(1 for p in DESENSAMBLADOS if es_cinta(p))
 N_CARTUCHOS = N_JUEGOS - N_CINTAS
 N_TERMINADOS = sum(1 for p in DESENSAMBLADOS if p.get("terminado", True))
 N_CON_WEB = sum(1 for p in DESENSAMBLADOS if p.get("web"))
 ANIOS = "%d-%d" % (min(p["anio"] for p in DESENSAMBLADOS),
                    max(p["anio"] for p in DESENSAMBLADOS))
 
+# Rotulo de cuenta de un grupo: '12 cartridges', '4 tapes' o, si hay de las dos
+# clases, '3 games'. Sale de la lista, como las demas cuentas.
+CUENTA = dict(
+    en=dict(cinta=("tape", "tapes"), cartucho=("cartridge", "cartridges"),
+            juego=("game", "games")),
+    es=dict(cinta=("cinta", "cintas"), cartucho=("cartucho", "cartuchos"),
+            juego=("juego", "juegos")),
+)
+
+
+def cuenta(proyectos, idioma):
+    n = len(proyectos)
+    cintas = sum(1 for p in proyectos if es_cinta(p))
+    clase = "cinta" if cintas == n else "cartucho" if cintas == 0 else "juego"
+    return f"{n} {CUENTA[idioma][clase][n != 1]}"
+
+
+def html_cifras(idioma, t):
+    return ('<div class="cifras">'
+            + "".join(f'<div class="cifra"><b>{v}</b><span>{e}</span></div>'
+                      for v, e in t["cifras"])
+            + '</div>')
+
+
+def html_metodo(idioma, t):
+    return '<div class="n">' + "".join(f"<p>{x}</p>" for x in t["met"]) + '</div>'
+
+
+# Las secciones de primer nivel. Una seccion lleva o bien solo 'proyectos' (una
+# rejilla) o bien ademas 'partes': subsecciones con ancla y rotulo propio, cada
+# una con sus 'proyectos' o con un 'html' (idioma, textos) -> html. La seccion
+# gana entonces un menu propio para saltar entre partes.
 CATEGORIAS = [
     dict(
         id="disassemblies",
@@ -872,6 +949,16 @@ CATEGORIAS = [
                f"marcha lo dicen.",
         ),
         proyectos=DESENSAMBLADOS,
+        partes=[
+            dict(id="numbers",
+                 titulo=dict(en="The series in numbers", es="La serie en cifras"),
+                 html=html_cifras),
+            *[dict(id=g["id"], titulo=g["titulo"], proyectos=del_grupo(g["id"]))
+              for g in GRUPOS],
+            dict(id="method",
+                 titulo=dict(en="How they are made", es="Cómo están hechos"),
+                 html=html_metodo),
+        ],
     ),
     dict(
         id="patches",
@@ -892,7 +979,8 @@ CATEGORIAS = [
         proyectos=PARCHES,
     ),
     # Para anadir otra categoria: una lista de proyectos con estos mismos campos
-    # y otra entrada aqui. El menu y las secciones salen de esta lista.
+    # y otra entrada aqui, con 'partes' si las necesita. El menu y las secciones
+    # salen de esta lista.
 ]
 
 TXT = dict(
@@ -903,18 +991,16 @@ TXT = dict(
               "show, and the source has to give the original back, byte for byte. "
               f"Right now that means {N_JUEGOS} MSX games.",
         ficha=[f"<b>{N_JUEGOS}</b> games", f"<b>{ANIOS}</b>",
-               "MSX &middot; MSX1",
+               "MSX",
                f"<b>{N_CINTAS}</b> tapes &middot; <b>{N_CARTUCHOS}</b> cartridges"],
-        menu_num="The numbers", menu_met="How they are made", menu_gh="GitHub",
+        menu_gh="GitHub",
         otro=("es/", "En castellano"),
-        h_num="The series in numbers",
         cifras=[(str(N_JUEGOS), "games taken apart"),
                 (str(N_TERMINADOS), "finished at 100%"),
                 (str(N_CON_WEB), "with a website"),
                 (str(N_CINTAS), "cassette tapes"),
                 (str(N_CARTUCHOS), "cartridges"),
                 ("3", "builds of Antarctic Adventure")],
-        h_met="How they are made",
         met=["Every project follows the same rule: nothing gets claimed that the "
              "binary does not show. <code>make</code> extracts the game from the "
              "tape or the cartridge, traces the code from its real entry points, "
@@ -949,18 +1035,16 @@ TXT = dict(
               "binario no enseñe, y el código fuente tiene que devolver el "
               f"original, byte a byte. Ahora mismo son {N_JUEGOS} juegos de MSX.",
         ficha=[f"<b>{N_JUEGOS}</b> juegos", f"<b>{ANIOS}</b>",
-               "MSX &middot; MSX1",
+               "MSX",
                f"<b>{N_CINTAS}</b> cintas &middot; <b>{N_CARTUCHOS}</b> cartuchos"],
-        menu_num="Las cifras", menu_met="Cómo están hechos", menu_gh="GitHub",
+        menu_gh="GitHub",
         otro=("../", "In English"),
-        h_num="La serie en cifras",
         cifras=[(str(N_JUEGOS), "juegos desmontados"),
                 (str(N_TERMINADOS), "terminados al 100 %"),
                 (str(N_CON_WEB), "con web publicada"),
                 (str(N_CINTAS), "cintas de cassette"),
                 (str(N_CARTUCHOS), "cartuchos"),
                 ("3", "compilaciones de Antarctic Adventure")],
-        h_met="Cómo están hechos",
         met=["Todos los proyectos siguen la misma regla: no se afirma nada que el "
              "binario no enseñe. <code>make</code> extrae el juego de la cinta o "
              "del cartucho, traza el código desde sus puntos de entrada de verdad, "
@@ -1011,31 +1095,70 @@ def tarjeta(p, idioma, t):
             '</article>')
 
 
+def rejilla(proyectos, idioma, t):
+    return ('<div class="proyectos">'
+            + "".join(tarjeta(p, idioma, t) for p in proyectos) + '</div>')
+
+
+def seccion(c, idioma, t):
+    """Una seccion de primer nivel: rotulo, intro y, o bien la rejilla de sus
+    proyectos, o bien sus partes con un menu propio para saltar entre ellas."""
+    partes = c.get("partes")
+    if not partes:
+        cuerpo = f'  {rejilla(c["proyectos"], idioma, t)}\n'
+    else:
+        cuerpo = ('  <nav class="docs">'
+                  + "".join(f'<a href="#{p["id"]}">{p["titulo"][idioma]}</a>'
+                            for p in partes)
+                  + '</nav>\n')
+        for p in partes:
+            if "proyectos" in p:
+                rotulo = (f'{p["titulo"][idioma]} '
+                          f'<span>{cuenta(p["proyectos"], idioma)}</span>')
+                dentro = rejilla(p["proyectos"], idioma, t)
+            else:
+                rotulo = p["titulo"][idioma]
+                dentro = p["html"](idioma, t)
+            cuerpo += (f'  <div class="parte" id="{p["id"]}">\n'
+                       f'    <h3>{rotulo}</h3>\n'
+                       f'    {dentro}\n'
+                       f'  </div>\n')
+    return (f'\n<section id="{c["id"]}">\n'
+            f'  <h2>{c["titulo"][idioma]}</h2>\n'
+            f'  <p class="n" style="margin-bottom:2rem;color:var(--suave)">'
+            f'{c["intro"][idioma]}</p>\n'
+            f'{cuerpo}'
+            f'</section>\n')
+
+
+def comprueba():
+    """Que al repartir una seccion en partes no se pierda ni se repita nada."""
+    ids = [g["id"] for g in GRUPOS]
+    for p in DESENSAMBLADOS:
+        if p.get("grupo") not in ids:
+            raise SystemExit(f"{p['clave']}: grupo {p.get('grupo')!r} no esta en GRUPOS")
+    for c in CATEGORIAS:
+        for parte in c.get("partes", []):
+            if "proyectos" in parte and not parte["proyectos"]:
+                raise SystemExit(f"{c['id']}/{parte['id']}: parte sin proyectos")
+        if c.get("partes"):
+            repartidos = sorted(p["clave"] for parte in c["partes"]
+                                for p in parte.get("proyectos", []))
+            if repartidos != sorted(p["clave"] for p in c["proyectos"]):
+                raise SystemExit(f"{c['id']}: las partes no reparten exactamente "
+                                 f"sus proyectos")
+
+
 def pagina(idioma):
     t = TXT[idioma]
-    menu = [("#numbers", t["menu_num"])]
-    menu += [("#" + c["id"], c["menu"][idioma]) for c in CATEGORIAS]
-    menu += [("#method", t["menu_met"]),
-             ("https://github.com/" + USUARIO, t["menu_gh"])]
+    menu = [("#" + c["id"], c["menu"][idioma]) for c in CATEGORIAS]
+    menu.append(("https://github.com/" + USUARIO, t["menu_gh"]))
     nav = "".join(f'<a href="{h}">{x}</a>' for h, x in menu)
     nav += (f'<a href="{t["otro"][0]}" style="margin-left:auto;color:var(--oro)">'
             f'{t["otro"][1]}</a>')
 
-    cifras = "".join(f'<div class="cifra"><b>{v}</b><span>{e}</span></div>'
-                     for v, e in t["cifras"])
     ficha = "".join(f"<span>{x}</span>" for x in t["ficha"])
-
-    secciones = ""
-    for c in CATEGORIAS:
-        tarjetas = "".join(tarjeta(p, idioma, t) for p in c["proyectos"])
-        secciones += (f'\n<section id="{c["id"]}">\n'
-                      f'  <h2>{c["titulo"][idioma]}</h2>\n'
-                      f'  <p class="n" style="margin-bottom:2rem;color:var(--suave)">'
-                      f'{c["intro"][idioma]}</p>\n'
-                      f'  <div class="proyectos">{tarjetas}</div>\n'
-                      f'</section>\n')
-
-    metodo = "".join(f"<p>{x}</p>" for x in t["met"])
+    secciones = "".join(seccion(c, idioma, t) for c in CATEGORIAS)
 
     return f"""<meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
@@ -1049,23 +1172,14 @@ def pagina(idioma):
   <div class="ficha">{ficha}</div>
 </header>
 <nav>{nav}</nav>
-
-<section id="numbers">
-  <h2>{t['h_num']}</h2>
-  <div class="cifras">{cifras}</div>
-</section>
 {secciones}
-<section id="method">
-  <h2>{t['h_met']}</h2>
-  <div class="n">{metodo}</div>
-</section>
-
 <footer>{t['pie']}</footer>
 </div>
 """
 
 
 def main():
+    comprueba()
     raiz = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
     for idioma, ruta in (("en", "index.html"), ("es", "es/index.html")):
         destino = os.path.join(raiz, ruta)

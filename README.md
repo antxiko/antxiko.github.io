@@ -2,9 +2,10 @@
 
 The home page: an index of the projects, in English and Spanish.
 
-It lists two categories, **Disassemblies** — MSX games taken apart byte by
-byte — and **Patches**, and the structure is ready for more: categories are a
-list in the generator, and the menu and the sections are built from it.
+It has two sections: **Disassemblies** — MSX games taken apart byte by byte,
+in three groups, Konami, MSX Exclusive and Ports — and **Patches**. The
+structure is ready for more: the sections, their parts and the menus are built
+from lists in the generator.
 
 The counts on the page are not written by hand anywhere: they are worked out
 from the project list, which is why they do not go stale. The same is not true
@@ -55,11 +56,22 @@ card, kept in `EXTRA` inside the generator and built out of the same variables
 (`--panel`, `--linea`, `--oro`…) and the same grid mechanism as the figure
 tiles, so it sits in light and dark themes exactly like the rest.
 
-## Adding a category
+## Adding a project, a group or a category
 
-In `tools/make_index.py`, write another list of projects with the same fields as
-`DESENSAMBLADOS`, add an entry to `CATEGORIAS` with its id, its menu label and
-its two-language title, and rebuild. The nav and the sections follow.
+All of it in `tools/make_index.py`:
+
+- **a disassembly** is an entry in `DESENSAMBLADOS` with its `grupo` —
+  `konami`, `msx-exclusive` or `ports`. The generator refuses a group it does
+  not know, a group left empty, and a project lost or listed twice;
+- **a group** is an entry in `GRUPOS`: its id and its title in both languages;
+- **another class of project** is another list with the same fields as
+  `DESENSAMBLADOS` and an entry in `CATEGORIAS` with its id, its menu label,
+  its two-language title and, if it needs them, its parts.
+
+Rebuild, and the menus and the sections follow. `python -m unittest discover
+-s tests` checks the result: balanced HTML, links and anchors that lead
+somewhere, every repository once and in its group, and both languages with the
+same structure and the same figures.
 
 ## Notice
 
