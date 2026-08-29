@@ -747,44 +747,46 @@ DESENSAMBLADOS = [
         clave="war",
         titulo="War in Middle Earth",
         anio=1989,
-        terminado=False,
-        repo=None,
-        web=None,
+        repo="https://github.com/antxiko/WarinMiddleEarth-MSX-disassembly",
+        web="https://antxiko.github.io/WarinMiddleEarth-MSX-disassembly/",
         meta=dict(
-            en="Melbourne House / Dro Soft &middot; MSX1 &middot; cassette tape",
-            es="Melbourne House / Dro Soft &middot; MSX1 &middot; cinta de cassette",
+            en="Melbourne House / Dro Soft &middot; MSX1 &middot; 62,261-byte cassette",
+            es="Melbourne House / Dro Soft &middot; MSX1 &middot; cinta de 62.261 bytes",
         ),
         claim=dict(
-            en="In progress, and parked. It runs with all four pages in RAM and no "
-               "BIOS at all, loaded by a Spectrum-style loader that hunts for RAM "
-               "page by page; the five listings already reassemble byte for byte "
-               "and the relocation was confirmed in the emulator. What is missing "
-               "is the low block's graphics, which nothing has yet been seen to "
-               "read: it waits on a full recorded game reaching the battle and the "
-               "load/save screens.",
-            es="En marcha, y aparcado. Corre con las cuatro páginas en RAM y sin "
-               "BIOS, cargado por un cargador estilo Spectrum que busca RAM página "
-               "por página; los cinco listados ya reensamblan byte a byte y la "
-               "recolocación se confirmó en el emulador. Lo que falta son los "
-               "gráficos del bloque bajo, que todavía no se ha visto quién los lee: "
-               "espera una partida completa grabada que llegue a la batalla y a las "
-               "pantallas de cargar y salvar.",
+            en="A ZX Spectrum conversion that brought the whole tape system across "
+               "&mdash; Spectrum blocks, a hand-written LD-BYTES &mdash; along with "
+               "the colour attribute glued behind every map tile, which is why they "
+               "are nine bytes long and not eight. It even brought the beeper sound "
+               "engine, and then nothing ever calls it: the four places that ask for "
+               "a sound effect all land on a bare <code>ret</code>, and of the MSX&rsquo;s "
+               "PSG only the two joystick registers are ever written. The game is "
+               "silent.",
+            es="Una conversión del ZX Spectrum que se trajo el sistema de cinta "
+               "entero &mdash;bloques del Spectrum, un LD-BYTES escrito a mano&mdash; "
+               "y el atributo de color pegado detrás de cada tile del mapa, que por "
+               "eso ocupan nueve bytes y no ocho. Se trajo hasta el motor de sonido "
+               "del altavoz, y luego no lo llama nadie: los cuatro sitios que piden "
+               "un efecto acaban en un <code>ret</code> pelado, y del PSG del MSX "
+               "solo se escriben los dos registros del joystick. El juego es mudo.",
         ),
         datos=dict(
-            en=lambda i: (f"{cif(48437, i)} of {cif(62261, i)} bytes explained "
-                          f"(<b>77.80%</b>) &middot; <b>five listings</b>, all "
-                          f"<b>byte for byte</b> &middot; {cif(13824, i)} bytes of "
-                          f"graphics with no reader found yet"),
-            es=lambda i: (f"{cif(48437, i)} de {cif(62261, i)} bytes explicados "
-                          f"(<b>77,80 %</b>) &middot; <b>cinco listados</b>, todos "
-                          f"<b>byte a byte</b> &middot; {cif(13824, i)} bytes de "
-                          f"gráficos sin lector conocido todavía"),
+            en=lambda i: (f"{cif(62261, i)} bytes &middot; <b>0</b> unexplained "
+                          f"&middot; <b>five listings</b>, all <b>byte for byte</b> "
+                          f"&middot; {cif(11814, i)} of code, {cif(50191, i)} of data "
+                          f"&middot; {cif(819, i)} labels &middot; commented at "
+                          f"<b>29.7%</b>, no routine below 10%"),
+            es=lambda i: (f"{cif(62261, i)} bytes &middot; <b>0</b> sin explicar "
+                          f"&middot; <b>cinco listados</b>, todos <b>byte a byte</b> "
+                          f"&middot; {cif(11814, i)} de código, {cif(50191, i)} de datos "
+                          f"&middot; {cif(819, i)} etiquetas &middot; comentado al "
+                          f"<b>29,7 %</b>, ninguna rutina por debajo del 10 %"),
         ),
         nota=dict(
-            en="unfinished: the repository is a private backup, and there is no "
-               "site yet",
-            es="sin terminar: el repositorio es un respaldo privado y todavía no "
-               "tiene web",
+            en="the loading screen on its site is not a screenshot: it is drawn from "
+               "the tape, credits and all",
+            es="la pantalla de carga de su web no es una captura: está dibujada desde "
+               "la cinta, con sus créditos y todo",
         ),
     ),
 ]
