@@ -668,6 +668,56 @@ DESENSAMBLADOS = [
     ),
 ]
 
+# LOS PARCHES. Otra clase de proyecto: aqui no se documenta un cartucho, se
+# MODIFICA. Van en su propia seccion y NO cuentan en las cifras de la serie de
+# desensamblados, que son de juegos desmontados.
+PARCHES = [
+    dict(
+        clave="mahjong-en",
+        titulo="Konami&rsquo;s Mahjong Dojo &mdash; English patch",
+        anio=1984,
+        repo="https://github.com/antxiko/KonamisMahjongDojo-ENPatch",
+        web="https://antxiko.github.io/KonamisMahjongDojo-ENPatch/",
+        meta=dict(
+            en="Konami &middot; MSX1 &middot; RC-707 &middot; IPS patch, unofficial",
+            es="Konami &middot; MSX1 &middot; RC-707 &middot; parche IPS, extraoficial",
+        ),
+        claim=dict(
+            en="The cartridge is in Japanese, and so is the screen that tells you "
+               "why you won. This puts every screen you have to read into English "
+               "<b>without changing one instruction of the game</b> &mdash; and "
+               "gives it the tutorial it never had: <b>twenty attract screens</b> "
+               "with all thirty-four tiles drawn, hooked on with a single "
+               "<code>jp</code>. The room came from a gap the cartridge leaves "
+               "inside its own tiles, and the centre of the screen writes "
+               "<b>two letters per character cell</b> to fit.",
+            es="El cartucho está en japonés, y la pantalla que dice por qué has "
+               "ganado también. Esto pasa al inglés todas las pantallas que hay "
+               "que leer <b>sin cambiar ni una instrucción del juego</b> &mdash;y "
+               "de paso le pone el tutorial que nunca tuvo: <b>veinte pantallas</b> "
+               "en el modo attract con las treinta y cuatro fichas dibujadas, "
+               "enganchadas con un solo <code>jp</code>&mdash;. El sitio salió del "
+               "hueco que el cartucho deja dentro de sus propias fichas, y el "
+               "centro de la pantalla escribe <b>dos letras por celda</b> para que "
+               "quepa.",
+        ),
+        datos=dict(
+            en=lambda i: (f"{cif(11777, i)} bytes changed in <b>44</b> blocks "
+                          f"&middot; <b>0</b> outside them &middot; "
+                          f"{cif(12279, i)}-byte IPS &middot; <b>20</b> tutorial "
+                          f"screens &middot; no ROM distributed"),
+            es=lambda i: (f"{cif(11777, i)} bytes cambiados en <b>44</b> bloques "
+                          f"&middot; <b>0</b> fuera de ellos &middot; IPS de "
+                          f"{cif(12279, i)} bytes &middot; <b>20</b> pantallas de "
+                          f"tutorial &middot; no se distribuye ninguna ROM"),
+        ),
+        nota=dict(
+            en="work in progress: playable, but not finished",
+            es="trabajo en curso: se juega, pero no está terminado",
+        ),
+    ),
+]
+
 # Las cuentas de la cabecera salen de la lista, no de escribirlas a mano: al
 # anadir un proyecto se ponen al dia solas. Un proyecto lleva 'terminado=False'
 # cuando no esta al 100 %, y 'web' a None cuando todavia no tiene sitio
@@ -699,6 +749,24 @@ CATEGORIAS = [
                f"marcha lo dicen.",
         ),
         proyectos=DESENSAMBLADOS,
+    ),
+    dict(
+        id="patches",
+        titulo=dict(en="The patches", es="Los parches"),
+        menu=dict(en="Patches", es="Parches"),
+        intro=dict(
+            en="What comes after understanding a cartridge: changing it. Same "
+               "rule as the disassemblies &mdash; the build has to prove that "
+               "outside the blocks it declares, the ROM is identical to the "
+               "original. What is distributed is the difference file, never a "
+               "cartridge image.",
+            es="Lo que viene después de entender un cartucho: cambiarlo. Con la "
+               "misma regla que los desensamblados &mdash;la construcción tiene "
+               "que demostrar que, fuera de los bloques que declara, la ROM es "
+               "idéntica a la original&mdash;. Lo que se distribuye es el fichero "
+               "de diferencias, nunca una imagen de cartucho.",
+        ),
+        proyectos=PARCHES,
     ),
     # Para anadir otra categoria: una lista de proyectos con estos mismos campos
     # y otra entrada aqui. El menu y las secciones salen de esta lista.
