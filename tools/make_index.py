@@ -321,6 +321,48 @@ DESENSAMBLADOS = [
         nota=dict(en=None, es=None),
     ),
     dict(
+        clave="mahjong",
+        titulo="Konami&rsquo;s Mahjong Dojo",
+        anio=1984,
+        repo="https://github.com/antxiko/KonamisMahjongDojo-disassembly",
+        web="https://antxiko.github.io/KonamisMahjongDojo-disassembly/",
+        meta=dict(
+            en="Konami &middot; MSX1 &middot; 32 KB cartridge &middot; RC-707",
+            es="Konami &middot; MSX1 &middot; cartucho de 32 KB &middot; RC-707",
+        ),
+        claim=dict(
+            en="The whole game runs <b>inside the interrupt</b> &mdash; the deal, the "
+               "scoring, the screens &mdash; while the main program is an "
+               "<code>ei / jr $</code> that never gets the machine back. And the "
+               "computer <b>does not play mahjong</b>: its thirteen tiles are "
+               "written into the cartridge one away from completion, and the tile "
+               "it throws is <b>drawn from the wall</b> and then filtered so it "
+               "looks like a human discard. Even the empty slot in its face-down "
+               "hand is theatre.",
+            es="El juego entero corre <b>dentro de la interrupción</b> &mdash;el reparto, "
+               "el recuento, las pantallas&mdash; mientras el programa principal es "
+               "un <code>ei / jr $</code> que no recupera el control nunca. Y el "
+               "ordenador <b>no juega al mahjong</b>: sus trece fichas están "
+               "escritas en el cartucho a una de completarse, y la que suelta la "
+               "<b>sortea del muro</b> y luego la filtra para que parezca un "
+               "descarte humano. Hasta el hueco vacío de su mano boca abajo es "
+               "teatro.",
+        ),
+        datos=dict(
+            en=lambda i: (f"{cif(32768, i)} bytes &middot; <b>0</b> unexplained "
+                          f"&middot; reassembles <b>byte for byte</b> &middot; "
+                          f"{cif(15432, i)} of code, {cif(17336, i)} of data "
+                          f"&middot; {cif(1091, i)} labels &middot; commented "
+                          f"to <b>30.7%</b>"),
+            es=lambda i: (f"{cif(32768, i)} bytes &middot; <b>0</b> sin explicar "
+                          f"&middot; reensambla <b>byte a byte</b> &middot; "
+                          f"{cif(15432, i)} de código, {cif(17336, i)} de datos "
+                          f"&middot; {cif(1091, i)} etiquetas &middot; comentado "
+                          f"al <b>30,7 %</b>"),
+        ),
+        nota=dict(en=None, es=None),
+    ),
+    dict(
         clave="pitfall",
         titulo="Pitfall!",
         anio=1984,
