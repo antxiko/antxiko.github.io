@@ -507,6 +507,51 @@ DESENSAMBLADOS = [
         nota=dict(en=None, es=None),
     ),
     dict(
+        clave="demonia",
+        titulo="Demonia",
+        anio=1986,
+        repo="https://github.com/antxiko/Demonia-disassembly",
+        web="https://antxiko.github.io/Demonia-disassembly/",
+        meta=dict(
+            en="Microids &middot; MSX1 &middot; 58,334-byte cassette",
+            es="Microids &middot; MSX1 &middot; cinta de 58.334 bytes",
+        ),
+        claim=dict(
+            en="It does not fit in the RAM an MSX booted into BASIC can see, so "
+               "it hides twenty-six kilobytes underneath the BASIC ROM. And "
+               "riding inside it, a 1984 machine code monitor by the same "
+               "author: its back door still wired to CTRL+STOP, its command "
+               "table buried under the game&rsquo;s own screen records, and in "
+               "the single-step buffer the last instruction it ever ran before "
+               "someone saved the tape.",
+            es="No cabe en la RAM que ve un MSX arrancado desde BASIC, así que "
+               "esconde veintiséis kilobytes debajo de la ROM del BASIC. Y "
+               "dentro viaja, de polizón, un monitor de código máquina de 1984 "
+               "del mismo autor: con su puerta trasera todavía enchufada al "
+               "CTRL+STOP, sus órdenes tapadas por las fichas de pantalla del "
+               "juego, y en el búfer del paso a paso la última instrucción que "
+               "ejecutó antes de que alguien grabara la cinta.",
+        ),
+        datos=dict(
+            en=lambda i: (f"{cif(58334, i)} bytes &middot; <b>0</b> unexplained "
+                          f"&middot; reassembles <b>byte for byte</b> &middot; "
+                          f"{cif(20299, i)} of code, {cif(37597, i)} of data "
+                          f"&middot; {cif(1586, i)} labels &middot; commented at "
+                          f"<b>33.0%</b>, no routine below 10%"),
+            es=lambda i: (f"{cif(58334, i)} bytes &middot; <b>0</b> sin explicar "
+                          f"&middot; reensambla <b>byte a byte</b> &middot; "
+                          f"{cif(20299, i)} de código, {cif(37597, i)} de datos "
+                          f"&middot; {cif(1586, i)} etiquetas &middot; comentado "
+                          f"al <b>33,0 %</b>, ninguna rutina por debajo del 10 %"),
+        ),
+        nota=dict(
+            en="The 26 screens on its site are not screenshots: they are drawn "
+               "from the tape&rsquo;s own bytes.",
+            es="Las 26 pantallas de su web no son capturas: están dibujadas "
+               "desde los propios bytes de la cinta.",
+        ),
+    ),
+    dict(
         clave="f1spirit",
         titulo="F-1 Spirit &mdash; The Way to Formula 1",
         anio=1987,
