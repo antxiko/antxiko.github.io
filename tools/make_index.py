@@ -527,6 +527,43 @@ DESENSAMBLADOS = [
         nota=dict(en=None, es=None),
     ),
     dict(
+        clave="cabbagepatch",
+        grupo="konami",
+        titulo="Cabbage Patch Kids",
+        anio=1984,
+        repo="https://github.com/antxiko/CabbagePatchKids-disassembly",
+        web="https://antxiko.github.io/CabbagePatchKids-disassembly/",
+        meta=dict(
+            en="Konami &middot; MSX &middot; 16 KB cartridge &middot; RC-716",
+            es="Konami &middot; MSX &middot; cartucho de 16 KB &middot; RC-716",
+        ),
+        claim=dict(
+            en="Before you play, it asks you two things: <b>which kid you want "
+               "and what it is called</b> &mdash; ten letters that come out of "
+               "the factory saying ANNA LEE, written in next to the three lives. "
+               "It is another Konami cartridge recompiled, and it still carries "
+               "<b>439 bytes of that game's scenery that nothing here reads</b>.",
+            es="Antes de jugar te hace dos preguntas: <b>qué muñeco quieres y "
+               "cómo se llama</b> &mdash;diez letras que de fábrica dicen ANNA "
+               "LEE, escritas junto a las tres vidas&mdash;. Es otro cartucho de "
+               "Konami recompilado, y todavía arrastra <b>439 bytes de decorado "
+               "suyo que aquí no lee nadie</b>.",
+        ),
+        datos=dict(
+            en=lambda i: (f"{cif(16384, i)} bytes &middot; <b>0</b> unexplained "
+                          f"&middot; reassembles <b>byte for byte</b> &middot; "
+                          f"{cif(7981, i)} of code, {cif(8403, i)} of data "
+                          f"&middot; {cif(314, i)} labels &middot; commented "
+                          f"to <b>24.5%</b>"),
+            es=lambda i: (f"{cif(16384, i)} bytes &middot; <b>0</b> sin explicar "
+                          f"&middot; reensambla <b>byte a byte</b> &middot; "
+                          f"{cif(7981, i)} de código, {cif(8403, i)} de datos "
+                          f"&middot; {cif(314, i)} etiquetas &middot; comentado "
+                          f"al <b>24,5 %</b>"),
+        ),
+        nota=dict(en=None, es=None),
+    ),
+    dict(
         clave="pitfall",
         grupo="ports",
         titulo="Pitfall!",
