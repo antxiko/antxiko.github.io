@@ -717,6 +717,49 @@ DESENSAMBLADOS = [
         ),
     ),
     dict(
+        clave="nemesis",
+        grupo="konami",
+        titulo="Nemesis / Gradius",
+        anio=1986,
+        repo="https://github.com/antxiko/Nemesis-disassembly",
+        web="https://antxiko.github.io/Nemesis-disassembly/",
+        meta=dict(
+            en="Konami &middot; MSX &middot; 128 KB MegaROM &middot; RC-742",
+            es="Konami &middot; MSX &middot; MegaROM de 128 KB &middot; RC-742",
+        ),
+        claim=dict(
+            en="Twelve stages of Gradius in a 128 KB MegaROM, and the terrain is "
+               "not in video memory: it is <b>22 rows of 32 cells in RAM</b>, "
+               "shifted one column left by hand every scroll step with 22 "
+               "<code>ldir</code>s. That is what lets the twelve maps on the site "
+               "be <b>drawn from the ROM</b> and checked against the cartridge "
+               "running. There is no random generator anywhere in the 128 KB: "
+               "the stars, the falling rocks and the out-of-step blinking all "
+               "come out of <b>the Z80&rsquo;s R register</b>.",
+            es="Doce fases de Gradius en un MegaROM de 128 KB, y el terreno no "
+               "está en la memoria de vídeo: son <b>22 filas de 32 casillas en la "
+               "RAM</b>, que se corren una columna a la izquierda a mano en cada "
+               "paso de scroll con 22 <code>ldir</code>. Eso es lo que permite que "
+               "los doce mapas de la web estén <b>dibujados desde la ROM</b> y "
+               "comprobados contra el cartucho corriendo. En los 128 KB no hay ni "
+               "un generador de azar: las estrellas, la lluvia de piedras y el "
+               "parpadeo a destiempo salen todos del <b>registro R del Z80</b>.",
+        ),
+        datos=dict(
+            en=lambda i: (f"{cif(131072, i)} bytes &middot; <b>0</b> unexplained "
+                          f"&middot; reassembles <b>byte for byte</b> &middot; "
+                          f"{cif(25471, i)} of code, {cif(105601, i)} of data "
+                          f"&middot; {cif(916, i)} routines &middot; commented "
+                          f"to <b>23.3%</b> &middot; <b>12</b> maps"),
+            es=lambda i: (f"{cif(131072, i)} bytes &middot; <b>0</b> sin explicar "
+                          f"&middot; reensambla <b>byte a byte</b> &middot; "
+                          f"{cif(25471, i)} de código, {cif(105601, i)} de datos "
+                          f"&middot; {cif(916, i)} rutinas &middot; comentado "
+                          f"al <b>23,3 %</b> &middot; <b>12</b> mapas"),
+        ),
+        nota=dict(en=None, es=None),
+    ),
+    dict(
         clave="f1spirit",
         grupo="konami",
         titulo="F-1 Spirit &mdash; The Way to Formula 1",
