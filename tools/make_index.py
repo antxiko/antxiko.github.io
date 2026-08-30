@@ -456,6 +456,77 @@ DESENSAMBLADOS = [
         nota=dict(en=None, es=None),
     ),
     dict(
+        clave="hyperrally",
+        grupo="konami",
+        titulo="Hyper Rally",
+        anio=1985,
+        repo="https://github.com/antxiko/HyperRally-disassembly",
+        web="https://antxiko.github.io/HyperRally-disassembly/",
+        meta=dict(
+            en="Konami &middot; MSX &middot; 16 KB cartridge &middot; RC-718",
+            es="Konami &middot; MSX &middot; cartucho de 16 KB &middot; RC-718",
+        ),
+        claim=dict(
+            en="The road is pseudo-3D with no 3D: each strip is picked from a "
+               "table of shapes indexed by the curve ahead. And hidden at the "
+               "tail of the ROM, in katakana, is Konami&rsquo;s house mark "
+               "&mdash; <b>RC-718</b> &mdash; the signature Manuel Pazos found.",
+            es="La carretera es pseudo-3D sin 3D: cada franja se saca de una "
+               "tabla de formas indexada por la curva que viene. Y escondida al "
+               "final de la ROM, en katakana, está la marca de la casa de Konami "
+               "&mdash; <b>RC-718</b> &mdash;, la firma que encontró Manuel Pazos.",
+        ),
+        datos=dict(
+            en=lambda i: (f"{cif(16384, i)} bytes &middot; <b>0</b> unexplained "
+                          f"&middot; reassembles <b>byte for byte</b> &middot; "
+                          f"{cif(6452, i)} of code, {cif(9932, i)} of data "
+                          f"&middot; {cif(429, i)} labels &middot; commented "
+                          f"to <b>22.1%</b>"),
+            es=lambda i: (f"{cif(16384, i)} bytes &middot; <b>0</b> sin explicar "
+                          f"&middot; reensambla <b>byte a byte</b> &middot; "
+                          f"{cif(6452, i)} de código, {cif(9932, i)} de datos "
+                          f"&middot; {cif(429, i)} etiquetas &middot; comentado "
+                          f"al <b>22,1 %</b>"),
+        ),
+        nota=dict(en=None, es=None),
+    ),
+    dict(
+        clave="hypersports1",
+        grupo="konami",
+        titulo="Hyper Sports 1",
+        anio=1984,
+        repo="https://github.com/antxiko/HyperSports1-disassembly",
+        web="https://antxiko.github.io/HyperSports1-disassembly/",
+        meta=dict(
+            en="Konami &middot; MSX &middot; 16 KB cartridge &middot; RC-715",
+            es="Konami &middot; MSX &middot; cartucho de 16 KB &middot; RC-715",
+        ),
+        claim=dict(
+            en="Its four events are written into the ROM as plain text &mdash; "
+               "DIVING, TRAMPOLINE, LONG HORSE, HORIZONTAL BAR &mdash; and two "
+               "players take turns by swapping the whole block of state. Unlike "
+               "its Hyper Olympic siblings, it carries <b>no hidden Konami mark</b>.",
+            es="Sus cuatro pruebas están escritas en la ROM como texto llano "
+               "&mdash; DIVING, TRAMPOLINE, LONG HORSE, HORIZONTAL BAR &mdash; y "
+               "dos jugadores se turnan intercambiando el bloque entero de estado. "
+               "A diferencia de sus hermanos Hyper Olympic, <b>no lleva marca "
+               "oculta de Konami</b>.",
+        ),
+        datos=dict(
+            en=lambda i: (f"{cif(16384, i)} bytes &middot; <b>0</b> unexplained "
+                          f"&middot; reassembles <b>byte for byte</b> &middot; "
+                          f"{cif(5953, i)} of code, {cif(10431, i)} of data "
+                          f"&middot; {cif(387, i)} labels &middot; commented "
+                          f"to <b>24.8%</b>"),
+            es=lambda i: (f"{cif(16384, i)} bytes &middot; <b>0</b> sin explicar "
+                          f"&middot; reensambla <b>byte a byte</b> &middot; "
+                          f"{cif(5953, i)} de código, {cif(10431, i)} de datos "
+                          f"&middot; {cif(387, i)} etiquetas &middot; comentado "
+                          f"al <b>24,8 %</b>"),
+        ),
+        nota=dict(en=None, es=None),
+    ),
+    dict(
         clave="pitfall",
         grupo="ports",
         titulo="Pitfall!",
