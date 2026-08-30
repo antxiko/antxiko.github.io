@@ -527,6 +527,43 @@ DESENSAMBLADOS = [
         nota=dict(en=None, es=None),
     ),
     dict(
+        clave="hypersports2",
+        grupo="konami",
+        titulo="Hyper Sports 2",
+        anio=1984,
+        repo="https://github.com/antxiko/HyperSports2-disassembly",
+        web="https://antxiko.github.io/HyperSports2-disassembly/",
+        meta=dict(
+            en="Konami &middot; MSX &middot; 16 KB cartridge &middot; RC-717",
+            es="Konami &middot; MSX &middot; cartucho de 16 KB &middot; RC-717",
+        ),
+        claim=dict(
+            en="Skeet shooting, archery and weight lifting. The bow scores with "
+               "<b>Pythagoras and no square root</b>, against ring radii already "
+               "squared; the clays are not random but read bit by bit from two "
+               "tables; and a lift is good only when <b>three judges&rsquo; "
+               "lights</b> come on, one every 0x20 frames.",
+            es="Tiro al plato, tiro con arco y halterofilia. El arco acierta con "
+               "<b>Pitágoras y sin raíz cuadrada</b>, contra radios de anillo ya "
+               "elevados al cuadrado; los platos no salen al azar, sino leídos "
+               "bit a bit de dos tablas; y un levantamiento solo vale cuando se "
+               "encienden <b>las tres luces del jurado</b>, una cada 0x20 cuadros.",
+        ),
+        datos=dict(
+            en=lambda i: (f"{cif(16384, i)} bytes &middot; <b>0</b> unexplained "
+                          f"&middot; reassembles <b>byte for byte</b> &middot; "
+                          f"{cif(6956, i)} of code, {cif(9428, i)} of data "
+                          f"&middot; {cif(314, i)} labels &middot; commented "
+                          f"to <b>22.5%</b>"),
+            es=lambda i: (f"{cif(16384, i)} bytes &middot; <b>0</b> sin explicar "
+                          f"&middot; reensambla <b>byte a byte</b> &middot; "
+                          f"{cif(6956, i)} de código, {cif(9428, i)} de datos "
+                          f"&middot; {cif(314, i)} etiquetas &middot; comentado "
+                          f"al <b>22,5 %</b>"),
+        ),
+        nota=dict(en=None, es=None),
+    ),
+    dict(
         clave="cabbagepatch",
         grupo="konami",
         titulo="Cabbage Patch Kids",
