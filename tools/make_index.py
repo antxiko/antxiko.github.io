@@ -479,14 +479,52 @@ DESENSAMBLADOS = [
         datos=dict(
             en=lambda i: (f"{cif(16384, i)} bytes &middot; <b>0</b> unexplained "
                           f"&middot; reassembles <b>byte for byte</b> &middot; "
-                          f"{cif(6452, i)} of code, {cif(9932, i)} of data "
-                          f"&middot; {cif(429, i)} labels &middot; commented "
+                          f"{cif(6464, i)} of code, {cif(9920, i)} of data "
+                          f"&middot; {cif(431, i)} labels &middot; commented "
                           f"to <b>22.1%</b>"),
             es=lambda i: (f"{cif(16384, i)} bytes &middot; <b>0</b> sin explicar "
                           f"&middot; reensambla <b>byte a byte</b> &middot; "
-                          f"{cif(6452, i)} de código, {cif(9932, i)} de datos "
-                          f"&middot; {cif(429, i)} etiquetas &middot; comentado "
+                          f"{cif(6464, i)} de código, {cif(9920, i)} de datos "
+                          f"&middot; {cif(431, i)} etiquetas &middot; comentado "
                           f"al <b>22,1 %</b>"),
+        ),
+        nota=dict(en=None, es=None),
+    ),
+    dict(
+        clave="skyjaguar",
+        grupo="konami",
+        titulo="Sky Jaguar",
+        anio=1984,
+        repo="https://github.com/antxiko/SkyJaguar-disassembly",
+        web="https://antxiko.github.io/SkyJaguar-disassembly/",
+        meta=dict(
+            en="Konami &middot; MSX &middot; 16 KB cartridge &middot; RC-721",
+            es="Konami &middot; MSX &middot; cartucho de 16 KB &middot; RC-721",
+        ),
+        claim=dict(
+            en="There are no levels: one <b>1,920-row</b> stage that repeats. "
+               "And the fine scroll is not computed but <b>stored</b> &mdash; "
+               "every landscape strip is kept in eight versions, the same one "
+               "started zero to seven rows lower. The giant enemy has no body "
+               "sprites either: the background draws it.",
+            es="No hay niveles: una sola fase de <b>1.920 filas</b> que se "
+               "repite. Y el desplazamiento fino no se calcula, está "
+               "<b>guardado</b> &mdash; cada tira del paisaje se guarda en ocho "
+               "versiones, la misma empezada de cero a siete filas más abajo. Al "
+               "enemigo gigante tampoco le dibujan sprites el cuerpo: se lo "
+               "pinta el fondo.",
+        ),
+        datos=dict(
+            en=lambda i: (f"{cif(16384, i)} bytes &middot; <b>0</b> unexplained "
+                          f"&middot; reassembles <b>byte for byte</b> &middot; "
+                          f"{cif(7086, i)} of code, {cif(9298, i)} of data "
+                          f"&middot; {cif(464, i)} labels &middot; commented "
+                          f"to <b>32.1%</b>"),
+            es=lambda i: (f"{cif(16384, i)} bytes &middot; <b>0</b> sin explicar "
+                          f"&middot; reensambla <b>byte a byte</b> &middot; "
+                          f"{cif(7086, i)} de código, {cif(9298, i)} de datos "
+                          f"&middot; {cif(464, i)} etiquetas &middot; comentado "
+                          f"al <b>32,1 %</b>"),
         ),
         nota=dict(en=None, es=None),
     ),
