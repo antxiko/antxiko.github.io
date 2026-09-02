@@ -568,6 +568,49 @@ DESENSAMBLADOS = [
         nota=dict(en=None, es=None),
     ),
     dict(
+        clave="tennis",
+        grupo="konami",
+        titulo="Konami's Tennis",
+        anio=1984,
+        repo="https://github.com/antxiko/KonamisTennis-disassembly",
+        web="https://antxiko.github.io/KonamisTennis-disassembly/",
+        meta=dict(
+            en="Konami &middot; MSX &middot; 16 KB cartridge &middot; RC-720",
+            es="Konami &middot; MSX &middot; cartucho de 16 KB &middot; RC-720",
+        ),
+        claim=dict(
+            en="A cartridge that <b>defends itself against copies by writing "
+               "on itself</b>: its only write into its own page lands on the "
+               "<code>ret</code> that ends the interrupt handler, so a copy "
+               "running from RAM restarts on every frame. It also paints the "
+               "screen&rsquo;s three thirds with <b>a single overlapping "
+               "loop</b>, keeps the colour table underneath the patterns, and "
+               "gives the chair umpire <b>three faces</b> so he can follow the "
+               "ball with his eyes.",
+            es="Un cartucho que <b>se defiende de las copias escribiendo en sí "
+               "mismo</b>: su única escritura a su propia página cae sobre el "
+               "<code>ret</code> con el que acaba el manejador de interrupción, "
+               "y así una copia en RAM se reinicia en cada cuadro. Además pinta "
+               "los tres tercios de la pantalla con <b>un solo bucle "
+               "solapado</b>, guarda la tabla de colores debajo de la de "
+               "patrones, y le pone al juez de silla <b>tres caras</b> para que "
+               "siga la pelota con los ojos.",
+        ),
+        datos=dict(
+            en=lambda i: (f"{cif(16384, i)} bytes &middot; <b>0</b> unexplained "
+                          f"&middot; reassembles <b>byte for byte</b> &middot; "
+                          f"{cif(7882, i)} of code, {cif(8502, i)} of data "
+                          f"&middot; {cif(492, i)} labels &middot; commented "
+                          f"to <b>32.4%</b>"),
+            es=lambda i: (f"{cif(16384, i)} bytes &middot; <b>0</b> sin explicar "
+                          f"&middot; reensambla <b>byte a byte</b> &middot; "
+                          f"{cif(7882, i)} de código, {cif(8502, i)} de datos "
+                          f"&middot; {cif(492, i)} etiquetas &middot; comentado "
+                          f"al <b>32,4 %</b>"),
+        ),
+        nota=dict(en=None, es=None),
+    ),
+    dict(
         clave="hypersports1",
         grupo="konami",
         titulo="Hyper Sports 1",
