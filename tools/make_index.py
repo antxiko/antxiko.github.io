@@ -529,6 +529,45 @@ DESENSAMBLADOS = [
         nota=dict(en=None, es=None),
     ),
     dict(
+        clave="golf",
+        grupo="konami",
+        titulo="Konami's Golf",
+        anio=1985,
+        repo="https://github.com/antxiko/KonamisGolf-disassembly",
+        web="https://antxiko.github.io/KonamisGolf-disassembly/",
+        meta=dict(
+            en="Konami &middot; MSX &middot; 16 KB cartridge &middot; RC-723",
+            es="Konami &middot; MSX &middot; cartucho de 16 KB &middot; RC-723",
+        ),
+        claim=dict(
+            en="Nine holes in 16 KB, and every one of them stored <b>once</b>: "
+               "the same bytes are read as a VRAM script to paint the plan view "
+               "and as data to build the grid that knows fairway from bunker. "
+               "The wind is rolled from <b>the memory refresh register</b>, and "
+               "the ball&rsquo;s height is never stored anywhere &mdash; it is "
+               "the gap between its two sprites.",
+            es="Nueve hoyos en 16 KB, y cada uno guardado <b>una sola vez</b>: "
+               "los mismos bytes se leen como guion de VRAM para pintar el plano "
+               "y como datos para armar la rejilla que sabe dónde está la calle "
+               "y dónde el búnker. El viento se sortea con <b>el registro de "
+               "refresco de la memoria</b>, y la altura de la bola no se guarda "
+               "en ninguna parte &mdash; es la distancia entre sus dos sprites.",
+        ),
+        datos=dict(
+            en=lambda i: (f"{cif(16384, i)} bytes &middot; <b>0</b> unexplained "
+                          f"&middot; reassembles <b>byte for byte</b> &middot; "
+                          f"{cif(8665, i)} of code, {cif(7719, i)} of data "
+                          f"&middot; {cif(558, i)} labels &middot; commented "
+                          f"to <b>35.4%</b>"),
+            es=lambda i: (f"{cif(16384, i)} bytes &middot; <b>0</b> sin explicar "
+                          f"&middot; reensambla <b>byte a byte</b> &middot; "
+                          f"{cif(8665, i)} de código, {cif(7719, i)} de datos "
+                          f"&middot; {cif(558, i)} etiquetas &middot; comentado "
+                          f"al <b>35,4 %</b>"),
+        ),
+        nota=dict(en=None, es=None),
+    ),
+    dict(
         clave="hypersports1",
         grupo="konami",
         titulo="Hyper Sports 1",
