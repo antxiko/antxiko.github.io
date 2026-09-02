@@ -579,22 +579,16 @@ DESENSAMBLADOS = [
             es="Konami &middot; MSX &middot; cartucho de 16 KB &middot; RC-720",
         ),
         claim=dict(
-            en="A cartridge that <b>defends itself against copies by writing "
-               "on itself</b>: its only write into its own page lands on the "
-               "<code>ret</code> that ends the interrupt handler, so a copy "
-               "running from RAM restarts on every frame. It also paints the "
-               "screen&rsquo;s three thirds with <b>a single overlapping "
-               "loop</b>, keeps the colour table underneath the patterns, and "
-               "gives the chair umpire <b>three faces</b> so he can follow the "
-               "ball with his eyes.",
-            es="Un cartucho que <b>se defiende de las copias escribiendo en sí "
-               "mismo</b>: su única escritura a su propia página cae sobre el "
-               "<code>ret</code> con el que acaba el manejador de interrupción, "
-               "y así una copia en RAM se reinicia en cada cuadro. Además pinta "
-               "los tres tercios de la pantalla con <b>un solo bucle "
-               "solapado</b>, guarda la tabla de colores debajo de la de "
-               "patrones, y le pone al juez de silla <b>tres caras</b> para que "
-               "siga la pelota con los ojos.",
+            en="The screen&rsquo;s three thirds painted with <b>a single "
+               "loop that reads its own output</b>, the colour table kept "
+               "<b>underneath</b> the pattern table, and every player built "
+               "from <b>five stacked sprites</b>. The chair umpire has three "
+               "faces so he can follow the ball with his eyes.",
+            es="Los tres tercios de la pantalla pintados con <b>un solo "
+               "bucle que se lee a sí mismo</b>, la tabla de colores "
+               "<b>debajo</b> de la de patrones, y cada tenista montado con "
+               "<b>cinco sprites apilados</b>. El juez de silla tiene tres "
+               "caras para seguir la pelota con los ojos.",
         ),
         datos=dict(
             en=lambda i: (f"{cif(16384, i)} bytes &middot; <b>0</b> unexplained "
