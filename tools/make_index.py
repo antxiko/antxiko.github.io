@@ -1322,6 +1322,55 @@ PARCHES = [
             es="trabajo en curso: se juega, pero no está terminado",
         ),
     ),
+    dict(
+        clave="warinmiddleearth-patch",
+        titulo="War in Middle Earth &mdash; Araubi&rsquo;s patch",
+        anio=1989,
+        repo="https://github.com/antxiko/WarinMiddleEarth-MSX-Patch",
+        web="https://antxiko.github.io/WarinMiddleEarth-MSX-Patch/",
+        meta=dict(
+            en="Melbourne House / Dro Soft &middot; MSX &middot; tape &middot; "
+               "IPS patch, unofficial",
+            es="Melbourne House / Dro Soft &middot; MSX &middot; cinta &middot; "
+               "parche IPS, extraoficial",
+        ),
+        claim=dict(
+            en="Araubi asked for three things on the forum and four came out. The "
+               "enemy was invisible because the loop that plants units on the map "
+               "<b>stops one slot before the enemy side begins</b>; a unit&rsquo;s "
+               "qualities were adjectives with no numbers; and the Ring&rsquo;s "
+               "deadline &mdash;a countdown of months the game never shows&mdash; "
+               "now sits beside the ring in the bearer&rsquo;s sheet. The enemy "
+               "also got <b>the Eye of Sauron</b>, because a free bit in the map "
+               "byte was all it took to tell the two sides apart. The new code "
+               "lives inside the <b>ZX beeper engine this port brought across and "
+               "never calls</b>.",
+            es="Araubi pidió tres cosas en el foro y salieron cuatro. Las unidades "
+               "enemigas no se veían porque el bucle que las siembra en el mapa "
+               "<b>para una ranura antes de que empiece el bando enemigo</b>; las "
+               "cualidades de una unidad eran adjetivos sin número; y el plazo del "
+               "Anillo &mdash;una cuenta atrás de meses que el juego no enseña&mdash; "
+               "sale ya al lado del anillo, en la ficha del portador. Las enemigas "
+               "llevan además <b>el Ojo de Sauron</b>, porque bastaba un bit libre "
+               "del byte de mapa para distinguir los dos bandos. El código nuevo "
+               "vive dentro del <b>motor de altavoz del ZX que esta conversión "
+               "trajo y no llama nadie</b>.",
+        ),
+        datos=dict(
+            en=lambda i: ("<b>197</b> bytes changed in <b>7</b> places &middot; "
+                          "<b>0</b> outside the table &middot; <b>0</b> shifted "
+                          f"&middot; {cif(249, i)}-byte IPS &middot; no tape "
+                          "distributed"),
+            es=lambda i: ("<b>197</b> bytes cambiados en <b>7</b> sitios &middot; "
+                          "<b>0</b> fuera de la tabla &middot; <b>0</b> desplazados "
+                          f"&middot; IPS de {cif(249, i)} bytes &middot; no se "
+                          "distribuye ninguna cinta"),
+        ),
+        nota=dict(
+            en="playable, but nobody has finished a game with it yet",
+            es="se juega, pero nadie ha terminado una partida con él",
+        ),
+    ),
 ]
 
 # Las cuentas de la cabecera salen de la lista, no de escribirlas a mano: al
