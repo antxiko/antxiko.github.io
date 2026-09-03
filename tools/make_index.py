@@ -72,6 +72,53 @@ def cif(n, idioma):
 # --------------------------------------------------------------------------
 DESENSAMBLADOS = [
     dict(
+        clave="3dgolf",
+        grupo="msx-exclusive",
+        titulo="3D Golf Simulation",
+        anio=1983,
+        repo="https://github.com/antxiko/3DGolfSimulation-disassembly",
+        web="https://antxiko.github.io/3DGolfSimulation-disassembly/",
+        meta=dict(
+            en="T&amp;E Soft &middot; MSX &middot; 16 KB cartridge",
+            es="T&amp;E Soft &middot; MSX &middot; cartucho de 16 KB",
+        ),
+        claim=dict(
+            en="A cartridge <b>without a single Z80 instruction</b>: inside is "
+               "a 246-line MSX-BASIC program the interpreter runs straight out "
+               "of the ROM, and the boot trick is that the cartridge also "
+               "carries <b>the interpreter&rsquo;s variable table from a real "
+               "session</b>. The nine holes fit in <b>4,000 bytes</b> of "
+               "coordinates, and the game has no terrain map: it asks the "
+               "screen what colour the ground under the ball is painted.",
+            es="Un cartucho <b>sin una sola instrucción Z80</b>: dentro hay un "
+               "programa MSX-BASIC de 246 líneas que el intérprete ejecuta "
+               "directamente desde la ROM, y el truco del arranque es que el "
+               "cartucho lleva pegada <b>la tabla de variables de una partida "
+               "de verdad</b>. Los nueve hoyos caben en <b>4.000 bytes</b> de "
+               "coordenadas, y el juego no tiene mapa de terreno: le pregunta a "
+               "la pantalla de qué color está pintado el suelo bajo la bola.",
+        ),
+        datos=dict(
+            en=lambda i: (f"{cif(16384, i)} bytes &middot; <b>0</b> "
+                          f"unidentified &middot; <b>retokenises</b> byte for "
+                          f"byte &middot; {cif(9041, i)} of BASIC program, "
+                          f"{cif(4000, i)} of course &middot; {cif(246, i)} "
+                          f"lines &middot; <b>100 %</b> of them commented"),
+            es=lambda i: (f"{cif(16384, i)} bytes &middot; <b>0</b> sin "
+                          f"identificar &middot; <b>retokeniza</b> byte a byte "
+                          f"&middot; {cif(9041, i)} de programa BASIC, "
+                          f"{cif(4000, i)} de campo &middot; {cif(246, i)} "
+                          f"líneas &middot; <b>100 %</b> comentadas"),
+        ),
+        nota=dict(
+            en="the nine holes on its site are drawn from the ROM by running "
+               "the program&rsquo;s own drawing subroutines in Python",
+            es="los nueve hoyos de su web están dibujados desde la ROM "
+               "ejecutando en Python las propias subrutinas de dibujo del "
+               "programa",
+        ),
+    ),
+    dict(
         clave="timepilot",
         grupo="konami",
         titulo="Time Pilot",
