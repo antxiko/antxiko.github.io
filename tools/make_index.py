@@ -503,6 +503,95 @@ DESENSAMBLADOS = [
         nota=dict(en=None, es=None),
     ),
     dict(
+        clave="holeinone",
+        grupo="msx-exclusive",
+        titulo="Hole in One",
+        anio=1984,
+        repo="https://github.com/antxiko/HoleInOne-disassembly",
+        web="https://antxiko.github.io/HoleInOne-disassembly/",
+        meta=dict(
+            en="HAL Laboratory &middot; MSX &middot; 16 KB cartridge",
+            es="HAL Laboratory &middot; MSX &middot; cartucho de 16 KB",
+        ),
+        claim=dict(
+            en="An eighteen-hole course, par 72 and 6,430 metres, in 16 KB: a "
+               "hole fits in three hundred bytes because <b>its header is its "
+               "palette</b> &mdash; the table starts three bytes early so the "
+               "opcode&rsquo;s own nibble lands on it. The cartridge builds "
+               "<b>three trigonometry tables in RAM</b> at boot, and the "
+               "wordmark loads by <b>calling into the middle of an "
+               "instruction</b>, where the operand runs as <code>xor a</code>.",
+            es="Un campo de dieciocho hoyos, par 72 y 6.430 metros, en 16 KB: "
+               "un hoyo cabe en trescientos bytes porque <b>su cabecera es su "
+               "paleta</b> &mdash;la tabla empieza tres bytes antes para que el "
+               "nibble del propio opcode caiga encima&mdash;. El cartucho monta "
+               "<b>tres tablas de trigonometria en RAM</b> al arrancar, y el "
+               "rotulo se carga <b>llamando a mitad de una instruccion</b>, "
+               "donde el operando se ejecuta como <code>xor a</code>.",
+        ),
+        datos=dict(
+            en=lambda i: (f"{cif(16384, i)} bytes &middot; <b>0</b> unexplained "
+                          f"&middot; reassembles <b>byte for byte</b> &middot; "
+                          f"{cif(6065, i)} of code, {cif(10319, i)} of data "
+                          f"&middot; {cif(358, i)} routines &middot; commented "
+                          f"to <b>41.9%</b>, none below 10%"),
+            es=lambda i: (f"{cif(16384, i)} bytes &middot; <b>0</b> sin explicar "
+                          f"&middot; reensambla <b>byte a byte</b> &middot; "
+                          f"{cif(6065, i)} de codigo, {cif(10319, i)} de datos "
+                          f"&middot; {cif(358, i)} rutinas &middot; comentado al "
+                          f"<b>41,9 %</b>, ninguna por debajo del 10 %"),
+        ),
+        nota=dict(
+            en="the densest listing of the series",
+            es="el listado mas denso de la serie",
+        ),
+    ),
+    dict(
+        clave="casioworldopen",
+        grupo="msx-exclusive",
+        titulo="Casio World Open",
+        anio=1985,
+        repo="https://github.com/antxiko/CasioWorldOpen-disassembly",
+        web="https://antxiko.github.io/CasioWorldOpen-disassembly/",
+        meta=dict(
+            en="Casio &middot; MSX &middot; 32 KB cartridge",
+            es="Casio &middot; MSX &middot; cartucho de 32 KB",
+        ),
+        claim=dict(
+            en="Eighteen holes stored as <b>ten layouts</b>: eight of them are "
+               "used twice, once mirrored, and the flag is bit 7 of the same "
+               "byte whose low nibble is the par. What look like sprites are "
+               "not &mdash; the VDP only ever holds ten, five of them the ball "
+               "at five sizes; everything else is tile indices, decompressed, "
+               "spread apart and then <b>running-summed in 16 bits</b>.",
+            es="Dieciocho hoyos guardados como <b>diez trazados</b>: ocho se "
+               "usan dos veces, uno de ellos espejado, y la marca es el bit 7 "
+               "del mismo byte cuyo nibble bajo es el par. Lo que parecen "
+               "sprites no lo son &mdash;del VDP solo hay diez, y cinco son la "
+               "bola a cinco tamanos&mdash;: todo lo demas son indices de tile, "
+               "descomprimidos, separados y luego <b>sumados en cadena a 16 "
+               "bits</b>.",
+        ),
+        datos=dict(
+            en=lambda i: (f"{cif(32768, i)} bytes &middot; <b>0</b> unexplained "
+                          f"&middot; reassembles <b>byte for byte</b> &middot; "
+                          f"{cif(8185, i)} of code, {cif(24583, i)} of data "
+                          f"&middot; {cif(435, i)} routines &middot; commented "
+                          f"to <b>37.0%</b>, none below 10%"),
+            es=lambda i: (f"{cif(32768, i)} bytes &middot; <b>0</b> sin explicar "
+                          f"&middot; reensambla <b>byte a byte</b> &middot; "
+                          f"{cif(8185, i)} de codigo, {cif(24583, i)} de datos "
+                          f"&middot; {cif(435, i)} rutinas &middot; comentado al "
+                          f"<b>37,0 %</b>, ninguna por debajo del 10 %"),
+        ),
+        nota=dict(
+            en="its title screen is drawn without its text, and that is not a "
+               "bug: the text comes from the machine's own font",
+            es="su pantalla de titulo sale sin el texto, y no es un fallo: el "
+               "texto lo pone la fuente de la propia maquina",
+        ),
+    ),
+    dict(
         clave="hyperrally",
         grupo="konami",
         titulo="Hyper Rally",

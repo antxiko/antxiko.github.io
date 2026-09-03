@@ -208,9 +208,9 @@ class TestPortada(unittest.TestCase):
     # ---------------------------------------------------------- la jerarquia
 
     def test_los_grupos_son_los_pedidos(self):
-        """Konami en su grupo; 3D Golf, Ale Hop!, Temptations, Colt 36 y
-        Demonia en los exclusivos de MSX; el resto en las conversiones. Y
-        ninguno vacio."""
+        """Konami en su grupo; los tres de golf que no son de Konami, Ale
+        Hop!, Temptations, Colt 36 y Demonia en los exclusivos de MSX; el resto
+        en las conversiones. Y ninguno vacio."""
         mi = modulo()
         mi.comprueba()
         self.assertEqual([g["id"] for g in mi.GRUPOS],
@@ -220,7 +220,8 @@ class TestPortada(unittest.TestCase):
                      for g in mi.GRUPOS}
         konami = {p["clave"] for p in mi.DESENSAMBLADOS
                   if p["meta"]["en"].startswith("Konami")}
-        exclusivos = {"3dgolf", "alehop", "temptations", "colt36", "demonia"}
+        exclusivos = {"3dgolf", "holeinone", "casioworldopen", "alehop",
+                      "temptations", "colt36", "demonia"}
         self.assertEqual(por_grupo["konami"], konami)
         self.assertEqual(por_grupo["msx-exclusive"], exclusivos)
         self.assertEqual(por_grupo["ports"], claves - konami - exclusivos)
