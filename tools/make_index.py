@@ -779,6 +779,44 @@ DESENSAMBLADOS = [
         nota=dict(en=None, es=None),
     ),
     dict(
+        clave="yiearkungfu",
+        grupo="konami",
+        titulo="Yie Ar Kung-Fu",
+        anio=1985,
+        repo="https://github.com/antxiko/YieArKungFu-disassembly",
+        web="https://antxiko.github.io/YieArKungFu-disassembly/",
+        meta=dict(
+            en="Konami &middot; MSX &middot; 16 KB cartridge &middot; RC-725",
+            es="Konami &middot; MSX &middot; cartucho de 16 KB &middot; RC-725",
+        ),
+        claim=dict(
+            en="The cartridge&rsquo;s <b>two builds</b> collated instruction "
+               "by instruction: 95% of their bytes differ and <b>97% of their "
+               "instructions match</b>. What actually changes is a mask that "
+               "the hard one makes <b>depend on the level</b> &mdash; and the "
+               "fact that only that one carries Konami&rsquo;s hidden mark.",
+            es="Las <b>dos compilaciones</b> del cartucho cotejadas "
+               "instrucción a instrucción: difieren en el 95 % de los bytes y "
+               "coinciden en el <b>97 % de las instrucciones</b>. Lo que "
+               "cambia de verdad es una máscara que la difícil hace "
+               "<b>depender del nivel</b> &mdash;y que solo esa lleva la "
+               "marca oculta de Konami.",
+        ),
+        datos=dict(
+            en=lambda i: (f"{cif(16384, i)} bytes &middot; <b>0</b> unexplained "
+                          f"&middot; reassembles <b>byte for byte</b> &middot; "
+                          f"{cif(7494, i)} of code, {cif(8890, i)} of data "
+                          f"&middot; {cif(569, i)} labels &middot; commented "
+                          f"to <b>44.0%</b>"),
+            es=lambda i: (f"{cif(16384, i)} bytes &middot; <b>0</b> sin explicar "
+                          f"&middot; reensambla <b>byte a byte</b> &middot; "
+                          f"{cif(7494, i)} de código, {cif(8890, i)} de datos "
+                          f"&middot; {cif(569, i)} etiquetas &middot; comentado "
+                          f"al <b>44,0 %</b>"),
+        ),
+        nota=dict(en=None, es=None),
+    ),
+    dict(
         clave="tennis",
         grupo="konami",
         titulo="Konami's Tennis",
