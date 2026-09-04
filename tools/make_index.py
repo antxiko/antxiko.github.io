@@ -1407,6 +1407,58 @@ DESENSAMBLADOS = [
                "la cinta, con sus créditos y todo",
         ),
     ),
+    dict(
+        clave="descubrimiento",
+        grupo="msx-exclusive",
+        titulo="El Descubrimiento de América",
+        anio=1987,
+        repo="https://github.com/antxiko/Descubrimiento-disassembly",
+        web="https://antxiko.github.io/Descubrimiento-disassembly/",
+        meta=dict(
+            en="Gema / OMK Software &middot; MSX &middot; 66,371-byte cassette",
+            es="Gema / OMK Software &middot; MSX &middot; cinta de 66.371 bytes",
+        ),
+        claim=dict(
+            en="The tape carries not one program but <b>two, and both live at "
+               "the same addresses</b> &mdash; which is why this is five "
+               "listings and not one. The BIOS never reads them: a "
+               "<b>88-instruction loader</b> that outlives both halves pulls "
+               "them off the tape by hand, and the two bytes at <b>0xD300 are "
+               "not code but a pointer</b> back to it. The second half plays "
+               "out inside a <b>128&times;52 tile cutaway of the caravel</b>, "
+               "with the cargo you bought drawn stowed in the hold.",
+            es="La cinta no trae un programa sino <b>dos, y los dos viven en "
+               "las mismas direcciones</b> &mdash;por eso son cinco listados y "
+               "no uno&mdash;. La BIOS no los lee: los saca de la cinta a mano "
+               "un <b>cargador de 88 instrucciones</b> que sobrevive a las dos "
+               "mitades, y los dos bytes de <b>0xD300 no son código sino un "
+               "puntero</b> de vuelta a él. La segunda parte transcurre dentro "
+               "de un <b>plano de la carabela de 128&times;52 baldosas</b>, "
+               "con la carga que compraste dibujada estibada en la bodega.",
+        ),
+        datos=dict(
+            en=lambda i: (f"{cif(66016, i)} bytes &middot; <b>0</b> unexplained "
+                          f"&middot; <b>five listings</b>, the whole tape "
+                          f"<b>byte for byte</b> &middot; {cif(15504, i)} of "
+                          f"code, {cif(50512, i)} of data &middot; "
+                          f"{cif(733, i)} labels &middot; commented at "
+                          f"<b>26.7%</b>, no routine below 10%"),
+            es=lambda i: (f"{cif(66016, i)} bytes &middot; <b>0</b> sin explicar "
+                          f"&middot; <b>cinco listados</b>, la cinta entera "
+                          f"<b>byte a byte</b> &middot; {cif(15504, i)} de "
+                          f"código, {cif(50512, i)} de datos &middot; "
+                          f"{cif(733, i)} etiquetas &middot; comentado al "
+                          f"<b>26,7 %</b>, ninguna rutina por debajo del 10 %"),
+        ),
+        nota=dict(
+            en="7,564 bytes on this tape are read by nobody: the tape records "
+               "fixed-size blocks, so whatever was in memory got recorded "
+               "behind the program.",
+            es="7.564 bytes de esta cinta no los lee nadie: los bloques son de "
+               "tamaño fijo, así que detrás del programa se grabó lo que "
+               "hubiera en memoria.",
+        ),
+    ),
 ]
 
 # Los desensamblados van en tres grupos, cada uno una parte de su seccion. Aqui
