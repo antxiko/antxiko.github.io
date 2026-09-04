@@ -704,6 +704,44 @@ DESENSAMBLADOS = [
         nota=dict(en=None, es=None),
     ),
     dict(
+        clave="kingsvalley",
+        grupo="konami",
+        titulo="King's Valley",
+        anio=1985,
+        repo="https://github.com/antxiko/KingsValley-disassembly",
+        web="https://antxiko.github.io/KingsValley-disassembly/",
+        meta=dict(
+            en="Konami &middot; MSX &middot; 16 KB cartridge &middot; RC-727",
+            es="Konami &middot; MSX &middot; cartucho de 16 KB &middot; RC-727",
+        ),
+        claim=dict(
+            en="The colour table kept <b>underneath</b> the pattern table, "
+               "the explorer&rsquo;s position in <b>twenty-four bits</b>, and "
+               "<b>eighty-seven bytes of code</b> hidden behind a "
+               "<code>push</code>. Sprite flicker is shared out on purpose, "
+               "and the stone changes colour every four rooms.",
+            es="La tabla de colores <b>debajo</b> de la de patrones, la "
+               "posición del explorador en <b>veinticuatro bits</b>, y "
+               "<b>ochenta y siete bytes de código</b> escondidos detrás de "
+               "un <code>push</code>. El parpadeo de los sprites está "
+               "repartido a propósito, y la piedra cambia de color cada "
+               "cuatro salas.",
+        ),
+        datos=dict(
+            en=lambda i: (f"{cif(16384, i)} bytes &middot; <b>0</b> unexplained "
+                          f"&middot; reassembles <b>byte for byte</b> &middot; "
+                          f"{cif(9803, i)} of code, {cif(6581, i)} of data "
+                          f"&middot; {cif(651, i)} labels &middot; commented "
+                          f"to <b>45.5%</b>"),
+            es=lambda i: (f"{cif(16384, i)} bytes &middot; <b>0</b> sin explicar "
+                          f"&middot; reensambla <b>byte a byte</b> &middot; "
+                          f"{cif(9803, i)} de código, {cif(6581, i)} de datos "
+                          f"&middot; {cif(651, i)} etiquetas &middot; comentado "
+                          f"al <b>45,5 %</b>"),
+        ),
+        nota=dict(en=None, es=None),
+    ),
+    dict(
         clave="tennis",
         grupo="konami",
         titulo="Konami's Tennis",
