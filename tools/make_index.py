@@ -704,6 +704,47 @@ DESENSAMBLADOS = [
         nota=dict(en=None, es=None),
     ),
     dict(
+        clave="mopiranger",
+        grupo="konami",
+        titulo="Mopi Ranger",
+        anio=1985,
+        repo="https://github.com/antxiko/MopiRanger-disassembly",
+        web="https://antxiko.github.io/MopiRanger-disassembly/",
+        meta=dict(
+            en="Konami &middot; MSX &middot; 16 KB cartridge &middot; RC-728",
+            es="Konami &middot; MSX &middot; cartucho de 16 KB &middot; RC-728",
+        ),
+        claim=dict(
+            en="The house&rsquo;s secret bonus &mdash;<b>5730 points</b>, which "
+               "read <i>go-na-mi</i> in Japanese&mdash;, an attract mode that "
+               "is not AI but a <b>recorded game of 77 keypresses</b>, and a "
+               "game that keeps <b>no collision map</b>: it reads the screen "
+               "to find out where you can walk.",
+            es="El premio secreto de la casa &mdash;<b>5730 puntos</b>, que en "
+               "japonés se leen <i>go-na-mi</i>&mdash;, una demostración que "
+               "no es inteligencia sino una <b>partida grabada de 77 "
+               "pulsaciones</b>, y un juego que <b>no guarda mapa de "
+               "colisiones</b>: lee la pantalla para saber por dónde se puede "
+               "pasar.",
+        ),
+        datos=dict(
+            en=lambda i: (f"{cif(16384, i)} bytes &middot; <b>0</b> unexplained "
+                          f"&middot; reassembles <b>byte for byte</b> &middot; "
+                          f"{cif(7789, i)} of code, {cif(8595, i)} of data "
+                          f"&middot; {cif(512, i)} labels &middot; commented "
+                          f"to <b>52.9%</b>"),
+            es=lambda i: (f"{cif(16384, i)} bytes &middot; <b>0</b> sin explicar "
+                          f"&middot; reensambla <b>byte a byte</b> &middot; "
+                          f"{cif(7789, i)} de código, {cif(8595, i)} de datos "
+                          f"&middot; {cif(512, i)} etiquetas &middot; comentado "
+                          f"al <b>52,9 %</b>"),
+        ),
+        nota=dict(
+            en="The densest listing in the series.",
+            es="El listado más denso de la serie.",
+        ),
+    ),
+    dict(
         clave="kingsvalley",
         grupo="konami",
         titulo="King's Valley",
