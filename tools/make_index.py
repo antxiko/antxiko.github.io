@@ -742,6 +742,43 @@ DESENSAMBLADOS = [
         nota=dict(en=None, es=None),
     ),
     dict(
+        clave="baseball",
+        grupo="konami",
+        titulo="Konami's Baseball",
+        anio=1984,
+        repo="https://github.com/antxiko/KonamisBaseball-disassembly",
+        web="https://antxiko.github.io/KonamisBaseball-disassembly/",
+        meta=dict(
+            en="Konami &middot; MSX &middot; 16 KB cartridge &middot; RC-724",
+            es="Konami &middot; MSX &middot; cartucho de 16 KB &middot; RC-724",
+        ),
+        claim=dict(
+            en="The script&rsquo;s address written <b>behind the CALL "
+               "itself</b>, the <b>twelve teams</b> of the 1984 Japanese "
+               "league hidden in twelve letters, and a computer opponent that "
+               "plays by <b>writing into the joystick slot</b>. The menu demo "
+               "plays itself, and it is silent on purpose.",
+            es="La dirección del guion escrita <b>detrás del propio CALL</b>, "
+               "los <b>doce equipos</b> de la liga japonesa de 1984 "
+               "escondidos en doce letras, y una máquina que juega "
+               "<b>escribiendo en el hueco del mando</b>. La demostración del "
+               "menú se juega sola, y es muda a propósito.",
+        ),
+        datos=dict(
+            en=lambda i: (f"{cif(16384, i)} bytes &middot; <b>0</b> unexplained "
+                          f"&middot; reassembles <b>byte for byte</b> &middot; "
+                          f"{cif(9618, i)} of code, {cif(6766, i)} of data "
+                          f"&middot; {cif(629, i)} labels &middot; commented "
+                          f"to <b>44.5%</b>"),
+            es=lambda i: (f"{cif(16384, i)} bytes &middot; <b>0</b> sin explicar "
+                          f"&middot; reensambla <b>byte a byte</b> &middot; "
+                          f"{cif(9618, i)} de código, {cif(6766, i)} de datos "
+                          f"&middot; {cif(629, i)} etiquetas &middot; comentado "
+                          f"al <b>44,5 %</b>"),
+        ),
+        nota=dict(en=None, es=None),
+    ),
+    dict(
         clave="tennis",
         grupo="konami",
         titulo="Konami's Tennis",
