@@ -541,10 +541,7 @@ DESENSAMBLADOS = [
                           f"&middot; {cif(358, i)} rutinas &middot; comentado al "
                           f"<b>41,9 %</b>, ninguna por debajo del 10 %"),
         ),
-        nota=dict(
-            en="the densest listing of the series",
-            es="el listado mas denso de la serie",
-        ),
+        nota=dict(en=None, es=None),
     ),
     dict(
         clave="casioworldopen",
@@ -738,6 +735,41 @@ DESENSAMBLADOS = [
                           f"{cif(7789, i)} de código, {cif(8595, i)} de datos "
                           f"&middot; {cif(512, i)} etiquetas &middot; comentado "
                           f"al <b>52,9 %</b>"),
+        ),
+        nota=dict(en=None, es=None),
+    ),
+    dict(
+        clave="roadfighter",
+        grupo="konami",
+        titulo="Road Fighter",
+        anio=1985,
+        repo="https://github.com/antxiko/RoadFighter-disassembly",
+        web="https://antxiko.github.io/RoadFighter-disassembly/",
+        meta=dict(
+            en="Konami &middot; MSX &middot; 16 KB cartridge &middot; RC-730",
+            es="Konami &middot; MSX &middot; cartucho de 16 KB &middot; RC-730",
+        ),
+        claim=dict(
+            en="A game that stores <b>nowhere</b> where the road is &mdash;it "
+               "reads it off the screen&mdash;, a routine <b>hidden inside "
+               "its own pointer table</b>, and two builds that differ by a "
+               "<b>single byte</b>.",
+            es="Un juego que <b>no guarda</b> por dónde va la carretera "
+               "&mdash;la lee de la pantalla&mdash;, una rutina <b>escondida "
+               "dentro de su propia tabla de punteros</b>, y dos "
+               "compilaciones que se diferencian en <b>un solo byte</b>.",
+        ),
+        datos=dict(
+            en=lambda i: (f"{cif(16384, i)} bytes &middot; <b>0</b> unexplained "
+                          f"&middot; reassembles <b>byte for byte</b> &middot; "
+                          f"{cif(7797, i)} of code, {cif(8587, i)} of data "
+                          f"&middot; {cif(482, i)} labels &middot; commented "
+                          f"to <b>55.1%</b>"),
+            es=lambda i: (f"{cif(16384, i)} bytes &middot; <b>0</b> sin explicar "
+                          f"&middot; reensambla <b>byte a byte</b> &middot; "
+                          f"{cif(7797, i)} de código, {cif(8587, i)} de datos "
+                          f"&middot; {cif(482, i)} etiquetas &middot; comentado "
+                          f"al <b>55,1 %</b>"),
         ),
         nota=dict(
             en="The densest listing in the series.",
