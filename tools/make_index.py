@@ -772,6 +772,46 @@ DESENSAMBLADOS = [
                           f"al <b>55,1 %</b>"),
         ),
         nota=dict(
+            en=None,
+            es=None,
+        ),
+    ),
+    dict(
+        clave="pingpong",
+        grupo="konami",
+        titulo="Konami's Ping Pong",
+        anio=1985,
+        repo="https://github.com/antxiko/KonamisPingPong-disassembly",
+        web="https://antxiko.github.io/KonamisPingPong-disassembly/",
+        meta=dict(
+            en="Konami &middot; MSX &middot; 16 KB cartridge &middot; RC-731",
+            es="Konami &middot; MSX &middot; cartucho de 16 KB &middot; RC-731",
+        ),
+        claim=dict(
+            en="A table whose right half is <b>not stored anywhere</b> "
+               "&mdash;it is drawn by mirroring the left one byte by "
+               "byte&mdash;, forty frames each carrying <b>the pointer to its "
+               "own patterns</b> right behind it, and the whole of table "
+               "tennis scoring written <b>in BCD</b>.",
+            es="Una mesa cuya mitad derecha <b>no está guardada</b> &mdash;se "
+               "dibuja reflejando la izquierda byte a byte&mdash;, cuarenta "
+               "fotogramas que llevan pegado detrás <b>el puntero a sus "
+               "propios patrones</b>, y el reglamento del tenis de mesa "
+               "entero escrito <b>en BCD</b>.",
+        ),
+        datos=dict(
+            en=lambda i: (f"{cif(16384, i)} bytes &middot; <b>0</b> unexplained "
+                          f"&middot; reassembles <b>byte for byte</b> &middot; "
+                          f"{cif(7676, i)} of code, {cif(8708, i)} of data "
+                          f"&middot; {cif(548, i)} labels &middot; commented "
+                          f"to <b>64.3%</b>"),
+            es=lambda i: (f"{cif(16384, i)} bytes &middot; <b>0</b> sin explicar "
+                          f"&middot; reensambla <b>byte a byte</b> &middot; "
+                          f"{cif(7676, i)} de código, {cif(8708, i)} de datos "
+                          f"&middot; {cif(548, i)} etiquetas &middot; comentado "
+                          f"al <b>64,3 %</b>"),
+        ),
+        nota=dict(
             en="The densest listing in the series.",
             es="El listado más denso de la serie.",
         ),
