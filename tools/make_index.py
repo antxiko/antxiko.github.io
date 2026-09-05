@@ -817,6 +817,47 @@ DESENSAMBLADOS = [
         ),
     ),
     dict(
+        clave="soccer",
+        grupo="konami",
+        titulo="Konami&rsquo;s Soccer",
+        anio=1985,
+        repo="https://github.com/antxiko/KonamisSoccer-disassembly",
+        web="https://antxiko.github.io/KonamisSoccer-disassembly/",
+        meta=dict(
+            en="Konami &middot; MSX &middot; 32 KB cartridge &middot; RC-732",
+            es="Konami &middot; MSX &middot; cartucho de 32 KB &middot; RC-732",
+        ),
+        claim=dict(
+            en="A 1985 football game that <b>calls offside</b> &mdash;and only "
+               "from level 3 up against the machine&mdash;, twelve players "
+               "that are <b>not sprites but 3x3 tile patches</b> over an "
+               "eighty-column pitch held in RAM, and an aim that is never "
+               "computed: it is <b>looked up in two tables</b>.",
+            es="Un fútbol de 1985 que <b>pita el fuera de juego</b> &mdash;y "
+               "sólo del nivel 3 en adelante contra la máquina&mdash;, doce "
+               "jugadores que <b>no son sprites sino parches de 3x3 "
+               "casillas</b> sobre un campo de ochenta columnas guardado en la "
+               "RAM, y una puntería que no se calcula: <b>se consulta en dos "
+               "tablas</b>.",
+        ),
+        datos=dict(
+            en=lambda i: (f"{cif(32768, i)} bytes &middot; <b>0</b> unexplained "
+                          f"&middot; reassembles <b>byte for byte</b> &middot; "
+                          f"{cif(20116, i)} of code, {cif(12652, i)} of data "
+                          f"&middot; {cif(1213, i)} labels &middot; commented "
+                          f"to <b>36.5%</b>"),
+            es=lambda i: (f"{cif(32768, i)} bytes &middot; <b>0</b> sin explicar "
+                          f"&middot; reensambla <b>byte a byte</b> &middot; "
+                          f"{cif(20116, i)} de código, {cif(12652, i)} de datos "
+                          f"&middot; {cif(1213, i)} etiquetas &middot; comentado "
+                          f"al <b>36,5 %</b>"),
+        ),
+        nota=dict(
+            en=None,
+            es=None,
+        ),
+    ),
+    dict(
         clave="kingsvalley",
         grupo="konami",
         titulo="King's Valley",
