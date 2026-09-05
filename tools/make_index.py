@@ -1083,6 +1083,51 @@ DESENSAMBLADOS = [
         nota=dict(en=None, es=None),
     ),
     dict(
+        clave="hypersports3",
+        grupo="konami",
+        titulo="Hyper Sports 3",
+        anio=1985,
+        repo="https://github.com/antxiko/HyperSports3-disassembly",
+        web="https://antxiko.github.io/HyperSports3-disassembly/",
+        meta=dict(
+            en="Konami &middot; MSX &middot; 32 KB cartridge &middot; RC-733",
+            es="Konami &middot; MSX &middot; cartucho de 32 KB &middot; RC-733",
+        ),
+        claim=dict(
+            en="Four events and four different ways of moving the screen: a "
+               "circuit that is <b>not in VRAM</b> but in two RAM windows, a "
+               "runway stored twice to move half a tile at a time, half a "
+               "sheet of ice <b>mirrored by hand</b>, and a cyclist who is "
+               "<b>not a sprite but four tiles</b> with eight one-pixel "
+               "copies. Plus a demo nobody plays: <b>it is a recording</b>.",
+            es="Cuatro pruebas y cuatro maneras distintas de mover la "
+               "pantalla: un circuito que <b>no está en la VRAM</b> sino en "
+               "dos ventanas de la RAM, una pista guardada dos veces para "
+               "moverse medio tile cada vez, medio campo de hielo <b>espejado "
+               "a mano</b> y un ciclista que <b>no es un sprite sino cuatro "
+               "casillas</b> con ocho copias corridas un píxel. Y una "
+               "demostración que no la juega nadie: <b>está grabada</b>.",
+        ),
+        datos=dict(
+            en=lambda i: (f"{cif(32768, i)} bytes &middot; <b>0</b> unexplained "
+                          f"&middot; reassembles <b>byte for byte</b> &middot; "
+                          f"{cif(14410, i)} of code, {cif(18358, i)} of data "
+                          f"&middot; {cif(931, i)} labels &middot; commented "
+                          f"to <b>34.5%</b>"),
+            es=lambda i: (f"{cif(32768, i)} bytes &middot; <b>0</b> sin explicar "
+                          f"&middot; reensambla <b>byte a byte</b> &middot; "
+                          f"{cif(14410, i)} de código, {cif(18358, i)} de datos "
+                          f"&middot; {cif(931, i)} etiquetas &middot; comentado "
+                          f"al <b>34,5 %</b>"),
+        ),
+        nota=dict(
+            en="The world records live in <b>RAM</b>, because the game "
+               "overwrites them.",
+            es="Los récords del mundo viven en la <b>RAM</b>, porque el juego "
+               "los sobrescribe.",
+        ),
+    ),
+    dict(
         clave="cabbagepatch",
         grupo="konami",
         titulo="Cabbage Patch Kids",
