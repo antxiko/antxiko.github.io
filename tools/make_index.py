@@ -853,8 +853,10 @@ DESENSAMBLADOS = [
                           f"al <b>36,5 %</b>"),
         ),
         nota=dict(
-            en=None,
-            es=None,
+            en="The same cartridge also came out as <b>Konami&rsquo;s "
+               "Football</b>: <b>one instruction out of 9,755</b> differs.",
+            es="El mismo cartucho salió también como <b>Konami&rsquo;s "
+               "Football</b>: cambia <b>una instrucción de 9.755</b>.",
         ),
     ),
     dict(
