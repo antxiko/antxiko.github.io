@@ -1128,6 +1128,50 @@ DESENSAMBLADOS = [
         ),
     ),
     dict(
+        clave="goonies",
+        grupo="konami",
+        titulo="The Goonies",
+        anio=1986,
+        repo="https://github.com/antxiko/Goonies-disassembly",
+        web="https://antxiko.github.io/Goonies-disassembly/",
+        meta=dict(
+            en="Konami &middot; MSX &middot; 32 KB cartridge &middot; RC-734",
+            es="Konami &middot; MSX &middot; cartucho de 32 KB &middot; RC-734",
+        ),
+        claim=dict(
+            en="<b>A hundred rooms and not one repeats</b>, in 32 KB, and none "
+               "of them is drawn: each room is eighty bytes pointing at 8x4 "
+               "tile blocks, and those blocks <b>share tails</b> and can be "
+               "asked for mirrored. And the name of each round <b>is its own "
+               "password</b>: the very bytes that paint the caption are the "
+               "ones you type to get there.",
+            es="<b>Cien salas y ninguna se repite</b>, en 32 KB, y ni una está "
+               "dibujada: cada sala son ochenta bytes que apuntan a bloques de "
+               "8x4 casillas, y esos bloques <b>comparten cola</b> y se piden "
+               "espejados. Y el nombre de cada ronda <b>es a la vez su "
+               "contraseña</b>: los mismos bytes que pintan el rótulo son los "
+               "que se teclean para llegar allí.",
+        ),
+        datos=dict(
+            en=lambda i: (f"{cif(32768, i)} bytes &middot; <b>0</b> unexplained "
+                          f"&middot; reassembles <b>byte for byte</b> &middot; "
+                          f"{cif(17422, i)} of code, {cif(15346, i)} of data "
+                          f"&middot; {cif(1176, i)} labels &middot; commented "
+                          f"to <b>36.9%</b>"),
+            es=lambda i: (f"{cif(32768, i)} bytes &middot; <b>0</b> sin explicar "
+                          f"&middot; reensambla <b>byte a byte</b> &middot; "
+                          f"{cif(17422, i)} de código, {cif(15346, i)} de datos "
+                          f"&middot; {cif(1176, i)} etiquetas &middot; comentado "
+                          f"al <b>36,9 %</b>"),
+        ),
+        nota=dict(
+            en="All <b>one hundred rooms</b> drawn from the ROM, and "
+               "<b>64,000 tiles in 2,983 bytes</b>.",
+            es="Las <b>cien salas</b> dibujadas desde la ROM, y <b>64.000 "
+               "casillas en 2.983 bytes</b>.",
+        ),
+    ),
+    dict(
         clave="cabbagepatch",
         grupo="konami",
         titulo="Cabbage Patch Kids",
