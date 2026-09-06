@@ -1128,6 +1128,49 @@ DESENSAMBLADOS = [
         ),
     ),
     dict(
+        clave="gamemaster",
+        grupo="konami",
+        titulo="Konami&rsquo;s Game Master",
+        anio=1986,
+        repo="https://github.com/antxiko/GameMaster-disassembly",
+        web="https://antxiko.github.io/GameMaster-disassembly/",
+        meta=dict(
+            en="Konami &middot; MSX &middot; 16 KB cartridge &middot; RC-735",
+            es="Konami &middot; MSX &middot; cartucho de 16 KB &middot; RC-735",
+        ),
+        claim=dict(
+            en="Not a game: the <b>cheat cartridge</b>. It plugs in beside "
+               "another one, works out which game it is by <b>adding up 256 "
+               "bytes</b> of its ROM, and patches that game&rsquo;s start-up "
+               "<b>in RAM</b> to take over its interrupt. Its &ldquo;cheat "
+               "active&rdquo; light is <b>the CAPS LED</b>.",
+            es="No es un juego: es el <b>cartucho de trucos</b>. Se enchufa "
+               "junto a otro, averigua qué juego es <b>sumando 256 bytes</b> "
+               "de su ROM, y le parchea el arranque <b>en la RAM</b> para "
+               "quedarse con su interrupción. Su aviso de truco activo es "
+               "<b>el LED de CAPS</b>.",
+        ),
+        datos=dict(
+            en=lambda i: (f"{cif(16384, i)} bytes &middot; <b>0</b> unexplained "
+                          f"&middot; reassembles <b>byte for byte</b> &middot; "
+                          f"{cif(10522, i)} of code, {cif(5862, i)} of data "
+                          f"&middot; {cif(663, i)} routines &middot; commented "
+                          f"to <b>22,1 %</b>"),
+            es=lambda i: (f"{cif(16384, i)} bytes &middot; <b>0</b> sin explicar "
+                          f"&middot; reensambla <b>byte a byte</b> &middot; "
+                          f"{cif(10522, i)} de código, {cif(5862, i)} de datos "
+                          f"&middot; {cif(663, i)} rutinas &middot; comentado "
+                          f"al <b>22,1 %</b>"),
+        ),
+        nota=dict(
+            en="The only commercial MSX cartridge whose entire job is to read "
+               "and modify another cartridge. It recognises <b>28 games</b>.",
+            es="El único cartucho comercial de MSX cuyo trabajo entero "
+               "consiste en leer y modificar otro cartucho. Reconoce "
+               "<b>28 juegos</b>.",
+        ),
+    ),
+    dict(
         clave="goonies",
         grupo="konami",
         titulo="The Goonies",
