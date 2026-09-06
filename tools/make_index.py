@@ -1456,6 +1456,50 @@ DESENSAMBLADOS = [
         nota=dict(en=None, es=None),
     ),
     dict(
+        clave="trailblazer",
+        grupo="ports",
+        titulo="Trailblazer",
+        anio=1986,
+        repo="https://github.com/antxiko/Trailblazer-disassembly",
+        web="https://antxiko.github.io/Trailblazer-disassembly/",
+        meta=dict(
+            en="Gremlin Graphics &middot; MSX &middot; cassette tape",
+            es="Gremlin Graphics &middot; MSX &middot; cinta de cassette",
+        ),
+        claim=dict(
+            en="A track in perspective that is <b>drawn nowhere at all</b>: the "
+               "routine that paints it <b>rewrites itself</b> on every row with "
+               "the pixels it needs, and what is stored are fourteen lists of "
+               "indices into a table of rows. Five bands repainted at five "
+               "different rates make the depth &mdash; no division, no table, "
+               "not one multiply.",
+            es="Una pista en perspectiva que <b>no está dibujada en ninguna "
+               "parte</b>: la rutina que la pinta <b>se reescribe a sí misma</b> "
+               "cada fila con los píxeles que le tocan, y lo que hay guardado "
+               "son catorce listas de índices a una tabla de filas. Cinco "
+               "bandas repintadas a cinco ritmos distintos hacen la profundidad "
+               "&mdash;sin división, sin tabla y sin una sola multiplicación&mdash;.",
+        ),
+        datos=dict(
+            en=lambda i: (f"{cif(38299, i)} bytes &middot; <b>0</b> unexplained "
+                          f"&middot; the tape reassembles <b>byte for byte</b> "
+                          f"&middot; {cif(6556, i)} of code, {cif(31743, i)} of "
+                          f"data &middot; {cif(355, i)} labels &middot; "
+                          f"commented to <b>30.7%</b>"),
+            es=lambda i: (f"{cif(38299, i)} bytes &middot; <b>0</b> sin explicar "
+                          f"&middot; la cinta reensambla <b>byte a byte</b> "
+                          f"&middot; {cif(6556, i)} de código, {cif(31743, i)} de "
+                          f"datos &middot; {cif(355, i)} etiquetas &middot; "
+                          f"comentado al <b>30,7 %</b>"),
+        ),
+        nota=dict(
+            en="The loader does not read the tape: it <b>builds a bridge on the "
+               "stack</b> and rewrites it three times.",
+            es="El cargador no lee la cinta: <b>monta un puente en la pila</b> y "
+               "se lo reescribe tres veces.",
+        ),
+    ),
+    dict(
         clave="stardust",
         grupo="ports",
         titulo="Stardust",
