@@ -935,6 +935,45 @@ DESENSAMBLADOS = [
         nota=dict(en=None, es=None),
     ),
     dict(
+        clave="knightmare",
+        grupo="konami",
+        titulo="Knightmare",
+        anio=1986,
+        repo="https://github.com/antxiko/Knightmare-disassembly",
+        web="https://antxiko.github.io/Knightmare-disassembly/",
+        meta=dict(
+            en="Konami &middot; MSX &middot; 32 KB cartridge &middot; RC-739",
+            es="Konami &middot; MSX &middot; cartucho de 32 KB &middot; RC-739",
+        ),
+        claim=dict(
+            en="<b>Konami left two typos in its cosine tables.</b> A cosine "
+               "quadrant can only go down; these two go up once each, and the "
+               "value that goes up is <b>precisely the only one</b> that "
+               "departs from the function. Inside there is also a cheat that "
+               "asks for <b>left and right at once</b> &mdash; impossible on a "
+               "joystick &mdash; and hands over twenty-six lives.",
+            es="<b>Konami dejó dos erratas en sus tablas de coseno.</b> Un "
+               "cuadrante de coseno solo puede bajar; estos dos suben una vez "
+               "cada uno, y el valor que sube es <b>justo el único</b> que se "
+               "aparta de la función. Dentro hay además un truco que pide "
+               "<b>izquierda y derecha a la vez</b> &mdash;imposible en un "
+               "joystick&mdash; y regala veintiséis vidas.",
+        ),
+        datos=dict(
+            en=lambda i: (f"{cif(32768, i)} bytes &middot; <b>0</b> unexplained "
+                          f"&middot; reassembles <b>byte for byte</b> &middot; "
+                          f"{cif(15233, i)} of code, {cif(17535, i)} of data "
+                          f"&middot; {cif(985, i)} labels &middot; commented "
+                          f"to <b>22.4%</b>"),
+            es=lambda i: (f"{cif(32768, i)} bytes &middot; <b>0</b> sin explicar "
+                          f"&middot; reensambla <b>byte a byte</b> &middot; "
+                          f"{cif(15233, i)} de código, {cif(17535, i)} de datos "
+                          f"&middot; {cif(985, i)} etiquetas &middot; comentado "
+                          f"al <b>22,4 %</b>"),
+        ),
+        nota=dict(en=None, es=None),
+    ),
+    dict(
         clave="yiearkungfu2",
         grupo="konami",
         titulo="Yie Ar Kung-Fu II",
