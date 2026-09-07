@@ -974,6 +974,47 @@ DESENSAMBLADOS = [
         nota=dict(en=None, es=None),
     ),
     dict(
+        clave="boxing",
+        grupo="konami",
+        titulo="Konami's Boxing",
+        anio=1985,
+        repo="https://github.com/antxiko/Boxing-disassembly",
+        web="https://antxiko.github.io/Boxing-disassembly/",
+        meta=dict(
+            en="Konami &middot; MSX &middot; 32 KB cartridge &middot; RC-736",
+            es="Konami &middot; MSX &middot; cartucho de 32 KB &middot; RC-736",
+        ),
+        claim=dict(
+            en="<b>Six opponents, and only three of them drawn.</b> There are "
+               "six names in the table at 0x5661, but the figures come out of "
+               "a table of <b>three</b> words: the three of the second round "
+               "are the first three with the colour swapped. And the "
+               "scorecard is kept upside down &mdash; it adds up <b>faults</b> "
+               "and finishes with <code>10 - faults</code>, which is the "
+               "ten-point must system of real boxing.",
+            es="<b>Seis rivales, y solo tres dibujados.</b> Los nombres son "
+               "seis en la tabla de 0x5661, pero las figuras salen de una "
+               "tabla de <b>tres</b> palabras: los tres de la segunda vuelta "
+               "son los tres primeros con el color cambiado. Y la puntuación "
+               "se lleva al revés &mdash;va sumando <b>faltas</b> y al final "
+               "hace <code>10 - faltas</code>, que es el sistema de los diez "
+               "puntos del boxeo de verdad.",
+        ),
+        datos=dict(
+            en=lambda i: (f"{cif(32768, i)} bytes &middot; <b>0</b> unexplained "
+                          f"&middot; reassembles <b>byte for byte</b> &middot; "
+                          f"{cif(6932, i)} of code, {cif(25836, i)} of data "
+                          f"&middot; {cif(475, i)} labels &middot; commented "
+                          f"to <b>52.6%</b>"),
+            es=lambda i: (f"{cif(32768, i)} bytes &middot; <b>0</b> sin explicar "
+                          f"&middot; reensambla <b>byte a byte</b> &middot; "
+                          f"{cif(6932, i)} de código, {cif(25836, i)} de datos "
+                          f"&middot; {cif(475, i)} etiquetas &middot; comentado "
+                          f"al <b>52,6 %</b>"),
+        ),
+        nota=dict(en=None, es=None),
+    ),
+    dict(
         clave="yiearkungfu2",
         grupo="konami",
         titulo="Yie Ar Kung-Fu II",
