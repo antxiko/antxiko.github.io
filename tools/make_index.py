@@ -935,6 +935,46 @@ DESENSAMBLADOS = [
         nota=dict(en=None, es=None),
     ),
     dict(
+        clave="yiearkungfu2",
+        grupo="konami",
+        titulo="Yie Ar Kung-Fu II",
+        anio=1985,
+        repo="https://github.com/antxiko/YieArKungFu2-disassembly",
+        web="https://antxiko.github.io/YieArKungFu2-disassembly/",
+        meta=dict(
+            en="Konami &middot; MSX &middot; 32 KB cartridge &middot; RC-737",
+            es="Konami &middot; MSX &middot; cartucho de 32 KB &middot; RC-737",
+        ),
+        claim=dict(
+            en="<b>It looks for its own first part in the next slot.</b> "
+               "Before installing the interrupt hook it scans the four slots "
+               "and takes two 16-byte sums, and it tells the <b>two builds</b> "
+               "of Yie Ar Kung-Fu (RC-725) apart. Inside, half a screen: the "
+               "scenery is drawn only on the left and the right half is the "
+               "same patterns with <b>all eight bits reversed</b>.",
+            es="<b>Busca a su primera parte en la ranura de al lado.</b> Antes "
+               "de instalar el gancho de interrupción rastrea las cuatro "
+               "ranuras y toma dos sumas de 16 bytes, y distingue las <b>dos "
+               "compilaciones</b> del Yie Ar Kung-Fu (RC-725). Dentro, media "
+               "pantalla: el decorado se dibuja solo por la izquierda y la "
+               "derecha son los mismos patrones con <b>los ocho bits del "
+               "revés</b>.",
+        ),
+        datos=dict(
+            en=lambda i: (f"{cif(32768, i)} bytes &middot; <b>0</b> unexplained "
+                          f"&middot; reassembles <b>byte for byte</b> &middot; "
+                          f"{cif(13725, i)} of code, {cif(19043, i)} of data "
+                          f"&middot; {cif(1028, i)} labels &middot; commented "
+                          f"to <b>40.9%</b>"),
+            es=lambda i: (f"{cif(32768, i)} bytes &middot; <b>0</b> sin explicar "
+                          f"&middot; reensambla <b>byte a byte</b> &middot; "
+                          f"{cif(13725, i)} de código, {cif(19043, i)} de datos "
+                          f"&middot; {cif(1028, i)} etiquetas &middot; comentado "
+                          f"al <b>40,9 %</b>"),
+        ),
+        nota=dict(en=None, es=None),
+    ),
+    dict(
         clave="yiearkungfu",
         grupo="konami",
         titulo="Yie Ar Kung-Fu",
