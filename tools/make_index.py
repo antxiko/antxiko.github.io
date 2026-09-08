@@ -119,6 +119,55 @@ DESENSAMBLADOS = [
         ),
     ),
     dict(
+        clave="bomberman",
+        grupo="msx-exclusive",
+        titulo="Bomber Man",
+        anio=1983,
+        repo="https://github.com/antxiko/Bomberman-disassembly",
+        web="https://antxiko.github.io/Bomberman-disassembly/",
+        meta=dict(
+            en="Hudson Soft &middot; MSX &middot; 8 KB cartridge",
+            es="Hudson Soft &middot; MSX &middot; cartucho de 8 KB",
+        ),
+        claim=dict(
+            en="The smallest cartridge in this series, and the whole game fits "
+               "inside it <b>without a single sprite</b>: the bomber, the "
+               "monsters, the bombs and the flames are all name-table tiles. "
+               "There is no map data structure either &mdash; the game reads "
+               "the tile number, and three comparisons carry the lot. Its "
+               "cartridge header <b>is code</b>: INIT points at 0x4004, where "
+               "STATEMENT, DEVICE and TEXT should be.",
+            es="El cartucho más pequeño de esta serie, y el juego entero cabe "
+               "dentro <b>sin un solo sprite</b>: el bombero, los bichos, las "
+               "bombas y las llamas son casillas de la tabla de nombres. "
+               "Tampoco hay una estructura de datos del mapa &mdash;el juego "
+               "lee el número de casilla, y tres comparaciones sostienen todo "
+               "lo demás&mdash;. Su cabecera de cartucho <b>es código</b>: "
+               "INIT apunta a 0x4004, donde deberían estar STATEMENT, DEVICE "
+               "y TEXT.",
+        ),
+        datos=dict(
+            en=lambda i: (f"{cif(8192, i)} bytes &middot; <b>0</b> unexplained "
+                          f"&middot; reassembles <b>byte for byte</b> &middot; "
+                          f"{cif(3557, i)} of code, {cif(4635, i)} of data "
+                          f"&middot; {cif(200, i)} routines, none under 10% "
+                          f"&middot; commented to <b>50.2%</b>"),
+            es=lambda i: (f"{cif(8192, i)} bytes &middot; <b>0</b> sin explicar "
+                          f"&middot; reensambla <b>byte a byte</b> &middot; "
+                          f"{cif(3557, i)} de código, {cif(4635, i)} de datos "
+                          f"&middot; {cif(200, i)} rutinas, ninguna por debajo "
+                          f"del 10 % &middot; comentado al <b>50,2 %</b>"),
+        ),
+        nota=dict(
+            en="every fourth stage the game <b>drops the bombs for you</b>, "
+               "and says so with a blinking label under the same two "
+               "instructions",
+            es="cada cuatro fases el juego <b>pone las bombas solo</b>, y lo "
+               "anuncia con un rótulo parpadeante bajo las mismas dos "
+               "instrucciones",
+        ),
+    ),
+    dict(
         clave="timepilot",
         grupo="konami",
         titulo="Time Pilot",
