@@ -159,12 +159,12 @@ DESENSAMBLADOS = [
                           f"del 10 % &middot; comentado al <b>50,2 %</b>"),
         ),
         nota=dict(
-            en="every fourth stage the game <b>drops the bombs for you</b>, "
-               "and says so with a blinking label under the same two "
-               "instructions",
-            es="cada cuatro fases el juego <b>pone las bombas solo</b>, y lo "
-               "anuncia con un rótulo parpadeante bajo las mismas dos "
-               "instrucciones",
+            en="every fourth stage the game <b>drops the bombs for you</b> "
+               "&mdash; and hides a different prize under the bricks, chosen "
+               "by the very same mask",
+            es="cada cuatro fases el juego <b>pone las bombas solo</b> &mdash;y "
+               "esconde otro premio debajo de los ladrillos, elegido con la "
+               "misma máscara&mdash;",
         ),
     ),
     dict(
