@@ -1023,6 +1023,48 @@ DESENSAMBLADOS = [
         nota=dict(en=None, es=None),
     ),
     dict(
+        clave="twinbee",
+        grupo="konami",
+        titulo="Twin Bee",
+        anio=1986,
+        repo="https://github.com/antxiko/TwinBee-disassembly",
+        web="https://antxiko.github.io/TwinBee-disassembly/",
+        meta=dict(
+            en="Konami &middot; MSX &middot; 32 KB cartridge &middot; RC-740",
+            es="Konami &middot; MSX &middot; cartucho de 32 KB &middot; RC-740",
+        ),
+        claim=dict(
+            en="<b>Only half a ship is in the ROM.</b> Each sprite pattern "
+               "stores its <b>left half</b>; the right half is worked out by "
+               "flipping every byte bit for bit, which is why everything that "
+               "flies in this game is symmetric. And the demo is a "
+               "<b>recorded game</b>: twenty-eight joystick readings fed in "
+               "through the player's own door, with the Z80's R register set "
+               "to zero so the randomness comes out the same every time.",
+            es="<b>En la ROM solo está media nave.</b> De cada patrón de "
+               "sprite se guarda la <b>mitad izquierda</b>; la derecha la "
+               "calcula el cartucho invirtiendo cada byte bit a bit, y por eso "
+               "todo lo que vuela en este juego es simétrico. Y la "
+               "demostración es una <b>partida grabada</b>: veintiocho "
+               "lecturas de mando metidas por la puerta del jugador, con el "
+               "registro R del Z80 puesto a cero para que el azar salga "
+               "siempre igual.",
+        ),
+        datos=dict(
+            en=lambda i: (f"{cif(32768, i)} bytes &middot; <b>0</b> unexplained "
+                          f"&middot; reassembles <b>byte for byte</b> &middot; "
+                          f"{cif(14406, i)} of code, {cif(18362, i)} of data "
+                          f"&middot; {cif(1000, i)} labels &middot; commented "
+                          f"to <b>24.6%</b>"),
+            es=lambda i: (f"{cif(32768, i)} bytes &middot; <b>0</b> sin explicar "
+                          f"&middot; reensambla <b>byte a byte</b> &middot; "
+                          f"{cif(14406, i)} de código, {cif(18362, i)} de datos "
+                          f"&middot; {cif(1000, i)} etiquetas &middot; comentado "
+                          f"al <b>24,6 %</b>"),
+        ),
+        nota=dict(en=None, es=None),
+    ),
+    dict(
         clave="boxing",
         grupo="konami",
         titulo="Konami's Boxing",
