@@ -985,20 +985,24 @@ DESENSAMBLADOS = [
             es="Konami &middot; MSX &middot; cartucho de 32 KB &middot; RC-736",
         ),
         claim=dict(
-            en="<b>Six opponents, and only three of them drawn.</b> There are "
-               "six names in the table at 0x5661, but the figures come out of "
-               "a table of <b>three</b> words: the three of the second round "
-               "are the first three with the colour swapped. And the "
-               "scorecard is kept upside down &mdash; it adds up <b>faults</b> "
-               "and finishes with <code>10 - faults</code>, which is the "
-               "ten-point must system of real boxing.",
-            es="<b>Seis rivales, y solo tres dibujados.</b> Los nombres son "
-               "seis en la tabla de 0x5661, pero las figuras salen de una "
-               "tabla de <b>tres</b> palabras: los tres de la segunda vuelta "
-               "son los tres primeros con el color cambiado. Y la puntuación "
-               "se lleva al revés &mdash;va sumando <b>faltas</b> y al final "
-               "hace <code>10 - faltas</code>, que es el sistema de los diez "
-               "puntos del boxeo de verdad.",
+            en="<b>Six opponents out of three figure archives, and still six "
+               "faces.</b> There are six names in the table at 0x5661 and the "
+               "figures come out of a table of <b>three</b> words, but every "
+               "opponent figure hides one piece more that only the second "
+               "round paints: SANCHESS's long hair, CHINA KHAN's pigtail, "
+               "MOAI Jr.'s face &mdash;and only the moai changes colour. And "
+               "the scorecard is kept upside down &mdash; it adds up "
+               "<b>faults</b> and finishes with <code>10 - faults</code>, "
+               "which is the ten-point must system of real boxing.",
+            es="<b>Seis rivales de tres archivos de figuras, y aun así seis "
+               "caras.</b> Los nombres son seis en la tabla de 0x5661 y las "
+               "figuras salen de una tabla de <b>tres</b> palabras, pero cada "
+               "figura de rival esconde una pieza de más que solo pinta la "
+               "segunda vuelta: el pelo largo de SANCHESS, la coleta de CHINA "
+               "KHAN, la cara de MOAI Jr. &mdash;y solo el moai cambia de "
+               "color. Y la puntuación se lleva al revés &mdash;va sumando "
+               "<b>faltas</b> y al final hace <code>10 - faltas</code>, que es "
+               "el sistema de los diez puntos del boxeo de verdad.",
         ),
         datos=dict(
             en=lambda i: (f"{cif(32768, i)} bytes &middot; <b>0</b> unexplained "
