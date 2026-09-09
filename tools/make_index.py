@@ -1055,12 +1055,12 @@ DESENSAMBLADOS = [
                           f"&middot; reassembles <b>byte for byte</b> &middot; "
                           f"{cif(14406, i)} of code, {cif(18362, i)} of data "
                           f"&middot; {cif(1000, i)} labels &middot; commented "
-                          f"to <b>24.6%</b>"),
+                          f"to <b>41.4%</b>"),
             es=lambda i: (f"{cif(32768, i)} bytes &middot; <b>0</b> sin explicar "
                           f"&middot; reensambla <b>byte a byte</b> &middot; "
                           f"{cif(14406, i)} de código, {cif(18362, i)} de datos "
                           f"&middot; {cif(1000, i)} etiquetas &middot; comentado "
-                          f"al <b>24,6 %</b>"),
+                          f"al <b>41,4 %</b>"),
         ),
         nota=dict(en=None, es=None),
     ),
