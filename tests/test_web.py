@@ -221,9 +221,9 @@ class TestPortada(unittest.TestCase):
                      for g in mi.GRUPOS}
         konami = {p["clave"] for p in mi.DESENSAMBLADOS
                   if p["meta"]["en"].startswith("Konami")}
-        exclusivos = {"3dgolf", "holeinone", "casioworldopen", "alehop",
-                      "temptations", "colt36", "demonia", "descubrimiento",
-                      "bomberman"}
+        exclusivos = {"3dgolf", "holeinone", "holeinonepro", "casioworldopen",
+                      "alehop", "temptations", "colt36", "demonia",
+                      "descubrimiento", "bomberman"}
         self.assertEqual(por_grupo["konami"], konami)
         self.assertEqual(por_grupo["msx-exclusive"], exclusivos)
         self.assertEqual(por_grupo["ports"], claves - konami - exclusivos)
