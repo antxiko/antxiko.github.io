@@ -2130,6 +2130,52 @@ def html_metodo(idioma, t):
 # rejilla) o bien ademas 'partes': subsecciones con ancla y rotulo propio, cada
 # una con sus 'proyectos' o con un 'html' (idioma, textos) -> html. La seccion
 # gana entonces un menu propio para saltar entre partes.
+HERRAMIENTAS = [
+    dict(
+        clave="serie-db",
+        titulo="La base de datos de la serie",
+        anio=2026,
+        repo="https://github.com/antxiko/MSX-disassembly-database",
+        web="https://antxiko.github.io/MSX-disassembly-database/",
+        meta=dict(
+            en="49 projects &middot; measured, not copied &middot; 28 tests",
+            es="49 proyectos &middot; medido, no copiado &middot; 28 pruebas",
+        ),
+        claim=dict(
+            en="What comes out of looking at all of them at once. Every figure "
+               "here is <b>measured again</b> against the listings the "
+               "repositories publish today, never copied from a README &mdash; "
+               "and that alone found <b>four cards quoting a density their own "
+               "listing no longer gives</b>. It also shows that the joystick "
+               "read is <b>thirty-six identical bytes in eighteen cartridges "
+               "going by twelve different names</b>, and that seventeen "
+               "cartridges carry Konami&rsquo;s hidden mark, all seventeen "
+               "matching the catalogue number their card publishes.",
+            es="Lo que sale de mirarlos todos a la vez. Cada cifra está "
+               "<b>medida otra vez</b> sobre los listados que los repositorios "
+               "publican hoy, nunca copiada de un README &mdash;y sólo con eso "
+               "aparecieron <b>cuatro fichas que publican una densidad que su "
+               "propio listado ya no da</b>&mdash;. También enseña que la "
+               "lectura de mandos son <b>treinta y seis bytes idénticos en "
+               "dieciocho cartuchos con doce nombres distintos</b>, y que "
+               "diecisiete cartuchos llevan la marca oculta de Konami, los "
+               "diecisiete con el número de catálogo que publica su ficha.",
+        ),
+        datos=dict(
+            en=lambda i: (f"{cif(249851, i)} instructions &middot; "
+                          f"{cif(81234, i)} comments &middot; <b>32.5 %</b> "
+                          f"across the series &middot; <b>0</b> routines below "
+                          f"10 % &middot; {cif(1465115, i)} bytes of binary"),
+            es=lambda i: (f"{cif(249851, i)} instrucciones &middot; "
+                          f"{cif(81234, i)} comentarios &middot; <b>32,5 %</b> "
+                          f"en toda la serie &middot; <b>0</b> rutinas por "
+                          f"debajo del 10 % &middot; {cif(1465115, i)} bytes "
+                          f"de binario"),
+        ),
+        nota=dict(en="", es=""),
+    ),
+]
+
 CATEGORIAS = [
     dict(
         id="disassemblies",
@@ -2176,6 +2222,25 @@ CATEGORIAS = [
                "de diferencias, nunca una imagen de cartucho.",
         ),
         proyectos=PARCHES,
+    ),
+    dict(
+        id="tools",
+        titulo=dict(en="The series from the inside", es="La serie por dentro"),
+        menu=dict(en="From the inside", es="Por dentro"),
+        intro=dict(
+            en="Not a game: the measurements. What the disassemblies look like "
+               "when you put all of them side by side and measure again instead "
+               "of trusting what each one says about itself &mdash; which is how "
+               "you find out that the same routine goes by twelve names, and "
+               "that four published figures had quietly gone stale.",
+            es="Esto no es un juego: son las medidas. Lo que se ve en los "
+               "desensamblados cuando se ponen todos uno al lado del otro y se "
+               "vuelve a medir en vez de fiarse de lo que cada uno dice de sí "
+               "mismo &mdash;que es como se descubre que la misma rutina lleva "
+               "doce nombres, y que cuatro cifras publicadas se habían quedado "
+               "viejas sin que nadie se enterara&mdash;.",
+        ),
+        proyectos=HERRAMIENTAS,
     ),
     # Para anadir otra categoria: una lista de proyectos con estos mismos campos
     # y otra entrada aqui, con 'partes' si las necesita. El menu y las secciones
