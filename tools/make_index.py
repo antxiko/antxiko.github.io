@@ -2088,7 +2088,7 @@ PARCHES = [
                "parche IPS, extraoficial",
         ),
         claim=dict(
-            en="Araubi asked for three things on the forum and four came out. The "
+            en="Araubi asked for three things on the forum and six came out. The "
                "enemy was invisible because the loop that plants units on the map "
                "<b>stops one slot before the enemy side begins</b>; a unit&rsquo;s "
                "qualities were adjectives with no numbers; and the Ring&rsquo;s "
@@ -2097,8 +2097,10 @@ PARCHES = [
                "also got <b>the Eye of Sauron</b>, because a free bit in the map "
                "byte was all it took to tell the two sides apart. The new code "
                "lives inside the <b>ZX beeper engine this port brought across and "
-               "never calls</b>.",
-            es="Araubi pidió tres cosas en el foro y salieron cuatro. Las unidades "
+               "never calls</b>. And the <b>whole map is repainted</b>: 122 of the "
+               "128 tiles, drawn in a PNG and turned into patch entries by the "
+               "tool itself.",
+            es="Araubi pidió tres cosas en el foro y salieron seis. Las unidades "
                "enemigas no se veían porque el bucle que las siembra en el mapa "
                "<b>para una ranura antes de que empiece el bando enemigo</b>; las "
                "cualidades de una unidad eran adjetivos sin número; y el plazo del "
@@ -2107,21 +2109,25 @@ PARCHES = [
                "llevan además <b>el Ojo de Sauron</b>, porque bastaba un bit libre "
                "del byte de mapa para distinguir los dos bandos. El código nuevo "
                "vive dentro del <b>motor de altavoz del ZX que esta conversión "
-               "trajo y no llama nadie</b>.",
+               "trajo y no llama nadie</b>. Y el <b>mapa viene repintado entero</b>: "
+               "122 de los 128 tiles, dibujados en un PNG y convertidos en entradas "
+               "del parche por la propia herramienta.",
         ),
         datos=dict(
-            en=lambda i: ("<b>197</b> bytes changed in <b>7</b> places &middot; "
-                          "<b>0</b> outside the table &middot; <b>0</b> shifted "
-                          f"&middot; {cif(249, i)}-byte IPS &middot; no tape "
-                          "distributed"),
-            es=lambda i: ("<b>197</b> bytes cambiados en <b>7</b> sitios &middot; "
-                          "<b>0</b> fuera de la tabla &middot; <b>0</b> desplazados "
-                          f"&middot; IPS de {cif(249, i)} bytes &middot; no se "
-                          "distribuye ninguna cinta"),
+            en=lambda i: (f"<b>{cif(1396, i)}</b> bytes changed in <b>130</b> "
+                          "places &middot; <b>0</b> outside the table &middot; "
+                          f"<b>0</b> shifted &middot; {cif(1718, i)}-byte IPS "
+                          "&middot; no tape distributed"),
+            es=lambda i: (f"<b>{cif(1396, i)}</b> bytes cambiados en <b>130</b> "
+                          "sitios &middot; <b>0</b> fuera de la tabla &middot; "
+                          f"<b>0</b> desplazados &middot; IPS de {cif(1718, i)} "
+                          "bytes &middot; no se distribuye ninguna cinta"),
         ),
         nota=dict(
-            en="playable, but nobody has finished a game with it yet",
-            es="se juega, pero nadie ha terminado una partida con él",
+            en="playable; Araubi finished a game with the September build, nobody "
+               "has with the map repainted",
+            es="se juega; Araubi terminó una partida con la versión de septiembre, "
+               "con el mapa repintado todavía nadie",
         ),
     ),
 ]
