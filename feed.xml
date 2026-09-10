@@ -1,0 +1,171 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom" xml:lang="en">
+  <title>antxiko — commented disassemblies of 8-bit games</title>
+  <subtitle>Old 8-bit binaries taken apart byte by byte and commented, with the tools to rebuild them: nothing gets claimed that the binary does not show, and the source has to give the original back, byte for byte. Right now that means 48 MSX games.</subtitle>
+  <id>tag:antxiko.github.io,2026:feed/en</id>
+  <link rel="self" type="application/atom+xml" href="https://antxiko.github.io/feed.xml"/>
+  <link rel="alternate" type="text/html" hreflang="en" href="https://antxiko.github.io/"/>
+  <link rel="alternate" type="application/atom+xml" hreflang="es" href="https://antxiko.github.io/es/feed.xml"/>
+  <updated>2026-09-09T17:49:39+02:00</updated>
+  <author><name>antxiko</name><uri>https://github.com/antxiko</uri></author>
+  <entry>
+    <id>tag:antxiko.github.io,2026:novedad/en/holeinonepro</id>
+    <title>Hole in One Professional: disassembled</title>
+    <link rel="alternate" type="text/html" href="https://antxiko.github.io/HoleInOnePro-disassembly/"/>
+    <published>2026-09-09T17:49:39+02:00</published>
+    <updated>2026-09-09T17:49:39+02:00</updated>
+    <summary type="text">HAL Laboratory · MSX · 32 KB cartridge. 32,768 bytes · 0 unexplained · reassembles byte for byte · 14,186 of code, 18,582 of data · 903 routines · commented to 44.4%, none below 10%.</summary>
+  </entry>
+  <entry>
+    <id>tag:antxiko.github.io,2026:novedad/en/serie-db</id>
+    <title>La base de datos de la serie: published</title>
+    <link rel="alternate" type="text/html" href="https://antxiko.github.io/MSX-disassembly-database/"/>
+    <published>2026-09-09T08:42:16+02:00</published>
+    <updated>2026-09-09T08:42:16+02:00</updated>
+    <summary type="text">49 projects · measured, not copied · 28 tests. 249,851 instructions · 81,234 comments · 32.5 % across the series · 0 routines below 10 % · 1,465,115 bytes of binary.</summary>
+  </entry>
+  <entry>
+    <id>tag:antxiko.github.io,2026:novedad/en/twinbee</id>
+    <title>Twin Bee: disassembled</title>
+    <link rel="alternate" type="text/html" href="https://antxiko.github.io/TwinBee-disassembly/"/>
+    <published>2026-09-09T01:33:11+02:00</published>
+    <updated>2026-09-09T01:33:11+02:00</updated>
+    <summary type="text">Konami · MSX · 32 KB cartridge · RC-740. 32,768 bytes · 0 unexplained · reassembles byte for byte · 14,406 of code, 18,362 of data · 1,000 labels · commented to 41.4%.</summary>
+  </entry>
+  <entry>
+    <id>tag:antxiko.github.io,2026:novedad/en/bomberman</id>
+    <title>Bomber Man: disassembled</title>
+    <link rel="alternate" type="text/html" href="https://antxiko.github.io/Bomberman-disassembly/"/>
+    <published>2026-09-08T16:27:46+02:00</published>
+    <updated>2026-09-08T16:27:46+02:00</updated>
+    <summary type="text">Hudson Soft · MSX · 8 KB cartridge. 8,192 bytes · 0 unexplained · reassembles byte for byte · 3,557 of code, 4,635 of data · 200 routines, none under 10% · commented to 50.2%.</summary>
+  </entry>
+  <entry>
+    <id>tag:antxiko.github.io,2026:novedad/en/boxing</id>
+    <title>Konami's Boxing: disassembled</title>
+    <link rel="alternate" type="text/html" href="https://antxiko.github.io/Boxing-disassembly/"/>
+    <published>2026-09-07T17:53:17+02:00</published>
+    <updated>2026-09-07T17:53:17+02:00</updated>
+    <summary type="text">Konami · MSX · 32 KB cartridge · RC-736. 32,768 bytes · 0 unexplained · reassembles byte for byte · 6,932 of code, 25,836 of data · 475 labels · commented to 52.6%.</summary>
+  </entry>
+  <entry>
+    <id>tag:antxiko.github.io,2026:novedad/en/knightmare</id>
+    <title>Knightmare: disassembled</title>
+    <link rel="alternate" type="text/html" href="https://antxiko.github.io/Knightmare-disassembly/"/>
+    <published>2026-09-07T14:35:38+02:00</published>
+    <updated>2026-09-07T14:35:38+02:00</updated>
+    <summary type="text">Konami · MSX · 32 KB cartridge · RC-739. 32,768 bytes · 0 unexplained · reassembles byte for byte · 15,233 of code, 17,535 of data · 985 labels · commented to 22.4%.</summary>
+  </entry>
+  <entry>
+    <id>tag:antxiko.github.io,2026:novedad/en/yiearkungfu2</id>
+    <title>Yie Ar Kung-Fu II: disassembled</title>
+    <link rel="alternate" type="text/html" href="https://antxiko.github.io/YieArKungFu2-disassembly/"/>
+    <published>2026-09-07T10:25:53+02:00</published>
+    <updated>2026-09-07T10:25:53+02:00</updated>
+    <summary type="text">Konami · MSX · 32 KB cartridge · RC-737. 32,768 bytes · 0 unexplained · reassembles byte for byte · 13,725 of code, 19,043 of data · 1,028 labels · commented to 40.9%.</summary>
+  </entry>
+  <entry>
+    <id>tag:antxiko.github.io,2026:novedad/en/gamemaster</id>
+    <title>Konami’s Game Master: disassembled</title>
+    <link rel="alternate" type="text/html" href="https://antxiko.github.io/GameMaster-disassembly/"/>
+    <published>2026-09-06T12:40:39+02:00</published>
+    <updated>2026-09-06T12:40:39+02:00</updated>
+    <summary type="text">Konami · MSX · 16 KB cartridge · RC-735. 16,384 bytes · 0 unexplained · reassembles byte for byte · 10,522 of code, 5,862 of data · 663 routines · commented to 22,1 %.</summary>
+  </entry>
+  <entry>
+    <id>tag:antxiko.github.io,2026:novedad/en/trailblazer</id>
+    <title>Trailblazer: disassembled</title>
+    <link rel="alternate" type="text/html" href="https://antxiko.github.io/Trailblazer-disassembly/"/>
+    <published>2026-09-06T08:39:47+02:00</published>
+    <updated>2026-09-06T08:39:47+02:00</updated>
+    <summary type="text">Gremlin Graphics · MSX · cassette tape. 38,299 bytes · 0 unexplained · the tape reassembles byte for byte · 6,556 of code, 31,743 of data · 355 labels · commented to 30.7%.</summary>
+  </entry>
+  <entry>
+    <id>tag:antxiko.github.io,2026:novedad/en/goonies</id>
+    <title>The Goonies: disassembled</title>
+    <link rel="alternate" type="text/html" href="https://antxiko.github.io/Goonies-disassembly/"/>
+    <published>2026-09-06T01:10:05+02:00</published>
+    <updated>2026-09-06T01:10:05+02:00</updated>
+    <summary type="text">Konami · MSX · 32 KB cartridge · RC-734. 32,768 bytes · 0 unexplained · reassembles byte for byte · 17,422 of code, 15,346 of data · 1,176 labels · commented to 36.9%.</summary>
+  </entry>
+  <entry>
+    <id>tag:antxiko.github.io,2026:novedad/en/hypersports3</id>
+    <title>Hyper Sports 3: disassembled</title>
+    <link rel="alternate" type="text/html" href="https://antxiko.github.io/HyperSports3-disassembly/"/>
+    <published>2026-09-05T20:49:28+02:00</published>
+    <updated>2026-09-05T20:49:28+02:00</updated>
+    <summary type="text">Konami · MSX · 32 KB cartridge · RC-733. 32,768 bytes · 0 unexplained · reassembles byte for byte · 14,410 of code, 18,358 of data · 931 labels · commented to 34.5%.</summary>
+  </entry>
+  <entry>
+    <id>tag:antxiko.github.io,2026:novedad/en/soccer</id>
+    <title>Konami’s Soccer: disassembled</title>
+    <link rel="alternate" type="text/html" href="https://antxiko.github.io/KonamisSoccer-disassembly/"/>
+    <published>2026-09-05T13:18:27+02:00</published>
+    <updated>2026-09-05T13:18:27+02:00</updated>
+    <summary type="text">Konami · MSX · 32 KB cartridge · RC-732. 32,768 bytes · 0 unexplained · reassembles byte for byte · 20,116 of code, 12,652 of data · 1,213 labels · commented to 36.5%.</summary>
+  </entry>
+  <entry>
+    <id>tag:antxiko.github.io,2026:novedad/en/pingpong</id>
+    <title>Konami's Ping Pong: disassembled</title>
+    <link rel="alternate" type="text/html" href="https://antxiko.github.io/KonamisPingPong-disassembly/"/>
+    <published>2026-09-05T09:45:46+02:00</published>
+    <updated>2026-09-05T09:45:46+02:00</updated>
+    <summary type="text">Konami · MSX · 16 KB cartridge · RC-731. 16,384 bytes · 0 unexplained · reassembles byte for byte · 7,676 of code, 8,708 of data · 548 labels · commented to 64.3%.</summary>
+  </entry>
+  <entry>
+    <id>tag:antxiko.github.io,2026:novedad/en/roadfighter</id>
+    <title>Road Fighter: disassembled</title>
+    <link rel="alternate" type="text/html" href="https://antxiko.github.io/RoadFighter-disassembly/"/>
+    <published>2026-09-04T22:52:44+02:00</published>
+    <updated>2026-09-04T22:52:44+02:00</updated>
+    <summary type="text">Konami · MSX · 16 KB cartridge · RC-730. 16,384 bytes · 0 unexplained · reassembles byte for byte · 7,797 of code, 8,587 of data · 482 labels · commented to 55.1%.</summary>
+  </entry>
+  <entry>
+    <id>tag:antxiko.github.io,2026:novedad/en/descubrimiento</id>
+    <title>El Descubrimiento de América: disassembled</title>
+    <link rel="alternate" type="text/html" href="https://antxiko.github.io/Descubrimiento-disassembly/"/>
+    <published>2026-09-04T18:30:22+02:00</published>
+    <updated>2026-09-04T18:30:22+02:00</updated>
+    <summary type="text">Gema / OMK Software · MSX · 66,371-byte cassette. 66,016 bytes · 0 unexplained · five listings, the whole tape byte for byte · 15,504 of code, 50,512 of data · 733 labels · commented at 26.7%, no routine below 10%.</summary>
+  </entry>
+  <entry>
+    <id>tag:antxiko.github.io,2026:novedad/en/mopiranger</id>
+    <title>Mopi Ranger: disassembled</title>
+    <link rel="alternate" type="text/html" href="https://antxiko.github.io/MopiRanger-disassembly/"/>
+    <published>2026-09-04T17:24:27+02:00</published>
+    <updated>2026-09-04T17:24:27+02:00</updated>
+    <summary type="text">Konami · MSX · 16 KB cartridge · RC-728. 16,384 bytes · 0 unexplained · reassembles byte for byte · 7,789 of code, 8,595 of data · 512 labels · commented to 52.9%.</summary>
+  </entry>
+  <entry>
+    <id>tag:antxiko.github.io,2026:novedad/en/yiearkungfu</id>
+    <title>Yie Ar Kung-Fu: disassembled</title>
+    <link rel="alternate" type="text/html" href="https://antxiko.github.io/YieArKungFu-disassembly/"/>
+    <published>2026-09-04T11:44:23+02:00</published>
+    <updated>2026-09-04T11:44:23+02:00</updated>
+    <summary type="text">Konami · MSX · 16 KB cartridge · RC-725. 16,384 bytes · 0 unexplained · reassembles byte for byte · 7,494 of code, 8,890 of data · 569 labels · commented to 44.0%.</summary>
+  </entry>
+  <entry>
+    <id>tag:antxiko.github.io,2026:novedad/en/baseball</id>
+    <title>Konami's Baseball: disassembled</title>
+    <link rel="alternate" type="text/html" href="https://antxiko.github.io/KonamisBaseball-disassembly/"/>
+    <published>2026-09-04T08:09:43+02:00</published>
+    <updated>2026-09-04T08:09:43+02:00</updated>
+    <summary type="text">Konami · MSX · 16 KB cartridge · RC-724. 16,384 bytes · 0 unexplained · reassembles byte for byte · 9,618 of code, 6,766 of data · 629 labels · commented to 44.5%.</summary>
+  </entry>
+  <entry>
+    <id>tag:antxiko.github.io,2026:novedad/en/kingsvalley</id>
+    <title>King's Valley: disassembled</title>
+    <link rel="alternate" type="text/html" href="https://antxiko.github.io/KingsValley-disassembly/"/>
+    <published>2026-09-04T06:42:22+02:00</published>
+    <updated>2026-09-04T06:42:22+02:00</updated>
+    <summary type="text">Konami · MSX · 16 KB cartridge · RC-727. 16,384 bytes · 0 unexplained · reassembles byte for byte · 9,803 of code, 6,581 of data · 651 labels · commented to 45.5%.</summary>
+  </entry>
+  <entry>
+    <id>tag:antxiko.github.io,2026:novedad/en/warinmiddleearth-patch</id>
+    <title>War in Middle Earth — Araubi’s patch: published</title>
+    <link rel="alternate" type="text/html" href="https://antxiko.github.io/WarinMiddleEarth-MSX-Patch/"/>
+    <published>2026-09-03T14:48:48+02:00</published>
+    <updated>2026-09-03T14:48:48+02:00</updated>
+    <summary type="text">Melbourne House / Dro Soft · MSX · tape · IPS patch, unofficial. 1,396 bytes changed in 130 places · 0 outside the table · 0 shifted · 1,718-byte IPS · no tape distributed.</summary>
+  </entry>
+</feed>

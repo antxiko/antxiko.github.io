@@ -19,15 +19,28 @@ cifras, tres grupos de juegos (Konami, exclusivos de MSX, conversiones) y el
 metodo, y cada juego dice su grupo en el campo 'grupo'. Para anadir otra clase
 de proyecto: otra lista con los mismos campos que DESENSAMBLADOS y otra entrada
 en CATEGORIAS. El menu, las secciones y sus partes se generan de esas listas.
+
+Y escribe los dos feeds Atom, feed.xml (ingles) y es/feed.xml (castellano), de
+la lista NOVEDADES: una entrada por publicacion, escrita a mano en el mismo
+commit que pone el proyecto en la portada. El feed es XML, asi que ningun texto
+de la portada llega a el sin pasar por texto_plano(): las entidades HTML
+(&middot;, &mdash;...) no existen en XML y romperian el fichero entero.
 """
 
+import html
 import os
+import re
 import sys
+from datetime import datetime
+from xml.sax import saxutils
 
 sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
 from estilo_web import ESTILO
 
 USUARIO = "antxiko"
+SITIO = "https://antxiko.github.io"   # sin barra final: se le pegan las rutas
+DOMINIO = SITIO.split("//", 1)[1]      # para los id tag: del feed
+LIMITE = 20                            # entradas que salen al feed; el resto se queda en la lista
 
 # Lo unico que se anade a la hoja de estilo de la serie: la tarjeta de proyecto.
 # Usa el mismo mecanismo de rejilla que .cifras (separador de 1px en --linea
@@ -2223,6 +2236,134 @@ HERRAMIENTAS = [
     ),
 ]
 
+# --------------------------------------------------------------------------
+# LAS NOVEDADES: de aqui salen los dos feeds Atom (feed.xml y es/feed.xml). Una
+# entrada por publicacion, la mas nueva ARRIBA, escrita a mano en el mismo
+# commit que pone el proyecto en la portada. Reglas:
+#   - 'id' no se toca NUNCA despues de publicarlo: es la identidad de la
+#     entrada para el lector; si cambia, todos los lectores la ensenan otra vez
+#     como nueva. Y no se reutiliza para otra noticia.
+#   - 'fecha' en RFC 3339 con huso explicito (2026-09-09T18:00:00+02:00). Nada
+#     de horas locales sin huso ni de strftime con nombres de mes. Las de abajo
+#     estan MEDIDAS, no inventadas: el primer commit que anadio docs/index.html
+#     en el repositorio de cada proyecto; y en los dos parches, que heredan el
+#     historial del desensamblado del que se clonaron, el commit de esta portada
+#     que los puso en ella.
+#   - 'clave' es el proyecto del que habla; su web es el enlace de la entrada
+#     (o 'enlace', si se da).
+#   - 'clase': "nuevo" (el proyecto se publica) o "actualiza" (algo nuevo en
+#     uno ya publicado).
+#   - 'titulo' y 'resumen' son opcionales, bilingues y en TEXTO PLANO. Sin
+#     ellos, el titulo sale del nombre del proyecto y de su clase, y el resumen
+#     de la linea de cifras de su tarjeta, que asi no se copia dos veces.
+# El build para si un id se repite, una fecha no es RFC 3339, el orden no es de
+# nueva a vieja, una clave no existe o un proyecto se queda sin novedad.
+# --------------------------------------------------------------------------
+NOVEDADES = [
+    dict(id="holeinonepro", clave="holeinonepro", clase="nuevo",
+         fecha="2026-09-09T17:49:39+02:00"),
+    dict(id="serie-db", clave="serie-db", clase="nuevo",
+         fecha="2026-09-09T08:42:16+02:00"),
+    dict(id="twinbee", clave="twinbee", clase="nuevo",
+         fecha="2026-09-09T01:33:11+02:00"),
+    dict(id="bomberman", clave="bomberman", clase="nuevo",
+         fecha="2026-09-08T16:27:46+02:00"),
+    dict(id="boxing", clave="boxing", clase="nuevo",
+         fecha="2026-09-07T17:53:17+02:00"),
+    dict(id="knightmare", clave="knightmare", clase="nuevo",
+         fecha="2026-09-07T14:35:38+02:00"),
+    dict(id="yiearkungfu2", clave="yiearkungfu2", clase="nuevo",
+         fecha="2026-09-07T10:25:53+02:00"),
+    dict(id="gamemaster", clave="gamemaster", clase="nuevo",
+         fecha="2026-09-06T12:40:39+02:00"),
+    dict(id="trailblazer", clave="trailblazer", clase="nuevo",
+         fecha="2026-09-06T08:39:47+02:00"),
+    dict(id="goonies", clave="goonies", clase="nuevo",
+         fecha="2026-09-06T01:10:05+02:00"),
+    dict(id="hypersports3", clave="hypersports3", clase="nuevo",
+         fecha="2026-09-05T20:49:28+02:00"),
+    dict(id="soccer", clave="soccer", clase="nuevo",
+         fecha="2026-09-05T13:18:27+02:00"),
+    dict(id="pingpong", clave="pingpong", clase="nuevo",
+         fecha="2026-09-05T09:45:46+02:00"),
+    dict(id="roadfighter", clave="roadfighter", clase="nuevo",
+         fecha="2026-09-04T22:52:44+02:00"),
+    dict(id="descubrimiento", clave="descubrimiento", clase="nuevo",
+         fecha="2026-09-04T18:30:22+02:00"),
+    dict(id="mopiranger", clave="mopiranger", clase="nuevo",
+         fecha="2026-09-04T17:24:27+02:00"),
+    dict(id="yiearkungfu", clave="yiearkungfu", clase="nuevo",
+         fecha="2026-09-04T11:44:23+02:00"),
+    dict(id="baseball", clave="baseball", clase="nuevo",
+         fecha="2026-09-04T08:09:43+02:00"),
+    dict(id="kingsvalley", clave="kingsvalley", clase="nuevo",
+         fecha="2026-09-04T06:42:22+02:00"),
+    dict(id="warinmiddleearth-patch", clave="warinmiddleearth-patch", clase="nuevo",
+         fecha="2026-09-03T14:48:48+02:00"),
+    dict(id="3dgolf", clave="3dgolf", clase="nuevo",
+         fecha="2026-09-03T12:05:35+02:00"),
+    dict(id="casioworldopen", clave="casioworldopen", clase="nuevo",
+         fecha="2026-09-03T10:49:34+02:00"),
+    dict(id="holeinone", clave="holeinone", clase="nuevo",
+         fecha="2026-09-03T08:21:14+02:00"),
+    dict(id="tennis", clave="tennis", clase="nuevo",
+         fecha="2026-09-02T13:32:50+02:00"),
+    dict(id="golf", clave="golf", clase="nuevo",
+         fecha="2026-09-02T09:06:14+02:00"),
+    dict(id="skyjaguar", clave="skyjaguar", clase="nuevo",
+         fecha="2026-09-01T21:18:08+02:00"),
+    dict(id="nemesis", clave="nemesis", clase="nuevo",
+         fecha="2026-08-30T16:57:19+02:00"),
+    dict(id="hypersports2", clave="hypersports2", clase="nuevo",
+         fecha="2026-08-30T13:17:34+02:00"),
+    dict(id="cabbagepatch", clave="cabbagepatch", clase="nuevo",
+         fecha="2026-08-30T10:20:19+02:00"),
+    dict(id="hypersports1", clave="hypersports1", clase="nuevo",
+         fecha="2026-08-30T02:16:25+02:00"),
+    dict(id="hyperrally", clave="hyperrally", clase="nuevo",
+         fecha="2026-08-30T01:42:22+02:00"),
+    dict(id="war", clave="war", clase="nuevo",
+         fecha="2026-08-29T19:05:04+02:00"),
+    dict(id="demonia", clave="demonia", clase="nuevo",
+         fecha="2026-08-29T18:31:14+02:00"),
+    dict(id="hyperolympic2", clave="hyperolympic2", clase="nuevo",
+         fecha="2026-08-29T15:02:35+02:00"),
+    dict(id="hyperolympic1", clave="hyperolympic1", clase="nuevo",
+         fecha="2026-08-29T15:02:12+02:00"),
+    dict(id="mahjong-en", clave="mahjong-en", clase="nuevo",
+         fecha="2026-08-29T12:08:09+02:00"),
+    dict(id="billiards", clave="billiards", clase="nuevo",
+         fecha="2026-08-29T01:44:05+02:00"),
+    dict(id="mahjong", clave="mahjong", clase="nuevo",
+         fecha="2026-08-28T23:51:06+02:00"),
+    dict(id="supercobra", clave="supercobra", clase="nuevo",
+         fecha="2026-08-22T10:58:55+02:00"),
+    dict(id="frogger", clave="frogger", clase="nuevo",
+         fecha="2026-08-20T12:14:37+02:00"),
+    dict(id="timepilot", clave="timepilot", clase="nuevo",
+         fecha="2026-08-20T10:56:00+02:00"),
+    dict(id="pippols", clave="pippols", clase="nuevo",
+         fecha="2026-08-20T09:58:06+02:00"),
+    dict(id="f1spirit", clave="f1spirit", clase="nuevo",
+         fecha="2026-08-19T19:45:54+02:00"),
+    dict(id="monkey", clave="monkey", clase="nuevo",
+         fecha="2026-08-19T01:27:36+02:00"),
+    dict(id="athletic", clave="athletic", clase="nuevo",
+         fecha="2026-08-18T23:31:07+02:00"),
+    dict(id="pitfall", clave="pitfall", clase="nuevo",
+         fecha="2026-08-17T16:18:15+02:00"),
+    dict(id="antarctic", clave="antarctic", clase="nuevo",
+         fecha="2026-08-13T15:42:25+02:00"),
+    dict(id="stardust", clave="stardust", clase="nuevo",
+         fecha="2026-08-06T09:14:07+02:00"),
+    dict(id="colt36", clave="colt36", clase="nuevo",
+         fecha="2026-08-05T14:08:25+02:00"),
+    dict(id="alehop", clave="alehop", clase="nuevo",
+         fecha="2026-08-04T16:16:54+02:00"),
+    dict(id="temptations", clave="temptations", clase="nuevo",
+         fecha="2026-08-04T09:21:22+02:00"),
+]
+
 CATEGORIAS = [
     dict(
         id="disassemblies",
@@ -2305,6 +2446,10 @@ TXT = dict(
                "MSX",
                f"<b>{N_CINTAS}</b> tapes &middot; <b>{N_CARTUCHOS}</b> cartridges"],
         menu_gh="GitHub",
+        menu_feed="Feed",
+        feed_nuevo=dict(disassemblies="{}: disassembled", patches="{}: published",
+                        tools="{}: published"),
+        feed_actualiza="{}: updated",
         otro=("es/", "En castellano"),
         cifras=[(str(N_JUEGOS), "games taken apart"),
                 (str(N_TERMINADOS), "finished at 100%"),
@@ -2349,6 +2494,10 @@ TXT = dict(
                "MSX",
                f"<b>{N_CINTAS}</b> cintas &middot; <b>{N_CARTUCHOS}</b> cartuchos"],
         menu_gh="GitHub",
+        menu_feed="Novedades",
+        feed_nuevo=dict(disassemblies="{}: desensamblado", patches="{}: publicado",
+                        tools="{}: publicada"),
+        feed_actualiza="{}: novedades",
         otro=("../", "In English"),
         cifras=[(str(N_JUEGOS), "juegos desmontados"),
                 (str(N_TERMINADOS), "terminados al 100 %"),
@@ -2458,11 +2607,120 @@ def comprueba():
             if repartidos != sorted(p["clave"] for p in c["proyectos"]):
                 raise SystemExit(f"{c['id']}: las partes no reparten exactamente "
                                  f"sus proyectos")
+    # las novedades: lo que rompe un feed sin que se note hasta que un lector
+    # lo rechaza o ensena todo como nuevo
+    claves = {p["clave"] for p in DESENSAMBLADOS + PARCHES + HERRAMIENTAS}
+    ids = [n["id"] for n in NOVEDADES]
+    if len(ids) != len(set(ids)):
+        raise SystemExit("NOVEDADES: hay un id repetido")
+    anterior = None
+    for n in NOVEDADES:
+        if not re.fullmatch(r"[a-z0-9][a-z0-9-]*", n["id"]):
+            raise SystemExit(f"NOVEDADES: id {n['id']!r} con caracteres que no van en un tag:")
+        if not re.fullmatch(r"\d{4}-\d{2}-\d{2}T\d{2}:\d{2}:\d{2}[+-]\d{2}:\d{2}", n["fecha"]):
+            raise SystemExit(f"NOVEDADES {n['id']}: la fecha {n['fecha']!r} no es RFC 3339 con huso")
+        fecha = datetime.fromisoformat(n["fecha"])
+        if anterior is not None and fecha > anterior:
+            raise SystemExit(f"NOVEDADES: {n['id']} esta mas abajo que una mas vieja")
+        anterior = fecha
+        if n["clave"] not in claves:
+            raise SystemExit(f"NOVEDADES {n['id']}: la clave {n['clave']!r} no es de ningun proyecto")
+        if n["clase"] not in ("nuevo", "actualiza"):
+            raise SystemExit(f"NOVEDADES {n['id']}: clase {n['clase']!r}")
+        for campo in ("titulo", "resumen"):
+            if campo in n and set(n[campo]) != {"en", "es"}:
+                raise SystemExit(f"NOVEDADES {n['id']}: {campo} tiene que ir en 'en' y 'es'")
+    sin = claves - {n["clave"] for n in NOVEDADES}
+    if sin:
+        raise SystemExit(f"proyectos sin novedad en NOVEDADES: {sorted(sin)}")
+
+
+# ------------------------------------------------------------------ el feed
+FEED = dict(en=dict(ruta="feed.xml", pagina=""),
+            es=dict(ruta="es/feed.xml", pagina="es/"))
+
+
+def proyecto(clave):
+    for p in DESENSAMBLADOS + PARCHES + HERRAMIENTAS:
+        if p["clave"] == clave:
+            return p
+    raise KeyError(clave)
+
+
+def categoria_de(clave):
+    for c in CATEGORIAS:
+        if any(p["clave"] == clave for p in c["proyectos"]):
+            return c["id"]
+    raise KeyError(clave)
+
+
+def texto_plano(s):
+    """De un texto de la portada a texto para el XML: fuera las etiquetas, las
+    entidades HTML resueltas a sus letras (&middot; -> el punto de verdad) y
+    despues escapado lo que XML exige. Es el UNICO camino de un texto al feed."""
+    return saxutils.escape(html.unescape(re.sub(r"<[^>]+>", "", s))).strip()
+
+
+def titulo_de(n, idioma):
+    if "titulo" in n:
+        return n["titulo"][idioma]
+    p, t = proyecto(n["clave"]), TXT[idioma]
+    if n["clase"] == "nuevo":
+        return t["feed_nuevo"][categoria_de(n["clave"])].format(p["titulo"])
+    return t["feed_actualiza"].format(p["titulo"])
+
+
+def resumen_de(n, idioma):
+    if "resumen" in n:
+        return n["resumen"][idioma]
+    p = proyecto(n["clave"])
+    return "%s. %s." % (p["meta"][idioma], p["datos"][idioma](idioma))
+
+
+def enlace_de(n):
+    if "enlace" in n:
+        return n["enlace"]
+    p = proyecto(n["clave"])
+    return p["web"] or p["repo"]
+
+
+def feed(idioma):
+    """Atom 1.0 (RFC 4287). Un feed por idioma, enlazados entre si; el 'updated'
+    del feed es la fecha de la novedad mas nueva, no la hora del build, para
+    que regenerar sin novedades no cambie ni un byte."""
+    t = TXT[idioma]
+    otro = "es" if idioma == "en" else "en"
+    lineas = [
+        '<?xml version="1.0" encoding="utf-8"?>',
+        f'<feed xmlns="http://www.w3.org/2005/Atom" xml:lang="{idioma}">',
+        f'  <title>{texto_plano(t["titulo"])}</title>',
+        f'  <subtitle>{texto_plano(t["claim"])}</subtitle>',
+        f'  <id>tag:{DOMINIO},2026:feed/{idioma}</id>',
+        f'  <link rel="self" type="application/atom+xml" href="{SITIO}/{FEED[idioma]["ruta"]}"/>',
+        f'  <link rel="alternate" type="text/html" hreflang="{idioma}" href="{SITIO}/{FEED[idioma]["pagina"]}"/>',
+        f'  <link rel="alternate" type="application/atom+xml" hreflang="{otro}" href="{SITIO}/{FEED[otro]["ruta"]}"/>',
+        f'  <updated>{NOVEDADES[0]["fecha"]}</updated>',
+        f'  <author><name>{USUARIO}</name><uri>https://github.com/{USUARIO}</uri></author>',
+    ]
+    for n in NOVEDADES[:LIMITE]:
+        lineas += [
+            '  <entry>',
+            f'    <id>tag:{DOMINIO},2026:novedad/{idioma}/{n["id"]}</id>',
+            f'    <title>{texto_plano(titulo_de(n, idioma))}</title>',
+            f'    <link rel="alternate" type="text/html" href="{saxutils.escape(enlace_de(n))}"/>',
+            f'    <published>{n["fecha"]}</published>',
+            f'    <updated>{n["fecha"]}</updated>',
+            f'    <summary type="text">{texto_plano(resumen_de(n, idioma))}</summary>',
+            '  </entry>',
+        ]
+    lineas.append('</feed>')
+    return "\n".join(lineas) + "\n"
 
 
 def pagina(idioma):
     t = TXT[idioma]
     menu = [("#" + c["id"], c["menu"][idioma]) for c in CATEGORIAS]
+    menu.append(("feed.xml", t["menu_feed"]))   # relativo: en es/ es su propio feed
     menu.append(("https://github.com/" + USUARIO, t["menu_gh"]))
     nav = "".join(f'<a href="{h}">{x}</a>' for h, x in menu)
     nav += (f'<a href="{t["otro"][0]}" style="margin-left:auto;color:var(--oro)">'
@@ -2470,10 +2728,17 @@ def pagina(idioma):
 
     ficha = "".join(f"<span>{x}</span>" for x in t["ficha"])
     secciones = "".join(seccion(c, idioma, t) for c in CATEGORIAS)
+    # El feed de este idioma y el del otro, para que el navegador o el lector lo
+    # encuentren solos. Aunque la pagina no lleva <head>, el parser HTML5 mete
+    # estos <link> en el head implicito: tienen que ir ANTES del primer <div>.
+    otro = "es" if idioma == "en" else "en"
+    otro_feed = "es/feed.xml" if idioma == "en" else "../feed.xml"
 
     return f"""<meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
 <title>{t['titulo']}</title>
+<link rel="alternate" type="application/atom+xml" hreflang="{idioma}" title="{t['menu_feed']}" href="feed.xml">
+<link rel="alternate" type="application/atom+xml" hreflang="{otro}" title="{TXT[otro]['menu_feed']}" href="{otro_feed}">
 <style>{ESTILO}{EXTRA}</style>
 
 <div class="w">
@@ -2495,10 +2760,17 @@ def main():
     for idioma, ruta in (("en", "index.html"), ("es", "es/index.html")):
         destino = os.path.join(raiz, ruta)
         os.makedirs(os.path.dirname(destino), exist_ok=True)
-        html = pagina(idioma)
+        texto = pagina(idioma)
         with open(destino, "w", encoding="utf-8", newline="\n") as f:
-            f.write(html)
-        print("  %s: %d KB (%s)" % (ruta, len(html) // 1024, idioma))
+            f.write(texto)
+        print("  %s: %d KB (%s)" % (ruta, len(texto) // 1024, idioma))
+    for idioma, f in FEED.items():
+        destino = os.path.join(raiz, f["ruta"])
+        xml = feed(idioma)
+        with open(destino, "w", encoding="utf-8", newline="\n") as fh:
+            fh.write(xml)
+        print("  %s: %d KB, %d entradas (%s)"
+              % (f["ruta"], len(xml) // 1024, min(LIMITE, len(NOVEDADES)), idioma))
     return 0
 
 

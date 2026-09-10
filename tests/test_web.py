@@ -15,12 +15,17 @@ import os
 import re
 import sys
 import unittest
+import xml.etree.ElementTree as ET
+from datetime import datetime
 from html.parser import HTMLParser
 
 RAIZ = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 PAGINAS = [os.path.join(RAIZ, "index.html"),
            os.path.join(RAIZ, "es", "index.html")]
 IDIOMA = {PAGINAS[0]: "en", PAGINAS[1]: "es"}
+FEEDS = {"en": os.path.join(RAIZ, "feed.xml"),
+         "es": os.path.join(RAIZ, "es", "feed.xml")}
+ATOM = "{http://www.w3.org/2005/Atom}"
 
 # Etiquetas que no se cierran nunca.
 VACIAS = {"area", "base", "br", "col", "embed", "hr", "img", "input", "link",
@@ -327,6 +332,157 @@ class TestPortada(unittest.TestCase):
             for campo in ("meta", "claim", "datos", "nota"):
                 self.assertEqual(set(p[campo]), {"en", "es"},
                                  "%s.%s" % (p["clave"], campo))
+
+
+class TestFeed(unittest.TestCase):
+    """Los dos feeds Atom, comprobados sobre el XML publicado. Lo que rompe un
+    feed no se ve en el navegador: un &mdash; lo deja mal formado y todo lector
+    lo rechaza; un id que cambia hace que ensenen la entrada otra vez; una
+    fecha sin huso o con el mes en letras la lee cada uno como quiere."""
+
+    def _arbol(self, idioma):
+        return ET.parse(FEEDS[idioma]).getroot()
+
+    def _entradas(self, idioma):
+        return self._arbol(idioma).findall(ATOM + "entry")
+
+    def test_el_feed_es_xml_bien_formado_y_atom(self):
+        """ElementTree revienta con cualquier entidad HTML; y lo minimo que
+        exige Atom: feed/id, title y updated, y por entrada id, title, updated
+        y un enlace."""
+        for idioma in FEEDS:
+            raiz = self._arbol(idioma)
+            self.assertEqual(raiz.tag, ATOM + "feed")
+            self.assertEqual(raiz.get("{http://www.w3.org/XML/1998/namespace}lang"), idioma)
+            for hijo in ("id", "title", "updated", "author"):
+                self.assertIsNotNone(raiz.find(ATOM + hijo), "%s: sin %s" % (idioma, hijo))
+            entradas = self._entradas(idioma)
+            self.assertTrue(entradas, "%s: feed sin entradas" % idioma)
+            for e in entradas:
+                for hijo in ("id", "title", "updated", "link", "summary"):
+                    self.assertIsNotNone(e.find(ATOM + hijo), "%s: entrada sin %s" % (idioma, hijo))
+                self.assertTrue(e.findtext(ATOM + "title").strip())
+                self.assertTrue(e.findtext(ATOM + "summary").strip())
+
+    def test_no_lleva_entidades_html(self):
+        """La portada tiene cientos de &middot; y &mdash;. En XML solo existen
+        cinco entidades con nombre; cualquier otra rompe el fichero."""
+        for idioma, ruta in FEEDS.items():
+            sueltas = re.findall(r"&(?!amp;|lt;|gt;|quot;|apos;|#)[A-Za-z]+;", lee(ruta))
+            self.assertEqual(sueltas, [], "%s: entidades HTML en el XML" % idioma)
+
+    def test_cada_entrada_tiene_id_unico_y_con_forma(self):
+        for idioma in FEEDS:
+            ids = [e.findtext(ATOM + "id") for e in self._entradas(idioma)]
+            self.assertEqual(len(ids), len(set(ids)), "%s: id repetido" % idioma)
+            for i in ids:
+                self.assertRegex(i, r"^tag:antxiko\.github\.io,\d{4}:novedad/%s/[a-z0-9-]+$" % idioma)
+
+    def test_las_fechas_son_rfc3339_y_de_nueva_a_vieja(self):
+        """Fechas con huso explicito, la mas nueva arriba, y el updated del
+        feed es el de esa entrada: asi regenerar sin novedades no cambia nada
+        y ningun lector vuelve a avisar por un build."""
+        patron = r"^\d{4}-\d{2}-\d{2}T\d{2}:\d{2}:\d{2}[+-]\d{2}:\d{2}$"
+        for idioma in FEEDS:
+            raiz = self._arbol(idioma)
+            fechas = [e.findtext(ATOM + "updated") for e in self._entradas(idioma)]
+            for f in fechas + [raiz.findtext(ATOM + "updated")]:
+                self.assertRegex(f, patron)
+            valores = [datetime.fromisoformat(f) for f in fechas]
+            self.assertEqual(valores, sorted(valores, reverse=True),
+                             "%s: las entradas no van de nueva a vieja" % idioma)
+            self.assertEqual(raiz.findtext(ATOM + "updated"), fechas[0])
+            for e in self._entradas(idioma):
+                self.assertEqual(e.findtext(ATOM + "published"), e.findtext(ATOM + "updated"))
+
+    def test_los_enlaces_del_feed_son_absolutos(self):
+        """Dentro del feed, al reves que en la pagina: todo absoluto, que el
+        lector no sabe donde vive el fichero."""
+        for idioma in FEEDS:
+            for enlace in self._arbol(idioma).iter(ATOM + "link"):
+                self.assertTrue(enlace.get("href", "").startswith("https://"),
+                                "%s: enlace relativo %r" % (idioma, enlace.get("href")))
+
+    def test_el_feed_dice_donde_vive(self):
+        mi = modulo()
+        for idioma, ruta in FEEDS.items():
+            propios = [e.get("href") for e in self._arbol(idioma).findall(ATOM + "link")
+                       if e.get("rel") == "self"]
+            donde = mi.SITIO + "/" + os.path.relpath(ruta, RAIZ).replace(os.sep, "/")
+            self.assertEqual(propios, [donde])
+
+    def test_los_dos_feeds_llevan_las_mismas_novedades(self):
+        """Mismas entradas, en el mismo orden, con los mismos enlaces y las
+        mismas fechas; solo cambia el idioma del texto y del id."""
+        vistos = {}
+        for idioma in FEEDS:
+            vistos[idioma] = [(e.findtext(ATOM + "id").rsplit("/", 1)[1],
+                               e.find(ATOM + "link").get("href"),
+                               e.findtext(ATOM + "updated"))
+                              for e in self._entradas(idioma)]
+        self.assertEqual(vistos["en"], vistos["es"])
+
+    def test_cada_proyecto_tiene_su_novedad(self):
+        """A un feed nuevo y vacio no se suscribe nadie, y un proyecto que se
+        anade a la portada sin su entrada es la manera de que el feed mienta
+        por omision. Lo exige tambien el build (comprueba())."""
+        mi = modulo()
+        claves = {p["clave"] for p in mi.DESENSAMBLADOS + mi.PARCHES + mi.HERRAMIENTAS}
+        con_novedad = {n["clave"] for n in mi.NOVEDADES}
+        self.assertEqual(claves - con_novedad, set())
+        mi.comprueba()
+
+    def test_la_portada_anuncia_el_feed(self):
+        """Autodescubrimiento en el head implicito (antes del primer div) y un
+        enlace de texto en el menu, en cada idioma al feed de su idioma."""
+        mi = modulo()
+        for pagina in PAGINAS:
+            texto, idioma = lee(pagina), IDIOMA[pagina]
+            otro = "es" if idioma == "en" else "en"
+            propio = ('<link rel="alternate" type="application/atom+xml" hreflang="%s" '
+                      'title="%s" href="feed.xml">' % (idioma, mi.TXT[idioma]["menu_feed"]))
+            self.assertIn(propio, texto, pagina)
+            self.assertIn('hreflang="%s" title="%s" href="%s"'
+                          % (otro, mi.TXT[otro]["menu_feed"],
+                             "es/feed.xml" if idioma == "en" else "../feed.xml"), texto)
+            self.assertLess(texto.index('type="application/atom+xml"'),
+                            texto.index('<div class="w">'),
+                            "%s: el <link> del feed va fuera del head implicito" % pagina)
+            self.assertIn('<a href="feed.xml">%s</a>' % mi.TXT[idioma]["menu_feed"],
+                          menu_de(texto))
+
+    def test_el_feed_no_crece_sin_limite(self):
+        mi = modulo()
+        for idioma in FEEDS:
+            n = len(self._entradas(idioma))
+            self.assertLessEqual(n, mi.LIMITE)
+            self.assertEqual(n, min(mi.LIMITE, len(mi.NOVEDADES)))
+
+    def test_todas_las_novedades_valen_para_el_feed(self):
+        """No solo las que salen hoy. El feed publica las LIMITE mas nuevas, asi
+        que una entrada mal escrita mas abajo no rompe nada hasta que alguien
+        sube el limite o hasta que se escribe otra igual. Aqui se generan las
+        51 y se exige XML bien formado y ni una entidad HTML."""
+        mi = modulo()
+        limite = mi.LIMITE
+        try:
+            mi.LIMITE = len(mi.NOVEDADES)
+            for idioma in FEEDS:
+                xml = mi.feed(idioma)
+                ET.fromstring(xml)
+                self.assertEqual(
+                    re.findall(r"&(?!amp;|lt;|gt;|quot;|apos;|#)[A-Za-z]+;", xml), [],
+                    "%s: una novedad de las de abajo lleva entidades HTML" % idioma)
+        finally:
+            mi.LIMITE = limite
+
+    def test_el_feed_publicado_es_el_que_genera_el_codigo(self):
+        """El fichero no puede ir por detras de la lista: si se anade una
+        novedad y no se regenera, salta aqui."""
+        mi = modulo()
+        for idioma, ruta in FEEDS.items():
+            self.assertEqual(lee(ruta), mi.feed(idioma),
+                             "%s: hay que volver a generar el feed" % ruta)
 
 
 if __name__ == "__main__":
