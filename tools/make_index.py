@@ -2260,6 +2260,21 @@ HERRAMIENTAS = [
 # nueva a vieja, una clave no existe o un proyecto se queda sin novedad.
 # --------------------------------------------------------------------------
 NOVEDADES = [
+    dict(id="warinmiddleearth-cartucho", clave="warinmiddleearth-patch",
+         clase="actualiza", fecha="2026-09-10T18:39:33+02:00",
+         titulo=dict(en="War in Middle Earth: the tape, now a cartridge",
+                     es="War in Middle Earth: la cinta, ahora en cartucho"),
+         resumen=dict(
+             en="The game is untouched: a 64 KB ASCII16 cartridge whose loader "
+                "leaves RAM exactly as the tape loader leaves it and jumps to the "
+                "same place. Checked byte for byte against the tape, RAM, VRAM, VDP "
+                "and PSG, on four machines. Nine seconds instead of six and a half "
+                "minutes.",
+             es="El juego no se toca: un cartucho ASCII16 de 64 KB cuyo cargador "
+                "deja la RAM exactamente como la deja el de la cinta y salta al "
+                "mismo sitio. Cotejado byte a byte contra la cinta -RAM, VRAM, VDP y "
+                "PSG- en cuatro maquinas. Nueve segundos en vez de seis minutos y "
+                "medio.")),
     dict(id="holeinonepro", clave="holeinonepro", clase="nuevo",
          fecha="2026-09-09T17:49:39+02:00"),
     dict(id="serie-db", clave="serie-db", clase="nuevo",

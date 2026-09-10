@@ -6,8 +6,16 @@
   <link rel="self" type="application/atom+xml" href="https://antxiko.github.io/feed.xml"/>
   <link rel="alternate" type="text/html" hreflang="en" href="https://antxiko.github.io/"/>
   <link rel="alternate" type="application/atom+xml" hreflang="es" href="https://antxiko.github.io/es/feed.xml"/>
-  <updated>2026-09-09T17:49:39+02:00</updated>
+  <updated>2026-09-10T18:39:33+02:00</updated>
   <author><name>antxiko</name><uri>https://github.com/antxiko</uri></author>
+  <entry>
+    <id>tag:antxiko.github.io,2026:novedad/en/warinmiddleearth-cartucho</id>
+    <title>War in Middle Earth: the tape, now a cartridge</title>
+    <link rel="alternate" type="text/html" href="https://antxiko.github.io/WarinMiddleEarth-MSX-Patch/"/>
+    <published>2026-09-10T18:39:33+02:00</published>
+    <updated>2026-09-10T18:39:33+02:00</updated>
+    <summary type="text">The game is untouched: a 64 KB ASCII16 cartridge whose loader leaves RAM exactly as the tape loader leaves it and jumps to the same place. Checked byte for byte against the tape, RAM, VRAM, VDP and PSG, on four machines. Nine seconds instead of six and a half minutes.</summary>
+  </entry>
   <entry>
     <id>tag:antxiko.github.io,2026:novedad/en/holeinonepro</id>
     <title>Hole in One Professional: disassembled</title>
@@ -159,13 +167,5 @@
     <published>2026-09-04T06:42:22+02:00</published>
     <updated>2026-09-04T06:42:22+02:00</updated>
     <summary type="text">Konami · MSX · 16 KB cartridge · RC-727. 16,384 bytes · 0 unexplained · reassembles byte for byte · 9,803 of code, 6,581 of data · 651 labels · commented to 45.5%.</summary>
-  </entry>
-  <entry>
-    <id>tag:antxiko.github.io,2026:novedad/en/warinmiddleearth-patch</id>
-    <title>War in Middle Earth — Araubi’s patch: published</title>
-    <link rel="alternate" type="text/html" href="https://antxiko.github.io/WarinMiddleEarth-MSX-Patch/"/>
-    <published>2026-09-03T14:48:48+02:00</published>
-    <updated>2026-09-03T14:48:48+02:00</updated>
-    <summary type="text">Melbourne House / Dro Soft · MSX · tape · IPS patch, unofficial. 1,396 bytes changed in 130 places · 0 outside the table · 0 shifted · 1,718-byte IPS · no tape distributed.</summary>
   </entry>
 </feed>
