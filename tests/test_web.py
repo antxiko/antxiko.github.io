@@ -617,7 +617,7 @@ class LasCifrasSonLasMedidas(unittest.TestCase):
                 # otros -los bytes explicados, o lo que se come la interrupcion-
                 # y no son densidad de comentario
                 for crudo in re.findall(
-                        r"(?:comentado al|commented to)\s*<b>(\d{1,2}[.,]\d)\s*%</b>",
+                        r"(?:comentado al|commented (?:to|at))\s*<b>(\d{1,2}[.,]\d)\s*%</b>",
                         texto):
                     publicado = float(crudo.replace(",", "."))
                     if abs(publicado - pct) >= 0.05:
@@ -626,3 +626,25 @@ class LasCifrasSonLasMedidas(unittest.TestCase):
         if not hay:
             self.skipTest("los repositorios de los juegos no estan al lado")
         self.assertEqual(malas, [], "\n".join(malas))
+
+    def test_toda_ficha_de_desensamblado_dice_cuanto_esta_comentado(self):
+        """Que no falte, que es el otro modo de fallar.
+
+        La comprobacion de arriba solo mira las fichas que dan la cifra: una que
+        no la diera pasaba en verde. Asi estuvieron trece hasta el 2026-09-15.
+        Quedan fuera los parches -su ficha describe el parche, y el listado es
+        el del desensamblado, que ya la da- y 3D Golf, que es MSX-BASIC y se
+        mide por lineas, no por instrucciones.
+        """
+        sin = []
+        for ficha in self.fichas:
+            if ficha in getattr(__import__("make_index"), "PARCHES", []):
+                continue
+            if ficha["clave"] == "3dgolf":
+                continue
+            for idioma in ("en", "es"):
+                texto = ficha["datos"][idioma](idioma)
+                if not re.search(r"(?:comentado al|commented (?:to|at))\s*<b>\d{1,2}[.,]\d\s*%</b>",
+                                 texto):
+                    sin.append("%s (%s)" % (ficha["clave"], idioma))
+        self.assertEqual(sin, [], "fichas sin densidad: %s" % ", ".join(sin))
