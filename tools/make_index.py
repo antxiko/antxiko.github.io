@@ -718,14 +718,14 @@ DESENSAMBLADOS = [
         datos=dict(
             en=lambda i: (f"{cif(16384, i)} bytes &middot; <b>0</b> unexplained "
                           f"&middot; reassembles <b>byte for byte</b> &middot; "
-                          f"{cif(6464, i)} of code, {cif(9920, i)} of data "
-                          f"&middot; {cif(430, i)} routines &middot; commented "
-                          f"to <b>22.7%</b>"),
+                          f"{cif(6446, i)} of code, {cif(9938, i)} of data "
+                          f"&middot; {cif(428, i)} routines &middot; commented "
+                          f"to <b>22.8%</b>"),
             es=lambda i: (f"{cif(16384, i)} bytes &middot; <b>0</b> sin explicar "
                           f"&middot; reensambla <b>byte a byte</b> &middot; "
-                          f"{cif(6464, i)} de código, {cif(9920, i)} de datos "
-                          f"&middot; {cif(430, i)} rutinas &middot; comentado "
-                          f"al <b>22,7 %</b>"),
+                          f"{cif(6446, i)} de código, {cif(9938, i)} de datos "
+                          f"&middot; {cif(428, i)} rutinas &middot; comentado "
+                          f"al <b>22,8 %</b>"),
         ),
         nota=dict(en=None, es=None),
     ),
