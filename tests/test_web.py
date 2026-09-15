@@ -487,3 +487,142 @@ class TestFeed(unittest.TestCase):
 
 if __name__ == "__main__":
     unittest.main()
+
+
+class LasCifrasSonLasMedidas(unittest.TestCase):
+    """Que la ficha de cada juego publique lo que hoy mide su listado.
+
+    Es el fallo que mas veces se ha colado en esta serie: la ficha se escribe
+    el dia de publicar, despues alguien vuelve al listado y comenta otra tanda,
+    y la portada sigue diciendo la cifra vieja. Se han encontrado asi cinco
+    porcentajes desfasados de una sentada.
+
+    Y hay un segundo fallo, mas silencioso: la cifra de rutinas no siempre era
+    la misma magnitud. En unas fichas eran las rutinas que cuenta densidad.py,
+    en otras las directivas L del .notes -que son las bautizadas a mano- y en
+    una las etiquetas del .asm. Aqui se exige UNA: las rutinas, que es la vara
+    de la serie y la que sostiene el "ninguna por debajo del 10 %" que la
+    propia ficha publica al lado.
+
+    Las medidas se toman sobre los .asm que cada repositorio PUBLICA
+    (`git ls-files`), nunca sobre una ruta supuesta. Si los repositorios no
+    estan al lado, la prueba se salta sola: la portada se puede construir sin
+    ellos.
+    """
+
+    RE_ETIQ = re.compile(r"^([A-Za-z_][A-Za-z_0-9]*):\s*(;.*)?$")
+    RE_INS = re.compile(r"^\t.*;([0-9a-f]{4})(.*)$")
+
+    @classmethod
+    def setUpClass(cls):
+        import subprocess
+        sys.path.insert(0, os.path.join(RAIZ, "tools"))
+        import make_index
+        cls.fichas = list(make_index.DESENSAMBLADOS) + list(make_index.PARCHES)
+        cls.vecinos = {}
+        padre = os.path.dirname(RAIZ)
+        for nombre in sorted(os.listdir(padre)):
+            d = os.path.join(padre, nombre)
+            if not os.path.isdir(os.path.join(d, ".git")):
+                continue
+            try:
+                url = subprocess.check_output(
+                    ["git", "-C", d, "remote", "get-url", "origin"],
+                    stderr=subprocess.STDOUT).decode().strip()
+            except Exception:
+                continue
+            cls.vecinos[url.rstrip("/").rsplit("/", 1)[-1].replace(".git", "")] = d
+
+    def repo_de(self, ficha):
+        slug = ficha.get("repo", "").rstrip("/").rsplit("/", 1)[-1]
+        return self.vecinos.get(slug)
+
+    def mide(self, d):
+        """(rutinas, instrucciones, comentarios) de los .asm que publica."""
+        import subprocess
+        try:
+            fs = subprocess.check_output(["git", "-C", d, "ls-files", "*.asm"]).decode()
+        except Exception:
+            return None
+        rut = ins = com = 0
+        n = c = 0
+        for f in fs.split("\n"):
+            f = f.strip()
+            if not f or f.startswith("src/cartucho/") or f.startswith("src/parche/"):
+                continue
+            p = os.path.join(d, f)
+            if not os.path.exists(p):
+                continue
+            n = c = 0
+            with open(p, encoding="utf-8", errors="replace") as fh:
+                for linea in fh:
+                    linea = linea.rstrip("\n")
+                    if self.RE_ETIQ.match(linea):
+                        if n:
+                            rut += 1
+                            ins += n
+                            com += c
+                        n = c = 0
+                        continue
+                    m = self.RE_INS.match(linea)
+                    if not m:
+                        continue
+                    n += 1
+                    if ";" in m.group(2):
+                        c += 1
+            if n:
+                rut += 1
+                ins += n
+                com += c
+        return (rut, ins, com) if ins else None
+
+    def fichas_medibles(self):
+        for ficha in self.fichas:
+            d = self.repo_de(ficha)
+            if not d:
+                continue
+            m = self.mide(d)
+            if m:
+                yield ficha, d, m
+
+    def test_las_rutinas_publicadas_son_las_que_mide_el_listado(self):
+        hay = 0
+        malas = []
+        for ficha, d, (rut, ins, com) in self.fichas_medibles():
+            hay += 1
+            for idioma in ("en", "es"):
+                texto = ficha["datos"][idioma](idioma)
+                m = re.search(r"<b>([\d.,]+)</b>\s*(?:&middot;\s*)?"
+                              r"(?:rutinas|routines)|([\d.,]+)\s*(?:rutinas|routines)",
+                              texto)
+                if not m:
+                    continue
+                crudo = (m.group(1) or m.group(2)).replace(".", "").replace(",", "")
+                if int(crudo) != rut:
+                    malas.append("%s (%s): publica %s rutinas y mide %d"
+                                 % (ficha["clave"], idioma, crudo, rut))
+        if not hay:
+            self.skipTest("los repositorios de los juegos no estan al lado")
+        self.assertEqual(malas, [], "\n".join(malas))
+
+    def test_la_densidad_publicada_es_la_que_mide_el_listado(self):
+        hay = 0
+        malas = []
+        for ficha, d, (rut, ins, com) in self.fichas_medibles():
+            hay += 1
+            pct = round(100.0 * com / ins, 1)
+            for idioma in ("en", "es"):
+                texto = ficha["datos"][idioma](idioma)
+                # solo el porcentaje que va con la palabra: en las fichas hay
+                # otros -los bytes explicados, o lo que se come la interrupcion-
+                # y no son densidad de comentario
+                for crudo in re.findall(
+                        r"(?:comentado al|commented to)\s*<b>(\d{1,2}[.,]\d)\s*%</b>",
+                        texto):
+                    publicado = float(crudo.replace(",", "."))
+                    if abs(publicado - pct) >= 0.05:
+                        malas.append("%s (%s): publica %s %% y mide %.1f %%"
+                                     % (ficha["clave"], idioma, crudo, pct))
+        if not hay:
+            self.skipTest("los repositorios de los juegos no estan al lado")
+        self.assertEqual(malas, [], "\n".join(malas))

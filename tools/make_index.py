@@ -209,12 +209,12 @@ DESENSAMBLADOS = [
             en=lambda i: (f"{cif(16384, i)} bytes &middot; <b>0</b> unexplained "
                           f"&middot; reassembles <b>byte for byte</b> &middot; "
                           f"{cif(8911, i)} of code, {cif(7473, i)} of data "
-                          f"&middot; {cif(593, i)} labels &middot; measured in "
+                          f"&middot; {cif(593, i)} routines &middot; measured in "
                           f"openMSX: the interrupt takes <b>50.1%</b> of the frame"),
             es=lambda i: (f"{cif(16384, i)} bytes &middot; <b>0</b> sin explicar "
                           f"&middot; reensambla <b>byte a byte</b> &middot; "
                           f"{cif(8911, i)} de código, {cif(7473, i)} de datos "
-                          f"&middot; {cif(593, i)} etiquetas &middot; medido en "
+                          f"&middot; {cif(593, i)} rutinas &middot; medido en "
                           f"openMSX: la interrupción se come el <b>50,1 %</b> del "
                           f"cuadro"),
         ),
@@ -249,11 +249,11 @@ DESENSAMBLADOS = [
             en=lambda i: (f"{cif(8192, i)} bytes &middot; <b>0</b> unexplained "
                           f"&middot; reassembles <b>byte for byte</b> &middot; "
                           f"{cif(4880, i)} of code, {cif(3312, i)} of data "
-                          f"&middot; {cif(314, i)} labels"),
+                          f"&middot; {cif(314, i)} routines"),
             es=lambda i: (f"{cif(8192, i)} bytes &middot; <b>0</b> sin explicar "
                           f"&middot; reensambla <b>byte a byte</b> &middot; "
                           f"{cif(4880, i)} de código, {cif(3312, i)} de datos "
-                          f"&middot; {cif(314, i)} etiquetas"),
+                          f"&middot; {cif(314, i)} rutinas"),
         ),
         nota=dict(en=None, es=None),
     ),
@@ -286,12 +286,12 @@ DESENSAMBLADOS = [
             en=lambda i: (f"{cif(8192, i)} bytes &middot; <b>0</b> unexplained "
                           f"&middot; reassembles <b>byte for byte</b> &middot; "
                           f"{cif(5783, i)} of code, {cif(2409, i)} of data "
-                          f"&middot; {cif(407, i)} labels &middot; commented "
+                          f"&middot; {cif(407, i)} routines &middot; commented "
                           f"to <b>24.2%</b>"),
             es=lambda i: (f"{cif(8192, i)} bytes &middot; <b>0</b> sin explicar "
                           f"&middot; reensambla <b>byte a byte</b> &middot; "
                           f"{cif(5783, i)} de código, {cif(2409, i)} de datos "
-                          f"&middot; {cif(407, i)} etiquetas &middot; comentado "
+                          f"&middot; {cif(407, i)} rutinas &middot; comentado "
                           f"al <b>24,2 %</b>"),
         ),
         nota=dict(en=None, es=None),
@@ -322,11 +322,11 @@ DESENSAMBLADOS = [
             en=lambda i: (f"{cif(16384, i)} bytes &middot; <b>0</b> unexplained "
                           f"&middot; reassembles <b>byte for byte</b> &middot; "
                           f"{cif(7448, i)} of code, {cif(8936, i)} of data "
-                          f"&middot; {cif(296, i)} labels"),
+                          f"&middot; {cif(513, i)} routines"),
             es=lambda i: (f"{cif(16384, i)} bytes &middot; <b>0</b> sin explicar "
                           f"&middot; reensambla <b>byte a byte</b> &middot; "
                           f"{cif(7448, i)} de código, {cif(8936, i)} de datos "
-                          f"&middot; {cif(296, i)} etiquetas"),
+                          f"&middot; {cif(513, i)} rutinas"),
         ),
         nota=dict(en=None, es=None),
     ),
@@ -393,11 +393,11 @@ DESENSAMBLADOS = [
             en=lambda i: (f"{cif(16384, i)} bytes &middot; <b>0</b> unexplained "
                           f"&middot; reassembles <b>byte for byte</b> &middot; "
                           f"{cif(8962, i)} of code, {cif(7422, i)} of data "
-                          f"&middot; {cif(498, i)} labels"),
+                          f"&middot; {cif(498, i)} routines"),
             es=lambda i: (f"{cif(16384, i)} bytes &middot; <b>0</b> sin explicar "
                           f"&middot; reensambla <b>byte a byte</b> &middot; "
                           f"{cif(8962, i)} de código, {cif(7422, i)} de datos "
-                          f"&middot; {cif(498, i)} etiquetas"),
+                          f"&middot; {cif(498, i)} rutinas"),
         ),
         nota=dict(en=None, es=None),
     ),
@@ -433,12 +433,12 @@ DESENSAMBLADOS = [
             en=lambda i: (f"{cif(16384, i)} bytes &middot; <b>0</b> unexplained "
                           f"&middot; reassembles <b>byte for byte</b> &middot; "
                           f"{cif(5343, i)} of code, {cif(11041, i)} of data "
-                          f"&middot; {cif(332, i)} labels &middot; commented "
+                          f"&middot; {cif(333, i)} routines &middot; commented "
                           f"to <b>39.3%</b>"),
             es=lambda i: (f"{cif(16384, i)} bytes &middot; <b>0</b> sin explicar "
                           f"&middot; reensambla <b>byte a byte</b> &middot; "
                           f"{cif(5343, i)} de código, {cif(11041, i)} de datos "
-                          f"&middot; {cif(332, i)} etiquetas &middot; comentado "
+                          f"&middot; {cif(333, i)} rutinas &middot; comentado "
                           f"al <b>39,3 %</b>"),
         ),
         nota=dict(en=None, es=None),
@@ -476,12 +476,12 @@ DESENSAMBLADOS = [
             en=lambda i: (f"{cif(32768, i)} bytes &middot; <b>0</b> unexplained "
                           f"&middot; reassembles <b>byte for byte</b> &middot; "
                           f"{cif(15432, i)} of code, {cif(17336, i)} of data "
-                          f"&middot; {cif(1091, i)} labels &middot; commented "
+                          f"&middot; {cif(1001, i)} routines &middot; commented "
                           f"to <b>30.7%</b>"),
             es=lambda i: (f"{cif(32768, i)} bytes &middot; <b>0</b> sin explicar "
                           f"&middot; reensambla <b>byte a byte</b> &middot; "
                           f"{cif(15432, i)} de código, {cif(17336, i)} de datos "
-                          f"&middot; {cif(1091, i)} etiquetas &middot; comentado "
+                          f"&middot; {cif(1001, i)} rutinas &middot; comentado "
                           f"al <b>30,7 %</b>"),
         ),
         nota=dict(en=None, es=None),
@@ -515,12 +515,12 @@ DESENSAMBLADOS = [
             en=lambda i: (f"{cif(16384, i)} bytes &middot; <b>0</b> unexplained "
                           f"&middot; reassembles <b>byte for byte</b> &middot; "
                           f"{cif(9335, i)} of code, {cif(7049, i)} of data "
-                          f"&middot; {cif(569, i)} labels &middot; commented "
+                          f"&middot; {cif(569, i)} routines &middot; commented "
                           f"to <b>33.4%</b>"),
             es=lambda i: (f"{cif(16384, i)} bytes &middot; <b>0</b> sin explicar "
                           f"&middot; reensambla <b>byte a byte</b> &middot; "
                           f"{cif(9335, i)} de código, {cif(7049, i)} de datos "
-                          f"&middot; {cif(569, i)} etiquetas &middot; comentado "
+                          f"&middot; {cif(569, i)} rutinas &middot; comentado "
                           f"al <b>33,4 %</b>"),
         ),
         nota=dict(en=None, es=None),
@@ -554,12 +554,12 @@ DESENSAMBLADOS = [
             en=lambda i: (f"{cif(16384, i)} bytes &middot; <b>0</b> unexplained "
                           f"&middot; reassembles <b>byte for byte</b> &middot; "
                           f"{cif(9872, i)} of code, {cif(6512, i)} of data "
-                          f"&middot; {cif(647, i)} labels &middot; commented "
+                          f"&middot; {cif(647, i)} routines &middot; commented "
                           f"to <b>29.9%</b>"),
             es=lambda i: (f"{cif(16384, i)} bytes &middot; <b>0</b> sin explicar "
                           f"&middot; reensambla <b>byte a byte</b> &middot; "
                           f"{cif(9872, i)} de código, {cif(6512, i)} de datos "
-                          f"&middot; {cif(647, i)} etiquetas &middot; comentado "
+                          f"&middot; {cif(647, i)} rutinas &middot; comentado "
                           f"al <b>29,9 %</b>"),
         ),
         nota=dict(en=None, es=None),
@@ -596,12 +596,12 @@ DESENSAMBLADOS = [
                           f"&middot; reassembles <b>byte for byte</b> &middot; "
                           f"{cif(6065, i)} of code, {cif(10319, i)} of data "
                           f"&middot; {cif(358, i)} routines &middot; commented "
-                          f"to <b>41.9%</b>, none below 10%"),
+                          f"to <b>42.0%</b>, none below 10%"),
             es=lambda i: (f"{cif(16384, i)} bytes &middot; <b>0</b> sin explicar "
                           f"&middot; reensambla <b>byte a byte</b> &middot; "
                           f"{cif(6065, i)} de codigo, {cif(10319, i)} de datos "
                           f"&middot; {cif(358, i)} rutinas &middot; comentado al "
-                          f"<b>41,9 %</b>, ninguna por debajo del 10 %"),
+                          f"<b>42,0 %</b>, ninguna por debajo del 10 %"),
         ),
         nota=dict(en=None, es=None),
     ),
@@ -716,13 +716,13 @@ DESENSAMBLADOS = [
             en=lambda i: (f"{cif(16384, i)} bytes &middot; <b>0</b> unexplained "
                           f"&middot; reassembles <b>byte for byte</b> &middot; "
                           f"{cif(6464, i)} of code, {cif(9920, i)} of data "
-                          f"&middot; {cif(431, i)} labels &middot; commented "
-                          f"to <b>22.1%</b>"),
+                          f"&middot; {cif(430, i)} routines &middot; commented "
+                          f"to <b>22.7%</b>"),
             es=lambda i: (f"{cif(16384, i)} bytes &middot; <b>0</b> sin explicar "
                           f"&middot; reensambla <b>byte a byte</b> &middot; "
                           f"{cif(6464, i)} de código, {cif(9920, i)} de datos "
-                          f"&middot; {cif(431, i)} etiquetas &middot; comentado "
-                          f"al <b>22,1 %</b>"),
+                          f"&middot; {cif(430, i)} rutinas &middot; comentado "
+                          f"al <b>22,7 %</b>"),
         ),
         nota=dict(en=None, es=None),
     ),
@@ -754,12 +754,12 @@ DESENSAMBLADOS = [
             en=lambda i: (f"{cif(16384, i)} bytes &middot; <b>0</b> unexplained "
                           f"&middot; reassembles <b>byte for byte</b> &middot; "
                           f"{cif(7086, i)} of code, {cif(9298, i)} of data "
-                          f"&middot; {cif(464, i)} labels &middot; commented "
+                          f"&middot; {cif(461, i)} routines &middot; commented "
                           f"to <b>32.1%</b>"),
             es=lambda i: (f"{cif(16384, i)} bytes &middot; <b>0</b> sin explicar "
                           f"&middot; reensambla <b>byte a byte</b> &middot; "
                           f"{cif(7086, i)} de código, {cif(9298, i)} de datos "
-                          f"&middot; {cif(464, i)} etiquetas &middot; comentado "
+                          f"&middot; {cif(461, i)} rutinas &middot; comentado "
                           f"al <b>32,1 %</b>"),
         ),
         nota=dict(en=None, es=None),
@@ -793,12 +793,12 @@ DESENSAMBLADOS = [
             en=lambda i: (f"{cif(16384, i)} bytes &middot; <b>0</b> unexplained "
                           f"&middot; reassembles <b>byte for byte</b> &middot; "
                           f"{cif(8665, i)} of code, {cif(7719, i)} of data "
-                          f"&middot; {cif(558, i)} labels &middot; commented "
+                          f"&middot; {cif(558, i)} routines &middot; commented "
                           f"to <b>35.4%</b>"),
             es=lambda i: (f"{cif(16384, i)} bytes &middot; <b>0</b> sin explicar "
                           f"&middot; reensambla <b>byte a byte</b> &middot; "
                           f"{cif(8665, i)} de código, {cif(7719, i)} de datos "
-                          f"&middot; {cif(558, i)} etiquetas &middot; comentado "
+                          f"&middot; {cif(558, i)} rutinas &middot; comentado "
                           f"al <b>35,4 %</b>"),
         ),
         nota=dict(en=None, es=None),
@@ -831,13 +831,13 @@ DESENSAMBLADOS = [
             en=lambda i: (f"{cif(16384, i)} bytes &middot; <b>0</b> unexplained "
                           f"&middot; reassembles <b>byte for byte</b> &middot; "
                           f"{cif(7789, i)} of code, {cif(8595, i)} of data "
-                          f"&middot; {cif(512, i)} labels &middot; commented "
-                          f"to <b>52.9%</b>"),
+                          f"&middot; {cif(512, i)} routines &middot; commented "
+                          f"to <b>53.0%</b>"),
             es=lambda i: (f"{cif(16384, i)} bytes &middot; <b>0</b> sin explicar "
                           f"&middot; reensambla <b>byte a byte</b> &middot; "
                           f"{cif(7789, i)} de código, {cif(8595, i)} de datos "
-                          f"&middot; {cif(512, i)} etiquetas &middot; comentado "
-                          f"al <b>52,9 %</b>"),
+                          f"&middot; {cif(512, i)} rutinas &middot; comentado "
+                          f"al <b>53,0 %</b>"),
         ),
         nota=dict(en=None, es=None),
     ),
@@ -866,12 +866,12 @@ DESENSAMBLADOS = [
             en=lambda i: (f"{cif(16384, i)} bytes &middot; <b>0</b> unexplained "
                           f"&middot; reassembles <b>byte for byte</b> &middot; "
                           f"{cif(7797, i)} of code, {cif(8587, i)} of data "
-                          f"&middot; {cif(482, i)} labels &middot; commented "
+                          f"&middot; {cif(482, i)} routines &middot; commented "
                           f"to <b>55.1%</b>"),
             es=lambda i: (f"{cif(16384, i)} bytes &middot; <b>0</b> sin explicar "
                           f"&middot; reensambla <b>byte a byte</b> &middot; "
                           f"{cif(7797, i)} de código, {cif(8587, i)} de datos "
-                          f"&middot; {cif(482, i)} etiquetas &middot; comentado "
+                          f"&middot; {cif(482, i)} rutinas &middot; comentado "
                           f"al <b>55,1 %</b>"),
         ),
         nota=dict(
@@ -906,12 +906,12 @@ DESENSAMBLADOS = [
             en=lambda i: (f"{cif(16384, i)} bytes &middot; <b>0</b> unexplained "
                           f"&middot; reassembles <b>byte for byte</b> &middot; "
                           f"{cif(7676, i)} of code, {cif(8708, i)} of data "
-                          f"&middot; {cif(548, i)} labels &middot; commented "
+                          f"&middot; {cif(548, i)} routines &middot; commented "
                           f"to <b>64.3%</b>"),
             es=lambda i: (f"{cif(16384, i)} bytes &middot; <b>0</b> sin explicar "
                           f"&middot; reensambla <b>byte a byte</b> &middot; "
                           f"{cif(7676, i)} de código, {cif(8708, i)} de datos "
-                          f"&middot; {cif(548, i)} etiquetas &middot; comentado "
+                          f"&middot; {cif(548, i)} rutinas &middot; comentado "
                           f"al <b>64,3 %</b>"),
         ),
         nota=dict(
@@ -947,12 +947,12 @@ DESENSAMBLADOS = [
             en=lambda i: (f"{cif(32768, i)} bytes &middot; <b>0</b> unexplained "
                           f"&middot; reassembles <b>byte for byte</b> &middot; "
                           f"{cif(20116, i)} of code, {cif(12652, i)} of data "
-                          f"&middot; {cif(1213, i)} labels &middot; commented "
+                          f"&middot; {cif(1213, i)} routines &middot; commented "
                           f"to <b>36.5%</b>"),
             es=lambda i: (f"{cif(32768, i)} bytes &middot; <b>0</b> sin explicar "
                           f"&middot; reensambla <b>byte a byte</b> &middot; "
                           f"{cif(20116, i)} de código, {cif(12652, i)} de datos "
-                          f"&middot; {cif(1213, i)} etiquetas &middot; comentado "
+                          f"&middot; {cif(1213, i)} rutinas &middot; comentado "
                           f"al <b>36,5 %</b>"),
         ),
         nota=dict(
@@ -990,12 +990,12 @@ DESENSAMBLADOS = [
             en=lambda i: (f"{cif(16384, i)} bytes &middot; <b>0</b> unexplained "
                           f"&middot; reassembles <b>byte for byte</b> &middot; "
                           f"{cif(9803, i)} of code, {cif(6581, i)} of data "
-                          f"&middot; {cif(651, i)} labels &middot; commented "
+                          f"&middot; {cif(651, i)} routines &middot; commented "
                           f"to <b>45.5%</b>"),
             es=lambda i: (f"{cif(16384, i)} bytes &middot; <b>0</b> sin explicar "
                           f"&middot; reensambla <b>byte a byte</b> &middot; "
                           f"{cif(9803, i)} de código, {cif(6581, i)} de datos "
-                          f"&middot; {cif(651, i)} etiquetas &middot; comentado "
+                          f"&middot; {cif(651, i)} rutinas &middot; comentado "
                           f"al <b>45,5 %</b>"),
         ),
         nota=dict(en=None, es=None),
@@ -1027,12 +1027,12 @@ DESENSAMBLADOS = [
             en=lambda i: (f"{cif(16384, i)} bytes &middot; <b>0</b> unexplained "
                           f"&middot; reassembles <b>byte for byte</b> &middot; "
                           f"{cif(9618, i)} of code, {cif(6766, i)} of data "
-                          f"&middot; {cif(629, i)} labels &middot; commented "
+                          f"&middot; {cif(629, i)} routines &middot; commented "
                           f"to <b>44.5%</b>"),
             es=lambda i: (f"{cif(16384, i)} bytes &middot; <b>0</b> sin explicar "
                           f"&middot; reensambla <b>byte a byte</b> &middot; "
                           f"{cif(9618, i)} de código, {cif(6766, i)} de datos "
-                          f"&middot; {cif(629, i)} etiquetas &middot; comentado "
+                          f"&middot; {cif(629, i)} rutinas &middot; comentado "
                           f"al <b>44,5 %</b>"),
         ),
         nota=dict(en=None, es=None),
@@ -1066,12 +1066,12 @@ DESENSAMBLADOS = [
             en=lambda i: (f"{cif(32768, i)} bytes &middot; <b>0</b> unexplained "
                           f"&middot; reassembles <b>byte for byte</b> &middot; "
                           f"{cif(15233, i)} of code, {cif(17535, i)} of data "
-                          f"&middot; {cif(985, i)} labels &middot; commented "
+                          f"&middot; {cif(985, i)} routines &middot; commented "
                           f"to <b>22.4%</b>"),
             es=lambda i: (f"{cif(32768, i)} bytes &middot; <b>0</b> sin explicar "
                           f"&middot; reensambla <b>byte a byte</b> &middot; "
                           f"{cif(15233, i)} de código, {cif(17535, i)} de datos "
-                          f"&middot; {cif(985, i)} etiquetas &middot; comentado "
+                          f"&middot; {cif(985, i)} rutinas &middot; comentado "
                           f"al <b>22,4 %</b>"),
         ),
         nota=dict(en=None, es=None),
@@ -1108,12 +1108,12 @@ DESENSAMBLADOS = [
             en=lambda i: (f"{cif(32768, i)} bytes &middot; <b>0</b> unexplained "
                           f"&middot; reassembles <b>byte for byte</b> &middot; "
                           f"{cif(14406, i)} of code, {cif(18362, i)} of data "
-                          f"&middot; {cif(1000, i)} labels &middot; commented "
+                          f"&middot; {cif(1000, i)} routines &middot; commented "
                           f"to <b>41.4%</b>"),
             es=lambda i: (f"{cif(32768, i)} bytes &middot; <b>0</b> sin explicar "
                           f"&middot; reensambla <b>byte a byte</b> &middot; "
                           f"{cif(14406, i)} de código, {cif(18362, i)} de datos "
-                          f"&middot; {cif(1000, i)} etiquetas &middot; comentado "
+                          f"&middot; {cif(1000, i)} rutinas &middot; comentado "
                           f"al <b>41,4 %</b>"),
         ),
         nota=dict(en=None, es=None),
@@ -1153,12 +1153,12 @@ DESENSAMBLADOS = [
             en=lambda i: (f"{cif(32768, i)} bytes &middot; <b>0</b> unexplained "
                           f"&middot; reassembles <b>byte for byte</b> &middot; "
                           f"{cif(6932, i)} of code, {cif(25836, i)} of data "
-                          f"&middot; {cif(475, i)} labels &middot; commented "
+                          f"&middot; {cif(475, i)} routines &middot; commented "
                           f"to <b>52.6%</b>"),
             es=lambda i: (f"{cif(32768, i)} bytes &middot; <b>0</b> sin explicar "
                           f"&middot; reensambla <b>byte a byte</b> &middot; "
                           f"{cif(6932, i)} de código, {cif(25836, i)} de datos "
-                          f"&middot; {cif(475, i)} etiquetas &middot; comentado "
+                          f"&middot; {cif(475, i)} rutinas &middot; comentado "
                           f"al <b>52,6 %</b>"),
         ),
         nota=dict(en=None, es=None),
@@ -1193,12 +1193,12 @@ DESENSAMBLADOS = [
             en=lambda i: (f"{cif(32768, i)} bytes &middot; <b>0</b> unexplained "
                           f"&middot; reassembles <b>byte for byte</b> &middot; "
                           f"{cif(13725, i)} of code, {cif(19043, i)} of data "
-                          f"&middot; {cif(1028, i)} labels &middot; commented "
+                          f"&middot; {cif(1027, i)} routines &middot; commented "
                           f"to <b>40.9%</b>"),
             es=lambda i: (f"{cif(32768, i)} bytes &middot; <b>0</b> sin explicar "
                           f"&middot; reensambla <b>byte a byte</b> &middot; "
                           f"{cif(13725, i)} de código, {cif(19043, i)} de datos "
-                          f"&middot; {cif(1028, i)} etiquetas &middot; comentado "
+                          f"&middot; {cif(1027, i)} rutinas &middot; comentado "
                           f"al <b>40,9 %</b>"),
         ),
         nota=dict(en=None, es=None),
@@ -1231,12 +1231,12 @@ DESENSAMBLADOS = [
             en=lambda i: (f"{cif(16384, i)} bytes &middot; <b>0</b> unexplained "
                           f"&middot; reassembles <b>byte for byte</b> &middot; "
                           f"{cif(7494, i)} of code, {cif(8890, i)} of data "
-                          f"&middot; {cif(569, i)} labels &middot; commented "
+                          f"&middot; {cif(568, i)} routines &middot; commented "
                           f"to <b>44.0%</b>"),
             es=lambda i: (f"{cif(16384, i)} bytes &middot; <b>0</b> sin explicar "
                           f"&middot; reensambla <b>byte a byte</b> &middot; "
                           f"{cif(7494, i)} de código, {cif(8890, i)} de datos "
-                          f"&middot; {cif(569, i)} etiquetas &middot; comentado "
+                          f"&middot; {cif(568, i)} rutinas &middot; comentado "
                           f"al <b>44,0 %</b>"),
         ),
         nota=dict(en=None, es=None),
@@ -1268,12 +1268,12 @@ DESENSAMBLADOS = [
             en=lambda i: (f"{cif(16384, i)} bytes &middot; <b>0</b> unexplained "
                           f"&middot; reassembles <b>byte for byte</b> &middot; "
                           f"{cif(7882, i)} of code, {cif(8502, i)} of data "
-                          f"&middot; {cif(492, i)} labels &middot; commented "
+                          f"&middot; {cif(492, i)} routines &middot; commented "
                           f"to <b>32.4%</b>"),
             es=lambda i: (f"{cif(16384, i)} bytes &middot; <b>0</b> sin explicar "
                           f"&middot; reensambla <b>byte a byte</b> &middot; "
                           f"{cif(7882, i)} de código, {cif(8502, i)} de datos "
-                          f"&middot; {cif(492, i)} etiquetas &middot; comentado "
+                          f"&middot; {cif(492, i)} rutinas &middot; comentado "
                           f"al <b>32,4 %</b>"),
         ),
         nota=dict(en=None, es=None),
@@ -1304,12 +1304,12 @@ DESENSAMBLADOS = [
             en=lambda i: (f"{cif(16384, i)} bytes &middot; <b>0</b> unexplained "
                           f"&middot; reassembles <b>byte for byte</b> &middot; "
                           f"{cif(5953, i)} of code, {cif(10431, i)} of data "
-                          f"&middot; {cif(387, i)} labels &middot; commented "
+                          f"&middot; {cif(386, i)} routines &middot; commented "
                           f"to <b>24.8%</b>"),
             es=lambda i: (f"{cif(16384, i)} bytes &middot; <b>0</b> sin explicar "
                           f"&middot; reensambla <b>byte a byte</b> &middot; "
                           f"{cif(5953, i)} de código, {cif(10431, i)} de datos "
-                          f"&middot; {cif(387, i)} etiquetas &middot; comentado "
+                          f"&middot; {cif(386, i)} rutinas &middot; comentado "
                           f"al <b>24,8 %</b>"),
         ),
         nota=dict(en=None, es=None),
@@ -1341,13 +1341,13 @@ DESENSAMBLADOS = [
             en=lambda i: (f"{cif(16384, i)} bytes &middot; <b>0</b> unexplained "
                           f"&middot; reassembles <b>byte for byte</b> &middot; "
                           f"{cif(6956, i)} of code, {cif(9428, i)} of data "
-                          f"&middot; {cif(314, i)} labels &middot; commented "
-                          f"to <b>22.5%</b>"),
+                          f"&middot; {cif(500, i)} routines &middot; commented "
+                          f"to <b>22.7%</b>"),
             es=lambda i: (f"{cif(16384, i)} bytes &middot; <b>0</b> sin explicar "
                           f"&middot; reensambla <b>byte a byte</b> &middot; "
                           f"{cif(6956, i)} de código, {cif(9428, i)} de datos "
-                          f"&middot; {cif(314, i)} etiquetas &middot; comentado "
-                          f"al <b>22,5 %</b>"),
+                          f"&middot; {cif(500, i)} rutinas &middot; comentado "
+                          f"al <b>22,7 %</b>"),
         ),
         nota=dict(en=None, es=None),
     ),
@@ -1381,12 +1381,12 @@ DESENSAMBLADOS = [
             en=lambda i: (f"{cif(32768, i)} bytes &middot; <b>0</b> unexplained "
                           f"&middot; reassembles <b>byte for byte</b> &middot; "
                           f"{cif(14410, i)} of code, {cif(18358, i)} of data "
-                          f"&middot; {cif(931, i)} labels &middot; commented "
+                          f"&middot; {cif(931, i)} routines &middot; commented "
                           f"to <b>34.5%</b>"),
             es=lambda i: (f"{cif(32768, i)} bytes &middot; <b>0</b> sin explicar "
                           f"&middot; reensambla <b>byte a byte</b> &middot; "
                           f"{cif(14410, i)} de código, {cif(18358, i)} de datos "
-                          f"&middot; {cif(931, i)} etiquetas &middot; comentado "
+                          f"&middot; {cif(931, i)} rutinas &middot; comentado "
                           f"al <b>34,5 %</b>"),
         ),
         nota=dict(
@@ -1468,12 +1468,12 @@ DESENSAMBLADOS = [
             en=lambda i: (f"{cif(32768, i)} bytes &middot; <b>0</b> unexplained "
                           f"&middot; reassembles <b>byte for byte</b> &middot; "
                           f"{cif(17422, i)} of code, {cif(15346, i)} of data "
-                          f"&middot; {cif(1176, i)} labels &middot; commented "
+                          f"&middot; {cif(1176, i)} routines &middot; commented "
                           f"to <b>36.9%</b>"),
             es=lambda i: (f"{cif(32768, i)} bytes &middot; <b>0</b> sin explicar "
                           f"&middot; reensambla <b>byte a byte</b> &middot; "
                           f"{cif(17422, i)} de código, {cif(15346, i)} de datos "
-                          f"&middot; {cif(1176, i)} etiquetas &middot; comentado "
+                          f"&middot; {cif(1176, i)} rutinas &middot; comentado "
                           f"al <b>36,9 %</b>"),
         ),
         nota=dict(
@@ -1510,12 +1510,12 @@ DESENSAMBLADOS = [
             en=lambda i: (f"{cif(16384, i)} bytes &middot; <b>0</b> unexplained "
                           f"&middot; reassembles <b>byte for byte</b> &middot; "
                           f"{cif(7981, i)} of code, {cif(8403, i)} of data "
-                          f"&middot; {cif(314, i)} labels &middot; commented "
+                          f"&middot; {cif(562, i)} routines &middot; commented "
                           f"to <b>24.5%</b>"),
             es=lambda i: (f"{cif(16384, i)} bytes &middot; <b>0</b> sin explicar "
                           f"&middot; reensambla <b>byte a byte</b> &middot; "
                           f"{cif(7981, i)} de código, {cif(8403, i)} de datos "
-                          f"&middot; {cif(314, i)} etiquetas &middot; comentado "
+                          f"&middot; {cif(562, i)} rutinas &middot; comentado "
                           f"al <b>24,5 %</b>"),
         ),
         nota=dict(en=None, es=None),
@@ -1546,11 +1546,11 @@ DESENSAMBLADOS = [
             en=lambda i: (f"{cif(16384, i)} bytes &middot; <b>0</b> unexplained "
                           f"&middot; reassembles <b>byte for byte</b> &middot; "
                           f"{cif(9467, i)} of code, {cif(6917, i)} of data "
-                          f"&middot; {cif(337, i)} labels"),
+                          f"&middot; {cif(337, i)} routines"),
             es=lambda i: (f"{cif(16384, i)} bytes &middot; <b>0</b> sin explicar "
                           f"&middot; reensambla <b>byte a byte</b> &middot; "
                           f"{cif(9467, i)} de código, {cif(6917, i)} de datos "
-                          f"&middot; {cif(337, i)} etiquetas"),
+                          f"&middot; {cif(337, i)} rutinas"),
         ),
         nota=dict(en=None, es=None),
     ),
@@ -1582,11 +1582,11 @@ DESENSAMBLADOS = [
             en=lambda i: (f"{cif(16384, i)} bytes &middot; <b>0</b> unexplained "
                           f"&middot; reassembles <b>byte for byte</b> &middot; "
                           f"{cif(9099, i)} of code, {cif(7285, i)} of data "
-                          f"&middot; {cif(676, i)} labels"),
+                          f"&middot; {cif(675, i)} routines"),
             es=lambda i: (f"{cif(16384, i)} bytes &middot; <b>0</b> sin explicar "
                           f"&middot; reensambla <b>byte a byte</b> &middot; "
                           f"{cif(9099, i)} de código, {cif(7285, i)} de datos "
-                          f"&middot; {cif(676, i)} etiquetas"),
+                          f"&middot; {cif(675, i)} rutinas"),
         ),
         nota=dict(en=None, es=None),
     ),
@@ -1621,12 +1621,12 @@ DESENSAMBLADOS = [
             en=lambda i: (f"{cif(58334, i)} bytes &middot; <b>0</b> unexplained "
                           f"&middot; reassembles <b>byte for byte</b> &middot; "
                           f"{cif(20299, i)} of code, {cif(37597, i)} of data "
-                          f"&middot; {cif(1586, i)} labels &middot; commented at "
+                          f"&middot; {cif(1308, i)} routines &middot; commented at "
                           f"<b>33.0%</b>, no routine below 10%"),
             es=lambda i: (f"{cif(58334, i)} bytes &middot; <b>0</b> sin explicar "
                           f"&middot; reensambla <b>byte a byte</b> &middot; "
                           f"{cif(20299, i)} de código, {cif(37597, i)} de datos "
-                          f"&middot; {cif(1586, i)} etiquetas &middot; comentado "
+                          f"&middot; {cif(1308, i)} rutinas &middot; comentado "
                           f"al <b>33,0 %</b>, ninguna rutina por debajo del 10 %"),
         ),
         nota=dict(
@@ -1669,13 +1669,13 @@ DESENSAMBLADOS = [
             en=lambda i: (f"{cif(131072, i)} bytes &middot; <b>0</b> unexplained "
                           f"&middot; reassembles <b>byte for byte</b> &middot; "
                           f"{cif(25471, i)} of code, {cif(105601, i)} of data "
-                          f"&middot; {cif(916, i)} routines &middot; commented "
-                          f"to <b>23.3%</b> &middot; <b>12</b> maps"),
+                          f"&middot; {cif(1540, i)} routines &middot; commented "
+                          f"to <b>23.4%</b> &middot; <b>12</b> maps"),
             es=lambda i: (f"{cif(131072, i)} bytes &middot; <b>0</b> sin explicar "
                           f"&middot; reensambla <b>byte a byte</b> &middot; "
                           f"{cif(25471, i)} de código, {cif(105601, i)} de datos "
-                          f"&middot; {cif(916, i)} rutinas &middot; comentado "
-                          f"al <b>23,3 %</b> &middot; <b>12</b> mapas"),
+                          f"&middot; {cif(1540, i)} rutinas &middot; comentado "
+                          f"al <b>23,4 %</b> &middot; <b>12</b> mapas"),
         ),
         nota=dict(en=None, es=None),
     ),
@@ -1713,12 +1713,12 @@ DESENSAMBLADOS = [
             en=lambda i: (f"{cif(131072, i)} bytes &middot; <b>99.6%</b> explained "
                           f"&middot; reassembles <b>byte for byte</b> &middot; "
                           f"{cif(31591, i)} of code, {cif(99481, i)} of data "
-                          f"&middot; {cif(977, i)} routines &middot; "
+                          f"&middot; {cif(1953, i)} routines &middot; "
                           f"<b>21</b> circuits"),
             es=lambda i: (f"{cif(131072, i)} bytes &middot; <b>99,6 %</b> explicado "
                           f"&middot; reensambla <b>byte a byte</b> &middot; "
                           f"{cif(31591, i)} de código, {cif(99481, i)} de datos "
-                          f"&middot; {cif(977, i)} rutinas &middot; "
+                          f"&middot; {cif(1953, i)} rutinas &middot; "
                           f"<b>21</b> circuitos"),
         ),
         nota=dict(
@@ -1796,13 +1796,13 @@ DESENSAMBLADOS = [
             en=lambda i: (f"{cif(38299, i)} bytes &middot; <b>0</b> unexplained "
                           f"&middot; the tape reassembles <b>byte for byte</b> "
                           f"&middot; {cif(6556, i)} of code, {cif(31743, i)} of "
-                          f"data &middot; {cif(355, i)} labels &middot; "
-                          f"commented to <b>30.7%</b>"),
+                          f"data &middot; {cif(355, i)} routines &middot; "
+                          f"commented to <b>30.8%</b>"),
             es=lambda i: (f"{cif(38299, i)} bytes &middot; <b>0</b> sin explicar "
                           f"&middot; la cinta reensambla <b>byte a byte</b> "
                           f"&middot; {cif(6556, i)} de código, {cif(31743, i)} de "
-                          f"datos &middot; {cif(355, i)} etiquetas &middot; "
-                          f"comentado al <b>30,7 %</b>"),
+                          f"datos &middot; {cif(355, i)} rutinas &middot; "
+                          f"comentado al <b>30,8 %</b>"),
         ),
         nota=dict(
             en="The loader does not read the tape: it <b>builds a bridge on the "
@@ -1839,10 +1839,10 @@ DESENSAMBLADOS = [
         datos=dict(
             en=lambda i: (f"{cif(93861, i)} bytes &middot; <b>100%</b> accounted "
                           f"for &middot; <b>five listings</b>, all <b>byte for "
-                          f"byte</b> &middot; {cif(335, i)} routines commented"),
+                          f"byte</b> &middot; {cif(1148, i)} routines commented"),
             es=lambda i: (f"{cif(93861, i)} bytes &middot; <b>100 %</b> explicado "
                           f"&middot; <b>cinco listados</b>, todos <b>byte a byte</b> "
-                          f"&middot; {cif(335, i)} rutinas comentadas"),
+                          f"&middot; {cif(1148, i)} rutinas comentadas"),
         ),
         nota=dict(en=None, es=None),
     ),
@@ -1872,11 +1872,11 @@ DESENSAMBLADOS = [
         datos=dict(
             en=lambda i: (f"{cif(40449, i)} bytes &middot; <b>100%</b> accounted "
                           f"for &middot; reassembles <b>byte for byte</b> &middot; "
-                          f"{cif(137, i)} routines, {cif(74, i)} data blocks "
+                          f"{cif(548, i)} routines, {cif(74, i)} data blocks "
                           f"&middot; {cif(29, i)} screens drawn from the binary"),
             es=lambda i: (f"{cif(40449, i)} bytes &middot; <b>100 %</b> explicado "
                           f"&middot; reensambla <b>byte a byte</b> &middot; "
-                          f"{cif(137, i)} rutinas, {cif(74, i)} bloques de datos "
+                          f"{cif(548, i)} rutinas, {cif(74, i)} bloques de datos "
                           f"&middot; {cif(29, i)} pantallas dibujadas desde el "
                           f"binario"),
         ),
@@ -1952,12 +1952,12 @@ DESENSAMBLADOS = [
             en=lambda i: (f"{cif(62261, i)} bytes &middot; <b>0</b> unexplained "
                           f"&middot; <b>five listings</b>, all <b>byte for byte</b> "
                           f"&middot; {cif(11814, i)} of code, {cif(50191, i)} of data "
-                          f"&middot; {cif(819, i)} labels &middot; commented at "
+                          f"&middot; {cif(766, i)} routines &middot; commented at "
                           f"<b>29.7%</b>, no routine below 10%"),
             es=lambda i: (f"{cif(62261, i)} bytes &middot; <b>0</b> sin explicar "
                           f"&middot; <b>cinco listados</b>, todos <b>byte a byte</b> "
                           f"&middot; {cif(11814, i)} de código, {cif(50191, i)} de datos "
-                          f"&middot; {cif(819, i)} etiquetas &middot; comentado al "
+                          f"&middot; {cif(766, i)} rutinas &middot; comentado al "
                           f"<b>29,7 %</b>, ninguna rutina por debajo del 10 %"),
         ),
         nota=dict(
@@ -2001,13 +2001,13 @@ DESENSAMBLADOS = [
                           f"&middot; <b>five listings</b>, the whole tape "
                           f"<b>byte for byte</b> &middot; {cif(15504, i)} of "
                           f"code, {cif(50512, i)} of data &middot; "
-                          f"{cif(733, i)} labels &middot; commented at "
+                          f"{cif(733, i)} routines &middot; commented at "
                           f"<b>26.7%</b>, no routine below 10%"),
             es=lambda i: (f"{cif(66016, i)} bytes &middot; <b>0</b> sin explicar "
                           f"&middot; <b>cinco listados</b>, la cinta entera "
                           f"<b>byte a byte</b> &middot; {cif(15504, i)} de "
                           f"código, {cif(50512, i)} de datos &middot; "
-                          f"{cif(733, i)} etiquetas &middot; comentado al "
+                          f"{cif(733, i)} rutinas &middot; comentado al "
                           f"<b>26,7 %</b>, ninguna rutina por debajo del 10 %"),
         ),
         nota=dict(
