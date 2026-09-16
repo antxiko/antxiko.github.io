@@ -1097,26 +1097,34 @@ DESENSAMBLADOS = [
                "exactly the letters needed to spell those two names and no "
                "others. And the gambling machine is a real slot machine &mdash; "
                "the cherry takes five of sixteen slots and is the only symbol "
-               "that pays on its own.",
+               "that pays on its own. And the good ending or the bad one "
+               "&mdash;the princess alive or dead&mdash; does not depend on how "
+               "you play: it depends on <b>how many times you pause</b>, a "
+               "finding of Manuel Pazos&rsquo;s that is pinned down here in the "
+               "binary.",
             es="<b>Dos claves de teclado escondidas: NORIKO y KAZUMI.</b> "
                "Encienden un CONTINUE que sin ellas no existe, y la prueba "
                "está en el propio vigilante: las <b>nueve</b> teclas que mira "
                "son exactamente las letras que hacen falta para escribir esos "
                "dos nombres y ninguna más. Y la máquina de apostar es una "
                "tragaperras de verdad &mdash; la cereza ocupa cinco de las "
-               "dieciséis casillas y es el único símbolo que paga suelto.",
+               "dieciséis casillas y es el único símbolo que paga suelto. Y el "
+               "final bueno o el malo &mdash;la princesa viva o muerta&mdash; "
+               "no depende de cómo juegues: depende de <b>cuántas veces "
+               "pauses</b>, hallazgo de Manuel Pazos que aquí se localiza en "
+               "el binario.",
         ),
         datos=dict(
             en=lambda i: (f"{cif(131072, i)} bytes &middot; <b>0</b> unexplained "
                           f"&middot; reassembles <b>byte for byte</b> &middot; "
                           f"{cif(32317, i)} of code, {cif(98755, i)} of data "
                           f"&middot; {cif(1526, i)} routines &middot; commented "
-                          f"to <b>44.6%</b>"),
+                          f"to <b>44.7%</b>"),
             es=lambda i: (f"{cif(131072, i)} bytes &middot; <b>0</b> sin explicar "
                           f"&middot; reensambla <b>byte a byte</b> &middot; "
                           f"{cif(32317, i)} de código, {cif(98755, i)} de datos "
                           f"&middot; {cif(1526, i)} rutinas &middot; comentado "
-                          f"al <b>44,6 %</b>"),
+                          f"al <b>44,7 %</b>"),
         ),
         nota=dict(en=None, es=None),
     ),
