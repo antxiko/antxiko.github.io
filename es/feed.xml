@@ -6,8 +6,16 @@
   <link rel="self" type="application/atom+xml" href="https://antxiko.github.io/es/feed.xml"/>
   <link rel="alternate" type="text/html" hreflang="es" href="https://antxiko.github.io/es/"/>
   <link rel="alternate" type="application/atom+xml" hreflang="en" href="https://antxiko.github.io/feed.xml"/>
-  <updated>2026-09-10T18:39:33+02:00</updated>
+  <updated>2026-09-15T14:21:39+02:00</updated>
   <author><name>antxiko</name><uri>https://github.com/antxiko</uri></author>
+  <entry>
+    <id>tag:antxiko.github.io,2026:novedad/es/f1spirit-100</id>
+    <title>F-1 Spirit, al 100 %</title>
+    <link rel="alternate" type="text/html" href="https://antxiko.github.io/F1Spirit-disassembly/"/>
+    <published>2026-09-15T14:21:39+02:00</published>
+    <updated>2026-09-15T14:21:39+02:00</updated>
+    <summary type="text">Los últimos 504 bytes del MegaROM ya están explicados, y ninguno era código: dos dibujos comprimidos que no pinta nadie, tres formas de onda del SCC a las que no apunta ningún instrumento, la barra de la pantalla partida y filas de dos tablas a las que no llega su lector. Y las cuatro partidas grabadas de la demo, ya con quien las lee.</summary>
+  </entry>
   <entry>
     <id>tag:antxiko.github.io,2026:novedad/es/warinmiddleearth-cartucho</id>
     <title>War in Middle Earth: la cinta, ahora en cartucho</title>
@@ -159,13 +167,5 @@
     <published>2026-09-04T08:09:43+02:00</published>
     <updated>2026-09-04T08:09:43+02:00</updated>
     <summary type="text">Konami · MSX · cartucho de 16 KB · RC-724. 16.384 bytes · 0 sin explicar · reensambla byte a byte · 9.618 de código, 6.766 de datos · 629 rutinas · comentado al 44,5 %.</summary>
-  </entry>
-  <entry>
-    <id>tag:antxiko.github.io,2026:novedad/es/kingsvalley</id>
-    <title>King's Valley: desensamblado</title>
-    <link rel="alternate" type="text/html" href="https://antxiko.github.io/KingsValley-disassembly/"/>
-    <published>2026-09-04T06:42:22+02:00</published>
-    <updated>2026-09-04T06:42:22+02:00</updated>
-    <summary type="text">Konami · MSX · cartucho de 16 KB · RC-727. 16.384 bytes · 0 sin explicar · reensambla byte a byte · 9.803 de código, 6.581 de datos · 651 rutinas · comentado al 45,5 %.</summary>
   </entry>
 </feed>

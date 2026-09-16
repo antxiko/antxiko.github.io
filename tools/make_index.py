@@ -1687,7 +1687,6 @@ DESENSAMBLADOS = [
         grupo="konami",
         titulo="F-1 Spirit &mdash; The Way to Formula 1",
         anio=1987,
-        terminado=False,
         repo="https://github.com/antxiko/F1Spirit-disassembly",
         web="https://antxiko.github.io/F1Spirit-disassembly/",
         meta=dict(
@@ -1713,27 +1712,20 @@ DESENSAMBLADOS = [
                "editor para hacerlo, y funciona en el navegador.",
         ),
         datos=dict(
-            en=lambda i: (f"{cif(131072, i)} bytes &middot; <b>99.6%</b> explained "
+            en=lambda i: (f"{cif(131072, i)} bytes &middot; <b>100%</b> explained "
                           f"&middot; reassembles <b>byte for byte</b> &middot; "
                           f"{cif(31591, i)} of code, {cif(99481, i)} of data "
                           f"&middot; {cif(1953, i)} routines &middot; commented to "
                           f"<b>24.2%</b> &middot; "
                           f"<b>21</b> circuits"),
-            es=lambda i: (f"{cif(131072, i)} bytes &middot; <b>99,6 %</b> explicado "
+            es=lambda i: (f"{cif(131072, i)} bytes &middot; <b>100 %</b> explicado "
                           f"&middot; reensambla <b>byte a byte</b> &middot; "
                           f"{cif(31591, i)} de código, {cif(99481, i)} de datos "
                           f"&middot; {cif(1953, i)} rutinas &middot; comentado al "
                           f"<b>24,2 %</b> &middot; "
                           f"<b>21</b> circuitos"),
         ),
-        nota=dict(
-            en="in progress: 504 bytes (0.4%) are still marked as pending to "
-               "trace. The six code pages are commented, with no routine below "
-               "the 10% line",
-            es="en marcha: quedan 504 bytes (0,4 %) marcados como pendientes de "
-               "trazar. Las seis páginas con código están comentadas, sin "
-               "ninguna rutina por debajo del listón del 10 %",
-        ),
+        nota=dict(en=None, es=None),
     ),
     dict(
         clave="colt36",
@@ -2271,6 +2263,22 @@ HERRAMIENTAS = [
 # nueva a vieja, una clave no existe o un proyecto se queda sin novedad.
 # --------------------------------------------------------------------------
 NOVEDADES = [
+    dict(id="f1spirit-100", clave="f1spirit",
+         clase="actualiza", fecha="2026-09-15T14:21:39+02:00",
+         titulo=dict(en="F-1 Spirit, at 100%",
+                     es="F-1 Spirit, al 100 %"),
+         resumen=dict(
+             en="The last 504 bytes of the MegaROM are accounted for, and none of "
+                "them was code: two compressed drawings nothing draws, three SCC "
+                "waveforms no instrument points to, the bar of the split screen and "
+                "the rows of two tables no reader reaches. And the demo's four "
+                "recorded games, now with their reader.",
+             es="Los últimos 504 bytes del MegaROM ya están explicados, y ninguno "
+                "era código: dos dibujos comprimidos que no pinta nadie, tres formas "
+                "de onda del SCC a las que no apunta ningún instrumento, la barra de "
+                "la pantalla partida y filas de dos tablas a las que no llega su "
+                "lector. Y las cuatro partidas grabadas de la demo, ya con quien las "
+                "lee.")),
     dict(id="warinmiddleearth-cartucho", clave="warinmiddleearth-patch",
          clase="actualiza", fecha="2026-09-10T18:39:33+02:00",
          titulo=dict(en="War in Middle Earth: the tape, now a cartridge",
