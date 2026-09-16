@@ -1080,6 +1080,47 @@ DESENSAMBLADOS = [
         nota=dict(en=None, es=None),
     ),
     dict(
+        clave="penguinadventure",
+        grupo="konami",
+        titulo="Penguin Adventure",
+        anio=1986,
+        repo="https://github.com/antxiko/PenguinAdventure-disassembly",
+        web="https://antxiko.github.io/PenguinAdventure-disassembly/",
+        meta=dict(
+            en="Konami &middot; MSX &middot; 128 KB cartridge &middot; RC-743",
+            es="Konami &middot; MSX &middot; cartucho de 128 KB &middot; RC-743",
+        ),
+        claim=dict(
+            en="<b>Two hidden keyboard codes: NORIKO and KAZUMI.</b> They turn "
+               "on a CONTINUE that does not exist without them, and the proof "
+               "is in the watcher itself: the <b>nine</b> keys it polls are "
+               "exactly the letters needed to spell those two names and no "
+               "others. And the gambling machine is a real slot machine &mdash; "
+               "the cherry takes five of sixteen slots and is the only symbol "
+               "that pays on its own.",
+            es="<b>Dos claves de teclado escondidas: NORIKO y KAZUMI.</b> "
+               "Encienden un CONTINUE que sin ellas no existe, y la prueba "
+               "está en el propio vigilante: las <b>nueve</b> teclas que mira "
+               "son exactamente las letras que hacen falta para escribir esos "
+               "dos nombres y ninguna más. Y la máquina de apostar es una "
+               "tragaperras de verdad &mdash; la cereza ocupa cinco de las "
+               "dieciséis casillas y es el único símbolo que paga suelto.",
+        ),
+        datos=dict(
+            en=lambda i: (f"{cif(131072, i)} bytes &middot; <b>0</b> unexplained "
+                          f"&middot; reassembles <b>byte for byte</b> &middot; "
+                          f"{cif(32317, i)} of code, {cif(98755, i)} of data "
+                          f"&middot; {cif(1526, i)} routines &middot; commented "
+                          f"to <b>44.6%</b>"),
+            es=lambda i: (f"{cif(131072, i)} bytes &middot; <b>0</b> sin explicar "
+                          f"&middot; reensambla <b>byte a byte</b> &middot; "
+                          f"{cif(32317, i)} de código, {cif(98755, i)} de datos "
+                          f"&middot; {cif(1526, i)} rutinas &middot; comentado "
+                          f"al <b>44,6 %</b>"),
+        ),
+        nota=dict(en=None, es=None),
+    ),
+    dict(
         clave="twinbee",
         grupo="konami",
         titulo="Twin Bee",
@@ -2263,6 +2304,27 @@ HERRAMIENTAS = [
 # nueva a vieja, una clave no existe o un proyecto se queda sin novedad.
 # --------------------------------------------------------------------------
 NOVEDADES = [
+    dict(id="penguinadventure", clave="penguinadventure",
+         clase="nuevo", fecha="2026-09-16T12:10:00+02:00",
+         titulo=dict(en="Penguin Adventure, taken apart",
+                     es="Penguin Adventure, desmontado"),
+         resumen=dict(
+             en="The 128 KB sequel to Antarctic Adventure, explained byte for "
+                "byte and commented to 44.6% with no routine left under the "
+                "10% line. Out of it came two hidden keyboard codes, NORIKO "
+                "and KAZUMI, which turn on a CONTINUE that does not exist "
+                "without them: the nine keys the cartridge watches are exactly "
+                "the letters of those two names. Both are verified in the "
+                "emulator, not just read off the listing.",
+             es="La continuación de Antarctic Adventure, 128 KB explicados byte "
+                "a byte y comentados al 44,6 % sin dejar una sola rutina por "
+                "debajo del listón del 10 %. De ahí salieron dos claves de "
+                "teclado escondidas, NORIKO y KAZUMI, que encienden un "
+                "CONTINUE que sin ellas no existe: las nueve teclas que el "
+                "cartucho vigila son exactamente las letras de esos dos "
+                "nombres. Las dos están comprobadas en el emulador, no sólo "
+                "leídas del listado.",
+         )),
     dict(id="f1spirit-100", clave="f1spirit",
          clase="actualiza", fecha="2026-09-15T14:21:39+02:00",
          titulo=dict(en="F-1 Spirit, at 100%",

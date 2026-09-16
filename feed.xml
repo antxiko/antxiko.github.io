@@ -1,13 +1,21 @@
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom" xml:lang="en">
   <title>antxiko — commented disassemblies of 8-bit games</title>
-  <subtitle>Old 8-bit binaries taken apart byte by byte and commented, with the tools to rebuild them: nothing gets claimed that the binary does not show, and the source has to give the original back, byte for byte. Right now that means 48 MSX games.</subtitle>
+  <subtitle>Old 8-bit binaries taken apart byte by byte and commented, with the tools to rebuild them: nothing gets claimed that the binary does not show, and the source has to give the original back, byte for byte. Right now that means 49 MSX games.</subtitle>
   <id>tag:antxiko.github.io,2026:feed/en</id>
   <link rel="self" type="application/atom+xml" href="https://antxiko.github.io/feed.xml"/>
   <link rel="alternate" type="text/html" hreflang="en" href="https://antxiko.github.io/"/>
   <link rel="alternate" type="application/atom+xml" hreflang="es" href="https://antxiko.github.io/es/feed.xml"/>
-  <updated>2026-09-15T14:21:39+02:00</updated>
+  <updated>2026-09-16T12:10:00+02:00</updated>
   <author><name>antxiko</name><uri>https://github.com/antxiko</uri></author>
+  <entry>
+    <id>tag:antxiko.github.io,2026:novedad/en/penguinadventure</id>
+    <title>Penguin Adventure, taken apart</title>
+    <link rel="alternate" type="text/html" href="https://antxiko.github.io/PenguinAdventure-disassembly/"/>
+    <published>2026-09-16T12:10:00+02:00</published>
+    <updated>2026-09-16T12:10:00+02:00</updated>
+    <summary type="text">The 128 KB sequel to Antarctic Adventure, explained byte for byte and commented to 44.6% with no routine left under the 10% line. Out of it came two hidden keyboard codes, NORIKO and KAZUMI, which turn on a CONTINUE that does not exist without them: the nine keys the cartridge watches are exactly the letters of those two names. Both are verified in the emulator, not just read off the listing.</summary>
+  </entry>
   <entry>
     <id>tag:antxiko.github.io,2026:novedad/en/f1spirit-100</id>
     <title>F-1 Spirit, at 100%</title>
@@ -159,13 +167,5 @@
     <published>2026-09-04T11:44:23+02:00</published>
     <updated>2026-09-04T11:44:23+02:00</updated>
     <summary type="text">Konami · MSX · 16 KB cartridge · RC-725. 16,384 bytes · 0 unexplained · reassembles byte for byte · 7,494 of code, 8,890 of data · 568 routines · commented to 44.0%.</summary>
-  </entry>
-  <entry>
-    <id>tag:antxiko.github.io,2026:novedad/en/baseball</id>
-    <title>Konami's Baseball: disassembled</title>
-    <link rel="alternate" type="text/html" href="https://antxiko.github.io/KonamisBaseball-disassembly/"/>
-    <published>2026-09-04T08:09:43+02:00</published>
-    <updated>2026-09-04T08:09:43+02:00</updated>
-    <summary type="text">Konami · MSX · 16 KB cartridge · RC-724. 16,384 bytes · 0 unexplained · reassembles byte for byte · 9,618 of code, 6,766 of data · 629 routines · commented to 44.5%.</summary>
   </entry>
 </feed>
