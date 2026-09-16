@@ -2076,8 +2076,34 @@ GRUPOS = [
 ]
 
 
+def rc_de(p):
+    """El numero de catalogo del cartucho, o None si no lleva.
+
+    Sale del campo 'meta', que es donde ya esta escrito -"RC-743"- para que no
+    haya que apuntarlo dos veces y se puedan desincronizar.
+    """
+    m = re.search(r"RC-(\d+)", p["meta"]["es"])
+    return int(m.group(1)) if m else None
+
+
 def del_grupo(gid):
-    return [p for p in DESENSAMBLADOS if p.get("grupo") == gid]
+    """Los juegos de un grupo, y los de Konami POR NUMERO DE CATALOGO.
+
+    Konami numero sus cartuchos de MSX del RC-700 en adelante y ese numero es
+    casi el orden en que salieron, asi que ordenar por el cuenta la historia
+    del catalogo en vez del orden en que se fueron desmontando aqui.
+
+    La regla es de datos y no una lista a mano: se ordena el grupo en el que
+    TODOS los juegos llevan RC, que hoy es Konami y solo Konami -los otros dos
+    grupos no son de Konami y no tienen catalogo-. Si algun dia entra un juego
+    de Konami sin RC, el grupo vuelve al orden en que esta escrito en vez de
+    colar ese juego al principio o al final por un valor inventado.
+    """
+    ps = [p for p in DESENSAMBLADOS if p.get("grupo") == gid]
+    rcs = [rc_de(p) for p in ps]
+    if ps and all(rc is not None for rc in rcs):
+        return [p for _rc, _i, p in sorted(zip(rcs, range(len(ps)), ps))]
+    return ps
 
 
 def es_cinta(p):

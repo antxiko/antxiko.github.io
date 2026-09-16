@@ -266,6 +266,32 @@ class TestPortada(unittest.TestCase):
                                      "%s: un desensamblado en la seccion %s"
                                      % (pagina, sid))
 
+    def test_los_de_konami_van_por_numero_de_catalogo(self):
+        """Konami numero sus cartuchos de MSX del RC-700 en adelante, y ese
+        numero es casi el orden en que salieron. La seccion los lista por ahi,
+        no por el orden en que se fueron desmontando.
+
+        Se comprueba sobre el ORDEN DEL HTML, no sobre el de del_grupo(): si se
+        comprobara sobre la funcion que ordena, el test diria que si pase lo que
+        pase.
+        """
+        mi = modulo()
+        konami = [p for p in mi.DESENSAMBLADOS if p.get("grupo") == "konami"]
+        rc = {}
+        for p in konami:
+            n = mi.rc_de(p)
+            self.assertIsNotNone(n, "%s no dice su RC" % p["titulo"])
+            rc[nombre_repo(p)] = n
+        for pagina in PAGINAS:
+            salen = estructura(lee(pagina))["disassemblies"]["konami"]
+            self.assertEqual(sorted(salen), sorted(rc),
+                             "%s: el grupo konami no lista los mismos" % pagina)
+            nums = [rc[r] for r in salen]
+            self.assertEqual(nums, sorted(nums),
+                             "%s: los RC no van en orden: %s" % (pagina, nums))
+            self.assertEqual(len(nums), len(set(nums)),
+                             "%s: dos cartuchos con el mismo RC" % pagina)
+
     def test_los_parches_no_son_desensamblados(self):
         """Los parches tienen su seccion de primer nivel, hermana de la de los
         desensamblados, y las secciones salen en el orden de CATEGORIAS."""
