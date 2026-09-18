@@ -43,14 +43,22 @@ PATCH = os.path.join(os.path.dirname(RAIZ), "WARINMIDDLEEARTH_PATCH")
 
 # Una entrada por fichero entregado, la mas nueva ARRIBA.
 ENTREGAS = [
-    dict(origen=os.path.join(PATCH, "builds", "WIME03.ROM"),
-         fecha="2026-09-16", para="Araubi",
-         titulo="War in Middle Earth &mdash; cartucho, version 3",
-         que="Lo de la WIME02 mas la <b>tecla F</b>: en la batalla, la pone a "
-             "casi seis veces su velocidad. Se pulsa F para encenderla -sale "
-             "&laquo;Batalla rapida: SI.&raquo; abajo- y otra vez para quitarla. "
-             "No cambia nada de la partida: solo deja de repintar el tablero en "
-             "cada vuelta, que es donde se iba el 89 % del tiempo."),
+    dict(origen=os.path.join(PATCH, "builds", "WIME04.ROM"),
+         fecha="2026-09-18", para="Ruben",
+         titulo="War in Middle Earth &mdash; cartucho, version 4",
+         que="Lo de la WIME03 (con la <b>tecla F</b>, que pone la batalla a casi "
+             "seis veces su velocidad) y cinco cosas mas. La gorda: <b>las "
+             "figuras de la batalla ya no salen rotas</b>. De cada 4.096 bytes "
+             "del tablero habia 1.544 que no llegaban a la pantalla, porque el "
+             "juego escribe en el chip de video mas deprisa de lo que este "
+             "admite; ahora no se cae ninguno. Ademas: <b>el fondo de la batalla "
+             "toma el color del terreno</b> donde se pelea (llano verde, bosque "
+             "verde claro, rio azul, camino amarillo, montana roja); <b>cada "
+             "unidad del mapa lleva el Anillo dibujado</b> en vez de ser solo una "
+             "celda de otro color, asi que dos juntas ya se cuentan; <b>Tom "
+             "Bombadil y Radagast</b> entran como unidades jugables; y Gollum "
+             "pasa a ser hobbit, los orcos se llaman orcos y el cursor de la "
+             "batalla deja de ir disparado."),
     dict(origen=os.path.join(PATCH, "builds", "WIME02.ROM"),
          fecha="2026-09-16", para="Araubi",
          titulo="War in Middle Earth &mdash; cartucho, version 2",
