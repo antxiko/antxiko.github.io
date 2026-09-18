@@ -43,36 +43,21 @@ PATCH = os.path.join(os.path.dirname(RAIZ), "WARINMIDDLEEARTH_PATCH")
 
 # Una entrada por fichero entregado, la mas nueva ARRIBA.
 ENTREGAS = [
-    dict(origen=os.path.join(PATCH, "builds", "WIME04.ROM"),
+    dict(origen=os.path.join(PATCH, "builds", "WIME05.ROM"),
          fecha="2026-09-18", para="Ruben",
-         titulo="War in Middle Earth &mdash; cartucho, version 4",
-         que="Lo de la WIME03 (con la <b>tecla F</b>, que pone la batalla a casi "
-             "seis veces su velocidad) y cinco cosas mas. La gorda: <b>las "
-             "figuras de la batalla ya no salen rotas</b>. De cada 4.096 bytes "
-             "del tablero habia 1.544 que no llegaban a la pantalla, porque el "
-             "juego escribe en el chip de video mas deprisa de lo que este "
-             "admite; ahora no se cae ninguno. Ademas: <b>el fondo de la batalla "
-             "toma el color del terreno</b> donde se pelea (llano verde, bosque "
-             "verde claro, rio azul, camino amarillo, montana roja); <b>cada "
-             "unidad del mapa lleva el Anillo dibujado</b> en vez de ser solo una "
-             "celda de otro color, asi que dos juntas ya se cuentan; <b>Tom "
-             "Bombadil y Radagast</b> entran como unidades jugables; y Gollum "
-             "pasa a ser hobbit, los orcos se llaman orcos y el cursor de la "
-             "batalla deja de ir disparado."),
-    dict(origen=os.path.join(PATCH, "builds", "WIME02.ROM"),
-         fecha="2026-09-16", para="Araubi",
-         titulo="War in Middle Earth &mdash; cartucho, version 2",
-         que="Arreglado el <b>infiltrado del centro del campo</b> de la batalla: "
-             "la figura que se movia sin atacar, daba vueltas o se volvia orco. "
-             "Era la unidad que se llevaba a mano en la batalla ANTERIOR, que "
-             "nadie reiniciaba. Y con ella se iba el bug de los heroes que "
-             "desaparecian del mapa sin haber peleado."),
-    dict(origen=os.path.join(PATCH, "builds", "WIME01.ROM"),
-         fecha="2026-09-14", para="Araubi y Ruben",
-         titulo="War in Middle Earth &mdash; cartucho, version 1",
-         que="La primera con todo junto: el juego en cartucho, la musica en el "
-             "menu, el mapa general ya dibujado, el cursor como sprite, la vista "
-             "de cerca deprisa y la fuerza de la tropa arreglada."),
+         titulo="War in Middle Earth &mdash; cartucho, version 5",
+         que="La WIME04 con el menu de antes de la batalla arreglado: el que "
+             "enseña las unidades una a una con el cartel &laquo;Comienza la "
+             "Batalla&raquo;. Iba a <b>32 cambios por segundo</b> y ahora va a "
+             "<b>5,33</b>, seis veces mas lento, al mismo ritmo que el cursor "
+             "del mapa. Lo encontro Ruben probando la WIME04 y se midio con su "
+             "partida grabada.<br><br>Lo demas que trae sobre la WIME03: <b>las "
+             "figuras de la batalla ya no salen rotas</b> (de 4.096 bytes del "
+             "tablero habia 1.544 que no llegaban a la pantalla); el fondo de "
+             "la batalla toma el color del terreno donde se pelea; cada unidad "
+             "del mapa lleva el Anillo dibujado en vez de ser solo una celda de "
+             "otro color; entran Tom Bombadil y Radagast; y Gollum pasa a ser "
+             "hobbit."),
     dict(origen=os.path.join(PATCH, "work", "WarInMiddleEarth-kit.zip"),
          fecha="2026-09-16", para="Nestor",
          titulo="El kit: compilar el parche sin Python",
