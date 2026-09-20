@@ -6,8 +6,24 @@
   <link rel="self" type="application/atom+xml" href="https://antxiko.github.io/feed.xml"/>
   <link rel="alternate" type="text/html" hreflang="en" href="https://antxiko.github.io/"/>
   <link rel="alternate" type="application/atom+xml" hreflang="es" href="https://antxiko.github.io/es/feed.xml"/>
-  <updated>2026-09-16T12:10:00+02:00</updated>
+  <updated>2026-09-20T11:13:18+02:00</updated>
   <author><name>antxiko</name><uri>https://github.com/antxiko</uri></author>
+  <entry>
+    <id>tag:antxiko.github.io,2026:novedad/en/mahjong-en-tecla4</id>
+    <title>Mahjong Dojo's English patch: key 4 goes straight to the tutorial</title>
+    <link rel="alternate" type="text/html" href="https://antxiko.github.io/KonamisMahjongDojo-ENPatch/"/>
+    <published>2026-09-20T11:13:18+02:00</published>
+    <updated>2026-09-20T11:13:18+02:00</updated>
+    <summary type="text">The title menu gains a fourth line, 4-key TUTORIAL, so nobody has to sit through the demo hand. And two faults in the tutorial's tiles are gone: the twenty it took for granted were the opponent's set, rotated 180 degrees, and the empty slot's tile numbers were the list interpreter's control codes, which cut the bottom row off every tile behind a gap. Both proved in bytes and verified in the emulator, slide by slide.</summary>
+  </entry>
+  <entry>
+    <id>tag:antxiko.github.io,2026:novedad/en/warinmiddleearth-semana-del-cartucho</id>
+    <title>War in Middle Earth: a week inside the cartridge</title>
+    <link rel="alternate" type="text/html" href="https://github.com/antxiko/WarinMiddleEarth-MSX-Patch"/>
+    <published>2026-09-18T18:27:11+02:00</published>
+    <updated>2026-09-18T18:27:11+02:00</updated>
+    <summary type="text">Twenty-seven changes published between the 11th and the 18th: the three loading pictures and the end screens moved into ROM and compressed with ZX0, a map of what lives in each stretch of the 64 KB of RAM, the near view drawn through the name table and the cursor turned into a sprite (from 3.2 to 43 turns a second), the general map drawn in 0.7 seconds instead of 3.9, the battle refreshing only what changes, a troop strength bug in battle fixed after being wrong since 1988, Gollum made a hobbit, two more heroes, Tom Bombadil and Radagast, every unit on the map marked with the Ring, and the pre-battle screen at human speed. The patch's website still describes the cartridge as it was on the 10th; the repository has all of it.</summary>
+  </entry>
   <entry>
     <id>tag:antxiko.github.io,2026:novedad/en/penguinadventure</id>
     <title>Penguin Adventure, taken apart</title>
@@ -151,21 +167,5 @@
     <published>2026-09-04T18:30:22+02:00</published>
     <updated>2026-09-04T18:30:22+02:00</updated>
     <summary type="text">Gema / OMK Software · MSX · 66,371-byte cassette. 66,016 bytes · 0 unexplained · five listings, the whole tape byte for byte · 15,504 of code, 50,512 of data · 733 routines · commented at 26.7%, no routine below 10%.</summary>
-  </entry>
-  <entry>
-    <id>tag:antxiko.github.io,2026:novedad/en/mopiranger</id>
-    <title>Mopi Ranger: disassembled</title>
-    <link rel="alternate" type="text/html" href="https://antxiko.github.io/MopiRanger-disassembly/"/>
-    <published>2026-09-04T17:24:27+02:00</published>
-    <updated>2026-09-04T17:24:27+02:00</updated>
-    <summary type="text">Konami · MSX · 16 KB cartridge · RC-728. 16,384 bytes · 0 unexplained · reassembles byte for byte · 7,789 of code, 8,595 of data · 512 routines · commented to 53.0%.</summary>
-  </entry>
-  <entry>
-    <id>tag:antxiko.github.io,2026:novedad/en/yiearkungfu</id>
-    <title>Yie Ar Kung-Fu: disassembled</title>
-    <link rel="alternate" type="text/html" href="https://antxiko.github.io/YieArKungFu-disassembly/"/>
-    <published>2026-09-04T11:44:23+02:00</published>
-    <updated>2026-09-04T11:44:23+02:00</updated>
-    <summary type="text">Konami · MSX · 16 KB cartridge · RC-725. 16,384 bytes · 0 unexplained · reassembles byte for byte · 7,494 of code, 8,890 of data · 568 routines · commented to 44.0%.</summary>
   </entry>
 </feed>
