@@ -2152,13 +2152,13 @@ PARCHES = [
                "quepa.",
         ),
         datos=dict(
-            en=lambda i: (f"{cif(11777, i)} bytes changed in <b>44</b> blocks "
+            en=lambda i: (f"{cif(12103, i)} bytes changed in <b>46</b> blocks "
                           f"&middot; <b>0</b> outside them &middot; "
-                          f"{cif(12279, i)}-byte IPS &middot; <b>20</b> tutorial "
+                          f"{cif(12511, i)}-byte IPS &middot; <b>20</b> tutorial "
                           f"screens &middot; no ROM distributed"),
-            es=lambda i: (f"{cif(11777, i)} bytes cambiados en <b>44</b> bloques "
+            es=lambda i: (f"{cif(12103, i)} bytes cambiados en <b>46</b> bloques "
                           f"&middot; <b>0</b> fuera de ellos &middot; IPS de "
-                          f"{cif(12279, i)} bytes &middot; <b>20</b> pantallas de "
+                          f"{cif(12511, i)} bytes &middot; <b>20</b> pantallas de "
                           f"tutorial &middot; no se distribuye ninguna ROM"),
         ),
         nota=dict(
@@ -2338,6 +2338,60 @@ HERRAMIENTAS = [
 # nueva a vieja, una clave no existe o un proyecto se queda sin novedad.
 # --------------------------------------------------------------------------
 NOVEDADES = [
+    dict(id="mahjong-en-tecla4", clave="mahjong-en",
+         clase="actualiza", fecha="2026-09-20T11:13:18+02:00",
+         titulo=dict(en="Mahjong Dojo's English patch: key 4 goes straight to the tutorial",
+                     es="El parche del Mahjong Dojo: la tecla 4 lleva directa al tutorial"),
+         resumen=dict(
+             en="The title menu gains a fourth line, 4-key TUTORIAL, so nobody "
+                "has to sit through the demo hand. And two faults in the "
+                "tutorial's tiles are gone: the twenty it took for granted were "
+                "the opponent's set, rotated 180 degrees, and the empty slot's "
+                "tile numbers were the list interpreter's control codes, which "
+                "cut the bottom row off every tile behind a gap. Both proved in "
+                "bytes and verified in the emulator, slide by slide.",
+             es="El menú del título gana una cuarta línea, 4-key TUTORIAL, para "
+                "no tener que esperar a que el demo juegue su mano. Y fuera dos "
+                "fallos en las fichas del tutorial: las veinte que daba por "
+                "cargadas eran las del rival, giradas 180 grados, y los números "
+                "de celda del hueco vacío eran los códigos de control del "
+                "intérprete de listas, que cortaban la fila de abajo a toda "
+                "ficha detrás de un hueco. Los dos, demostrados en bytes y "
+                "comprobados en el emulador diapositiva a diapositiva.",
+         )),
+    dict(id="warinmiddleearth-semana-del-cartucho", clave="warinmiddleearth-patch",
+         clase="actualiza", fecha="2026-09-18T18:27:11+02:00",
+         enlace="https://github.com/antxiko/WarinMiddleEarth-MSX-Patch",
+         titulo=dict(en="War in Middle Earth: a week inside the cartridge",
+                     es="War in Middle Earth: una semana dentro del cartucho"),
+         resumen=dict(
+             en="Twenty-seven changes published between the 11th and the 18th: "
+                "the three loading pictures and the end screens moved into ROM "
+                "and compressed with ZX0, a map of what lives in each stretch "
+                "of the 64 KB of RAM, the near view drawn through the name "
+                "table and the cursor turned into a sprite (from 3.2 to 43 "
+                "turns a second), the general map drawn in 0.7 seconds instead "
+                "of 3.9, the battle refreshing only what changes, a troop "
+                "strength bug in battle fixed after being wrong since 1988, "
+                "Gollum made a hobbit, two more heroes, Tom Bombadil and "
+                "Radagast, every unit on the map marked with the Ring, and the "
+                "pre-battle screen at human speed. The patch's website still "
+                "describes the cartridge as it was on the 10th; the repository "
+                "has all of it.",
+             es="Veintisiete cambios publicados entre el 11 y el 18: las tres "
+                "imágenes de carga y las pantallas finales pasan a la ROM "
+                "comprimidas con ZX0, un mapa de qué vive en cada tramo de los "
+                "64 KB de RAM, la vista de cerca dibujada por la tabla de "
+                "nombres y el cursor convertido en sprite (de 3,2 a 43 vueltas "
+                "por segundo), el mapa general dibujado en 0,7 segundos en vez "
+                "de 3,9, la batalla refrescando sólo lo que cambia, arreglada "
+                "la fuerza de la tropa en batalla, rota desde 1988, Gollum "
+                "convertido en hobbit, dos héroes más, Tom Bombadil y Radagast, "
+                "cada unidad del mapa marcada con el Anillo, y la pantalla de "
+                "antes de la batalla a velocidad humana. La web del parche "
+                "sigue contando el cartucho tal como estaba el día 10; el "
+                "repositorio lo tiene todo.",
+         )),
     dict(id="penguinadventure", clave="penguinadventure",
          clase="nuevo", fecha="2026-09-16T12:10:00+02:00",
          titulo=dict(en="Penguin Adventure, taken apart",
