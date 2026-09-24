@@ -1357,12 +1357,12 @@ DESENSAMBLADOS = [
                           f"&middot; reassembles <b>byte for byte</b> &middot; "
                           f"{cif(5953, i)} of code, {cif(10431, i)} of data "
                           f"&middot; {cif(386, i)} routines &middot; commented "
-                          f"to <b>24.8%</b>"),
+                          f"to <b>25.1%</b>"),
             es=lambda i: (f"{cif(16384, i)} bytes &middot; <b>0</b> sin explicar "
                           f"&middot; reensambla <b>byte a byte</b> &middot; "
                           f"{cif(5953, i)} de código, {cif(10431, i)} de datos "
                           f"&middot; {cif(386, i)} rutinas &middot; comentado "
-                          f"al <b>24,8 %</b>"),
+                          f"al <b>25,1 %</b>"),
         ),
         nota=dict(en=None, es=None),
     ),
@@ -2338,6 +2338,122 @@ HERRAMIENTAS = [
 # nueva a vieja, una clave no existe o un proyecto se queda sin novedad.
 # --------------------------------------------------------------------------
 NOVEDADES = [
+    dict(id="goonies-issue3-el-mapa", clave="goonies",
+         clase="actualiza", fecha="2026-09-24T18:33:28+02:00",
+         titulo=dict(en="The Goonies: the map section, redone",
+                     es="The Goonies: la sección del mapa, rehecha"),
+         resumen=dict(
+             en="As theNestruo asked in issue #3: the four rooms of each level "
+                "drawn touching, with no caption between them; the cages open, "
+                "showing the friend or the potion, with their padlocks on; "
+                "under each level only what the picture cannot say, the keys, "
+                "what each cage holds, which item is hidden and where each "
+                "skull door leads; and the five round minimaps at 1:1, with "
+                "the lines behind the levels. On the way: the hidden item's "
+                "index matches the inventory table for all 23, and the caged "
+                "friends add up to seven per round, which is what the exit "
+                "door asks for.",
+             es="Como pedía theNestruo en el issue #3: las cuatro salas de "
+                "cada nivel pegadas, sin rótulo en medio; las jaulas abiertas, "
+                "enseñando al amigo o el frasco, con sus candados; debajo de "
+                "cada nivel solo lo que el dibujo no dice, las llaves, qué "
+                "guarda cada jaula, cuál es el objeto escondido y a dónde "
+                "lleva cada puerta de calavera; y los cinco minimapas de ronda "
+                "a 1:1, con las rayas por detrás de los niveles. Por el "
+                "camino: el índice del objeto escondido casa con la tabla del "
+                "inventario en los 23, y los amigos enjaulados suman siete por "
+                "ronda, justo los que pide la puerta de salida.")),
+    dict(id="knightmare-issue1-bloques", clave="knightmare",
+         clase="actualiza", fecha="2026-09-24T13:38:11+02:00",
+         titulo=dict(en="Knightmare: the eight maps with their blocks",
+                     es="Knightmare: los ocho mapas con sus bloques"),
+         resumen=dict(
+             en="What theNestruo asked for in issue #1: a second drawing of "
+                "each of the eight maps with the 356 blocks of the stage lists "
+                "on it, each showing what it drops, a life, 500 points, a bomb, "
+                "a freeze, a grey block that walls the way, the EXIT sign that "
+                "warps to another stage, a bridge or a side passage, with a "
+                "white frame for the visible ones and a dotted magenta one for "
+                "the hidden. Their row was measured in the emulator, not "
+                "deduced: 220 minus the scroll counter.",
+             es="Lo que pedía theNestruo en el issue #1: un segundo dibujo de "
+                "cada uno de los ocho mapas con los 356 bloques de las listas "
+                "de fase encima, cada uno enseñando lo que suelta, una vida, "
+                "500 puntos, una bomba, una congelación, un bloque gris que "
+                "cierra el paso, el cartel EXIT que salta a otra fase, un "
+                "puente o un pasadizo lateral, con marco blanco los visibles y "
+                "punteado magenta los escondidos. Su fila se midió en el "
+                "emulador, no se dedujo: 220 menos el contador del "
+                "desplazamiento.")),
+    dict(id="yiearkungfu2-issue2-oleadas", clave="yiearkungfu2",
+         clase="actualiza", fecha="2026-09-24T11:28:16+02:00",
+         titulo=dict(en="Yie Ar Kung-Fu II: the twelve wave screens, and a "
+                        "mirror that was not one",
+                     es="Yie Ar Kung-Fu II: las doce pantallas de oleadas, y un "
+                        "espejo que no lo era"),
+         resumen=dict(
+             en="theNestruo doubted, in issue #2, that the fight screens were "
+                "built by mirroring, and he was right: measured pixel by "
+                "pixel, 119, 102, 40 and 128 of the 304 pairs of cells differ "
+                "in the four sceneries. And the twelve wave screens before "
+                "each boss are now drawn from the ROM and checked against the "
+                "emulator to zero bytes: they are the fight screen's own "
+                "bands, reordered per stage, and nothing scrolls inside a "
+                "screen.",
+             es="theNestruo dudaba, en el issue #2, de que las pantallas de "
+                "combate se montaran por espejo, y tenía razón: medidas píxel "
+                "a píxel, en los cuatro decorados difieren 119, 102, 40 y 128 "
+                "de las 304 parejas de casillas. Y las doce pantallas de "
+                "oleadas de antes de cada jefe ya están dibujadas desde la ROM "
+                "y cotejadas contra el emulador a cero bytes: son las bandas "
+                "de la propia pantalla de combate, reordenadas por fase, y "
+                "dentro de una pantalla no se desplaza nada.")),
+    dict(id="twinbee-issue1-mapas", clave="twinbee",
+         clase="actualiza", fecha="2026-09-22T16:15:36+02:00",
+         titulo=dict(en="Twin Bee: the maps were wrong, and so was the "
+                        "background",
+                     es="Twin Bee: los mapas estaban mal, y el fondo también"),
+         resumen=dict(
+             en="theNestruo saw holes in the stage 5 shadows (issue #1) and "
+                "the fault was in the drawing, not in the cartridge: the "
+                "1,761-row strip carries the five stages one after another and "
+                "each map was painted whole with its own tiles; and in play "
+                "the VDP's register 7 is 0xE0, so the transparent tile is "
+                "black, not blue. Redrawn per stage on a black background, and "
+                "checked in the emulator: the shadow is solid.",
+             es="theNestruo vio huecos en las sombras de la fase 5 (issue #1) "
+                "y el fallo estaba en el dibujo, no en el cartucho: la tira de "
+                "1.761 filas lleva las cinco fases seguidas y cada mapa se "
+                "pintaba entera con sus propias casillas; y en partida el "
+                "registro 7 del VDP vale 0xE0, así que la casilla transparente "
+                "es negra, no azul. Redibujados por fase sobre fondo negro, y "
+                "comprobado en el emulador: la sombra es maciza.")),
+    dict(id="hypersports1-issue2-banador", clave="hypersports1",
+         clase="actualiza", fecha="2026-09-22T14:32:00+02:00",
+         titulo=dict(en="Hyper Sports 1: the athlete's swimsuit, and a pose "
+                        "cut by the bar",
+                     es="Hyper Sports 1: el bañador del atleta, y una pose "
+                        "cortada por la barra"),
+         resumen=dict(
+             en="theNestruo was right in issue #2: the swimsuit is not in the "
+                "drawing scripts. Only in the diving event, 0x63E8 swaps "
+                "sprites 0-1 with 2-3 in the buffer, so the two yellow pieces "
+                "come to the front and cover the shirt and the boots; the "
+                "pool's VRAM dump confirms it. And pose 40 carries two "
+                "transparent columns so the post of the horizontal bar shows "
+                "through the athlete, so it now sits on the real scenery. New "
+                "plates, and tests that check the athlete of each VRAM dump "
+                "against the ROM pixel by pixel.",
+             es="theNestruo tenía razón en el issue #2: el bañador no está en "
+                "los guiones de dibujo. Solo en los saltos de trampolín, "
+                "0x63E8 permuta los sprites 0-1 con los 2-3 en el búfer, y así "
+                "las dos piezas amarillas pasan delante y tapan la camiseta y "
+                "las botas; el volcado de VRAM de la piscina lo confirma. Y la "
+                "pose 40 lleva dos columnas transparentes para que el poste de "
+                "la barra fija asome a través del atleta, así que ahora va "
+                "sobre el decorado real. Láminas nuevas, y tests que cotejan "
+                "el atleta de cada volcado de VRAM contra la ROM píxel a "
+                "píxel.")),
     dict(id="mahjong-en-tecla4", clave="mahjong-en",
          clase="actualiza", fecha="2026-09-20T11:13:18+02:00",
          titulo=dict(en="Mahjong Dojo's English patch: key 4 goes straight to the tutorial",
