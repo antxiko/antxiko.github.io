@@ -6,8 +6,48 @@
   <link rel="self" type="application/atom+xml" href="https://antxiko.github.io/es/feed.xml"/>
   <link rel="alternate" type="text/html" hreflang="es" href="https://antxiko.github.io/es/"/>
   <link rel="alternate" type="application/atom+xml" hreflang="en" href="https://antxiko.github.io/feed.xml"/>
-  <updated>2026-09-20T11:13:18+02:00</updated>
+  <updated>2026-09-24T18:33:28+02:00</updated>
   <author><name>antxiko</name><uri>https://github.com/antxiko</uri></author>
+  <entry>
+    <id>tag:antxiko.github.io,2026:novedad/es/goonies-issue3-el-mapa</id>
+    <title>The Goonies: la sección del mapa, rehecha</title>
+    <link rel="alternate" type="text/html" href="https://antxiko.github.io/Goonies-disassembly/"/>
+    <published>2026-09-24T18:33:28+02:00</published>
+    <updated>2026-09-24T18:33:28+02:00</updated>
+    <summary type="text">Como pedía theNestruo en el issue #3: las cuatro salas de cada nivel pegadas, sin rótulo en medio; las jaulas abiertas, enseñando al amigo o el frasco, con sus candados; debajo de cada nivel solo lo que el dibujo no dice, las llaves, qué guarda cada jaula, cuál es el objeto escondido y a dónde lleva cada puerta de calavera; y los cinco minimapas de ronda a 1:1, con las rayas por detrás de los niveles. Por el camino: el índice del objeto escondido casa con la tabla del inventario en los 23, y los amigos enjaulados suman siete por ronda, justo los que pide la puerta de salida.</summary>
+  </entry>
+  <entry>
+    <id>tag:antxiko.github.io,2026:novedad/es/knightmare-issue1-bloques</id>
+    <title>Knightmare: los ocho mapas con sus bloques</title>
+    <link rel="alternate" type="text/html" href="https://antxiko.github.io/Knightmare-disassembly/"/>
+    <published>2026-09-24T13:38:11+02:00</published>
+    <updated>2026-09-24T13:38:11+02:00</updated>
+    <summary type="text">Lo que pedía theNestruo en el issue #1: un segundo dibujo de cada uno de los ocho mapas con los 356 bloques de las listas de fase encima, cada uno enseñando lo que suelta, una vida, 500 puntos, una bomba, una congelación, un bloque gris que cierra el paso, el cartel EXIT que salta a otra fase, un puente o un pasadizo lateral, con marco blanco los visibles y punteado magenta los escondidos. Su fila se midió en el emulador, no se dedujo: 220 menos el contador del desplazamiento.</summary>
+  </entry>
+  <entry>
+    <id>tag:antxiko.github.io,2026:novedad/es/yiearkungfu2-issue2-oleadas</id>
+    <title>Yie Ar Kung-Fu II: las doce pantallas de oleadas, y un espejo que no lo era</title>
+    <link rel="alternate" type="text/html" href="https://antxiko.github.io/YieArKungFu2-disassembly/"/>
+    <published>2026-09-24T11:28:16+02:00</published>
+    <updated>2026-09-24T11:28:16+02:00</updated>
+    <summary type="text">theNestruo dudaba, en el issue #2, de que las pantallas de combate se montaran por espejo, y tenía razón: medidas píxel a píxel, en los cuatro decorados difieren 119, 102, 40 y 128 de las 304 parejas de casillas. Y las doce pantallas de oleadas de antes de cada jefe ya están dibujadas desde la ROM y cotejadas contra el emulador a cero bytes: son las bandas de la propia pantalla de combate, reordenadas por fase, y dentro de una pantalla no se desplaza nada.</summary>
+  </entry>
+  <entry>
+    <id>tag:antxiko.github.io,2026:novedad/es/twinbee-issue1-mapas</id>
+    <title>Twin Bee: los mapas estaban mal, y el fondo también</title>
+    <link rel="alternate" type="text/html" href="https://antxiko.github.io/TwinBee-disassembly/"/>
+    <published>2026-09-22T16:15:36+02:00</published>
+    <updated>2026-09-22T16:15:36+02:00</updated>
+    <summary type="text">theNestruo vio huecos en las sombras de la fase 5 (issue #1) y el fallo estaba en el dibujo, no en el cartucho: la tira de 1.761 filas lleva las cinco fases seguidas y cada mapa se pintaba entera con sus propias casillas; y en partida el registro 7 del VDP vale 0xE0, así que la casilla transparente es negra, no azul. Redibujados por fase sobre fondo negro, y comprobado en el emulador: la sombra es maciza.</summary>
+  </entry>
+  <entry>
+    <id>tag:antxiko.github.io,2026:novedad/es/hypersports1-issue2-banador</id>
+    <title>Hyper Sports 1: el bañador del atleta, y una pose cortada por la barra</title>
+    <link rel="alternate" type="text/html" href="https://antxiko.github.io/HyperSports1-disassembly/"/>
+    <published>2026-09-22T14:32:00+02:00</published>
+    <updated>2026-09-22T14:32:00+02:00</updated>
+    <summary type="text">theNestruo tenía razón en el issue #2: el bañador no está en los guiones de dibujo. Solo en los saltos de trampolín, 0x63E8 permuta los sprites 0-1 con los 2-3 en el búfer, y así las dos piezas amarillas pasan delante y tapan la camiseta y las botas; el volcado de VRAM de la piscina lo confirma. Y la pose 40 lleva dos columnas transparentes para que el poste de la barra fija asome a través del atleta, así que ahora va sobre el decorado real. Láminas nuevas, y tests que cotejan el atleta de cada volcado de VRAM contra la ROM píxel a píxel.</summary>
+  </entry>
   <entry>
     <id>tag:antxiko.github.io,2026:novedad/es/mahjong-en-tecla4</id>
     <title>El parche del Mahjong Dojo: la tecla 4 lleva directa al tutorial</title>
@@ -127,45 +167,5 @@
     <published>2026-09-06T01:10:05+02:00</published>
     <updated>2026-09-06T01:10:05+02:00</updated>
     <summary type="text">Konami · MSX · cartucho de 32 KB · RC-734. 32.768 bytes · 0 sin explicar · reensambla byte a byte · 17.422 de código, 15.346 de datos · 1.176 rutinas · comentado al 36,9 %.</summary>
-  </entry>
-  <entry>
-    <id>tag:antxiko.github.io,2026:novedad/es/hypersports3</id>
-    <title>Hyper Sports 3: desensamblado</title>
-    <link rel="alternate" type="text/html" href="https://antxiko.github.io/HyperSports3-disassembly/"/>
-    <published>2026-09-05T20:49:28+02:00</published>
-    <updated>2026-09-05T20:49:28+02:00</updated>
-    <summary type="text">Konami · MSX · cartucho de 32 KB · RC-733. 32.768 bytes · 0 sin explicar · reensambla byte a byte · 14.410 de código, 18.358 de datos · 931 rutinas · comentado al 34,5 %.</summary>
-  </entry>
-  <entry>
-    <id>tag:antxiko.github.io,2026:novedad/es/soccer</id>
-    <title>Konami’s Soccer: desensamblado</title>
-    <link rel="alternate" type="text/html" href="https://antxiko.github.io/KonamisSoccer-disassembly/"/>
-    <published>2026-09-05T13:18:27+02:00</published>
-    <updated>2026-09-05T13:18:27+02:00</updated>
-    <summary type="text">Konami · MSX · cartucho de 32 KB · RC-732. 32.768 bytes · 0 sin explicar · reensambla byte a byte · 20.116 de código, 12.652 de datos · 1.213 rutinas · comentado al 36,5 %.</summary>
-  </entry>
-  <entry>
-    <id>tag:antxiko.github.io,2026:novedad/es/pingpong</id>
-    <title>Konami's Ping Pong: desensamblado</title>
-    <link rel="alternate" type="text/html" href="https://antxiko.github.io/KonamisPingPong-disassembly/"/>
-    <published>2026-09-05T09:45:46+02:00</published>
-    <updated>2026-09-05T09:45:46+02:00</updated>
-    <summary type="text">Konami · MSX · cartucho de 16 KB · RC-731. 16.384 bytes · 0 sin explicar · reensambla byte a byte · 7.676 de código, 8.708 de datos · 548 rutinas · comentado al 64,3 %.</summary>
-  </entry>
-  <entry>
-    <id>tag:antxiko.github.io,2026:novedad/es/roadfighter</id>
-    <title>Road Fighter: desensamblado</title>
-    <link rel="alternate" type="text/html" href="https://antxiko.github.io/RoadFighter-disassembly/"/>
-    <published>2026-09-04T22:52:44+02:00</published>
-    <updated>2026-09-04T22:52:44+02:00</updated>
-    <summary type="text">Konami · MSX · cartucho de 16 KB · RC-730. 16.384 bytes · 0 sin explicar · reensambla byte a byte · 7.797 de código, 8.587 de datos · 482 rutinas · comentado al 55,1 %.</summary>
-  </entry>
-  <entry>
-    <id>tag:antxiko.github.io,2026:novedad/es/descubrimiento</id>
-    <title>El Descubrimiento de América: desensamblado</title>
-    <link rel="alternate" type="text/html" href="https://antxiko.github.io/Descubrimiento-disassembly/"/>
-    <published>2026-09-04T18:30:22+02:00</published>
-    <updated>2026-09-04T18:30:22+02:00</updated>
-    <summary type="text">Gema / OMK Software · MSX · cinta de 66.371 bytes. 66.016 bytes · 0 sin explicar · cinco listados, la cinta entera byte a byte · 15.504 de código, 50.512 de datos · 733 rutinas · comentado al 26,7 %, ninguna rutina por debajo del 10 %.</summary>
   </entry>
 </feed>
