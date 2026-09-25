@@ -695,6 +695,50 @@ DESENSAMBLADOS = [
         ),
     ),
     dict(
+        clave="circus",
+        grupo="konami",
+        titulo="Circus Charlie",
+        anio=1984,
+        repo="https://github.com/antxiko/CircusCharlie-disassembly",
+        web="https://antxiko.github.io/CircusCharlie-disassembly/",
+        meta=dict(
+            en="Konami &middot; MSX &middot; 16 KB cartridge &middot; RC-712",
+            es="Konami &middot; MSX &middot; cartucho de 16 KB &middot; RC-712",
+        ),
+        claim=dict(
+            en="<b>The whole game lives inside the interrupt</b>: INIT hooks "
+               "H.KEYI and sits forever on a <code>jr $</code>. Five circus "
+               "acts chosen by <b>a single byte</b>, and a cartridge that "
+               "<b>runs in Python</b> from INIT to the ring without one VRAM "
+               "byte differing from the emulator.",
+            es="<b>El juego entero vive en la interrupción</b>: INIT engancha "
+               "H.KEYI y se queda para siempre en un <code>jr $</code>. Cinco "
+               "números de circo repartidos por <b>un solo byte</b>, y un "
+               "cartucho que <b>corre en Python</b> de INIT a la pista sin un "
+               "byte de VRAM distinto del emulador.",
+        ),
+        datos=dict(
+            en=lambda i: (f"{cif(16384, i)} bytes &middot; <b>0</b> unexplained "
+                          f"&middot; reassembles <b>byte for byte</b> &middot; "
+                          f"{cif(7894, i)} of code, {cif(8490, i)} of data "
+                          f"&middot; {cif(576, i)} routines &middot; commented "
+                          f"to <b>47.1%</b>"),
+            es=lambda i: (f"{cif(16384, i)} bytes &middot; <b>0</b> sin explicar "
+                          f"&middot; reensambla <b>byte a byte</b> &middot; "
+                          f"{cif(7894, i)} de código, {cif(8490, i)} de datos "
+                          f"&middot; {cif(576, i)} rutinas &middot; comentado "
+                          f"al <b>47,1 %</b>"),
+        ),
+        nota=dict(
+            en="The <b>five acts</b> drawn by running the cartridge, with "
+               "Charlie and the obstacles: <b>0 VRAM bytes</b> different from "
+               "openMSX.",
+            es="Los <b>cinco números</b> dibujados ejecutando el cartucho, con "
+               "Charlie y los obstáculos: <b>0 bytes de VRAM</b> distintos de "
+               "openMSX.",
+        ),
+    ),
+    dict(
         clave="hyperrally",
         grupo="konami",
         titulo="Hyper Rally",
@@ -2338,6 +2382,8 @@ HERRAMIENTAS = [
 # nueva a vieja, una clave no existe o un proyecto se queda sin novedad.
 # --------------------------------------------------------------------------
 NOVEDADES = [
+    dict(id="circus", clave="circus", clase="nuevo",
+         fecha="2026-09-25T15:49:33+02:00"),
     dict(id="goonies-issue3-el-mapa", clave="goonies",
          clase="actualiza", fecha="2026-09-24T18:33:28+02:00",
          titulo=dict(en="The Goonies: the map section, redone",
