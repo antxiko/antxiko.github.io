@@ -730,12 +730,54 @@ DESENSAMBLADOS = [
                           f"al <b>47,1 %</b>"),
         ),
         nota=dict(
-            en="The <b>five acts</b> drawn by running the cartridge, with "
-               "Charlie and the obstacles: <b>0 VRAM bytes</b> different from "
+            en="The <b>five acts</b> drawn from the cartridge's tables, with "
+               "Charlie and the obstacles: <b>0 bytes</b> different from "
                "openMSX.",
-            es="Los <b>cinco números</b> dibujados ejecutando el cartucho, con "
-               "Charlie y los obstáculos: <b>0 bytes de VRAM</b> distintos de "
-               "openMSX.",
+            es="Los <b>cinco números</b> dibujados desde las tablas del "
+               "cartucho, con Charlie y los obstáculos: <b>0 bytes</b> "
+               "distintos de openMSX.",
+        ),
+    ),
+    dict(
+        clave="magicaltree",
+        grupo="konami",
+        titulo="Magical Tree",
+        anio=1984,
+        repo="https://github.com/antxiko/MagicalTree-disassembly",
+        web="https://antxiko.github.io/MagicalTree-disassembly/",
+        meta=dict(
+            en="Konami &middot; MSX &middot; 16 KB cartridge &middot; RC-713",
+            es="Konami &middot; MSX &middot; cartucho de 16 KB &middot; RC-713",
+        ),
+        claim=dict(
+            en="<b>The level lives in VRAM</b>: each stage's script goes up to "
+               "<code>0x3B80</code>, behind the sprite attributes, and the "
+               "screen doubles as the map. <b>Nine stages</b> drawn from the "
+               "cartridge's tables without one cell differing from the "
+               "emulator.",
+            es="<b>El nivel vive en la VRAM</b>: el guion de cada fase sube a "
+               "<code>0x3B80</code>, detrás de los atributos de los sprites, y "
+               "la pantalla hace de mapa. <b>Nueve fases</b> dibujadas desde "
+               "las tablas del cartucho sin una celda distinta del emulador.",
+        ),
+        datos=dict(
+            en=lambda i: (f"{cif(16384, i)} bytes &middot; <b>0</b> unexplained "
+                          f"&middot; reassembles <b>byte for byte</b> &middot; "
+                          f"{cif(8537, i)} of code, {cif(7847, i)} of data "
+                          f"&middot; {cif(628, i)} routines &middot; commented "
+                          f"to <b>47.4%</b>"),
+            es=lambda i: (f"{cif(16384, i)} bytes &middot; <b>0</b> sin explicar "
+                          f"&middot; reensambla <b>byte a byte</b> &middot; "
+                          f"{cif(8537, i)} de código, {cif(7847, i)} de datos "
+                          f"&middot; {cif(628, i)} rutinas &middot; comentado "
+                          f"al <b>47,4 %</b>"),
+        ),
+        nota=dict(
+            en="The tree's <b>nine stages</b>, whole, drawn from each stage's "
+               "script: <b>0 cells</b> different from openMSX in 156 dumps.",
+            es="Las <b>nueve fases</b> del árbol, enteras, dibujadas desde el "
+               "guion de cada fase: <b>0 celdas</b> distintas de openMSX en 156 "
+               "volcados.",
         ),
     ),
     dict(
@@ -2382,6 +2424,8 @@ HERRAMIENTAS = [
 # nueva a vieja, una clave no existe o un proyecto se queda sin novedad.
 # --------------------------------------------------------------------------
 NOVEDADES = [
+    dict(id="magicaltree", clave="magicaltree", clase="nuevo",
+         fecha="2026-09-25T21:08:29+02:00"),
     dict(id="circus-pista-desde-las-tablas", clave="circus",
          clase="actualiza", fecha="2026-09-25T19:53:22+02:00",
          titulo=dict(en="Circus Charlie: the ring, drawn from the tables",
