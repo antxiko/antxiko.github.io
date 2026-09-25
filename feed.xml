@@ -1,13 +1,21 @@
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom" xml:lang="en">
   <title>antxiko — commented disassemblies of 8-bit games</title>
-  <subtitle>Old 8-bit binaries taken apart byte by byte and commented, with the tools to rebuild them: nothing gets claimed that the binary does not show, and the source has to give the original back, byte for byte. Right now that means 51 MSX games.</subtitle>
+  <subtitle>Old 8-bit binaries taken apart byte by byte and commented, with the tools to rebuild them: nothing gets claimed that the binary does not show, and the source has to give the original back, byte for byte. Right now that means 52 MSX games.</subtitle>
   <id>tag:antxiko.github.io,2026:feed/en</id>
   <link rel="self" type="application/atom+xml" href="https://antxiko.github.io/feed.xml"/>
   <link rel="alternate" type="text/html" hreflang="en" href="https://antxiko.github.io/"/>
   <link rel="alternate" type="application/atom+xml" hreflang="es" href="https://antxiko.github.io/es/feed.xml"/>
-  <updated>2026-09-25T21:08:29+02:00</updated>
+  <updated>2026-09-25T21:31:15+02:00</updated>
   <author><name>antxiko</name><uri>https://github.com/antxiko</uri></author>
+  <entry>
+    <id>tag:antxiko.github.io,2026:novedad/en/comicbakery</id>
+    <title>Comic Bakery: disassembled</title>
+    <link rel="alternate" type="text/html" href="https://antxiko.github.io/ComicBakery-disassembly/"/>
+    <published>2026-09-25T21:31:15+02:00</published>
+    <updated>2026-09-25T21:31:15+02:00</updated>
+    <summary type="text">Konami · MSX · 16 KB cartridge · RC-714. 16,384 bytes · 0 unexplained · reassembles byte for byte · 8,097 of code, 8,287 of data · 535 routines · commented to 46.9%.</summary>
+  </entry>
   <entry>
     <id>tag:antxiko.github.io,2026:novedad/en/magicaltree</id>
     <title>Magical Tree: disassembled</title>
@@ -159,13 +167,5 @@
     <published>2026-09-07T14:35:38+02:00</published>
     <updated>2026-09-07T14:35:38+02:00</updated>
     <summary type="text">Konami · MSX · 32 KB cartridge · RC-739. 32,768 bytes · 0 unexplained · reassembles byte for byte · 15,233 of code, 17,535 of data · 985 routines · commented to 22.4%.</summary>
-  </entry>
-  <entry>
-    <id>tag:antxiko.github.io,2026:novedad/en/yiearkungfu2</id>
-    <title>Yie Ar Kung-Fu II: disassembled</title>
-    <link rel="alternate" type="text/html" href="https://antxiko.github.io/YieArKungFu2-disassembly/"/>
-    <published>2026-09-07T10:25:53+02:00</published>
-    <updated>2026-09-07T10:25:53+02:00</updated>
-    <summary type="text">Konami · MSX · 32 KB cartridge · RC-737. 32,768 bytes · 0 unexplained · reassembles byte for byte · 13,725 of code, 19,043 of data · 1,027 routines · commented to 40.9%.</summary>
   </entry>
 </feed>
