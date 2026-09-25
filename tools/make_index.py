@@ -2467,6 +2467,27 @@ HERRAMIENTAS = [
 # nueva a vieja, una clave no existe o un proyecto se queda sin novedad.
 # --------------------------------------------------------------------------
 NOVEDADES = [
+    dict(id="magicaltree-castillo", clave="magicaltree",
+         clase="actualiza", fecha="2026-09-25T22:50:31+02:00",
+         titulo=dict(en="Magical Tree: the castle, drawn right",
+                     es="Magical Tree: el castillo, bien dibujado"),
+         resumen=dict(
+             en="The castle and the tree painted between stages were drawn "
+                "with their columns left to right, and the cartridge paints "
+                "them from the middle outwards: the castle came out "
+                "scrambled. Now each column goes where 0x7629 puts it, the "
+                "tree takes the colours of the stage that starts, and the "
+                "castle carries its windows with the two characters and the "
+                "CONGRATULATIONS sign. Checked against openMSX in nine dumps: "
+                "0 bytes different.",
+             es="El castillo y el árbol que se pinta entre fases estaban "
+                "dibujados con las columnas de izquierda a derecha, y el "
+                "cartucho los pinta del centro hacia fuera: el castillo salía "
+                "revuelto. Ahora cada columna va donde la pone 0x7629, el "
+                "árbol lleva los colores de la fase que empieza y el castillo "
+                "sus ventanas con los dos personajes y el rótulo "
+                "CONGRATULATIONS. Cotejado contra openMSX en nueve volcados: "
+                "0 bytes distintos.")),
     dict(id="comicbakery", clave="comicbakery", clase="nuevo",
          fecha="2026-09-25T21:31:15+02:00"),
     dict(id="magicaltree", clave="magicaltree", clase="nuevo",
