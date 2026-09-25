@@ -708,14 +708,14 @@ DESENSAMBLADOS = [
         claim=dict(
             en="<b>The whole game lives inside the interrupt</b>: INIT hooks "
                "H.KEYI and sits forever on a <code>jr $</code>. Five circus "
-               "acts chosen by <b>a single byte</b>, and a cartridge that "
-               "<b>runs in Python</b> from INIT to the ring without one VRAM "
-               "byte differing from the emulator.",
+               "acts chosen by <b>a single byte</b>, and the ring drawn "
+               "<b>from the cartridge's tables</b>, frame by frame, without "
+               "one byte differing from the emulator.",
             es="<b>El juego entero vive en la interrupción</b>: INIT engancha "
                "H.KEYI y se queda para siempre en un <code>jr $</code>. Cinco "
-               "números de circo repartidos por <b>un solo byte</b>, y un "
-               "cartucho que <b>corre en Python</b> de INIT a la pista sin un "
-               "byte de VRAM distinto del emulador.",
+               "números de circo repartidos por <b>un solo byte</b>, y la pista "
+               "dibujada <b>desde las tablas del cartucho</b>, cuadro a "
+               "cuadro, sin un byte distinto del emulador.",
         ),
         datos=dict(
             en=lambda i: (f"{cif(16384, i)} bytes &middot; <b>0</b> unexplained "
@@ -2382,6 +2382,23 @@ HERRAMIENTAS = [
 # nueva a vieja, una clave no existe o un proyecto se queda sin novedad.
 # --------------------------------------------------------------------------
 NOVEDADES = [
+    dict(id="circus-pista-desde-las-tablas", clave="circus",
+         clase="actualiza", fecha="2026-09-25T19:53:22+02:00",
+         titulo=dict(en="Circus Charlie: the ring, drawn from the tables",
+                     es="Circus Charlie: la pista, dibujada desde las tablas"),
+         resumen=dict(
+             en="The five pictures of the acts, with Charlie, his animal and "
+                "the obstacles, no longer come from running the cartridge: "
+                "tools/pista.py rewrites the game frame from the cartridge's "
+                "own tables, moving objects, poses and start-ups, and against "
+                "43 openMSX dumps it gives zero bytes of RAM and VRAM "
+                "different.",
+             es="Las cinco imágenes de las atracciones, con Charlie, su animal "
+                "y los obstáculos, ya no salen de ejecutar el cartucho: "
+                "tools/pista.py reescribe el cuadro de partida desde las "
+                "tablas del propio cartucho, móviles, poses y arranques, y "
+                "contra 43 volcados de openMSX da cero bytes de RAM y VRAM "
+                "distintos.")),
     dict(id="circus", clave="circus", clase="nuevo",
          fecha="2026-09-25T15:49:33+02:00"),
     dict(id="goonies-issue3-el-mapa", clave="goonies",
