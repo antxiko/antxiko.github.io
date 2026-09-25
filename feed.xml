@@ -1,13 +1,21 @@
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom" xml:lang="en">
   <title>antxiko — commented disassemblies of 8-bit games</title>
-  <subtitle>Old 8-bit binaries taken apart byte by byte and commented, with the tools to rebuild them: nothing gets claimed that the binary does not show, and the source has to give the original back, byte for byte. Right now that means 49 MSX games.</subtitle>
+  <subtitle>Old 8-bit binaries taken apart byte by byte and commented, with the tools to rebuild them: nothing gets claimed that the binary does not show, and the source has to give the original back, byte for byte. Right now that means 50 MSX games.</subtitle>
   <id>tag:antxiko.github.io,2026:feed/en</id>
   <link rel="self" type="application/atom+xml" href="https://antxiko.github.io/feed.xml"/>
   <link rel="alternate" type="text/html" hreflang="en" href="https://antxiko.github.io/"/>
   <link rel="alternate" type="application/atom+xml" hreflang="es" href="https://antxiko.github.io/es/feed.xml"/>
-  <updated>2026-09-24T18:33:28+02:00</updated>
+  <updated>2026-09-25T15:49:33+02:00</updated>
   <author><name>antxiko</name><uri>https://github.com/antxiko</uri></author>
+  <entry>
+    <id>tag:antxiko.github.io,2026:novedad/en/circus</id>
+    <title>Circus Charlie: disassembled</title>
+    <link rel="alternate" type="text/html" href="https://antxiko.github.io/CircusCharlie-disassembly/"/>
+    <published>2026-09-25T15:49:33+02:00</published>
+    <updated>2026-09-25T15:49:33+02:00</updated>
+    <summary type="text">Konami · MSX · 16 KB cartridge · RC-712. 16,384 bytes · 0 unexplained · reassembles byte for byte · 7,894 of code, 8,490 of data · 576 routines · commented to 47.1%.</summary>
+  </entry>
   <entry>
     <id>tag:antxiko.github.io,2026:novedad/en/goonies-issue3-el-mapa</id>
     <title>The Goonies: the map section, redone</title>
@@ -159,13 +167,5 @@
     <published>2026-09-06T08:39:47+02:00</published>
     <updated>2026-09-06T08:39:47+02:00</updated>
     <summary type="text">Gremlin Graphics · MSX · cassette tape. 38,299 bytes · 0 unexplained · the tape reassembles byte for byte · 6,556 of code, 31,743 of data · 355 routines · commented to 30.8%.</summary>
-  </entry>
-  <entry>
-    <id>tag:antxiko.github.io,2026:novedad/en/goonies</id>
-    <title>The Goonies: disassembled</title>
-    <link rel="alternate" type="text/html" href="https://antxiko.github.io/Goonies-disassembly/"/>
-    <published>2026-09-06T01:10:05+02:00</published>
-    <updated>2026-09-06T01:10:05+02:00</updated>
-    <summary type="text">Konami · MSX · 32 KB cartridge · RC-734. 32,768 bytes · 0 unexplained · reassembles byte for byte · 17,422 of code, 15,346 of data · 1,176 routines · commented to 36.9%.</summary>
   </entry>
 </feed>
