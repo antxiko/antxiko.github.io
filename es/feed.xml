@@ -1,13 +1,21 @@
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom" xml:lang="es">
   <title>antxiko — desensamblados comentados de juegos de 8 bits</title>
-  <subtitle>Binarios viejos de 8 bits desmontados byte a byte y comentados, con las herramientas para volver a montarlos: no se afirma nada que el binario no enseñe, y el código fuente tiene que devolver el original, byte a byte. Ahora mismo son 51 juegos de MSX.</subtitle>
+  <subtitle>Binarios viejos de 8 bits desmontados byte a byte y comentados, con las herramientas para volver a montarlos: no se afirma nada que el binario no enseñe, y el código fuente tiene que devolver el original, byte a byte. Ahora mismo son 52 juegos de MSX.</subtitle>
   <id>tag:antxiko.github.io,2026:feed/es</id>
   <link rel="self" type="application/atom+xml" href="https://antxiko.github.io/es/feed.xml"/>
   <link rel="alternate" type="text/html" hreflang="es" href="https://antxiko.github.io/es/"/>
   <link rel="alternate" type="application/atom+xml" hreflang="en" href="https://antxiko.github.io/feed.xml"/>
-  <updated>2026-09-25T21:08:29+02:00</updated>
+  <updated>2026-09-25T21:31:15+02:00</updated>
   <author><name>antxiko</name><uri>https://github.com/antxiko</uri></author>
+  <entry>
+    <id>tag:antxiko.github.io,2026:novedad/es/comicbakery</id>
+    <title>Comic Bakery: desensamblado</title>
+    <link rel="alternate" type="text/html" href="https://antxiko.github.io/ComicBakery-disassembly/"/>
+    <published>2026-09-25T21:31:15+02:00</published>
+    <updated>2026-09-25T21:31:15+02:00</updated>
+    <summary type="text">Konami · MSX · cartucho de 16 KB · RC-714. 16.384 bytes · 0 sin explicar · reensambla byte a byte · 8.097 de código, 8.287 de datos · 535 rutinas · comentado al 46,9 %.</summary>
+  </entry>
   <entry>
     <id>tag:antxiko.github.io,2026:novedad/es/magicaltree</id>
     <title>Magical Tree: desensamblado</title>
@@ -159,13 +167,5 @@
     <published>2026-09-07T14:35:38+02:00</published>
     <updated>2026-09-07T14:35:38+02:00</updated>
     <summary type="text">Konami · MSX · cartucho de 32 KB · RC-739. 32.768 bytes · 0 sin explicar · reensambla byte a byte · 15.233 de código, 17.535 de datos · 985 rutinas · comentado al 22,4 %.</summary>
-  </entry>
-  <entry>
-    <id>tag:antxiko.github.io,2026:novedad/es/yiearkungfu2</id>
-    <title>Yie Ar Kung-Fu II: desensamblado</title>
-    <link rel="alternate" type="text/html" href="https://antxiko.github.io/YieArKungFu2-disassembly/"/>
-    <published>2026-09-07T10:25:53+02:00</published>
-    <updated>2026-09-07T10:25:53+02:00</updated>
-    <summary type="text">Konami · MSX · cartucho de 32 KB · RC-737. 32.768 bytes · 0 sin explicar · reensambla byte a byte · 13.725 de código, 19.043 de datos · 1.027 rutinas · comentado al 40,9 %.</summary>
   </entry>
 </feed>

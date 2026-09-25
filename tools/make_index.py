@@ -781,6 +781,49 @@ DESENSAMBLADOS = [
         ),
     ),
     dict(
+        clave="comicbakery",
+        grupo="konami",
+        titulo="Comic Bakery",
+        anio=1984,
+        repo="https://github.com/antxiko/ComicBakery-disassembly",
+        web="https://antxiko.github.io/ComicBakery-disassembly/",
+        meta=dict(
+            en="Konami &middot; MSX &middot; 16 KB cartridge &middot; RC-714",
+            es="Konami &middot; MSX &middot; cartucho de 16 KB &middot; RC-714",
+        ),
+        claim=dict(
+            en="<b>A 92-column bakery</b> whose machines change from one "
+               "stage to the next, an <b>eight-minute working day</b>, and "
+               "the raccoons the listing called carts, <b>drawn from the "
+               "ROM</b> without one byte differing from the emulator.",
+            es="<b>Una panadería de 92 columnas</b> que cambia de máquinas de "
+               "una fase a otra, una <b>jornada de ocho minutos</b>, y los "
+               "mapaches que el listado llamaba carros, <b>dibujados desde la "
+               "ROM</b> sin un byte distinto del emulador.",
+        ),
+        datos=dict(
+            en=lambda i: (f"{cif(16384, i)} bytes &middot; <b>0</b> unexplained "
+                          f"&middot; reassembles <b>byte for byte</b> &middot; "
+                          f"{cif(8097, i)} of code, {cif(8287, i)} of data "
+                          f"&middot; {cif(535, i)} routines &middot; commented "
+                          f"to <b>46.9%</b>"),
+            es=lambda i: (f"{cif(16384, i)} bytes &middot; <b>0</b> sin explicar "
+                          f"&middot; reensambla <b>byte a byte</b> &middot; "
+                          f"{cif(8097, i)} de código, {cif(8287, i)} de datos "
+                          f"&middot; {cif(535, i)} rutinas &middot; comentado "
+                          f"al <b>46,9 %</b>"),
+        ),
+        nota=dict(
+            en="The <b>baker</b>'s fourteen poses, the <b>three "
+               "raccoons</b> and the <b>bakery of each stage</b>, drawn from "
+               "the ROM: <b>0 bytes</b> different from openMSX in 16 dumps.",
+            es="El <b>panadero</b> en sus catorce poses, los <b>tres "
+               "mapaches</b> y la <b>panadería de cada fase</b>, dibujados "
+               "desde la ROM: <b>0 bytes</b> distintos de openMSX en 16 "
+               "volcados.",
+        ),
+    ),
+    dict(
         clave="hyperrally",
         grupo="konami",
         titulo="Hyper Rally",
@@ -2424,6 +2467,8 @@ HERRAMIENTAS = [
 # nueva a vieja, una clave no existe o un proyecto se queda sin novedad.
 # --------------------------------------------------------------------------
 NOVEDADES = [
+    dict(id="comicbakery", clave="comicbakery", clase="nuevo",
+         fecha="2026-09-25T21:31:15+02:00"),
     dict(id="magicaltree", clave="magicaltree", clase="nuevo",
          fecha="2026-09-25T21:08:29+02:00"),
     dict(id="circus-pista-desde-las-tablas", clave="circus",
