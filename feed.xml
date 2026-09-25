@@ -6,8 +6,16 @@
   <link rel="self" type="application/atom+xml" href="https://antxiko.github.io/feed.xml"/>
   <link rel="alternate" type="text/html" hreflang="en" href="https://antxiko.github.io/"/>
   <link rel="alternate" type="application/atom+xml" hreflang="es" href="https://antxiko.github.io/es/feed.xml"/>
-  <updated>2026-09-25T21:31:15+02:00</updated>
+  <updated>2026-09-25T22:50:31+02:00</updated>
   <author><name>antxiko</name><uri>https://github.com/antxiko</uri></author>
+  <entry>
+    <id>tag:antxiko.github.io,2026:novedad/en/magicaltree-castillo</id>
+    <title>Magical Tree: the castle, drawn right</title>
+    <link rel="alternate" type="text/html" href="https://antxiko.github.io/MagicalTree-disassembly/"/>
+    <published>2026-09-25T22:50:31+02:00</published>
+    <updated>2026-09-25T22:50:31+02:00</updated>
+    <summary type="text">The castle and the tree painted between stages were drawn with their columns left to right, and the cartridge paints them from the middle outwards: the castle came out scrambled. Now each column goes where 0x7629 puts it, the tree takes the colours of the stage that starts, and the castle carries its windows with the two characters and the CONGRATULATIONS sign. Checked against openMSX in nine dumps: 0 bytes different.</summary>
+  </entry>
   <entry>
     <id>tag:antxiko.github.io,2026:novedad/en/comicbakery</id>
     <title>Comic Bakery: disassembled</title>
@@ -159,13 +167,5 @@
     <published>2026-09-07T17:53:17+02:00</published>
     <updated>2026-09-07T17:53:17+02:00</updated>
     <summary type="text">Konami · MSX · 32 KB cartridge · RC-736. 32,768 bytes · 0 unexplained · reassembles byte for byte · 6,932 of code, 25,836 of data · 475 routines · commented to 52.6%.</summary>
-  </entry>
-  <entry>
-    <id>tag:antxiko.github.io,2026:novedad/en/knightmare</id>
-    <title>Knightmare: disassembled</title>
-    <link rel="alternate" type="text/html" href="https://antxiko.github.io/Knightmare-disassembly/"/>
-    <published>2026-09-07T14:35:38+02:00</published>
-    <updated>2026-09-07T14:35:38+02:00</updated>
-    <summary type="text">Konami · MSX · 32 KB cartridge · RC-739. 32,768 bytes · 0 unexplained · reassembles byte for byte · 15,233 of code, 17,535 of data · 985 routines · commented to 22.4%.</summary>
   </entry>
 </feed>
