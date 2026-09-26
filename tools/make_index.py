@@ -2467,6 +2467,25 @@ HERRAMIENTAS = [
 # nueva a vieja, una clave no existe o un proyecto se queda sin novedad.
 # --------------------------------------------------------------------------
 NOVEDADES = [
+    dict(id="penguinadventure-desde-las-tablas", clave="penguinadventure",
+         clase="actualiza", fecha="2026-09-26T11:35:24+02:00",
+         titulo=dict(en="Penguin Adventure: everything on screen, drawn from the tables",
+                     es="Penguin Adventure: lo que sale en pantalla, dibujado desde las tablas"),
+         resumen=dict(
+             en="The penguin in its poses and terrains, the ten creatures, the "
+                "dinosaur that closes every third stage, space with its "
+                "meteorites and winged fish, the backdrops built whole and the "
+                "twenty-four stages of each LEVEL walked step by step from "
+                "their four scripts. All checked against openMSX: seven tests, "
+                "zero differences. The stage diagram and the black-and-white "
+                "sprite sheets are gone.",
+             es="El pingüino en sus poses y terrenos, los diez bichos, el "
+                "dinosaurio que cierra cada tres fases, el espacio con sus "
+                "meteoritos y sus peces con alas, los decorados montados "
+                "enteros y las veinticuatro fases de cada LEVEL andadas paso a "
+                "paso desde sus cuatro guiones. Todo cotejado con openMSX: "
+                "siete pruebas, cero diferencias. Fuera el esquema de fases y "
+                "las hojas de sprites en blanco y negro.")),
     dict(id="magicaltree-nueve-fases", clave="magicaltree",
          clase="actualiza", fecha="2026-09-26T10:12:08+02:00",
          titulo=dict(en="Magical Tree: the nine stages side by side",
