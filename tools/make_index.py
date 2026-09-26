@@ -2467,6 +2467,27 @@ HERRAMIENTAS = [
 # nueva a vieja, una clave no existe o un proyecto se queda sin novedad.
 # --------------------------------------------------------------------------
 NOVEDADES = [
+    dict(id="penguinadventure-la-pelea", clave="penguinadventure",
+         clase="actualiza", fecha="2026-09-26T23:16:10+02:00",
+         titulo=dict(en="Penguin Adventure: the fight with the dinosaur",
+                     es="Penguin Adventure: la pelea con el dinosaurio"),
+         resumen=dict(
+             en="The fight at the end of every third stage, drawn from the "
+                "tables: the four blocks of ice that fall, the dinosaur moving "
+                "between five columns and always looking at the penguin, what "
+                "it throws, and after twenty hits the ice cracking and the "
+                "dinosaur sinking. Also what moves in the scenes: the penguin "
+                "walking in, the jump in the good ending, the apple and the "
+                "crying. Checked against thousands of openMSX dumps with zero "
+                "differences.",
+             es="La pelea del final de cada tres fases, dibujada desde las "
+                "tablas: los cuatro bloques de hielo que caen, el dinosaurio "
+                "que va entre cinco columnas y siempre mira al pingüino, lo que "
+                "lanza, y a los veinte aciertos el hielo que se agrieta y el "
+                "dinosaurio que se hunde. Y lo que se mueve en las escenas: el "
+                "pingüino que entra, el salto del final bueno, la manzana y el "
+                "llanto. Cotejado con miles de volcados de openMSX, cero "
+                "diferencias.")),
     dict(id="penguinadventure-pingu-en-el-final-malo", clave="penguinadventure",
          clase="actualiza", fecha="2026-09-26T22:14:25+02:00",
          titulo=dict(en="Penguin Adventure: the penguin in the bad ending",
