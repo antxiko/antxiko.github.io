@@ -6,8 +6,16 @@
   <link rel="self" type="application/atom+xml" href="https://antxiko.github.io/feed.xml"/>
   <link rel="alternate" type="text/html" hreflang="en" href="https://antxiko.github.io/"/>
   <link rel="alternate" type="application/atom+xml" hreflang="es" href="https://antxiko.github.io/es/feed.xml"/>
-  <updated>2026-09-26T11:35:24+02:00</updated>
+  <updated>2026-09-26T12:00:43+02:00</updated>
   <author><name>antxiko</name><uri>https://github.com/antxiko</uri></author>
+  <entry>
+    <id>tag:antxiko.github.io,2026:novedad/en/penguinadventure-atajos-y-tiendas</id>
+    <title>Penguin Adventure: the six warps and the 41 hidden shops</title>
+    <link rel="alternate" type="text/html" href="https://antxiko.github.io/PenguinAdventure-disassembly/"/>
+    <published>2026-09-26T12:00:43+02:00</published>
+    <updated>2026-09-26T12:00:43+02:00</updated>
+    <summary type="text">Backdrop 9 is the WARP: a flagged crevasse and pressing down take you from stage 1 to 6, 6 to 9, 9 to 12, 13 to 15, 15 to 18 and 18 to 21, all six measured in openMSX. Other crevasses hide 41 shops: 18 usual, 20 that charge double and 3 with Santa Claus, who gives one item away. And a correction: space is reached by touching what flies across, not through a crevasse.</summary>
+  </entry>
   <entry>
     <id>tag:antxiko.github.io,2026:novedad/en/penguinadventure-desde-las-tablas</id>
     <title>Penguin Adventure: everything on screen, drawn from the tables</title>
@@ -159,13 +167,5 @@
     <published>2026-09-09T08:42:16+02:00</published>
     <updated>2026-09-09T08:42:16+02:00</updated>
     <summary type="text">49 projects · measured, not copied · 28 tests. 249,851 instructions · 81,234 comments · 32.5 % across the series · 0 routines below 10 % · 1,465,115 bytes of binary.</summary>
-  </entry>
-  <entry>
-    <id>tag:antxiko.github.io,2026:novedad/en/twinbee</id>
-    <title>Twin Bee: disassembled</title>
-    <link rel="alternate" type="text/html" href="https://antxiko.github.io/TwinBee-disassembly/"/>
-    <published>2026-09-09T01:33:11+02:00</published>
-    <updated>2026-09-09T01:33:11+02:00</updated>
-    <summary type="text">Konami · MSX · 32 KB cartridge · RC-740. 32,768 bytes · 0 unexplained · reassembles byte for byte · 14,406 of code, 18,362 of data · 1,000 routines · commented to 41.4%.</summary>
   </entry>
 </feed>
