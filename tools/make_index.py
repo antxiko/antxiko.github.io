@@ -2467,6 +2467,23 @@ HERRAMIENTAS = [
 # nueva a vieja, una clave no existe o un proyecto se queda sin novedad.
 # --------------------------------------------------------------------------
 NOVEDADES = [
+    dict(id="penguinadventure-arbol-y-finales", clave="penguinadventure",
+         clase="actualiza", fecha="2026-09-26T12:09:59+02:00",
+         titulo=dict(en="Penguin Adventure: the tree and the two endings",
+                     es="Penguin Adventure: el árbol y los dos finales"),
+         resumen=dict(
+             en="The three scenes after stages 12 and 24, drawn from the "
+                "tables: the tree halfway through and the good and the bad "
+                "endings, with their messages. The screens are painted from "
+                "the middle outwards, and in the bad ending a piece of fifty "
+                "bytes takes the princess's place. Checked against openMSX: "
+                "zero differences.",
+             es="Las tres escenas de después de las fases 12 y 24, dibujadas "
+                "desde las tablas: el árbol de la mitad del camino y el final "
+                "bueno y el malo, con sus mensajes. Las pantallas se pintan del "
+                "centro hacia fuera, y en el final malo una pieza de cincuenta "
+                "bytes ocupa el sitio de la princesa. Cotejadas con openMSX: "
+                "cero diferencias.")),
     dict(id="penguinadventure-atajos-y-tiendas", clave="penguinadventure",
          clase="actualiza", fecha="2026-09-26T12:00:43+02:00",
          titulo=dict(en="Penguin Adventure: the six warps and the 41 hidden shops",
