@@ -6,8 +6,16 @@
   <link rel="self" type="application/atom+xml" href="https://antxiko.github.io/feed.xml"/>
   <link rel="alternate" type="text/html" hreflang="en" href="https://antxiko.github.io/"/>
   <link rel="alternate" type="application/atom+xml" hreflang="es" href="https://antxiko.github.io/es/feed.xml"/>
-  <updated>2026-09-26T22:14:25+02:00</updated>
+  <updated>2026-09-26T23:16:10+02:00</updated>
   <author><name>antxiko</name><uri>https://github.com/antxiko</uri></author>
+  <entry>
+    <id>tag:antxiko.github.io,2026:novedad/en/penguinadventure-la-pelea</id>
+    <title>Penguin Adventure: the fight with the dinosaur</title>
+    <link rel="alternate" type="text/html" href="https://antxiko.github.io/PenguinAdventure-disassembly/"/>
+    <published>2026-09-26T23:16:10+02:00</published>
+    <updated>2026-09-26T23:16:10+02:00</updated>
+    <summary type="text">The fight at the end of every third stage, drawn from the tables: the four blocks of ice that fall, the dinosaur moving between five columns and always looking at the penguin, what it throws, and after twenty hits the ice cracking and the dinosaur sinking. Also what moves in the scenes: the penguin walking in, the jump in the good ending, the apple and the crying. Checked against thousands of openMSX dumps with zero differences.</summary>
+  </entry>
   <entry>
     <id>tag:antxiko.github.io,2026:novedad/en/penguinadventure-pingu-en-el-final-malo</id>
     <title>Penguin Adventure: the penguin in the bad ending</title>
@@ -159,13 +167,5 @@
     <published>2026-09-15T14:21:39+02:00</published>
     <updated>2026-09-15T14:21:39+02:00</updated>
     <summary type="text">The last 504 bytes of the MegaROM are accounted for, and none of them was code: two compressed drawings nothing draws, three SCC waveforms no instrument points to, the bar of the split screen and the rows of two tables no reader reaches. And the demo's four recorded games, now with their reader.</summary>
-  </entry>
-  <entry>
-    <id>tag:antxiko.github.io,2026:novedad/en/warinmiddleearth-cartucho</id>
-    <title>War in Middle Earth: the tape, now a cartridge</title>
-    <link rel="alternate" type="text/html" href="https://antxiko.github.io/WarinMiddleEarth-MSX-Patch/"/>
-    <published>2026-09-10T18:39:33+02:00</published>
-    <updated>2026-09-10T18:39:33+02:00</updated>
-    <summary type="text">The game is untouched: a 64 KB ASCII16 cartridge whose loader leaves RAM exactly as the tape loader leaves it and jumps to the same place. Checked byte for byte against the tape, RAM, VRAM, VDP and PSG, on four machines. Nine seconds instead of six and a half minutes.</summary>
   </entry>
 </feed>
