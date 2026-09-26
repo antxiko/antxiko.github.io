@@ -6,8 +6,16 @@
   <link rel="self" type="application/atom+xml" href="https://antxiko.github.io/feed.xml"/>
   <link rel="alternate" type="text/html" hreflang="en" href="https://antxiko.github.io/"/>
   <link rel="alternate" type="application/atom+xml" hreflang="es" href="https://antxiko.github.io/es/feed.xml"/>
-  <updated>2026-09-25T22:50:31+02:00</updated>
+  <updated>2026-09-26T10:12:08+02:00</updated>
   <author><name>antxiko</name><uri>https://github.com/antxiko</uri></author>
+  <entry>
+    <id>tag:antxiko.github.io,2026:novedad/en/magicaltree-nueve-fases</id>
+    <title>Magical Tree: the nine stages side by side</title>
+    <link rel="alternate" type="text/html" href="https://antxiko.github.io/MagicalTree-disassembly/"/>
+    <published>2026-09-26T10:12:08+02:00</published>
+    <updated>2026-09-26T10:12:08+02:00</updated>
+    <summary type="text">The nine whole trees, standing on the ground and drawn from each stage's script, now open the home page gallery and the stages section of The game; each one is still there full size.</summary>
+  </entry>
   <entry>
     <id>tag:antxiko.github.io,2026:novedad/en/magicaltree-castillo</id>
     <title>Magical Tree: the castle, drawn right</title>
@@ -159,13 +167,5 @@
     <published>2026-09-08T16:27:46+02:00</published>
     <updated>2026-09-08T16:27:46+02:00</updated>
     <summary type="text">Hudson Soft · MSX · 8 KB cartridge. 8,192 bytes · 0 unexplained · reassembles byte for byte · 3,557 of code, 4,635 of data · 200 routines, none under 10% · commented to 50.2%.</summary>
-  </entry>
-  <entry>
-    <id>tag:antxiko.github.io,2026:novedad/en/boxing</id>
-    <title>Konami's Boxing: disassembled</title>
-    <link rel="alternate" type="text/html" href="https://antxiko.github.io/Boxing-disassembly/"/>
-    <published>2026-09-07T17:53:17+02:00</published>
-    <updated>2026-09-07T17:53:17+02:00</updated>
-    <summary type="text">Konami · MSX · 32 KB cartridge · RC-736. 32,768 bytes · 0 unexplained · reassembles byte for byte · 6,932 of code, 25,836 of data · 475 routines · commented to 52.6%.</summary>
   </entry>
 </feed>
