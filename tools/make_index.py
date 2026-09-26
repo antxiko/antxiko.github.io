@@ -2467,6 +2467,19 @@ HERRAMIENTAS = [
 # nueva a vieja, una clave no existe o un proyecto se queda sin novedad.
 # --------------------------------------------------------------------------
 NOVEDADES = [
+    dict(id="magicaltree-nueve-fases", clave="magicaltree",
+         clase="actualiza", fecha="2026-09-26T10:12:08+02:00",
+         titulo=dict(en="Magical Tree: the nine stages side by side",
+                     es="Magical Tree: las nueve fases, una al lado de otra"),
+         resumen=dict(
+             en="The nine whole trees, standing on the ground and drawn from "
+                "each stage's script, now open the home page gallery and the "
+                "stages section of The game; each one is still there full "
+                "size.",
+             es="Los nueve árboles enteros, apoyados en el suelo y dibujados "
+                "desde el guion de cada fase, abren ahora la galería de la "
+                "portada y la sección de las fases de El juego; cada uno sigue "
+                "ahí a tamaño completo.")),
     dict(id="magicaltree-castillo", clave="magicaltree",
          clase="actualiza", fecha="2026-09-25T22:50:31+02:00",
          titulo=dict(en="Magical Tree: the castle, drawn right",
