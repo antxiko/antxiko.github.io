@@ -2467,6 +2467,25 @@ HERRAMIENTAS = [
 # nueva a vieja, una clave no existe o un proyecto se queda sin novedad.
 # --------------------------------------------------------------------------
 NOVEDADES = [
+    dict(id="penguinadventure-pingu-en-el-final-malo", clave="penguinadventure",
+         clase="actualiza", fecha="2026-09-26T22:14:25+02:00",
+         titulo=dict(en="Penguin Adventure: the penguin in the bad ending",
+                     es="Penguin Adventure: Pingu en el final malo"),
+         resumen=dict(
+             en="The drawing of the scenes was missing what is on screen when "
+                "the message appears: in the bad ending, the penguin seen from "
+                "behind, crying in front of the king, and in the tree, the "
+                "apple that has fallen. Now each scene carries exactly the "
+                "sprites of a real frame, checked against openMSX with zero "
+                "differences, and in the good ending the penguin stands whole "
+                "on the carpet.",
+             es="Al dibujo de las escenas le faltaba lo que hay en pantalla "
+                "cuando sale el mensaje: en el final malo, el pingüino de "
+                "espaldas llorando delante del rey, y en el árbol, la manzana "
+                "que ha caído. Ahora cada escena lleva justo los sprites de un "
+                "cuadro de verdad, cotejados con openMSX con cero diferencias, "
+                "y en el final bueno el pingüino sale entero sobre la "
+                "alfombra.")),
     dict(id="penguinadventure-arbol-y-finales", clave="penguinadventure",
          clase="actualiza", fecha="2026-09-26T12:09:59+02:00",
          titulo=dict(en="Penguin Adventure: the tree and the two endings",
