@@ -6,8 +6,16 @@
   <link rel="self" type="application/atom+xml" href="https://antxiko.github.io/feed.xml"/>
   <link rel="alternate" type="text/html" hreflang="en" href="https://antxiko.github.io/"/>
   <link rel="alternate" type="application/atom+xml" hreflang="es" href="https://antxiko.github.io/es/feed.xml"/>
-  <updated>2026-09-26T10:12:08+02:00</updated>
+  <updated>2026-09-26T11:35:24+02:00</updated>
   <author><name>antxiko</name><uri>https://github.com/antxiko</uri></author>
+  <entry>
+    <id>tag:antxiko.github.io,2026:novedad/en/penguinadventure-desde-las-tablas</id>
+    <title>Penguin Adventure: everything on screen, drawn from the tables</title>
+    <link rel="alternate" type="text/html" href="https://antxiko.github.io/PenguinAdventure-disassembly/"/>
+    <published>2026-09-26T11:35:24+02:00</published>
+    <updated>2026-09-26T11:35:24+02:00</updated>
+    <summary type="text">The penguin in its poses and terrains, the ten creatures, the dinosaur that closes every third stage, space with its meteorites and winged fish, the backdrops built whole and the twenty-four stages of each LEVEL walked step by step from their four scripts. All checked against openMSX: seven tests, zero differences. The stage diagram and the black-and-white sprite sheets are gone.</summary>
+  </entry>
   <entry>
     <id>tag:antxiko.github.io,2026:novedad/en/magicaltree-nueve-fases</id>
     <title>Magical Tree: the nine stages side by side</title>
@@ -159,13 +167,5 @@
     <published>2026-09-09T01:33:11+02:00</published>
     <updated>2026-09-09T01:33:11+02:00</updated>
     <summary type="text">Konami · MSX · 32 KB cartridge · RC-740. 32,768 bytes · 0 unexplained · reassembles byte for byte · 14,406 of code, 18,362 of data · 1,000 routines · commented to 41.4%.</summary>
-  </entry>
-  <entry>
-    <id>tag:antxiko.github.io,2026:novedad/en/bomberman</id>
-    <title>Bomber Man: disassembled</title>
-    <link rel="alternate" type="text/html" href="https://antxiko.github.io/Bomberman-disassembly/"/>
-    <published>2026-09-08T16:27:46+02:00</published>
-    <updated>2026-09-08T16:27:46+02:00</updated>
-    <summary type="text">Hudson Soft · MSX · 8 KB cartridge. 8,192 bytes · 0 unexplained · reassembles byte for byte · 3,557 of code, 4,635 of data · 200 routines, none under 10% · commented to 50.2%.</summary>
   </entry>
 </feed>
