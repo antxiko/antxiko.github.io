@@ -2467,6 +2467,25 @@ HERRAMIENTAS = [
 # nueva a vieja, una clave no existe o un proyecto se queda sin novedad.
 # --------------------------------------------------------------------------
 NOVEDADES = [
+    dict(id="penguinadventure-atajos-y-tiendas", clave="penguinadventure",
+         clase="actualiza", fecha="2026-09-26T12:00:43+02:00",
+         titulo=dict(en="Penguin Adventure: the six warps and the 41 hidden shops",
+                     es="Penguin Adventure: los seis atajos y las 41 tiendas escondidas"),
+         resumen=dict(
+             en="Backdrop 9 is the WARP: a flagged crevasse and pressing down "
+                "take you from stage 1 to 6, 6 to 9, 9 to 12, 13 to 15, 15 to "
+                "18 and 18 to 21, all six measured in openMSX. Other crevasses "
+                "hide 41 shops: 18 usual, 20 that charge double and 3 with "
+                "Santa Claus, who gives one item away. And a correction: space "
+                "is reached by touching what flies across, not through a "
+                "crevasse.",
+             es="El decorado 9 es el WARP: una grieta marcada y pulsar abajo "
+                "llevan de la fase 1 a la 6, de la 6 a la 9, de la 9 a la 12, de "
+                "la 13 a la 15, de la 15 a la 18 y de la 18 a la 21, medidos los "
+                "seis en openMSX. Otras grietas esconden 41 tiendas: 18 "
+                "normales, 20 que cobran el doble y 3 de Santa Claus, que regala "
+                "una cosa. Y una corrección: al espacio se sube tocando lo que "
+                "cruza volando, no por una grieta.")),
     dict(id="penguinadventure-desde-las-tablas", clave="penguinadventure",
          clase="actualiza", fecha="2026-09-26T11:35:24+02:00",
          titulo=dict(en="Penguin Adventure: everything on screen, drawn from the tables",
