@@ -1272,15 +1272,15 @@ DESENSAMBLADOS = [
             en="<b>The first MSX2 in the series: Dracula&rsquo;s whole castle, "
                "drawn from the ROM.</b> The 156 rooms with what each one hides, "
                "Simon, the enemies and the six bosses, checked against openMSX "
-               "down to zero bytes. The locked doors turn out to be "
-               "<b>33 vendors who do not always sell</b>: what happens depends "
+               "down to zero bytes. There are <b>33 hidden vendors who do not "
+               "always sell</b>: what happens depends "
                "on how many times you hit them. And Dracula is half sprite "
                "and half drawing: the body is copied by the VDP.",
             es="<b>El primer MSX2 de la serie: el castillo de Drácula entero, "
                "dibujado desde la ROM.</b> Las 156 habitaciones con lo que "
                "esconde cada una, Simon, los enemigos y los seis jefes, "
-               "cotejados contra openMSX a cero bytes. Las puertas cerradas "
-               "resultan ser <b>33 vendedores que no siempre venden</b>: lo que "
+               "cotejados contra openMSX a cero bytes. Hay <b>33 vendedores "
+               "escondidos que no siempre venden</b>: lo que "
                "pasa depende de cuántas veces se les pega. Y Drácula es "
                "medio sprite y medio dibujo: el cuerpo lo copia el VDP.",
         ),
@@ -2508,6 +2508,21 @@ HERRAMIENTAS = [
 # nueva a vieja, una clave no existe o un proyecto se queda sin novedad.
 # --------------------------------------------------------------------------
 NOVEDADES = [
+    dict(id="vampirekiller-la-tienda-y-el-final", clave="vampirekiller",
+         clase="actualiza", fecha="2026-09-28T22:04:33+02:00",
+         titulo=dict(en="Vampire Killer: the shop, the old man, the items and the ending",
+                     es="Vampire Killer: la tienda, el viejo, los objetos y el final"),
+         resumen=dict(
+             en="The shop window drawn from the ROM and checked against six "
+                "openMSX dumps, zero dots different. The vendor is a hooded old "
+                "man whose colour tells what comes. The 29 items with what each "
+                "one does, and the ending with its story and its credits, read "
+                "from the ROM.",
+             es="La ventana de la tienda dibujada desde la ROM y cotejada contra "
+                "seis volcados de openMSX, cero puntos distintos. El vendedor es "
+                "un viejo encapuchado cuyo color dice lo que toca. Los 29 "
+                "objetos con lo que hace cada uno, y el final con su historia y "
+                "sus créditos, leídos de la ROM.")),
     dict(id="vampirekiller-los-vendedores", clave="vampirekiller",
          clase="actualiza", fecha="2026-09-28T19:12:12+02:00",
          titulo=dict(en="Vampire Killer: the vendors count hits, and the books set the prices",
@@ -2529,12 +2544,12 @@ NOVEDADES = [
          resumen=dict(
              en="The first MSX2 in the series. The 156 rooms with what they "
                 "hide, Simon, the enemies and the six bosses, drawn from the "
-                "ROM and checked in openMSX. The locked doors turn out to be "
-                "vendors.",
+                "ROM and checked in openMSX. There are 33 hidden vendors who "
+                "do not always sell.",
              es="El primer MSX2 de la serie. Las 156 habitaciones con lo que "
                 "esconden, Simon, los enemigos y los seis jefes, dibujados "
-                "desde la ROM y cotejados en openMSX. Las puertas cerradas "
-                "resultan ser vendedores.")),
+                "desde la ROM y cotejados en openMSX. Hay 33 vendedores "
+                "escondidos que no siempre venden.")),
     dict(id="penguinadventure-las-botas", clave="penguinadventure",
          clase="actualiza", fecha="2026-09-28T15:35:08+02:00",
          titulo=dict(en="Penguin Adventure: the red boots do show up",

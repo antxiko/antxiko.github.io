@@ -6,8 +6,16 @@
   <link rel="self" type="application/atom+xml" href="https://antxiko.github.io/es/feed.xml"/>
   <link rel="alternate" type="text/html" hreflang="es" href="https://antxiko.github.io/es/"/>
   <link rel="alternate" type="application/atom+xml" hreflang="en" href="https://antxiko.github.io/feed.xml"/>
-  <updated>2026-09-28T19:12:12+02:00</updated>
+  <updated>2026-09-28T22:04:33+02:00</updated>
   <author><name>antxiko</name><uri>https://github.com/antxiko</uri></author>
+  <entry>
+    <id>tag:antxiko.github.io,2026:novedad/es/vampirekiller-la-tienda-y-el-final</id>
+    <title>Vampire Killer: la tienda, el viejo, los objetos y el final</title>
+    <link rel="alternate" type="text/html" href="https://antxiko.github.io/VampireKiller-disassembly/"/>
+    <published>2026-09-28T22:04:33+02:00</published>
+    <updated>2026-09-28T22:04:33+02:00</updated>
+    <summary type="text">La ventana de la tienda dibujada desde la ROM y cotejada contra seis volcados de openMSX, cero puntos distintos. El vendedor es un viejo encapuchado cuyo color dice lo que toca. Los 29 objetos con lo que hace cada uno, y el final con su historia y sus créditos, leídos de la ROM.</summary>
+  </entry>
   <entry>
     <id>tag:antxiko.github.io,2026:novedad/es/vampirekiller-los-vendedores</id>
     <title>Vampire Killer: los vendedores cuentan golpes, y los libros ponen los precios</title>
@@ -22,7 +30,7 @@
     <link rel="alternate" type="text/html" href="https://antxiko.github.io/VampireKiller-disassembly/"/>
     <published>2026-09-28T18:12:53+02:00</published>
     <updated>2026-09-28T18:12:53+02:00</updated>
-    <summary type="text">El primer MSX2 de la serie. Las 156 habitaciones con lo que esconden, Simon, los enemigos y los seis jefes, dibujados desde la ROM y cotejados en openMSX. Las puertas cerradas resultan ser vendedores.</summary>
+    <summary type="text">El primer MSX2 de la serie. Las 156 habitaciones con lo que esconden, Simon, los enemigos y los seis jefes, dibujados desde la ROM y cotejados en openMSX. Hay 33 vendedores escondidos que no siempre venden.</summary>
   </entry>
   <entry>
     <id>tag:antxiko.github.io,2026:novedad/es/penguinadventure-las-botas</id>
@@ -159,13 +167,5 @@
     <published>2026-09-24T11:28:16+02:00</published>
     <updated>2026-09-24T11:28:16+02:00</updated>
     <summary type="text">theNestruo dudaba, en el issue #2, de que las pantallas de combate se montaran por espejo, y tenía razón: medidas píxel a píxel, en los cuatro decorados difieren 119, 102, 40 y 128 de las 304 parejas de casillas. Y las doce pantallas de oleadas de antes de cada jefe ya están dibujadas desde la ROM y cotejadas contra el emulador a cero bytes: son las bandas de la propia pantalla de combate, reordenadas por fase, y dentro de una pantalla no se desplaza nada.</summary>
-  </entry>
-  <entry>
-    <id>tag:antxiko.github.io,2026:novedad/es/twinbee-issue1-mapas</id>
-    <title>Twin Bee: los mapas estaban mal, y el fondo también</title>
-    <link rel="alternate" type="text/html" href="https://antxiko.github.io/TwinBee-disassembly/"/>
-    <published>2026-09-22T16:15:36+02:00</published>
-    <updated>2026-09-22T16:15:36+02:00</updated>
-    <summary type="text">theNestruo vio huecos en las sombras de la fase 5 (issue #1) y el fallo estaba en el dibujo, no en el cartucho: la tira de 1.761 filas lleva las cinco fases seguidas y cada mapa se pintaba entera con sus propias casillas; y en partida el registro 7 del VDP vale 0xE0, así que la casilla transparente es negra, no azul. Redibujados por fase sobre fondo negro, y comprobado en el emulador: la sombra es maciza.</summary>
   </entry>
 </feed>
