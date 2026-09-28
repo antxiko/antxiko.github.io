@@ -1258,6 +1258,47 @@ DESENSAMBLADOS = [
         nota=dict(en=None, es=None),
     ),
     dict(
+        clave="vampirekiller",
+        grupo="konami",
+        titulo="Vampire Killer",
+        anio=1986,
+        repo="https://github.com/antxiko/VampireKiller-disassembly",
+        web="https://antxiko.github.io/VampireKiller-disassembly/",
+        meta=dict(
+            en="Konami &middot; MSX2 &middot; 128 KB cartridge &middot; RC-744",
+            es="Konami &middot; MSX2 &middot; cartucho de 128 KB &middot; RC-744",
+        ),
+        claim=dict(
+            en="<b>The first MSX2 in the series: Dracula&rsquo;s whole castle, "
+               "drawn from the ROM.</b> The 156 rooms with what each one hides, "
+               "Simon, the enemies and the six bosses, checked against openMSX "
+               "down to zero bytes. The locked doors turn out to be "
+               "<b>33 vendors who do not always sell</b>: what happens depends "
+               "on how many times you have visited. And Dracula is half sprite "
+               "and half drawing: the body is copied by the VDP.",
+            es="<b>El primer MSX2 de la serie: el castillo de Drácula entero, "
+               "dibujado desde la ROM.</b> Las 156 habitaciones con lo que "
+               "esconde cada una, Simon, los enemigos y los seis jefes, "
+               "cotejados contra openMSX a cero bytes. Las puertas cerradas "
+               "resultan ser <b>33 vendedores que no siempre venden</b>: lo que "
+               "pasa depende de cuántas veces se les ha visitado. Y Drácula es "
+               "medio sprite y medio dibujo: el cuerpo lo copia el VDP.",
+        ),
+        datos=dict(
+            en=lambda i: (f"{cif(131072, i)} bytes &middot; <b>0</b> unexplained "
+                          f"&middot; reassembles <b>byte for byte</b> &middot; "
+                          f"{cif(29786, i)} of code, {cif(101286, i)} of data "
+                          f"&middot; {cif(1909, i)} routines &middot; commented "
+                          f"to <b>49.4%</b>"),
+            es=lambda i: (f"{cif(131072, i)} bytes &middot; <b>0</b> sin explicar "
+                          f"&middot; reensambla <b>byte a byte</b> &middot; "
+                          f"{cif(29786, i)} de código, {cif(101286, i)} de datos "
+                          f"&middot; {cif(1909, i)} rutinas &middot; comentado "
+                          f"al <b>49,4 %</b>"),
+        ),
+        nota=dict(en=None, es=None),
+    ),
+    dict(
         clave="twinbee",
         grupo="konami",
         titulo="Twin Bee",
@@ -2467,6 +2508,19 @@ HERRAMIENTAS = [
 # nueva a vieja, una clave no existe o un proyecto se queda sin novedad.
 # --------------------------------------------------------------------------
 NOVEDADES = [
+    dict(id="vampirekiller", clave="vampirekiller",
+         clase="nuevo", fecha="2026-09-28T18:12:53+02:00",
+         titulo=dict(en="Vampire Killer: Dracula's castle, taken apart",
+                     es="Vampire Killer: el castillo de Drácula, desmontado"),
+         resumen=dict(
+             en="The first MSX2 in the series. The 156 rooms with what they "
+                "hide, Simon, the enemies and the six bosses, drawn from the "
+                "ROM and checked in openMSX. The locked doors turn out to be "
+                "vendors.",
+             es="El primer MSX2 de la serie. Las 156 habitaciones con lo que "
+                "esconden, Simon, los enemigos y los seis jefes, dibujados "
+                "desde la ROM y cotejados en openMSX. Las puertas cerradas "
+                "resultan ser vendedores.")),
     dict(id="penguinadventure-las-botas", clave="penguinadventure",
          clase="actualiza", fecha="2026-09-28T15:35:08+02:00",
          titulo=dict(en="Penguin Adventure: the red boots do show up",

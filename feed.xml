@@ -1,13 +1,21 @@
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom" xml:lang="en">
   <title>antxiko — commented disassemblies of 8-bit games</title>
-  <subtitle>Old 8-bit binaries taken apart byte by byte and commented, with the tools to rebuild them: nothing gets claimed that the binary does not show, and the source has to give the original back, byte for byte. Right now that means 52 MSX games.</subtitle>
+  <subtitle>Old 8-bit binaries taken apart byte by byte and commented, with the tools to rebuild them: nothing gets claimed that the binary does not show, and the source has to give the original back, byte for byte. Right now that means 53 MSX games.</subtitle>
   <id>tag:antxiko.github.io,2026:feed/en</id>
   <link rel="self" type="application/atom+xml" href="https://antxiko.github.io/feed.xml"/>
   <link rel="alternate" type="text/html" hreflang="en" href="https://antxiko.github.io/"/>
   <link rel="alternate" type="application/atom+xml" hreflang="es" href="https://antxiko.github.io/es/feed.xml"/>
-  <updated>2026-09-28T15:35:08+02:00</updated>
+  <updated>2026-09-28T18:12:53+02:00</updated>
   <author><name>antxiko</name><uri>https://github.com/antxiko</uri></author>
+  <entry>
+    <id>tag:antxiko.github.io,2026:novedad/en/vampirekiller</id>
+    <title>Vampire Killer: Dracula's castle, taken apart</title>
+    <link rel="alternate" type="text/html" href="https://antxiko.github.io/VampireKiller-disassembly/"/>
+    <published>2026-09-28T18:12:53+02:00</published>
+    <updated>2026-09-28T18:12:53+02:00</updated>
+    <summary type="text">The first MSX2 in the series. The 156 rooms with what they hide, Simon, the enemies and the six bosses, drawn from the ROM and checked in openMSX. The locked doors turn out to be vendors.</summary>
+  </entry>
   <entry>
     <id>tag:antxiko.github.io,2026:novedad/en/penguinadventure-las-botas</id>
     <title>Penguin Adventure: the red boots do show up</title>
@@ -159,13 +167,5 @@
     <published>2026-09-22T14:32:00+02:00</published>
     <updated>2026-09-22T14:32:00+02:00</updated>
     <summary type="text">theNestruo was right in issue #2: the swimsuit is not in the drawing scripts. Only in the diving event, 0x63E8 swaps sprites 0-1 with 2-3 in the buffer, so the two yellow pieces come to the front and cover the shirt and the boots; the pool's VRAM dump confirms it. And pose 40 carries two transparent columns so the post of the horizontal bar shows through the athlete, so it now sits on the real scenery. New plates, and tests that check the athlete of each VRAM dump against the ROM pixel by pixel.</summary>
-  </entry>
-  <entry>
-    <id>tag:antxiko.github.io,2026:novedad/en/mahjong-en-tecla4</id>
-    <title>Mahjong Dojo's English patch: key 4 goes straight to the tutorial</title>
-    <link rel="alternate" type="text/html" href="https://antxiko.github.io/KonamisMahjongDojo-ENPatch/"/>
-    <published>2026-09-20T11:13:18+02:00</published>
-    <updated>2026-09-20T11:13:18+02:00</updated>
-    <summary type="text">The title menu gains a fourth line, 4-key TUTORIAL, so nobody has to sit through the demo hand. And two faults in the tutorial's tiles are gone: the twenty it took for granted were the opponent's set, rotated 180 degrees, and the empty slot's tile numbers were the list interpreter's control codes, which cut the bottom row off every tile behind a gap. Both proved in bytes and verified in the emulator, slide by slide.</summary>
   </entry>
 </feed>
