@@ -2467,6 +2467,15 @@ HERRAMIENTAS = [
 # nueva a vieja, una clave no existe o un proyecto se queda sin novedad.
 # --------------------------------------------------------------------------
 NOVEDADES = [
+    dict(id="penguinadventure-las-botas", clave="penguinadventure",
+         clase="actualiza", fecha="2026-09-28T15:35:08+02:00",
+         titulo=dict(en="Penguin Adventure: the red boots do show up",
+                     es="Penguin Adventure: las botas rojas sí salen"),
+         resumen=dict(
+             en="The secrets' prizes were off by one: stage 6 gives the blue "
+                "boots and stage 13 the red ones. Checked in openMSX.",
+             es="Los premios de los secretos estaban corridos en uno: la fase 6 "
+                "da las botas azules y la 13 las rojas. Cotejado en openMSX.")),
     dict(id="penguinadventure-las-tiendas", clave="penguinadventure",
          clase="actualiza", fecha="2026-09-28T11:59:37+02:00",
          titulo=dict(en="Penguin Adventure: the hidden shops and the sixteen items",
