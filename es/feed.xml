@@ -6,8 +6,16 @@
   <link rel="self" type="application/atom+xml" href="https://antxiko.github.io/es/feed.xml"/>
   <link rel="alternate" type="text/html" hreflang="es" href="https://antxiko.github.io/es/"/>
   <link rel="alternate" type="application/atom+xml" hreflang="en" href="https://antxiko.github.io/feed.xml"/>
-  <updated>2026-09-28T18:12:53+02:00</updated>
+  <updated>2026-09-28T19:12:12+02:00</updated>
   <author><name>antxiko</name><uri>https://github.com/antxiko</uri></author>
+  <entry>
+    <id>tag:antxiko.github.io,2026:novedad/es/vampirekiller-los-vendedores</id>
+    <title>Vampire Killer: los vendedores cuentan golpes, y los libros ponen los precios</title>
+    <link rel="alternate" type="text/html" href="https://antxiko.github.io/VampireKiller-disassembly/"/>
+    <published>2026-09-28T19:12:12+02:00</published>
+    <updated>2026-09-28T19:12:12+02:00</updated>
+    <summary type="text">Lo que hace un vendedor depende de cuántas veces se le pega, no de las visitas; al morir, la cuenta vuelve a cero. El libro blanco abarata la tienda y el rojo la encarece: la vida llena cuesta 15, 40 u 80 corazones. Visto en openMSX, un vendedor de cada clase.</summary>
+  </entry>
   <entry>
     <id>tag:antxiko.github.io,2026:novedad/es/vampirekiller</id>
     <title>Vampire Killer: el castillo de Drácula, desmontado</title>
@@ -159,13 +167,5 @@
     <published>2026-09-22T16:15:36+02:00</published>
     <updated>2026-09-22T16:15:36+02:00</updated>
     <summary type="text">theNestruo vio huecos en las sombras de la fase 5 (issue #1) y el fallo estaba en el dibujo, no en el cartucho: la tira de 1.761 filas lleva las cinco fases seguidas y cada mapa se pintaba entera con sus propias casillas; y en partida el registro 7 del VDP vale 0xE0, así que la casilla transparente es negra, no azul. Redibujados por fase sobre fondo negro, y comprobado en el emulador: la sombra es maciza.</summary>
-  </entry>
-  <entry>
-    <id>tag:antxiko.github.io,2026:novedad/es/hypersports1-issue2-banador</id>
-    <title>Hyper Sports 1: el bañador del atleta, y una pose cortada por la barra</title>
-    <link rel="alternate" type="text/html" href="https://antxiko.github.io/HyperSports1-disassembly/"/>
-    <published>2026-09-22T14:32:00+02:00</published>
-    <updated>2026-09-22T14:32:00+02:00</updated>
-    <summary type="text">theNestruo tenía razón en el issue #2: el bañador no está en los guiones de dibujo. Solo en los saltos de trampolín, 0x63E8 permuta los sprites 0-1 con los 2-3 en el búfer, y así las dos piezas amarillas pasan delante y tapan la camiseta y las botas; el volcado de VRAM de la piscina lo confirma. Y la pose 40 lleva dos columnas transparentes para que el poste de la barra fija asome a través del atleta, así que ahora va sobre el decorado real. Láminas nuevas, y tests que cotejan el atleta de cada volcado de VRAM contra la ROM píxel a píxel.</summary>
   </entry>
 </feed>

@@ -1274,14 +1274,14 @@ DESENSAMBLADOS = [
                "Simon, the enemies and the six bosses, checked against openMSX "
                "down to zero bytes. The locked doors turn out to be "
                "<b>33 vendors who do not always sell</b>: what happens depends "
-               "on how many times you have visited. And Dracula is half sprite "
+               "on how many times you hit them. And Dracula is half sprite "
                "and half drawing: the body is copied by the VDP.",
             es="<b>El primer MSX2 de la serie: el castillo de Drácula entero, "
                "dibujado desde la ROM.</b> Las 156 habitaciones con lo que "
                "esconde cada una, Simon, los enemigos y los seis jefes, "
                "cotejados contra openMSX a cero bytes. Las puertas cerradas "
                "resultan ser <b>33 vendedores que no siempre venden</b>: lo que "
-               "pasa depende de cuántas veces se les ha visitado. Y Drácula es "
+               "pasa depende de cuántas veces se les pega. Y Drácula es "
                "medio sprite y medio dibujo: el cuerpo lo copia el VDP.",
         ),
         datos=dict(
@@ -2508,6 +2508,20 @@ HERRAMIENTAS = [
 # nueva a vieja, una clave no existe o un proyecto se queda sin novedad.
 # --------------------------------------------------------------------------
 NOVEDADES = [
+    dict(id="vampirekiller-los-vendedores", clave="vampirekiller",
+         clase="actualiza", fecha="2026-09-28T19:12:12+02:00",
+         titulo=dict(en="Vampire Killer: the vendors count hits, and the books set the prices",
+                     es="Vampire Killer: los vendedores cuentan golpes, y los libros ponen los precios"),
+         resumen=dict(
+             en="What a vendor does depends on how many times you hit him, not "
+                "on your visits; dying resets the count. The white book makes "
+                "the shop cheaper and the red one dearer: full life costs 15, "
+                "40 or 80 hearts. Seen in openMSX, one vendor of each class.",
+             es="Lo que hace un vendedor depende de cuántas veces se le pega, "
+                "no de las visitas; al morir, la cuenta vuelve a cero. El libro "
+                "blanco abarata la tienda y el rojo la encarece: la vida llena "
+                "cuesta 15, 40 u 80 corazones. Visto en openMSX, un vendedor "
+                "de cada clase.")),
     dict(id="vampirekiller", clave="vampirekiller",
          clase="nuevo", fecha="2026-09-28T18:12:53+02:00",
          titulo=dict(en="Vampire Killer: Dracula's castle, taken apart",
