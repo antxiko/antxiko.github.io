@@ -6,8 +6,16 @@
   <link rel="self" type="application/atom+xml" href="https://antxiko.github.io/feed.xml"/>
   <link rel="alternate" type="text/html" hreflang="en" href="https://antxiko.github.io/"/>
   <link rel="alternate" type="application/atom+xml" hreflang="es" href="https://antxiko.github.io/es/feed.xml"/>
-  <updated>2026-09-28T11:06:18+02:00</updated>
+  <updated>2026-09-28T11:59:37+02:00</updated>
   <author><name>antxiko</name><uri>https://github.com/antxiko</uri></author>
+  <entry>
+    <id>tag:antxiko.github.io,2026:novedad/en/penguinadventure-las-tiendas</id>
+    <title>Penguin Adventure: the hidden shops and the sixteen items</title>
+    <link rel="alternate" type="text/html" href="https://antxiko.github.io/PenguinAdventure-disassembly/"/>
+    <published>2026-09-28T11:59:37+02:00</published>
+    <updated>2026-09-28T11:59:37+02:00</updated>
+    <summary type="text">The three shopkeepers drawn from the tables, each with his greeting and his farewell: the usual one, the one who charges double and Santa Claus, who gives one thing away. The sixteen items with what each one does, read from whoever checks its flag. Checked against 14 openMSX dumps, zero differences.</summary>
+  </entry>
   <entry>
     <id>tag:antxiko.github.io,2026:novedad/en/penguinadventure-el-mapa</id>
     <title>Penguin Adventure: the map before every stage</title>
@@ -159,13 +167,5 @@
     <published>2026-09-18T18:27:11+02:00</published>
     <updated>2026-09-18T18:27:11+02:00</updated>
     <summary type="text">Twenty-seven changes published between the 11th and the 18th: the three loading pictures and the end screens moved into ROM and compressed with ZX0, a map of what lives in each stretch of the 64 KB of RAM, the near view drawn through the name table and the cursor turned into a sprite (from 3.2 to 43 turns a second), the general map drawn in 0.7 seconds instead of 3.9, the battle refreshing only what changes, a troop strength bug in battle fixed after being wrong since 1988, Gollum made a hobbit, two more heroes, Tom Bombadil and Radagast, every unit on the map marked with the Ring, and the pre-battle screen at human speed. The patch's website still describes the cartridge as it was on the 10th; the repository has all of it.</summary>
-  </entry>
-  <entry>
-    <id>tag:antxiko.github.io,2026:novedad/en/penguinadventure</id>
-    <title>Penguin Adventure, taken apart</title>
-    <link rel="alternate" type="text/html" href="https://antxiko.github.io/PenguinAdventure-disassembly/"/>
-    <published>2026-09-16T12:10:00+02:00</published>
-    <updated>2026-09-16T12:10:00+02:00</updated>
-    <summary type="text">The 128 KB sequel to Antarctic Adventure, explained byte for byte and commented to 44.6% with no routine left under the 10% line. Out of it came two hidden keyboard codes, NORIKO and KAZUMI, which turn on a CONTINUE that does not exist without them: the nine keys the cartridge watches are exactly the letters of those two names. Both are verified in the emulator, not just read off the listing.</summary>
   </entry>
 </feed>

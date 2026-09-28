@@ -2467,6 +2467,21 @@ HERRAMIENTAS = [
 # nueva a vieja, una clave no existe o un proyecto se queda sin novedad.
 # --------------------------------------------------------------------------
 NOVEDADES = [
+    dict(id="penguinadventure-las-tiendas", clave="penguinadventure",
+         clase="actualiza", fecha="2026-09-28T11:59:37+02:00",
+         titulo=dict(en="Penguin Adventure: the hidden shops and the sixteen items",
+                     es="Penguin Adventure: las tiendas escondidas y los dieciséis artículos"),
+         resumen=dict(
+             en="The three shopkeepers drawn from the tables, each with his "
+                "greeting and his farewell: the usual one, the one who charges "
+                "double and Santa Claus, who gives one thing away. The sixteen "
+                "items with what each one does, read from whoever checks its "
+                "flag. Checked against 14 openMSX dumps, zero differences.",
+             es="Los tres tenderos dibujados desde las tablas, cada uno con su "
+                "saludo y su despedida: el de siempre, el que cobra el doble y "
+                "Santa Claus, que regala una cosa. Los dieciséis artículos con "
+                "lo que hace cada uno, leído de quien mira su bandera. "
+                "Cotejado contra 14 volcados de openMSX, cero diferencias.")),
     dict(id="penguinadventure-el-mapa", clave="penguinadventure",
          clase="actualiza", fecha="2026-09-28T11:06:18+02:00",
          titulo=dict(en="Penguin Adventure: the map before every stage",
