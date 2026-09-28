@@ -6,8 +6,16 @@
   <link rel="self" type="application/atom+xml" href="https://antxiko.github.io/es/feed.xml"/>
   <link rel="alternate" type="text/html" hreflang="es" href="https://antxiko.github.io/es/"/>
   <link rel="alternate" type="application/atom+xml" hreflang="en" href="https://antxiko.github.io/feed.xml"/>
-  <updated>2026-09-26T23:16:10+02:00</updated>
+  <updated>2026-09-28T11:06:18+02:00</updated>
   <author><name>antxiko</name><uri>https://github.com/antxiko</uri></author>
+  <entry>
+    <id>tag:antxiko.github.io,2026:novedad/es/penguinadventure-el-mapa</id>
+    <title>Penguin Adventure: el mapa de antes de cada fase</title>
+    <link rel="alternate" type="text/html" href="https://antxiko.github.io/PenguinAdventure-disassembly/"/>
+    <published>2026-09-28T11:06:18+02:00</published>
+    <updated>2026-09-28T11:06:18+02:00</updated>
+    <summary type="text">El mapa de antes de cada fase, dibujado desde sus tablas y cotejado contra el emulador, con los atajos.</summary>
+  </entry>
   <entry>
     <id>tag:antxiko.github.io,2026:novedad/es/penguinadventure-la-pelea</id>
     <title>Penguin Adventure: la pelea con el dinosaurio</title>
@@ -159,13 +167,5 @@
     <published>2026-09-16T12:10:00+02:00</published>
     <updated>2026-09-16T12:10:00+02:00</updated>
     <summary type="text">La continuación de Antarctic Adventure, 128 KB explicados byte a byte y comentados al 44,6 % sin dejar una sola rutina por debajo del listón del 10 %. De ahí salieron dos claves de teclado escondidas, NORIKO y KAZUMI, que encienden un CONTINUE que sin ellas no existe: las nueve teclas que el cartucho vigila son exactamente las letras de esos dos nombres. Las dos están comprobadas en el emulador, no sólo leídas del listado.</summary>
-  </entry>
-  <entry>
-    <id>tag:antxiko.github.io,2026:novedad/es/f1spirit-100</id>
-    <title>F-1 Spirit, al 100 %</title>
-    <link rel="alternate" type="text/html" href="https://antxiko.github.io/F1Spirit-disassembly/"/>
-    <published>2026-09-15T14:21:39+02:00</published>
-    <updated>2026-09-15T14:21:39+02:00</updated>
-    <summary type="text">Los últimos 504 bytes del MegaROM ya están explicados, y ninguno era código: dos dibujos comprimidos que no pinta nadie, tres formas de onda del SCC a las que no apunta ningún instrumento, la barra de la pantalla partida y filas de dos tablas a las que no llega su lector. Y las cuatro partidas grabadas de la demo, ya con quien las lee.</summary>
   </entry>
 </feed>

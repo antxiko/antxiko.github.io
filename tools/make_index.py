@@ -2467,6 +2467,15 @@ HERRAMIENTAS = [
 # nueva a vieja, una clave no existe o un proyecto se queda sin novedad.
 # --------------------------------------------------------------------------
 NOVEDADES = [
+    dict(id="penguinadventure-el-mapa", clave="penguinadventure",
+         clase="actualiza", fecha="2026-09-28T11:06:18+02:00",
+         titulo=dict(en="Penguin Adventure: the map before every stage",
+                     es="Penguin Adventure: el mapa de antes de cada fase"),
+         resumen=dict(
+             en="The map before every stage, drawn from its tables and checked "
+                "against the emulator, warps included.",
+             es="El mapa de antes de cada fase, dibujado desde sus tablas y "
+                "cotejado contra el emulador, con los atajos.")),
     dict(id="penguinadventure-la-pelea", clave="penguinadventure",
          clase="actualiza", fecha="2026-09-26T23:16:10+02:00",
          titulo=dict(en="Penguin Adventure: the fight with the dinosaur",
