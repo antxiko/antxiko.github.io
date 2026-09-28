@@ -6,8 +6,16 @@
   <link rel="self" type="application/atom+xml" href="https://antxiko.github.io/es/feed.xml"/>
   <link rel="alternate" type="text/html" hreflang="es" href="https://antxiko.github.io/es/"/>
   <link rel="alternate" type="application/atom+xml" hreflang="en" href="https://antxiko.github.io/feed.xml"/>
-  <updated>2026-09-28T11:06:18+02:00</updated>
+  <updated>2026-09-28T11:59:37+02:00</updated>
   <author><name>antxiko</name><uri>https://github.com/antxiko</uri></author>
+  <entry>
+    <id>tag:antxiko.github.io,2026:novedad/es/penguinadventure-las-tiendas</id>
+    <title>Penguin Adventure: las tiendas escondidas y los dieciséis artículos</title>
+    <link rel="alternate" type="text/html" href="https://antxiko.github.io/PenguinAdventure-disassembly/"/>
+    <published>2026-09-28T11:59:37+02:00</published>
+    <updated>2026-09-28T11:59:37+02:00</updated>
+    <summary type="text">Los tres tenderos dibujados desde las tablas, cada uno con su saludo y su despedida: el de siempre, el que cobra el doble y Santa Claus, que regala una cosa. Los dieciséis artículos con lo que hace cada uno, leído de quien mira su bandera. Cotejado contra 14 volcados de openMSX, cero diferencias.</summary>
+  </entry>
   <entry>
     <id>tag:antxiko.github.io,2026:novedad/es/penguinadventure-el-mapa</id>
     <title>Penguin Adventure: el mapa de antes de cada fase</title>
@@ -159,13 +167,5 @@
     <published>2026-09-18T18:27:11+02:00</published>
     <updated>2026-09-18T18:27:11+02:00</updated>
     <summary type="text">Veintisiete cambios publicados entre el 11 y el 18: las tres imágenes de carga y las pantallas finales pasan a la ROM comprimidas con ZX0, un mapa de qué vive en cada tramo de los 64 KB de RAM, la vista de cerca dibujada por la tabla de nombres y el cursor convertido en sprite (de 3,2 a 43 vueltas por segundo), el mapa general dibujado en 0,7 segundos en vez de 3,9, la batalla refrescando sólo lo que cambia, arreglada la fuerza de la tropa en batalla, rota desde 1988, Gollum convertido en hobbit, dos héroes más, Tom Bombadil y Radagast, cada unidad del mapa marcada con el Anillo, y la pantalla de antes de la batalla a velocidad humana. La web del parche sigue contando el cartucho tal como estaba el día 10; el repositorio lo tiene todo.</summary>
-  </entry>
-  <entry>
-    <id>tag:antxiko.github.io,2026:novedad/es/penguinadventure</id>
-    <title>Penguin Adventure, desmontado</title>
-    <link rel="alternate" type="text/html" href="https://antxiko.github.io/PenguinAdventure-disassembly/"/>
-    <published>2026-09-16T12:10:00+02:00</published>
-    <updated>2026-09-16T12:10:00+02:00</updated>
-    <summary type="text">La continuación de Antarctic Adventure, 128 KB explicados byte a byte y comentados al 44,6 % sin dejar una sola rutina por debajo del listón del 10 %. De ahí salieron dos claves de teclado escondidas, NORIKO y KAZUMI, que encienden un CONTINUE que sin ellas no existe: las nueve teclas que el cartucho vigila son exactamente las letras de esos dos nombres. Las dos están comprobadas en el emulador, no sólo leídas del listado.</summary>
   </entry>
 </feed>
