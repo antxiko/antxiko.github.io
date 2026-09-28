@@ -6,8 +6,16 @@
   <link rel="self" type="application/atom+xml" href="https://antxiko.github.io/feed.xml"/>
   <link rel="alternate" type="text/html" hreflang="en" href="https://antxiko.github.io/"/>
   <link rel="alternate" type="application/atom+xml" hreflang="es" href="https://antxiko.github.io/es/feed.xml"/>
-  <updated>2026-09-28T18:12:53+02:00</updated>
+  <updated>2026-09-28T19:12:12+02:00</updated>
   <author><name>antxiko</name><uri>https://github.com/antxiko</uri></author>
+  <entry>
+    <id>tag:antxiko.github.io,2026:novedad/en/vampirekiller-los-vendedores</id>
+    <title>Vampire Killer: the vendors count hits, and the books set the prices</title>
+    <link rel="alternate" type="text/html" href="https://antxiko.github.io/VampireKiller-disassembly/"/>
+    <published>2026-09-28T19:12:12+02:00</published>
+    <updated>2026-09-28T19:12:12+02:00</updated>
+    <summary type="text">What a vendor does depends on how many times you hit him, not on your visits; dying resets the count. The white book makes the shop cheaper and the red one dearer: full life costs 15, 40 or 80 hearts. Seen in openMSX, one vendor of each class.</summary>
+  </entry>
   <entry>
     <id>tag:antxiko.github.io,2026:novedad/en/vampirekiller</id>
     <title>Vampire Killer: Dracula's castle, taken apart</title>
@@ -159,13 +167,5 @@
     <published>2026-09-22T16:15:36+02:00</published>
     <updated>2026-09-22T16:15:36+02:00</updated>
     <summary type="text">theNestruo saw holes in the stage 5 shadows (issue #1) and the fault was in the drawing, not in the cartridge: the 1,761-row strip carries the five stages one after another and each map was painted whole with its own tiles; and in play the VDP's register 7 is 0xE0, so the transparent tile is black, not blue. Redrawn per stage on a black background, and checked in the emulator: the shadow is solid.</summary>
-  </entry>
-  <entry>
-    <id>tag:antxiko.github.io,2026:novedad/en/hypersports1-issue2-banador</id>
-    <title>Hyper Sports 1: the athlete's swimsuit, and a pose cut by the bar</title>
-    <link rel="alternate" type="text/html" href="https://antxiko.github.io/HyperSports1-disassembly/"/>
-    <published>2026-09-22T14:32:00+02:00</published>
-    <updated>2026-09-22T14:32:00+02:00</updated>
-    <summary type="text">theNestruo was right in issue #2: the swimsuit is not in the drawing scripts. Only in the diving event, 0x63E8 swaps sprites 0-1 with 2-3 in the buffer, so the two yellow pieces come to the front and cover the shirt and the boots; the pool's VRAM dump confirms it. And pose 40 carries two transparent columns so the post of the horizontal bar shows through the athlete, so it now sits on the real scenery. New plates, and tests that check the athlete of each VRAM dump against the ROM pixel by pixel.</summary>
   </entry>
 </feed>
