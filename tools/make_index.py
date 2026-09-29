@@ -1299,6 +1299,47 @@ DESENSAMBLADOS = [
         nota=dict(en=None, es=None),
     ),
     dict(
+        clave="kingkong2",
+        grupo="konami",
+        titulo="King Kong 2: Yomigaeru Densetsu",
+        anio=1986,
+        repo="https://github.com/antxiko/KingKong2-disassembly",
+        web="https://antxiko.github.io/KingKong2-disassembly/",
+        meta=dict(
+            en="Konami &middot; MSX2 &middot; 128 KB cartridge &middot; RC-745",
+            es="Konami &middot; MSX2 &middot; cartucho de 128 KB &middot; RC-745",
+        ),
+        claim=dict(
+            en="<b>A 140-screen island, drawn from the ROM, with what every "
+               "screen hides</b>: 15 passages, 37 pieces of scenery that can be "
+               "removed, the items and who talks. Mitchel, the 55 named enemies "
+               "and <b>five bosses that are not sprites</b>, painted by the VDP "
+               "and checked against openMSX down to zero bytes. Three endings "
+               "that depend on the days and on how many times you continue, and "
+               "an axe that only works against one enemy.",
+            es="<b>Una isla de 140 pantallas, dibujada desde la ROM, con lo que "
+               "esconde cada una</b>: 15 pasadizos, 37 cosas de decorado que se "
+               "quitan, los objetos y quién habla. Mitchel, los 55 enemigos con "
+               "nombre y <b>cinco jefes que no son sprites</b>, pintados por el "
+               "VDP y cotejados contra openMSX a cero bytes. Tres finales que "
+               "dependen de los días y de las veces que continúas, y un hacha "
+               "que solo sirve contra un enemigo.",
+        ),
+        datos=dict(
+            en=lambda i: (f"{cif(131072, i)} bytes &middot; <b>0</b> unexplained "
+                          f"&middot; reassembles <b>byte for byte</b> &middot; "
+                          f"{cif(37983, i)} of code, {cif(93089, i)} of data "
+                          f"&middot; {cif(2414, i)} routines &middot; commented "
+                          f"to <b>40.1%</b>"),
+            es=lambda i: (f"{cif(131072, i)} bytes &middot; <b>0</b> sin explicar "
+                          f"&middot; reensambla <b>byte a byte</b> &middot; "
+                          f"{cif(37983, i)} de código, {cif(93089, i)} de datos "
+                          f"&middot; {cif(2414, i)} rutinas &middot; comentado "
+                          f"al <b>40,1 %</b>"),
+        ),
+        nota=dict(en=None, es=None),
+    ),
+    dict(
         clave="twinbee",
         grupo="konami",
         titulo="Twin Bee",
@@ -2508,6 +2549,20 @@ HERRAMIENTAS = [
 # nueva a vieja, una clave no existe o un proyecto se queda sin novedad.
 # --------------------------------------------------------------------------
 NOVEDADES = [
+    dict(id="kingkong2", clave="kingkong2",
+         clase="nuevo", fecha="2026-09-29T14:29:35+02:00",
+         titulo=dict(en="King Kong 2: the island and what it hides, taken apart",
+                     es="King Kong 2: la isla y lo que esconde, desmontada"),
+         resumen=dict(
+             en="The second MSX2 in the series. The 140 screens with their "
+                "passages and removable scenery, Mitchel, the 55 enemies and "
+                "five bosses painted by the VDP, drawn from the ROM and checked "
+                "in openMSX. Three endings, and a level trick seen in play.",
+             es="El segundo MSX2 de la serie. Las 140 pantallas con sus "
+                "pasadizos y el decorado que se quita, Mitchel, los 55 enemigos "
+                "y cinco jefes que pinta el VDP, dibujados desde la ROM y "
+                "cotejados en openMSX. Tres finales, y un truco de nivel visto "
+                "jugando.")),
     dict(id="vampirekiller-la-tienda-y-el-final", clave="vampirekiller",
          clase="actualiza", fecha="2026-09-28T22:04:33+02:00",
          titulo=dict(en="Vampire Killer: the shop, the old man, the items and the ending",
