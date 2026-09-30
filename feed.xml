@@ -6,8 +6,16 @@
   <link rel="self" type="application/atom+xml" href="https://antxiko.github.io/feed.xml"/>
   <link rel="alternate" type="text/html" hreflang="en" href="https://antxiko.github.io/"/>
   <link rel="alternate" type="application/atom+xml" hreflang="es" href="https://antxiko.github.io/es/feed.xml"/>
-  <updated>2026-09-30T17:24:33+02:00</updated>
+  <updated>2026-09-30T21:00:00+02:00</updated>
   <author><name>antxiko</name><uri>https://github.com/antxiko</uri></author>
+  <entry>
+    <id>tag:antxiko.github.io,2026:novedad/en/hinotori-seis-figuras-y-los-mapas</id>
+    <title>Hinotori: six figures nobody uses, and the maps put right</title>
+    <link rel="alternate" type="text/html" href="https://antxiko.github.io/Hinotori-disassembly/"/>
+    <published>2026-09-30T21:00:00+02:00</published>
+    <updated>2026-09-30T21:00:00+02:00</updated>
+    <summary type="text">Eighteen compressed strips that no list in the cartridge names, opened: a hunched beast, a one-eyed monster, a face, a 32x48 demon and a small warrior, none of them in the game. And the stage maps had the four rows of each block upside down: fixed, and the check against openMSX now looks at the order of the rows.</summary>
+  </entry>
   <entry>
     <id>tag:antxiko.github.io,2026:novedad/en/hinotori</id>
     <title>Hinotori: the Firebird and its seventeen passwords, taken apart</title>
@@ -159,13 +167,5 @@
     <published>2026-09-25T21:08:29+02:00</published>
     <updated>2026-09-25T21:08:29+02:00</updated>
     <summary type="text">Konami · MSX · 16 KB cartridge · RC-713. 16,384 bytes · 0 unexplained · reassembles byte for byte · 8,537 of code, 7,847 of data · 628 routines · commented to 47.4%.</summary>
-  </entry>
-  <entry>
-    <id>tag:antxiko.github.io,2026:novedad/en/circus-pista-desde-las-tablas</id>
-    <title>Circus Charlie: the ring, drawn from the tables</title>
-    <link rel="alternate" type="text/html" href="https://antxiko.github.io/CircusCharlie-disassembly/"/>
-    <published>2026-09-25T19:53:22+02:00</published>
-    <updated>2026-09-25T19:53:22+02:00</updated>
-    <summary type="text">The five pictures of the acts, with Charlie, his animal and the obstacles, no longer come from running the cartridge: tools/pista.py rewrites the game frame from the cartridge's own tables, moving objects, poses and start-ups, and against 43 openMSX dumps it gives zero bytes of RAM and VRAM different.</summary>
   </entry>
 </feed>
