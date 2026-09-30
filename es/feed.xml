@@ -1,13 +1,21 @@
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom" xml:lang="es">
   <title>antxiko — desensamblados comentados de juegos de 8 bits</title>
-  <subtitle>Binarios viejos de 8 bits desmontados byte a byte y comentados, con las herramientas para volver a montarlos: no se afirma nada que el binario no enseñe, y el código fuente tiene que devolver el original, byte a byte. Ahora mismo son 55 juegos de MSX.</subtitle>
+  <subtitle>Binarios viejos de 8 bits desmontados byte a byte y comentados, con las herramientas para volver a montarlos: no se afirma nada que el binario no enseñe, y el código fuente tiene que devolver el original, byte a byte. Ahora mismo son 56 juegos de MSX.</subtitle>
   <id>tag:antxiko.github.io,2026:feed/es</id>
   <link rel="self" type="application/atom+xml" href="https://antxiko.github.io/es/feed.xml"/>
   <link rel="alternate" type="text/html" hreflang="es" href="https://antxiko.github.io/es/"/>
   <link rel="alternate" type="application/atom+xml" hreflang="en" href="https://antxiko.github.io/feed.xml"/>
-  <updated>2026-09-30T13:30:00+02:00</updated>
+  <updated>2026-09-30T17:24:33+02:00</updated>
   <author><name>antxiko</name><uri>https://github.com/antxiko</uri></author>
+  <entry>
+    <id>tag:antxiko.github.io,2026:novedad/es/hinotori</id>
+    <title>Hinotori: el pájaro de fuego y sus diecisiete contraseñas, desmontado</title>
+    <link rel="alternate" type="text/html" href="https://antxiko.github.io/Hinotori-disassembly/"/>
+    <published>2026-09-30T17:24:33+02:00</published>
+    <updated>2026-09-30T17:24:33+02:00</updated>
+    <summary type="text">El tercer MSX2 de la serie, explicado al 100 % y comentado al 40,4 %. Las seis fases, sus salas y las puertas que las unen, Gao y los bichos dibujados desde la ROM y cotejados en openMSX. Con King Kong 2 al lado, arranca King Kong 2 y le graba la partida; quince de los diecisiete trucos probados jugando.</summary>
+  </entry>
   <entry>
     <id>tag:antxiko.github.io,2026:novedad/es/qbert-el-visor-de-patrones</id>
     <title>Q*bert: el visor de patrones que no llama nadie, ejecutado</title>
@@ -159,13 +167,5 @@
     <published>2026-09-25T19:53:22+02:00</published>
     <updated>2026-09-25T19:53:22+02:00</updated>
     <summary type="text">Las cinco imágenes de las atracciones, con Charlie, su animal y los obstáculos, ya no salen de ejecutar el cartucho: tools/pista.py reescribe el cuadro de partida desde las tablas del propio cartucho, móviles, poses y arranques, y contra 43 volcados de openMSX da cero bytes de RAM y VRAM distintos.</summary>
-  </entry>
-  <entry>
-    <id>tag:antxiko.github.io,2026:novedad/es/circus</id>
-    <title>Circus Charlie: desensamblado</title>
-    <link rel="alternate" type="text/html" href="https://antxiko.github.io/CircusCharlie-disassembly/"/>
-    <published>2026-09-25T15:49:33+02:00</published>
-    <updated>2026-09-25T15:49:33+02:00</updated>
-    <summary type="text">Konami · MSX · cartucho de 16 KB · RC-712. 16.384 bytes · 0 sin explicar · reensambla byte a byte · 7.894 de código, 8.490 de datos · 576 rutinas · comentado al 47,1 %.</summary>
   </entry>
 </feed>
