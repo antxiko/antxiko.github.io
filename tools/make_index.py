@@ -2627,6 +2627,21 @@ HERRAMIENTAS = [
 # nueva a vieja, una clave no existe o un proyecto se queda sin novedad.
 # --------------------------------------------------------------------------
 NOVEDADES = [
+    dict(id="hinotori-los-jefes-medidos-y-el-fenix", clave="hinotori",
+         clase="actualiza", fecha="2026-09-30T23:30:00+02:00",
+         titulo=dict(en="Hinotori: the room bosses checked in openMSX, and the phoenix's message",
+                     es="Hinotori: los jefes de las salas, cotejados en openMSX, y el mensaje del fénix"),
+         resumen=dict(
+             en="Going into each of the six rooms in openMSX, the VRAM holds "
+                "exactly the boss drawn from the ROM, and none of the unused "
+                "figures; the stage-4 room has no boss. In the last room the "
+                "phoenix appears: to fight the demon you need five heart "
+                "jewels.",
+             es="Entrando en cada una de las seis salas en openMSX, la VRAM "
+                "lleva justo el jefe dibujado desde la ROM y ninguna de las "
+                "figuras sin cargar; la sala de la fase 4 no tiene jefe. En la "
+                "última sala sale el fénix: para luchar contra el demonio "
+                "hacen falta cinco joyas del corazón.")),
     dict(id="hinotori-otra-version-de-cinco-jefes", clave="hinotori",
          clase="actualiza", fecha="2026-09-30T23:00:00+02:00",
          titulo=dict(en="Hinotori: the unused figures are another version of five bosses",

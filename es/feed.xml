@@ -6,8 +6,16 @@
   <link rel="self" type="application/atom+xml" href="https://antxiko.github.io/es/feed.xml"/>
   <link rel="alternate" type="text/html" hreflang="es" href="https://antxiko.github.io/es/"/>
   <link rel="alternate" type="application/atom+xml" hreflang="en" href="https://antxiko.github.io/feed.xml"/>
-  <updated>2026-09-30T23:00:00+02:00</updated>
+  <updated>2026-09-30T23:30:00+02:00</updated>
   <author><name>antxiko</name><uri>https://github.com/antxiko</uri></author>
+  <entry>
+    <id>tag:antxiko.github.io,2026:novedad/es/hinotori-los-jefes-medidos-y-el-fenix</id>
+    <title>Hinotori: los jefes de las salas, cotejados en openMSX, y el mensaje del fénix</title>
+    <link rel="alternate" type="text/html" href="https://antxiko.github.io/Hinotori-disassembly/"/>
+    <published>2026-09-30T23:30:00+02:00</published>
+    <updated>2026-09-30T23:30:00+02:00</updated>
+    <summary type="text">Entrando en cada una de las seis salas en openMSX, la VRAM lleva justo el jefe dibujado desde la ROM y ninguna de las figuras sin cargar; la sala de la fase 4 no tiene jefe. En la última sala sale el fénix: para luchar contra el demonio hacen falta cinco joyas del corazón.</summary>
+  </entry>
   <entry>
     <id>tag:antxiko.github.io,2026:novedad/es/hinotori-otra-version-de-cinco-jefes</id>
     <title>Hinotori: las figuras sin cargar son otra versión de cinco jefes</title>
@@ -159,13 +167,5 @@
     <published>2026-09-25T22:50:31+02:00</published>
     <updated>2026-09-25T22:50:31+02:00</updated>
     <summary type="text">El castillo y el árbol que se pinta entre fases estaban dibujados con las columnas de izquierda a derecha, y el cartucho los pinta del centro hacia fuera: el castillo salía revuelto. Ahora cada columna va donde la pone 0x7629, el árbol lleva los colores de la fase que empieza y el castillo sus ventanas con los dos personajes y el rótulo CONGRATULATIONS. Cotejado contra openMSX en nueve volcados: 0 bytes distintos.</summary>
-  </entry>
-  <entry>
-    <id>tag:antxiko.github.io,2026:novedad/es/comicbakery</id>
-    <title>Comic Bakery: desensamblado</title>
-    <link rel="alternate" type="text/html" href="https://antxiko.github.io/ComicBakery-disassembly/"/>
-    <published>2026-09-25T21:31:15+02:00</published>
-    <updated>2026-09-25T21:31:15+02:00</updated>
-    <summary type="text">Konami · MSX · cartucho de 16 KB · RC-714. 16.384 bytes · 0 sin explicar · reensambla byte a byte · 8.097 de código, 8.287 de datos · 535 rutinas · comentado al 46,9 %.</summary>
   </entry>
 </feed>
