@@ -2627,6 +2627,23 @@ HERRAMIENTAS = [
 # nueva a vieja, una clave no existe o un proyecto se queda sin novedad.
 # --------------------------------------------------------------------------
 NOVEDADES = [
+    dict(id="hinotori-otra-version-de-cinco-jefes", clave="hinotori",
+         clase="actualiza", fecha="2026-09-30T23:00:00+02:00",
+         titulo=dict(en="Hinotori: the unused figures are another version of five bosses",
+                     es="Hinotori: las figuras sin cargar son otra versión de cinco jefes"),
+         resumen=dict(
+             en="Correction: the figures published as used by nobody are, "
+                "five of them, bosses of the game drawn another way: the "
+                "beast, the one-eyed monster, the face, the demon and a "
+                "warrior with several arms, found in 768 more bytes. Not one "
+                "sprite in common with the ones the rooms load; now each one "
+                "is shown next to its boss.",
+             es="Corrección: de las figuras publicadas como de nadie, cinco "
+                "son jefes del juego dibujados de otra manera: la bestia, el "
+                "monstruo de un ojo, la cara, el demonio y un guerrero de "
+                "varios brazos, sacado de otros 768 bytes. Ni un sprite en "
+                "común con los que cargan las salas; ahora cada una sale al "
+                "lado de su jefe.")),
     dict(id="hinotori-seis-figuras-y-los-mapas", clave="hinotori",
          clase="actualiza", fecha="2026-09-30T21:00:00+02:00",
          titulo=dict(en="Hinotori: six figures nobody uses, and the maps put right",

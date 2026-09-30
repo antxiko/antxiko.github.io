@@ -6,8 +6,16 @@
   <link rel="self" type="application/atom+xml" href="https://antxiko.github.io/es/feed.xml"/>
   <link rel="alternate" type="text/html" hreflang="es" href="https://antxiko.github.io/es/"/>
   <link rel="alternate" type="application/atom+xml" hreflang="en" href="https://antxiko.github.io/feed.xml"/>
-  <updated>2026-09-30T21:00:00+02:00</updated>
+  <updated>2026-09-30T23:00:00+02:00</updated>
   <author><name>antxiko</name><uri>https://github.com/antxiko</uri></author>
+  <entry>
+    <id>tag:antxiko.github.io,2026:novedad/es/hinotori-otra-version-de-cinco-jefes</id>
+    <title>Hinotori: las figuras sin cargar son otra versión de cinco jefes</title>
+    <link rel="alternate" type="text/html" href="https://antxiko.github.io/Hinotori-disassembly/"/>
+    <published>2026-09-30T23:00:00+02:00</published>
+    <updated>2026-09-30T23:00:00+02:00</updated>
+    <summary type="text">Corrección: de las figuras publicadas como de nadie, cinco son jefes del juego dibujados de otra manera: la bestia, el monstruo de un ojo, la cara, el demonio y un guerrero de varios brazos, sacado de otros 768 bytes. Ni un sprite en común con los que cargan las salas; ahora cada una sale al lado de su jefe.</summary>
+  </entry>
   <entry>
     <id>tag:antxiko.github.io,2026:novedad/es/hinotori-seis-figuras-y-los-mapas</id>
     <title>Hinotori: seis figuras que no usa nadie, y los mapas corregidos</title>
@@ -159,13 +167,5 @@
     <published>2026-09-25T21:31:15+02:00</published>
     <updated>2026-09-25T21:31:15+02:00</updated>
     <summary type="text">Konami · MSX · cartucho de 16 KB · RC-714. 16.384 bytes · 0 sin explicar · reensambla byte a byte · 8.097 de código, 8.287 de datos · 535 rutinas · comentado al 46,9 %.</summary>
-  </entry>
-  <entry>
-    <id>tag:antxiko.github.io,2026:novedad/es/magicaltree</id>
-    <title>Magical Tree: desensamblado</title>
-    <link rel="alternate" type="text/html" href="https://antxiko.github.io/MagicalTree-disassembly/"/>
-    <published>2026-09-25T21:08:29+02:00</published>
-    <updated>2026-09-25T21:08:29+02:00</updated>
-    <summary type="text">Konami · MSX · cartucho de 16 KB · RC-713. 16.384 bytes · 0 sin explicar · reensambla byte a byte · 8.537 de código, 7.847 de datos · 628 rutinas · comentado al 47,4 %.</summary>
   </entry>
 </feed>
