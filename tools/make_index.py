@@ -2588,6 +2588,21 @@ HERRAMIENTAS = [
 # nueva a vieja, una clave no existe o un proyecto se queda sin novedad.
 # --------------------------------------------------------------------------
 NOVEDADES = [
+    dict(id="qbert-el-visor-de-patrones", clave="qbert",
+         clase="actualiza", fecha="2026-09-30T13:30:00+02:00",
+         titulo=dict(en="Q*bert: the pattern viewer nobody calls, run",
+                     es="Q*bert: el visor de patrones que no llama nadie, ejecutado"),
+         resumen=dict(
+             en="The twelve pieces of code the game never runs, run one by one "
+                "in openMSX. The best one is a development tool left in the "
+                "ROM: it fills the screen with the numbers 0 to 255 and shows "
+                "every loaded tile. Built from the ROM and checked, zero bytes "
+                "different.",
+             es="Los doce trozos de c\u00f3digo que el juego no ejecuta nunca, "
+                "ejecutados uno a uno en openMSX. El mejor es una herramienta de "
+                "desarrollo que se qued\u00f3 en la ROM: llena la pantalla con los "
+                "n\u00fameros 0 a 255 y ense\u00f1a todos los tiles cargados. "
+                "Montado desde la ROM y cotejado, a cero bytes.")),
     dict(id="qbert", clave="qbert",
          clase="nuevo", fecha="2026-09-30T12:00:00+02:00",
          titulo=dict(en="Q*bert: cubes that roll like dice, taken apart",
