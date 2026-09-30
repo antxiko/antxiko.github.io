@@ -1379,6 +1379,45 @@ DESENSAMBLADOS = [
         nota=dict(en=None, es=None),
     ),
     dict(
+        clave="hinotori",
+        grupo="konami",
+        titulo="Hinotori",
+        anio=1987,
+        repo="https://github.com/antxiko/Hinotori-disassembly",
+        web="https://antxiko.github.io/Hinotori-disassembly/",
+        meta=dict(
+            en="Konami &middot; MSX2 &middot; 128 KB cartridge &middot; RC-747",
+            es="Konami &middot; MSX2 &middot; cartucho de 128 KB &middot; RC-747",
+        ),
+        claim=dict(
+            en="<b>With King Kong 2 next to it, it boots King Kong 2</b> and "
+               "saves its game to tape with F4. Seventeen cheat passwords, one "
+               "named after a designer in the credits and one in lower case "
+               "that can never be typed. The six stages, their rooms and the "
+               "18 gates that join them drawn from the ROM and checked "
+               "against openMSX.",
+            es="<b>Con King Kong 2 al lado, arranca King Kong 2</b> y le graba "
+               "la partida en cinta con F4. Diecisiete contraseñas de truco, "
+               "una con el apodo de un diseñador de los créditos y otra en "
+               "minúsculas que no se puede escribir nunca. Las seis fases, sus "
+               "salas y las 18 puertas que las unen dibujadas desde la ROM y "
+               "cotejadas contra openMSX.",
+        ),
+        datos=dict(
+            en=lambda i: (f"{cif(131072, i)} bytes &middot; <b>0</b> unexplained "
+                          f"&middot; reassembles <b>byte for byte</b> &middot; "
+                          f"{cif(32229, i)} of code, {cif(98843, i)} of data "
+                          f"&middot; {cif(1944, i)} routines &middot; commented "
+                          f"to <b>40.4%</b>"),
+            es=lambda i: (f"{cif(131072, i)} bytes &middot; <b>0</b> sin explicar "
+                          f"&middot; reensambla <b>byte a byte</b> &middot; "
+                          f"{cif(32229, i)} de código, {cif(98843, i)} de datos "
+                          f"&middot; {cif(1944, i)} rutinas &middot; comentado "
+                          f"al <b>40,4 %</b>"),
+        ),
+        nota=dict(en=None, es=None),
+    ),
+    dict(
         clave="twinbee",
         grupo="konami",
         titulo="Twin Bee",
@@ -2588,6 +2627,23 @@ HERRAMIENTAS = [
 # nueva a vieja, una clave no existe o un proyecto se queda sin novedad.
 # --------------------------------------------------------------------------
 NOVEDADES = [
+    dict(id="hinotori", clave="hinotori",
+         clase="nuevo", fecha="2026-09-30T17:24:33+02:00",
+         titulo=dict(en="Hinotori: the Firebird and its seventeen passwords, taken apart",
+                     es="Hinotori: el pájaro de fuego y sus diecisiete contraseñas, desmontado"),
+         resumen=dict(
+             en="The third MSX2 in the series, 100% explained and commented to "
+                "40.4%. The six stages, their rooms and the gates that join "
+                "them, Gao and the enemies drawn from the ROM and checked in "
+                "openMSX. With King Kong 2 next to it, it boots King Kong 2 "
+                "and saves its game; fifteen of the seventeen cheats tried in "
+                "play.",
+             es="El tercer MSX2 de la serie, explicado al 100 % y comentado al "
+                "40,4 %. Las seis fases, sus salas y las puertas que las unen, "
+                "Gao y los bichos dibujados desde la ROM y cotejados en "
+                "openMSX. Con King Kong 2 al lado, arranca King Kong 2 y le "
+                "graba la partida; quince de los diecisiete trucos probados "
+                "jugando.")),
     dict(id="qbert-el-visor-de-patrones", clave="qbert",
          clase="actualiza", fecha="2026-09-30T13:30:00+02:00",
          titulo=dict(en="Q*bert: the pattern viewer nobody calls, run",
