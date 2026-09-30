@@ -1340,6 +1340,45 @@ DESENSAMBLADOS = [
         nota=dict(en=None, es=None),
     ),
     dict(
+        clave="qbert",
+        grupo="konami",
+        titulo="Q*bert",
+        anio=1986,
+        repo="https://github.com/antxiko/Qbert-disassembly",
+        web="https://antxiko.github.io/Qbert-disassembly/",
+        meta=dict(
+            en="Konami &middot; MSX &middot; 32 KB cartridge &middot; RC-746",
+            es="Konami &middot; MSX &middot; cartucho de 32 KB &middot; RC-746",
+        ),
+        claim=dict(
+            en="<b>The cubes roll like dice</b>: each one is one of the 24 "
+               "rotations of a cube, and a stage is cleared with <b>five "
+               "finished in a row</b>, not by painting the pyramid. The 50 "
+               "stages, the bonus stage and the duel drawn from the ROM and "
+               "checked against openMSX down to zero bytes. A two-player duel "
+               "settled by rock, paper, scissors, a hidden life and a moai.",
+            es="<b>Los cubos ruedan como dados</b>: cada uno es uno de los 24 "
+               "giros de un cubo, y la fase se acaba con <b>cinco acabados en "
+               "línea</b>, no pintando la pirámide. Las 50 fases, la "
+               "bonificación y el duelo dibujados desde la ROM y cotejados "
+               "contra openMSX a cero bytes. Un duelo de dos que se desempata a "
+               "piedra, papel o tijera, una vida escondida y un moái.",
+        ),
+        datos=dict(
+            en=lambda i: (f"{cif(32768, i)} bytes &middot; <b>0</b> unexplained "
+                          f"&middot; reassembles <b>byte for byte</b> &middot; "
+                          f"{cif(11743, i)} of code, {cif(21025, i)} of data "
+                          f"&middot; {cif(788, i)} routines &middot; commented "
+                          f"to <b>78.1%</b>"),
+            es=lambda i: (f"{cif(32768, i)} bytes &middot; <b>0</b> sin explicar "
+                          f"&middot; reensambla <b>byte a byte</b> &middot; "
+                          f"{cif(11743, i)} de código, {cif(21025, i)} de datos "
+                          f"&middot; {cif(788, i)} rutinas &middot; comentado "
+                          f"al <b>78,1 %</b>"),
+        ),
+        nota=dict(en=None, es=None),
+    ),
+    dict(
         clave="twinbee",
         grupo="konami",
         titulo="Twin Bee",
@@ -2549,6 +2588,21 @@ HERRAMIENTAS = [
 # nueva a vieja, una clave no existe o un proyecto se queda sin novedad.
 # --------------------------------------------------------------------------
 NOVEDADES = [
+    dict(id="qbert", clave="qbert",
+         clase="nuevo", fecha="2026-09-30T12:00:00+02:00",
+         titulo=dict(en="Q*bert: cubes that roll like dice, taken apart",
+                     es="Q*bert: cubos que ruedan como dados, desmontado"),
+         resumen=dict(
+             en="Konami's MSX Q*bert, 100% explained and commented to 78.1%. "
+                "The 50 stages, the bonus stage and the duel drawn from the ROM "
+                "and checked in openMSX. Five in a row clears a stage, the duel "
+                "ends in rock, paper, scissors, and there is a hidden life, "
+                "seen in play.",
+             es="El Q*bert de Konami para MSX, explicado al 100 % y comentado al "
+                "78,1 %. Las 50 fases, la bonificación y el duelo dibujados "
+                "desde la ROM y cotejados en openMSX. Cinco en línea acaban la "
+                "fase, el duelo se decide a piedra, papel o tijera y hay una "
+                "vida escondida, vista jugando.")),
     dict(id="kingkong2", clave="kingkong2",
          clase="nuevo", fecha="2026-09-29T14:29:35+02:00",
          titulo=dict(en="King Kong 2: the island and what it hides, taken apart",

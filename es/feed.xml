@@ -1,13 +1,21 @@
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom" xml:lang="es">
   <title>antxiko — desensamblados comentados de juegos de 8 bits</title>
-  <subtitle>Binarios viejos de 8 bits desmontados byte a byte y comentados, con las herramientas para volver a montarlos: no se afirma nada que el binario no enseñe, y el código fuente tiene que devolver el original, byte a byte. Ahora mismo son 54 juegos de MSX.</subtitle>
+  <subtitle>Binarios viejos de 8 bits desmontados byte a byte y comentados, con las herramientas para volver a montarlos: no se afirma nada que el binario no enseñe, y el código fuente tiene que devolver el original, byte a byte. Ahora mismo son 55 juegos de MSX.</subtitle>
   <id>tag:antxiko.github.io,2026:feed/es</id>
   <link rel="self" type="application/atom+xml" href="https://antxiko.github.io/es/feed.xml"/>
   <link rel="alternate" type="text/html" hreflang="es" href="https://antxiko.github.io/es/"/>
   <link rel="alternate" type="application/atom+xml" hreflang="en" href="https://antxiko.github.io/feed.xml"/>
-  <updated>2026-09-29T14:29:35+02:00</updated>
+  <updated>2026-09-30T12:00:00+02:00</updated>
   <author><name>antxiko</name><uri>https://github.com/antxiko</uri></author>
+  <entry>
+    <id>tag:antxiko.github.io,2026:novedad/es/qbert</id>
+    <title>Q*bert: cubos que ruedan como dados, desmontado</title>
+    <link rel="alternate" type="text/html" href="https://antxiko.github.io/Qbert-disassembly/"/>
+    <published>2026-09-30T12:00:00+02:00</published>
+    <updated>2026-09-30T12:00:00+02:00</updated>
+    <summary type="text">El Q*bert de Konami para MSX, explicado al 100 % y comentado al 78,1 %. Las 50 fases, la bonificación y el duelo dibujados desde la ROM y cotejados en openMSX. Cinco en línea acaban la fase, el duelo se decide a piedra, papel o tijera y hay una vida escondida, vista jugando.</summary>
+  </entry>
   <entry>
     <id>tag:antxiko.github.io,2026:novedad/es/kingkong2</id>
     <title>King Kong 2: la isla y lo que esconde, desmontada</title>
@@ -159,13 +167,5 @@
     <published>2026-09-24T18:33:28+02:00</published>
     <updated>2026-09-24T18:33:28+02:00</updated>
     <summary type="text">Como pedía theNestruo en el issue #3: las cuatro salas de cada nivel pegadas, sin rótulo en medio; las jaulas abiertas, enseñando al amigo o el frasco, con sus candados; debajo de cada nivel solo lo que el dibujo no dice, las llaves, qué guarda cada jaula, cuál es el objeto escondido y a dónde lleva cada puerta de calavera; y los cinco minimapas de ronda a 1:1, con las rayas por detrás de los niveles. Por el camino: el índice del objeto escondido casa con la tabla del inventario en los 23, y los amigos enjaulados suman siete por ronda, justo los que pide la puerta de salida.</summary>
-  </entry>
-  <entry>
-    <id>tag:antxiko.github.io,2026:novedad/es/knightmare-issue1-bloques</id>
-    <title>Knightmare: los ocho mapas con sus bloques</title>
-    <link rel="alternate" type="text/html" href="https://antxiko.github.io/Knightmare-disassembly/"/>
-    <published>2026-09-24T13:38:11+02:00</published>
-    <updated>2026-09-24T13:38:11+02:00</updated>
-    <summary type="text">Lo que pedía theNestruo en el issue #1: un segundo dibujo de cada uno de los ocho mapas con los 356 bloques de las listas de fase encima, cada uno enseñando lo que suelta, una vida, 500 puntos, una bomba, una congelación, un bloque gris que cierra el paso, el cartel EXIT que salta a otra fase, un puente o un pasadizo lateral, con marco blanco los visibles y punteado magenta los escondidos. Su fila se midió en el emulador, no se dedujo: 220 menos el contador del desplazamiento.</summary>
   </entry>
 </feed>
