@@ -2627,6 +2627,23 @@ HERRAMIENTAS = [
 # nueva a vieja, una clave no existe o un proyecto se queda sin novedad.
 # --------------------------------------------------------------------------
 NOVEDADES = [
+    dict(id="hinotori-seis-figuras-y-los-mapas", clave="hinotori",
+         clase="actualiza", fecha="2026-09-30T21:00:00+02:00",
+         titulo=dict(en="Hinotori: six figures nobody uses, and the maps put right",
+                     es="Hinotori: seis figuras que no usa nadie, y los mapas corregidos"),
+         resumen=dict(
+             en="Eighteen compressed strips that no list in the cartridge "
+                "names, opened: a hunched beast, a one-eyed monster, a face, "
+                "a 32x48 demon and a small warrior, none of them in the game. "
+                "And the stage maps had the four rows of each block upside "
+                "down: fixed, and the check against openMSX now looks at the "
+                "order of the rows.",
+             es="Dieciocho tiras comprimidas que no nombra ninguna lista del "
+                "cartucho, abiertas: una bestia jorobada, un monstruo de un "
+                "ojo, una cara, un demonio de 32x48 y un guerrero pequeño, "
+                "ninguno en el juego. Y los mapas de las fases llevaban las "
+                "cuatro filas de cada bloque del revés: corregido, y el cotejo "
+                "con openMSX ahora mira el orden de las filas.")),
     dict(id="hinotori", clave="hinotori",
          clase="nuevo", fecha="2026-09-30T17:24:33+02:00",
          titulo=dict(en="Hinotori: the Firebird and its seventeen passwords, taken apart",
