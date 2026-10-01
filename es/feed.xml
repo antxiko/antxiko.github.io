@@ -1,13 +1,21 @@
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom" xml:lang="es">
   <title>antxiko — desensamblados comentados de juegos de 8 bits</title>
-  <subtitle>Binarios viejos de 8 bits desmontados byte a byte y comentados, con las herramientas para volver a montarlos: no se afirma nada que el binario no enseñe, y el código fuente tiene que devolver el original, byte a byte. Ahora mismo son 56 juegos de MSX.</subtitle>
+  <subtitle>Binarios viejos de 8 bits desmontados byte a byte y comentados, con las herramientas para volver a montarlos: no se afirma nada que el binario no enseñe, y el código fuente tiene que devolver el original, byte a byte. Ahora mismo son 57 juegos de MSX.</subtitle>
   <id>tag:antxiko.github.io,2026:feed/es</id>
   <link rel="self" type="application/atom+xml" href="https://antxiko.github.io/es/feed.xml"/>
   <link rel="alternate" type="text/html" hreflang="es" href="https://antxiko.github.io/es/"/>
   <link rel="alternate" type="application/atom+xml" hreflang="en" href="https://antxiko.github.io/feed.xml"/>
-  <updated>2026-09-30T23:30:00+02:00</updated>
+  <updated>2026-10-01T19:46:17+02:00</updated>
   <author><name>antxiko</name><uri>https://github.com/antxiko</uri></author>
+  <entry>
+    <id>tag:antxiko.github.io,2026:novedad/es/dunkshot</id>
+    <title>Dunk Shot: una pista de 56 columnas tras una ventana de 32, desmontado</title>
+    <link rel="alternate" type="text/html" href="https://antxiko.github.io/DunkShot-disassembly/"/>
+    <published>2026-10-01T19:46:17+02:00</published>
+    <updated>2026-10-01T19:46:17+02:00</updated>
+    <summary type="text">El baloncesto de tres contra tres de HAL Laboratory para MSX, explicado al 100 % y comentado al 43,2 %. La pista entera en sus tres colores, las 160 poses de cuatro sprites y seis pantallas dibujadas desde la ROM y cotejadas contra openMSX. El parpadeo es una rotación de grupos de sprites hecha a propósito, los equipos de la máquina se fabrican por nivel y un equipo se graba en cinta como un BSAVE.</summary>
+  </entry>
   <entry>
     <id>tag:antxiko.github.io,2026:novedad/es/hinotori-los-jefes-medidos-y-el-fenix</id>
     <title>Hinotori: los jefes de las salas, cotejados en openMSX, y el mensaje del fénix</title>
@@ -159,13 +167,5 @@
     <published>2026-09-26T10:12:08+02:00</published>
     <updated>2026-09-26T10:12:08+02:00</updated>
     <summary type="text">Los nueve árboles enteros, apoyados en el suelo y dibujados desde el guion de cada fase, abren ahora la galería de la portada y la sección de las fases de El juego; cada uno sigue ahí a tamaño completo.</summary>
-  </entry>
-  <entry>
-    <id>tag:antxiko.github.io,2026:novedad/es/magicaltree-castillo</id>
-    <title>Magical Tree: el castillo, bien dibujado</title>
-    <link rel="alternate" type="text/html" href="https://antxiko.github.io/MagicalTree-disassembly/"/>
-    <published>2026-09-25T22:50:31+02:00</published>
-    <updated>2026-09-25T22:50:31+02:00</updated>
-    <summary type="text">El castillo y el árbol que se pinta entre fases estaban dibujados con las columnas de izquierda a derecha, y el cartucho los pinta del centro hacia fuera: el castillo salía revuelto. Ahora cada columna va donde la pone 0x7629, el árbol lleva los colores de la fase que empieza y el castillo sus ventanas con los dos personajes y el rótulo CONGRATULATIONS. Cotejado contra openMSX en nueve volcados: 0 bytes distintos.</summary>
   </entry>
 </feed>
