@@ -2671,6 +2671,26 @@ HERRAMIENTAS = [
 # nueva a vieja, una clave no existe o un proyecto se queda sin novedad.
 # --------------------------------------------------------------------------
 NOVEDADES = [
+    dict(id="dunkshot-el-parche-msx2", clave="dunkshot",
+         clase="actualiza", fecha="2026-10-02T08:30:00+02:00",
+         enlace="https://antxiko.github.io/DunkShot-disassembly/THE-MSX2-PATCH.html",
+         titulo=dict(en="Dunk Shot: a 164-byte patch takes the flicker away on an MSX2",
+                     es="Dunk Shot: un parche de 164 bytes quita el parpadeo en un MSX2"),
+         resumen=dict(
+             en="The V9938 draws eight sprites per line instead of four, so "
+                "the game no longer needs to share the players out: SCREEN 4, "
+                "the sprite colour table at 0x3C00 and the attributes at "
+                "0x3E00, in the filler and three orphan routines of the "
+                "cartridge. Measured in openMSX over thirty seconds of a "
+                "match: from 66.7 sprites not drawn per frame to 1.7. The "
+                "same file still plays on an MSX1 as the original.",
+             es="El V9938 pinta ocho sprites por línea en vez de cuatro, así "
+                "que el juego ya no tiene que repartir a los jugadores: "
+                "SCREEN 4, la tabla de colores de sprite en 0x3C00 y los "
+                "atributos en 0x3E00, en el relleno y tres rutinas huérfanas "
+                "del cartucho. Medido en openMSX sobre treinta segundos de "
+                "partido: de 66,7 sprites sin pintar por cuadro a 1,7. El "
+                "mismo fichero sigue jugándose en un MSX1 como el original.")),
     dict(id="dunkshot", clave="dunkshot",
          clase="nuevo", fecha="2026-10-01T19:46:17+02:00",
          titulo=dict(en="Dunk Shot: a 56-column court behind a 32-column window, taken apart",
