@@ -1343,6 +1343,48 @@ DESENSAMBLADOS = [
         nota=dict(en=None, es=None),
     ),
     dict(
+        clave="goemon",
+        grupo="konami",
+        titulo="Ganbare Goemon! Karakuri D&#333;ch&#363;",
+        anio=1987,
+        repo="https://github.com/antxiko/GanbareGoemon-disassembly",
+        web="https://antxiko.github.io/GanbareGoemon-disassembly/",
+        meta=dict(
+            en="Konami &middot; MSX2 &middot; 128 KB cartridge &middot; RC-748",
+            es="Konami &middot; MSX2 &middot; cartucho de 128 KB &middot; RC-748",
+        ),
+        claim=dict(
+            en="<b>Seven stages of seven areas, 1,608 screens, drawn from the "
+               "ROM street by street.</b> The 21 interiors with their prices, "
+               "Goemon, Ebisumaru and 30 enemy types, and the <b>42 secret "
+               "passages</b> walked in first person, all checked against openMSX "
+               "down to zero. Plus four password keywords, two words to type in "
+               "the pause, a stage menu with Q*bert or the Game Master next to "
+               "it, and Konami's hidden mark written in the game's own hiragana.",
+            es="<b>Siete fases de siete zonas, 1.608 pantallas, dibujadas desde "
+               "la ROM calle a calle.</b> Los 21 interiores con sus precios, "
+               "Goemon, Ebisumaru y 30 tipos de enemigo, y los <b>42 pasadizos "
+               "secretos</b> que se recorren en primera persona, todo cotejado "
+               "contra openMSX a cero. Y cuatro claves en la contrase&ntilde;a, "
+               "dos palabras para teclear en la pausa, un men&uacute; de fases "
+               "con Q*bert o el Game Master al lado, y la marca oculta de Konami "
+               "escrita en el hiragana del propio juego.",
+        ),
+        datos=dict(
+            en=lambda i: (f"{cif(131072, i)} bytes &middot; <b>0</b> unexplained "
+                          f"&middot; reassembles <b>byte for byte</b> &middot; "
+                          f"{cif(28724, i)} of code, {cif(102348, i)} of data "
+                          f"&middot; {cif(1678, i)} routines &middot; commented "
+                          f"to <b>42.5%</b>, none below 10%"),
+            es=lambda i: (f"{cif(131072, i)} bytes &middot; <b>0</b> sin explicar "
+                          f"&middot; reensambla <b>byte a byte</b> &middot; "
+                          f"{cif(28724, i)} de c&oacute;digo, {cif(102348, i)} de datos "
+                          f"&middot; {cif(1678, i)} rutinas &middot; comentado al "
+                          f"<b>42,5 %</b>, ninguna por debajo del 10 %"),
+        ),
+        nota=dict(en=None, es=None),
+    ),
+    dict(
         clave="kingkong2",
         grupo="konami",
         titulo="King Kong 2: Yomigaeru Densetsu",
@@ -2718,6 +2760,25 @@ HERRAMIENTAS = [
 # nueva a vieja, una clave no existe o un proyecto se queda sin novedad.
 # --------------------------------------------------------------------------
 NOVEDADES = [
+    dict(id="goemon", clave="goemon",
+         clase="nuevo", fecha="2026-10-02T15:14:33+02:00",
+         titulo=dict(en="Ganbare Goemon!: 49 areas, 21 interiors and 42 secret passages, taken apart",
+                     es="Ganbare Goemon!: 49 zonas, 21 interiores y 42 pasadizos secretos, desmontado"),
+         resumen=dict(
+             en="Konami's 1987 MSX2 cartridge, 100% explained and commented to "
+                "42.5%. The seven stages street by street, the interiors with "
+                "their prices, the enemies and the 42 first-person secret "
+                "passages drawn from the ROM and checked against openMSX down "
+                "to zero; plus the password keywords, the pause words and the "
+                "stage menu that shows up with Q*bert or the Game Master.",
+             es="El cartucho MSX2 de Konami de 1987, explicado al 100 % y "
+                "comentado al 42,5 %. Las siete fases calle a calle, los "
+                "interiores con sus precios, los enemigos y los 42 pasadizos "
+                "secretos en primera persona, dibujados desde la ROM y "
+                "cotejados contra openMSX a cero; y las claves de la "
+                "contrase&ntilde;a, las palabras de la pausa y el men&uacute; de "
+                "fases que sale con Q*bert o el Game Master."),
+    ),
     dict(id="dunkshot-msx2", clave="dunkshot-msx2", clase="nuevo",
          fecha="2026-10-02T08:40:00+02:00",
          titulo=dict(en="Dunk Shot gets its own MSX2 patch repository",
