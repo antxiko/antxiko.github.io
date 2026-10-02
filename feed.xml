@@ -6,8 +6,16 @@
   <link rel="self" type="application/atom+xml" href="https://antxiko.github.io/feed.xml"/>
   <link rel="alternate" type="text/html" hreflang="en" href="https://antxiko.github.io/"/>
   <link rel="alternate" type="application/atom+xml" hreflang="es" href="https://antxiko.github.io/es/feed.xml"/>
-  <updated>2026-10-02T08:30:00+02:00</updated>
+  <updated>2026-10-02T08:40:00+02:00</updated>
   <author><name>antxiko</name><uri>https://github.com/antxiko</uri></author>
+  <entry>
+    <id>tag:antxiko.github.io,2026:novedad/en/dunkshot-msx2</id>
+    <title>Dunk Shot gets its own MSX2 patch repository</title>
+    <link rel="alternate" type="text/html" href="https://antxiko.github.io/DunkShot-MSX2-Patch/"/>
+    <published>2026-10-02T08:40:00+02:00</published>
+    <updated>2026-10-02T08:40:00+02:00</updated>
+    <summary type="text">The patch that takes the flicker away on an MSX2 now has its own repository and website, in the patches section: the IPS, the tool that builds it, the probe that measures it and how the game shares its sprites out. 66.7 sprites not drawn per frame on an MSX, 1.7 on the NMS 8250. Tested in openMSX; nobody has run it on real hardware yet.</summary>
+  </entry>
   <entry>
     <id>tag:antxiko.github.io,2026:novedad/en/dunkshot-el-parche-msx2</id>
     <title>Dunk Shot: a 164-byte patch takes the flicker away on an MSX2</title>
@@ -159,13 +167,5 @@
     <published>2026-09-26T12:00:43+02:00</published>
     <updated>2026-09-26T12:00:43+02:00</updated>
     <summary type="text">Backdrop 9 is the WARP: a flagged crevasse and pressing down take you from stage 1 to 6, 6 to 9, 9 to 12, 13 to 15, 15 to 18 and 18 to 21, all six measured in openMSX. Other crevasses hide 41 shops: 18 usual, 20 that charge double and 3 with Santa Claus, who gives one item away. And a correction: space is reached by touching what flies across, not through a crevasse.</summary>
-  </entry>
-  <entry>
-    <id>tag:antxiko.github.io,2026:novedad/en/penguinadventure-desde-las-tablas</id>
-    <title>Penguin Adventure: everything on screen, drawn from the tables</title>
-    <link rel="alternate" type="text/html" href="https://antxiko.github.io/PenguinAdventure-disassembly/"/>
-    <published>2026-09-26T11:35:24+02:00</published>
-    <updated>2026-09-26T11:35:24+02:00</updated>
-    <summary type="text">The penguin in its poses and terrains, the ten creatures, the dinosaur that closes every third stage, space with its meteorites and winged fish, the backdrops built whole and the twenty-four stages of each LEVEL walked step by step from their four scripts. All checked against openMSX: seven tests, zero differences. The stage diagram and the black-and-white sprite sheets are gone.</summary>
   </entry>
 </feed>
