@@ -6,8 +6,16 @@
   <link rel="self" type="application/atom+xml" href="https://antxiko.github.io/feed.xml"/>
   <link rel="alternate" type="text/html" hreflang="en" href="https://antxiko.github.io/"/>
   <link rel="alternate" type="application/atom+xml" hreflang="es" href="https://antxiko.github.io/es/feed.xml"/>
-  <updated>2026-10-01T19:46:17+02:00</updated>
+  <updated>2026-10-02T08:30:00+02:00</updated>
   <author><name>antxiko</name><uri>https://github.com/antxiko</uri></author>
+  <entry>
+    <id>tag:antxiko.github.io,2026:novedad/en/dunkshot-el-parche-msx2</id>
+    <title>Dunk Shot: a 164-byte patch takes the flicker away on an MSX2</title>
+    <link rel="alternate" type="text/html" href="https://antxiko.github.io/DunkShot-disassembly/THE-MSX2-PATCH.html"/>
+    <published>2026-10-02T08:30:00+02:00</published>
+    <updated>2026-10-02T08:30:00+02:00</updated>
+    <summary type="text">The V9938 draws eight sprites per line instead of four, so the game no longer needs to share the players out: SCREEN 4, the sprite colour table at 0x3C00 and the attributes at 0x3E00, in the filler and three orphan routines of the cartridge. Measured in openMSX over thirty seconds of a match: from 66.7 sprites not drawn per frame to 1.7. The same file still plays on an MSX1 as the original.</summary>
+  </entry>
   <entry>
     <id>tag:antxiko.github.io,2026:novedad/en/dunkshot</id>
     <title>Dunk Shot: a 56-column court behind a 32-column window, taken apart</title>
@@ -159,13 +167,5 @@
     <published>2026-09-26T11:35:24+02:00</published>
     <updated>2026-09-26T11:35:24+02:00</updated>
     <summary type="text">The penguin in its poses and terrains, the ten creatures, the dinosaur that closes every third stage, space with its meteorites and winged fish, the backdrops built whole and the twenty-four stages of each LEVEL walked step by step from their four scripts. All checked against openMSX: seven tests, zero differences. The stage diagram and the black-and-white sprite sheets are gone.</summary>
-  </entry>
-  <entry>
-    <id>tag:antxiko.github.io,2026:novedad/en/magicaltree-nueve-fases</id>
-    <title>Magical Tree: the nine stages side by side</title>
-    <link rel="alternate" type="text/html" href="https://antxiko.github.io/MagicalTree-disassembly/"/>
-    <published>2026-09-26T10:12:08+02:00</published>
-    <updated>2026-09-26T10:12:08+02:00</updated>
-    <summary type="text">The nine whole trees, standing on the ground and drawn from each stage's script, now open the home page gallery and the stages section of The game; each one is still there full size.</summary>
   </entry>
 </feed>
