@@ -6,8 +6,16 @@
   <link rel="self" type="application/atom+xml" href="https://antxiko.github.io/feed.xml"/>
   <link rel="alternate" type="text/html" hreflang="en" href="https://antxiko.github.io/"/>
   <link rel="alternate" type="application/atom+xml" hreflang="es" href="https://antxiko.github.io/es/feed.xml"/>
-  <updated>2026-10-02T15:14:33+02:00</updated>
+  <updated>2026-10-02T15:32:53+02:00</updated>
   <author><name>antxiko</name><uri>https://github.com/antxiko</uri></author>
+  <entry>
+    <id>tag:antxiko.github.io,2026:novedad/en/goemon-124-pantallas</id>
+    <title>Ganbare Goemon!: 124 different screens, not 1,608</title>
+    <link rel="alternate" type="text/html" href="https://antxiko.github.io/GanbareGoemon-disassembly/"/>
+    <published>2026-10-02T15:32:53+02:00</published>
+    <updated>2026-10-02T15:32:53+02:00</updated>
+    <summary type="text">Errata: 1,608 is the number of cells across the 49 areas; each area's grid (0x600C) reuses its screens, and there are 124 different ones.</summary>
+  </entry>
   <entry>
     <id>tag:antxiko.github.io,2026:novedad/en/goemon</id>
     <title>Ganbare Goemon!: 49 areas, 21 interiors and 42 secret passages, taken apart</title>
@@ -159,13 +167,5 @@
     <published>2026-09-26T22:14:25+02:00</published>
     <updated>2026-09-26T22:14:25+02:00</updated>
     <summary type="text">The drawing of the scenes was missing what is on screen when the message appears: in the bad ending, the penguin seen from behind, crying in front of the king, and in the tree, the apple that has fallen. Now each scene carries exactly the sprites of a real frame, checked against openMSX with zero differences, and in the good ending the penguin stands whole on the carpet.</summary>
-  </entry>
-  <entry>
-    <id>tag:antxiko.github.io,2026:novedad/en/penguinadventure-arbol-y-finales</id>
-    <title>Penguin Adventure: the tree and the two endings</title>
-    <link rel="alternate" type="text/html" href="https://antxiko.github.io/PenguinAdventure-disassembly/"/>
-    <published>2026-09-26T12:09:59+02:00</published>
-    <updated>2026-09-26T12:09:59+02:00</updated>
-    <summary type="text">The three scenes after stages 12 and 24, drawn from the tables: the tree halfway through and the good and the bad endings, with their messages. The screens are painted from the middle outwards, and in the bad ending a piece of fifty bytes takes the princess's place. Checked against openMSX: zero differences.</summary>
   </entry>
 </feed>
