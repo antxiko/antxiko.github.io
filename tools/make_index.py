@@ -1354,14 +1354,14 @@ DESENSAMBLADOS = [
             es="Konami &middot; MSX2 &middot; cartucho de 128 KB &middot; RC-748",
         ),
         claim=dict(
-            en="<b>Seven stages of seven areas, 1,608 screens, drawn from the "
+            en="<b>Seven stages of seven areas, 124 screens, drawn from the "
                "ROM street by street.</b> The 21 interiors with their prices, "
                "Goemon, Ebisumaru and 30 enemy types, and the <b>42 secret "
                "passages</b> walked in first person, all checked against openMSX "
                "down to zero. Plus four password keywords, two words to type in "
                "the pause, a stage menu with Q*bert or the Game Master next to "
                "it, and Konami's hidden mark written in the game's own hiragana.",
-            es="<b>Siete fases de siete zonas, 1.608 pantallas, dibujadas desde "
+            es="<b>Siete fases de siete zonas, 124 pantallas, dibujadas desde "
                "la ROM calle a calle.</b> Los 21 interiores con sus precios, "
                "Goemon, Ebisumaru y 30 tipos de enemigo, y los <b>42 pasadizos "
                "secretos</b> que se recorren en primera persona, todo cotejado "
@@ -2760,6 +2760,18 @@ HERRAMIENTAS = [
 # nueva a vieja, una clave no existe o un proyecto se queda sin novedad.
 # --------------------------------------------------------------------------
 NOVEDADES = [
+    dict(id="goemon-124-pantallas", clave="goemon",
+         clase="actualiza", fecha="2026-10-02T15:32:53+02:00",
+         titulo=dict(en="Ganbare Goemon!: 124 different screens, not 1,608",
+                     es="Ganbare Goemon!: 124 pantallas distintas, no 1.608"),
+         resumen=dict(
+             en="Errata: 1,608 is the number of cells across the 49 areas; each "
+                "area's grid (0x600C) reuses its screens, and there are 124 "
+                "different ones.",
+             es="Errata: 1.608 son las casillas de las 49 zonas; la rejilla de "
+                "cada zona (0x600C) reutiliza sus pantallas, y distintas hay "
+                "124."),
+    ),
     dict(id="goemon", clave="goemon",
          clase="nuevo", fecha="2026-10-02T15:14:33+02:00",
          titulo=dict(en="Ganbare Goemon!: 49 areas, 21 interiors and 42 secret passages, taken apart",
