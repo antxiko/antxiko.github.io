@@ -2456,6 +2456,53 @@ def es_cinta(p):
 # desensamblados, que son de juegos desmontados.
 PARCHES = [
     dict(
+        clave="dunkshot-msx2",
+        titulo="Dunk Shot &mdash; MSX2 patch",
+        anio=1986,
+        repo="https://github.com/antxiko/DunkShot-MSX2-Patch",
+        web="https://antxiko.github.io/DunkShot-MSX2-Patch/",
+        meta=dict(
+            en="HAL Laboratory &middot; MSX2 &middot; 32 KB cartridge &middot; "
+               "IPS patch, unofficial",
+            es="HAL Laboratory &middot; MSX2 &middot; cartucho de 32 KB &middot; "
+               "parche IPS, extraoficial",
+        ),
+        claim=dict(
+            en="Every player is four sprites and the MSX draws four per line, "
+               "so the game <b>sorts them by depth and shows the list and its "
+               "reverse on alternate frames</b>: that is the flicker. An MSX2 "
+               "draws eight. This takes the game to <b>SCREEN 4</b>, puts the "
+               "sprite colour table and the attributes in the only free 1 KB "
+               "block of VRAM and always shows the sorted list. The new code lives in "
+               "the filler and in <b>three orphan routines</b> of the cartridge, "
+               "not one pattern moves, and <b>on a first-generation MSX it plays as the "
+               "original</b>.",
+            es="Cada jugador son cuatro sprites y el MSX pinta cuatro por "
+               "línea, así que el juego <b>los ordena por profundidad y enseña "
+               "la lista y su inversa en cuadros alternos</b>: ese es el "
+               "parpadeo. Un MSX2 pinta ocho. Esto lleva el juego a <b>SCREEN "
+               "4</b>, pone la tabla de colores de sprite y los atributos en el "
+               "único bloque de 1 KB libre de la VRAM y enseña siempre la lista ordenada. El "
+               "código nuevo vive en el relleno y en <b>tres rutinas "
+               "huérfanas</b> del cartucho, no se mueve ni un patrón, y <b>en un "
+               "MSX de primera generación se juega como el original</b>.",
+        ),
+        datos=dict(
+            en=lambda i: ("<b>164</b> bytes changed in <b>24</b> stretches "
+                          "&middot; <b>292</b>-byte IPS &middot; sprites not "
+                          "drawn per frame <b>66.7 &rarr; 1.7</b> &middot; no "
+                          "ROM distributed"),
+            es=lambda i: ("<b>164</b> bytes cambiados en <b>24</b> tramos "
+                          "&middot; IPS de <b>292</b> bytes &middot; sprites "
+                          "sin pintar por cuadro <b>66,7 &rarr; 1,7</b> "
+                          "&middot; no se distribuye ninguna ROM"),
+        ),
+        nota=dict(
+            en="tested in openMSX (MSX and Philips NMS 8250); not yet on real hardware",
+            es="probado en openMSX (MSX y Philips NMS 8250); todavía no en una máquina real",
+        ),
+    ),
+    dict(
         clave="mahjong-en",
         titulo="Konami&rsquo;s Mahjong Dojo &mdash; English patch",
         anio=1984,
@@ -2671,6 +2718,23 @@ HERRAMIENTAS = [
 # nueva a vieja, una clave no existe o un proyecto se queda sin novedad.
 # --------------------------------------------------------------------------
 NOVEDADES = [
+    dict(id="dunkshot-msx2", clave="dunkshot-msx2", clase="nuevo",
+         fecha="2026-10-02T08:40:00+02:00",
+         titulo=dict(en="Dunk Shot gets its own MSX2 patch repository",
+                     es="El parche MSX2 de Dunk Shot, con repositorio propio"),
+         resumen=dict(
+             en="The patch that takes the flicker away on an MSX2 now has its "
+                "own repository and website, in the patches section: the IPS, "
+                "the tool that builds it, the probe that measures it and how "
+                "the game shares its sprites out. 66.7 sprites not drawn per "
+                "frame on an MSX, 1.7 on the NMS 8250. Tested in openMSX; "
+                "nobody has run it on real hardware yet.",
+             es="El parche que quita el parpadeo en un MSX2 tiene ya repositorio "
+                "y web propios, en la sección de parches: el IPS, la herramienta "
+                "que lo genera, la sonda que lo mide y cómo reparte el juego sus "
+                "sprites. 66,7 sprites sin pintar por cuadro en un MSX, 1,7 en "
+                "el NMS 8250. Probado en openMSX; nadie lo ha pasado aún por una "
+                "máquina real.")),
     dict(id="dunkshot-el-parche-msx2", clave="dunkshot",
          clase="actualiza", fecha="2026-10-02T08:30:00+02:00",
          enlace="https://antxiko.github.io/DunkShot-disassembly/THE-MSX2-PATCH.html",
