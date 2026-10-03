@@ -2573,8 +2573,8 @@ PARCHES = [
                "&middot; no se distribuye ninguna ROM"),
         ),
         nota=dict(
-            en="tested in openMSX; not yet on a real cartridge",
-            es="probado en openMSX; todavía no en un cartucho real",
+            en="tested in openMSX and on a real MSX with a Yamanooto, by pabibiris",
+            es="probado en openMSX y en un MSX real con un Yamanooto, por pabibiris",
         ),
     ),
     dict(
@@ -2912,6 +2912,16 @@ HERRAMIENTAS = [
 # nueva a vieja, una clave no existe o un proyecto se queda sin novedad.
 # --------------------------------------------------------------------------
 NOVEDADES = [
+    dict(id="galious-yamanooto-en-un-msx-real", clave="galious-yamanooto",
+         clase="actualiza", fecha="2026-10-03T21:23:23+02:00",
+         titulo=dict(en="The Maze of Galious on the Yamanooto, tested on a real MSX",
+                     es="The Maze of Galious en el Yamanooto, probado en un MSX real"),
+         resumen=dict(
+             en="pabibiris tested the save patch on a real MSX with a real "
+                "Yamanooto and approves it.",
+             es="pabibiris ha probado el parche de las partidas en un MSX real "
+                "con un Yamanooto real y lo da por bueno."),
+    ),
     dict(id="yamanooto-sin-menu", clave="galious-yamanooto",
          otras=["metalgear-yamanooto", "metalgear2-yamanooto"],
          clase="actualiza", fecha="2026-10-03T21:08:11+02:00",

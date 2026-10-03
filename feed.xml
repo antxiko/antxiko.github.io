@@ -6,8 +6,16 @@
   <link rel="self" type="application/atom+xml" href="https://antxiko.github.io/feed.xml"/>
   <link rel="alternate" type="text/html" hreflang="en" href="https://antxiko.github.io/"/>
   <link rel="alternate" type="application/atom+xml" hreflang="es" href="https://antxiko.github.io/es/feed.xml"/>
-  <updated>2026-10-03T21:08:11+02:00</updated>
+  <updated>2026-10-03T21:23:23+02:00</updated>
   <author><name>antxiko</name><uri>https://github.com/antxiko</uri></author>
+  <entry>
+    <id>tag:antxiko.github.io,2026:novedad/en/galious-yamanooto-en-un-msx-real</id>
+    <title>The Maze of Galious on the Yamanooto, tested on a real MSX</title>
+    <link rel="alternate" type="text/html" href="https://antxiko.github.io/Galious-Yamanooto-Patch/"/>
+    <published>2026-10-03T21:23:23+02:00</published>
+    <updated>2026-10-03T21:23:23+02:00</updated>
+    <summary type="text">pabibiris tested the save patch on a real MSX with a real Yamanooto and approves it.</summary>
+  </entry>
   <entry>
     <id>tag:antxiko.github.io,2026:novedad/en/yamanooto-sin-menu</id>
     <title>The Yamanooto patches boot on their own, with no menu</title>
@@ -159,13 +167,5 @@
     <published>2026-09-28T15:35:08+02:00</published>
     <updated>2026-09-28T15:35:08+02:00</updated>
     <summary type="text">The secrets' prizes were off by one: stage 6 gives the blue boots and stage 13 the red ones. Checked in openMSX.</summary>
-  </entry>
-  <entry>
-    <id>tag:antxiko.github.io,2026:novedad/en/penguinadventure-las-tiendas</id>
-    <title>Penguin Adventure: the hidden shops and the sixteen items</title>
-    <link rel="alternate" type="text/html" href="https://antxiko.github.io/PenguinAdventure-disassembly/"/>
-    <published>2026-09-28T11:59:37+02:00</published>
-    <updated>2026-09-28T11:59:37+02:00</updated>
-    <summary type="text">The three shopkeepers drawn from the tables, each with his greeting and his farewell: the usual one, the one who charges double and Santa Claus, who gives one thing away. The sixteen items with what each one does, read from whoever checks its flag. Checked against 14 openMSX dumps, zero differences.</summary>
   </entry>
 </feed>
