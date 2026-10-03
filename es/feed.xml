@@ -6,8 +6,16 @@
   <link rel="self" type="application/atom+xml" href="https://antxiko.github.io/es/feed.xml"/>
   <link rel="alternate" type="text/html" hreflang="es" href="https://antxiko.github.io/es/"/>
   <link rel="alternate" type="application/atom+xml" hreflang="en" href="https://antxiko.github.io/feed.xml"/>
-  <updated>2026-10-03T20:33:16+02:00</updated>
+  <updated>2026-10-03T21:08:11+02:00</updated>
   <author><name>antxiko</name><uri>https://github.com/antxiko</uri></author>
+  <entry>
+    <id>tag:antxiko.github.io,2026:novedad/es/yamanooto-sin-menu</id>
+    <title>Los parches del Yamanooto arrancan solos, sin menú</title>
+    <link rel="alternate" type="text/html" href="https://antxiko.github.io/#patches"/>
+    <published>2026-10-03T21:08:11+02:00</published>
+    <updated>2026-10-03T21:08:11+02:00</updated>
+    <summary type="text">La imagen que monta cada uno ya no lleva el menú de nPackR: el juego va al principio de la flash y arranca directamente. Galious y Metal Gear cambian de banco con los registros Konami SCC, el modo con el que arranca el Yamanooto.</summary>
+  </entry>
   <entry>
     <id>tag:antxiko.github.io,2026:novedad/es/partidas-en-el-yamanooto</id>
     <title>Partidas en el Yamanooto: Galious, Metal Gear y Metal Gear 2</title>
@@ -159,13 +167,5 @@
     <published>2026-09-28T11:59:37+02:00</published>
     <updated>2026-09-28T11:59:37+02:00</updated>
     <summary type="text">Los tres tenderos dibujados desde las tablas, cada uno con su saludo y su despedida: el de siempre, el que cobra el doble y Santa Claus, que regala una cosa. Los dieciséis artículos con lo que hace cada uno, leído de quien mira su bandera. Cotejado contra 14 volcados de openMSX, cero diferencias.</summary>
-  </entry>
-  <entry>
-    <id>tag:antxiko.github.io,2026:novedad/es/penguinadventure-el-mapa</id>
-    <title>Penguin Adventure: el mapa de antes de cada fase</title>
-    <link rel="alternate" type="text/html" href="https://antxiko.github.io/PenguinAdventure-disassembly/"/>
-    <published>2026-09-28T11:06:18+02:00</published>
-    <updated>2026-09-28T11:06:18+02:00</updated>
-    <summary type="text">El mapa de antes de cada fase, dibujado desde sus tablas y cotejado contra el emulador, con los atajos.</summary>
   </entry>
 </feed>
