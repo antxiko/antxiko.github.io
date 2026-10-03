@@ -454,7 +454,7 @@ class TestFeed(unittest.TestCase):
         por omision. Lo exige tambien el build (comprueba())."""
         mi = modulo()
         claves = {p["clave"] for p in mi.DESENSAMBLADOS + mi.PARCHES + mi.HERRAMIENTAS}
-        con_novedad = {n["clave"] for n in mi.NOVEDADES}
+        con_novedad = {c for n in mi.NOVEDADES for c in (n["clave"], *n.get("otras", ()))}
         self.assertEqual(claves - con_novedad, set())
         mi.comprueba()
 
