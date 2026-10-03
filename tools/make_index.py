@@ -2539,6 +2539,115 @@ def es_cinta(p):
 # desensamblados, que son de juegos desmontados.
 PARCHES = [
     dict(
+        clave="galious-yamanooto",
+        titulo="The Maze of Galious &mdash; saves on the Yamanooto",
+        anio=1987,
+        repo="https://github.com/antxiko/Galious-Yamanooto-Patch",
+        web="https://antxiko.github.io/Galious-Yamanooto-Patch/",
+        meta=dict(
+            en="Konami &middot; MSX &middot; 128 KB cartridge &middot; Yamanooto patch, unofficial",
+            es="Konami &middot; MSX &middot; cartucho de 128 KB &middot; parche para el Yamanooto, extraoficial",
+        ),
+        claim=dict(
+            en=("The game keeps your progress in a <b>45-letter password</b> that"
+               " you have to write down. With the patch, in the password room "
+               "you pick <b>one of three slots</b> and the game is saved to the "
+               "cartridge&rsquo;s flash. On the title screen, L no longer takes "
+               "you to the typing screen: you get the slot menu. What gets saved"
+               " is those same 45 letters, and <b>the game checks them with its "
+               "own checksum</b>, as if they had been typed."),
+            es=("El juego guarda la partida en una <b>contraseña de 45 letras</b>"
+               " que hay que apuntar a mano. Con el parche, en la sala de la "
+               "contraseña se elige <b>un slot de los tres</b> y la partida se "
+               "graba en la flash del cartucho. En el título, la L ya no lleva a"
+               " teclear: sale el menú de slots. Lo que se graba son esas mismas"
+               " 45 letras y <b>el juego las comprueba con su propia suma</b>, "
+               "como si se tecleasen."),
+        ),
+        datos=dict(
+            en=lambda i: ("<b>55</b> bytes changed in <b>4</b> stretches &middot; <b>8 "
+               "KB</b> driver &middot; 3 slots in <b>one 64 KB sector</b> "
+               "&middot; no ROM distributed"),
+            es=lambda i: ("<b>55</b> bytes cambiados en <b>4</b> tramos &middot; driver de "
+               "<b>8 KB</b> &middot; 3 slots en <b>un sector de 64 KB</b> "
+               "&middot; no se distribuye ninguna ROM"),
+        ),
+        nota=dict(
+            en="tested in openMSX; not yet on a real cartridge",
+            es="probado en openMSX; todavía no en un cartucho real",
+        ),
+    ),
+    dict(
+        clave="metalgear-yamanooto",
+        titulo="Metal Gear &mdash; saves on the Yamanooto",
+        anio=1987,
+        repo="https://github.com/antxiko/MetalGear-Yamanooto-Patch",
+        web="https://antxiko.github.io/MetalGear-Yamanooto-Patch/",
+        meta=dict(
+            en="Konami &middot; MSX &middot; 128 KB cartridge &middot; Yamanooto patch, unofficial",
+            es="Konami &middot; MSX &middot; cartucho de 128 KB &middot; parche para el Yamanooto, extraoficial",
+        ),
+        claim=dict(
+            en=("Metal Gear saves to <b>tape</b>. The patch redirects the "
+               "game&rsquo;s <b>20 calls</b> to the tape BIOS to a <b>virtual "
+               "tape</b> in the cartridge&rsquo;s flash: the file name, "
+               "SKIP/FOUND, VERIFY and the retries are still the game&rsquo;s "
+               "own. It holds <b>3 saves</b>."),
+            es=("Metal Gear graba en <b>cinta</b>. El parche desvía las <b>20 "
+               "llamadas</b> del juego a la BIOS de la cinta hacia una <b>cinta "
+               "virtual</b> en la flash del cartucho: el nombre del fichero, el "
+               "SKIP/FOUND, el VERIFY y los reintentos siguen siendo los del "
+               "juego. Caben <b>3 partidas</b>."),
+        ),
+        datos=dict(
+            en=lambda i: ("<b>96</b> bytes changed in <b>21</b> stretches &middot; <b>8 "
+               "KB</b> driver &middot; one <b>64 KB</b> sector &middot; no ROM "
+               "distributed"),
+            es=lambda i: ("<b>96</b> bytes cambiados en <b>21</b> tramos &middot; driver de"
+               " <b>8 KB</b> &middot; un sector de <b>64 KB</b> &middot; no se "
+               "distribuye ninguna ROM"),
+        ),
+        nota=dict(
+            en="tested in openMSX on 2026-07-05: save at an elevator, switch off and load",
+            es="probado en openMSX el 2026-07-05: grabar en un ascensor, apagar y cargar",
+        ),
+    ),
+    dict(
+        clave="metalgear2-yamanooto",
+        titulo="Metal Gear 2: Solid Snake &mdash; saves on the Yamanooto",
+        anio=1990,
+        repo="https://github.com/antxiko/MetalGear2-Yamanooto-Patch",
+        web="https://antxiko.github.io/MetalGear2-Yamanooto-Patch/",
+        meta=dict(
+            en="Konami &middot; MSX2 &middot; 512 KB SCC cartridge &middot; Yamanooto patch, unofficial",
+            es="Konami &middot; MSX2 &middot; cartucho de 512 KB con SCC &middot; parche para el Yamanooto, extraoficial",
+        ),
+        claim=dict(
+            en=("Metal Gear 2 saves to the <b>Game Master 2</b> or to disk. The "
+               "patch makes it believe the Game Master 2 is plugged in and "
+               "<b>answers its calls itself</b>, writing the game&rsquo;s "
+               "<b>three files</b> (SNAK1, SNAK2 and SNAK3) to the "
+               "cartridge&rsquo;s flash. No Game Master 2, no disk drive."),
+            es=("Metal Gear 2 graba en el <b>Game Master 2</b> o en disco. El "
+               "parche le hace creer que tiene el Game Master 2 al lado y "
+               "<b>contesta él</b> a sus llamadas, escribiendo en la flash del "
+               "cartucho los <b>tres ficheros</b> del juego (SNAK1, SNAK2 y "
+               "SNAK3). Ni Game Master 2 ni disquetera."),
+        ),
+        datos=dict(
+            en=lambda i: ("<b>39</b> bytes changed in <b>3</b> stretches &middot; <b>8 "
+               "KB</b> driver &middot; one <b>64 KB</b> sector &middot; no ROM "
+               "distributed"),
+            es=lambda i: ("<b>39</b> bytes cambiados en <b>3</b> tramos &middot; driver de "
+               "<b>8 KB</b> &middot; un sector de <b>64 KB</b> &middot; no se "
+               "distribuye ninguna ROM"),
+        ),
+        nota=dict(
+            en="tested in openMSX",
+            es="probado en openMSX",
+        ),
+    ),
+    dict(
         clave="dunkshot-msx2",
         titulo="Dunk Shot &mdash; MSX2 patch",
         anio=1986,
@@ -2792,6 +2901,8 @@ HERRAMIENTAS = [
 #     que los puso en ella.
 #   - 'clave' es el proyecto del que habla; su web es el enlace de la entrada
 #     (o 'enlace', si se da).
+#   - 'otras' (opcional): mas proyectos de los que habla la misma entrada,
+#     cuando se publican juntos (los tres parches del Yamanooto).
 #   - 'clase': "nuevo" (el proyecto se publica) o "actualiza" (algo nuevo en
 #     uno ya publicado).
 #   - 'titulo' y 'resumen' son opcionales, bilingues y en TEXTO PLANO. Sin
@@ -2801,6 +2912,20 @@ HERRAMIENTAS = [
 # nueva a vieja, una clave no existe o un proyecto se queda sin novedad.
 # --------------------------------------------------------------------------
 NOVEDADES = [
+    dict(id="partidas-en-el-yamanooto", clave="galious-yamanooto",
+         otras=["metalgear-yamanooto", "metalgear2-yamanooto"],
+         clase="nuevo", fecha="2026-10-03T21:00:00+02:00",
+         enlace="https://antxiko.github.io/#patches",
+         titulo=dict(en="Saves on the Yamanooto: Galious, Metal Gear and Metal Gear 2",
+                     es="Partidas en el Yamanooto: Galious, Metal Gear y Metal Gear 2"),
+         resumen=dict(
+             en="Three patches that save the game to the cartridge&rsquo;s flash "
+                "instead of to a password, a tape or the Game Master 2. Each one "
+                "builds, from your own ROM, the image ready to flash.",
+             es="Tres parches que guardan la partida en la flash del cartucho en "
+                "vez de en contraseña, cinta o Game Master 2. Cada uno monta, con "
+                "tu ROM, la imagen lista para grabar."),
+    ),
     dict(id="galious", clave="galious",
          clase="nuevo", fecha="2026-10-03T18:39:57+02:00",
          titulo=dict(en="The Maze of Galious: the castle, ten worlds and 321 rooms, taken apart",
@@ -3829,12 +3954,15 @@ def comprueba():
         anterior = fecha
         if n["clave"] not in claves:
             raise SystemExit(f"NOVEDADES {n['id']}: la clave {n['clave']!r} no es de ningun proyecto")
+        for otra in n.get("otras", ()):
+            if otra not in claves:
+                raise SystemExit(f"NOVEDADES {n['id']}: la clave {otra!r} no es de ningun proyecto")
         if n["clase"] not in ("nuevo", "actualiza"):
             raise SystemExit(f"NOVEDADES {n['id']}: clase {n['clase']!r}")
         for campo in ("titulo", "resumen"):
             if campo in n and set(n[campo]) != {"en", "es"}:
                 raise SystemExit(f"NOVEDADES {n['id']}: {campo} tiene que ir en 'en' y 'es'")
-    sin = claves - {n["clave"] for n in NOVEDADES}
+    sin = claves - {c for n in NOVEDADES for c in (n["clave"], *n.get("otras", ()))}
     if sin:
         raise SystemExit(f"proyectos sin novedad en NOVEDADES: {sorted(sin)}")
 
