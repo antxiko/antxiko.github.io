@@ -2914,7 +2914,7 @@ HERRAMIENTAS = [
 NOVEDADES = [
     dict(id="partidas-en-el-yamanooto", clave="galious-yamanooto",
          otras=["metalgear-yamanooto", "metalgear2-yamanooto"],
-         clase="nuevo", fecha="2026-10-03T21:00:00+02:00",
+         clase="nuevo", fecha="2026-10-03T20:33:16+02:00",
          enlace="https://antxiko.github.io/#patches",
          titulo=dict(en="Saves on the Yamanooto: Galious, Metal Gear and Metal Gear 2",
                      es="Partidas en el Yamanooto: Galious, Metal Gear y Metal Gear 2"),
