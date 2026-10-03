@@ -1385,6 +1385,47 @@ DESENSAMBLADOS = [
         nota=dict(en=None, es=None),
     ),
     dict(
+        clave="galious",
+        grupo="konami",
+        titulo="The Maze of Galious",
+        anio=1987,
+        repo="https://github.com/antxiko/MazeOfGalious-disassembly",
+        web="https://antxiko.github.io/MazeOfGalious-disassembly/",
+        meta=dict(
+            en="Konami &middot; MSX &middot; 128 KB cartridge &middot; RC-749",
+            es="Konami &middot; MSX &middot; cartucho de 128 KB &middot; RC-749",
+        ),
+        claim=dict(
+            en="<b>The castle and ten worlds, all 321 rooms, drawn from the ROM "
+               "and laid out by their neighbours.</b> Popolon and Aphrodite, the "
+               "sprite sets, the ten bosses (character mosaics, not sprites), "
+               "the 47 items and the shops, all checked against openMSX down to "
+               "zero. Plus the black rooms that turn out to be hints and shops, "
+               "ZEUS in the pause to continue, the character sitting on a cup "
+               "with F2, and what Q*bert next to it gives you.",
+            es="<b>El castillo y diez mundos, las 321 salas, dibujadas desde la "
+               "ROM y colocadas por sus vecinas.</b> Popolon y Afrodita, los "
+               "juegos de sprites, los diez jefes (mosaicos de caracteres, no "
+               "sprites), los 47 objetos y las tiendas, todo cotejado contra "
+               "openMSX a cero. Y las salas negras que resultan ser pistas y "
+               "tiendas, ZEUS en la pausa para continuar, el personaje sentado "
+               "en una taza con F2 y lo que da Q*bert al lado.",
+        ),
+        datos=dict(
+            en=lambda i: (f"{cif(131072, i)} bytes &middot; <b>0</b> unexplained "
+                          f"&middot; reassembles <b>byte for byte</b> &middot; "
+                          f"{cif(53613, i)} of code, {cif(77459, i)} of data "
+                          f"&middot; {cif(3423, i)} routines &middot; commented "
+                          f"to <b>40.1%</b>, none below 10%"),
+            es=lambda i: (f"{cif(131072, i)} bytes &middot; <b>0</b> sin explicar "
+                          f"&middot; reensambla <b>byte a byte</b> &middot; "
+                          f"{cif(53613, i)} de c&oacute;digo, {cif(77459, i)} de datos "
+                          f"&middot; {cif(3423, i)} rutinas &middot; comentado al "
+                          f"<b>40,1 %</b>, ninguna por debajo del 10 %"),
+        ),
+        nota=dict(en=None, es=None),
+    ),
+    dict(
         clave="kingkong2",
         grupo="konami",
         titulo="King Kong 2: Yomigaeru Densetsu",
@@ -2760,6 +2801,24 @@ HERRAMIENTAS = [
 # nueva a vieja, una clave no existe o un proyecto se queda sin novedad.
 # --------------------------------------------------------------------------
 NOVEDADES = [
+    dict(id="galious", clave="galious",
+         clase="nuevo", fecha="2026-10-03T18:39:57+02:00",
+         titulo=dict(en="The Maze of Galious: the castle, ten worlds and 321 rooms, taken apart",
+                     es="The Maze of Galious: el castillo, diez mundos y 321 salas, desmontado"),
+         resumen=dict(
+             en="Konami's 1987 MSX cartridge (Knightmare II), 100% explained and "
+                "commented to 40.1%. All 321 rooms laid out by their neighbours, "
+                "the ten bosses, Popolon and Aphrodite, the items and the shops, "
+                "drawn from the ROM and checked against openMSX down to zero; "
+                "plus ZEUS in the pause, the cup on F2 and the black rooms that "
+                "are hints and shops.",
+             es="El cartucho MSX de Konami de 1987 (Knightmare II), explicado al "
+                "100 % y comentado al 40,1 %. Las 321 salas colocadas por sus "
+                "vecinas, los diez jefes, Popolon y Afrodita, los objetos y las "
+                "tiendas, dibujados desde la ROM y cotejados contra openMSX a "
+                "cero; y ZEUS en la pausa, la taza de F2 y las salas negras que "
+                "son pistas y tiendas."),
+    ),
     dict(id="goemon-124-pantallas", clave="goemon",
          clase="actualiza", fecha="2026-10-02T15:32:53+02:00",
          titulo=dict(en="Ganbare Goemon!: 124 different screens, not 1,608",
