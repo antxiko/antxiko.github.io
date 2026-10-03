@@ -6,8 +6,16 @@
   <link rel="self" type="application/atom+xml" href="https://antxiko.github.io/feed.xml"/>
   <link rel="alternate" type="text/html" hreflang="en" href="https://antxiko.github.io/"/>
   <link rel="alternate" type="application/atom+xml" hreflang="es" href="https://antxiko.github.io/es/feed.xml"/>
-  <updated>2026-10-03T20:33:16+02:00</updated>
+  <updated>2026-10-03T21:08:11+02:00</updated>
   <author><name>antxiko</name><uri>https://github.com/antxiko</uri></author>
+  <entry>
+    <id>tag:antxiko.github.io,2026:novedad/en/yamanooto-sin-menu</id>
+    <title>The Yamanooto patches boot on their own, with no menu</title>
+    <link rel="alternate" type="text/html" href="https://antxiko.github.io/#patches"/>
+    <published>2026-10-03T21:08:11+02:00</published>
+    <updated>2026-10-03T21:08:11+02:00</updated>
+    <summary type="text">The image each one builds no longer carries nPackR's menu: the game goes at the start of the flash and boots straight away. Galious and Metal Gear now switch banks through the Konami SCC registers, the mode a Yamanooto starts in.</summary>
+  </entry>
   <entry>
     <id>tag:antxiko.github.io,2026:novedad/en/partidas-en-el-yamanooto</id>
     <title>Saves on the Yamanooto: Galious, Metal Gear and Metal Gear 2</title>
@@ -159,13 +167,5 @@
     <published>2026-09-28T11:59:37+02:00</published>
     <updated>2026-09-28T11:59:37+02:00</updated>
     <summary type="text">The three shopkeepers drawn from the tables, each with his greeting and his farewell: the usual one, the one who charges double and Santa Claus, who gives one thing away. The sixteen items with what each one does, read from whoever checks its flag. Checked against 14 openMSX dumps, zero differences.</summary>
-  </entry>
-  <entry>
-    <id>tag:antxiko.github.io,2026:novedad/en/penguinadventure-el-mapa</id>
-    <title>Penguin Adventure: the map before every stage</title>
-    <link rel="alternate" type="text/html" href="https://antxiko.github.io/PenguinAdventure-disassembly/"/>
-    <published>2026-09-28T11:06:18+02:00</published>
-    <updated>2026-09-28T11:06:18+02:00</updated>
-    <summary type="text">The map before every stage, drawn from its tables and checked against the emulator, warps included.</summary>
   </entry>
 </feed>

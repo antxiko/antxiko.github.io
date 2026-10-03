@@ -2565,10 +2565,10 @@ PARCHES = [
                "como si se tecleasen."),
         ),
         datos=dict(
-            en=lambda i: ("<b>55</b> bytes changed in <b>4</b> stretches &middot; <b>8 "
+            en=lambda i: ("<b>87</b> bytes changed in <b>36</b> stretches &middot; <b>8 "
                "KB</b> driver &middot; 3 slots in <b>one 64 KB sector</b> "
                "&middot; no ROM distributed"),
-            es=lambda i: ("<b>55</b> bytes cambiados en <b>4</b> tramos &middot; driver de "
+            es=lambda i: ("<b>87</b> bytes cambiados en <b>36</b> tramos &middot; driver de "
                "<b>8 KB</b> &middot; 3 slots en <b>un sector de 64 KB</b> "
                "&middot; no se distribuye ninguna ROM"),
         ),
@@ -2600,10 +2600,10 @@ PARCHES = [
                "juego. Caben <b>3 partidas</b>."),
         ),
         datos=dict(
-            en=lambda i: ("<b>96</b> bytes changed in <b>21</b> stretches &middot; <b>8 "
+            en=lambda i: ("<b>109</b> bytes changed in <b>34</b> stretches &middot; <b>8 "
                "KB</b> driver &middot; one <b>64 KB</b> sector &middot; no ROM "
                "distributed"),
-            es=lambda i: ("<b>96</b> bytes cambiados en <b>21</b> tramos &middot; driver de"
+            es=lambda i: ("<b>109</b> bytes cambiados en <b>34</b> tramos &middot; driver de"
                " <b>8 KB</b> &middot; un sector de <b>64 KB</b> &middot; no se "
                "distribuye ninguna ROM"),
         ),
@@ -2912,6 +2912,22 @@ HERRAMIENTAS = [
 # nueva a vieja, una clave no existe o un proyecto se queda sin novedad.
 # --------------------------------------------------------------------------
 NOVEDADES = [
+    dict(id="yamanooto-sin-menu", clave="galious-yamanooto",
+         otras=["metalgear-yamanooto", "metalgear2-yamanooto"],
+         clase="actualiza", fecha="2026-10-03T21:08:11+02:00",
+         enlace="https://antxiko.github.io/#patches",
+         titulo=dict(en="The Yamanooto patches boot on their own, with no menu",
+                     es="Los parches del Yamanooto arrancan solos, sin menú"),
+         resumen=dict(
+             en="The image each one builds no longer carries nPackR's menu: the "
+                "game goes at the start of the flash and boots straight away. "
+                "Galious and Metal Gear now switch banks through the Konami SCC "
+                "registers, the mode a Yamanooto starts in.",
+             es="La imagen que monta cada uno ya no lleva el menú de nPackR: el "
+                "juego va al principio de la flash y arranca directamente. "
+                "Galious y Metal Gear cambian de banco con los registros Konami "
+                "SCC, el modo con el que arranca el Yamanooto."),
+    ),
     dict(id="partidas-en-el-yamanooto", clave="galious-yamanooto",
          otras=["metalgear-yamanooto", "metalgear2-yamanooto"],
          clase="nuevo", fecha="2026-10-03T20:33:16+02:00",
