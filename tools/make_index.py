@@ -2405,6 +2405,43 @@ DESENSAMBLADOS = [
         nota=dict(en=None, es=None),
     ),
     dict(
+        clave="rastan",
+        grupo="ports",
+        titulo="Rastan Saga",
+        anio=1988,
+        repo="https://github.com/antxiko/RastanSaga-disassembly",
+        web="https://antxiko.github.io/RastanSaga-disassembly/",
+        meta=dict(
+            en="Taito &middot; MSX2 &middot; 256 KB cartridge",
+            es="Taito &middot; MSX2 &middot; cartucho de 256 KB",
+        ),
+        claim=dict(
+            en="The seven rounds, 255 screens built from their maps with their "
+               "enemies and bosses, Rastan in his three layers, <b>the dragon "
+               "stage the game skips</b> and <b>an ending it never draws</b>, all "
+               "drawn from the ROM. In the header, <b>a test cheat</b>: byte "
+               "0x4010 set to 1 and key 7 jumps to the next stage.",
+            es="Las siete rondas, 255 pantallas montadas desde sus mapas con sus "
+               "enemigos y sus jefes, Rastan en sus tres capas, <b>la fase del "
+               "dragón que el juego se salta</b> y <b>un final que no pinta</b>, "
+               "todo dibujado desde la ROM. En la cabecera, <b>un truco de "
+               "pruebas</b>: el byte 0x4010 a 1 y la tecla 7 pasa de fase.",
+        ),
+        datos=dict(
+            en=lambda i: (f"{cif(262144, i)} bytes &middot; <b>0</b> unexplained "
+                          f"&middot; reassembles <b>byte for byte</b> &middot; "
+                          f"{cif(29820, i)} of code, {cif(232324, i)} of data "
+                          f"&middot; {cif(1406, i)} routines &middot; commented "
+                          f"to <b>46.1%</b>, none below 10%"),
+            es=lambda i: (f"{cif(262144, i)} bytes &middot; <b>0</b> sin explicar "
+                          f"&middot; reensambla <b>byte a byte</b> &middot; "
+                          f"{cif(29820, i)} de código, {cif(232324, i)} de datos "
+                          f"&middot; {cif(1406, i)} rutinas &middot; comentado al "
+                          f"<b>46,1 %</b>, ninguna por debajo del 10 %"),
+        ),
+        nota=dict(en=None, es=None),
+    ),
+    dict(
         clave="war",
         grupo="ports",
         titulo="War in Middle Earth",
@@ -3254,6 +3291,23 @@ MSXON = [
 # nueva a vieja, una clave no existe o un proyecto se queda sin novedad.
 # --------------------------------------------------------------------------
 NOVEDADES = [
+    dict(id="rastan", clave="rastan",
+         clase="nuevo", fecha="2026-10-04T20:42:10+02:00",
+         titulo=dict(en="Rastan Saga: seven rounds, 255 screens and a dragon that is skipped, taken apart",
+                     es="Rastan Saga: siete rondas, 255 pantallas y un dragón que se salta, desmontado"),
+         resumen=dict(
+             en="Taito's 1988 MSX2 cartridge, 100% explained and commented to "
+                "46.1%. The seven rounds with their enemies and bosses, Rastan in "
+                "his three layers and the 37 actor types, drawn from the ROM and "
+                "checked against openMSX; plus the dragon stage the game skips, "
+                "an ending it never draws and a test cheat in the header.",
+             es="El cartucho MSX2 de Taito de 1988, explicado al 100 % y "
+                "comentado al 46,1 %. Las siete rondas con sus enemigos y sus "
+                "jefes, Rastan en sus tres capas y los 37 tipos de actor, "
+                "dibujados desde la ROM y cotejados contra openMSX; y la fase del "
+                "dragón que el juego se salta, un final que no pinta y un truco "
+                "de pruebas en la cabecera."),
+    ),
     dict(id="galious-yamanooto-esc", clave="galious-yamanooto",
          otras=["npackr"],
          clase="actualiza", fecha="2026-10-04T13:40:00+02:00",
