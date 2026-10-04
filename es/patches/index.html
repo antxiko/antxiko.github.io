@@ -1,0 +1,132 @@
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Los parches &mdash; antxiko</title>
+<link rel="alternate" type="application/atom+xml" hreflang="es" title="Novedades" href="../feed.xml">
+<link rel="alternate" type="application/atom+xml" hreflang="en" title="Feed" href="../../feed.xml">
+<style>
+:root{--tinta:#cfd0d4;--suave:#83868f;--fondo:#000;--panel:#0c0e13;--linea:#23262e;
+  --rojo:#ff897d;--cyan:#65dbef;--verde:#3eb849;--oro:#ded087}
+@media (prefers-color-scheme:light){:root{--tinta:#191a1e;--suave:#5a5d66;--fondo:#e9e7e1;
+  --panel:#f7f6f2;--linea:#d0cdc5;--rojo:#b23f34;--cyan:#1c6b7c;--verde:#2b7734;--oro:#8a7420}}
+:root[data-theme="dark"]{--tinta:#cfd0d4;--suave:#83868f;--fondo:#000;--panel:#0c0e13;
+  --linea:#23262e;--rojo:#ff897d;--cyan:#65dbef;--verde:#3eb849;--oro:#ded087}
+:root[data-theme="light"]{--tinta:#191a1e;--suave:#5a5d66;--fondo:#e9e7e1;--panel:#f7f6f2;
+  --linea:#d0cdc5;--rojo:#b23f34;--cyan:#1c6b7c;--verde:#2b7734;--oro:#8a7420}
+*{box-sizing:border-box}
+body{margin:0;background:var(--fondo);color:var(--tinta);padding:0 1.25rem 6rem;
+  font:15px/1.7 ui-monospace,"SF Mono",Menlo,Consolas,monospace}
+.w{max-width:1120px;margin:0 auto}
+.n{max-width:68ch}
+h1,h2,h3,h4{font-weight:400;text-wrap:balance}
+a{color:var(--cyan)}
+img{image-rendering:pixelated;max-width:100%;height:auto;display:block}
+header.top{display:flex;flex-direction:column;align-items:center;gap:1.5rem;
+  padding:4rem 0 2rem;text-align:center}
+header.top img{width:min(100%,642px)}
+.claim{max-width:60ch;color:var(--suave);font-size:1.05rem}
+.claim b{color:var(--tinta);font-weight:400}
+.ficha{display:flex;flex-wrap:wrap;justify-content:center;gap:0 1.5rem;width:100%;
+  font-size:12px;letter-spacing:.08em;text-transform:uppercase;color:var(--suave);
+  border-top:1px solid var(--linea);border-bottom:1px solid var(--linea);padding:.85rem 0}
+.ficha b{color:var(--rojo);font-weight:400}
+nav{display:flex;flex-wrap:wrap;gap:1.25rem;justify-content:center;padding:1.25rem 0;
+  font-size:12px;letter-spacing:.08em;text-transform:uppercase}
+nav a{color:var(--suave);text-decoration:none;border-bottom:1px solid transparent}
+nav a:hover,nav a:focus{color:var(--tinta);border-bottom-color:var(--rojo)}
+nav.docs{border-top:1px solid var(--linea);border-bottom:1px solid var(--linea);
+  margin-bottom:1rem}
+section{margin-top:4.5rem;scroll-margin-top:1rem}
+section>h2{font-size:1rem;letter-spacing:.1em;text-transform:uppercase;
+  border-left:3px solid var(--rojo);padding-left:.9rem;margin:0 0 1.5rem}
+.cifras{display:grid;gap:1px;background:var(--linea);border:1px solid var(--linea);
+  grid-template-columns:repeat(auto-fit,minmax(160px,1fr))}
+.cifra{background:var(--panel);padding:1.1rem}
+.cifra b{display:block;font-size:1.7rem;color:var(--oro);font-weight:400;
+  font-variant-numeric:tabular-nums;line-height:1.2}
+.cifra span{font-size:11px;letter-spacing:.07em;text-transform:uppercase;color:var(--suave)}
+.hall{border-top:1px solid var(--linea);padding-top:1.75rem;margin-top:2.5rem}
+.hall:first-of-type{border-top:0;padding-top:0;margin-top:0}
+.hall h3{margin:0 0 .75rem;font-size:1.15rem;color:var(--rojo)}
+.hall h4{color:var(--oro);margin:1.5rem 0 .5rem;font-size:.95rem}
+.hall p{margin:0 0 1rem}
+pre.asm{background:var(--panel);border-left:2px solid var(--verde);margin:1.25rem 0;
+  padding:1rem 1.1rem;overflow-x:auto;font-size:13px;line-height:1.6;color:var(--tinta)}
+.par{display:grid;gap:1.25rem;grid-template-columns:1fr}
+@media(min-width:820px){.par{grid-template-columns:1fr 1fr}}
+.par figure{margin:0}
+table{border-collapse:collapse;width:100%;margin:1.25rem 0;font-size:13px;display:block;
+  overflow-x:auto}
+th,td{text-align:left;padding:.5rem .75rem;border-bottom:1px solid var(--linea)}
+th{color:var(--suave);font-weight:400;font-size:11px;letter-spacing:.07em;text-transform:uppercase}
+td.num{font-variant-numeric:tabular-nums;color:var(--oro)}
+.nivel{margin-top:2rem}
+.nivel h3{margin:0 0 .9rem;font-size:.95rem;letter-spacing:.06em;text-transform:uppercase}
+.nivel em{color:var(--cyan);font-style:normal}
+.sep{color:var(--suave);margin:0 .6rem}
+.rejilla{display:grid;gap:.9rem;grid-template-columns:repeat(auto-fill,minmax(250px,1fr))}
+.rejilla figure{margin:0;background:var(--panel);box-shadow:0 0 0 1px var(--linea)}
+.rejilla figcaption{display:flex;justify-content:space-between;padding:.45rem .65rem;
+  font-size:11px;color:var(--suave);border-top:1px solid var(--linea)}
+.dir{font-variant-numeric:tabular-nums;color:var(--verde)}
+footer{margin-top:5rem;padding-top:1.5rem;border-top:1px solid var(--linea);
+  color:var(--suave);font-size:12px}
+
+/* Aviso de trabajo en curso: tiene que verse antes que las cifras, porque un
+   100% mal leido hace mas dano que no ponerlo. */
+.aviso{background:#3a2a10;border-left:3px solid var(--oro);margin:1.5rem auto;
+  padding:1rem 1.2rem;max-width:900px;border-radius:4px}
+.aviso p{margin:0;color:var(--tinta);font-size:15px;line-height:1.65}
+.galeria{display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
+  gap:1.5rem;margin:1.5rem 0}
+.galeria figure{margin:0}
+.galeria img{width:100%;height:auto;image-rendering:pixelated;
+  border:1px solid var(--linea);border-radius:3px}
+.galeria figcaption{color:var(--suave);font-size:13px;margin-top:.5rem}
+audio{display:block;width:100%;max-width:640px;margin:.75rem 0 1.5rem}
+
+header.top h1{margin:0;font-size:2.3rem;letter-spacing:.04em}
+header.top h1 span{color:var(--rojo)}
+.proyectos{display:grid;gap:1px;background:var(--linea);border:1px solid var(--linea);
+  grid-template-columns:repeat(auto-fit,minmax(min(300px,100%),1fr))}
+.proy{background:var(--panel);padding:1.4rem 1.3rem;display:flex;flex-direction:column}
+.proy h3{margin:0 0 .35rem;font-size:1.15rem;color:var(--rojo)}
+.proy h3 span{color:var(--suave);font-size:12px;letter-spacing:.08em}
+.proy p.meta{margin:0 0 .9rem;font-size:11px;letter-spacing:.07em;
+  text-transform:uppercase;color:var(--suave)}
+.proy p.claim{margin:0 0 1rem;max-width:none;font-size:15px;color:var(--tinta)}
+.proy p.datos{margin:0;padding-top:.85rem;border-top:1px solid var(--linea);
+  font-size:13px;color:var(--suave)}
+nav a.sec,a.entrar{border:1px solid var(--linea);padding:.4rem .95rem;
+  color:var(--tinta);text-transform:uppercase;letter-spacing:.07em;font-size:13px;
+  text-decoration:none}
+nav a.sec:hover,nav a.sec:focus,a.entrar:hover,a.entrar:focus{border-color:var(--rojo)}
+nav a.sec[aria-current]{background:var(--rojo);border-color:var(--rojo);color:var(--fondo)}
+nav{align-items:center}
+.resumen{margin:3rem 0}
+.proy p.datos b{color:var(--oro);font-weight:400;font-variant-numeric:tabular-nums}
+.proy p.enlaces{margin:auto 0 0;padding-top:1rem;font-size:12px;letter-spacing:.07em;
+  text-transform:uppercase}
+.proy p.enlaces a{margin-right:1.1rem}
+.proy p.enlaces em{color:var(--suave);font-style:normal}
+.parte{margin-top:3rem;scroll-margin-top:1rem}
+.parte h3{margin:0 0 1rem;font-size:.95rem;letter-spacing:.1em;text-transform:uppercase;
+  color:var(--oro)}
+.parte h3 span{color:var(--suave);font-size:12px;letter-spacing:.08em;margin-left:.6rem}
+</style>
+
+<div class="w">
+<header class="top">
+  <h1><a href="../" style="color:inherit;text-decoration:none">antxiko<span>/</span></a></h1>
+  <p class="claim">Binarios viejos de 8 bits desmontados byte a byte y comentados, con las herramientas para volver a montarlos: no se afirma nada que el binario no enseñe, y el código fuente tiene que devolver el original, byte a byte. Ahora mismo son 59 juegos de MSX.</p>
+  <div class="ficha"><span><b>59</b> juegos</span><span><b>1983-1989</b></span><span>MSX</span><span><b>8</b> cintas &middot; <b>51</b> cartuchos</span></div>
+</header>
+<nav><a class="sec" href="../disassemblies/">Desensamblados</a><a class="sec" href="../patches/" aria-current="page">Parches</a><a href="../feed.xml">Novedades</a><a href="https://github.com/antxiko">GitHub</a><a href="../../patches/" style="margin-left:auto;color:var(--oro)">In English</a></nav>
+
+<section id="patches">
+  <h2>Los parches</h2>
+  <p class="n" style="margin-bottom:2rem;color:var(--suave)">Lo que viene después de entender un cartucho: cambiarlo. Con la misma regla que los desensamblados &mdash;la construcción tiene que demostrar que, fuera de los bloques que declara, la ROM es idéntica a la original&mdash;. Lo que se distribuye es el fichero de diferencias, nunca una imagen de cartucho.</p>
+  <div class="proyectos"><article class="proy"><h3>The Maze of Galious &mdash; saves on the Yamanooto <span>1987</span></h3><p class="meta">Konami &middot; MSX &middot; cartucho de 128 KB &middot; parche para el Yamanooto, extraoficial</p><p class="claim">El juego guarda la partida en una <b>contraseña de 45 letras</b> que hay que apuntar a mano. Con el parche, en la sala de la contraseña se elige <b>un slot de los tres</b> y la partida se graba en la flash del cartucho. En el título, la L ya no lleva a teclear: sale el menú de slots. Lo que se graba son esas mismas 45 letras y <b>el juego las comprueba con su propia suma</b>, como si se tecleasen.</p><p class="datos"><b>87</b> bytes cambiados en <b>36</b> tramos &middot; driver de <b>8 KB</b> &middot; 3 slots en <b>un sector de 64 KB</b> &middot; no se distribuye ninguna ROM</p><p class="enlaces"><a href="https://github.com/antxiko/Galious-Yamanooto-Patch">Repositorio</a><a href="https://antxiko.github.io/Galious-Yamanooto-Patch/">Web</a><em>probado en openMSX y en un MSX real con un Yamanooto, por pabibiris</em></p></article><article class="proy"><h3>Metal Gear &mdash; saves on the Yamanooto <span>1987</span></h3><p class="meta">Konami &middot; MSX &middot; cartucho de 128 KB &middot; parche para el Yamanooto, extraoficial</p><p class="claim">Metal Gear graba en <b>cinta</b>. El parche desvía las <b>20 llamadas</b> del juego a la BIOS de la cinta hacia una <b>cinta virtual</b> en la flash del cartucho: el nombre del fichero, el SKIP/FOUND, el VERIFY y los reintentos siguen siendo los del juego. Caben <b>3 partidas</b>.</p><p class="datos"><b>109</b> bytes cambiados en <b>34</b> tramos &middot; driver de <b>8 KB</b> &middot; un sector de <b>64 KB</b> &middot; no se distribuye ninguna ROM</p><p class="enlaces"><a href="https://github.com/antxiko/MetalGear-Yamanooto-Patch">Repositorio</a><a href="https://antxiko.github.io/MetalGear-Yamanooto-Patch/">Web</a><em>probado en openMSX el 2026-07-05: grabar en un ascensor, apagar y cargar</em></p></article><article class="proy"><h3>Metal Gear 2: Solid Snake &mdash; saves on the Yamanooto <span>1990</span></h3><p class="meta">Konami &middot; MSX2 &middot; cartucho de 512 KB con SCC &middot; parche para el Yamanooto, extraoficial</p><p class="claim">Metal Gear 2 graba en el <b>Game Master 2</b> o en disco. El parche le hace creer que tiene el Game Master 2 al lado y <b>contesta él</b> a sus llamadas, escribiendo en la flash del cartucho los <b>tres ficheros</b> del juego (SNAK1, SNAK2 y SNAK3). Ni Game Master 2 ni disquetera.</p><p class="datos"><b>39</b> bytes cambiados en <b>3</b> tramos &middot; driver de <b>8 KB</b> &middot; un sector de <b>64 KB</b> &middot; no se distribuye ninguna ROM</p><p class="enlaces"><a href="https://github.com/antxiko/MetalGear2-Yamanooto-Patch">Repositorio</a><a href="https://antxiko.github.io/MetalGear2-Yamanooto-Patch/">Web</a><em>probado en openMSX</em></p></article><article class="proy"><h3>Dunk Shot &mdash; MSX2 patch <span>1986</span></h3><p class="meta">HAL Laboratory &middot; MSX2 &middot; cartucho de 32 KB &middot; parche IPS, extraoficial</p><p class="claim">Cada jugador son cuatro sprites y el MSX pinta cuatro por línea, así que el juego <b>los ordena por profundidad y enseña la lista y su inversa en cuadros alternos</b>: ese es el parpadeo. Un MSX2 pinta ocho. Esto lleva el juego a <b>SCREEN 4</b>, pone la tabla de colores de sprite y los atributos en el único bloque de 1 KB libre de la VRAM y enseña siempre la lista ordenada. El código nuevo vive en el relleno y en <b>tres rutinas huérfanas</b> del cartucho, no se mueve ni un patrón, y <b>en un MSX de primera generación se juega como el original</b>.</p><p class="datos"><b>164</b> bytes cambiados en <b>24</b> tramos &middot; IPS de <b>292</b> bytes &middot; sprites sin pintar por cuadro <b>66,7 &rarr; 1,7</b> &middot; no se distribuye ninguna ROM</p><p class="enlaces"><a href="https://github.com/antxiko/DunkShot-MSX2-Patch">Repositorio</a><a href="https://antxiko.github.io/DunkShot-MSX2-Patch/">Web</a><em>probado en openMSX (MSX y Philips NMS 8250); todavía no en una máquina real</em></p></article><article class="proy"><h3>Konami&rsquo;s Mahjong Dojo &mdash; English patch <span>1984</span></h3><p class="meta">Konami &middot; MSX &middot; RC-707 &middot; parche IPS, extraoficial</p><p class="claim">El cartucho está en japonés, y la pantalla que dice por qué has ganado también. Esto pasa al inglés todas las pantallas que hay que leer <b>sin cambiar ni una instrucción del juego</b> &mdash;y de paso le pone el tutorial que nunca tuvo: <b>veinte pantallas</b> en el modo attract con las treinta y cuatro fichas dibujadas, enganchadas con un solo <code>jp</code>&mdash;. El sitio salió del hueco que el cartucho deja dentro de sus propias fichas, y el centro de la pantalla escribe <b>dos letras por celda</b> para que quepa.</p><p class="datos"><b>12.103</b> bytes cambiados en <b>46</b> bloques &middot; <b>0</b> fuera de ellos &middot; IPS de <b>12.511</b> bytes &middot; <b>20</b> pantallas de tutorial &middot; no se distribuye ninguna ROM</p><p class="enlaces"><a href="https://github.com/antxiko/KonamisMahjongDojo-ENPatch">Repositorio</a><a href="https://antxiko.github.io/KonamisMahjongDojo-ENPatch/">Web</a><em>trabajo en curso: se juega, pero no está terminado</em></p></article><article class="proy"><h3>War in Middle Earth &mdash; Araubi&rsquo;s patch <span>1989</span></h3><p class="meta">Melbourne House / Dro Soft &middot; MSX &middot; cinta &middot; parche IPS, extraoficial</p><p class="claim">Araubi pidió tres cosas en el foro y salieron seis. Las unidades enemigas no se veían porque el bucle que las siembra en el mapa <b>para una ranura antes de que empiece el bando enemigo</b>; las cualidades de una unidad eran adjetivos sin número; y el plazo del Anillo &mdash;una cuenta atrás de meses que el juego no enseña&mdash; sale ya al lado del anillo, en la ficha del portador. Las enemigas llevan además <b>el Ojo de Sauron</b>, porque bastaba un bit libre del byte de mapa para distinguir los dos bandos. El código nuevo vive dentro del <b>motor de altavoz del ZX que esta conversión trajo y no llama nadie</b>. Y el <b>mapa viene repintado entero</b>: 122 de los 128 tiles, dibujados en un PNG y convertidos en entradas del parche por la propia herramienta.</p><p class="datos"><b>1.396</b> bytes cambiados en <b>130</b> sitios &middot; <b>0</b> fuera de la tabla &middot; <b>0</b> desplazados &middot; IPS de <b>1.718</b> bytes &middot; no se distribuye ninguna cinta</p><p class="enlaces"><a href="https://github.com/antxiko/WarinMiddleEarth-MSX-Patch">Repositorio</a><a href="https://antxiko.github.io/WarinMiddleEarth-MSX-Patch/">Web</a><em>se juega; Araubi terminó una partida con la versión de septiembre, con el mapa repintado todavía nadie</em></p></article></div>
+</section>
+
+<footer>Trabajo de documentación y preservación sobre software de 8 bits. El código, los gráficos y el sonido de cada juego siguen siendo de sus autores y titulares de derechos; lo que se publica aquí es el análisis, los comentarios y las herramientas. No se distribuye ninguna cinta ni imagen de cartucho.</footer>
+</div>

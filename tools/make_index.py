@@ -3,7 +3,8 @@
 
     python3 tools/make_index.py
 
-Escribe index.html (ingles) y es/index.html (castellano). El diseno es el de la
+Escribe index.html (ingles) y es/index.html (castellano), y la pagina de cada
+seccion en los dos idiomas. El diseno es el de la
 serie de desensamblados: la hoja de estilo se importa tal cual de
 tools/estilo_web.py (el mismo fichero que usan las webs de los juegos) y aqui
 solo se anade lo propio de una portada de indice: la tarjeta de proyecto.
@@ -13,11 +14,12 @@ frases, de su README; la URL del repositorio, de su remote de git; y la URL de s
 web, del remote mas la existencia de docs/index.html. Un proyecto sin web se
 queda sin enlace de web, y no se inventa ninguna.
 
-La pagina son secciones de primer nivel (CATEGORIAS: hoy los desensamblados y
-los parches), y el menu de arriba son sus botones: cada uno ensena su seccion y
-esconde las demas (un script de veinte lineas; sin JavaScript se ven todas
-seguidas). Cualquier ancla vieja (#patches, #konami, #tools...) abre la seccion
-que la contiene. Una seccion sin proyectos no sale ni en el menu.
+El sitio son secciones de primer nivel (CATEGORIAS: hoy los desensamblados y
+los parches), cada una en su pagina: <id>/index.html y es/<id>/index.html. La
+portada lleva la cabecera, el menu (un boton por seccion) y de cada seccion su
+rotulo, su intro y la puerta a su pagina. Las anclas viejas de cuando todo iba
+en una pagina (/#patches, /#konami, /#tools...) las redirige un script de la
+portada a su pagina. Una seccion sin proyectos no sale ni en el menu.
 Una seccion puede ir en partes: la de los desensamblados lleva las cifras, tres
 grupos de juegos (Konami, exclusivos de MSX, conversiones), el metodo y la serie
 por dentro (HERRAMIENTAS), y cada juego dice su grupo en el campo 'grupo'. Para
@@ -33,6 +35,7 @@ de la portada llega a el sin pasar por texto_plano(): las entidades HTML
 """
 
 import html
+import json
 import os
 import re
 import sys
@@ -64,11 +67,13 @@ header.top h1 span{color:var(--rojo)}
 .proy p.claim{margin:0 0 1rem;max-width:none;font-size:15px;color:var(--tinta)}
 .proy p.datos{margin:0;padding-top:.85rem;border-top:1px solid var(--linea);
   font-size:13px;color:var(--suave)}
-nav:not(.docs) a[href^="#"]{border:1px solid var(--linea);padding:.4rem .95rem;
-  color:var(--tinta);text-transform:uppercase;letter-spacing:.07em;font-size:13px}
-nav:not(.docs) a[href^="#"]:hover,nav:not(.docs) a[href^="#"]:focus{border-color:var(--rojo)}
-nav:not(.docs) a[aria-current]{background:var(--rojo);border-color:var(--rojo);color:var(--fondo)}
-nav:not(.docs){align-items:center}
+nav a.sec,a.entrar{border:1px solid var(--linea);padding:.4rem .95rem;
+  color:var(--tinta);text-transform:uppercase;letter-spacing:.07em;font-size:13px;
+  text-decoration:none}
+nav a.sec:hover,nav a.sec:focus,a.entrar:hover,a.entrar:focus{border-color:var(--rojo)}
+nav a.sec[aria-current]{background:var(--rojo);border-color:var(--rojo);color:var(--fondo)}
+nav{align-items:center}
+.resumen{margin:3rem 0}
 .proy p.datos b{color:var(--oro);font-weight:400;font-variant-numeric:tabular-nums}
 .proy p.enlaces{margin:auto 0 0;padding-top:1rem;font-size:12px;letter-spacing:.07em;
   text-transform:uppercase}
@@ -3812,6 +3817,7 @@ TXT = dict(
                f"<b>{N_CINTAS}</b> tapes &middot; <b>{N_CARTUCHOS}</b> cartridges"],
         menu_gh="GitHub",
         menu_feed="Feed",
+        entrar="Open the section",
         feed_nuevo=dict(disassemblies="{}: disassembled", patches="{}: published",
                         tools="{}: published"),
         feed_actualiza="{}: updated",
@@ -3860,6 +3866,7 @@ TXT = dict(
                f"<b>{N_CINTAS}</b> cintas &middot; <b>{N_CARTUCHOS}</b> cartuchos"],
         menu_gh="GitHub",
         menu_feed="Novedades",
+        entrar="Entrar en la sección",
         feed_nuevo=dict(disassemblies="{}: desensamblado", patches="{}: publicado",
                         tools="{}: publicada"),
         feed_actualiza="{}: novedades",
@@ -4098,77 +4105,106 @@ def feed(idioma):
     return "\n".join(lineas) + "\n"
 
 
-# Los botones de seccion: ensenan la seccion que contiene el ancla de la URL
-# (#patches, #konami, #tools...) y esconden las demas; sin ancla, la primera.
-# Sin JavaScript no se esconde nada y la pagina se lee entera, como antes.
-BOTONES = """
+# Los enlaces viejos a una seccion o a una parte de la portada (/#patches,
+# /#konami...) llevan ahora a su pagina. Sale de las listas: {ancla: ruta}.
+def anclas_viejas():
+    m = {}
+    for c in visibles():
+        m[c["id"]] = c["id"] + "/"
+        for parte in c.get("partes", []):
+            m[parte["id"]] = c["id"] + "/#" + parte["id"]
+    return m
+
+
+REDIRIGE = """
 (function(){
-  var secs = [].slice.call(document.querySelectorAll("div.w > section"));
-  var tabs = [].slice.call(document.querySelectorAll("nav:not(.docs) a[href^='#']"));
-  if (secs.length < 2) return;
-  function ensena(scroll) {
-    var id = decodeURIComponent(location.hash.slice(1));
-    var el = id ? document.getElementById(id) : null;
-    var sec = el ? el.closest("div.w > section") : null;
-    if (!sec) sec = secs[0];
-    secs.forEach(function (s) { s.hidden = s !== sec; });
-    tabs.forEach(function (a) {
-      if (a.getAttribute("href") === "#" + sec.id) a.setAttribute("aria-current", "page");
-      else a.removeAttribute("aria-current");
-    });
-    if (scroll && el) el.scrollIntoView();
-  }
-  window.addEventListener("hashchange", function () { ensena(true); });
-  ensena(true);
+  var m = %s;
+  var h = decodeURIComponent(location.hash.slice(1));
+  if (h && m.hasOwnProperty(h)) location.replace(m[h]);
 })();
 """
 
 
-def pagina(idioma):
+def resumen(c, idioma, t):
+    """En la portada, cada seccion es su rotulo, su intro y la puerta a su
+    pagina. El id es el de la seccion: un /#patches sin JavaScript cae aqui."""
+    return (f'\n<div class="resumen" id="{c["id"]}">\n'
+            f'  <h2>{c["titulo"][idioma]}</h2>\n'
+            f'  <p class="n" style="margin-bottom:1.2rem;color:var(--suave)">'
+            f'{c["intro"][idioma]}</p>\n'
+            f'  <p><a class="entrar" href="{c["id"]}/">{t["entrar"]} &rarr;</a></p>\n'
+            f'</div>\n')
+
+
+def pagina(idioma, c=None):
+    """La portada (c=None) o la pagina de la seccion c. Las de seccion viven en
+    <id>/ (ingles) y es/<id>/ (castellano): un nivel mas abajo que su portada."""
     t = TXT[idioma]
-    menu = [("#" + c["id"], c["menu"][idioma]) for c in visibles()]
-    menu.append(("feed.xml", t["menu_feed"]))   # relativo: en es/ es su propio feed
-    menu.append(("https://github.com/" + USUARIO, t["menu_gh"]))
-    nav = "".join(f'<a href="{h}">{x}</a>' for h, x in menu)
-    nav += (f'<a href="{t["otro"][0]}" style="margin-left:auto;color:var(--oro)">'
+    otro = "es" if idioma == "en" else "en"
+    raiz = "../" if c else ""
+    sub = c["id"] + "/" if c else ""
+    # lo que lleva al otro idioma: de / a es/ y de es/ a / (y lo mismo con <id>/)
+    al_otro = ("es/" if idioma == "en" else "../") if not c else \
+              ("../es/" + sub if idioma == "en" else "../../" + sub)
+    otro_feed = ("es/feed.xml" if idioma == "en" else "../feed.xml") if not c else \
+                ("../es/feed.xml" if idioma == "en" else "../../feed.xml")
+
+    nav = ""
+    for x in visibles():
+        actual = ' aria-current="page"' if c is x else ""
+        nav += f'<a class="sec" href="{raiz}{x["id"]}/"{actual}>{x["menu"][idioma]}</a>'
+    nav += f'<a href="{raiz}feed.xml">{t["menu_feed"]}</a>'
+    nav += f'<a href="https://github.com/{USUARIO}">{t["menu_gh"]}</a>'
+    nav += (f'<a href="{al_otro}" style="margin-left:auto;color:var(--oro)">'
             f'{t["otro"][1]}</a>')
 
     ficha = "".join(f"<span>{x}</span>" for x in t["ficha"])
-    secciones = "".join(seccion(c, idioma, t) for c in visibles())
+    if c:
+        titulo = f'{c["titulo"][idioma]} &mdash; antxiko'
+        cuerpo = seccion(c, idioma, t)
+        script = ""
+    else:
+        titulo = t["titulo"]
+        cuerpo = "".join(resumen(x, idioma, t) for x in visibles())
+        script = "<script>" + REDIRIGE % json.dumps(anclas_viejas()) + "</script>\n"
     # El feed de este idioma y el del otro, para que el navegador o el lector lo
     # encuentren solos. Aunque la pagina no lleva <head>, el parser HTML5 mete
     # estos <link> en el head implicito: tienen que ir ANTES del primer <div>.
-    otro = "es" if idioma == "en" else "en"
-    otro_feed = "es/feed.xml" if idioma == "en" else "../feed.xml"
-
     return f"""<meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
-<title>{t['titulo']}</title>
-<link rel="alternate" type="application/atom+xml" hreflang="{idioma}" title="{t['menu_feed']}" href="feed.xml">
+<title>{titulo}</title>
+<link rel="alternate" type="application/atom+xml" hreflang="{idioma}" title="{t['menu_feed']}" href="{raiz}feed.xml">
 <link rel="alternate" type="application/atom+xml" hreflang="{otro}" title="{TXT[otro]['menu_feed']}" href="{otro_feed}">
 <style>{ESTILO}{EXTRA}</style>
 
 <div class="w">
 <header class="top">
-  <h1>antxiko<span>/</span></h1>
+  <h1><a href="{raiz or './'}" style="color:inherit;text-decoration:none">antxiko<span>/</span></a></h1>
   <p class="claim">{t['claim']}</p>
   <div class="ficha">{ficha}</div>
 </header>
 <nav>{nav}</nav>
-{secciones}
+{cuerpo}
 <footer>{t['pie']}</footer>
 </div>
-<script>{BOTONES}</script>
-"""
+{script}"""
+
+
+def paginas():
+    """(ruta, idioma, html) de todo lo que se escribe: dos portadas y, por cada
+    seccion visible, su pagina en los dos idiomas."""
+    for idioma, base in (("en", ""), ("es", "es/")):
+        yield base + "index.html", idioma, pagina(idioma)
+        for c in visibles():
+            yield base + c["id"] + "/index.html", idioma, pagina(idioma, c)
 
 
 def main():
     comprueba()
     raiz = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
-    for idioma, ruta in (("en", "index.html"), ("es", "es/index.html")):
+    for ruta, idioma, texto in paginas():
         destino = os.path.join(raiz, ruta)
         os.makedirs(os.path.dirname(destino), exist_ok=True)
-        texto = pagina(idioma)
         with open(destino, "w", encoding="utf-8", newline="\n") as f:
             f.write(texto)
         print("  %s: %d KB (%s)" % (ruta, len(texto) // 1024, idioma))
