@@ -11,6 +11,7 @@ Y la jerarquia: los desensamblados van en su seccion, repartidos en tres grupos
 comprueba que cada repositorio sale una vez, en el grupo que le toca, y que las
 dos lenguas tienen la misma estructura con todos los rotulos traducidos.
 """
+import json
 import os
 import re
 import sys
@@ -23,6 +24,11 @@ RAIZ = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 PAGINAS = [os.path.join(RAIZ, "index.html"),
            os.path.join(RAIZ, "es", "index.html")]
 IDIOMA = {PAGINAS[0]: "en", PAGINAS[1]: "es"}
+# Cada seccion tiene su pagina, un nivel por debajo de la portada de su idioma.
+SECCIONES = ["disassemblies", "patches"]
+SUBPAGINAS = {pag: [os.path.join(os.path.dirname(pag), s, "index.html")
+                    for s in SECCIONES] for pag in PAGINAS}
+TODAS = PAGINAS + [s for pag in PAGINAS for s in SUBPAGINAS[pag]]
 FEEDS = {"en": os.path.join(RAIZ, "feed.xml"),
          "es": os.path.join(RAIZ, "es", "feed.xml")}
 ATOM = "{http://www.w3.org/2005/Atom}"
@@ -59,6 +65,12 @@ class Equilibrio(HTMLParser):
 def lee(path):
     with open(path, encoding="utf-8") as f:
         return f.read()
+
+
+def sitio(pagina):
+    """Todo lo que publica un idioma: su portada y las paginas de sus
+    secciones, una detras de otra. Lo que se cuenta, se cuenta sobre esto."""
+    return "\n".join(lee(x) for x in [pagina] + SUBPAGINAS[pagina])
 
 
 def modulo():
@@ -102,7 +114,7 @@ def menu_de(texto):
 class TestPortada(unittest.TestCase):
 
     def test_el_html_esta_equilibrado(self):
-        for pagina in PAGINAS:
+        for pagina in TODAS:
             p = Equilibrio()
             p.feed(lee(pagina))
             p.close()
@@ -111,7 +123,7 @@ class TestPortada(unittest.TestCase):
                              "%s: %s" % (pagina, p.fallos + sobran))
 
     def test_los_enlaces_locales_existen(self):
-        for pagina in PAGINAS:
+        for pagina in TODAS:
             base = os.path.dirname(pagina)
             texto = lee(pagina)
             for href in re.findall(r'href="([^"]+)"', texto):
@@ -128,7 +140,7 @@ class TestPortada(unittest.TestCase):
                                 % (pagina, href))
 
     def test_las_anclas_existen(self):
-        for pagina in PAGINAS:
+        for pagina in TODAS:
             texto = lee(pagina)
             ids = set(re.findall(r'id="([^"]+)"', texto))
             for href in re.findall(r'href="#([^"]+)"', texto):
@@ -140,7 +152,7 @@ class TestPortada(unittest.TestCase):
         repos = []
         for pagina in PAGINAS:
             repos.append(sorted(set(re.findall(
-                r'href="https://github\.com/([^"/]+/[^"/]+)"', lee(pagina)))))
+                r'href="https://github\.com/([^"/]+/[^"/]+)"', sitio(pagina)))))
         self.assertEqual(repos[0], repos[1],
                          "las dos portadas no listan los mismos repositorios")
 
@@ -148,7 +160,7 @@ class TestPortada(unittest.TestCase):
         """Las cifras se escriben dos veces; comparadas sin separador de miles."""
         cifras = []
         for pagina in PAGINAS:
-            texto = re.sub(r"<[^>]+>", " ", lee(pagina))
+            texto = re.sub(r"<[^>]+>", " ", sitio(pagina))
             crudas = re.findall(r"\b\d[\d.,]*\b", texto)
             cifras.append(sorted(c.replace(".", "").replace(",", "")
                                  for c in crudas))
@@ -175,8 +187,7 @@ class TestPortada(unittest.TestCase):
                                  "%s no puede pasar del total" % nombre)
         # y lo que se publica es lo que se ha calculado
         for ruta in PAGINAS:
-            with open(ruta, encoding="utf-8") as f:
-                pagina = f.read()
+            pagina = sitio(ruta)
             for n, rotulo in ((mi.N_TERMINADOS, "terminados al 100 %"),
                               (mi.N_TERMINADOS, "finished at 100%")):
                 if rotulo in pagina:
@@ -197,13 +208,13 @@ class TestPortada(unittest.TestCase):
         MSX2+ y MSX turbo R, y "MSX1" no es nombre oficial. Se publico asi una
         temporada; esto evita que vuelva."""
         for pagina in PAGINAS:
-            texto = re.sub(r"<[^>]+>", " ", lee(pagina))
+            texto = re.sub(r"<[^>]+>", " ", sitio(pagina))
             self.assertEqual(re.findall(r"\bMSX ?1\b", texto), [],
                              "%s: la plataforma vuelve a decir MSX1" % pagina)
 
     def test_no_se_cuelga_de_ningun_servidor_de_fuera(self):
         """Las paginas de la serie son autocontenidas: nada de CDN."""
-        for pagina in PAGINAS:
+        for pagina in TODAS:
             texto = lee(pagina)
             for etiqueta in re.findall(r"<(?:script|link)[^>]*>", texto):
                 if "src=" in etiqueta or 'rel="stylesheet"' in etiqueta:
@@ -244,7 +255,7 @@ class TestPortada(unittest.TestCase):
         mi = modulo()
         todos = sorted(nombre_repo(p) for p in mi.DESENSAMBLADOS)
         for pagina in PAGINAS:
-            est = estructura(lee(pagina))
+            est = estructura(sitio(pagina))
             des = est["disassemblies"]
             self.assertNotIn("", des,
                              "%s: hay tarjetas fuera de los grupos" % pagina)
@@ -283,7 +294,7 @@ class TestPortada(unittest.TestCase):
             self.assertIsNotNone(n, "%s no dice su RC" % p["titulo"])
             rc[nombre_repo(p)] = n
         for pagina in PAGINAS:
-            salen = estructura(lee(pagina))["disassemblies"]["konami"]
+            salen = estructura(sitio(pagina))["disassemblies"]["konami"]
             self.assertEqual(sorted(salen), sorted(rc),
                              "%s: el grupo konami no lista los mismos" % pagina)
             nums = [rc[r] for r in salen]
@@ -297,7 +308,7 @@ class TestPortada(unittest.TestCase):
         desensamblados, y las secciones salen en el orden de CATEGORIAS."""
         mi = modulo()
         for pagina in PAGINAS:
-            est = estructura(lee(pagina))
+            est = estructura(sitio(pagina))
             self.assertEqual(list(est), [c["id"] for c in mi.CATEGORIAS])
             self.assertEqual(est["patches"],
                              {"": [nombre_repo(p) for p in mi.PARCHES]})
@@ -305,31 +316,65 @@ class TestPortada(unittest.TestCase):
     def test_los_dos_idiomas_tienen_la_misma_estructura(self):
         """Mismas secciones, mismas partes, mismos repos en cada una, en el
         mismo orden."""
-        en, es = (estructura(lee(p)) for p in PAGINAS)
+        en, es = (estructura(sitio(p)) for p in PAGINAS)
         self.assertEqual(en, es)
 
     def test_el_menu_lleva_a_cada_seccion_y_cada_parte(self):
-        """Arriba, las secciones de primer nivel; dentro de una seccion con
-        partes, su propio menu con todas ellas. Cada rotulo en su idioma."""
+        """Arriba, en todas las paginas, un boton por seccion que lleva a su
+        pagina, marcado en la suya; dentro de una seccion con partes, su propio
+        menu con todas ellas. Cada rotulo en su idioma."""
         mi = modulo()
-        for pagina in PAGINAS:
-            texto, idioma = lee(pagina), IDIOMA[pagina]
-            menu = menu_de(texto)
-            for c in mi.CATEGORIAS:
-                self.assertIn('<a href="#%s">%s</a>' % (c["id"], c["menu"][idioma]),
-                              menu, "%s: %s no esta en el menu" % (pagina, c["id"]))
+        self.assertEqual([c["id"] for c in mi.visibles()], SECCIONES)
+        for portada in PAGINAS:
+            idioma = IDIOMA[portada]
+            for pagina in [portada] + SUBPAGINAS[portada]:
+                texto = lee(pagina)
+                menu = menu_de(texto)
+                raiz = "" if pagina == portada else "../"
+                for c in mi.visibles():
+                    suya = pagina.endswith(os.path.join(c["id"], "index.html"))
+                    self.assertIn('<a class="sec" href="%s%s/"%s>%s</a>'
+                                  % (raiz, c["id"], ' aria-current="page"' if suya else "",
+                                     c["menu"][idioma]),
+                                  menu, "%s: %s no esta en el menu" % (pagina, c["id"]))
+            for c, sub in zip(mi.visibles(), SUBPAGINAS[portada]):
+                texto = lee(sub)
                 if not c.get("partes"):
                     continue
                 cuerpo = re.search(r'<section id="%s">(.*?)</section>' % c["id"],
                                    texto, re.S).group(1)
                 propio = re.search(r'<nav class="docs">(.*?)</nav>', cuerpo, re.S)
                 self.assertIsNotNone(propio, "%s: %s no tiene menu propio"
-                                     % (pagina, c["id"]))
+                                     % (sub, c["id"]))
                 for p in c["partes"]:
                     self.assertIn('<a href="#%s">%s</a>'
                                   % (p["id"], p["titulo"][idioma]), propio.group(1))
                     self.assertIn('<div class="parte" id="%s">' % p["id"], cuerpo)
                     self.assertIn("<h3>%s" % p["titulo"][idioma], cuerpo)
+
+    def test_las_anclas_viejas_llevan_a_su_pagina(self):
+        """Cuando todo iba en una pagina se enlazaba /#patches, /#konami... (el
+        feed lo sigue haciendo). La portada redirige cada una a su pagina, y la
+        ancla de una parte existe en la pagina a la que lleva."""
+        mi = modulo()
+        mapa = mi.anclas_viejas()
+        for viejo in ("disassemblies", "patches", "konami", "tools", "method"):
+            self.assertIn(viejo, mapa)
+        for portada in PAGINAS:
+            self.assertIn(json.dumps(mapa), lee(portada))
+            base = os.path.dirname(portada)
+            for destino in mapa.values():
+                ruta, _, ancla = destino.partition("#")
+                texto = lee(os.path.join(base, ruta, "index.html"))
+                if ancla:
+                    self.assertIn('id="%s"' % ancla, texto)
+
+    def test_cada_seccion_lleva_al_mismo_sitio_en_el_otro_idioma(self):
+        for c in SECCIONES:
+            en = lee(os.path.join(RAIZ, c, "index.html"))
+            es = lee(os.path.join(RAIZ, "es", c, "index.html"))
+            self.assertIn('href="../es/%s/"' % c, menu_de(en))
+            self.assertIn('href="../../%s/"' % c, menu_de(es))
 
     def test_los_rotulos_estan_en_los_dos_idiomas(self):
         """Cada rotulo de seccion, parte, grupo y menu tiene texto en 'en' y en
