@@ -1,8 +1,8 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
-<title>antxiko &mdash; desensamblados comentados de juegos de 8 bits</title>
-<link rel="alternate" type="application/atom+xml" hreflang="es" title="Novedades" href="feed.xml">
-<link rel="alternate" type="application/atom+xml" hreflang="en" title="Feed" href="../feed.xml">
+<title>Los juegos &mdash; antxiko</title>
+<link rel="alternate" type="application/atom+xml" hreflang="es" title="Novedades" href="../feed.xml">
+<link rel="alternate" type="application/atom+xml" hreflang="en" title="Feed" href="../../feed.xml">
 <style>
 :root{--tinta:#cfd0d4;--suave:#83868f;--fondo:#000;--panel:#0c0e13;--linea:#23262e;
   --rojo:#ff897d;--cyan:#65dbef;--verde:#3eb849;--oro:#ded087}
@@ -116,48 +116,17 @@ nav{align-items:center}
 
 <div class="w">
 <header class="top">
-  <h1><a href="./" style="color:inherit;text-decoration:none">antxiko<span>/</span></a></h1>
+  <h1><a href="../" style="color:inherit;text-decoration:none">antxiko<span>/</span></a></h1>
   <p class="claim">Binarios viejos de 8 bits desmontados byte a byte y comentados, con las herramientas para volver a montarlos: no se afirma nada que el binario no enseñe, y el código fuente tiene que devolver el original, byte a byte. Ahora mismo son 59 juegos de MSX.</p>
   <div class="ficha"><span><b>59</b> juegos</span><span><b>1983-1989</b></span><span>MSX</span><span><b>8</b> cintas &middot; <b>51</b> cartuchos</span></div>
 </header>
-<nav><a class="sec" href="disassemblies/">Desensamblados</a><a class="sec" href="patches/">Parches</a><a class="sec" href="utilities/">Utilidades</a><a class="sec" href="games/">Juegos</a><a class="sec" href="msxon/">MSXon</a><a href="feed.xml">Novedades</a><a href="https://github.com/antxiko">GitHub</a><a href="../" style="margin-left:auto;color:var(--oro)">In English</a></nav>
+<nav><a class="sec" href="../disassemblies/">Desensamblados</a><a class="sec" href="../patches/">Parches</a><a class="sec" href="../utilities/">Utilidades</a><a class="sec" href="../games/" aria-current="page">Juegos</a><a class="sec" href="../msxon/">MSXon</a><a href="../feed.xml">Novedades</a><a href="https://github.com/antxiko">GitHub</a><a href="../../games/" style="margin-left:auto;color:var(--oro)">In English</a></nav>
 
-<div class="resumen" id="disassemblies">
-  <h2>Los desensamblados</h2>
-  <p class="n" style="margin-bottom:1.2rem;color:var(--suave)">59 juegos de MSX, 8 de cinta de cassette y 51 de cartucho, desmontados byte a byte y comentados. 59 están terminados: cada byte explicado y el código fuente devolviendo el original byte a byte. Los que siguen en marcha lo dicen.</p>
-  <p><a class="entrar" href="disassemblies/">Entrar en la sección &rarr;</a></p>
-</div>
-
-<div class="resumen" id="patches">
-  <h2>Los parches</h2>
-  <p class="n" style="margin-bottom:1.2rem;color:var(--suave)">Lo que viene después de entender un cartucho: cambiarlo. Con la misma regla que los desensamblados &mdash;la construcción tiene que demostrar que, fuera de los bloques que declara, la ROM es idéntica a la original&mdash;. Lo que se distribuye es el fichero de diferencias, nunca una imagen de cartucho.</p>
-  <p><a class="entrar" href="patches/">Entrar en la sección &rarr;</a></p>
-</div>
-
-<div class="resumen" id="utilities">
-  <h2>Las utilidades</h2>
-  <p class="n" style="margin-bottom:1.2rem;color:var(--suave)">Herramientas que salieron de hacer cosas con el MSX: para el cartucho Yamanooto, para la red, para editar gráficos y ficheros, y alguna fuera del MSX. Cada una enlaza a su repositorio, con el código y las instrucciones.</p>
-  <p><a class="entrar" href="utilities/">Entrar en la sección &rarr;</a></p>
-</div>
-
-<div class="resumen" id="games">
+<section id="games">
   <h2>Los juegos</h2>
-  <p class="n" style="margin-bottom:1.2rem;color:var(--suave)">Juegos hechos desde cero, no desmontados: para MSX, para Game Gear, para una BBS y para PC.</p>
-  <p><a class="entrar" href="games/">Entrar en la sección &rarr;</a></p>
-</div>
-
-<div class="resumen" id="msxon">
-  <h2>MSXon</h2>
-  <p class="n" style="margin-bottom:1.2rem;color:var(--suave)">Una plataforma de juegos online para MSX2 reales: un servidor en internet, un lobby en el MSX y los juegos, todo sobre TCP/IP.</p>
-  <p><a class="entrar" href="msxon/">Entrar en la sección &rarr;</a></p>
-</div>
+  <p class="n" style="margin-bottom:2rem;color:var(--suave)">Juegos hechos desde cero, no desmontados: para MSX, para Game Gear, para una BBS y para PC.</p>
+  <div class="proyectos"><article class="proy"><h3>Tiny Tetris VS <span>2026</span></h3><p class="meta">C &middot; MSX &middot; cartucho de 32 KB &middot; 4 jugadores</p><p class="claim">Tetris de combate para cuatro en un MSX: cuatro tableros en una pantalla, y cada línea que haces manda basura al rival que tengas apuntado; los T-spins y los combos mandan más. Con el <b>Ninja Tap</b> juegan cuatro personas; si falta gente, la máquina ocupa los huecos.</p><p class="datos">MSX con <b>16 KB</b> de RAM &middot; Ninja Tap opcional</p><p class="enlaces"><a href="https://github.com/antxiko/TinyTetrisVS">Repositorio</a></p></article><article class="proy"><h3>Tetris GG <span>2026</span></h3><p class="meta">C (devkitSMS + SDCC) &middot; Sega Game Gear</p><p class="claim">Tetris para Game Gear, <b>en color</b>: siete piezas con rotación y wall-kick, pieza fantasma, niveles que aceleran cada 10 líneas y la música Underwater de Alex Kidd in Miracle World. Jugable de principio a fin.</p><p class="datos">pendiente: efectos de sonido y récords en SRAM</p><p class="enlaces"><a href="https://github.com/antxiko/TetrisGG">Repositorio</a></p></article><article class="proy"><h3>OpenComputerFutbolSimulator <span>2026</span></h3><p class="meta">Godot 4.6.2 / GDScript &middot; PC</p><p class="claim">Simulador de la Liga española: llevas un club (tácticas, alineaciones, fichajes, cantera) y la máquina juega el resto durante <b>20 temporadas</b>, con Primera y Segunda, Copa, Supercopa y Champions. Los partidos se pueden ver en un visor 2D.</p><p class="datos">v0.1.0, primer release jugable de principio a fin &middot; no distribuye datos de equipos ni jugadores</p><p class="enlaces"><a href="https://github.com/antxiko/OpenComputerFutbolSimulator">Repositorio</a></p></article><article class="proy"><h3>MysticBBSGames <span>2026</span></h3><p class="meta">Python &middot; doors para Mystic BBS</p><p class="claim"><b>Veinte</b> juegos en modo texto para una BBS: Dope Wars, Wordle, Buscaminas, Snake, un roguelike&hellip; Cada uno es un solo fichero de Python con la biblioteca estándar, en 80&times;24 con caracteres CP437 y colores ANSI, y comparten una tabla de récords online entre BBS.</p><p class="datos">también en cualquier terminal ANSI &middot; demo en No Signal BBS</p><p class="enlaces"><a href="https://github.com/antxiko/MysticBBSGames">Repositorio</a></p></article></div>
+</section>
 
 <footer>Trabajo de documentación y preservación sobre software de 8 bits. El código, los gráficos y el sonido de cada juego siguen siendo de sus autores y titulares de derechos; lo que se publica aquí es el análisis, los comentarios y las herramientas. No se distribuye ninguna cinta ni imagen de cartucho.</footer>
 </div>
-<script>
-(function(){
-  var m = {"disassemblies": "disassemblies/", "numbers": "disassemblies/#numbers", "konami": "disassemblies/#konami", "msx-exclusive": "disassemblies/#msx-exclusive", "ports": "disassemblies/#ports", "method": "disassemblies/#method", "tools": "disassemblies/#tools", "patches": "patches/", "utilities": "utilities/", "games": "games/", "msxon": "msxon/"};
-  var h = decodeURIComponent(location.hash.slice(1));
-  if (h && m.hasOwnProperty(h)) location.replace(m[h]);
-})();
-</script>

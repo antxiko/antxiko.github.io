@@ -120,7 +120,7 @@ nav{align-items:center}
   <p class="claim">Old 8-bit binaries taken apart byte by byte and commented, with the tools to rebuild them: nothing gets claimed that the binary does not show, and the source has to give the original back, byte for byte. Right now that means 59 MSX games.</p>
   <div class="ficha"><span><b>59</b> games</span><span><b>1983-1989</b></span><span>MSX</span><span><b>8</b> tapes &middot; <b>51</b> cartridges</span></div>
 </header>
-<nav><a class="sec" href="disassemblies/">Disassemblies</a><a class="sec" href="patches/">Patches</a><a href="feed.xml">Feed</a><a href="https://github.com/antxiko">GitHub</a><a href="es/" style="margin-left:auto;color:var(--oro)">En castellano</a></nav>
+<nav><a class="sec" href="disassemblies/">Disassemblies</a><a class="sec" href="patches/">Patches</a><a class="sec" href="utilities/">Utilities</a><a class="sec" href="games/">Games</a><a class="sec" href="msxon/">MSXon</a><a href="feed.xml">Feed</a><a href="https://github.com/antxiko">GitHub</a><a href="es/" style="margin-left:auto;color:var(--oro)">En castellano</a></nav>
 
 <div class="resumen" id="disassemblies">
   <h2>The disassemblies</h2>
@@ -134,11 +134,29 @@ nav{align-items:center}
   <p><a class="entrar" href="patches/">Open the section &rarr;</a></p>
 </div>
 
+<div class="resumen" id="utilities">
+  <h2>The utilities</h2>
+  <p class="n" style="margin-bottom:1.2rem;color:var(--suave)">Tools that came out of doing things with the MSX: for the Yamanooto cartridge, for networking, for editing graphics and files, and a couple from outside the MSX. Each one links to its repository, with the code and the instructions.</p>
+  <p><a class="entrar" href="utilities/">Open the section &rarr;</a></p>
+</div>
+
+<div class="resumen" id="games">
+  <h2>The games</h2>
+  <p class="n" style="margin-bottom:1.2rem;color:var(--suave)">Games made from scratch, not taken apart: for the MSX, for the Game Gear, for a BBS and for the PC.</p>
+  <p><a class="entrar" href="games/">Open the section &rarr;</a></p>
+</div>
+
+<div class="resumen" id="msxon">
+  <h2>MSXon</h2>
+  <p class="n" style="margin-bottom:1.2rem;color:var(--suave)">An online gaming platform for real MSX2 computers: a server on the internet, a lobby on the MSX and the games, all over TCP/IP.</p>
+  <p><a class="entrar" href="msxon/">Open the section &rarr;</a></p>
+</div>
+
 <footer>Documentation and preservation work on 8-bit software. Each game's code, graphics and sound belong to its authors and rights holders; what is published here is the analysis, the comments and the tools. No tape or cartridge image is distributed.</footer>
 </div>
 <script>
 (function(){
-  var m = {"disassemblies": "disassemblies/", "numbers": "disassemblies/#numbers", "konami": "disassemblies/#konami", "msx-exclusive": "disassemblies/#msx-exclusive", "ports": "disassemblies/#ports", "method": "disassemblies/#method", "tools": "disassemblies/#tools", "patches": "patches/"};
+  var m = {"disassemblies": "disassemblies/", "numbers": "disassemblies/#numbers", "konami": "disassemblies/#konami", "msx-exclusive": "disassemblies/#msx-exclusive", "ports": "disassemblies/#ports", "method": "disassemblies/#method", "tools": "disassemblies/#tools", "patches": "patches/", "utilities": "utilities/", "games": "games/", "msxon": "msxon/"};
   var h = decodeURIComponent(location.hash.slice(1));
   if (h && m.hasOwnProperty(h)) location.replace(m[h]);
 })();
