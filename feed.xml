@@ -6,8 +6,16 @@
   <link rel="self" type="application/atom+xml" href="https://antxiko.github.io/feed.xml"/>
   <link rel="alternate" type="text/html" hreflang="en" href="https://antxiko.github.io/"/>
   <link rel="alternate" type="application/atom+xml" hreflang="es" href="https://antxiko.github.io/es/feed.xml"/>
-  <updated>2026-10-04T11:05:39+02:00</updated>
+  <updated>2026-10-04T12:36:00+02:00</updated>
   <author><name>antxiko</name><uri>https://github.com/antxiko</uri></author>
+  <entry>
+    <id>tag:antxiko.github.io,2026:novedad/en/galious-enhanced-yamanooto</id>
+    <title>The Maze of Galious Enhanced also saves on the Yamanooto</title>
+    <link rel="alternate" type="text/html" href="https://antxiko.github.io/Galious-Yamanooto-Patch/"/>
+    <published>2026-10-04T12:36:00+02:00</published>
+    <updated>2026-10-04T12:36:00+02:00</updated>
+    <summary type="text">bladeba's Enhanced (MSX2) gets the same three save slots in the cartridge's flash, on its own or inside nPackR 1.7.4. Both patches now come as IPS too.</summary>
+  </entry>
   <entry>
     <id>tag:antxiko.github.io,2026:novedad/en/portada-por-secciones</id>
     <title>The front page, by sections: utilities, games and MSXon</title>
@@ -159,13 +167,5 @@
     <published>2026-09-28T22:04:33+02:00</published>
     <updated>2026-09-28T22:04:33+02:00</updated>
     <summary type="text">The shop window drawn from the ROM and checked against six openMSX dumps, zero dots different. The vendor is a hooded old man whose colour tells what comes. The 29 items with what each one does, and the ending with its story and its credits, read from the ROM.</summary>
-  </entry>
-  <entry>
-    <id>tag:antxiko.github.io,2026:novedad/en/vampirekiller-los-vendedores</id>
-    <title>Vampire Killer: the vendors count hits, and the books set the prices</title>
-    <link rel="alternate" type="text/html" href="https://antxiko.github.io/VampireKiller-disassembly/"/>
-    <published>2026-09-28T19:12:12+02:00</published>
-    <updated>2026-09-28T19:12:12+02:00</updated>
-    <summary type="text">What a vendor does depends on how many times you hit him, not on your visits; dying resets the count. The white book makes the shop cheaper and the red one dearer: full life costs 15, 40 or 80 hearts. Seen in openMSX, one vendor of each class.</summary>
   </entry>
 </feed>

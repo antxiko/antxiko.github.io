@@ -6,8 +6,16 @@
   <link rel="self" type="application/atom+xml" href="https://antxiko.github.io/es/feed.xml"/>
   <link rel="alternate" type="text/html" hreflang="es" href="https://antxiko.github.io/es/"/>
   <link rel="alternate" type="application/atom+xml" hreflang="en" href="https://antxiko.github.io/feed.xml"/>
-  <updated>2026-10-04T11:05:39+02:00</updated>
+  <updated>2026-10-04T12:36:00+02:00</updated>
   <author><name>antxiko</name><uri>https://github.com/antxiko</uri></author>
+  <entry>
+    <id>tag:antxiko.github.io,2026:novedad/es/galious-enhanced-yamanooto</id>
+    <title>The Maze of Galious Enhanced también graba en el Yamanooto</title>
+    <link rel="alternate" type="text/html" href="https://antxiko.github.io/Galious-Yamanooto-Patch/"/>
+    <published>2026-10-04T12:36:00+02:00</published>
+    <updated>2026-10-04T12:36:00+02:00</updated>
+    <summary type="text">El Enhanced de bladeba (MSX2) tiene los mismos tres huecos de partida en la flash del cartucho, suelto o dentro de nPackR 1.7.4. Los dos parches vienen ahora también como IPS.</summary>
+  </entry>
   <entry>
     <id>tag:antxiko.github.io,2026:novedad/es/portada-por-secciones</id>
     <title>La portada, por secciones: utilidades, juegos y MSXon</title>
@@ -159,13 +167,5 @@
     <published>2026-09-28T22:04:33+02:00</published>
     <updated>2026-09-28T22:04:33+02:00</updated>
     <summary type="text">La ventana de la tienda dibujada desde la ROM y cotejada contra seis volcados de openMSX, cero puntos distintos. El vendedor es un viejo encapuchado cuyo color dice lo que toca. Los 29 objetos con lo que hace cada uno, y el final con su historia y sus créditos, leídos de la ROM.</summary>
-  </entry>
-  <entry>
-    <id>tag:antxiko.github.io,2026:novedad/es/vampirekiller-los-vendedores</id>
-    <title>Vampire Killer: los vendedores cuentan golpes, y los libros ponen los precios</title>
-    <link rel="alternate" type="text/html" href="https://antxiko.github.io/VampireKiller-disassembly/"/>
-    <published>2026-09-28T19:12:12+02:00</published>
-    <updated>2026-09-28T19:12:12+02:00</updated>
-    <summary type="text">Lo que hace un vendedor depende de cuántas veces se le pega, no de las visitas; al morir, la cuenta vuelve a cero. El libro blanco abarata la tienda y el rojo la encarece: la vida llena cuesta 15, 40 u 80 corazones. Visto en openMSX, un vendedor de cada clase.</summary>
   </entry>
 </feed>
