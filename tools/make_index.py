@@ -2926,8 +2926,8 @@ UTILIDADES = [
         repo="https://github.com/antxiko/msx-yamanooto-npackr",
         web=None,
         meta=dict(
-            en="Python + Z80, Rust GUI &middot; Yamanooto cartridge &middot; v1.7.4",
-            es="Python + Z80, GUI en Rust &middot; cartucho Yamanooto &middot; v1.7.4",
+            en="Python + Z80, Rust GUI &middot; Yamanooto cartridge &middot; v1.7.5",
+            es="Python + Z80, GUI en Rust &middot; cartucho Yamanooto &middot; v1.7.5",
         ),
         claim=dict(
             en="Builds the image for a <b>Yamanooto cartridge</b> out of your own "
@@ -3254,6 +3254,20 @@ MSXON = [
 # nueva a vieja, una clave no existe o un proyecto se queda sin novedad.
 # --------------------------------------------------------------------------
 NOVEDADES = [
+    dict(id="galious-yamanooto-esc", clave="galious-yamanooto",
+         otras=["npackr"],
+         clase="actualiza", fecha="2026-10-04T13:40:00+02:00",
+         enlace="https://antxiko.github.io/Galious-Yamanooto-Patch/",
+         titulo=dict(en="The Maze of Galious on the Yamanooto: ESC leaves the load menu",
+                     es="The Maze of Galious en el Yamanooto: ESC sale del menú de carga"),
+         resumen=dict(
+             en="With no slot saved there was no way out of the load menu but "
+                "switching off (reported on real hardware). Now ESC goes back to "
+                "the title, in the original and the Enhanced, also in nPackR 1.7.5.",
+             es="Sin ningún hueco grabado no había forma de salir del menú de carga "
+                "más que apagando (lo reportaron en hardware real). Ahora ESC vuelve "
+                "al título, en el original y en el Enhanced, también en nPackR 1.7.5."),
+    ),
     dict(id="galious-enhanced-yamanooto", clave="galious-yamanooto",
          otras=["npackr"],
          clase="actualiza", fecha="2026-10-04T12:36:00+02:00",
