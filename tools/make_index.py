@@ -14,11 +14,16 @@ web, del remote mas la existencia de docs/index.html. Un proyecto sin web se
 queda sin enlace de web, y no se inventa ninguna.
 
 La pagina son secciones de primer nivel (CATEGORIAS: hoy los desensamblados y
-los parches). Una seccion puede ir en partes: la de los desensamblados lleva las
-cifras, tres grupos de juegos (Konami, exclusivos de MSX, conversiones) y el
-metodo, y cada juego dice su grupo en el campo 'grupo'. Para anadir otra clase
-de proyecto: otra lista con los mismos campos que DESENSAMBLADOS y otra entrada
-en CATEGORIAS. El menu, las secciones y sus partes se generan de esas listas.
+los parches), y el menu de arriba son sus botones: cada uno ensena su seccion y
+esconde las demas (un script de veinte lineas; sin JavaScript se ven todas
+seguidas). Cualquier ancla vieja (#patches, #konami, #tools...) abre la seccion
+que la contiene. Una seccion sin proyectos no sale ni en el menu.
+Una seccion puede ir en partes: la de los desensamblados lleva las cifras, tres
+grupos de juegos (Konami, exclusivos de MSX, conversiones), el metodo y la serie
+por dentro (HERRAMIENTAS), y cada juego dice su grupo en el campo 'grupo'. Para
+anadir otra clase de proyecto: otra lista con los mismos campos que
+DESENSAMBLADOS y otra entrada en CATEGORIAS. El menu, las secciones y sus
+partes se generan de esas listas.
 
 Y escribe los dos feeds Atom, feed.xml (ingles) y es/feed.xml (castellano), de
 la lista NOVEDADES: una entrada por publicacion, escrita a mano en el mismo
@@ -42,7 +47,8 @@ SITIO = "https://antxiko.github.io"   # sin barra final: se le pegan las rutas
 DOMINIO = SITIO.split("//", 1)[1]      # para los id tag: del feed
 LIMITE = 20                            # entradas que salen al feed; el resto se queda en la lista
 
-# Lo unico que se anade a la hoja de estilo de la serie: la tarjeta de proyecto.
+# Lo unico que se anade a la hoja de estilo de la serie: la tarjeta de proyecto
+# y los botones de seccion del menu de arriba.
 # Usa el mismo mecanismo de rejilla que .cifras (separador de 1px en --linea
 # sobre --panel) para que se vea como las tarjetas de las webs de los juegos.
 EXTRA = """
@@ -58,6 +64,11 @@ header.top h1 span{color:var(--rojo)}
 .proy p.claim{margin:0 0 1rem;max-width:none;font-size:15px;color:var(--tinta)}
 .proy p.datos{margin:0;padding-top:.85rem;border-top:1px solid var(--linea);
   font-size:13px;color:var(--suave)}
+nav:not(.docs) a[href^="#"]{border:1px solid var(--linea);padding:.4rem .95rem;
+  color:var(--tinta);text-transform:uppercase;letter-spacing:.07em;font-size:13px}
+nav:not(.docs) a[href^="#"]:hover,nav:not(.docs) a[href^="#"]:focus{border-color:var(--rojo)}
+nav:not(.docs) a[aria-current]{background:var(--rojo);border-color:var(--rojo);color:var(--fondo)}
+nav:not(.docs){align-items:center}
 .proy p.datos b{color:var(--oro);font-weight:400;font-variant-numeric:tabular-nums}
 .proy p.enlaces{margin:auto 0 0;padding-top:1rem;font-size:12px;letter-spacing:.07em;
   text-transform:uppercase}
@@ -3736,7 +3747,7 @@ CATEGORIAS = [
                f"fuente devolviendo el original byte a byte. Los que siguen en "
                f"marcha lo dicen.",
         ),
-        proyectos=DESENSAMBLADOS,
+        proyectos=DESENSAMBLADOS + HERRAMIENTAS,
         partes=[
             dict(id="numbers",
                  titulo=dict(en="The series in numbers", es="La serie en cifras"),
@@ -3746,6 +3757,24 @@ CATEGORIAS = [
             dict(id="method",
                  titulo=dict(en="How they are made", es="Cómo están hechos"),
                  html=html_metodo),
+            # Antes era una seccion propia; con los botones de arriba va aqui.
+            # Su id sigue siendo "tools": los enlaces viejos a #tools valen.
+            dict(id="tools",
+                 titulo=dict(en="The series from the inside", es="La serie por dentro"),
+                 intro=dict(
+                    en="Not a game: the measurements. What the disassemblies look like "
+                       "when you put all of them side by side and measure again instead "
+                       "of trusting what each one says about itself &mdash; which is how "
+                       "you find out that the same routine goes by twelve names, and "
+                       "that four published figures had quietly gone stale.",
+                    es="Esto no es un juego: son las medidas. Lo que se ve en los "
+                       "desensamblados cuando se ponen todos uno al lado del otro y se "
+                       "vuelve a medir en vez de fiarse de lo que cada uno dice de sí "
+                       "mismo &mdash;que es como se descubre que la misma rutina lleva "
+                       "doce nombres, y que cuatro cifras publicadas se habían quedado "
+                       "viejas sin que nadie se enterara&mdash;.",
+                 ),
+                 proyectos=HERRAMIENTAS),
         ],
     ),
     dict(
@@ -3765,25 +3794,6 @@ CATEGORIAS = [
                "de diferencias, nunca una imagen de cartucho.",
         ),
         proyectos=PARCHES,
-    ),
-    dict(
-        id="tools",
-        titulo=dict(en="The series from the inside", es="La serie por dentro"),
-        menu=dict(en="From the inside", es="Por dentro"),
-        intro=dict(
-            en="Not a game: the measurements. What the disassemblies look like "
-               "when you put all of them side by side and measure again instead "
-               "of trusting what each one says about itself &mdash; which is how "
-               "you find out that the same routine goes by twelve names, and "
-               "that four published figures had quietly gone stale.",
-            es="Esto no es un juego: son las medidas. Lo que se ve en los "
-               "desensamblados cuando se ponen todos uno al lado del otro y se "
-               "vuelve a medir en vez de fiarse de lo que cada uno dice de sí "
-               "mismo &mdash;que es como se descubre que la misma rutina lleva "
-               "doce nombres, y que cuatro cifras publicadas se habían quedado "
-               "viejas sin que nadie se enterara&mdash;.",
-        ),
-        proyectos=HERRAMIENTAS,
     ),
     # Para anadir otra categoria: una lista de proyectos con estos mismos campos
     # y otra entrada aqui, con 'partes' si las necesita. El menu y las secciones
@@ -3931,6 +3941,10 @@ def seccion(c, idioma, t):
                 rotulo = (f'{p["titulo"][idioma]} '
                           f'<span>{cuenta(p["proyectos"], idioma)}</span>')
                 dentro = rejilla(p["proyectos"], idioma, t)
+                if "intro" in p:
+                    dentro = (f'<p class="n" style="margin-bottom:1.5rem;'
+                              f'color:var(--suave)">{p["intro"][idioma]}</p>\n'
+                              f'    {dentro}')
             else:
                 rotulo = p["titulo"][idioma]
                 dentro = p["html"](idioma, t)
@@ -3944,6 +3958,11 @@ def seccion(c, idioma, t):
             f'{c["intro"][idioma]}</p>\n'
             f'{cuerpo}'
             f'</section>\n')
+
+
+def visibles():
+    """Las secciones que salen: una sin proyectos no sale ni en el menu."""
+    return [c for c in CATEGORIAS if c["proyectos"]]
 
 
 def comprueba():
@@ -4006,6 +4025,10 @@ def proyecto(clave):
 
 
 def categoria_de(clave):
+    # La serie por dentro va ahora dentro de los desensamblados, pero su
+    # noticia tiene que seguir diciendo "publicada": el feed no cambia.
+    if any(p["clave"] == clave for p in HERRAMIENTAS):
+        return "tools"
     for c in CATEGORIAS:
         if any(p["clave"] == clave for p in c["proyectos"]):
             return c["id"]
@@ -4075,9 +4098,35 @@ def feed(idioma):
     return "\n".join(lineas) + "\n"
 
 
+# Los botones de seccion: ensenan la seccion que contiene el ancla de la URL
+# (#patches, #konami, #tools...) y esconden las demas; sin ancla, la primera.
+# Sin JavaScript no se esconde nada y la pagina se lee entera, como antes.
+BOTONES = """
+(function(){
+  var secs = [].slice.call(document.querySelectorAll("div.w > section"));
+  var tabs = [].slice.call(document.querySelectorAll("nav:not(.docs) a[href^='#']"));
+  if (secs.length < 2) return;
+  function ensena(scroll) {
+    var id = decodeURIComponent(location.hash.slice(1));
+    var el = id ? document.getElementById(id) : null;
+    var sec = el ? el.closest("div.w > section") : null;
+    if (!sec) sec = secs[0];
+    secs.forEach(function (s) { s.hidden = s !== sec; });
+    tabs.forEach(function (a) {
+      if (a.getAttribute("href") === "#" + sec.id) a.setAttribute("aria-current", "page");
+      else a.removeAttribute("aria-current");
+    });
+    if (scroll && el) el.scrollIntoView();
+  }
+  window.addEventListener("hashchange", function () { ensena(true); });
+  ensena(true);
+})();
+"""
+
+
 def pagina(idioma):
     t = TXT[idioma]
-    menu = [("#" + c["id"], c["menu"][idioma]) for c in CATEGORIAS]
+    menu = [("#" + c["id"], c["menu"][idioma]) for c in visibles()]
     menu.append(("feed.xml", t["menu_feed"]))   # relativo: en es/ es su propio feed
     menu.append(("https://github.com/" + USUARIO, t["menu_gh"]))
     nav = "".join(f'<a href="{h}">{x}</a>' for h, x in menu)
@@ -4085,7 +4134,7 @@ def pagina(idioma):
             f'{t["otro"][1]}</a>')
 
     ficha = "".join(f"<span>{x}</span>" for x in t["ficha"])
-    secciones = "".join(seccion(c, idioma, t) for c in CATEGORIAS)
+    secciones = "".join(seccion(c, idioma, t) for c in visibles())
     # El feed de este idioma y el del otro, para que el navegador o el lector lo
     # encuentren solos. Aunque la pagina no lleva <head>, el parser HTML5 mete
     # estos <link> en el head implicito: tienen que ir ANTES del primer <div>.
@@ -4109,6 +4158,7 @@ def pagina(idioma):
 {secciones}
 <footer>{t['pie']}</footer>
 </div>
+<script>{BOTONES}</script>
 """
 
 
