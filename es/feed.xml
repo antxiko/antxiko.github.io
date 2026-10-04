@@ -6,8 +6,16 @@
   <link rel="self" type="application/atom+xml" href="https://antxiko.github.io/es/feed.xml"/>
   <link rel="alternate" type="text/html" hreflang="es" href="https://antxiko.github.io/es/"/>
   <link rel="alternate" type="application/atom+xml" hreflang="en" href="https://antxiko.github.io/feed.xml"/>
-  <updated>2026-10-04T12:36:00+02:00</updated>
+  <updated>2026-10-04T13:40:00+02:00</updated>
   <author><name>antxiko</name><uri>https://github.com/antxiko</uri></author>
+  <entry>
+    <id>tag:antxiko.github.io,2026:novedad/es/galious-yamanooto-esc</id>
+    <title>The Maze of Galious en el Yamanooto: ESC sale del menú de carga</title>
+    <link rel="alternate" type="text/html" href="https://antxiko.github.io/Galious-Yamanooto-Patch/"/>
+    <published>2026-10-04T13:40:00+02:00</published>
+    <updated>2026-10-04T13:40:00+02:00</updated>
+    <summary type="text">Sin ningún hueco grabado no había forma de salir del menú de carga más que apagando (lo reportaron en hardware real). Ahora ESC vuelve al título, en el original y en el Enhanced, también en nPackR 1.7.5.</summary>
+  </entry>
   <entry>
     <id>tag:antxiko.github.io,2026:novedad/es/galious-enhanced-yamanooto</id>
     <title>The Maze of Galious Enhanced también graba en el Yamanooto</title>
@@ -159,13 +167,5 @@
     <published>2026-09-29T14:29:35+02:00</published>
     <updated>2026-09-29T14:29:35+02:00</updated>
     <summary type="text">El segundo MSX2 de la serie. Las 140 pantallas con sus pasadizos y el decorado que se quita, Mitchel, los 55 enemigos y cinco jefes que pinta el VDP, dibujados desde la ROM y cotejados en openMSX. Tres finales, y un truco de nivel visto jugando.</summary>
-  </entry>
-  <entry>
-    <id>tag:antxiko.github.io,2026:novedad/es/vampirekiller-la-tienda-y-el-final</id>
-    <title>Vampire Killer: la tienda, el viejo, los objetos y el final</title>
-    <link rel="alternate" type="text/html" href="https://antxiko.github.io/VampireKiller-disassembly/"/>
-    <published>2026-09-28T22:04:33+02:00</published>
-    <updated>2026-09-28T22:04:33+02:00</updated>
-    <summary type="text">La ventana de la tienda dibujada desde la ROM y cotejada contra seis volcados de openMSX, cero puntos distintos. El vendedor es un viejo encapuchado cuyo color dice lo que toca. Los 29 objetos con lo que hace cada uno, y el final con su historia y sus créditos, leídos de la ROM.</summary>
   </entry>
 </feed>
