@@ -2571,26 +2571,31 @@ PARCHES = [
                "cartridge&rsquo;s flash. On the title screen, L no longer takes "
                "you to the typing screen: you get the slot menu. What gets saved"
                " is those same 45 letters, and <b>the game checks them with its "
-               "own checksum</b>, as if they had been typed."),
+               "own checksum</b>, as if they had been typed. It also works on "
+               "bladeba&rsquo;s <b>Maze of Galious Enhanced</b> (MSX2), and both "
+               "come as IPS too."),
             es=("El juego guarda la partida en una <b>contraseña de 45 letras</b>"
                " que hay que apuntar a mano. Con el parche, en la sala de la "
                "contraseña se elige <b>un slot de los tres</b> y la partida se "
                "graba en la flash del cartucho. En el título, la L ya no lleva a"
                " teclear: sale el menú de slots. Lo que se graba son esas mismas"
                " 45 letras y <b>el juego las comprueba con su propia suma</b>, "
-               "como si se tecleasen."),
+               "como si se tecleasen. También vale para el <b>Maze of Galious "
+               "Enhanced</b> de bladeba (MSX2), y los dos vienen también como IPS."),
         ),
         datos=dict(
             en=lambda i: ("<b>87</b> bytes changed in <b>36</b> stretches &middot; <b>8 "
                "KB</b> driver &middot; 3 slots in <b>one 64 KB sector</b> "
+               "&middot; Enhanced: <b>94</b> bytes in <b>10</b> stretches "
                "&middot; no ROM distributed"),
             es=lambda i: ("<b>87</b> bytes cambiados en <b>36</b> tramos &middot; driver de "
                "<b>8 KB</b> &middot; 3 slots en <b>un sector de 64 KB</b> "
+               "&middot; Enhanced: <b>94</b> bytes en <b>10</b> tramos "
                "&middot; no se distribuye ninguna ROM"),
         ),
         nota=dict(
-            en="tested in openMSX and on a real MSX with a Yamanooto, by pabibiris",
-            es="probado en openMSX y en un MSX real con un Yamanooto, por pabibiris",
+            en="tested in openMSX and on a real MSX with a Yamanooto, by pabibiris; the Enhanced, in openMSX",
+            es="probado en openMSX y en un MSX real con un Yamanooto, por pabibiris; el Enhanced, en openMSX",
         ),
     ),
     dict(
@@ -2921,21 +2926,21 @@ UTILIDADES = [
         repo="https://github.com/antxiko/msx-yamanooto-npackr",
         web=None,
         meta=dict(
-            en="Python + Z80, Rust GUI &middot; Yamanooto cartridge &middot; v1.7.3",
-            es="Python + Z80, GUI en Rust &middot; cartucho Yamanooto &middot; v1.7.3",
+            en="Python + Z80, Rust GUI &middot; Yamanooto cartridge &middot; v1.7.4",
+            es="Python + Z80, GUI en Rust &middot; cartucho Yamanooto &middot; v1.7.4",
         ),
         claim=dict(
             en="Builds the image for a <b>Yamanooto cartridge</b> out of your own "
                "ROMs: a menu on the cartridge and the games behind it. It tells "
                "each game&rsquo;s mapper by its SHA1, converts the ASCII8/ASCII16 "
                "ones, and patches Metal Gear, Metal Gear 2 and The Maze of Galious "
-               "on the fly so they <b>save the game to the cartridge&rsquo;s "
+               "(also the Enhanced) on the fly so they <b>save the game to the cartridge&rsquo;s "
                "flash</b>.",
             es="Monta la imagen para un <b>cartucho Yamanooto</b> con tus propias "
                "ROMs: un menú en el cartucho y los juegos detrás. Reconoce el "
                "mapper de cada juego por su SHA1, convierte los ASCII8/ASCII16 y "
                "parchea al vuelo Metal Gear, Metal Gear 2 y The Maze of Galious "
-               "para que <b>graben la partida en la flash del cartucho</b>.",
+               "(también el Enhanced) para que <b>graben la partida en la flash del cartucho</b>.",
         ),
         datos=fijo("GUI for <b>Windows, Linux and macOS</b> &middot; also from the command line",
                    "GUI para <b>Windows, Linux y macOS</b> &middot; también por línea de órdenes"),
@@ -3249,6 +3254,20 @@ MSXON = [
 # nueva a vieja, una clave no existe o un proyecto se queda sin novedad.
 # --------------------------------------------------------------------------
 NOVEDADES = [
+    dict(id="galious-enhanced-yamanooto", clave="galious-yamanooto",
+         otras=["npackr"],
+         clase="actualiza", fecha="2026-10-04T12:36:00+02:00",
+         enlace="https://antxiko.github.io/Galious-Yamanooto-Patch/",
+         titulo=dict(en="The Maze of Galious Enhanced also saves on the Yamanooto",
+                     es="The Maze of Galious Enhanced también graba en el Yamanooto"),
+         resumen=dict(
+             en="bladeba's Enhanced (MSX2) gets the same three save slots in the "
+                "cartridge's flash, on its own or inside nPackR 1.7.4. Both patches "
+                "now come as IPS too.",
+             es="El Enhanced de bladeba (MSX2) tiene los mismos tres huecos de "
+                "partida en la flash del cartucho, suelto o dentro de nPackR 1.7.4. "
+                "Los dos parches vienen ahora también como IPS."),
+    ),
     dict(id="portada-por-secciones", clave="npackr",
          otras=["openmsxnet", "msx-net-transfer", "mhexditor", "msxjuaneditor",
                 "roomsniffer", "morse328p", "tinytetrisvs", "tetrisgg", "ocfs",
