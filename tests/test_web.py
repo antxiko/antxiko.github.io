@@ -25,7 +25,7 @@ PAGINAS = [os.path.join(RAIZ, "index.html"),
            os.path.join(RAIZ, "es", "index.html")]
 IDIOMA = {PAGINAS[0]: "en", PAGINAS[1]: "es"}
 # Cada seccion tiene su pagina, un nivel por debajo de la portada de su idioma.
-SECCIONES = ["disassemblies", "patches"]
+SECCIONES = ["disassemblies", "patches", "utilities", "games", "msxon"]
 SUBPAGINAS = {pag: [os.path.join(os.path.dirname(pag), s, "index.html")
                     for s in SECCIONES] for pag in PAGINAS}
 TODAS = PAGINAS + [s for pag in PAGINAS for s in SUBPAGINAS[pag]]

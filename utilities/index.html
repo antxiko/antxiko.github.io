@@ -1,0 +1,132 @@
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>The utilities &mdash; antxiko</title>
+<link rel="alternate" type="application/atom+xml" hreflang="en" title="Feed" href="../feed.xml">
+<link rel="alternate" type="application/atom+xml" hreflang="es" title="Novedades" href="../es/feed.xml">
+<style>
+:root{--tinta:#cfd0d4;--suave:#83868f;--fondo:#000;--panel:#0c0e13;--linea:#23262e;
+  --rojo:#ff897d;--cyan:#65dbef;--verde:#3eb849;--oro:#ded087}
+@media (prefers-color-scheme:light){:root{--tinta:#191a1e;--suave:#5a5d66;--fondo:#e9e7e1;
+  --panel:#f7f6f2;--linea:#d0cdc5;--rojo:#b23f34;--cyan:#1c6b7c;--verde:#2b7734;--oro:#8a7420}}
+:root[data-theme="dark"]{--tinta:#cfd0d4;--suave:#83868f;--fondo:#000;--panel:#0c0e13;
+  --linea:#23262e;--rojo:#ff897d;--cyan:#65dbef;--verde:#3eb849;--oro:#ded087}
+:root[data-theme="light"]{--tinta:#191a1e;--suave:#5a5d66;--fondo:#e9e7e1;--panel:#f7f6f2;
+  --linea:#d0cdc5;--rojo:#b23f34;--cyan:#1c6b7c;--verde:#2b7734;--oro:#8a7420}
+*{box-sizing:border-box}
+body{margin:0;background:var(--fondo);color:var(--tinta);padding:0 1.25rem 6rem;
+  font:15px/1.7 ui-monospace,"SF Mono",Menlo,Consolas,monospace}
+.w{max-width:1120px;margin:0 auto}
+.n{max-width:68ch}
+h1,h2,h3,h4{font-weight:400;text-wrap:balance}
+a{color:var(--cyan)}
+img{image-rendering:pixelated;max-width:100%;height:auto;display:block}
+header.top{display:flex;flex-direction:column;align-items:center;gap:1.5rem;
+  padding:4rem 0 2rem;text-align:center}
+header.top img{width:min(100%,642px)}
+.claim{max-width:60ch;color:var(--suave);font-size:1.05rem}
+.claim b{color:var(--tinta);font-weight:400}
+.ficha{display:flex;flex-wrap:wrap;justify-content:center;gap:0 1.5rem;width:100%;
+  font-size:12px;letter-spacing:.08em;text-transform:uppercase;color:var(--suave);
+  border-top:1px solid var(--linea);border-bottom:1px solid var(--linea);padding:.85rem 0}
+.ficha b{color:var(--rojo);font-weight:400}
+nav{display:flex;flex-wrap:wrap;gap:1.25rem;justify-content:center;padding:1.25rem 0;
+  font-size:12px;letter-spacing:.08em;text-transform:uppercase}
+nav a{color:var(--suave);text-decoration:none;border-bottom:1px solid transparent}
+nav a:hover,nav a:focus{color:var(--tinta);border-bottom-color:var(--rojo)}
+nav.docs{border-top:1px solid var(--linea);border-bottom:1px solid var(--linea);
+  margin-bottom:1rem}
+section{margin-top:4.5rem;scroll-margin-top:1rem}
+section>h2{font-size:1rem;letter-spacing:.1em;text-transform:uppercase;
+  border-left:3px solid var(--rojo);padding-left:.9rem;margin:0 0 1.5rem}
+.cifras{display:grid;gap:1px;background:var(--linea);border:1px solid var(--linea);
+  grid-template-columns:repeat(auto-fit,minmax(160px,1fr))}
+.cifra{background:var(--panel);padding:1.1rem}
+.cifra b{display:block;font-size:1.7rem;color:var(--oro);font-weight:400;
+  font-variant-numeric:tabular-nums;line-height:1.2}
+.cifra span{font-size:11px;letter-spacing:.07em;text-transform:uppercase;color:var(--suave)}
+.hall{border-top:1px solid var(--linea);padding-top:1.75rem;margin-top:2.5rem}
+.hall:first-of-type{border-top:0;padding-top:0;margin-top:0}
+.hall h3{margin:0 0 .75rem;font-size:1.15rem;color:var(--rojo)}
+.hall h4{color:var(--oro);margin:1.5rem 0 .5rem;font-size:.95rem}
+.hall p{margin:0 0 1rem}
+pre.asm{background:var(--panel);border-left:2px solid var(--verde);margin:1.25rem 0;
+  padding:1rem 1.1rem;overflow-x:auto;font-size:13px;line-height:1.6;color:var(--tinta)}
+.par{display:grid;gap:1.25rem;grid-template-columns:1fr}
+@media(min-width:820px){.par{grid-template-columns:1fr 1fr}}
+.par figure{margin:0}
+table{border-collapse:collapse;width:100%;margin:1.25rem 0;font-size:13px;display:block;
+  overflow-x:auto}
+th,td{text-align:left;padding:.5rem .75rem;border-bottom:1px solid var(--linea)}
+th{color:var(--suave);font-weight:400;font-size:11px;letter-spacing:.07em;text-transform:uppercase}
+td.num{font-variant-numeric:tabular-nums;color:var(--oro)}
+.nivel{margin-top:2rem}
+.nivel h3{margin:0 0 .9rem;font-size:.95rem;letter-spacing:.06em;text-transform:uppercase}
+.nivel em{color:var(--cyan);font-style:normal}
+.sep{color:var(--suave);margin:0 .6rem}
+.rejilla{display:grid;gap:.9rem;grid-template-columns:repeat(auto-fill,minmax(250px,1fr))}
+.rejilla figure{margin:0;background:var(--panel);box-shadow:0 0 0 1px var(--linea)}
+.rejilla figcaption{display:flex;justify-content:space-between;padding:.45rem .65rem;
+  font-size:11px;color:var(--suave);border-top:1px solid var(--linea)}
+.dir{font-variant-numeric:tabular-nums;color:var(--verde)}
+footer{margin-top:5rem;padding-top:1.5rem;border-top:1px solid var(--linea);
+  color:var(--suave);font-size:12px}
+
+/* Aviso de trabajo en curso: tiene que verse antes que las cifras, porque un
+   100% mal leido hace mas dano que no ponerlo. */
+.aviso{background:#3a2a10;border-left:3px solid var(--oro);margin:1.5rem auto;
+  padding:1rem 1.2rem;max-width:900px;border-radius:4px}
+.aviso p{margin:0;color:var(--tinta);font-size:15px;line-height:1.65}
+.galeria{display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
+  gap:1.5rem;margin:1.5rem 0}
+.galeria figure{margin:0}
+.galeria img{width:100%;height:auto;image-rendering:pixelated;
+  border:1px solid var(--linea);border-radius:3px}
+.galeria figcaption{color:var(--suave);font-size:13px;margin-top:.5rem}
+audio{display:block;width:100%;max-width:640px;margin:.75rem 0 1.5rem}
+
+header.top h1{margin:0;font-size:2.3rem;letter-spacing:.04em}
+header.top h1 span{color:var(--rojo)}
+.proyectos{display:grid;gap:1px;background:var(--linea);border:1px solid var(--linea);
+  grid-template-columns:repeat(auto-fit,minmax(min(300px,100%),1fr))}
+.proy{background:var(--panel);padding:1.4rem 1.3rem;display:flex;flex-direction:column}
+.proy h3{margin:0 0 .35rem;font-size:1.15rem;color:var(--rojo)}
+.proy h3 span{color:var(--suave);font-size:12px;letter-spacing:.08em}
+.proy p.meta{margin:0 0 .9rem;font-size:11px;letter-spacing:.07em;
+  text-transform:uppercase;color:var(--suave)}
+.proy p.claim{margin:0 0 1rem;max-width:none;font-size:15px;color:var(--tinta)}
+.proy p.datos{margin:0;padding-top:.85rem;border-top:1px solid var(--linea);
+  font-size:13px;color:var(--suave)}
+nav a.sec,a.entrar{border:1px solid var(--linea);padding:.4rem .95rem;
+  color:var(--tinta);text-transform:uppercase;letter-spacing:.07em;font-size:13px;
+  text-decoration:none}
+nav a.sec:hover,nav a.sec:focus,a.entrar:hover,a.entrar:focus{border-color:var(--rojo)}
+nav a.sec[aria-current]{background:var(--rojo);border-color:var(--rojo);color:var(--fondo)}
+nav{align-items:center}
+.resumen{margin:3rem 0}
+.proy p.datos b{color:var(--oro);font-weight:400;font-variant-numeric:tabular-nums}
+.proy p.enlaces{margin:auto 0 0;padding-top:1rem;font-size:12px;letter-spacing:.07em;
+  text-transform:uppercase}
+.proy p.enlaces a{margin-right:1.1rem}
+.proy p.enlaces em{color:var(--suave);font-style:normal}
+.parte{margin-top:3rem;scroll-margin-top:1rem}
+.parte h3{margin:0 0 1rem;font-size:.95rem;letter-spacing:.1em;text-transform:uppercase;
+  color:var(--oro)}
+.parte h3 span{color:var(--suave);font-size:12px;letter-spacing:.08em;margin-left:.6rem}
+</style>
+
+<div class="w">
+<header class="top">
+  <h1><a href="../" style="color:inherit;text-decoration:none">antxiko<span>/</span></a></h1>
+  <p class="claim">Old 8-bit binaries taken apart byte by byte and commented, with the tools to rebuild them: nothing gets claimed that the binary does not show, and the source has to give the original back, byte for byte. Right now that means 59 MSX games.</p>
+  <div class="ficha"><span><b>59</b> games</span><span><b>1983-1989</b></span><span>MSX</span><span><b>8</b> tapes &middot; <b>51</b> cartridges</span></div>
+</header>
+<nav><a class="sec" href="../disassemblies/">Disassemblies</a><a class="sec" href="../patches/">Patches</a><a class="sec" href="../utilities/" aria-current="page">Utilities</a><a class="sec" href="../games/">Games</a><a class="sec" href="../msxon/">MSXon</a><a href="../feed.xml">Feed</a><a href="https://github.com/antxiko">GitHub</a><a href="../es/utilities/" style="margin-left:auto;color:var(--oro)">En castellano</a></nav>
+
+<section id="utilities">
+  <h2>The utilities</h2>
+  <p class="n" style="margin-bottom:2rem;color:var(--suave)">Tools that came out of doing things with the MSX: for the Yamanooto cartridge, for networking, for editing graphics and files, and a couple from outside the MSX. Each one links to its repository, with the code and the instructions.</p>
+  <div class="proyectos"><article class="proy"><h3>nPackR <span>2026</span></h3><p class="meta">Python + Z80, Rust GUI &middot; Yamanooto cartridge &middot; v1.7.3</p><p class="claim">Builds the image for a <b>Yamanooto cartridge</b> out of your own ROMs: a menu on the cartridge and the games behind it. It tells each game&rsquo;s mapper by its SHA1, converts the ASCII8/ASCII16 ones, and patches Metal Gear, Metal Gear 2 and The Maze of Galious on the fly so they <b>save the game to the cartridge&rsquo;s flash</b>.</p><p class="datos">GUI for <b>Windows, Linux and macOS</b> &middot; also from the command line</p><p class="enlaces"><a href="https://github.com/antxiko/msx-yamanooto-npackr">Repository</a></p></article><article class="proy"><h3>openMSXnet <span>2026</span></h3><p class="meta">C++ + Z80 &middot; openMSX &middot; UNAPI TCP/IP 1.1</p><p class="claim">Real TCP/IP networking for MSX software running in openMSX: a device inside the emulator that uses the host computer&rsquo;s network, and a TSR on the MSX offering the standard UNAPI interface. hget, telnet or sntp run unmodified. <b>It is now part of openMSX</b>: the device was merged into the official emulator.</p><p class="datos">DNS &middot; up to <b>4</b> TCP connections and <b>4</b> UDP</p><p class="enlaces"><a href="https://github.com/antxiko/openMSXnet">Repository</a><em>merged into openMSX, PR #2147, 2026-08-10</em></p></article><article class="proy"><h3>msx-net-transfer <span>2026</span></h3><p class="meta">Rust (PC) + C (MSX) &middot; MSX-DOS 2 with UNAPI TCP/IP</p><p class="claim">Moves files between the PC and a real MSX over the network, both ways and also from MSX to MSX. Everything speaks plain HTTP/1.0, so the same folder can be browsed from a web browser. The MSX finds the servers on the local network by itself, <b>without typing an IP</b>.</p><p class="datos">server for <b>Windows, Linux and macOS</b> &middot; NT.COM client of about <b>8.5 KB</b></p><p class="enlaces"><a href="https://github.com/antxiko/msx-net-transfer">Repository</a></p></article><article class="proy"><h3>mHEXditor <span>2026</span></h3><p class="meta">C (MSXgl + SDCC) &middot; MSX2 &middot; MSX-DOS 2 / Nextor</p><p class="claim">Hex editor and viewer for the MSX2, in 80 columns. It opens any file on the disk, shows it in hex and ASCII, searches for hex strings and edits bytes; it saves to a new copy unless you confirm you want the original overwritten. Only a window of the file is kept in RAM, so it opens files of <b>up to 720 KB</b>.</p><p class="datos">MHEXED.COM of about <b>10 KB</b> &middot; tested in openMSX</p><p class="enlaces"><a href="https://github.com/antxiko/mHEXditor">Repository</a></p></article><article class="proy"><h3>MSXJuanEditor <span>2026</span></h3><p class="meta">Rust + Tauri &middot; Windows &middot; MSX SCREEN 2</p><p class="claim">Graphics editor for the MSX: tiles, 32&times;24 maps and 8&times;8 and 16&times;16 sprites, with the <b>TMS9918A&rsquo;s limits checked while you draw</b> (two colours per tile row, one colour per sprite). It imports a picture and cuts it into tiles, and exports to JSON, to C arrays for MSXgl and to binary.</p><p class="datos">portable executable of about <b>8 MB</b></p><p class="enlaces"><a href="https://github.com/antxiko/MSXJuanEditor">Repository</a></p></article><article class="proy"><h3>RoOmSniFfeR <span>2026</span></h3><p class="meta">Python &middot; Telegram bot</p><p class="claim">Searches for ROMs on archive.org, the Internet Archive and CDRomance, and returns the link to the actual file. When the game sits inside a TOSEC pack in a single .zip, it <b>looks inside the zip</b> and links the game, without downloading the whole pack.</p><p class="datos"><b>120+</b> systems &middot; inline mode too</p><p class="enlaces"><a href="https://github.com/antxiko/RoOmSniFfeR">Repository</a></p></article><article class="proy"><h3>MORSE328p <span>2022</span></h3><p class="meta">C++ (Arduino) &middot; ATmega328p</p><p class="claim">Plays in Morse code the text that reaches an ATmega328p &mdash; the microcontroller of the Arduino Uno &mdash; through its serial port.</p><p class="datos">tested on Arduino Uno, Leonardo, a breadboard 328p and an ATtiny85</p><p class="enlaces"><a href="https://github.com/antxiko/MORSE328p">Repository</a></p></article></div>
+</section>
+
+<footer>Documentation and preservation work on 8-bit software. Each game's code, graphics and sound belong to its authors and rights holders; what is published here is the analysis, the comments and the tools. No tape or cartridge image is distributed.</footer>
+</div>

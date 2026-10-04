@@ -6,8 +6,24 @@
   <link rel="self" type="application/atom+xml" href="https://antxiko.github.io/es/feed.xml"/>
   <link rel="alternate" type="text/html" hreflang="es" href="https://antxiko.github.io/es/"/>
   <link rel="alternate" type="application/atom+xml" hreflang="en" href="https://antxiko.github.io/feed.xml"/>
-  <updated>2026-10-03T21:23:23+02:00</updated>
+  <updated>2026-10-04T11:05:39+02:00</updated>
   <author><name>antxiko</name><uri>https://github.com/antxiko</uri></author>
+  <entry>
+    <id>tag:antxiko.github.io,2026:novedad/es/portada-por-secciones</id>
+    <title>La portada, por secciones: utilidades, juegos y MSXon</title>
+    <link rel="alternate" type="text/html" href="https://antxiko.github.io/"/>
+    <published>2026-10-04T11:05:39+02:00</published>
+    <updated>2026-10-04T11:05:39+02:00</updated>
+    <summary type="text">Cada sección tiene su página. Entran nPackR, openMSXnet, msx-net-transfer, mHEXditor, MSXJuanEditor, RoOmSniFfeR, MORSE328p, Tiny Tetris VS, Tetris GG, OpenComputerFutbolSimulator, MysticBBSGames y MSXon.</summary>
+  </entry>
+  <entry>
+    <id>tag:antxiko.github.io,2026:novedad/es/npackr-1-7-3</id>
+    <title>nPackR 1.7.3: The Maze of Galious graba en la flash</title>
+    <link rel="alternate" type="text/html" href="https://github.com/antxiko/msx-yamanooto-npackr/releases/tag/v1.7.3"/>
+    <published>2026-10-04T09:37:05+02:00</published>
+    <updated>2026-10-04T09:37:05+02:00</updated>
+    <summary type="text">La GUI parchea el Galious al soltarlo, como los Metal Gear: tres huecos de partida en la flash del cartucho en vez de la contraseña.</summary>
+  </entry>
   <entry>
     <id>tag:antxiko.github.io,2026:novedad/es/galious-yamanooto-en-un-msx-real</id>
     <title>The Maze of Galious en el Yamanooto, probado en un MSX real</title>
@@ -151,21 +167,5 @@
     <published>2026-09-28T19:12:12+02:00</published>
     <updated>2026-09-28T19:12:12+02:00</updated>
     <summary type="text">Lo que hace un vendedor depende de cuántas veces se le pega, no de las visitas; al morir, la cuenta vuelve a cero. El libro blanco abarata la tienda y el rojo la encarece: la vida llena cuesta 15, 40 u 80 corazones. Visto en openMSX, un vendedor de cada clase.</summary>
-  </entry>
-  <entry>
-    <id>tag:antxiko.github.io,2026:novedad/es/vampirekiller</id>
-    <title>Vampire Killer: el castillo de Drácula, desmontado</title>
-    <link rel="alternate" type="text/html" href="https://antxiko.github.io/VampireKiller-disassembly/"/>
-    <published>2026-09-28T18:12:53+02:00</published>
-    <updated>2026-09-28T18:12:53+02:00</updated>
-    <summary type="text">El primer MSX2 de la serie. Las 156 habitaciones con lo que esconden, Simon, los enemigos y los seis jefes, dibujados desde la ROM y cotejados en openMSX. Hay 33 vendedores escondidos que no siempre venden.</summary>
-  </entry>
-  <entry>
-    <id>tag:antxiko.github.io,2026:novedad/es/penguinadventure-las-botas</id>
-    <title>Penguin Adventure: las botas rojas sí salen</title>
-    <link rel="alternate" type="text/html" href="https://antxiko.github.io/PenguinAdventure-disassembly/"/>
-    <published>2026-09-28T15:35:08+02:00</published>
-    <updated>2026-09-28T15:35:08+02:00</updated>
-    <summary type="text">Los premios de los secretos estaban corridos en uno: la fase 6 da las botas azules y la 13 las rojas. Cotejado en openMSX.</summary>
   </entry>
 </feed>

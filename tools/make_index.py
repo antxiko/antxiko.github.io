@@ -2903,6 +2903,327 @@ HERRAMIENTAS = [
 ]
 
 # --------------------------------------------------------------------------
+# Las utilidades, los juegos y MSXon: proyectos que no son de la serie. Sus
+# frases salen del README de cada repositorio; ninguno tiene web propia, asi
+# que la tarjeta lleva solo el enlace al repositorio.
+def fijo(en, es):
+    """'datos' de una tarjeta que no se calcula de ningun listado."""
+    return dict(en=lambda i: en, es=lambda i: es)
+
+
+SIN_NOTA = dict(en="", es="")
+
+UTILIDADES = [
+    dict(
+        clave="npackr",
+        titulo="nPackR",
+        anio=2026,
+        repo="https://github.com/antxiko/msx-yamanooto-npackr",
+        web=None,
+        meta=dict(
+            en="Python + Z80, Rust GUI &middot; Yamanooto cartridge &middot; v1.7.3",
+            es="Python + Z80, GUI en Rust &middot; cartucho Yamanooto &middot; v1.7.3",
+        ),
+        claim=dict(
+            en="Builds the image for a <b>Yamanooto cartridge</b> out of your own "
+               "ROMs: a menu on the cartridge and the games behind it. It tells "
+               "each game&rsquo;s mapper by its SHA1, converts the ASCII8/ASCII16 "
+               "ones, and patches Metal Gear, Metal Gear 2 and The Maze of Galious "
+               "on the fly so they <b>save the game to the cartridge&rsquo;s "
+               "flash</b>.",
+            es="Monta la imagen para un <b>cartucho Yamanooto</b> con tus propias "
+               "ROMs: un menú en el cartucho y los juegos detrás. Reconoce el "
+               "mapper de cada juego por su SHA1, convierte los ASCII8/ASCII16 y "
+               "parchea al vuelo Metal Gear, Metal Gear 2 y The Maze of Galious "
+               "para que <b>graben la partida en la flash del cartucho</b>.",
+        ),
+        datos=fijo("GUI for <b>Windows, Linux and macOS</b> &middot; also from the command line",
+                   "GUI para <b>Windows, Linux y macOS</b> &middot; también por línea de órdenes"),
+        nota=SIN_NOTA,
+    ),
+    dict(
+        clave="openmsxnet",
+        titulo="openMSXnet",
+        anio=2026,
+        repo="https://github.com/antxiko/openMSXnet",
+        web=None,
+        meta=dict(
+            en="C++ + Z80 &middot; openMSX &middot; UNAPI TCP/IP 1.1",
+            es="C++ + Z80 &middot; openMSX &middot; UNAPI TCP/IP 1.1",
+        ),
+        claim=dict(
+            en="Real TCP/IP networking for MSX software running in openMSX: a "
+               "device inside the emulator that uses the host computer&rsquo;s "
+               "network, and a TSR on the MSX offering the standard UNAPI "
+               "interface. hget, telnet or sntp run unmodified. <b>It is now part "
+               "of openMSX</b>: the device was merged into the official emulator.",
+            es="Red TCP/IP de verdad para el software de MSX que corre en openMSX: "
+               "un dispositivo dentro del emulador que usa la red del ordenador y "
+               "un TSR en el MSX con la interfaz UNAPI estándar. hget, telnet o "
+               "sntp funcionan sin tocarlos. <b>Ya forma parte de openMSX</b>: el "
+               "dispositivo se integró en el emulador oficial.",
+        ),
+        datos=fijo("DNS &middot; up to <b>4</b> TCP connections and <b>4</b> UDP",
+                   "DNS &middot; hasta <b>4</b> conexiones TCP y <b>4</b> UDP"),
+        nota=dict(en="merged into openMSX, PR #2147, 2026-08-10",
+                  es="integrado en openMSX, PR #2147, 10-08-2026"),
+    ),
+    dict(
+        clave="msx-net-transfer",
+        titulo="msx-net-transfer",
+        anio=2026,
+        repo="https://github.com/antxiko/msx-net-transfer",
+        web=None,
+        meta=dict(
+            en="Rust (PC) + C (MSX) &middot; MSX-DOS 2 with UNAPI TCP/IP",
+            es="Rust (PC) + C (MSX) &middot; MSX-DOS 2 con UNAPI TCP/IP",
+        ),
+        claim=dict(
+            en="Moves files between the PC and a real MSX over the network, both "
+               "ways and also from MSX to MSX. Everything speaks plain HTTP/1.0, so "
+               "the same folder can be browsed from a web browser. The MSX finds "
+               "the servers on the local network by itself, <b>without typing an "
+               "IP</b>.",
+            es="Pasa ficheros entre el PC y un MSX real por la red, en los dos "
+               "sentidos y también de MSX a MSX. Todo habla HTTP/1.0 normal, así "
+               "que la misma carpeta se ve desde un navegador. El MSX encuentra "
+               "solo los servidores de la red local, <b>sin teclear la IP</b>.",
+        ),
+        datos=fijo("server for <b>Windows, Linux and macOS</b> &middot; NT.COM client of about <b>8.5 KB</b>",
+                   "servidor para <b>Windows, Linux y macOS</b> &middot; cliente NT.COM de unos <b>8,5 KB</b>"),
+        nota=SIN_NOTA,
+    ),
+    dict(
+        clave="mhexditor",
+        titulo="mHEXditor",
+        anio=2026,
+        repo="https://github.com/antxiko/mHEXditor",
+        web=None,
+        meta=dict(
+            en="C (MSXgl + SDCC) &middot; MSX2 &middot; MSX-DOS 2 / Nextor",
+            es="C (MSXgl + SDCC) &middot; MSX2 &middot; MSX-DOS 2 / Nextor",
+        ),
+        claim=dict(
+            en="Hex editor and viewer for the MSX2, in 80 columns. It opens any "
+               "file on the disk, shows it in hex and ASCII, searches for hex "
+               "strings and edits bytes; it saves to a new copy unless you confirm "
+               "you want the original overwritten. Only a window of the file is "
+               "kept in RAM, so it opens files of <b>up to 720 KB</b>.",
+            es="Editor y visor hexadecimal para MSX2 en 80 columnas. Abre cualquier "
+               "fichero del disco, lo enseña en hex y ASCII, busca cadenas hex y "
+               "edita bytes; graba en una copia nueva salvo que confirmes que "
+               "quieres sobrescribir el original. Solo tiene en RAM un trozo del "
+               "fichero, así que abre ficheros de <b>hasta 720 KB</b>.",
+        ),
+        datos=fijo("MHEXED.COM of about <b>10 KB</b> &middot; tested in openMSX",
+                   "MHEXED.COM de unos <b>10 KB</b> &middot; probado en openMSX"),
+        nota=SIN_NOTA,
+    ),
+    dict(
+        clave="msxjuaneditor",
+        titulo="MSXJuanEditor",
+        anio=2026,
+        repo="https://github.com/antxiko/MSXJuanEditor",
+        web=None,
+        meta=dict(
+            en="Rust + Tauri &middot; Windows &middot; MSX SCREEN 2",
+            es="Rust + Tauri &middot; Windows &middot; SCREEN 2 de MSX",
+        ),
+        claim=dict(
+            en="Graphics editor for the MSX: tiles, 32&times;24 maps and 8&times;8 "
+               "and 16&times;16 sprites, with the <b>TMS9918A&rsquo;s limits checked "
+               "while you draw</b> (two colours per tile row, one colour per "
+               "sprite). It imports a picture and cuts it into tiles, and exports "
+               "to JSON, to C arrays for MSXgl and to binary.",
+            es="Editor de gráficos de MSX: tiles, mapas de 32&times;24 y sprites de "
+               "8&times;8 y 16&times;16, con <b>las limitaciones del TMS9918A "
+               "comprobadas mientras dibujas</b> (dos colores por fila de tile, un "
+               "color por sprite). Importa una imagen y la trocea en tiles; exporta "
+               "a JSON, a arrays de C para MSXgl y a binario.",
+        ),
+        datos=fijo("portable executable of about <b>8 MB</b>",
+                   "ejecutable portable de unos <b>8 MB</b>"),
+        nota=SIN_NOTA,
+    ),
+    dict(
+        clave="roomsniffer",
+        titulo="RoOmSniFfeR",
+        anio=2026,
+        repo="https://github.com/antxiko/RoOmSniFfeR",
+        web=None,
+        meta=dict(
+            en="Python &middot; Telegram bot",
+            es="Python &middot; bot de Telegram",
+        ),
+        claim=dict(
+            en="Searches for ROMs on archive.org, the Internet Archive and "
+               "CDRomance, and returns the link to the actual file. When the game "
+               "sits inside a TOSEC pack in a single .zip, it <b>looks inside the "
+               "zip</b> and links the game, without downloading the whole pack.",
+            es="Busca ROMs en archive.org, el Internet Archive y CDRomance, y "
+               "devuelve el enlace al archivo concreto. Si el juego está dentro de "
+               "un pack TOSEC en un solo .zip, <b>mira dentro del zip</b> y da el "
+               "enlace al juego, sin bajarse el pack entero.",
+        ),
+        datos=fijo("<b>120+</b> systems &middot; inline mode too",
+                   "más de <b>120</b> sistemas &middot; también en modo inline"),
+        nota=SIN_NOTA,
+    ),
+    dict(
+        clave="morse328p",
+        titulo="MORSE328p",
+        anio=2022,
+        repo="https://github.com/antxiko/MORSE328p",
+        web=None,
+        meta=dict(
+            en="C++ (Arduino) &middot; ATmega328p",
+            es="C++ (Arduino) &middot; ATmega328p",
+        ),
+        claim=dict(
+            en="Plays in Morse code the text that reaches an ATmega328p &mdash; the "
+               "microcontroller of the Arduino Uno &mdash; through its serial port.",
+            es="Toca en morse el texto que le llega por el puerto serie a un "
+               "ATmega328p, el microcontrolador del Arduino Uno.",
+        ),
+        datos=fijo("tested on Arduino Uno, Leonardo, a breadboard 328p and an ATtiny85",
+                   "probado en Arduino Uno, Leonardo, un 328p en protoboard y un ATtiny85"),
+        nota=SIN_NOTA,
+    ),
+]
+
+JUEGOS = [
+    dict(
+        clave="tinytetrisvs",
+        titulo="Tiny Tetris VS",
+        anio=2026,
+        repo="https://github.com/antxiko/TinyTetrisVS",
+        web=None,
+        meta=dict(
+            en="C &middot; MSX &middot; 32 KB cartridge &middot; 4 players",
+            es="C &middot; MSX &middot; cartucho de 32 KB &middot; 4 jugadores",
+        ),
+        claim=dict(
+            en="Battle Tetris for four on an MSX: four boards on one screen, and "
+               "every line you clear sends garbage to the opponent you are aiming "
+               "at; T-spins and combos send more. With the <b>Ninja Tap</b> four "
+               "people play; if players are missing, the computer fills the gaps.",
+            es="Tetris de combate para cuatro en un MSX: cuatro tableros en una "
+               "pantalla, y cada línea que haces manda basura al rival que tengas "
+               "apuntado; los T-spins y los combos mandan más. Con el <b>Ninja "
+               "Tap</b> juegan cuatro personas; si falta gente, la máquina ocupa "
+               "los huecos.",
+        ),
+        datos=fijo("MSX with <b>16 KB</b> of RAM &middot; Ninja Tap optional",
+                   "MSX con <b>16 KB</b> de RAM &middot; Ninja Tap opcional"),
+        nota=SIN_NOTA,
+    ),
+    dict(
+        clave="tetrisgg",
+        titulo="Tetris GG",
+        anio=2026,
+        repo="https://github.com/antxiko/TetrisGG",
+        web=None,
+        meta=dict(
+            en="C (devkitSMS + SDCC) &middot; Sega Game Gear",
+            es="C (devkitSMS + SDCC) &middot; Sega Game Gear",
+        ),
+        claim=dict(
+            en="Tetris for the Game Gear, <b>in colour</b>: seven pieces with "
+               "rotation and wall kick, a ghost piece, levels that speed up every "
+               "10 lines, and the Underwater theme from Alex Kidd in Miracle World. "
+               "Playable from start to finish.",
+            es="Tetris para Game Gear, <b>en color</b>: siete piezas con rotación y "
+               "wall-kick, pieza fantasma, niveles que aceleran cada 10 líneas y la "
+               "música Underwater de Alex Kidd in Miracle World. Jugable de "
+               "principio a fin.",
+        ),
+        datos=fijo("still to come: sound effects and high scores in SRAM",
+                   "pendiente: efectos de sonido y récords en SRAM"),
+        nota=SIN_NOTA,
+    ),
+    dict(
+        clave="ocfs",
+        titulo="OpenComputerFutbolSimulator",
+        anio=2026,
+        repo="https://github.com/antxiko/OpenComputerFutbolSimulator",
+        web=None,
+        meta=dict(
+            en="Godot 4.6.2 / GDScript &middot; PC",
+            es="Godot 4.6.2 / GDScript &middot; PC",
+        ),
+        claim=dict(
+            en="A simulator of the Spanish league: you run a club (tactics, "
+               "line-ups, transfers, youth academy) and the computer plays the rest "
+               "for <b>20 seasons</b>, with the first and second divisions, the "
+               "Copa, the Supercopa and the Champions League. Matches can be "
+               "watched in a 2D viewer.",
+            es="Simulador de la Liga española: llevas un club (tácticas, "
+               "alineaciones, fichajes, cantera) y la máquina juega el resto "
+               "durante <b>20 temporadas</b>, con Primera y Segunda, Copa, "
+               "Supercopa y Champions. Los partidos se pueden ver en un visor 2D.",
+        ),
+        datos=fijo("v0.1.0, the first release playable end to end &middot; no team or player data distributed",
+                   "v0.1.0, primer release jugable de principio a fin &middot; no distribuye datos de equipos ni jugadores"),
+        nota=SIN_NOTA,
+    ),
+    dict(
+        clave="mysticbbsgames",
+        titulo="MysticBBSGames",
+        anio=2026,
+        repo="https://github.com/antxiko/MysticBBSGames",
+        web=None,
+        meta=dict(
+            en="Python &middot; doors for Mystic BBS",
+            es="Python &middot; doors para Mystic BBS",
+        ),
+        claim=dict(
+            en="<b>Twenty</b> text-mode games for a BBS: Dope Wars, Wordle, "
+               "Minesweeper, Snake, a roguelike&hellip; Each one is a single Python "
+               "file using only the standard library, in 80&times;24 with CP437 "
+               "characters and ANSI colours, and they share an online high-score "
+               "table across BBSes.",
+            es="<b>Veinte</b> juegos en modo texto para una BBS: Dope Wars, Wordle, "
+               "Buscaminas, Snake, un roguelike&hellip; Cada uno es un solo fichero "
+               "de Python con la biblioteca estándar, en 80&times;24 con caracteres "
+               "CP437 y colores ANSI, y comparten una tabla de récords online entre "
+               "BBS.",
+        ),
+        datos=fijo("also playable in any ANSI terminal &middot; demo on No Signal BBS",
+                   "también en cualquier terminal ANSI &middot; demo en No Signal BBS"),
+        nota=SIN_NOTA,
+    ),
+]
+
+MSXON = [
+    dict(
+        clave="msxon",
+        titulo="MSXon",
+        anio=2026,
+        repo="https://github.com/antxiko/MSXon",
+        web=None,
+        meta=dict(
+            en="C (MSX) + Node.js (server) &middot; MSX2 &middot; v0.12",
+            es="C (MSX) + Node.js (servidor) &middot; MSX2 &middot; v0.12",
+        ),
+        claim=dict(
+            en="Online multiplayer games for <b>real MSX2 computers</b>. A lobby on "
+               "the MSX leads to the games: draughts, parchís, Texas Hold&rsquo;em, "
+               "four-player Tetris, Bomberman, Frog &amp; Flies and Burdyn, an RPG "
+               "for up to 14 players. Where it is needed, the server is the "
+               "referee: in poker it is the server that shuffles and deals.",
+            es="Juegos online multijugador para <b>MSX2 reales</b>. Un lobby en el "
+               "MSX da paso a los juegos: damas, parchís, Texas Hold&rsquo;em, "
+               "Tetris a cuatro, Bomberman, Frog &amp; Flies y Burdyn, un RPG para "
+               "hasta 14 jugadores. Donde hace falta, el servidor hace de árbitro: "
+               "en el póker es él quien baraja y reparte.",
+        ),
+        datos=fijo("tested on real hardware with ObsoNET, GR8NET, BadCat and ESP-01",
+                   "probado en hardware real con ObsoNET, GR8NET, BadCat y ESP-01"),
+        nota=SIN_NOTA,
+    ),
+]
+
+
 # LAS NOVEDADES: de aqui salen los dos feeds Atom (feed.xml y es/feed.xml). Una
 # entrada por publicacion, la mas nueva ARRIBA, escrita a mano en el mismo
 # commit que pone el proyecto en la portada. Reglas:
@@ -2928,6 +3249,35 @@ HERRAMIENTAS = [
 # nueva a vieja, una clave no existe o un proyecto se queda sin novedad.
 # --------------------------------------------------------------------------
 NOVEDADES = [
+    dict(id="portada-por-secciones", clave="npackr",
+         otras=["openmsxnet", "msx-net-transfer", "mhexditor", "msxjuaneditor",
+                "roomsniffer", "morse328p", "tinytetrisvs", "tetrisgg", "ocfs",
+                "mysticbbsgames", "msxon"],
+         clase="nuevo", fecha="2026-10-04T11:05:39+02:00",
+         enlace="https://antxiko.github.io/",
+         titulo=dict(en="The front page, by sections: utilities, games and MSXon",
+                     es="La portada, por secciones: utilidades, juegos y MSXon"),
+         resumen=dict(
+             en="Each section has its own page. In come nPackR, openMSXnet, "
+                "msx-net-transfer, mHEXditor, MSXJuanEditor, RoOmSniFfeR, MORSE328p, "
+                "Tiny Tetris VS, Tetris GG, OpenComputerFutbolSimulator, "
+                "MysticBBSGames and MSXon.",
+             es="Cada sección tiene su página. Entran nPackR, openMSXnet, "
+                "msx-net-transfer, mHEXditor, MSXJuanEditor, RoOmSniFfeR, MORSE328p, "
+                "Tiny Tetris VS, Tetris GG, OpenComputerFutbolSimulator, "
+                "MysticBBSGames y MSXon."),
+    ),
+    dict(id="npackr-1-7-3", clave="npackr",
+         clase="actualiza", fecha="2026-10-04T09:37:05+02:00",
+         enlace="https://github.com/antxiko/msx-yamanooto-npackr/releases/tag/v1.7.3",
+         titulo=dict(en="nPackR 1.7.3: The Maze of Galious saves to the flash",
+                     es="nPackR 1.7.3: The Maze of Galious graba en la flash"),
+         resumen=dict(
+             en="The GUI patches Galious when you drop it in, like the Metal Gears: "
+                "three save slots in the cartridge's flash instead of the password.",
+             es="La GUI parchea el Galious al soltarlo, como los Metal Gear: tres "
+                "huecos de partida en la flash del cartucho en vez de la contraseña."),
+    ),
     dict(id="galious-yamanooto-en-un-msx-real", clave="galious-yamanooto",
          clase="actualiza", fecha="2026-10-03T21:23:23+02:00",
          titulo=dict(en="The Maze of Galious on the Yamanooto, tested on a real MSX",
@@ -3800,6 +4150,46 @@ CATEGORIAS = [
         ),
         proyectos=PARCHES,
     ),
+    dict(
+        id="utilities",
+        titulo=dict(en="The utilities", es="Las utilidades"),
+        menu=dict(en="Utilities", es="Utilidades"),
+        intro=dict(
+            en="Tools that came out of doing things with the MSX: for the "
+               "Yamanooto cartridge, for networking, for editing graphics and "
+               "files, and a couple from outside the MSX. Each one links to its "
+               "repository, with the code and the instructions.",
+            es="Herramientas que salieron de hacer cosas con el MSX: para el "
+               "cartucho Yamanooto, para la red, para editar gráficos y ficheros, "
+               "y alguna fuera del MSX. Cada una enlaza a su repositorio, con el "
+               "código y las instrucciones.",
+        ),
+        proyectos=UTILIDADES,
+    ),
+    dict(
+        id="games",
+        titulo=dict(en="The games", es="Los juegos"),
+        menu=dict(en="Games", es="Juegos"),
+        intro=dict(
+            en="Games made from scratch, not taken apart: for the MSX, for the "
+               "Game Gear, for a BBS and for the PC.",
+            es="Juegos hechos desde cero, no desmontados: para MSX, para Game "
+               "Gear, para una BBS y para PC.",
+        ),
+        proyectos=JUEGOS,
+    ),
+    dict(
+        id="msxon",
+        titulo=dict(en="MSXon", es="MSXon"),
+        menu=dict(en="MSXon", es="MSXon"),
+        intro=dict(
+            en="An online gaming platform for real MSX2 computers: a server on "
+               "the internet, a lobby on the MSX and the games, all over TCP/IP.",
+            es="Una plataforma de juegos online para MSX2 reales: un servidor en "
+               "internet, un lobby en el MSX y los juegos, todo sobre TCP/IP.",
+        ),
+        proyectos=MSXON,
+    ),
     # Para anadir otra categoria: una lista de proyectos con estos mismos campos
     # y otra entrada aqui, con 'partes' si las necesita. El menu y las secciones
     # salen de esta lista.
@@ -3819,7 +4209,8 @@ TXT = dict(
         menu_feed="Feed",
         entrar="Open the section",
         feed_nuevo=dict(disassemblies="{}: disassembled", patches="{}: published",
-                        tools="{}: published"),
+                        tools="{}: published", utilities="{}: published",
+                        games="{}: published", msxon="{}: published"),
         feed_actualiza="{}: updated",
         otro=("es/", "En castellano"),
         cifras=[(str(N_JUEGOS), "games taken apart"),
@@ -3868,7 +4259,8 @@ TXT = dict(
         menu_feed="Novedades",
         entrar="Entrar en la sección",
         feed_nuevo=dict(disassemblies="{}: desensamblado", patches="{}: publicado",
-                        tools="{}: publicada"),
+                        tools="{}: publicada", utilities="{}: publicada",
+                        games="{}: publicado", msxon="{}: publicado"),
         feed_actualiza="{}: novedades",
         otro=("../", "In English"),
         cifras=[(str(N_JUEGOS), "juegos desmontados"),
@@ -3990,7 +4382,7 @@ def comprueba():
                                  f"sus proyectos")
     # las novedades: lo que rompe un feed sin que se note hasta que un lector
     # lo rechaza o ensena todo como nuevo
-    claves = {p["clave"] for p in DESENSAMBLADOS + PARCHES + HERRAMIENTAS}
+    claves = {p["clave"] for p in todos()}
     ids = [n["id"] for n in NOVEDADES]
     if len(ids) != len(set(ids)):
         raise SystemExit("NOVEDADES: hay un id repetido")
@@ -4024,8 +4416,13 @@ FEED = dict(en=dict(ruta="feed.xml", pagina=""),
             es=dict(ruta="es/feed.xml", pagina="es/"))
 
 
+def todos():
+    """Todos los proyectos de la portada, de todas las secciones."""
+    return [p for c in CATEGORIAS for p in c["proyectos"]]
+
+
 def proyecto(clave):
-    for p in DESENSAMBLADOS + PARCHES + HERRAMIENTAS:
+    for p in todos():
         if p["clave"] == clave:
             return p
     raise KeyError(clave)
