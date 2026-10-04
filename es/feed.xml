@@ -1,13 +1,21 @@
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom" xml:lang="es">
   <title>antxiko — desensamblados comentados de juegos de 8 bits</title>
-  <subtitle>Binarios viejos de 8 bits desmontados byte a byte y comentados, con las herramientas para volver a montarlos: no se afirma nada que el binario no enseñe, y el código fuente tiene que devolver el original, byte a byte. Ahora mismo son 59 juegos de MSX.</subtitle>
+  <subtitle>Binarios viejos de 8 bits desmontados byte a byte y comentados, con las herramientas para volver a montarlos: no se afirma nada que el binario no enseñe, y el código fuente tiene que devolver el original, byte a byte. Ahora mismo son 60 juegos de MSX.</subtitle>
   <id>tag:antxiko.github.io,2026:feed/es</id>
   <link rel="self" type="application/atom+xml" href="https://antxiko.github.io/es/feed.xml"/>
   <link rel="alternate" type="text/html" hreflang="es" href="https://antxiko.github.io/es/"/>
   <link rel="alternate" type="application/atom+xml" hreflang="en" href="https://antxiko.github.io/feed.xml"/>
-  <updated>2026-10-04T13:40:00+02:00</updated>
+  <updated>2026-10-04T20:42:10+02:00</updated>
   <author><name>antxiko</name><uri>https://github.com/antxiko</uri></author>
+  <entry>
+    <id>tag:antxiko.github.io,2026:novedad/es/rastan</id>
+    <title>Rastan Saga: siete rondas, 255 pantallas y un dragón que se salta, desmontado</title>
+    <link rel="alternate" type="text/html" href="https://antxiko.github.io/RastanSaga-disassembly/"/>
+    <published>2026-10-04T20:42:10+02:00</published>
+    <updated>2026-10-04T20:42:10+02:00</updated>
+    <summary type="text">El cartucho MSX2 de Taito de 1988, explicado al 100 % y comentado al 46,1 %. Las siete rondas con sus enemigos y sus jefes, Rastan en sus tres capas y los 37 tipos de actor, dibujados desde la ROM y cotejados contra openMSX; y la fase del dragón que el juego se salta, un final que no pinta y un truco de pruebas en la cabecera.</summary>
+  </entry>
   <entry>
     <id>tag:antxiko.github.io,2026:novedad/es/galious-yamanooto-esc</id>
     <title>The Maze of Galious en el Yamanooto: ESC sale del menú de carga</title>
@@ -159,13 +167,5 @@
     <published>2026-09-30T12:00:00+02:00</published>
     <updated>2026-09-30T12:00:00+02:00</updated>
     <summary type="text">El Q*bert de Konami para MSX, explicado al 100 % y comentado al 78,1 %. Las 50 fases, la bonificación y el duelo dibujados desde la ROM y cotejados en openMSX. Cinco en línea acaban la fase, el duelo se decide a piedra, papel o tijera y hay una vida escondida, vista jugando.</summary>
-  </entry>
-  <entry>
-    <id>tag:antxiko.github.io,2026:novedad/es/kingkong2</id>
-    <title>King Kong 2: la isla y lo que esconde, desmontada</title>
-    <link rel="alternate" type="text/html" href="https://antxiko.github.io/KingKong2-disassembly/"/>
-    <published>2026-09-29T14:29:35+02:00</published>
-    <updated>2026-09-29T14:29:35+02:00</updated>
-    <summary type="text">El segundo MSX2 de la serie. Las 140 pantallas con sus pasadizos y el decorado que se quita, Mitchel, los 55 enemigos y cinco jefes que pinta el VDP, dibujados desde la ROM y cotejados en openMSX. Tres finales, y un truco de nivel visto jugando.</summary>
   </entry>
 </feed>
