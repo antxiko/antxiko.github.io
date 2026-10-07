@@ -1401,6 +1401,51 @@ DESENSAMBLADOS = [
         nota=dict(en=None, es=None),
     ),
     dict(
+        clave="synthesizer",
+        grupo="konami",
+        titulo="Konami's Synthesizer",
+        anio=1986,
+        repo="https://github.com/antxiko/KonamiSynthesizer-disassembly",
+        web="https://antxiko.github.io/KonamiSynthesizer-disassembly/",
+        meta=dict(
+            en="Konami &middot; MSX &middot; 32 KB cartridge with a DAC &middot; RC-741",
+            es="Konami &middot; MSX &middot; cartucho de 32 KB con DAC &middot; RC-741",
+        ),
+        claim=dict(
+            en="<b>Not a game: a synthesizer that computes every note sample by "
+               "sample on the Z80 and plays it through an 8-bit DAC.</b> The "
+               "seven screens, the sixteen TONE EDITs and the fourteen waves, "
+               "drawn from the ROM and checked against openMSX down to zero; the "
+               "engine written anew gives the sixteen tones byte for byte, and "
+               "what reaches the DAC is checked too. Plus the pitch, which is a "
+               "loop of cycles with thirteen paddings, the noise that comes from "
+               "the BIOS, and the tape with seven SAMPs that came with the "
+               "cartridge.",
+            es="<b>No es un juego: un sintetizador que calcula cada nota muestra "
+               "a muestra en el Z80 y la toca por un DAC de 8 bits.</b> Las siete "
+               "pantallas, los diecis&eacute;is TONE EDIT y las catorce ondas, "
+               "dibujados desde la ROM y cotejados contra openMSX a cero; el "
+               "motor escrito de nuevo da los diecis&eacute;is timbres byte a "
+               "byte, y lo que llega al DAC tambi&eacute;n est&aacute; cotejado. "
+               "Y la altura de la nota, que es un bucle de ciclos con trece "
+               "rellenos, el ruido que sale de la BIOS y la cinta de siete SAMP "
+               "que ven&iacute;a con el cartucho.",
+        ),
+        datos=dict(
+            en=lambda i: (f"{cif(32768, i)} bytes &middot; <b>0</b> unexplained "
+                          f"&middot; reassembles <b>byte for byte</b> &middot; "
+                          f"{cif(16229, i)} of code, {cif(16539, i)} of data "
+                          f"&middot; {cif(1187, i)} routines &middot; commented "
+                          f"to <b>43.6%</b>, none below 10%"),
+            es=lambda i: (f"{cif(32768, i)} bytes &middot; <b>0</b> sin explicar "
+                          f"&middot; reensambla <b>byte a byte</b> &middot; "
+                          f"{cif(16229, i)} de c&oacute;digo, {cif(16539, i)} de datos "
+                          f"&middot; {cif(1187, i)} rutinas &middot; comentado al "
+                          f"<b>43,6 %</b>, ninguna por debajo del 10 %"),
+        ),
+        nota=dict(en=None, es=None),
+    ),
+    dict(
         clave="galious",
         grupo="konami",
         titulo="The Maze of Galious",
@@ -3291,6 +3336,26 @@ MSXON = [
 # nueva a vieja, una clave no existe o un proyecto se queda sin novedad.
 # --------------------------------------------------------------------------
 NOVEDADES = [
+    dict(id="synthesizer", clave="synthesizer",
+         clase="nuevo", fecha="2026-10-07T11:52:13+02:00",
+         titulo=dict(en="Konami's Synthesizer: a synthesizer inside the Z80, taken apart",
+                     es="Konami's Synthesizer: un sintetizador dentro del Z80, desmontado"),
+         resumen=dict(
+             en="Konami's 1986 cartridge is not a game: it computes every note "
+                "sample by sample and plays it through an 8-bit DAC. 100% "
+                "explained and commented to 43.6%; the seven screens and the "
+                "sixteen TONE EDITs drawn from the ROM and checked against openMSX, "
+                "the engine written anew byte for byte, the pitch as a loop of "
+                "cycles, the noise from the BIOS, and the tape of seven SAMPs that "
+                "came with it.",
+             es="El cartucho de Konami de 1986 no es un juego: calcula cada nota "
+                "muestra a muestra y la toca por un DAC de 8 bits. Explicado al "
+                "100 % y comentado al 43,6 %; las siete pantallas y los dieciséis "
+                "TONE EDIT dibujados desde la ROM y cotejados contra openMSX, el "
+                "motor escrito de nuevo byte a byte, la altura como un bucle de "
+                "ciclos, el ruido que sale de la BIOS y la cinta de siete SAMP que "
+                "venía con él."),
+    ),
     dict(id="rastan", clave="rastan",
          clase="nuevo", fecha="2026-10-04T20:42:10+02:00",
          titulo=dict(en="Rastan Saga: seven rounds, 255 screens and a dragon that is skipped, taken apart",
