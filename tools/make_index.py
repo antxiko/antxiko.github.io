@@ -1446,6 +1446,48 @@ DESENSAMBLADOS = [
         nota=dict(en=None, es=None),
     ),
     dict(
+        clave="metalgear",
+        grupo="konami",
+        titulo="Metal Gear",
+        anio=1987,
+        repo="https://github.com/antxiko/MetalGear-disassembly",
+        web="https://antxiko.github.io/MetalGear-disassembly/",
+        meta=dict(
+            en="Konami &middot; MSX2 &middot; 128 KB cartridge &middot; RC-750",
+            es="Konami &middot; MSX2 &middot; cartucho de 128 KB &middot; RC-750",
+        ),
+        claim=dict(
+            en="<b>All of Outer Heaven from its tables: 235 rooms in 9 zones, "
+               "joined by their lifts, 154 doors, 64 actor types, Metal Gear and "
+               "the Hind D, drawn from the ROM.</b> The rooms match Manuel "
+               "Pazos&rsquo;s reference images point for point (thank you, "
+               "Manuel); the check against openMSX is still to be done. And five "
+               "passwords in the pause, tape saving with F5, what each item "
+               "does, and Metal Gear, which only falls to sixteen bombs in order.",
+            es="<b>Outer Heaven entero desde sus tablas: 235 salas en 9 zonas, "
+               "unidas por sus ascensores, 154 puertas, 64 tipos de actor, Metal "
+               "Gear y el Hind D, dibujados desde la ROM.</b> Las salas casan "
+               "punto por punto con las im&aacute;genes de referencia de Manuel "
+               "Pazos (gracias, Manuel); el cotejo contra openMSX est&aacute; "
+               "pendiente. Y cinco claves en la pausa, la cinta con F5, lo que "
+               "hace cada objeto y Metal Gear, que solo cae con diecis&eacute;is "
+               "bombas en orden.",
+        ),
+        datos=dict(
+            en=lambda i: (f"{cif(131072, i)} bytes &middot; <b>0</b> unexplained "
+                          f"&middot; reassembles <b>byte for byte</b> &middot; "
+                          f"{cif(35620, i)} of code, {cif(95452, i)} of data "
+                          f"&middot; {cif(2190, i)} routines &middot; commented "
+                          f"to <b>46.8%</b>, none below 10%"),
+            es=lambda i: (f"{cif(131072, i)} bytes &middot; <b>0</b> sin explicar "
+                          f"&middot; reensambla <b>byte a byte</b> &middot; "
+                          f"{cif(35620, i)} de c&oacute;digo, {cif(95452, i)} de datos "
+                          f"&middot; {cif(2190, i)} rutinas &middot; comentado al "
+                          f"<b>46,8 %</b>, ninguna por debajo del 10 %"),
+        ),
+        nota=dict(en=None, es=None),
+    ),
+    dict(
         clave="galious",
         grupo="konami",
         titulo="The Maze of Galious",
@@ -3336,6 +3378,25 @@ MSXON = [
 # nueva a vieja, una clave no existe o un proyecto se queda sin novedad.
 # --------------------------------------------------------------------------
 NOVEDADES = [
+    dict(id="metalgear", clave="metalgear",
+         clase="nuevo", fecha="2026-10-09T15:24:32+02:00",
+         titulo=dict(en="Metal Gear: all of Outer Heaven from its tables, taken apart",
+                     es="Metal Gear: Outer Heaven entero desde sus tablas, desmontado"),
+         resumen=dict(
+             en="Konami's 1987 MSX2 cartridge, 100% explained and commented to "
+                "46.8%. The 235 rooms in 9 zones with their lifts and doors, Snake, "
+                "the 64 actor types, Metal Gear and the Hind D drawn from the ROM; "
+                "the rooms match Manuel Pazos's reference images, thank you, "
+                "Manuel. And five passwords in the pause, tape saving, what each "
+                "item does and the order of the sixteen bombs.",
+             es="El cartucho MSX2 de Konami de 1987, explicado al 100 % y "
+                "comentado al 46,8 %. Las 235 salas en 9 zonas con sus ascensores "
+                "y sus puertas, Snake, los 64 tipos de actor, Metal Gear y el Hind "
+                "D dibujados desde la ROM; las salas casan con las imágenes de "
+                "referencia de Manuel Pazos, gracias, Manuel. Y cinco claves en la "
+                "pausa, la cinta, lo que hace cada objeto y el orden de las "
+                "dieciséis bombas."),
+    ),
     dict(id="synthesizer", clave="synthesizer",
          clase="nuevo", fecha="2026-10-07T11:52:13+02:00",
          titulo=dict(en="Konami's Synthesizer: a synthesizer inside the Z80, taken apart",

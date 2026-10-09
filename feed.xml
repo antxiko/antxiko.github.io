@@ -1,13 +1,21 @@
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom" xml:lang="en">
   <title>antxiko — commented disassemblies of 8-bit games</title>
-  <subtitle>Old 8-bit binaries taken apart byte by byte and commented, with the tools to rebuild them: nothing gets claimed that the binary does not show, and the source has to give the original back, byte for byte. Right now that means 61 MSX games.</subtitle>
+  <subtitle>Old 8-bit binaries taken apart byte by byte and commented, with the tools to rebuild them: nothing gets claimed that the binary does not show, and the source has to give the original back, byte for byte. Right now that means 62 MSX games.</subtitle>
   <id>tag:antxiko.github.io,2026:feed/en</id>
   <link rel="self" type="application/atom+xml" href="https://antxiko.github.io/feed.xml"/>
   <link rel="alternate" type="text/html" hreflang="en" href="https://antxiko.github.io/"/>
   <link rel="alternate" type="application/atom+xml" hreflang="es" href="https://antxiko.github.io/es/feed.xml"/>
-  <updated>2026-10-07T11:52:13+02:00</updated>
+  <updated>2026-10-09T15:24:32+02:00</updated>
   <author><name>antxiko</name><uri>https://github.com/antxiko</uri></author>
+  <entry>
+    <id>tag:antxiko.github.io,2026:novedad/en/metalgear</id>
+    <title>Metal Gear: all of Outer Heaven from its tables, taken apart</title>
+    <link rel="alternate" type="text/html" href="https://antxiko.github.io/MetalGear-disassembly/"/>
+    <published>2026-10-09T15:24:32+02:00</published>
+    <updated>2026-10-09T15:24:32+02:00</updated>
+    <summary type="text">Konami's 1987 MSX2 cartridge, 100% explained and commented to 46.8%. The 235 rooms in 9 zones with their lifts and doors, Snake, the 64 actor types, Metal Gear and the Hind D drawn from the ROM; the rooms match Manuel Pazos's reference images, thank you, Manuel. And five passwords in the pause, tape saving, what each item does and the order of the sixteen bombs.</summary>
+  </entry>
   <entry>
     <id>tag:antxiko.github.io,2026:novedad/en/synthesizer</id>
     <title>Konami's Synthesizer: a synthesizer inside the Z80, taken apart</title>
@@ -159,13 +167,5 @@
     <published>2026-09-30T17:24:33+02:00</published>
     <updated>2026-09-30T17:24:33+02:00</updated>
     <summary type="text">The third MSX2 in the series, 100% explained and commented to 40.4%. The six stages, their rooms and the gates that join them, Gao and the enemies drawn from the ROM and checked in openMSX. With King Kong 2 next to it, it boots King Kong 2 and saves its game; fifteen of the seventeen cheats tried in play.</summary>
-  </entry>
-  <entry>
-    <id>tag:antxiko.github.io,2026:novedad/en/qbert-el-visor-de-patrones</id>
-    <title>Q*bert: the pattern viewer nobody calls, run</title>
-    <link rel="alternate" type="text/html" href="https://antxiko.github.io/Qbert-disassembly/"/>
-    <published>2026-09-30T13:30:00+02:00</published>
-    <updated>2026-09-30T13:30:00+02:00</updated>
-    <summary type="text">The twelve pieces of code the game never runs, run one by one in openMSX. The best one is a development tool left in the ROM: it fills the screen with the numbers 0 to 255 and shows every loaded tile. Built from the ROM and checked, zero bytes different.</summary>
   </entry>
 </feed>
