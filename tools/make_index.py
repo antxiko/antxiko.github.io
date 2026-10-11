@@ -1446,6 +1446,47 @@ DESENSAMBLADOS = [
         nota=dict(en=None, es=None),
     ),
     dict(
+        clave="nemesis2",
+        grupo="konami",
+        titulo="Nemesis 2",
+        anio=1987,
+        repo="https://github.com/antxiko/Nemesis2-disassembly",
+        web="https://antxiko.github.io/Nemesis2-disassembly/",
+        meta=dict(
+            en="Konami &middot; MSX &middot; 128 KB cartridge with SCC &middot; RC-751",
+            es="Konami &middot; MSX &middot; cartucho de 128 KB con SCC &middot; RC-751",
+        ),
+        claim=dict(
+            en="<b>The twelve stages built from their maps, the five bosses from "
+               "their records, the 65 enemy types, the ship with its weapons and "
+               "the seven that can be captured, all drawn from the ROM.</b> And "
+               "what changes with the cartridge in the other slot: three words in "
+               "the pause with Q*bert alongside, the equipment kept with The Maze "
+               "of Galious, the ship turned penguin with Penguin Adventure. Plus "
+               "three secret stages and the way back through the planets.",
+            es="<b>Las doce fases montadas desde sus mapas, los cinco jefes desde "
+               "sus fichas, los 65 tipos de enemigo, la nave con sus armas y las "
+               "siete que se capturan, todo dibujado desde la ROM.</b> Y lo que "
+               "cambia seg&uacute;n el cartucho del otro slot: tres palabras en la "
+               "pausa con Q*bert al lado, el equipo guardado con The Maze of "
+               "Galious, la nave hecha ping&uuml;ino con Penguin Adventure. "
+               "Adem&aacute;s, tres fases secretas y la vuelta por los planetas.",
+        ),
+        datos=dict(
+            en=lambda i: (f"{cif(131072, i)} bytes &middot; <b>0</b> unexplained "
+                          f"&middot; reassembles <b>byte for byte</b> &middot; "
+                          f"{cif(41242, i)} of code, {cif(89830, i)} of data "
+                          f"&middot; {cif(2630, i)} routines &middot; commented "
+                          f"to <b>43.4%</b>, none below 10%"),
+            es=lambda i: (f"{cif(131072, i)} bytes &middot; <b>0</b> sin explicar "
+                          f"&middot; reensambla <b>byte a byte</b> &middot; "
+                          f"{cif(41242, i)} de c&oacute;digo, {cif(89830, i)} de datos "
+                          f"&middot; {cif(2630, i)} rutinas &middot; comentado al "
+                          f"<b>43,4 %</b>, ninguna por debajo del 10 %"),
+        ),
+        nota=dict(en=None, es=None),
+    ),
+    dict(
         clave="metalgear",
         grupo="konami",
         titulo="Metal Gear",
@@ -3378,6 +3419,26 @@ MSXON = [
 # nueva a vieja, una clave no existe o un proyecto se queda sin novedad.
 # --------------------------------------------------------------------------
 NOVEDADES = [
+    dict(id="nemesis2", clave="nemesis2",
+         clase="nuevo", fecha="2026-10-11T00:45:06+02:00",
+         titulo=dict(en="Nemesis 2: twelve stages, five bosses and the cartridge next door, taken apart",
+                     es="Nemesis 2: doce fases, cinco jefes y el cartucho de al lado, desmontado"),
+         resumen=dict(
+             en="Konami's 1987 MSX cartridge with SCC, 100% explained and commented "
+                "to 43.4%. The twelve stages, the five bosses, the 65 enemy types, "
+                "the ship and the seven captured weapons drawn from the ROM. And "
+                "what the cartridge in the other slot changes: three words in the "
+                "pause with Q*bert, the equipment kept with The Maze of Galious, a "
+                "penguin ship with Penguin Adventure; three secret stages and the "
+                "way back.",
+             es="El cartucho MSX con SCC de Konami de 1987, explicado al 100 % y "
+                "comentado al 43,4 %. Las doce fases, los cinco jefes, los 65 tipos "
+                "de enemigo, la nave y las siete armas que se capturan dibujados "
+                "desde la ROM. Y lo que cambia el cartucho del otro slot: tres "
+                "palabras en la pausa con Q*bert, el equipo guardado con The Maze "
+                "of Galious, la nave pingüino con Penguin Adventure; tres fases "
+                "secretas y la vuelta."),
+    ),
     dict(id="metalgear", clave="metalgear",
          clase="nuevo", fecha="2026-10-09T15:24:32+02:00",
          titulo=dict(en="Metal Gear: all of Outer Heaven from its tables, taken apart",

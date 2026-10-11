@@ -1,13 +1,21 @@
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom" xml:lang="en">
   <title>antxiko — commented disassemblies of 8-bit games</title>
-  <subtitle>Old 8-bit binaries taken apart byte by byte and commented, with the tools to rebuild them: nothing gets claimed that the binary does not show, and the source has to give the original back, byte for byte. Right now that means 62 MSX games.</subtitle>
+  <subtitle>Old 8-bit binaries taken apart byte by byte and commented, with the tools to rebuild them: nothing gets claimed that the binary does not show, and the source has to give the original back, byte for byte. Right now that means 63 MSX games.</subtitle>
   <id>tag:antxiko.github.io,2026:feed/en</id>
   <link rel="self" type="application/atom+xml" href="https://antxiko.github.io/feed.xml"/>
   <link rel="alternate" type="text/html" hreflang="en" href="https://antxiko.github.io/"/>
   <link rel="alternate" type="application/atom+xml" hreflang="es" href="https://antxiko.github.io/es/feed.xml"/>
-  <updated>2026-10-09T15:24:32+02:00</updated>
+  <updated>2026-10-11T00:45:06+02:00</updated>
   <author><name>antxiko</name><uri>https://github.com/antxiko</uri></author>
+  <entry>
+    <id>tag:antxiko.github.io,2026:novedad/en/nemesis2</id>
+    <title>Nemesis 2: twelve stages, five bosses and the cartridge next door, taken apart</title>
+    <link rel="alternate" type="text/html" href="https://antxiko.github.io/Nemesis2-disassembly/"/>
+    <published>2026-10-11T00:45:06+02:00</published>
+    <updated>2026-10-11T00:45:06+02:00</updated>
+    <summary type="text">Konami's 1987 MSX cartridge with SCC, 100% explained and commented to 43.4%. The twelve stages, the five bosses, the 65 enemy types, the ship and the seven captured weapons drawn from the ROM. And what the cartridge in the other slot changes: three words in the pause with Q*bert, the equipment kept with The Maze of Galious, a penguin ship with Penguin Adventure; three secret stages and the way back.</summary>
+  </entry>
   <entry>
     <id>tag:antxiko.github.io,2026:novedad/en/metalgear</id>
     <title>Metal Gear: all of Outer Heaven from its tables, taken apart</title>
@@ -159,13 +167,5 @@
     <published>2026-09-30T21:00:00+02:00</published>
     <updated>2026-09-30T21:00:00+02:00</updated>
     <summary type="text">Eighteen compressed strips that no list in the cartridge names, opened: a hunched beast, a one-eyed monster, a face, a 32x48 demon and a small warrior, none of them in the game. And the stage maps had the four rows of each block upside down: fixed, and the check against openMSX now looks at the order of the rows.</summary>
-  </entry>
-  <entry>
-    <id>tag:antxiko.github.io,2026:novedad/en/hinotori</id>
-    <title>Hinotori: the Firebird and its seventeen passwords, taken apart</title>
-    <link rel="alternate" type="text/html" href="https://antxiko.github.io/Hinotori-disassembly/"/>
-    <published>2026-09-30T17:24:33+02:00</published>
-    <updated>2026-09-30T17:24:33+02:00</updated>
-    <summary type="text">The third MSX2 in the series, 100% explained and commented to 40.4%. The six stages, their rooms and the gates that join them, Gao and the enemies drawn from the ROM and checked in openMSX. With King Kong 2 next to it, it boots King Kong 2 and saves its game; fifteen of the seventeen cheats tried in play.</summary>
   </entry>
 </feed>
