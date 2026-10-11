@@ -1,13 +1,21 @@
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom" xml:lang="es">
   <title>antxiko — desensamblados comentados de juegos de 8 bits</title>
-  <subtitle>Binarios viejos de 8 bits desmontados byte a byte y comentados, con las herramientas para volver a montarlos: no se afirma nada que el binario no enseñe, y el código fuente tiene que devolver el original, byte a byte. Ahora mismo son 62 juegos de MSX.</subtitle>
+  <subtitle>Binarios viejos de 8 bits desmontados byte a byte y comentados, con las herramientas para volver a montarlos: no se afirma nada que el binario no enseñe, y el código fuente tiene que devolver el original, byte a byte. Ahora mismo son 63 juegos de MSX.</subtitle>
   <id>tag:antxiko.github.io,2026:feed/es</id>
   <link rel="self" type="application/atom+xml" href="https://antxiko.github.io/es/feed.xml"/>
   <link rel="alternate" type="text/html" hreflang="es" href="https://antxiko.github.io/es/"/>
   <link rel="alternate" type="application/atom+xml" hreflang="en" href="https://antxiko.github.io/feed.xml"/>
-  <updated>2026-10-09T15:24:32+02:00</updated>
+  <updated>2026-10-11T00:45:06+02:00</updated>
   <author><name>antxiko</name><uri>https://github.com/antxiko</uri></author>
+  <entry>
+    <id>tag:antxiko.github.io,2026:novedad/es/nemesis2</id>
+    <title>Nemesis 2: doce fases, cinco jefes y el cartucho de al lado, desmontado</title>
+    <link rel="alternate" type="text/html" href="https://antxiko.github.io/Nemesis2-disassembly/"/>
+    <published>2026-10-11T00:45:06+02:00</published>
+    <updated>2026-10-11T00:45:06+02:00</updated>
+    <summary type="text">El cartucho MSX con SCC de Konami de 1987, explicado al 100 % y comentado al 43,4 %. Las doce fases, los cinco jefes, los 65 tipos de enemigo, la nave y las siete armas que se capturan dibujados desde la ROM. Y lo que cambia el cartucho del otro slot: tres palabras en la pausa con Q*bert, el equipo guardado con The Maze of Galious, la nave pingüino con Penguin Adventure; tres fases secretas y la vuelta.</summary>
+  </entry>
   <entry>
     <id>tag:antxiko.github.io,2026:novedad/es/metalgear</id>
     <title>Metal Gear: Outer Heaven entero desde sus tablas, desmontado</title>
@@ -159,13 +167,5 @@
     <published>2026-09-30T21:00:00+02:00</published>
     <updated>2026-09-30T21:00:00+02:00</updated>
     <summary type="text">Dieciocho tiras comprimidas que no nombra ninguna lista del cartucho, abiertas: una bestia jorobada, un monstruo de un ojo, una cara, un demonio de 32x48 y un guerrero pequeño, ninguno en el juego. Y los mapas de las fases llevaban las cuatro filas de cada bloque del revés: corregido, y el cotejo con openMSX ahora mira el orden de las filas.</summary>
-  </entry>
-  <entry>
-    <id>tag:antxiko.github.io,2026:novedad/es/hinotori</id>
-    <title>Hinotori: el pájaro de fuego y sus diecisiete contraseñas, desmontado</title>
-    <link rel="alternate" type="text/html" href="https://antxiko.github.io/Hinotori-disassembly/"/>
-    <published>2026-09-30T17:24:33+02:00</published>
-    <updated>2026-09-30T17:24:33+02:00</updated>
-    <summary type="text">El tercer MSX2 de la serie, explicado al 100 % y comentado al 40,4 %. Las seis fases, sus salas y las puertas que las unen, Gao y los bichos dibujados desde la ROM y cotejados en openMSX. Con King Kong 2 al lado, arranca King Kong 2 y le graba la partida; quince de los diecisiete trucos probados jugando.</summary>
   </entry>
 </feed>
