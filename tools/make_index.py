@@ -3460,6 +3460,97 @@ MSXON = [
 # nueva a vieja, una clave no existe o un proyecto se queda sin novedad.
 # --------------------------------------------------------------------------
 NOVEDADES = [
+    dict(id="comicbakery-musica", clave="comicbakery",
+         clase="actualiza", fecha="2026-10-13T00:08:58+02:00",
+         enlace="https://antxiko.github.io/ComicBakery-disassembly/THE-MUSIC.html",
+         titulo=dict(en="Comic Bakery: the music, taken from its engine and checked against openMSX",
+                     es="Comic Bakery: la música, sacada del motor y cotejada con openMSX"),
+         resumen=dict(
+             en="16 tunes of the cartridge, made by running its own sound engine "
+                "frame by frame; the PSG writes match openMSX in every frame "
+                "checked. ",
+             es="16 músicas del cartucho, sacadas ejecutando su propio motor de "
+                "sonido cuadro a cuadro; lo que escribe en el PSG casa con "
+                "openMSX en todos los cuadros cotejados. "),
+    ),
+    dict(id="magicaltree-musica", clave="magicaltree",
+         clase="actualiza", fecha="2026-10-13T00:08:57+02:00",
+         enlace="https://antxiko.github.io/MagicalTree-disassembly/THE-MUSIC.html",
+         titulo=dict(en="Magical Tree: the music, taken from its engine and checked against openMSX",
+                     es="Magical Tree: la música, sacada del motor y cotejada con openMSX"),
+         resumen=dict(
+             en="11 tunes of the cartridge, made by running its own sound engine "
+                "frame by frame; the PSG writes match openMSX in every frame "
+                "checked. ",
+             es="11 músicas del cartucho, sacadas ejecutando su propio motor de "
+                "sonido cuadro a cuadro; lo que escribe en el PSG casa con "
+                "openMSX en todos los cuadros cotejados. "),
+    ),
+    dict(id="circus-musica", clave="circus",
+         clase="actualiza", fecha="2026-10-13T00:08:57+02:00",
+         enlace="https://antxiko.github.io/CircusCharlie-disassembly/THE-MUSIC.html",
+         titulo=dict(en="Circus Charlie: the music, taken from its engine and checked against openMSX",
+                     es="Circus Charlie: la música, sacada del motor y cotejada con openMSX"),
+         resumen=dict(
+             en="1 tune of the cartridge, made by running its own sound engine "
+                "frame by frame; the PSG writes match openMSX in every frame "
+                "checked. ",
+             es="1 música del cartucho, sacadas ejecutando su propio motor de "
+                "sonido cuadro a cuadro; lo que escribe en el PSG casa con "
+                "openMSX en todos los cuadros cotejados. "),
+    ),
+    dict(id="hyperolympic2-musica", clave="hyperolympic2",
+         clase="actualiza", fecha="2026-10-13T00:08:57+02:00",
+         enlace="https://antxiko.github.io/HyperOlympic2-disassembly/THE-MUSIC.html",
+         titulo=dict(en="Hyper Olympic 2: the music, taken from its engine and checked against openMSX",
+                     es="Hyper Olympic 2: la música, sacada del motor y cotejada con openMSX"),
+         resumen=dict(
+             en="6 tunes of the cartridge, made by running its own sound engine "
+                "frame by frame; the PSG writes match openMSX in every frame "
+                "checked. ",
+             es="6 músicas del cartucho, sacadas ejecutando su propio motor de "
+                "sonido cuadro a cuadro; lo que escribe en el PSG casa con "
+                "openMSX en todos los cuadros cotejados. "),
+    ),
+    dict(id="hyperolympic1-musica", clave="hyperolympic1",
+         clase="actualiza", fecha="2026-10-13T00:08:57+02:00",
+         enlace="https://antxiko.github.io/HyperOlympic1-disassembly/THE-MUSIC.html",
+         titulo=dict(en="Hyper Olympic 1: the music, taken from its engine and checked against openMSX",
+                     es="Hyper Olympic 1: la música, sacada del motor y cotejada con openMSX"),
+         resumen=dict(
+             en="10 tunes of the cartridge, made by running its own sound engine "
+                "frame by frame; the PSG writes match openMSX in every frame "
+                "checked. ",
+             es="10 músicas del cartucho, sacadas ejecutando su propio motor de "
+                "sonido cuadro a cuadro; lo que escribe en el PSG casa con "
+                "openMSX en todos los cuadros cotejados. "),
+    ),
+    dict(id="mahjong-musica", clave="mahjong",
+         clase="actualiza", fecha="2026-10-13T00:08:57+02:00",
+         enlace="https://antxiko.github.io/KonamisMahjongDojo-disassembly/THE-MUSIC.html",
+         titulo=dict(en="Konami's Mahjong Dojo: the music, taken from its engine and checked against openMSX",
+                     es="Konami's Mahjong Dojo: la música, sacada del motor y cotejada con openMSX"),
+         resumen=dict(
+             en="5 tunes of the cartridge, made by running its own sound engine "
+                "frame by frame; the PSG writes match openMSX in every frame "
+                "checked. ",
+             es="5 músicas del cartucho, sacadas ejecutando su propio motor de "
+                "sonido cuadro a cuadro; lo que escribe en el PSG casa con "
+                "openMSX en todos los cuadros cotejados. "),
+    ),
+    dict(id="billiards-musica", clave="billiards",
+         clase="actualiza", fecha="2026-10-13T00:08:57+02:00",
+         enlace="https://antxiko.github.io/KonamisBilliards-disassembly/THE-MUSIC.html",
+         titulo=dict(en="Konami's Billiards: the music, taken from its engine and checked against openMSX",
+                     es="Konami's Billiards: la música, sacada del motor y cotejada con openMSX"),
+         resumen=dict(
+             en="5 tunes of the cartridge, made by running its own sound engine "
+                "frame by frame; the PSG writes match openMSX in every frame "
+                "checked. ",
+             es="5 músicas del cartucho, sacadas ejecutando su propio motor de "
+                "sonido cuadro a cuadro; lo que escribe en el PSG casa con "
+                "openMSX en todos los cuadros cotejados. "),
+    ),
     dict(id="supercobra-musica", clave="supercobra",
          clase="actualiza", fecha="2026-10-12T23:40:05+02:00",
          enlace="https://antxiko.github.io/SuperCobra-disassembly/THE-MUSIC.html",
