@@ -6,8 +6,16 @@
   <link rel="self" type="application/atom+xml" href="https://antxiko.github.io/es/feed.xml"/>
   <link rel="alternate" type="text/html" hreflang="es" href="https://antxiko.github.io/es/"/>
   <link rel="alternate" type="application/atom+xml" hreflang="en" href="https://antxiko.github.io/feed.xml"/>
-  <updated>2026-10-12T21:05:15+02:00</updated>
+  <updated>2026-10-12T23:09:05+02:00</updated>
   <author><name>antxiko</name><uri>https://github.com/antxiko</uri></author>
+  <entry>
+    <id>tag:antxiko.github.io,2026:novedad/es/athletic-musica</id>
+    <title>Athletic Land: la música, sacada del motor y cotejada con openMSX</title>
+    <link rel="alternate" type="text/html" href="https://antxiko.github.io/AthleticLand-disassembly/THE-MUSIC.html"/>
+    <published>2026-10-12T23:09:05+02:00</published>
+    <updated>2026-10-12T23:09:05+02:00</updated>
+    <summary type="text">6 músicas del cartucho, sacadas ejecutando su propio motor de sonido cuadro a cuadro; lo que escribe en el PSG casa con openMSX en todos los cuadros cotejados.</summary>
+  </entry>
   <entry>
     <id>tag:antxiko.github.io,2026:novedad/es/usas-musica</id>
     <title>The Treasure of Usas: la música, sacada del motor y cotejada con openMSX</title>
@@ -159,13 +167,5 @@
     <published>2026-10-01T19:46:17+02:00</published>
     <updated>2026-10-01T19:46:17+02:00</updated>
     <summary type="text">El baloncesto de tres contra tres de HAL Laboratory para MSX, explicado al 100 % y comentado al 43,2 %. La pista entera en sus tres colores, las 160 poses de cuatro sprites y seis pantallas dibujadas desde la ROM y cotejadas contra openMSX. El parpadeo es una alternancia del orden de los sprites hecha a propósito, los equipos de la máquina se fabrican por nivel y un equipo se graba en cinta como un BSAVE.</summary>
-  </entry>
-  <entry>
-    <id>tag:antxiko.github.io,2026:novedad/es/hinotori-los-jefes-medidos-y-el-fenix</id>
-    <title>Hinotori: los jefes de las salas, cotejados en openMSX, y el mensaje del fénix</title>
-    <link rel="alternate" type="text/html" href="https://antxiko.github.io/Hinotori-disassembly/"/>
-    <published>2026-09-30T23:30:00+02:00</published>
-    <updated>2026-09-30T23:30:00+02:00</updated>
-    <summary type="text">Entrando en cada una de las seis salas en openMSX, la VRAM lleva justo el jefe dibujado desde la ROM y ninguna de las figuras sin cargar; la sala de la fase 4 no tiene jefe. En la última sala sale el fénix: para luchar contra el demonio hacen falta cinco joyas del corazón.</summary>
   </entry>
 </feed>
