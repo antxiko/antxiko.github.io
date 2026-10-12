@@ -3460,6 +3460,19 @@ MSXON = [
 # nueva a vieja, una clave no existe o un proyecto se queda sin novedad.
 # --------------------------------------------------------------------------
 NOVEDADES = [
+    dict(id="antarctic-musica", clave="antarctic",
+         clase="actualiza", fecha="2026-10-12T23:17:40+02:00",
+         enlace="https://antxiko.github.io/AntarcticAdventure-disassembly/THE-MUSIC.html",
+         titulo=dict(en="Antarctic Adventure: the music, taken from its engine and checked against openMSX",
+                     es="Antarctic Adventure: la música, sacada del motor y cotejada con openMSX"),
+         resumen=dict(
+             en="4 tunes of the cartridge, made by running its own sound engine "
+                "frame by frame; the PSG writes match openMSX in every frame "
+                "checked. ",
+             es="4 músicas del cartucho, sacadas ejecutando su propio motor de "
+                "sonido cuadro a cuadro; lo que escribe en el PSG casa con "
+                "openMSX en todos los cuadros cotejados. "),
+    ),
     dict(id="athletic-musica", clave="athletic",
          clase="actualiza", fecha="2026-10-12T23:09:05+02:00",
          enlace="https://antxiko.github.io/AthleticLand-disassembly/THE-MUSIC.html",
