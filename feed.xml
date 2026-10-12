@@ -6,8 +6,64 @@
   <link rel="self" type="application/atom+xml" href="https://antxiko.github.io/feed.xml"/>
   <link rel="alternate" type="text/html" hreflang="en" href="https://antxiko.github.io/"/>
   <link rel="alternate" type="application/atom+xml" hreflang="es" href="https://antxiko.github.io/es/feed.xml"/>
-  <updated>2026-10-12T23:40:05+02:00</updated>
+  <updated>2026-10-13T00:08:58+02:00</updated>
   <author><name>antxiko</name><uri>https://github.com/antxiko</uri></author>
+  <entry>
+    <id>tag:antxiko.github.io,2026:novedad/en/comicbakery-musica</id>
+    <title>Comic Bakery: the music, taken from its engine and checked against openMSX</title>
+    <link rel="alternate" type="text/html" href="https://antxiko.github.io/ComicBakery-disassembly/THE-MUSIC.html"/>
+    <published>2026-10-13T00:08:58+02:00</published>
+    <updated>2026-10-13T00:08:58+02:00</updated>
+    <summary type="text">16 tunes of the cartridge, made by running its own sound engine frame by frame; the PSG writes match openMSX in every frame checked.</summary>
+  </entry>
+  <entry>
+    <id>tag:antxiko.github.io,2026:novedad/en/magicaltree-musica</id>
+    <title>Magical Tree: the music, taken from its engine and checked against openMSX</title>
+    <link rel="alternate" type="text/html" href="https://antxiko.github.io/MagicalTree-disassembly/THE-MUSIC.html"/>
+    <published>2026-10-13T00:08:57+02:00</published>
+    <updated>2026-10-13T00:08:57+02:00</updated>
+    <summary type="text">11 tunes of the cartridge, made by running its own sound engine frame by frame; the PSG writes match openMSX in every frame checked.</summary>
+  </entry>
+  <entry>
+    <id>tag:antxiko.github.io,2026:novedad/en/circus-musica</id>
+    <title>Circus Charlie: the music, taken from its engine and checked against openMSX</title>
+    <link rel="alternate" type="text/html" href="https://antxiko.github.io/CircusCharlie-disassembly/THE-MUSIC.html"/>
+    <published>2026-10-13T00:08:57+02:00</published>
+    <updated>2026-10-13T00:08:57+02:00</updated>
+    <summary type="text">1 tune of the cartridge, made by running its own sound engine frame by frame; the PSG writes match openMSX in every frame checked.</summary>
+  </entry>
+  <entry>
+    <id>tag:antxiko.github.io,2026:novedad/en/hyperolympic2-musica</id>
+    <title>Hyper Olympic 2: the music, taken from its engine and checked against openMSX</title>
+    <link rel="alternate" type="text/html" href="https://antxiko.github.io/HyperOlympic2-disassembly/THE-MUSIC.html"/>
+    <published>2026-10-13T00:08:57+02:00</published>
+    <updated>2026-10-13T00:08:57+02:00</updated>
+    <summary type="text">6 tunes of the cartridge, made by running its own sound engine frame by frame; the PSG writes match openMSX in every frame checked.</summary>
+  </entry>
+  <entry>
+    <id>tag:antxiko.github.io,2026:novedad/en/hyperolympic1-musica</id>
+    <title>Hyper Olympic 1: the music, taken from its engine and checked against openMSX</title>
+    <link rel="alternate" type="text/html" href="https://antxiko.github.io/HyperOlympic1-disassembly/THE-MUSIC.html"/>
+    <published>2026-10-13T00:08:57+02:00</published>
+    <updated>2026-10-13T00:08:57+02:00</updated>
+    <summary type="text">10 tunes of the cartridge, made by running its own sound engine frame by frame; the PSG writes match openMSX in every frame checked.</summary>
+  </entry>
+  <entry>
+    <id>tag:antxiko.github.io,2026:novedad/en/mahjong-musica</id>
+    <title>Konami's Mahjong Dojo: the music, taken from its engine and checked against openMSX</title>
+    <link rel="alternate" type="text/html" href="https://antxiko.github.io/KonamisMahjongDojo-disassembly/THE-MUSIC.html"/>
+    <published>2026-10-13T00:08:57+02:00</published>
+    <updated>2026-10-13T00:08:57+02:00</updated>
+    <summary type="text">5 tunes of the cartridge, made by running its own sound engine frame by frame; the PSG writes match openMSX in every frame checked.</summary>
+  </entry>
+  <entry>
+    <id>tag:antxiko.github.io,2026:novedad/en/billiards-musica</id>
+    <title>Konami's Billiards: the music, taken from its engine and checked against openMSX</title>
+    <link rel="alternate" type="text/html" href="https://antxiko.github.io/KonamisBilliards-disassembly/THE-MUSIC.html"/>
+    <published>2026-10-13T00:08:57+02:00</published>
+    <updated>2026-10-13T00:08:57+02:00</updated>
+    <summary type="text">5 tunes of the cartridge, made by running its own sound engine frame by frame; the PSG writes match openMSX in every frame checked.</summary>
+  </entry>
   <entry>
     <id>tag:antxiko.github.io,2026:novedad/en/supercobra-musica</id>
     <title>Super Cobra: the music, taken from its engine and checked against openMSX</title>
@@ -111,61 +167,5 @@
     <published>2026-10-04T13:40:00+02:00</published>
     <updated>2026-10-04T13:40:00+02:00</updated>
     <summary type="text">With no slot saved there was no way out of the load menu but switching off (reported on real hardware). Now ESC goes back to the title, in the original and the Enhanced, also in nPackR 1.7.5.</summary>
-  </entry>
-  <entry>
-    <id>tag:antxiko.github.io,2026:novedad/en/galious-enhanced-yamanooto</id>
-    <title>The Maze of Galious Enhanced also saves on the Yamanooto</title>
-    <link rel="alternate" type="text/html" href="https://antxiko.github.io/Galious-Yamanooto-Patch/"/>
-    <published>2026-10-04T12:36:00+02:00</published>
-    <updated>2026-10-04T12:36:00+02:00</updated>
-    <summary type="text">bladeba's Enhanced (MSX2) gets the same three save slots in the cartridge's flash, on its own or inside nPackR 1.7.4. Both patches now come as IPS too.</summary>
-  </entry>
-  <entry>
-    <id>tag:antxiko.github.io,2026:novedad/en/portada-por-secciones</id>
-    <title>The front page, by sections: utilities, games and MSXon</title>
-    <link rel="alternate" type="text/html" href="https://antxiko.github.io/"/>
-    <published>2026-10-04T11:05:39+02:00</published>
-    <updated>2026-10-04T11:05:39+02:00</updated>
-    <summary type="text">Each section has its own page. In come nPackR, openMSXnet, msx-net-transfer, mHEXditor, MSXJuanEditor, RoOmSniFfeR, MORSE328p, Tiny Tetris VS, Tetris GG, OpenComputerFutbolSimulator, MysticBBSGames and MSXon.</summary>
-  </entry>
-  <entry>
-    <id>tag:antxiko.github.io,2026:novedad/en/npackr-1-7-3</id>
-    <title>nPackR 1.7.3: The Maze of Galious saves to the flash</title>
-    <link rel="alternate" type="text/html" href="https://github.com/antxiko/msx-yamanooto-npackr/releases/tag/v1.7.3"/>
-    <published>2026-10-04T09:37:05+02:00</published>
-    <updated>2026-10-04T09:37:05+02:00</updated>
-    <summary type="text">The GUI patches Galious when you drop it in, like the Metal Gears: three save slots in the cartridge's flash instead of the password.</summary>
-  </entry>
-  <entry>
-    <id>tag:antxiko.github.io,2026:novedad/en/galious-yamanooto-en-un-msx-real</id>
-    <title>The Maze of Galious on the Yamanooto, tested on a real MSX</title>
-    <link rel="alternate" type="text/html" href="https://antxiko.github.io/Galious-Yamanooto-Patch/"/>
-    <published>2026-10-03T21:23:23+02:00</published>
-    <updated>2026-10-03T21:23:23+02:00</updated>
-    <summary type="text">pabibiris tested the save patch on a real MSX with a real Yamanooto and approves it.</summary>
-  </entry>
-  <entry>
-    <id>tag:antxiko.github.io,2026:novedad/en/yamanooto-sin-menu</id>
-    <title>The Yamanooto patches boot on their own, with no menu</title>
-    <link rel="alternate" type="text/html" href="https://antxiko.github.io/#patches"/>
-    <published>2026-10-03T21:08:11+02:00</published>
-    <updated>2026-10-03T21:08:11+02:00</updated>
-    <summary type="text">The image each one builds no longer carries nPackR's menu: the game goes at the start of the flash and boots straight away. Galious and Metal Gear now switch banks through the Konami SCC registers, the mode a Yamanooto starts in.</summary>
-  </entry>
-  <entry>
-    <id>tag:antxiko.github.io,2026:novedad/en/partidas-en-el-yamanooto</id>
-    <title>Saves on the Yamanooto: Galious, Metal Gear and Metal Gear 2</title>
-    <link rel="alternate" type="text/html" href="https://antxiko.github.io/#patches"/>
-    <published>2026-10-03T20:33:16+02:00</published>
-    <updated>2026-10-03T20:33:16+02:00</updated>
-    <summary type="text">Three patches that save the game to the cartridge’s flash instead of to a password, a tape or the Game Master 2. Each one builds, from your own ROM, the image ready to flash.</summary>
-  </entry>
-  <entry>
-    <id>tag:antxiko.github.io,2026:novedad/en/galious</id>
-    <title>The Maze of Galious: the castle, ten worlds and 321 rooms, taken apart</title>
-    <link rel="alternate" type="text/html" href="https://antxiko.github.io/MazeOfGalious-disassembly/"/>
-    <published>2026-10-03T18:39:57+02:00</published>
-    <updated>2026-10-03T18:39:57+02:00</updated>
-    <summary type="text">Konami's 1987 MSX cartridge (Knightmare II), 100% explained and commented to 40.1%. All 321 rooms laid out by their neighbours, the ten bosses, Popolon and Aphrodite, the items and the shops, drawn from the ROM and checked against openMSX down to zero; plus ZEUS in the pause, the cup on F2 and the black rooms that are hints and shops.</summary>
   </entry>
 </feed>
