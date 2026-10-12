@@ -3460,6 +3460,24 @@ MSXON = [
 # nueva a vieja, una clave no existe o un proyecto se queda sin novedad.
 # --------------------------------------------------------------------------
 NOVEDADES = [
+    dict(id="usas-musica", clave="usas",
+         clase="actualiza", fecha="2026-10-12T21:05:15+02:00",
+         enlace="https://antxiko.github.io/TreasureOfUsas-disassembly/THE-MUSIC.html",
+         titulo=dict(en="The Treasure of Usas: the music, taken from its engine and checked against openMSX",
+                     es="The Treasure of Usas: la música, sacada del motor y cotejada con openMSX"),
+         resumen=dict(
+             en="Every tune in the cartridge, made by running its own bank 13 sound "
+                "engine frame by frame; the PSG writes match openMSX in every frame "
+                "checked. And a finding: each ruin's tune changes with the mood of "
+                "whoever goes in, up to two semitones higher or lower and with "
+                "another instrument. 32 pieces to listen to.",
+             es="Todas las músicas del cartucho, sacadas ejecutando su propio motor "
+                "de sonido del banco 13 cuadro a cuadro; lo que escribe en el PSG "
+                "casa con openMSX en todos los cuadros cotejados. Y un hallazgo: la "
+                "música de cada ruina cambia con el ánimo del que entra, hasta dos "
+                "semitonos más alta o más baja y con otro instrumento. 32 piezas "
+                "para escuchar."),
+    ),
     dict(id="usas", clave="usas",
          clase="nuevo", fecha="2026-10-12T19:20:26+02:00",
          titulo=dict(en="The Treasure of Usas: five ruins and four moods, taken apart",
