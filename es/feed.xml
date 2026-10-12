@@ -6,8 +6,40 @@
   <link rel="self" type="application/atom+xml" href="https://antxiko.github.io/es/feed.xml"/>
   <link rel="alternate" type="text/html" hreflang="es" href="https://antxiko.github.io/es/"/>
   <link rel="alternate" type="application/atom+xml" hreflang="en" href="https://antxiko.github.io/feed.xml"/>
-  <updated>2026-10-12T23:17:40+02:00</updated>
+  <updated>2026-10-12T23:40:05+02:00</updated>
   <author><name>antxiko</name><uri>https://github.com/antxiko</uri></author>
+  <entry>
+    <id>tag:antxiko.github.io,2026:novedad/es/supercobra-musica</id>
+    <title>Super Cobra: la música, sacada del motor y cotejada con openMSX</title>
+    <link rel="alternate" type="text/html" href="https://antxiko.github.io/SuperCobra-disassembly/THE-MUSIC.html"/>
+    <published>2026-10-12T23:40:05+02:00</published>
+    <updated>2026-10-12T23:40:05+02:00</updated>
+    <summary type="text">4 músicas del cartucho, sacadas ejecutando su propio motor de sonido cuadro a cuadro; lo que escribe en el PSG casa con openMSX en todos los cuadros cotejados.</summary>
+  </entry>
+  <entry>
+    <id>tag:antxiko.github.io,2026:novedad/es/frogger-musica</id>
+    <title>Frogger: la música, sacada del motor y cotejada con openMSX</title>
+    <link rel="alternate" type="text/html" href="https://antxiko.github.io/Frogger-disassembly/THE-MUSIC.html"/>
+    <published>2026-10-12T23:40:05+02:00</published>
+    <updated>2026-10-12T23:40:05+02:00</updated>
+    <summary type="text">3 músicas del cartucho, sacadas ejecutando su propio motor de sonido cuadro a cuadro; lo que escribe en el PSG casa con openMSX en todos los cuadros cotejados.</summary>
+  </entry>
+  <entry>
+    <id>tag:antxiko.github.io,2026:novedad/es/timepilot-musica</id>
+    <title>Time Pilot: la música, sacada del motor y cotejada con openMSX</title>
+    <link rel="alternate" type="text/html" href="https://antxiko.github.io/TimePilot-disassembly/THE-MUSIC.html"/>
+    <published>2026-10-12T23:40:05+02:00</published>
+    <updated>2026-10-12T23:40:05+02:00</updated>
+    <summary type="text">2 músicas del cartucho, sacadas ejecutando su propio motor de sonido cuadro a cuadro; lo que escribe en el PSG casa con openMSX en todos los cuadros cotejados.</summary>
+  </entry>
+  <entry>
+    <id>tag:antxiko.github.io,2026:novedad/es/monkey-musica</id>
+    <title>Monkey Academy: la música, sacada del motor y cotejada con openMSX</title>
+    <link rel="alternate" type="text/html" href="https://antxiko.github.io/MonkeyAcademy-disassembly/THE-MUSIC.html"/>
+    <published>2026-10-12T23:40:05+02:00</published>
+    <updated>2026-10-12T23:40:05+02:00</updated>
+    <summary type="text">9 músicas del cartucho, sacadas ejecutando su propio motor de sonido cuadro a cuadro; lo que escribe en el PSG casa con openMSX en todos los cuadros cotejados.</summary>
+  </entry>
   <entry>
     <id>tag:antxiko.github.io,2026:novedad/es/antarctic-musica</id>
     <title>Antarctic Adventure: la música, sacada del motor y cotejada con openMSX</title>
@@ -135,37 +167,5 @@
     <published>2026-10-03T18:39:57+02:00</published>
     <updated>2026-10-03T18:39:57+02:00</updated>
     <summary type="text">El cartucho MSX de Konami de 1987 (Knightmare II), explicado al 100 % y comentado al 40,1 %. Las 321 salas colocadas por sus vecinas, los diez jefes, Popolon y Afrodita, los objetos y las tiendas, dibujados desde la ROM y cotejados contra openMSX a cero; y ZEUS en la pausa, la taza de F2 y las salas negras que son pistas y tiendas.</summary>
-  </entry>
-  <entry>
-    <id>tag:antxiko.github.io,2026:novedad/es/goemon-124-pantallas</id>
-    <title>Ganbare Goemon!: 124 pantallas distintas, no 1.608</title>
-    <link rel="alternate" type="text/html" href="https://antxiko.github.io/GanbareGoemon-disassembly/"/>
-    <published>2026-10-02T15:32:53+02:00</published>
-    <updated>2026-10-02T15:32:53+02:00</updated>
-    <summary type="text">Errata: 1.608 son las casillas de las 49 zonas; la rejilla de cada zona (0x600C) reutiliza sus pantallas, y distintas hay 124.</summary>
-  </entry>
-  <entry>
-    <id>tag:antxiko.github.io,2026:novedad/es/goemon</id>
-    <title>Ganbare Goemon!: 49 zonas, 21 interiores y 42 pasadizos secretos, desmontado</title>
-    <link rel="alternate" type="text/html" href="https://antxiko.github.io/GanbareGoemon-disassembly/"/>
-    <published>2026-10-02T15:14:33+02:00</published>
-    <updated>2026-10-02T15:14:33+02:00</updated>
-    <summary type="text">El cartucho MSX2 de Konami de 1987, explicado al 100 % y comentado al 42,5 %. Las siete fases calle a calle, los interiores con sus precios, los enemigos y los 42 pasadizos secretos en primera persona, dibujados desde la ROM y cotejados contra openMSX a cero; y las claves de la contraseña, las palabras de la pausa y el menú de fases que sale con Q*bert o el Game Master.</summary>
-  </entry>
-  <entry>
-    <id>tag:antxiko.github.io,2026:novedad/es/dunkshot-msx2</id>
-    <title>El parche MSX2 de Dunk Shot, con repositorio propio</title>
-    <link rel="alternate" type="text/html" href="https://antxiko.github.io/DunkShot-MSX2-Patch/"/>
-    <published>2026-10-02T08:40:00+02:00</published>
-    <updated>2026-10-02T08:40:00+02:00</updated>
-    <summary type="text">El parche que quita el parpadeo en un MSX2 tiene ya repositorio y web propios, en la sección de parches: el IPS, la herramienta que lo genera, la sonda que lo mide y cómo reparte el juego sus sprites. 66,7 sprites sin pintar por cuadro en un MSX, 1,7 en el NMS 8250. Probado en openMSX; nadie lo ha pasado aún por una máquina real.</summary>
-  </entry>
-  <entry>
-    <id>tag:antxiko.github.io,2026:novedad/es/dunkshot-el-parche-msx2</id>
-    <title>Dunk Shot: un parche de 164 bytes quita el parpadeo en un MSX2</title>
-    <link rel="alternate" type="text/html" href="https://antxiko.github.io/DunkShot-disassembly/THE-MSX2-PATCH.html"/>
-    <published>2026-10-02T08:30:00+02:00</published>
-    <updated>2026-10-02T08:30:00+02:00</updated>
-    <summary type="text">El V9938 pinta ocho sprites por línea en vez de cuatro, así que el juego ya no tiene que repartir a los jugadores: SCREEN 4, la tabla de colores de sprite en 0x3C00 y los atributos en 0x3E00, en el relleno y tres rutinas huérfanas del cartucho. Medido en openMSX sobre treinta segundos de partido: de 66,7 sprites sin pintar por cuadro a 1,7. El mismo fichero sigue jugándose en un MSX1 como el original.</summary>
   </entry>
 </feed>
