@@ -6,8 +6,16 @@
   <link rel="self" type="application/atom+xml" href="https://antxiko.github.io/es/feed.xml"/>
   <link rel="alternate" type="text/html" hreflang="es" href="https://antxiko.github.io/es/"/>
   <link rel="alternate" type="application/atom+xml" hreflang="en" href="https://antxiko.github.io/feed.xml"/>
-  <updated>2026-10-12T19:20:26+02:00</updated>
+  <updated>2026-10-12T21:05:15+02:00</updated>
   <author><name>antxiko</name><uri>https://github.com/antxiko</uri></author>
+  <entry>
+    <id>tag:antxiko.github.io,2026:novedad/es/usas-musica</id>
+    <title>The Treasure of Usas: la música, sacada del motor y cotejada con openMSX</title>
+    <link rel="alternate" type="text/html" href="https://antxiko.github.io/TreasureOfUsas-disassembly/THE-MUSIC.html"/>
+    <published>2026-10-12T21:05:15+02:00</published>
+    <updated>2026-10-12T21:05:15+02:00</updated>
+    <summary type="text">Todas las músicas del cartucho, sacadas ejecutando su propio motor de sonido del banco 13 cuadro a cuadro; lo que escribe en el PSG casa con openMSX en todos los cuadros cotejados. Y un hallazgo: la música de cada ruina cambia con el ánimo del que entra, hasta dos semitonos más alta o más baja y con otro instrumento. 32 piezas para escuchar.</summary>
+  </entry>
   <entry>
     <id>tag:antxiko.github.io,2026:novedad/es/usas</id>
     <title>The Treasure of Usas: cinco ruinas y cuatro estados de ánimo, desmontado</title>
@@ -159,13 +167,5 @@
     <published>2026-09-30T23:30:00+02:00</published>
     <updated>2026-09-30T23:30:00+02:00</updated>
     <summary type="text">Entrando en cada una de las seis salas en openMSX, la VRAM lleva justo el jefe dibujado desde la ROM y ninguna de las figuras sin cargar; la sala de la fase 4 no tiene jefe. En la última sala sale el fénix: para luchar contra el demonio hacen falta cinco joyas del corazón.</summary>
-  </entry>
-  <entry>
-    <id>tag:antxiko.github.io,2026:novedad/es/hinotori-otra-version-de-cinco-jefes</id>
-    <title>Hinotori: las figuras sin cargar son otra versión de cinco jefes</title>
-    <link rel="alternate" type="text/html" href="https://antxiko.github.io/Hinotori-disassembly/"/>
-    <published>2026-09-30T23:00:00+02:00</published>
-    <updated>2026-09-30T23:00:00+02:00</updated>
-    <summary type="text">Corrección: de las figuras publicadas como de nadie, cinco son jefes del juego dibujados de otra manera: la bestia, el monstruo de un ojo, la cara, el demonio y un guerrero de varios brazos, sacado de otros 768 bytes. Ni un sprite en común con los que cargan las salas; ahora cada una sale al lado de su jefe.</summary>
   </entry>
 </feed>
