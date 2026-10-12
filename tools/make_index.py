@@ -1487,6 +1487,47 @@ DESENSAMBLADOS = [
         nota=dict(en=None, es=None),
     ),
     dict(
+        clave="usas",
+        grupo="konami",
+        titulo="The Treasure of Usas",
+        anio=1987,
+        repo="https://github.com/antxiko/TreasureOfUsas-disassembly",
+        web="https://antxiko.github.io/TreasureOfUsas-disassembly/",
+        meta=dict(
+            en="Konami &middot; MSX2 &middot; 128 KB cartridge &middot; RC-753",
+            es="Konami &middot; MSX2 &middot; cartucho de 128 KB &middot; RC-753",
+        ),
+        claim=dict(
+            en="<b>The five ruins from their tables: the 20 stages with what each "
+               "screen holds, the antechambers, the outside map, the stage bosses, "
+               "the enemies, and Wit and Cles with their four moods, all drawn from "
+               "the ROM.</b> And what each mood changes: a double jump, walking on "
+               "thin air, a different shot or blow. Plus what four other Konami "
+               "cartridges give in the other slot, and the texts in Japanese and "
+               "English.",
+            es="<b>Las cinco ruinas desde sus tablas: las 20 fases con lo que hay en "
+               "cada pantalla, las antesalas, el mapa de fuera, los jefes de fase, "
+               "los enemigos, y Wit y Cles con sus cuatro estados de &aacute;nimo, "
+               "todo dibujado desde la ROM.</b> Y lo que cambia cada estado: el "
+               "doble salto, andar sobre el vac&iacute;o, otro disparo u otro golpe. "
+               "Adem&aacute;s, lo que dan cuatro cartuchos de Konami en el otro slot "
+               "y los textos en japon&eacute;s y en ingl&eacute;s.",
+        ),
+        datos=dict(
+            en=lambda i: (f"{cif(131072, i)} bytes &middot; <b>0</b> unexplained "
+                          f"&middot; reassembles <b>byte for byte</b> &middot; "
+                          f"{cif(41458, i)} of code, {cif(89614, i)} of data "
+                          f"&middot; {cif(2536, i)} routines &middot; commented "
+                          f"to <b>40.1%</b>, none below 10%"),
+            es=lambda i: (f"{cif(131072, i)} bytes &middot; <b>0</b> sin explicar "
+                          f"&middot; reensambla <b>byte a byte</b> &middot; "
+                          f"{cif(41458, i)} de c&oacute;digo, {cif(89614, i)} de datos "
+                          f"&middot; {cif(2536, i)} rutinas &middot; comentado al "
+                          f"<b>40,1 %</b>, ninguna por debajo del 10 %"),
+        ),
+        nota=dict(en=None, es=None),
+    ),
+    dict(
         clave="metalgear",
         grupo="konami",
         titulo="Metal Gear",
@@ -3419,6 +3460,24 @@ MSXON = [
 # nueva a vieja, una clave no existe o un proyecto se queda sin novedad.
 # --------------------------------------------------------------------------
 NOVEDADES = [
+    dict(id="usas", clave="usas",
+         clase="nuevo", fecha="2026-10-12T19:20:26+02:00",
+         titulo=dict(en="The Treasure of Usas: five ruins and four moods, taken apart",
+                     es="The Treasure of Usas: cinco ruinas y cuatro estados de ánimo, desmontado"),
+         resumen=dict(
+             en="Konami's 1987 MSX2 cartridge, 100% explained and commented to "
+                "40.1%. The 20 stages with their enemies, traps and items, the "
+                "antechambers, the outside map, the bosses, Wit and Cles with their "
+                "faces drawn from the ROM. What each mood changes, read in the code: "
+                "a double jump, walking on thin air, the shot and the blow. And what "
+                "four other Konami cartridges give in the other slot.",
+             es="El cartucho MSX2 de Konami de 1987, explicado al 100 % y comentado "
+                "al 40,1 %. Las 20 fases con sus enemigos, trampas y objetos, las "
+                "antesalas, el mapa de fuera, los jefes, Wit y Cles con sus caras "
+                "dibujados desde la ROM. Lo que cambia cada estado de ánimo, leído "
+                "en el código: el doble salto, andar sobre el vacío, el disparo y el "
+                "golpe. Y lo que dan cuatro cartuchos de Konami en el otro slot."),
+    ),
     dict(id="nemesis2", clave="nemesis2",
          clase="nuevo", fecha="2026-10-11T00:45:06+02:00",
          titulo=dict(en="Nemesis 2: twelve stages, five bosses and the cartridge next door, taken apart",
