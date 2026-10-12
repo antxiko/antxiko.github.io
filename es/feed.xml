@@ -6,8 +6,72 @@
   <link rel="self" type="application/atom+xml" href="https://antxiko.github.io/es/feed.xml"/>
   <link rel="alternate" type="text/html" hreflang="es" href="https://antxiko.github.io/es/"/>
   <link rel="alternate" type="application/atom+xml" hreflang="en" href="https://antxiko.github.io/feed.xml"/>
-  <updated>2026-10-13T00:08:58+02:00</updated>
+  <updated>2026-10-13T00:36:55+02:00</updated>
   <author><name>antxiko</name><uri>https://github.com/antxiko</uri></author>
+  <entry>
+    <id>tag:antxiko.github.io,2026:novedad/es/baseball-musica</id>
+    <title>Konami's Baseball: la música, sacada del motor y cotejada con openMSX</title>
+    <link rel="alternate" type="text/html" href="https://antxiko.github.io/KonamisBaseball-disassembly/THE-MUSIC.html"/>
+    <published>2026-10-13T00:36:55+02:00</published>
+    <updated>2026-10-13T00:36:55+02:00</updated>
+    <summary type="text">11 músicas del cartucho, sacadas ejecutando su propio motor de sonido cuadro a cuadro; lo que escribe en el PSG casa con openMSX en todos los cuadros cotejados.</summary>
+  </entry>
+  <entry>
+    <id>tag:antxiko.github.io,2026:novedad/es/golf-musica</id>
+    <title>Konami's Golf: la música, sacada del motor y cotejada con openMSX</title>
+    <link rel="alternate" type="text/html" href="https://antxiko.github.io/KonamisGolf-disassembly/THE-MUSIC.html"/>
+    <published>2026-10-13T00:36:55+02:00</published>
+    <updated>2026-10-13T00:36:55+02:00</updated>
+    <summary type="text">7 músicas del cartucho, sacadas ejecutando su propio motor de sonido cuadro a cuadro; lo que escribe en el PSG casa con openMSX en todos los cuadros cotejados.</summary>
+  </entry>
+  <entry>
+    <id>tag:antxiko.github.io,2026:novedad/es/skyjaguar-musica</id>
+    <title>Sky Jaguar: la música, sacada del motor y cotejada con openMSX</title>
+    <link rel="alternate" type="text/html" href="https://antxiko.github.io/SkyJaguar-disassembly/THE-MUSIC.html"/>
+    <published>2026-10-13T00:36:55+02:00</published>
+    <updated>2026-10-13T00:36:55+02:00</updated>
+    <summary type="text">10 músicas del cartucho, sacadas ejecutando su propio motor de sonido cuadro a cuadro; lo que escribe en el PSG casa con openMSX en todos los cuadros cotejados.</summary>
+  </entry>
+  <entry>
+    <id>tag:antxiko.github.io,2026:novedad/es/tennis-musica</id>
+    <title>Konami's Tennis: la música, sacada del motor y cotejada con openMSX</title>
+    <link rel="alternate" type="text/html" href="https://antxiko.github.io/KonamisTennis-disassembly/THE-MUSIC.html"/>
+    <published>2026-10-13T00:36:55+02:00</published>
+    <updated>2026-10-13T00:36:55+02:00</updated>
+    <summary type="text">9 músicas del cartucho, sacadas ejecutando su propio motor de sonido cuadro a cuadro; lo que escribe en el PSG casa con openMSX en todos los cuadros cotejados.</summary>
+  </entry>
+  <entry>
+    <id>tag:antxiko.github.io,2026:novedad/es/hyperrally-musica</id>
+    <title>Hyper Rally: la música, sacada del motor y cotejada con openMSX</title>
+    <link rel="alternate" type="text/html" href="https://antxiko.github.io/HyperRally-disassembly/THE-MUSIC.html"/>
+    <published>2026-10-13T00:36:55+02:00</published>
+    <updated>2026-10-13T00:36:55+02:00</updated>
+    <summary type="text">13 músicas del cartucho, sacadas ejecutando su propio motor de sonido cuadro a cuadro; lo que escribe en el PSG casa con openMSX en todos los cuadros cotejados.</summary>
+  </entry>
+  <entry>
+    <id>tag:antxiko.github.io,2026:novedad/es/hypersports2-musica</id>
+    <title>Hyper Sports 2: la música, sacada del motor y cotejada con openMSX</title>
+    <link rel="alternate" type="text/html" href="https://antxiko.github.io/HyperSports2-disassembly/THE-MUSIC.html"/>
+    <published>2026-10-13T00:36:55+02:00</published>
+    <updated>2026-10-13T00:36:55+02:00</updated>
+    <summary type="text">21 músicas del cartucho, sacadas ejecutando su propio motor de sonido cuadro a cuadro; lo que escribe en el PSG casa con openMSX en todos los cuadros cotejados.</summary>
+  </entry>
+  <entry>
+    <id>tag:antxiko.github.io,2026:novedad/es/cabbagepatch-musica</id>
+    <title>Cabbage Patch Kids: la música, sacada del motor y cotejada con openMSX</title>
+    <link rel="alternate" type="text/html" href="https://antxiko.github.io/CabbagePatchKids-disassembly/THE-MUSIC.html"/>
+    <published>2026-10-13T00:36:55+02:00</published>
+    <updated>2026-10-13T00:36:55+02:00</updated>
+    <summary type="text">15 músicas del cartucho, sacadas ejecutando su propio motor de sonido cuadro a cuadro; lo que escribe en el PSG casa con openMSX en todos los cuadros cotejados.</summary>
+  </entry>
+  <entry>
+    <id>tag:antxiko.github.io,2026:novedad/es/hypersports1-musica</id>
+    <title>Hyper Sports 1: la música, sacada del motor y cotejada con openMSX</title>
+    <link rel="alternate" type="text/html" href="https://antxiko.github.io/HyperSports1-disassembly/THE-MUSIC.html"/>
+    <published>2026-10-13T00:36:54+02:00</published>
+    <updated>2026-10-13T00:36:54+02:00</updated>
+    <summary type="text">10 músicas del cartucho, sacadas ejecutando su propio motor de sonido cuadro a cuadro; lo que escribe en el PSG casa con openMSX en todos los cuadros cotejados.</summary>
+  </entry>
   <entry>
     <id>tag:antxiko.github.io,2026:novedad/es/comicbakery-musica</id>
     <title>Comic Bakery: la música, sacada del motor y cotejada con openMSX</title>
@@ -103,69 +167,5 @@
     <published>2026-10-12T23:17:40+02:00</published>
     <updated>2026-10-12T23:17:40+02:00</updated>
     <summary type="text">4 músicas del cartucho, sacadas ejecutando su propio motor de sonido cuadro a cuadro; lo que escribe en el PSG casa con openMSX en todos los cuadros cotejados.</summary>
-  </entry>
-  <entry>
-    <id>tag:antxiko.github.io,2026:novedad/es/athletic-musica</id>
-    <title>Athletic Land: la música, sacada del motor y cotejada con openMSX</title>
-    <link rel="alternate" type="text/html" href="https://antxiko.github.io/AthleticLand-disassembly/THE-MUSIC.html"/>
-    <published>2026-10-12T23:09:05+02:00</published>
-    <updated>2026-10-12T23:09:05+02:00</updated>
-    <summary type="text">6 músicas del cartucho, sacadas ejecutando su propio motor de sonido cuadro a cuadro; lo que escribe en el PSG casa con openMSX en todos los cuadros cotejados.</summary>
-  </entry>
-  <entry>
-    <id>tag:antxiko.github.io,2026:novedad/es/usas-musica</id>
-    <title>The Treasure of Usas: la música, sacada del motor y cotejada con openMSX</title>
-    <link rel="alternate" type="text/html" href="https://antxiko.github.io/TreasureOfUsas-disassembly/THE-MUSIC.html"/>
-    <published>2026-10-12T21:05:15+02:00</published>
-    <updated>2026-10-12T21:05:15+02:00</updated>
-    <summary type="text">Todas las músicas del cartucho, sacadas ejecutando su propio motor de sonido del banco 13 cuadro a cuadro; lo que escribe en el PSG casa con openMSX en todos los cuadros cotejados. Y un hallazgo: la música de cada ruina cambia con el ánimo del que entra, hasta dos semitonos más alta o más baja y con otro instrumento. 32 piezas para escuchar.</summary>
-  </entry>
-  <entry>
-    <id>tag:antxiko.github.io,2026:novedad/es/usas</id>
-    <title>The Treasure of Usas: cinco ruinas y cuatro estados de ánimo, desmontado</title>
-    <link rel="alternate" type="text/html" href="https://antxiko.github.io/TreasureOfUsas-disassembly/"/>
-    <published>2026-10-12T19:20:26+02:00</published>
-    <updated>2026-10-12T19:20:26+02:00</updated>
-    <summary type="text">El cartucho MSX2 de Konami de 1987, explicado al 100 % y comentado al 40,1 %. Las 20 fases con sus enemigos, trampas y objetos, las antesalas, el mapa de fuera, los jefes, Wit y Cles con sus caras dibujados desde la ROM. Lo que cambia cada estado de ánimo, leído en el código: el doble salto, andar sobre el vacío, el disparo y el golpe. Y lo que dan cuatro cartuchos de Konami en el otro slot.</summary>
-  </entry>
-  <entry>
-    <id>tag:antxiko.github.io,2026:novedad/es/nemesis2</id>
-    <title>Nemesis 2: doce fases, cinco jefes y el cartucho de al lado, desmontado</title>
-    <link rel="alternate" type="text/html" href="https://antxiko.github.io/Nemesis2-disassembly/"/>
-    <published>2026-10-11T00:45:06+02:00</published>
-    <updated>2026-10-11T00:45:06+02:00</updated>
-    <summary type="text">El cartucho MSX con SCC de Konami de 1987, explicado al 100 % y comentado al 43,4 %. Las doce fases, los cinco jefes, los 65 tipos de enemigo, la nave y las siete armas que se capturan dibujados desde la ROM. Y lo que cambia el cartucho del otro slot: tres palabras en la pausa con Q*bert, el equipo guardado con The Maze of Galious, la nave pingüino con Penguin Adventure; tres fases secretas y la vuelta.</summary>
-  </entry>
-  <entry>
-    <id>tag:antxiko.github.io,2026:novedad/es/metalgear</id>
-    <title>Metal Gear: Outer Heaven entero desde sus tablas, desmontado</title>
-    <link rel="alternate" type="text/html" href="https://antxiko.github.io/MetalGear-disassembly/"/>
-    <published>2026-10-09T15:24:32+02:00</published>
-    <updated>2026-10-09T15:24:32+02:00</updated>
-    <summary type="text">El cartucho MSX2 de Konami de 1987, explicado al 100 % y comentado al 46,8 %. Las 235 salas en 9 zonas con sus ascensores y sus puertas, Snake, los 64 tipos de actor, Metal Gear y el Hind D dibujados desde la ROM; las salas casan con las imágenes de referencia de Manuel Pazos, gracias, Manuel. Y cinco claves en la pausa, la cinta, lo que hace cada objeto y el orden de las dieciséis bombas.</summary>
-  </entry>
-  <entry>
-    <id>tag:antxiko.github.io,2026:novedad/es/synthesizer</id>
-    <title>Konami's Synthesizer: un sintetizador dentro del Z80, desmontado</title>
-    <link rel="alternate" type="text/html" href="https://antxiko.github.io/KonamiSynthesizer-disassembly/"/>
-    <published>2026-10-07T11:52:13+02:00</published>
-    <updated>2026-10-07T11:52:13+02:00</updated>
-    <summary type="text">El cartucho de Konami de 1986 no es un juego: calcula cada nota muestra a muestra y la toca por un DAC de 8 bits. Explicado al 100 % y comentado al 43,6 %; las siete pantallas y los dieciséis TONE EDIT dibujados desde la ROM y cotejados contra openMSX, el motor escrito de nuevo byte a byte, la altura como un bucle de ciclos, el ruido que sale de la BIOS y la cinta de siete SAMP que venía con él.</summary>
-  </entry>
-  <entry>
-    <id>tag:antxiko.github.io,2026:novedad/es/rastan</id>
-    <title>Rastan Saga: siete rondas, 255 pantallas y un dragón que se salta, desmontado</title>
-    <link rel="alternate" type="text/html" href="https://antxiko.github.io/RastanSaga-disassembly/"/>
-    <published>2026-10-04T20:42:10+02:00</published>
-    <updated>2026-10-04T20:42:10+02:00</updated>
-    <summary type="text">El cartucho MSX2 de Taito de 1988, explicado al 100 % y comentado al 46,1 %. Las siete rondas con sus enemigos y sus jefes, Rastan en sus tres capas y los 37 tipos de actor, dibujados desde la ROM y cotejados contra openMSX; y la fase del dragón que el juego se salta, un final que no pinta y un truco de pruebas en la cabecera.</summary>
-  </entry>
-  <entry>
-    <id>tag:antxiko.github.io,2026:novedad/es/galious-yamanooto-esc</id>
-    <title>The Maze of Galious en el Yamanooto: ESC sale del menú de carga</title>
-    <link rel="alternate" type="text/html" href="https://antxiko.github.io/Galious-Yamanooto-Patch/"/>
-    <published>2026-10-04T13:40:00+02:00</published>
-    <updated>2026-10-04T13:40:00+02:00</updated>
-    <summary type="text">Sin ningún hueco grabado no había forma de salir del menú de carga más que apagando (lo reportaron en hardware real). Ahora ESC vuelve al título, en el original y en el Enhanced, también en nPackR 1.7.5.</summary>
   </entry>
 </feed>
