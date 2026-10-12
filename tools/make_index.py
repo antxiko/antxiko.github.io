@@ -3460,6 +3460,110 @@ MSXON = [
 # nueva a vieja, una clave no existe o un proyecto se queda sin novedad.
 # --------------------------------------------------------------------------
 NOVEDADES = [
+    dict(id="baseball-musica", clave="baseball",
+         clase="actualiza", fecha="2026-10-13T00:36:55+02:00",
+         enlace="https://antxiko.github.io/KonamisBaseball-disassembly/THE-MUSIC.html",
+         titulo=dict(en="Konami's Baseball: the music, taken from its engine and checked against openMSX",
+                     es="Konami's Baseball: la música, sacada del motor y cotejada con openMSX"),
+         resumen=dict(
+             en="11 tunes of the cartridge, made by running its own sound engine "
+                "frame by frame; the PSG writes match openMSX in every frame "
+                "checked. ",
+             es="11 músicas del cartucho, sacadas ejecutando su propio motor de "
+                "sonido cuadro a cuadro; lo que escribe en el PSG casa con "
+                "openMSX en todos los cuadros cotejados. "),
+    ),
+    dict(id="golf-musica", clave="golf",
+         clase="actualiza", fecha="2026-10-13T00:36:55+02:00",
+         enlace="https://antxiko.github.io/KonamisGolf-disassembly/THE-MUSIC.html",
+         titulo=dict(en="Konami's Golf: the music, taken from its engine and checked against openMSX",
+                     es="Konami's Golf: la música, sacada del motor y cotejada con openMSX"),
+         resumen=dict(
+             en="7 tunes of the cartridge, made by running its own sound engine "
+                "frame by frame; the PSG writes match openMSX in every frame "
+                "checked. ",
+             es="7 músicas del cartucho, sacadas ejecutando su propio motor de "
+                "sonido cuadro a cuadro; lo que escribe en el PSG casa con "
+                "openMSX en todos los cuadros cotejados. "),
+    ),
+    dict(id="skyjaguar-musica", clave="skyjaguar",
+         clase="actualiza", fecha="2026-10-13T00:36:55+02:00",
+         enlace="https://antxiko.github.io/SkyJaguar-disassembly/THE-MUSIC.html",
+         titulo=dict(en="Sky Jaguar: the music, taken from its engine and checked against openMSX",
+                     es="Sky Jaguar: la música, sacada del motor y cotejada con openMSX"),
+         resumen=dict(
+             en="10 tunes of the cartridge, made by running its own sound engine "
+                "frame by frame; the PSG writes match openMSX in every frame "
+                "checked. ",
+             es="10 músicas del cartucho, sacadas ejecutando su propio motor de "
+                "sonido cuadro a cuadro; lo que escribe en el PSG casa con "
+                "openMSX en todos los cuadros cotejados. "),
+    ),
+    dict(id="tennis-musica", clave="tennis",
+         clase="actualiza", fecha="2026-10-13T00:36:55+02:00",
+         enlace="https://antxiko.github.io/KonamisTennis-disassembly/THE-MUSIC.html",
+         titulo=dict(en="Konami's Tennis: the music, taken from its engine and checked against openMSX",
+                     es="Konami's Tennis: la música, sacada del motor y cotejada con openMSX"),
+         resumen=dict(
+             en="9 tunes of the cartridge, made by running its own sound engine "
+                "frame by frame; the PSG writes match openMSX in every frame "
+                "checked. ",
+             es="9 músicas del cartucho, sacadas ejecutando su propio motor de "
+                "sonido cuadro a cuadro; lo que escribe en el PSG casa con "
+                "openMSX en todos los cuadros cotejados. "),
+    ),
+    dict(id="hyperrally-musica", clave="hyperrally",
+         clase="actualiza", fecha="2026-10-13T00:36:55+02:00",
+         enlace="https://antxiko.github.io/HyperRally-disassembly/THE-MUSIC.html",
+         titulo=dict(en="Hyper Rally: the music, taken from its engine and checked against openMSX",
+                     es="Hyper Rally: la música, sacada del motor y cotejada con openMSX"),
+         resumen=dict(
+             en="13 tunes of the cartridge, made by running its own sound engine "
+                "frame by frame; the PSG writes match openMSX in every frame "
+                "checked. ",
+             es="13 músicas del cartucho, sacadas ejecutando su propio motor de "
+                "sonido cuadro a cuadro; lo que escribe en el PSG casa con "
+                "openMSX en todos los cuadros cotejados. "),
+    ),
+    dict(id="hypersports2-musica", clave="hypersports2",
+         clase="actualiza", fecha="2026-10-13T00:36:55+02:00",
+         enlace="https://antxiko.github.io/HyperSports2-disassembly/THE-MUSIC.html",
+         titulo=dict(en="Hyper Sports 2: the music, taken from its engine and checked against openMSX",
+                     es="Hyper Sports 2: la música, sacada del motor y cotejada con openMSX"),
+         resumen=dict(
+             en="21 tunes of the cartridge, made by running its own sound engine "
+                "frame by frame; the PSG writes match openMSX in every frame "
+                "checked. ",
+             es="21 músicas del cartucho, sacadas ejecutando su propio motor de "
+                "sonido cuadro a cuadro; lo que escribe en el PSG casa con "
+                "openMSX en todos los cuadros cotejados. "),
+    ),
+    dict(id="cabbagepatch-musica", clave="cabbagepatch",
+         clase="actualiza", fecha="2026-10-13T00:36:55+02:00",
+         enlace="https://antxiko.github.io/CabbagePatchKids-disassembly/THE-MUSIC.html",
+         titulo=dict(en="Cabbage Patch Kids: the music, taken from its engine and checked against openMSX",
+                     es="Cabbage Patch Kids: la música, sacada del motor y cotejada con openMSX"),
+         resumen=dict(
+             en="15 tunes of the cartridge, made by running its own sound engine "
+                "frame by frame; the PSG writes match openMSX in every frame "
+                "checked. ",
+             es="15 músicas del cartucho, sacadas ejecutando su propio motor de "
+                "sonido cuadro a cuadro; lo que escribe en el PSG casa con "
+                "openMSX en todos los cuadros cotejados. "),
+    ),
+    dict(id="hypersports1-musica", clave="hypersports1",
+         clase="actualiza", fecha="2026-10-13T00:36:54+02:00",
+         enlace="https://antxiko.github.io/HyperSports1-disassembly/THE-MUSIC.html",
+         titulo=dict(en="Hyper Sports 1: the music, taken from its engine and checked against openMSX",
+                     es="Hyper Sports 1: la música, sacada del motor y cotejada con openMSX"),
+         resumen=dict(
+             en="10 tunes of the cartridge, made by running its own sound engine "
+                "frame by frame; the PSG writes match openMSX in every frame "
+                "checked. ",
+             es="10 músicas del cartucho, sacadas ejecutando su propio motor de "
+                "sonido cuadro a cuadro; lo que escribe en el PSG casa con "
+                "openMSX en todos los cuadros cotejados. "),
+    ),
     dict(id="comicbakery-musica", clave="comicbakery",
          clase="actualiza", fecha="2026-10-13T00:08:58+02:00",
          enlace="https://antxiko.github.io/ComicBakery-disassembly/THE-MUSIC.html",
