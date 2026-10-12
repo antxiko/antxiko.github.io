@@ -3460,6 +3460,58 @@ MSXON = [
 # nueva a vieja, una clave no existe o un proyecto se queda sin novedad.
 # --------------------------------------------------------------------------
 NOVEDADES = [
+    dict(id="supercobra-musica", clave="supercobra",
+         clase="actualiza", fecha="2026-10-12T23:40:05+02:00",
+         enlace="https://antxiko.github.io/SuperCobra-disassembly/THE-MUSIC.html",
+         titulo=dict(en="Super Cobra: the music, taken from its engine and checked against openMSX",
+                     es="Super Cobra: la música, sacada del motor y cotejada con openMSX"),
+         resumen=dict(
+             en="4 tunes of the cartridge, made by running its own sound engine "
+                "frame by frame; the PSG writes match openMSX in every frame "
+                "checked. ",
+             es="4 músicas del cartucho, sacadas ejecutando su propio motor de "
+                "sonido cuadro a cuadro; lo que escribe en el PSG casa con "
+                "openMSX en todos los cuadros cotejados. "),
+    ),
+    dict(id="frogger-musica", clave="frogger",
+         clase="actualiza", fecha="2026-10-12T23:40:05+02:00",
+         enlace="https://antxiko.github.io/Frogger-disassembly/THE-MUSIC.html",
+         titulo=dict(en="Frogger: the music, taken from its engine and checked against openMSX",
+                     es="Frogger: la música, sacada del motor y cotejada con openMSX"),
+         resumen=dict(
+             en="3 tunes of the cartridge, made by running its own sound engine "
+                "frame by frame; the PSG writes match openMSX in every frame "
+                "checked. ",
+             es="3 músicas del cartucho, sacadas ejecutando su propio motor de "
+                "sonido cuadro a cuadro; lo que escribe en el PSG casa con "
+                "openMSX en todos los cuadros cotejados. "),
+    ),
+    dict(id="timepilot-musica", clave="timepilot",
+         clase="actualiza", fecha="2026-10-12T23:40:05+02:00",
+         enlace="https://antxiko.github.io/TimePilot-disassembly/THE-MUSIC.html",
+         titulo=dict(en="Time Pilot: the music, taken from its engine and checked against openMSX",
+                     es="Time Pilot: la música, sacada del motor y cotejada con openMSX"),
+         resumen=dict(
+             en="2 tunes of the cartridge, made by running its own sound engine "
+                "frame by frame; the PSG writes match openMSX in every frame "
+                "checked. ",
+             es="2 músicas del cartucho, sacadas ejecutando su propio motor de "
+                "sonido cuadro a cuadro; lo que escribe en el PSG casa con "
+                "openMSX en todos los cuadros cotejados. "),
+    ),
+    dict(id="monkey-musica", clave="monkey",
+         clase="actualiza", fecha="2026-10-12T23:40:05+02:00",
+         enlace="https://antxiko.github.io/MonkeyAcademy-disassembly/THE-MUSIC.html",
+         titulo=dict(en="Monkey Academy: the music, taken from its engine and checked against openMSX",
+                     es="Monkey Academy: la música, sacada del motor y cotejada con openMSX"),
+         resumen=dict(
+             en="9 tunes of the cartridge, made by running its own sound engine "
+                "frame by frame; the PSG writes match openMSX in every frame "
+                "checked. ",
+             es="9 músicas del cartucho, sacadas ejecutando su propio motor de "
+                "sonido cuadro a cuadro; lo que escribe en el PSG casa con "
+                "openMSX en todos los cuadros cotejados. "),
+    ),
     dict(id="antarctic-musica", clave="antarctic",
          clase="actualiza", fecha="2026-10-12T23:17:40+02:00",
          enlace="https://antxiko.github.io/AntarcticAdventure-disassembly/THE-MUSIC.html",

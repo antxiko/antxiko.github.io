@@ -6,8 +6,40 @@
   <link rel="self" type="application/atom+xml" href="https://antxiko.github.io/feed.xml"/>
   <link rel="alternate" type="text/html" hreflang="en" href="https://antxiko.github.io/"/>
   <link rel="alternate" type="application/atom+xml" hreflang="es" href="https://antxiko.github.io/es/feed.xml"/>
-  <updated>2026-10-12T23:17:40+02:00</updated>
+  <updated>2026-10-12T23:40:05+02:00</updated>
   <author><name>antxiko</name><uri>https://github.com/antxiko</uri></author>
+  <entry>
+    <id>tag:antxiko.github.io,2026:novedad/en/supercobra-musica</id>
+    <title>Super Cobra: the music, taken from its engine and checked against openMSX</title>
+    <link rel="alternate" type="text/html" href="https://antxiko.github.io/SuperCobra-disassembly/THE-MUSIC.html"/>
+    <published>2026-10-12T23:40:05+02:00</published>
+    <updated>2026-10-12T23:40:05+02:00</updated>
+    <summary type="text">4 tunes of the cartridge, made by running its own sound engine frame by frame; the PSG writes match openMSX in every frame checked.</summary>
+  </entry>
+  <entry>
+    <id>tag:antxiko.github.io,2026:novedad/en/frogger-musica</id>
+    <title>Frogger: the music, taken from its engine and checked against openMSX</title>
+    <link rel="alternate" type="text/html" href="https://antxiko.github.io/Frogger-disassembly/THE-MUSIC.html"/>
+    <published>2026-10-12T23:40:05+02:00</published>
+    <updated>2026-10-12T23:40:05+02:00</updated>
+    <summary type="text">3 tunes of the cartridge, made by running its own sound engine frame by frame; the PSG writes match openMSX in every frame checked.</summary>
+  </entry>
+  <entry>
+    <id>tag:antxiko.github.io,2026:novedad/en/timepilot-musica</id>
+    <title>Time Pilot: the music, taken from its engine and checked against openMSX</title>
+    <link rel="alternate" type="text/html" href="https://antxiko.github.io/TimePilot-disassembly/THE-MUSIC.html"/>
+    <published>2026-10-12T23:40:05+02:00</published>
+    <updated>2026-10-12T23:40:05+02:00</updated>
+    <summary type="text">2 tunes of the cartridge, made by running its own sound engine frame by frame; the PSG writes match openMSX in every frame checked.</summary>
+  </entry>
+  <entry>
+    <id>tag:antxiko.github.io,2026:novedad/en/monkey-musica</id>
+    <title>Monkey Academy: the music, taken from its engine and checked against openMSX</title>
+    <link rel="alternate" type="text/html" href="https://antxiko.github.io/MonkeyAcademy-disassembly/THE-MUSIC.html"/>
+    <published>2026-10-12T23:40:05+02:00</published>
+    <updated>2026-10-12T23:40:05+02:00</updated>
+    <summary type="text">9 tunes of the cartridge, made by running its own sound engine frame by frame; the PSG writes match openMSX in every frame checked.</summary>
+  </entry>
   <entry>
     <id>tag:antxiko.github.io,2026:novedad/en/antarctic-musica</id>
     <title>Antarctic Adventure: the music, taken from its engine and checked against openMSX</title>
@@ -135,37 +167,5 @@
     <published>2026-10-03T18:39:57+02:00</published>
     <updated>2026-10-03T18:39:57+02:00</updated>
     <summary type="text">Konami's 1987 MSX cartridge (Knightmare II), 100% explained and commented to 40.1%. All 321 rooms laid out by their neighbours, the ten bosses, Popolon and Aphrodite, the items and the shops, drawn from the ROM and checked against openMSX down to zero; plus ZEUS in the pause, the cup on F2 and the black rooms that are hints and shops.</summary>
-  </entry>
-  <entry>
-    <id>tag:antxiko.github.io,2026:novedad/en/goemon-124-pantallas</id>
-    <title>Ganbare Goemon!: 124 different screens, not 1,608</title>
-    <link rel="alternate" type="text/html" href="https://antxiko.github.io/GanbareGoemon-disassembly/"/>
-    <published>2026-10-02T15:32:53+02:00</published>
-    <updated>2026-10-02T15:32:53+02:00</updated>
-    <summary type="text">Errata: 1,608 is the number of cells across the 49 areas; each area's grid (0x600C) reuses its screens, and there are 124 different ones.</summary>
-  </entry>
-  <entry>
-    <id>tag:antxiko.github.io,2026:novedad/en/goemon</id>
-    <title>Ganbare Goemon!: 49 areas, 21 interiors and 42 secret passages, taken apart</title>
-    <link rel="alternate" type="text/html" href="https://antxiko.github.io/GanbareGoemon-disassembly/"/>
-    <published>2026-10-02T15:14:33+02:00</published>
-    <updated>2026-10-02T15:14:33+02:00</updated>
-    <summary type="text">Konami's 1987 MSX2 cartridge, 100% explained and commented to 42.5%. The seven stages street by street, the interiors with their prices, the enemies and the 42 first-person secret passages drawn from the ROM and checked against openMSX down to zero; plus the password keywords, the pause words and the stage menu that shows up with Q*bert or the Game Master.</summary>
-  </entry>
-  <entry>
-    <id>tag:antxiko.github.io,2026:novedad/en/dunkshot-msx2</id>
-    <title>Dunk Shot gets its own MSX2 patch repository</title>
-    <link rel="alternate" type="text/html" href="https://antxiko.github.io/DunkShot-MSX2-Patch/"/>
-    <published>2026-10-02T08:40:00+02:00</published>
-    <updated>2026-10-02T08:40:00+02:00</updated>
-    <summary type="text">The patch that takes the flicker away on an MSX2 now has its own repository and website, in the patches section: the IPS, the tool that builds it, the probe that measures it and how the game shares its sprites out. 66.7 sprites not drawn per frame on an MSX, 1.7 on the NMS 8250. Tested in openMSX; nobody has run it on real hardware yet.</summary>
-  </entry>
-  <entry>
-    <id>tag:antxiko.github.io,2026:novedad/en/dunkshot-el-parche-msx2</id>
-    <title>Dunk Shot: a 164-byte patch takes the flicker away on an MSX2</title>
-    <link rel="alternate" type="text/html" href="https://antxiko.github.io/DunkShot-disassembly/THE-MSX2-PATCH.html"/>
-    <published>2026-10-02T08:30:00+02:00</published>
-    <updated>2026-10-02T08:30:00+02:00</updated>
-    <summary type="text">The V9938 draws eight sprites per line instead of four, so the game no longer needs to share the players out: SCREEN 4, the sprite colour table at 0x3C00 and the attributes at 0x3E00, in the filler and three orphan routines of the cartridge. Measured in openMSX over thirty seconds of a match: from 66.7 sprites not drawn per frame to 1.7. The same file still plays on an MSX1 as the original.</summary>
   </entry>
 </feed>
