@@ -1528,6 +1528,46 @@ DESENSAMBLADOS = [
         nota=dict(en=None, es=None),
     ),
     dict(
+        clave="shalom",
+        grupo="konami",
+        titulo="Shalom: Knightmare III",
+        anio=1987,
+        repo="https://github.com/antxiko/Shalom-disassembly",
+        web="https://antxiko.github.io/Shalom-disassembly/",
+        meta=dict(
+            en="Konami &middot; MSX &middot; 256 KB cartridge &middot; RC-754",
+            es="Konami &middot; MSX &middot; cartucho de 256 KB &middot; RC-754",
+        ),
+        claim=dict(
+            en="<b>The 512-room world and its dungeons, 265 characters with their "
+               "names, the nine bosses and the story in eight panels, all drawn "
+               "from the ROM.</b> The 902 Japanese texts taken out with the "
+               "cartridge's font table, 42 tunes from its sound engine, and what "
+               "the code says: a cloak that stops half the hits and a password "
+               "that is the whole game.",
+            es="<b>El mundo de 512 salas y sus mazmorras, 265 personajes con su "
+               "nombre, los nueve jefes y la historia en ocho vi&ntilde;etas, todo "
+               "dibujado desde la ROM.</b> Los 902 textos en japon&eacute;s sacados "
+               "con la tabla de la fuente del cartucho, 42 m&uacute;sicas de su "
+               "motor de sonido y lo que dice el c&oacute;digo: una capa que para "
+               "la mitad de los golpes y una contrase&ntilde;a que es la partida "
+               "entera.",
+        ),
+        datos=dict(
+            en=lambda i: (f"{cif(262144, i)} bytes &middot; <b>0</b> unexplained "
+                          f"&middot; reassembles <b>byte for byte</b> &middot; "
+                          f"{cif(54779, i)} of code, {cif(207365, i)} of data "
+                          f"&middot; {cif(3418, i)} routines &middot; commented "
+                          f"to <b>42.7%</b>, none below 10%"),
+            es=lambda i: (f"{cif(262144, i)} bytes &middot; <b>0</b> sin explicar "
+                          f"&middot; reensambla <b>byte a byte</b> &middot; "
+                          f"{cif(54779, i)} de c&oacute;digo, {cif(207365, i)} de datos "
+                          f"&middot; {cif(3418, i)} rutinas &middot; comentado al "
+                          f"<b>42,7 %</b>, ninguna por debajo del 10 %"),
+        ),
+        nota=dict(en=None, es=None),
+    ),
+    dict(
         clave="metalgear",
         grupo="konami",
         titulo="Metal Gear",
@@ -3460,6 +3500,26 @@ MSXON = [
 # nueva a vieja, una clave no existe o un proyecto se queda sin novedad.
 # --------------------------------------------------------------------------
 NOVEDADES = [
+    dict(id="shalom", clave="shalom",
+         clase="nuevo", fecha="2026-10-13T18:40:04+02:00",
+         titulo=dict(en="Shalom: Knightmare III: a world of 512 rooms, nine bosses and the story, taken apart",
+                     es="Shalom: Knightmare III: un mundo de 512 salas, nueve jefes y la historia, desmontado"),
+         resumen=dict(
+             en="Konami's 1987 MSX adventure, 100% explained and commented to "
+                "42.7%. The world and its dungeons, the 265 visible characters with "
+                "their names, the nine action scenes with their bosses, the story "
+                "in eight panels and the opening scene drawn from the ROM; the 902 "
+                "Japanese texts and 42 tunes taken from the cartridge. Read in the "
+                "code: a cloak that stops half the hits and a password that holds "
+                "the whole game.",
+             es="La aventura MSX de Konami de 1987, explicada al 100 % y comentada "
+                "al 42,7 %. El mundo y sus mazmorras, los 265 personajes que se ven "
+                "con su nombre, las nueve escenas de acción con sus jefes, la "
+                "historia en ocho viñetas y la escena inicial dibujados desde la ROM; "
+                "los 902 textos en japonés y 42 músicas sacados del cartucho. Leído "
+                "en el código: una capa que para la mitad de los golpes y una "
+                "contraseña que guarda la partida entera."),
+    ),
     dict(id="circus-musica", clave="circus",
          clase="actualiza", fecha="2026-10-13T11:00:10+02:00",
          enlace="https://antxiko.github.io/CircusCharlie-disassembly/THE-MUSIC.html",
