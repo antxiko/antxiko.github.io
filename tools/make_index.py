@@ -3500,6 +3500,24 @@ MSXON = [
 # nueva a vieja, una clave no existe o un proyecto se queda sin novedad.
 # --------------------------------------------------------------------------
 NOVEDADES = [
+    dict(id="metalgear-issue2-objetos", clave="metalgear",
+         clase="actualiza", fecha="2026-10-13T20:06:47+02:00",
+         enlace="https://antxiko.github.io/MetalGear-disassembly/THE-GAME.html",
+         titulo=dict(en="Metal Gear: the items and Snake talking on the transceiver",
+                     es="Metal Gear: los objetos y Snake hablando por el transceptor"),
+         resumen=dict(
+             en="What theNestruo asked for in issue #2: the eight weapons and "
+                "twenty-five items with their drawings and their names in the "
+                "game's font, and the two alerts, \"!\" and \"!!\", which were "
+                "cut in half. The transceiver has a single portrait, Snake's; "
+                "now it talks, with the three mouth drawings the code picks "
+                "letter by letter.",
+             es="Lo que pedía theNestruo en el issue #2: las ocho armas y los "
+                "veinticinco objetos con su dibujo y su nombre en la fuente del "
+                "juego, y los dos avisos, «!» y «!!», que salían cortados por la "
+                "mitad. El transceptor tiene un solo retrato, el de Snake; ahora "
+                "habla, con los tres dibujos de la boca que el código elige "
+                "letra a letra.")),
     dict(id="comicbakery-issue1-tienda", clave="comicbakery",
          clase="actualiza", fecha="2026-10-13T19:49:49+02:00",
          enlace="https://antxiko.github.io/ComicBakery-disassembly/THE-GAME.html",
