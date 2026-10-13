@@ -6,8 +6,16 @@
   <link rel="self" type="application/atom+xml" href="https://antxiko.github.io/feed.xml"/>
   <link rel="alternate" type="text/html" hreflang="en" href="https://antxiko.github.io/"/>
   <link rel="alternate" type="application/atom+xml" hreflang="es" href="https://antxiko.github.io/es/feed.xml"/>
-  <updated>2026-10-13T19:11:03+02:00</updated>
+  <updated>2026-10-13T19:49:49+02:00</updated>
   <author><name>antxiko</name><uri>https://github.com/antxiko</uri></author>
+  <entry>
+    <id>tag:antxiko.github.io,2026:novedad/en/comicbakery-issue1-tienda</id>
+    <title>Comic Bakery: the shop at the end of each day</title>
+    <link rel="alternate" type="text/html" href="https://antxiko.github.io/ComicBakery-disassembly/THE-GAME.html"/>
+    <published>2026-10-13T19:49:49+02:00</published>
+    <updated>2026-10-13T19:49:49+02:00</updated>
+    <summary type="text">As theNestruo asked in issue #1: the scene with the children at the BAKERY SHOP counter. The baker pushes in the cart, each child gets a loaf, a bonus of 600 per loaf is paid and the balloon on the roof says HEY, NICE or FINE depending on the loaves. With fewer than four, it says how many are missing and a life is lost. Taken by running the cartridge, frame by frame, with ten loaves and with three.</summary>
+  </entry>
   <entry>
     <id>tag:antxiko.github.io,2026:novedad/en/goemon-issue4-sprites-or</id>
     <title>Ganbare Goemon: the enemies get their third colour</title>
@@ -159,13 +167,5 @@
     <published>2026-10-13T01:02:25+02:00</published>
     <updated>2026-10-13T01:02:25+02:00</updated>
     <summary type="text">17 tunes of the cartridge, made by running its own sound engine frame by frame; the PSG writes match openMSX in every frame checked.</summary>
-  </entry>
-  <entry>
-    <id>tag:antxiko.github.io,2026:novedad/en/soccer-musica</id>
-    <title>Konami's Soccer: the music, taken from its engine and checked against openMSX</title>
-    <link rel="alternate" type="text/html" href="https://antxiko.github.io/KonamisSoccer-disassembly/THE-MUSIC.html"/>
-    <published>2026-10-13T01:02:25+02:00</published>
-    <updated>2026-10-13T01:02:25+02:00</updated>
-    <summary type="text">7 tunes of the cartridge, made by running its own sound engine frame by frame; the PSG writes match openMSX in every frame checked.</summary>
   </entry>
 </feed>
