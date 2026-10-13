@@ -3500,6 +3500,26 @@ MSXON = [
 # nueva a vieja, una clave no existe o un proyecto se queda sin novedad.
 # --------------------------------------------------------------------------
 NOVEDADES = [
+    dict(id="goemon-issue4-sprites-or", clave="goemon",
+         clase="actualiza", fecha="2026-10-13T19:11:03+02:00",
+         enlace="https://antxiko.github.io/GanbareGoemon-disassembly/THE-GAME.html",
+         titulo=dict(en="Ganbare Goemon: the enemies get their third colour",
+                     es="Ganbare Goemon: los enemigos recuperan su tercer color"),
+         resumen=dict(
+             en="theNestruo saw it in issue #4: on the web the enemies had two "
+                "colours and in the game three or more. The sprite drawing "
+                "dropped the CC bit (0x40) of the colour; the game uses it so "
+                "that a sprite joins the one before it and their colours mix "
+                "with OR where they overlap. Drawn now as the V9938 does it: "
+                "the rat is brown, the scroll carrier white and black, the "
+                "bandit red and black.",
+             es="theNestruo lo vio en el issue #4: en la web los enemigos "
+                "tenían dos colores y en el juego tres o más. El dibujo de los "
+                "sprites tiraba el bit CC (0x40) del color; el juego lo usa para "
+                "que un sprite se junte con el de antes y sus colores se sumen "
+                "con OR donde se tocan. Pintados ahora como lo hace el V9938: "
+                "la rata es marrón, el del rollo blanco y negro, el bandido "
+                "rojo y negro.")),
     dict(id="shalom", clave="shalom",
          clase="nuevo", fecha="2026-10-13T18:40:04+02:00",
          titulo=dict(en="Shalom: Knightmare III: a world of 512 rooms, nine bosses and the story, taken apart",

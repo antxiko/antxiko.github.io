@@ -6,8 +6,16 @@
   <link rel="self" type="application/atom+xml" href="https://antxiko.github.io/es/feed.xml"/>
   <link rel="alternate" type="text/html" hreflang="es" href="https://antxiko.github.io/es/"/>
   <link rel="alternate" type="application/atom+xml" hreflang="en" href="https://antxiko.github.io/feed.xml"/>
-  <updated>2026-10-13T18:40:04+02:00</updated>
+  <updated>2026-10-13T19:11:03+02:00</updated>
   <author><name>antxiko</name><uri>https://github.com/antxiko</uri></author>
+  <entry>
+    <id>tag:antxiko.github.io,2026:novedad/es/goemon-issue4-sprites-or</id>
+    <title>Ganbare Goemon: los enemigos recuperan su tercer color</title>
+    <link rel="alternate" type="text/html" href="https://antxiko.github.io/GanbareGoemon-disassembly/THE-GAME.html"/>
+    <published>2026-10-13T19:11:03+02:00</published>
+    <updated>2026-10-13T19:11:03+02:00</updated>
+    <summary type="text">theNestruo lo vio en el issue #4: en la web los enemigos tenían dos colores y en el juego tres o más. El dibujo de los sprites tiraba el bit CC (0x40) del color; el juego lo usa para que un sprite se junte con el de antes y sus colores se sumen con OR donde se tocan. Pintados ahora como lo hace el V9938: la rata es marrón, el del rollo blanco y negro, el bandido rojo y negro.</summary>
+  </entry>
   <entry>
     <id>tag:antxiko.github.io,2026:novedad/es/shalom</id>
     <title>Shalom: Knightmare III: un mundo de 512 salas, nueve jefes y la historia, desmontado</title>
@@ -159,13 +167,5 @@
     <published>2026-10-13T01:02:25+02:00</published>
     <updated>2026-10-13T01:02:25+02:00</updated>
     <summary type="text">7 músicas del cartucho, sacadas ejecutando su propio motor de sonido cuadro a cuadro; lo que escribe en el PSG casa con openMSX en todos los cuadros cotejados.</summary>
-  </entry>
-  <entry>
-    <id>tag:antxiko.github.io,2026:novedad/es/pingpong-musica</id>
-    <title>Konami's Ping Pong: la música, sacada del motor y cotejada con openMSX</title>
-    <link rel="alternate" type="text/html" href="https://antxiko.github.io/KonamisPingPong-disassembly/THE-MUSIC.html"/>
-    <published>2026-10-13T01:02:25+02:00</published>
-    <updated>2026-10-13T01:02:25+02:00</updated>
-    <summary type="text">10 músicas del cartucho, sacadas ejecutando su propio motor de sonido cuadro a cuadro; lo que escribe en el PSG casa con openMSX en todos los cuadros cotejados.</summary>
   </entry>
 </feed>
