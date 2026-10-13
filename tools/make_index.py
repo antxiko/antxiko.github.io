@@ -1539,13 +1539,13 @@ DESENSAMBLADOS = [
             es="Konami &middot; MSX &middot; cartucho de 256 KB &middot; RC-754",
         ),
         claim=dict(
-            en="<b>The 512-room world and its dungeons, 265 characters with their "
+            en="<b>The 512-room world and its dungeons, 268 characters with their "
                "names, the nine bosses and the story in eight panels, all drawn "
                "from the ROM.</b> The 902 Japanese texts taken out with the "
                "cartridge's font table, 42 tunes from its sound engine, and what "
                "the code says: a cloak that stops half the hits and a password "
                "that is the whole game.",
-            es="<b>El mundo de 512 salas y sus mazmorras, 265 personajes con su "
+            es="<b>El mundo de 512 salas y sus mazmorras, 268 personajes con su "
                "nombre, los nueve jefes y la historia en ocho vi&ntilde;etas, todo "
                "dibujado desde la ROM.</b> Los 902 textos en japon&eacute;s sacados "
                "con la tabla de la fuente del cartucho, 42 m&uacute;sicas de su "
@@ -3506,14 +3506,14 @@ NOVEDADES = [
                      es="Shalom: Knightmare III: un mundo de 512 salas, nueve jefes y la historia, desmontado"),
          resumen=dict(
              en="Konami's 1987 MSX adventure, 100% explained and commented to "
-                "42.7%. The world and its dungeons, the 265 visible characters with "
+                "42.7%. The world and its dungeons, the 268 visible characters with "
                 "their names, the nine action scenes with their bosses, the story "
                 "in eight panels and the opening scene drawn from the ROM; the 902 "
                 "Japanese texts and 42 tunes taken from the cartridge. Read in the "
                 "code: a cloak that stops half the hits and a password that holds "
                 "the whole game.",
              es="La aventura MSX de Konami de 1987, explicada al 100 % y comentada "
-                "al 42,7 %. El mundo y sus mazmorras, los 265 personajes que se ven "
+                "al 42,7 %. El mundo y sus mazmorras, los 268 personajes que se ven "
                 "con su nombre, las nueve escenas de acción con sus jefes, la "
                 "historia en ocho viñetas y la escena inicial dibujados desde la ROM; "
                 "los 902 textos en japonés y 42 músicas sacados del cartucho. Leído "
