@@ -6,8 +6,16 @@
   <link rel="self" type="application/atom+xml" href="https://antxiko.github.io/feed.xml"/>
   <link rel="alternate" type="text/html" hreflang="en" href="https://antxiko.github.io/"/>
   <link rel="alternate" type="application/atom+xml" hreflang="es" href="https://antxiko.github.io/es/feed.xml"/>
-  <updated>2026-10-13T18:40:04+02:00</updated>
+  <updated>2026-10-13T19:11:03+02:00</updated>
   <author><name>antxiko</name><uri>https://github.com/antxiko</uri></author>
+  <entry>
+    <id>tag:antxiko.github.io,2026:novedad/en/goemon-issue4-sprites-or</id>
+    <title>Ganbare Goemon: the enemies get their third colour</title>
+    <link rel="alternate" type="text/html" href="https://antxiko.github.io/GanbareGoemon-disassembly/THE-GAME.html"/>
+    <published>2026-10-13T19:11:03+02:00</published>
+    <updated>2026-10-13T19:11:03+02:00</updated>
+    <summary type="text">theNestruo saw it in issue #4: on the web the enemies had two colours and in the game three or more. The sprite drawing dropped the CC bit (0x40) of the colour; the game uses it so that a sprite joins the one before it and their colours mix with OR where they overlap. Drawn now as the V9938 does it: the rat is brown, the scroll carrier white and black, the bandit red and black.</summary>
+  </entry>
   <entry>
     <id>tag:antxiko.github.io,2026:novedad/en/shalom</id>
     <title>Shalom: Knightmare III: a world of 512 rooms, nine bosses and the story, taken apart</title>
@@ -159,13 +167,5 @@
     <published>2026-10-13T01:02:25+02:00</published>
     <updated>2026-10-13T01:02:25+02:00</updated>
     <summary type="text">7 tunes of the cartridge, made by running its own sound engine frame by frame; the PSG writes match openMSX in every frame checked.</summary>
-  </entry>
-  <entry>
-    <id>tag:antxiko.github.io,2026:novedad/en/pingpong-musica</id>
-    <title>Konami's Ping Pong: the music, taken from its engine and checked against openMSX</title>
-    <link rel="alternate" type="text/html" href="https://antxiko.github.io/KonamisPingPong-disassembly/THE-MUSIC.html"/>
-    <published>2026-10-13T01:02:25+02:00</published>
-    <updated>2026-10-13T01:02:25+02:00</updated>
-    <summary type="text">10 tunes of the cartridge, made by running its own sound engine frame by frame; the PSG writes match openMSX in every frame checked.</summary>
   </entry>
 </feed>
