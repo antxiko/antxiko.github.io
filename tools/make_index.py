@@ -3500,6 +3500,26 @@ MSXON = [
 # nueva a vieja, una clave no existe o un proyecto se queda sin novedad.
 # --------------------------------------------------------------------------
 NOVEDADES = [
+    dict(id="comicbakery-issue1-tienda", clave="comicbakery",
+         clase="actualiza", fecha="2026-10-13T19:49:49+02:00",
+         enlace="https://antxiko.github.io/ComicBakery-disassembly/THE-GAME.html",
+         titulo=dict(en="Comic Bakery: the shop at the end of each day",
+                     es="Comic Bakery: la tienda del final de cada jornada"),
+         resumen=dict(
+             en="As theNestruo asked in issue #1: the scene with the children "
+                "at the BAKERY SHOP counter. The baker pushes in the cart, each "
+                "child gets a loaf, a bonus of 600 per loaf is paid and the "
+                "balloon on the roof says HEY, NICE or FINE depending on the "
+                "loaves. With fewer than four, it says how many are missing and "
+                "a life is lost. Taken by running the cartridge, frame by "
+                "frame, with ten loaves and with three.",
+             es="Como pedía theNestruo en el issue #1: la escena de los niños "
+                "en el mostrador de la BAKERY SHOP. El panadero mete el carro, "
+                "cada niño recibe un pan, se cobran 600 por pan y el globo del "
+                "tejado dice HEY, NICE o FINE según los panes. Con menos de "
+                "cuatro, dice cuántos faltan y se pierde una vida. Sacada "
+                "ejecutando el cartucho, cuadro a cuadro, con diez panes y con "
+                "tres.")),
     dict(id="goemon-issue4-sprites-or", clave="goemon",
          clase="actualiza", fecha="2026-10-13T19:11:03+02:00",
          enlace="https://antxiko.github.io/GanbareGoemon-disassembly/THE-GAME.html",
