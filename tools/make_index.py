@@ -3500,6 +3500,26 @@ MSXON = [
 # nueva a vieja, una clave no existe o un proyecto se queda sin novedad.
 # --------------------------------------------------------------------------
 NOVEDADES = [
+    dict(id="metalgear-issue1-textos", clave="metalgear",
+         clase="actualiza", fecha="2026-10-13T22:30:00+02:00",
+         enlace="https://antxiko.github.io/MetalGear-disassembly/THE-TEXTS.html",
+         titulo=dict(en="Metal Gear: every text in Japanese and English, side by side",
+                     es="Metal Gear: todos los textos en japonés e inglés, uno al lado del otro"),
+         resumen=dict(
+             en="What theNestruo asked for in issue #1: a new page with the 159 "
+                "texts taken from the English ROM and the Japanese one, plus a "
+                "translation of the Japanese. The English version emptied 69 of "
+                "them (every \"you got...\", Big Boss on each item, Steve's jokes "
+                "about Diane) and, measured in the code, never asks for them. The "
+                "page also shows the Japanese version's region lock, which the "
+                "English one replaced with a lone ret.",
+             es="Lo que pedía theNestruo en el issue #1: una página nueva con los "
+                "159 textos sacados de la ROM inglesa y de la japonesa, más una "
+                "traducción del japonés. La inglesa vació 69 (todos los «has "
+                "conseguido...», Big Boss sobre cada objeto, las bromas de Steve "
+                "sobre Diane) y, medido en el código, no los pide nunca. Además, "
+                "el bloqueo de región de la japonesa, que la inglesa cambió por "
+                "un ret suelto.")),
     dict(id="metalgear-issue2-objetos", clave="metalgear",
          clase="actualiza", fecha="2026-10-13T20:06:47+02:00",
          enlace="https://antxiko.github.io/MetalGear-disassembly/THE-GAME.html",
