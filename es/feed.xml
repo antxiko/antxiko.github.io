@@ -6,8 +6,112 @@
   <link rel="self" type="application/atom+xml" href="https://antxiko.github.io/es/feed.xml"/>
   <link rel="alternate" type="text/html" hreflang="es" href="https://antxiko.github.io/es/"/>
   <link rel="alternate" type="application/atom+xml" hreflang="en" href="https://antxiko.github.io/feed.xml"/>
-  <updated>2026-10-13T01:02:26+02:00</updated>
+  <updated>2026-10-13T02:32:24+02:00</updated>
   <author><name>antxiko</name><uri>https://github.com/antxiko</uri></author>
+  <entry>
+    <id>tag:antxiko.github.io,2026:novedad/es/nemesis2-musica</id>
+    <title>Nemesis 2: la música, sacada del motor y cotejada con openMSX</title>
+    <link rel="alternate" type="text/html" href="https://antxiko.github.io/Nemesis2-disassembly/THE-MUSIC.html"/>
+    <published>2026-10-13T02:32:24+02:00</published>
+    <updated>2026-10-13T02:32:24+02:00</updated>
+    <summary type="text">22 músicas del cartucho, sacadas ejecutando su propio motor de sonido cuadro a cuadro; lo que escribe en el PSG casa con openMSX en todos los cuadros cotejados. Lleva además el chip SCC: sus cinco canales de onda se mezclan con el PSG y se han cotejado con openMSX.</summary>
+  </entry>
+  <entry>
+    <id>tag:antxiko.github.io,2026:novedad/es/metalgear-musica</id>
+    <title>Metal Gear: la música, sacada del motor y cotejada con openMSX</title>
+    <link rel="alternate" type="text/html" href="https://antxiko.github.io/MetalGear-disassembly/THE-MUSIC.html"/>
+    <published>2026-10-13T02:32:24+02:00</published>
+    <updated>2026-10-13T02:32:24+02:00</updated>
+    <summary type="text">28 músicas del cartucho, sacadas ejecutando su propio motor de sonido cuadro a cuadro; lo que escribe en el PSG casa con openMSX en todos los cuadros cotejados.</summary>
+  </entry>
+  <entry>
+    <id>tag:antxiko.github.io,2026:novedad/es/goemon-musica</id>
+    <title>Ganbare Goemon: la música, sacada del motor y cotejada con openMSX</title>
+    <link rel="alternate" type="text/html" href="https://antxiko.github.io/GanbareGoemon-disassembly/THE-MUSIC.html"/>
+    <published>2026-10-13T02:32:24+02:00</published>
+    <updated>2026-10-13T02:32:24+02:00</updated>
+    <summary type="text">16 músicas del cartucho, sacadas ejecutando su propio motor de sonido cuadro a cuadro; lo que escribe en el PSG casa con openMSX en todos los cuadros cotejados.</summary>
+  </entry>
+  <entry>
+    <id>tag:antxiko.github.io,2026:novedad/es/galious-musica</id>
+    <title>The Maze of Galious: la música, sacada del motor y cotejada con openMSX</title>
+    <link rel="alternate" type="text/html" href="https://antxiko.github.io/MazeOfGalious-disassembly/THE-MUSIC.html"/>
+    <published>2026-10-13T02:32:24+02:00</published>
+    <updated>2026-10-13T02:32:24+02:00</updated>
+    <summary type="text">16 músicas del cartucho, sacadas ejecutando su propio motor de sonido cuadro a cuadro; lo que escribe en el PSG casa con openMSX en todos los cuadros cotejados.</summary>
+  </entry>
+  <entry>
+    <id>tag:antxiko.github.io,2026:novedad/es/hinotori-musica</id>
+    <title>Hinotori: la música, sacada del motor y cotejada con openMSX</title>
+    <link rel="alternate" type="text/html" href="https://antxiko.github.io/Hinotori-disassembly/THE-MUSIC.html"/>
+    <published>2026-10-13T02:32:24+02:00</published>
+    <updated>2026-10-13T02:32:24+02:00</updated>
+    <summary type="text">40 músicas del cartucho, sacadas ejecutando su propio motor de sonido cuadro a cuadro; lo que escribe en el PSG casa con openMSX en todos los cuadros cotejados.</summary>
+  </entry>
+  <entry>
+    <id>tag:antxiko.github.io,2026:novedad/es/kingkong2-musica</id>
+    <title>King Kong 2: la música, sacada del motor y cotejada con openMSX</title>
+    <link rel="alternate" type="text/html" href="https://antxiko.github.io/KingKong2-disassembly/THE-MUSIC.html"/>
+    <published>2026-10-13T02:32:24+02:00</published>
+    <updated>2026-10-13T02:32:24+02:00</updated>
+    <summary type="text">22 músicas del cartucho, sacadas ejecutando su propio motor de sonido cuadro a cuadro; lo que escribe en el PSG casa con openMSX en todos los cuadros cotejados.</summary>
+  </entry>
+  <entry>
+    <id>tag:antxiko.github.io,2026:novedad/es/vampirekiller-musica</id>
+    <title>Vampire Killer: la música, sacada del motor y cotejada con openMSX</title>
+    <link rel="alternate" type="text/html" href="https://antxiko.github.io/VampireKiller-disassembly/THE-MUSIC.html"/>
+    <published>2026-10-13T02:32:24+02:00</published>
+    <updated>2026-10-13T02:32:24+02:00</updated>
+    <summary type="text">24 músicas del cartucho, sacadas ejecutando su propio motor de sonido cuadro a cuadro; lo que escribe en el PSG casa con openMSX en todos los cuadros cotejados.</summary>
+  </entry>
+  <entry>
+    <id>tag:antxiko.github.io,2026:novedad/es/penguinadventure-musica</id>
+    <title>Penguin Adventure: la música, sacada del motor y cotejada con openMSX</title>
+    <link rel="alternate" type="text/html" href="https://antxiko.github.io/PenguinAdventure-disassembly/THE-MUSIC.html"/>
+    <published>2026-10-13T02:32:24+02:00</published>
+    <updated>2026-10-13T02:32:24+02:00</updated>
+    <summary type="text">29 músicas del cartucho, sacadas ejecutando su propio motor de sonido cuadro a cuadro; lo que escribe en el PSG casa con openMSX en todos los cuadros cotejados.</summary>
+  </entry>
+  <entry>
+    <id>tag:antxiko.github.io,2026:novedad/es/nemesis-musica</id>
+    <title>Nemesis: la música, sacada del motor y cotejada con openMSX</title>
+    <link rel="alternate" type="text/html" href="https://antxiko.github.io/Nemesis-disassembly/THE-MUSIC.html"/>
+    <published>2026-10-13T02:32:24+02:00</published>
+    <updated>2026-10-13T02:32:24+02:00</updated>
+    <summary type="text">14 músicas del cartucho, sacadas ejecutando su propio motor de sonido cuadro a cuadro; lo que escribe en el PSG casa con openMSX en todos los cuadros cotejados.</summary>
+  </entry>
+  <entry>
+    <id>tag:antxiko.github.io,2026:novedad/es/qbert-musica</id>
+    <title>Q*bert: la música, sacada del motor y cotejada con openMSX</title>
+    <link rel="alternate" type="text/html" href="https://antxiko.github.io/Qbert-disassembly/THE-MUSIC.html"/>
+    <published>2026-10-13T02:32:24+02:00</published>
+    <updated>2026-10-13T02:32:24+02:00</updated>
+    <summary type="text">30 músicas del cartucho, sacadas ejecutando su propio motor de sonido cuadro a cuadro; lo que escribe en el PSG casa con openMSX en todos los cuadros cotejados.</summary>
+  </entry>
+  <entry>
+    <id>tag:antxiko.github.io,2026:novedad/es/knightmare-musica</id>
+    <title>Knightmare: la música, sacada del motor y cotejada con openMSX</title>
+    <link rel="alternate" type="text/html" href="https://antxiko.github.io/Knightmare-disassembly/THE-MUSIC.html"/>
+    <published>2026-10-13T02:32:24+02:00</published>
+    <updated>2026-10-13T02:32:24+02:00</updated>
+    <summary type="text">21 músicas del cartucho, sacadas ejecutando su propio motor de sonido cuadro a cuadro; lo que escribe en el PSG casa con openMSX en todos los cuadros cotejados.</summary>
+  </entry>
+  <entry>
+    <id>tag:antxiko.github.io,2026:novedad/es/yiearkungfu2-musica</id>
+    <title>Yie Ar Kung-Fu II: la música, sacada del motor y cotejada con openMSX</title>
+    <link rel="alternate" type="text/html" href="https://antxiko.github.io/YieArKungFu2-disassembly/THE-MUSIC.html"/>
+    <published>2026-10-13T02:32:24+02:00</published>
+    <updated>2026-10-13T02:32:24+02:00</updated>
+    <summary type="text">12 músicas del cartucho, sacadas ejecutando su propio motor de sonido cuadro a cuadro; lo que escribe en el PSG casa con openMSX en todos los cuadros cotejados.</summary>
+  </entry>
+  <entry>
+    <id>tag:antxiko.github.io,2026:novedad/es/boxing-musica</id>
+    <title>Boxing: la música, sacada del motor y cotejada con openMSX</title>
+    <link rel="alternate" type="text/html" href="https://antxiko.github.io/Boxing-disassembly/THE-MUSIC.html"/>
+    <published>2026-10-13T02:32:24+02:00</published>
+    <updated>2026-10-13T02:32:24+02:00</updated>
+    <summary type="text">13 músicas del cartucho, sacadas ejecutando su propio motor de sonido cuadro a cuadro; lo que escribe en el PSG casa con openMSX en todos los cuadros cotejados.</summary>
+  </entry>
   <entry>
     <id>tag:antxiko.github.io,2026:novedad/es/goonies-musica</id>
     <title>The Goonies: la música, sacada del motor y cotejada con openMSX</title>
@@ -63,109 +167,5 @@
     <published>2026-10-13T01:02:25+02:00</published>
     <updated>2026-10-13T01:02:25+02:00</updated>
     <summary type="text">15 músicas del cartucho, sacadas ejecutando su propio motor de sonido cuadro a cuadro; lo que escribe en el PSG casa con openMSX en todos los cuadros cotejados.</summary>
-  </entry>
-  <entry>
-    <id>tag:antxiko.github.io,2026:novedad/es/yiearkungfu-musica</id>
-    <title>Yie Ar Kung-Fu: la música, sacada del motor y cotejada con openMSX</title>
-    <link rel="alternate" type="text/html" href="https://antxiko.github.io/YieArKungFu-disassembly/THE-MUSIC.html"/>
-    <published>2026-10-13T01:02:25+02:00</published>
-    <updated>2026-10-13T01:02:25+02:00</updated>
-    <summary type="text">9 músicas del cartucho, sacadas ejecutando su propio motor de sonido cuadro a cuadro; lo que escribe en el PSG casa con openMSX en todos los cuadros cotejados.</summary>
-  </entry>
-  <entry>
-    <id>tag:antxiko.github.io,2026:novedad/es/pippols-musica</id>
-    <title>Pippols: la música, sacada del motor y cotejada con openMSX</title>
-    <link rel="alternate" type="text/html" href="https://antxiko.github.io/Pippols-disassembly/THE-MUSIC.html"/>
-    <published>2026-10-13T01:02:25+02:00</published>
-    <updated>2026-10-13T01:02:25+02:00</updated>
-    <summary type="text">16 músicas del cartucho, sacadas ejecutando su propio motor de sonido cuadro a cuadro; lo que escribe en el PSG casa con openMSX en todos los cuadros cotejados.</summary>
-  </entry>
-  <entry>
-    <id>tag:antxiko.github.io,2026:novedad/es/baseball-musica</id>
-    <title>Konami's Baseball: la música, sacada del motor y cotejada con openMSX</title>
-    <link rel="alternate" type="text/html" href="https://antxiko.github.io/KonamisBaseball-disassembly/THE-MUSIC.html"/>
-    <published>2026-10-13T00:36:55+02:00</published>
-    <updated>2026-10-13T00:36:55+02:00</updated>
-    <summary type="text">11 músicas del cartucho, sacadas ejecutando su propio motor de sonido cuadro a cuadro; lo que escribe en el PSG casa con openMSX en todos los cuadros cotejados.</summary>
-  </entry>
-  <entry>
-    <id>tag:antxiko.github.io,2026:novedad/es/golf-musica</id>
-    <title>Konami's Golf: la música, sacada del motor y cotejada con openMSX</title>
-    <link rel="alternate" type="text/html" href="https://antxiko.github.io/KonamisGolf-disassembly/THE-MUSIC.html"/>
-    <published>2026-10-13T00:36:55+02:00</published>
-    <updated>2026-10-13T00:36:55+02:00</updated>
-    <summary type="text">7 músicas del cartucho, sacadas ejecutando su propio motor de sonido cuadro a cuadro; lo que escribe en el PSG casa con openMSX en todos los cuadros cotejados.</summary>
-  </entry>
-  <entry>
-    <id>tag:antxiko.github.io,2026:novedad/es/skyjaguar-musica</id>
-    <title>Sky Jaguar: la música, sacada del motor y cotejada con openMSX</title>
-    <link rel="alternate" type="text/html" href="https://antxiko.github.io/SkyJaguar-disassembly/THE-MUSIC.html"/>
-    <published>2026-10-13T00:36:55+02:00</published>
-    <updated>2026-10-13T00:36:55+02:00</updated>
-    <summary type="text">10 músicas del cartucho, sacadas ejecutando su propio motor de sonido cuadro a cuadro; lo que escribe en el PSG casa con openMSX en todos los cuadros cotejados.</summary>
-  </entry>
-  <entry>
-    <id>tag:antxiko.github.io,2026:novedad/es/tennis-musica</id>
-    <title>Konami's Tennis: la música, sacada del motor y cotejada con openMSX</title>
-    <link rel="alternate" type="text/html" href="https://antxiko.github.io/KonamisTennis-disassembly/THE-MUSIC.html"/>
-    <published>2026-10-13T00:36:55+02:00</published>
-    <updated>2026-10-13T00:36:55+02:00</updated>
-    <summary type="text">9 músicas del cartucho, sacadas ejecutando su propio motor de sonido cuadro a cuadro; lo que escribe en el PSG casa con openMSX en todos los cuadros cotejados.</summary>
-  </entry>
-  <entry>
-    <id>tag:antxiko.github.io,2026:novedad/es/hyperrally-musica</id>
-    <title>Hyper Rally: la música, sacada del motor y cotejada con openMSX</title>
-    <link rel="alternate" type="text/html" href="https://antxiko.github.io/HyperRally-disassembly/THE-MUSIC.html"/>
-    <published>2026-10-13T00:36:55+02:00</published>
-    <updated>2026-10-13T00:36:55+02:00</updated>
-    <summary type="text">13 músicas del cartucho, sacadas ejecutando su propio motor de sonido cuadro a cuadro; lo que escribe en el PSG casa con openMSX en todos los cuadros cotejados.</summary>
-  </entry>
-  <entry>
-    <id>tag:antxiko.github.io,2026:novedad/es/hypersports2-musica</id>
-    <title>Hyper Sports 2: la música, sacada del motor y cotejada con openMSX</title>
-    <link rel="alternate" type="text/html" href="https://antxiko.github.io/HyperSports2-disassembly/THE-MUSIC.html"/>
-    <published>2026-10-13T00:36:55+02:00</published>
-    <updated>2026-10-13T00:36:55+02:00</updated>
-    <summary type="text">21 músicas del cartucho, sacadas ejecutando su propio motor de sonido cuadro a cuadro; lo que escribe en el PSG casa con openMSX en todos los cuadros cotejados.</summary>
-  </entry>
-  <entry>
-    <id>tag:antxiko.github.io,2026:novedad/es/cabbagepatch-musica</id>
-    <title>Cabbage Patch Kids: la música, sacada del motor y cotejada con openMSX</title>
-    <link rel="alternate" type="text/html" href="https://antxiko.github.io/CabbagePatchKids-disassembly/THE-MUSIC.html"/>
-    <published>2026-10-13T00:36:55+02:00</published>
-    <updated>2026-10-13T00:36:55+02:00</updated>
-    <summary type="text">15 músicas del cartucho, sacadas ejecutando su propio motor de sonido cuadro a cuadro; lo que escribe en el PSG casa con openMSX en todos los cuadros cotejados.</summary>
-  </entry>
-  <entry>
-    <id>tag:antxiko.github.io,2026:novedad/es/hypersports1-musica</id>
-    <title>Hyper Sports 1: la música, sacada del motor y cotejada con openMSX</title>
-    <link rel="alternate" type="text/html" href="https://antxiko.github.io/HyperSports1-disassembly/THE-MUSIC.html"/>
-    <published>2026-10-13T00:36:54+02:00</published>
-    <updated>2026-10-13T00:36:54+02:00</updated>
-    <summary type="text">10 músicas del cartucho, sacadas ejecutando su propio motor de sonido cuadro a cuadro; lo que escribe en el PSG casa con openMSX en todos los cuadros cotejados.</summary>
-  </entry>
-  <entry>
-    <id>tag:antxiko.github.io,2026:novedad/es/comicbakery-musica</id>
-    <title>Comic Bakery: la música, sacada del motor y cotejada con openMSX</title>
-    <link rel="alternate" type="text/html" href="https://antxiko.github.io/ComicBakery-disassembly/THE-MUSIC.html"/>
-    <published>2026-10-13T00:08:58+02:00</published>
-    <updated>2026-10-13T00:08:58+02:00</updated>
-    <summary type="text">16 músicas del cartucho, sacadas ejecutando su propio motor de sonido cuadro a cuadro; lo que escribe en el PSG casa con openMSX en todos los cuadros cotejados.</summary>
-  </entry>
-  <entry>
-    <id>tag:antxiko.github.io,2026:novedad/es/magicaltree-musica</id>
-    <title>Magical Tree: la música, sacada del motor y cotejada con openMSX</title>
-    <link rel="alternate" type="text/html" href="https://antxiko.github.io/MagicalTree-disassembly/THE-MUSIC.html"/>
-    <published>2026-10-13T00:08:57+02:00</published>
-    <updated>2026-10-13T00:08:57+02:00</updated>
-    <summary type="text">11 músicas del cartucho, sacadas ejecutando su propio motor de sonido cuadro a cuadro; lo que escribe en el PSG casa con openMSX en todos los cuadros cotejados.</summary>
-  </entry>
-  <entry>
-    <id>tag:antxiko.github.io,2026:novedad/es/circus-musica</id>
-    <title>Circus Charlie: la música, sacada del motor y cotejada con openMSX</title>
-    <link rel="alternate" type="text/html" href="https://antxiko.github.io/CircusCharlie-disassembly/THE-MUSIC.html"/>
-    <published>2026-10-13T00:08:57+02:00</published>
-    <updated>2026-10-13T00:08:57+02:00</updated>
-    <summary type="text">1 música del cartucho, sacadas ejecutando su propio motor de sonido cuadro a cuadro; lo que escribe en el PSG casa con openMSX en todos los cuadros cotejados.</summary>
   </entry>
 </feed>
