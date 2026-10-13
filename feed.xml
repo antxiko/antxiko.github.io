@@ -6,8 +6,112 @@
   <link rel="self" type="application/atom+xml" href="https://antxiko.github.io/feed.xml"/>
   <link rel="alternate" type="text/html" hreflang="en" href="https://antxiko.github.io/"/>
   <link rel="alternate" type="application/atom+xml" hreflang="es" href="https://antxiko.github.io/es/feed.xml"/>
-  <updated>2026-10-13T01:02:26+02:00</updated>
+  <updated>2026-10-13T02:32:24+02:00</updated>
   <author><name>antxiko</name><uri>https://github.com/antxiko</uri></author>
+  <entry>
+    <id>tag:antxiko.github.io,2026:novedad/en/nemesis2-musica</id>
+    <title>Nemesis 2: the music, taken from its engine and checked against openMSX</title>
+    <link rel="alternate" type="text/html" href="https://antxiko.github.io/Nemesis2-disassembly/THE-MUSIC.html"/>
+    <published>2026-10-13T02:32:24+02:00</published>
+    <updated>2026-10-13T02:32:24+02:00</updated>
+    <summary type="text">22 tunes of the cartridge, made by running its own sound engine frame by frame; the PSG writes match openMSX in every frame checked. It has the SCC chip too: its five wavetable channels are mixed with the PSG and checked against openMSX.</summary>
+  </entry>
+  <entry>
+    <id>tag:antxiko.github.io,2026:novedad/en/metalgear-musica</id>
+    <title>Metal Gear: the music, taken from its engine and checked against openMSX</title>
+    <link rel="alternate" type="text/html" href="https://antxiko.github.io/MetalGear-disassembly/THE-MUSIC.html"/>
+    <published>2026-10-13T02:32:24+02:00</published>
+    <updated>2026-10-13T02:32:24+02:00</updated>
+    <summary type="text">28 tunes of the cartridge, made by running its own sound engine frame by frame; the PSG writes match openMSX in every frame checked.</summary>
+  </entry>
+  <entry>
+    <id>tag:antxiko.github.io,2026:novedad/en/goemon-musica</id>
+    <title>Ganbare Goemon: the music, taken from its engine and checked against openMSX</title>
+    <link rel="alternate" type="text/html" href="https://antxiko.github.io/GanbareGoemon-disassembly/THE-MUSIC.html"/>
+    <published>2026-10-13T02:32:24+02:00</published>
+    <updated>2026-10-13T02:32:24+02:00</updated>
+    <summary type="text">16 tunes of the cartridge, made by running its own sound engine frame by frame; the PSG writes match openMSX in every frame checked.</summary>
+  </entry>
+  <entry>
+    <id>tag:antxiko.github.io,2026:novedad/en/galious-musica</id>
+    <title>The Maze of Galious: the music, taken from its engine and checked against openMSX</title>
+    <link rel="alternate" type="text/html" href="https://antxiko.github.io/MazeOfGalious-disassembly/THE-MUSIC.html"/>
+    <published>2026-10-13T02:32:24+02:00</published>
+    <updated>2026-10-13T02:32:24+02:00</updated>
+    <summary type="text">16 tunes of the cartridge, made by running its own sound engine frame by frame; the PSG writes match openMSX in every frame checked.</summary>
+  </entry>
+  <entry>
+    <id>tag:antxiko.github.io,2026:novedad/en/hinotori-musica</id>
+    <title>Hinotori: the music, taken from its engine and checked against openMSX</title>
+    <link rel="alternate" type="text/html" href="https://antxiko.github.io/Hinotori-disassembly/THE-MUSIC.html"/>
+    <published>2026-10-13T02:32:24+02:00</published>
+    <updated>2026-10-13T02:32:24+02:00</updated>
+    <summary type="text">40 tunes of the cartridge, made by running its own sound engine frame by frame; the PSG writes match openMSX in every frame checked.</summary>
+  </entry>
+  <entry>
+    <id>tag:antxiko.github.io,2026:novedad/en/kingkong2-musica</id>
+    <title>King Kong 2: the music, taken from its engine and checked against openMSX</title>
+    <link rel="alternate" type="text/html" href="https://antxiko.github.io/KingKong2-disassembly/THE-MUSIC.html"/>
+    <published>2026-10-13T02:32:24+02:00</published>
+    <updated>2026-10-13T02:32:24+02:00</updated>
+    <summary type="text">22 tunes of the cartridge, made by running its own sound engine frame by frame; the PSG writes match openMSX in every frame checked.</summary>
+  </entry>
+  <entry>
+    <id>tag:antxiko.github.io,2026:novedad/en/vampirekiller-musica</id>
+    <title>Vampire Killer: the music, taken from its engine and checked against openMSX</title>
+    <link rel="alternate" type="text/html" href="https://antxiko.github.io/VampireKiller-disassembly/THE-MUSIC.html"/>
+    <published>2026-10-13T02:32:24+02:00</published>
+    <updated>2026-10-13T02:32:24+02:00</updated>
+    <summary type="text">24 tunes of the cartridge, made by running its own sound engine frame by frame; the PSG writes match openMSX in every frame checked.</summary>
+  </entry>
+  <entry>
+    <id>tag:antxiko.github.io,2026:novedad/en/penguinadventure-musica</id>
+    <title>Penguin Adventure: the music, taken from its engine and checked against openMSX</title>
+    <link rel="alternate" type="text/html" href="https://antxiko.github.io/PenguinAdventure-disassembly/THE-MUSIC.html"/>
+    <published>2026-10-13T02:32:24+02:00</published>
+    <updated>2026-10-13T02:32:24+02:00</updated>
+    <summary type="text">29 tunes of the cartridge, made by running its own sound engine frame by frame; the PSG writes match openMSX in every frame checked.</summary>
+  </entry>
+  <entry>
+    <id>tag:antxiko.github.io,2026:novedad/en/nemesis-musica</id>
+    <title>Nemesis: the music, taken from its engine and checked against openMSX</title>
+    <link rel="alternate" type="text/html" href="https://antxiko.github.io/Nemesis-disassembly/THE-MUSIC.html"/>
+    <published>2026-10-13T02:32:24+02:00</published>
+    <updated>2026-10-13T02:32:24+02:00</updated>
+    <summary type="text">14 tunes of the cartridge, made by running its own sound engine frame by frame; the PSG writes match openMSX in every frame checked.</summary>
+  </entry>
+  <entry>
+    <id>tag:antxiko.github.io,2026:novedad/en/qbert-musica</id>
+    <title>Q*bert: the music, taken from its engine and checked against openMSX</title>
+    <link rel="alternate" type="text/html" href="https://antxiko.github.io/Qbert-disassembly/THE-MUSIC.html"/>
+    <published>2026-10-13T02:32:24+02:00</published>
+    <updated>2026-10-13T02:32:24+02:00</updated>
+    <summary type="text">30 tunes of the cartridge, made by running its own sound engine frame by frame; the PSG writes match openMSX in every frame checked.</summary>
+  </entry>
+  <entry>
+    <id>tag:antxiko.github.io,2026:novedad/en/knightmare-musica</id>
+    <title>Knightmare: the music, taken from its engine and checked against openMSX</title>
+    <link rel="alternate" type="text/html" href="https://antxiko.github.io/Knightmare-disassembly/THE-MUSIC.html"/>
+    <published>2026-10-13T02:32:24+02:00</published>
+    <updated>2026-10-13T02:32:24+02:00</updated>
+    <summary type="text">21 tunes of the cartridge, made by running its own sound engine frame by frame; the PSG writes match openMSX in every frame checked.</summary>
+  </entry>
+  <entry>
+    <id>tag:antxiko.github.io,2026:novedad/en/yiearkungfu2-musica</id>
+    <title>Yie Ar Kung-Fu II: the music, taken from its engine and checked against openMSX</title>
+    <link rel="alternate" type="text/html" href="https://antxiko.github.io/YieArKungFu2-disassembly/THE-MUSIC.html"/>
+    <published>2026-10-13T02:32:24+02:00</published>
+    <updated>2026-10-13T02:32:24+02:00</updated>
+    <summary type="text">12 tunes of the cartridge, made by running its own sound engine frame by frame; the PSG writes match openMSX in every frame checked.</summary>
+  </entry>
+  <entry>
+    <id>tag:antxiko.github.io,2026:novedad/en/boxing-musica</id>
+    <title>Boxing: the music, taken from its engine and checked against openMSX</title>
+    <link rel="alternate" type="text/html" href="https://antxiko.github.io/Boxing-disassembly/THE-MUSIC.html"/>
+    <published>2026-10-13T02:32:24+02:00</published>
+    <updated>2026-10-13T02:32:24+02:00</updated>
+    <summary type="text">13 tunes of the cartridge, made by running its own sound engine frame by frame; the PSG writes match openMSX in every frame checked.</summary>
+  </entry>
   <entry>
     <id>tag:antxiko.github.io,2026:novedad/en/goonies-musica</id>
     <title>The Goonies: the music, taken from its engine and checked against openMSX</title>
@@ -63,109 +167,5 @@
     <published>2026-10-13T01:02:25+02:00</published>
     <updated>2026-10-13T01:02:25+02:00</updated>
     <summary type="text">15 tunes of the cartridge, made by running its own sound engine frame by frame; the PSG writes match openMSX in every frame checked.</summary>
-  </entry>
-  <entry>
-    <id>tag:antxiko.github.io,2026:novedad/en/yiearkungfu-musica</id>
-    <title>Yie Ar Kung-Fu: the music, taken from its engine and checked against openMSX</title>
-    <link rel="alternate" type="text/html" href="https://antxiko.github.io/YieArKungFu-disassembly/THE-MUSIC.html"/>
-    <published>2026-10-13T01:02:25+02:00</published>
-    <updated>2026-10-13T01:02:25+02:00</updated>
-    <summary type="text">9 tunes of the cartridge, made by running its own sound engine frame by frame; the PSG writes match openMSX in every frame checked.</summary>
-  </entry>
-  <entry>
-    <id>tag:antxiko.github.io,2026:novedad/en/pippols-musica</id>
-    <title>Pippols: the music, taken from its engine and checked against openMSX</title>
-    <link rel="alternate" type="text/html" href="https://antxiko.github.io/Pippols-disassembly/THE-MUSIC.html"/>
-    <published>2026-10-13T01:02:25+02:00</published>
-    <updated>2026-10-13T01:02:25+02:00</updated>
-    <summary type="text">16 tunes of the cartridge, made by running its own sound engine frame by frame; the PSG writes match openMSX in every frame checked.</summary>
-  </entry>
-  <entry>
-    <id>tag:antxiko.github.io,2026:novedad/en/baseball-musica</id>
-    <title>Konami's Baseball: the music, taken from its engine and checked against openMSX</title>
-    <link rel="alternate" type="text/html" href="https://antxiko.github.io/KonamisBaseball-disassembly/THE-MUSIC.html"/>
-    <published>2026-10-13T00:36:55+02:00</published>
-    <updated>2026-10-13T00:36:55+02:00</updated>
-    <summary type="text">11 tunes of the cartridge, made by running its own sound engine frame by frame; the PSG writes match openMSX in every frame checked.</summary>
-  </entry>
-  <entry>
-    <id>tag:antxiko.github.io,2026:novedad/en/golf-musica</id>
-    <title>Konami's Golf: the music, taken from its engine and checked against openMSX</title>
-    <link rel="alternate" type="text/html" href="https://antxiko.github.io/KonamisGolf-disassembly/THE-MUSIC.html"/>
-    <published>2026-10-13T00:36:55+02:00</published>
-    <updated>2026-10-13T00:36:55+02:00</updated>
-    <summary type="text">7 tunes of the cartridge, made by running its own sound engine frame by frame; the PSG writes match openMSX in every frame checked.</summary>
-  </entry>
-  <entry>
-    <id>tag:antxiko.github.io,2026:novedad/en/skyjaguar-musica</id>
-    <title>Sky Jaguar: the music, taken from its engine and checked against openMSX</title>
-    <link rel="alternate" type="text/html" href="https://antxiko.github.io/SkyJaguar-disassembly/THE-MUSIC.html"/>
-    <published>2026-10-13T00:36:55+02:00</published>
-    <updated>2026-10-13T00:36:55+02:00</updated>
-    <summary type="text">10 tunes of the cartridge, made by running its own sound engine frame by frame; the PSG writes match openMSX in every frame checked.</summary>
-  </entry>
-  <entry>
-    <id>tag:antxiko.github.io,2026:novedad/en/tennis-musica</id>
-    <title>Konami's Tennis: the music, taken from its engine and checked against openMSX</title>
-    <link rel="alternate" type="text/html" href="https://antxiko.github.io/KonamisTennis-disassembly/THE-MUSIC.html"/>
-    <published>2026-10-13T00:36:55+02:00</published>
-    <updated>2026-10-13T00:36:55+02:00</updated>
-    <summary type="text">9 tunes of the cartridge, made by running its own sound engine frame by frame; the PSG writes match openMSX in every frame checked.</summary>
-  </entry>
-  <entry>
-    <id>tag:antxiko.github.io,2026:novedad/en/hyperrally-musica</id>
-    <title>Hyper Rally: the music, taken from its engine and checked against openMSX</title>
-    <link rel="alternate" type="text/html" href="https://antxiko.github.io/HyperRally-disassembly/THE-MUSIC.html"/>
-    <published>2026-10-13T00:36:55+02:00</published>
-    <updated>2026-10-13T00:36:55+02:00</updated>
-    <summary type="text">13 tunes of the cartridge, made by running its own sound engine frame by frame; the PSG writes match openMSX in every frame checked.</summary>
-  </entry>
-  <entry>
-    <id>tag:antxiko.github.io,2026:novedad/en/hypersports2-musica</id>
-    <title>Hyper Sports 2: the music, taken from its engine and checked against openMSX</title>
-    <link rel="alternate" type="text/html" href="https://antxiko.github.io/HyperSports2-disassembly/THE-MUSIC.html"/>
-    <published>2026-10-13T00:36:55+02:00</published>
-    <updated>2026-10-13T00:36:55+02:00</updated>
-    <summary type="text">21 tunes of the cartridge, made by running its own sound engine frame by frame; the PSG writes match openMSX in every frame checked.</summary>
-  </entry>
-  <entry>
-    <id>tag:antxiko.github.io,2026:novedad/en/cabbagepatch-musica</id>
-    <title>Cabbage Patch Kids: the music, taken from its engine and checked against openMSX</title>
-    <link rel="alternate" type="text/html" href="https://antxiko.github.io/CabbagePatchKids-disassembly/THE-MUSIC.html"/>
-    <published>2026-10-13T00:36:55+02:00</published>
-    <updated>2026-10-13T00:36:55+02:00</updated>
-    <summary type="text">15 tunes of the cartridge, made by running its own sound engine frame by frame; the PSG writes match openMSX in every frame checked.</summary>
-  </entry>
-  <entry>
-    <id>tag:antxiko.github.io,2026:novedad/en/hypersports1-musica</id>
-    <title>Hyper Sports 1: the music, taken from its engine and checked against openMSX</title>
-    <link rel="alternate" type="text/html" href="https://antxiko.github.io/HyperSports1-disassembly/THE-MUSIC.html"/>
-    <published>2026-10-13T00:36:54+02:00</published>
-    <updated>2026-10-13T00:36:54+02:00</updated>
-    <summary type="text">10 tunes of the cartridge, made by running its own sound engine frame by frame; the PSG writes match openMSX in every frame checked.</summary>
-  </entry>
-  <entry>
-    <id>tag:antxiko.github.io,2026:novedad/en/comicbakery-musica</id>
-    <title>Comic Bakery: the music, taken from its engine and checked against openMSX</title>
-    <link rel="alternate" type="text/html" href="https://antxiko.github.io/ComicBakery-disassembly/THE-MUSIC.html"/>
-    <published>2026-10-13T00:08:58+02:00</published>
-    <updated>2026-10-13T00:08:58+02:00</updated>
-    <summary type="text">16 tunes of the cartridge, made by running its own sound engine frame by frame; the PSG writes match openMSX in every frame checked.</summary>
-  </entry>
-  <entry>
-    <id>tag:antxiko.github.io,2026:novedad/en/magicaltree-musica</id>
-    <title>Magical Tree: the music, taken from its engine and checked against openMSX</title>
-    <link rel="alternate" type="text/html" href="https://antxiko.github.io/MagicalTree-disassembly/THE-MUSIC.html"/>
-    <published>2026-10-13T00:08:57+02:00</published>
-    <updated>2026-10-13T00:08:57+02:00</updated>
-    <summary type="text">11 tunes of the cartridge, made by running its own sound engine frame by frame; the PSG writes match openMSX in every frame checked.</summary>
-  </entry>
-  <entry>
-    <id>tag:antxiko.github.io,2026:novedad/en/circus-musica</id>
-    <title>Circus Charlie: the music, taken from its engine and checked against openMSX</title>
-    <link rel="alternate" type="text/html" href="https://antxiko.github.io/CircusCharlie-disassembly/THE-MUSIC.html"/>
-    <published>2026-10-13T00:08:57+02:00</published>
-    <updated>2026-10-13T00:08:57+02:00</updated>
-    <summary type="text">1 tune of the cartridge, made by running its own sound engine frame by frame; the PSG writes match openMSX in every frame checked.</summary>
   </entry>
 </feed>
