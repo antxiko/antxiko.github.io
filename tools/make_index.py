@@ -3460,6 +3460,32 @@ MSXON = [
 # nueva a vieja, una clave no existe o un proyecto se queda sin novedad.
 # --------------------------------------------------------------------------
 NOVEDADES = [
+    dict(id="circus-musica", clave="circus",
+         clase="actualiza", fecha="2026-10-13T11:00:10+02:00",
+         enlace="https://antxiko.github.io/CircusCharlie-disassembly/THE-MUSIC.html",
+         titulo=dict(en="Circus Charlie: the music, taken from its engine and checked against openMSX",
+                     es="Circus Charlie: la música, sacada del motor y cotejada con openMSX"),
+         resumen=dict(
+             en="4 tunes of the cartridge, made by running its own sound engine "
+                "frame by frame; the PSG writes match openMSX in every frame "
+                "checked; the tunes had stalled on a value the game passes in a spare register. ",
+             es="4 músicas del cartucho, sacadas ejecutando su propio motor de "
+                "sonido cuadro a cuadro; lo que escribe en el PSG casa con "
+                "openMSX en todos los cuadros cotejados; se habían atascado en un valor que el juego pasa en un registro auxiliar. "),
+    ),
+    dict(id="twinbee-musica", clave="twinbee",
+         clase="actualiza", fecha="2026-10-13T11:00:10+02:00",
+         enlace="https://antxiko.github.io/TwinBee-disassembly/THE-MUSIC.html",
+         titulo=dict(en="TwinBee: the music, taken from its engine and checked against openMSX",
+                     es="TwinBee: la música, sacada del motor y cotejada con openMSX"),
+         resumen=dict(
+             en="33 tunes of the cartridge, made by running its own sound engine "
+                "frame by frame; the PSG writes match openMSX in every frame "
+                "checked. ",
+             es="33 músicas del cartucho, sacadas ejecutando su propio motor de "
+                "sonido cuadro a cuadro; lo que escribe en el PSG casa con "
+                "openMSX en todos los cuadros cotejados. "),
+    ),
     dict(id="nemesis2-musica", clave="nemesis2",
          clase="actualiza", fecha="2026-10-13T02:32:24+02:00",
          enlace="https://antxiko.github.io/Nemesis2-disassembly/THE-MUSIC.html",
@@ -3873,19 +3899,6 @@ NOVEDADES = [
                 "frame by frame; the PSG writes match openMSX in every frame "
                 "checked. ",
              es="11 músicas del cartucho, sacadas ejecutando su propio motor de "
-                "sonido cuadro a cuadro; lo que escribe en el PSG casa con "
-                "openMSX en todos los cuadros cotejados. "),
-    ),
-    dict(id="circus-musica", clave="circus",
-         clase="actualiza", fecha="2026-10-13T00:08:57+02:00",
-         enlace="https://antxiko.github.io/CircusCharlie-disassembly/THE-MUSIC.html",
-         titulo=dict(en="Circus Charlie: the music, taken from its engine and checked against openMSX",
-                     es="Circus Charlie: la música, sacada del motor y cotejada con openMSX"),
-         resumen=dict(
-             en="1 tune of the cartridge, made by running its own sound engine "
-                "frame by frame; the PSG writes match openMSX in every frame "
-                "checked. ",
-             es="1 música del cartucho, sacadas ejecutando su propio motor de "
                 "sonido cuadro a cuadro; lo que escribe en el PSG casa con "
                 "openMSX en todos los cuadros cotejados. "),
     ),
