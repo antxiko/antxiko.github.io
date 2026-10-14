@@ -6,8 +6,16 @@
   <link rel="self" type="application/atom+xml" href="https://antxiko.github.io/es/feed.xml"/>
   <link rel="alternate" type="text/html" hreflang="es" href="https://antxiko.github.io/es/"/>
   <link rel="alternate" type="application/atom+xml" hreflang="en" href="https://antxiko.github.io/feed.xml"/>
-  <updated>2026-10-14T13:00:00+02:00</updated>
+  <updated>2026-10-14T15:00:00+02:00</updated>
   <author><name>antxiko</name><uri>https://github.com/antxiko</uri></author>
+  <entry>
+    <id>tag:antxiko.github.io,2026:novedad/es/goemon-issue3-finales</id>
+    <title>Ganbare Goemon: los cuatro finales, dibujados desde la ROM</title>
+    <link rel="alternate" type="text/html" href="https://antxiko.github.io/GanbareGoemon-disassembly/THE-TEXTS.html"/>
+    <published>2026-10-14T15:00:00+02:00</published>
+    <updated>2026-10-14T15:00:00+02:00</updated>
+    <summary type="text">Lo que pedía theNestruo en el issue #3: la pantalla de cada uno de los cuatro finales, que sale uno u otro según haya un cartucho vecino en la otra ranura y se hayan pasado las siete fases una a una, y la última pantalla, igual en los cuatro: el kanji 終 («fin») hecho con 16 sprites. El texto se ha cotejado ejecutando la rutina del propio cartucho.</summary>
+  </entry>
   <entry>
     <id>tag:antxiko.github.io,2026:novedad/es/metalgear-textos-tablas</id>
     <title>Metal Gear: la página de los textos, ahora en tablas de verdad</title>
@@ -159,13 +167,5 @@
     <published>2026-10-13T02:32:24+02:00</published>
     <updated>2026-10-13T02:32:24+02:00</updated>
     <summary type="text">30 músicas del cartucho, sacadas ejecutando su propio motor de sonido cuadro a cuadro; lo que escribe en el PSG casa con openMSX en todos los cuadros cotejados.</summary>
-  </entry>
-  <entry>
-    <id>tag:antxiko.github.io,2026:novedad/es/knightmare-musica</id>
-    <title>Knightmare: la música, sacada del motor y cotejada con openMSX</title>
-    <link rel="alternate" type="text/html" href="https://antxiko.github.io/Knightmare-disassembly/THE-MUSIC.html"/>
-    <published>2026-10-13T02:32:24+02:00</published>
-    <updated>2026-10-13T02:32:24+02:00</updated>
-    <summary type="text">21 músicas del cartucho, sacadas ejecutando su propio motor de sonido cuadro a cuadro; lo que escribe en el PSG casa con openMSX en todos los cuadros cotejados.</summary>
   </entry>
 </feed>
