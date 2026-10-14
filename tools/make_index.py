@@ -3500,6 +3500,24 @@ MSXON = [
 # nueva a vieja, una clave no existe o un proyecto se queda sin novedad.
 # --------------------------------------------------------------------------
 NOVEDADES = [
+    dict(id="goemon-issue3-finales", clave="goemon",
+         clase="actualiza", fecha="2026-10-14T15:00:00+02:00",
+         enlace="https://antxiko.github.io/GanbareGoemon-disassembly/THE-TEXTS.html",
+         titulo=dict(en="Ganbare Goemon: the four endings, drawn from the ROM",
+                     es="Ganbare Goemon: los cuatro finales, dibujados desde la ROM"),
+         resumen=dict(
+             en="What theNestruo asked for in issue #3: the screen of each of "
+                "the four endings, which one you get depending on whether the "
+                "neighbour cartridge is in the other slot and whether the seven "
+                "stages were cleared one by one, plus the last screen, the same "
+                "in all four: the kanji 終 (\"end\") made of 16 sprites. The text "
+                "was checked by running the cartridge's own routine.",
+             es="Lo que pedía theNestruo en el issue #3: la pantalla de cada uno "
+                "de los cuatro finales, que sale uno u otro según haya un "
+                "cartucho vecino en la otra ranura y se hayan pasado las siete "
+                "fases una a una, y la última pantalla, igual en los cuatro: el "
+                "kanji 終 («fin») hecho con 16 sprites. El texto se ha cotejado "
+                "ejecutando la rutina del propio cartucho.")),
     dict(id="metalgear-textos-tablas", clave="metalgear",
          clase="actualiza", fecha="2026-10-14T13:00:00+02:00",
          enlace="https://antxiko.github.io/MetalGear-disassembly/THE-TEXTS.html",
