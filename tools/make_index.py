@@ -3502,7 +3502,7 @@ MSXON = [
 NOVEDADES = [
     dict(id="goemon-issue5-sala", clave="goemon",
          clase="actualiza", fecha="2026-10-14T23:00:00+02:00",
-         enlace="https://antxiko.github.io/GanbareGoemon-disassembly/THE-GAME.html#the-lords-hall",
+         enlace="https://antxiko.github.io/GanbareGoemon-disassembly/THE-GAME.html#the-lord-s-hall",
          titulo=dict(en="Ganbare Goemon: the province map and the lord's hall, animated",
                      es="Ganbare Goemon: el plano de la provincia y la sala del señor, animados"),
          resumen=dict(

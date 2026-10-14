@@ -11,7 +11,7 @@
   <entry>
     <id>tag:antxiko.github.io,2026:novedad/en/goemon-issue5-sala</id>
     <title>Ganbare Goemon: the province map and the lord's hall, animated</title>
-    <link rel="alternate" type="text/html" href="https://antxiko.github.io/GanbareGoemon-disassembly/THE-GAME.html#the-lords-hall"/>
+    <link rel="alternate" type="text/html" href="https://antxiko.github.io/GanbareGoemon-disassembly/THE-GAME.html#the-lord-s-hall"/>
     <published>2026-10-14T23:00:00+02:00</published>
     <updated>2026-10-14T23:00:00+02:00</updated>
     <summary type="text">What theNestruo asked for in issue #5: the map shown before each area, with the province name in kanji, and the whole end-of-stage scene, with the retainers coming in, bowing and the lord speaking, one per stage, plus the angry lord. The scene is the cartridge's own code run frame by frame, drawn by ours, and both are checked against openMSX.</summary>

@@ -11,7 +11,7 @@
   <entry>
     <id>tag:antxiko.github.io,2026:novedad/es/goemon-issue5-sala</id>
     <title>Ganbare Goemon: el plano de la provincia y la sala del señor, animados</title>
-    <link rel="alternate" type="text/html" href="https://antxiko.github.io/GanbareGoemon-disassembly/THE-GAME.html#the-lords-hall"/>
+    <link rel="alternate" type="text/html" href="https://antxiko.github.io/GanbareGoemon-disassembly/THE-GAME.html#the-lord-s-hall"/>
     <published>2026-10-14T23:00:00+02:00</published>
     <updated>2026-10-14T23:00:00+02:00</updated>
     <summary type="text">Lo que pedía theNestruo en el issue #5: el plano que sale antes de cada zona, con el nombre de la provincia en kanji, y la escena entera del final de cada fase, con los criados que entran, se inclinan y el señor que habla, una por fase, y también el señor enfadado. La escena es el código del propio cartucho ejecutado cuadro a cuadro y dibujado con el nuestro, y las dos están cotejadas con openMSX.</summary>
