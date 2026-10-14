@@ -6,8 +6,16 @@
   <link rel="self" type="application/atom+xml" href="https://antxiko.github.io/feed.xml"/>
   <link rel="alternate" type="text/html" hreflang="en" href="https://antxiko.github.io/"/>
   <link rel="alternate" type="application/atom+xml" hreflang="es" href="https://antxiko.github.io/es/feed.xml"/>
-  <updated>2026-10-14T15:00:00+02:00</updated>
+  <updated>2026-10-14T18:00:00+02:00</updated>
   <author><name>antxiko</name><uri>https://github.com/antxiko</uri></author>
+  <entry>
+    <id>tag:antxiko.github.io,2026:novedad/en/goemon-issue2-pasadizos</id>
+    <title>Ganbare Goemon: the 42 secret passages, walked in first person</title>
+    <link rel="alternate" type="text/html" href="https://antxiko.github.io/GanbareGoemon-disassembly/THE-GAME.html#the-first-person-view"/>
+    <published>2026-10-14T18:00:00+02:00</published>
+    <updated>2026-10-14T18:00:00+02:00</updated>
+    <summary type="text">What theNestruo asked for in issue #2: the first-person view of the secret passages, drawn from the ROM. One GIF per passage, walked from the entrance, picking up everything inside and out through the exit, plus the 33 pieces the game builds the view from. Checked by running the cartridge's own routine on every cell and direction (16,696 views) and by walking passages in openMSX, identical to the pixel.</summary>
+  </entry>
   <entry>
     <id>tag:antxiko.github.io,2026:novedad/en/goemon-issue3-finales</id>
     <title>Ganbare Goemon: the four endings, drawn from the ROM</title>
@@ -159,13 +167,5 @@
     <published>2026-10-13T02:32:24+02:00</published>
     <updated>2026-10-13T02:32:24+02:00</updated>
     <summary type="text">14 tunes of the cartridge, made by running its own sound engine frame by frame; the PSG writes match openMSX in every frame checked.</summary>
-  </entry>
-  <entry>
-    <id>tag:antxiko.github.io,2026:novedad/en/qbert-musica</id>
-    <title>Q*bert: the music, taken from its engine and checked against openMSX</title>
-    <link rel="alternate" type="text/html" href="https://antxiko.github.io/Qbert-disassembly/THE-MUSIC.html"/>
-    <published>2026-10-13T02:32:24+02:00</published>
-    <updated>2026-10-13T02:32:24+02:00</updated>
-    <summary type="text">30 tunes of the cartridge, made by running its own sound engine frame by frame; the PSG writes match openMSX in every frame checked.</summary>
   </entry>
 </feed>

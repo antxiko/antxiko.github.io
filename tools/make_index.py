@@ -3500,6 +3500,26 @@ MSXON = [
 # nueva a vieja, una clave no existe o un proyecto se queda sin novedad.
 # --------------------------------------------------------------------------
 NOVEDADES = [
+    dict(id="goemon-issue2-pasadizos", clave="goemon",
+         clase="actualiza", fecha="2026-10-14T18:00:00+02:00",
+         enlace="https://antxiko.github.io/GanbareGoemon-disassembly/THE-GAME.html#the-first-person-view",
+         titulo=dict(en="Ganbare Goemon: the 42 secret passages, walked in first person",
+                     es="Ganbare Goemon: los 42 pasadizos secretos, recorridos en primera persona"),
+         resumen=dict(
+             en="What theNestruo asked for in issue #2: the first-person view of "
+                "the secret passages, drawn from the ROM. One GIF per passage, "
+                "walked from the entrance, picking up everything inside and out "
+                "through the exit, plus the 33 pieces the game builds the view "
+                "from. Checked by running the cartridge's own routine on every "
+                "cell and direction (16,696 views) and by walking passages in "
+                "openMSX, identical to the pixel.",
+             es="Lo que pedía theNestruo en el issue #2: la vista en primera "
+                "persona de los pasadizos secretos, dibujada desde la ROM. Un GIF "
+                "por pasadizo, recorrido desde la entrada cogiendo todo lo que "
+                "hay y saliendo por la salida, y las 33 piezas con las que el "
+                "juego monta la vista. Cotejado ejecutando la rutina del propio "
+                "cartucho en todas las casillas y direcciones (16 696 vistas) y "
+                "andando pasadizos en openMSX, iguales en cada punto.")),
     dict(id="goemon-issue3-finales", clave="goemon",
          clase="actualiza", fecha="2026-10-14T15:00:00+02:00",
          enlace="https://antxiko.github.io/GanbareGoemon-disassembly/THE-TEXTS.html",
