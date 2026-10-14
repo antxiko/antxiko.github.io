@@ -6,8 +6,16 @@
   <link rel="self" type="application/atom+xml" href="https://antxiko.github.io/es/feed.xml"/>
   <link rel="alternate" type="text/html" hreflang="es" href="https://antxiko.github.io/es/"/>
   <link rel="alternate" type="application/atom+xml" hreflang="en" href="https://antxiko.github.io/feed.xml"/>
-  <updated>2026-10-14T15:00:00+02:00</updated>
+  <updated>2026-10-14T18:00:00+02:00</updated>
   <author><name>antxiko</name><uri>https://github.com/antxiko</uri></author>
+  <entry>
+    <id>tag:antxiko.github.io,2026:novedad/es/goemon-issue2-pasadizos</id>
+    <title>Ganbare Goemon: los 42 pasadizos secretos, recorridos en primera persona</title>
+    <link rel="alternate" type="text/html" href="https://antxiko.github.io/GanbareGoemon-disassembly/THE-GAME.html#the-first-person-view"/>
+    <published>2026-10-14T18:00:00+02:00</published>
+    <updated>2026-10-14T18:00:00+02:00</updated>
+    <summary type="text">Lo que pedía theNestruo en el issue #2: la vista en primera persona de los pasadizos secretos, dibujada desde la ROM. Un GIF por pasadizo, recorrido desde la entrada cogiendo todo lo que hay y saliendo por la salida, y las 33 piezas con las que el juego monta la vista. Cotejado ejecutando la rutina del propio cartucho en todas las casillas y direcciones (16 696 vistas) y andando pasadizos en openMSX, iguales en cada punto.</summary>
+  </entry>
   <entry>
     <id>tag:antxiko.github.io,2026:novedad/es/goemon-issue3-finales</id>
     <title>Ganbare Goemon: los cuatro finales, dibujados desde la ROM</title>
@@ -159,13 +167,5 @@
     <published>2026-10-13T02:32:24+02:00</published>
     <updated>2026-10-13T02:32:24+02:00</updated>
     <summary type="text">14 músicas del cartucho, sacadas ejecutando su propio motor de sonido cuadro a cuadro; lo que escribe en el PSG casa con openMSX en todos los cuadros cotejados.</summary>
-  </entry>
-  <entry>
-    <id>tag:antxiko.github.io,2026:novedad/es/qbert-musica</id>
-    <title>Q*bert: la música, sacada del motor y cotejada con openMSX</title>
-    <link rel="alternate" type="text/html" href="https://antxiko.github.io/Qbert-disassembly/THE-MUSIC.html"/>
-    <published>2026-10-13T02:32:24+02:00</published>
-    <updated>2026-10-13T02:32:24+02:00</updated>
-    <summary type="text">30 músicas del cartucho, sacadas ejecutando su propio motor de sonido cuadro a cuadro; lo que escribe en el PSG casa con openMSX en todos los cuadros cotejados.</summary>
   </entry>
 </feed>
