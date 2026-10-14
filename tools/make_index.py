@@ -3500,6 +3500,28 @@ MSXON = [
 # nueva a vieja, una clave no existe o un proyecto se queda sin novedad.
 # --------------------------------------------------------------------------
 NOVEDADES = [
+    dict(id="kingkong2-issue1-textos", clave="kingkong2",
+         clase="actualiza", fecha="2026-10-14T22:00:00+02:00",
+         enlace="https://antxiko.github.io/KingKong2-disassembly/THE-TEXTS.html",
+         titulo=dict(en="King Kong 2: every text, with Imanok's translation, and a fix for its ending",
+                     es="King Kong 2: todos los textos, con la traducción de Imanok, y un arreglo para su final"),
+         resumen=dict(
+             en="What theNestruo asked for in issue #1: a new page with all the "
+                "Japanese in the ROM (the 56 conversations, the items, the ending "
+                "and the labels), each with its address and what asks for it, next "
+                "to the English and Spanish of the translation patches by Imanok, "
+                "Manuel Pazos and Ramones. On the way we found that in both patches "
+                "the text of ending 0 stops after its first line: one 0xFF where a "
+                "0xFE should be. Seen in openMSX, and fixed with a one-byte IPS per "
+                "language, on its own page.",
+             es="Lo que pedía theNestruo en el issue #1: una página nueva con todo "
+                "el japonés de la ROM (las 56 conversaciones, los objetos, el final "
+                "y los rótulos), cada texto con su dirección y quién lo pide, al "
+                "lado del inglés y el castellano de los parches de traducción de "
+                "Imanok, Manuel Pazos y Ramones. De paso salió que en los dos "
+                "parches el texto del final 0 se corta tras su primer renglón: un "
+                "0xFF donde iba un 0xFE. Visto en openMSX, y arreglado con un IPS "
+                "de un byte por idioma, en su propia página.")),
     dict(id="goemon-issue2-pasadizos", clave="goemon",
          clase="actualiza", fecha="2026-10-14T18:00:00+02:00",
          enlace="https://antxiko.github.io/GanbareGoemon-disassembly/THE-GAME.html#the-first-person-view",
