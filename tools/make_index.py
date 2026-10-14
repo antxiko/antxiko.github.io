@@ -3500,6 +3500,24 @@ MSXON = [
 # nueva a vieja, una clave no existe o un proyecto se queda sin novedad.
 # --------------------------------------------------------------------------
 NOVEDADES = [
+    dict(id="gamemaster-cuentas-67", clave="gamemaster",
+         clase="actualiza", fecha="2026-10-15T00:30:00+02:00",
+         enlace="https://antxiko.github.io/GameMaster-disassembly/FINDINGS.html",
+         titulo=dict(en="Konami's Game Master: the counts redone with 67 cartridges",
+                     es="Konami's Game Master: las cuentas, rehechas con 67 cartuchos"),
+         resumen=dict(
+             en="The collection has grown since the Game Master was published, and "
+                "two of its claims no longer held. The hook it looks for in the "
+                "game's start-up is in 53 of the 60 Konami cartridges: the seven "
+                "without it are the six MSX2 ones and the European version of the "
+                "Game Master itself. The second header is in 16 games, not eight, "
+                "and the rule by year still holds for all of them.",
+             es="La colección ha crecido desde que se publicó el Game Master, y dos "
+                "de sus afirmaciones ya no se sostenían. El gancho que busca en el "
+                "arranque del juego lo llevan 53 de los 60 cartuchos de Konami: los "
+                "siete que no son los seis de MSX2 y la versión europea del propio "
+                "Game Master. La segunda cabecera la llevan 16 juegos, no ocho, y "
+                "la regla del año se cumple en todos.")),
     dict(id="goemon-issue5-sala", clave="goemon",
          clase="actualiza", fecha="2026-10-14T23:00:00+02:00",
          enlace="https://antxiko.github.io/GanbareGoemon-disassembly/THE-GAME.html#the-lord-s-hall",
