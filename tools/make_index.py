@@ -3500,6 +3500,25 @@ MSXON = [
 # nueva a vieja, una clave no existe o un proyecto se queda sin novedad.
 # --------------------------------------------------------------------------
 NOVEDADES = [
+    dict(id="goemon-issue5-sala", clave="goemon",
+         clase="actualiza", fecha="2026-10-14T23:00:00+02:00",
+         enlace="https://antxiko.github.io/GanbareGoemon-disassembly/THE-GAME.html#the-lords-hall",
+         titulo=dict(en="Ganbare Goemon: the province map and the lord's hall, animated",
+                     es="Ganbare Goemon: el plano de la provincia y la sala del señor, animados"),
+         resumen=dict(
+             en="What theNestruo asked for in issue #5: the map shown before each "
+                "area, with the province name in kanji, and the whole end-of-stage "
+                "scene, with the retainers coming in, bowing and the lord speaking, "
+                "one per stage, plus the angry lord. The scene is the cartridge's own "
+                "code run frame by frame, drawn by ours, and both are checked against "
+                "openMSX.",
+             es="Lo que pedía theNestruo en el issue #5: el plano que sale antes de "
+                "cada zona, con el nombre de la provincia en kanji, y la escena "
+                "entera del final de cada fase, con los criados que entran, se "
+                "inclinan y el señor que habla, una por fase, y también el señor "
+                "enfadado. La escena es el código del propio cartucho ejecutado "
+                "cuadro a cuadro y dibujado con el nuestro, y las dos están "
+                "cotejadas con openMSX.")),
     dict(id="kingkong2-issue1-textos", clave="kingkong2",
          clase="actualiza", fecha="2026-10-14T22:00:00+02:00",
          enlace="https://antxiko.github.io/KingKong2-disassembly/THE-TEXTS.html",
