@@ -6,8 +6,16 @@
   <link rel="self" type="application/atom+xml" href="https://antxiko.github.io/es/feed.xml"/>
   <link rel="alternate" type="text/html" hreflang="es" href="https://antxiko.github.io/es/"/>
   <link rel="alternate" type="application/atom+xml" hreflang="en" href="https://antxiko.github.io/feed.xml"/>
-  <updated>2026-10-14T22:00:00+02:00</updated>
+  <updated>2026-10-14T23:00:00+02:00</updated>
   <author><name>antxiko</name><uri>https://github.com/antxiko</uri></author>
+  <entry>
+    <id>tag:antxiko.github.io,2026:novedad/es/goemon-issue5-sala</id>
+    <title>Ganbare Goemon: el plano de la provincia y la sala del señor, animados</title>
+    <link rel="alternate" type="text/html" href="https://antxiko.github.io/GanbareGoemon-disassembly/THE-GAME.html#the-lords-hall"/>
+    <published>2026-10-14T23:00:00+02:00</published>
+    <updated>2026-10-14T23:00:00+02:00</updated>
+    <summary type="text">Lo que pedía theNestruo en el issue #5: el plano que sale antes de cada zona, con el nombre de la provincia en kanji, y la escena entera del final de cada fase, con los criados que entran, se inclinan y el señor que habla, una por fase, y también el señor enfadado. La escena es el código del propio cartucho ejecutado cuadro a cuadro y dibujado con el nuestro, y las dos están cotejadas con openMSX.</summary>
+  </entry>
   <entry>
     <id>tag:antxiko.github.io,2026:novedad/es/kingkong2-issue1-textos</id>
     <title>King Kong 2: todos los textos, con la traducción de Imanok, y un arreglo para su final</title>
@@ -159,13 +167,5 @@
     <published>2026-10-13T02:32:24+02:00</published>
     <updated>2026-10-13T02:32:24+02:00</updated>
     <summary type="text">24 músicas del cartucho, sacadas ejecutando su propio motor de sonido cuadro a cuadro; lo que escribe en el PSG casa con openMSX en todos los cuadros cotejados.</summary>
-  </entry>
-  <entry>
-    <id>tag:antxiko.github.io,2026:novedad/es/penguinadventure-musica</id>
-    <title>Penguin Adventure: la música, sacada del motor y cotejada con openMSX</title>
-    <link rel="alternate" type="text/html" href="https://antxiko.github.io/PenguinAdventure-disassembly/THE-MUSIC.html"/>
-    <published>2026-10-13T02:32:24+02:00</published>
-    <updated>2026-10-13T02:32:24+02:00</updated>
-    <summary type="text">29 músicas del cartucho, sacadas ejecutando su propio motor de sonido cuadro a cuadro; lo que escribe en el PSG casa con openMSX en todos los cuadros cotejados.</summary>
   </entry>
 </feed>
