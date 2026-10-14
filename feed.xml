@@ -6,8 +6,16 @@
   <link rel="self" type="application/atom+xml" href="https://antxiko.github.io/feed.xml"/>
   <link rel="alternate" type="text/html" hreflang="en" href="https://antxiko.github.io/"/>
   <link rel="alternate" type="application/atom+xml" hreflang="es" href="https://antxiko.github.io/es/feed.xml"/>
-  <updated>2026-10-14T23:00:00+02:00</updated>
+  <updated>2026-10-15T00:30:00+02:00</updated>
   <author><name>antxiko</name><uri>https://github.com/antxiko</uri></author>
+  <entry>
+    <id>tag:antxiko.github.io,2026:novedad/en/gamemaster-cuentas-67</id>
+    <title>Konami's Game Master: the counts redone with 67 cartridges</title>
+    <link rel="alternate" type="text/html" href="https://antxiko.github.io/GameMaster-disassembly/FINDINGS.html"/>
+    <published>2026-10-15T00:30:00+02:00</published>
+    <updated>2026-10-15T00:30:00+02:00</updated>
+    <summary type="text">The collection has grown since the Game Master was published, and two of its claims no longer held. The hook it looks for in the game's start-up is in 53 of the 60 Konami cartridges: the seven without it are the six MSX2 ones and the European version of the Game Master itself. The second header is in 16 games, not eight, and the rule by year still holds for all of them.</summary>
+  </entry>
   <entry>
     <id>tag:antxiko.github.io,2026:novedad/en/goemon-issue5-sala</id>
     <title>Ganbare Goemon: the province map and the lord's hall, animated</title>
@@ -159,13 +167,5 @@
     <published>2026-10-13T02:32:24+02:00</published>
     <updated>2026-10-13T02:32:24+02:00</updated>
     <summary type="text">22 tunes of the cartridge, made by running its own sound engine frame by frame; the PSG writes match openMSX in every frame checked.</summary>
-  </entry>
-  <entry>
-    <id>tag:antxiko.github.io,2026:novedad/en/vampirekiller-musica</id>
-    <title>Vampire Killer: the music, taken from its engine and checked against openMSX</title>
-    <link rel="alternate" type="text/html" href="https://antxiko.github.io/VampireKiller-disassembly/THE-MUSIC.html"/>
-    <published>2026-10-13T02:32:24+02:00</published>
-    <updated>2026-10-13T02:32:24+02:00</updated>
-    <summary type="text">24 tunes of the cartridge, made by running its own sound engine frame by frame; the PSG writes match openMSX in every frame checked.</summary>
   </entry>
 </feed>
