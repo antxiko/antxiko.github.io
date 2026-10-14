@@ -3500,6 +3500,22 @@ MSXON = [
 # nueva a vieja, una clave no existe o un proyecto se queda sin novedad.
 # --------------------------------------------------------------------------
 NOVEDADES = [
+    dict(id="metalgear-textos-tablas", clave="metalgear",
+         clase="actualiza", fecha="2026-10-14T13:00:00+02:00",
+         enlace="https://antxiko.github.io/MetalGear-disassembly/THE-TEXTS.html",
+         titulo=dict(en="Metal Gear: the texts page, now as real tables",
+                     es="Metal Gear: la página de los textos, ahora en tablas de verdad"),
+         resumen=dict(
+             en="The texts page came out broken: the 159 texts and the weapon "
+                "and item names showed only the table header, with every row "
+                "below it as a loose paragraph full of bars. Now each one is a "
+                "proper table, and so are the 23 labels. The texts themselves "
+                "have not changed.",
+             es="La página de los textos salió rota: de los 159 textos y de los "
+                "nombres de armas y objetos solo se veía la cabecera de la "
+                "tabla, y cada fila iba debajo como un párrafo suelto lleno de "
+                "barras. Ahora cada una es una tabla, y también los 23 rótulos. "
+                "Los textos no cambian.")),
     dict(id="goemon-issue1-textos", clave="goemon",
          clase="actualiza", fecha="2026-10-14T12:00:00+02:00",
          enlace="https://antxiko.github.io/GanbareGoemon-disassembly/THE-TEXTS.html",
