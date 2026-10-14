@@ -6,8 +6,16 @@
   <link rel="self" type="application/atom+xml" href="https://antxiko.github.io/feed.xml"/>
   <link rel="alternate" type="text/html" hreflang="en" href="https://antxiko.github.io/"/>
   <link rel="alternate" type="application/atom+xml" hreflang="es" href="https://antxiko.github.io/es/feed.xml"/>
-  <updated>2026-10-14T18:00:00+02:00</updated>
+  <updated>2026-10-14T22:00:00+02:00</updated>
   <author><name>antxiko</name><uri>https://github.com/antxiko</uri></author>
+  <entry>
+    <id>tag:antxiko.github.io,2026:novedad/en/kingkong2-issue1-textos</id>
+    <title>King Kong 2: every text, with Imanok's translation, and a fix for its ending</title>
+    <link rel="alternate" type="text/html" href="https://antxiko.github.io/KingKong2-disassembly/THE-TEXTS.html"/>
+    <published>2026-10-14T22:00:00+02:00</published>
+    <updated>2026-10-14T22:00:00+02:00</updated>
+    <summary type="text">What theNestruo asked for in issue #1: a new page with all the Japanese in the ROM (the 56 conversations, the items, the ending and the labels), each with its address and what asks for it, next to the English and Spanish of the translation patches by Imanok, Manuel Pazos and Ramones. On the way we found that in both patches the text of ending 0 stops after its first line: one 0xFF where a 0xFE should be. Seen in openMSX, and fixed with a one-byte IPS per language, on its own page.</summary>
+  </entry>
   <entry>
     <id>tag:antxiko.github.io,2026:novedad/en/goemon-issue2-pasadizos</id>
     <title>Ganbare Goemon: the 42 secret passages, walked in first person</title>
@@ -159,13 +167,5 @@
     <published>2026-10-13T02:32:24+02:00</published>
     <updated>2026-10-13T02:32:24+02:00</updated>
     <summary type="text">29 tunes of the cartridge, made by running its own sound engine frame by frame; the PSG writes match openMSX in every frame checked.</summary>
-  </entry>
-  <entry>
-    <id>tag:antxiko.github.io,2026:novedad/en/nemesis-musica</id>
-    <title>Nemesis: the music, taken from its engine and checked against openMSX</title>
-    <link rel="alternate" type="text/html" href="https://antxiko.github.io/Nemesis-disassembly/THE-MUSIC.html"/>
-    <published>2026-10-13T02:32:24+02:00</published>
-    <updated>2026-10-13T02:32:24+02:00</updated>
-    <summary type="text">14 tunes of the cartridge, made by running its own sound engine frame by frame; the PSG writes match openMSX in every frame checked.</summary>
   </entry>
 </feed>
