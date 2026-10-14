@@ -3500,6 +3500,28 @@ MSXON = [
 # nueva a vieja, una clave no existe o un proyecto se queda sin novedad.
 # --------------------------------------------------------------------------
 NOVEDADES = [
+    dict(id="goemon-issue1-textos", clave="goemon",
+         clase="actualiza", fecha="2026-10-14T12:00:00+02:00",
+         enlace="https://antxiko.github.io/GanbareGoemon-disassembly/THE-TEXTS.html",
+         titulo=dict(en="Ganbare Goemon: every text in the cartridge, translated",
+                     es="Ganbare Goemon: todos los textos del cartucho, traducidos"),
+         resumen=dict(
+             en="What theNestruo asked for in issue #1: a new page with all the "
+                "Japanese in the ROM (the shopkeepers, the dice, the inn, the "
+                "sayings and verse hints of the old man, what each lord says, "
+                "the four endings and the secret words), each with its address, "
+                "what asks for it in the code and a translation into English and "
+                "Spanish. Measured: only two labels are never asked for, and "
+                "one saying ends with 0xFF before its fourth line, which is "
+                "still in the ROM with nothing pointing to it.",
+             es="Lo que pedía theNestruo en el issue #1: una página nueva con "
+                "todo el japonés de la ROM (los tenderos, los dados, la posada, "
+                "las frases y los consejos en verso del viejo, lo que dice cada "
+                "señor, los cuatro finales y las palabras secretas), cada texto "
+                "con su dirección, quién lo pide en el código y una traducción "
+                "al castellano y al inglés. Medido: solo hay dos rótulos que no "
+                "pide nadie, y una frase acaba con un 0xFF antes de su cuarto "
+                "renglón, que sigue en la ROM sin nadie que lo apunte.")),
     dict(id="metalgear-issue1-textos", clave="metalgear",
          clase="actualiza", fecha="2026-10-13T22:30:00+02:00",
          enlace="https://antxiko.github.io/MetalGear-disassembly/THE-TEXTS.html",
