@@ -6,8 +6,16 @@
   <link rel="self" type="application/atom+xml" href="https://antxiko.github.io/es/feed.xml"/>
   <link rel="alternate" type="text/html" hreflang="es" href="https://antxiko.github.io/es/"/>
   <link rel="alternate" type="application/atom+xml" hreflang="en" href="https://antxiko.github.io/feed.xml"/>
-  <updated>2026-10-15T22:00:00+02:00</updated>
+  <updated>2026-10-15T22:30:00+02:00</updated>
   <author><name>antxiko</name><uri>https://github.com/antxiko</uri></author>
+  <entry>
+    <id>tag:antxiko.github.io,2026:novedad/es/pennantrace-cambio</id>
+    <title>The Pro Yakyuu Gekitotsu Pennant Race: MEMBER CHANGE y las ventanitas de las bases</title>
+    <link rel="alternate" type="text/html" href="https://antxiko.github.io/PennantRace-disassembly/THE-SCREENS.html"/>
+    <published>2026-10-15T22:30:00+02:00</published>
+    <updated>2026-10-15T22:30:00+02:00</updated>
+    <summary type="text">Dos pantallas más dibujadas desde el código y cotejadas byte a byte con openMSX: el cambio de jugadores, al que se llega desde la pausa, y las dos ventanitas con la primera y la tercera base de la pantalla del lanzamiento.</summary>
+  </entry>
   <entry>
     <id>tag:antxiko.github.io,2026:novedad/es/pennantrace-cotejos</id>
     <title>The Pro Yakyuu Gekitotsu Pennant Race: todo el campo y todos los letreros, cotejados</title>
@@ -159,13 +167,5 @@
     <published>2026-10-13T11:00:10+02:00</published>
     <updated>2026-10-13T11:00:10+02:00</updated>
     <summary type="text">33 músicas del cartucho, sacadas ejecutando su propio motor de sonido cuadro a cuadro; lo que escribe en el PSG casa con openMSX en todos los cuadros cotejados.</summary>
-  </entry>
-  <entry>
-    <id>tag:antxiko.github.io,2026:novedad/es/nemesis2-musica</id>
-    <title>Nemesis 2: la música, sacada del motor y cotejada con openMSX</title>
-    <link rel="alternate" type="text/html" href="https://antxiko.github.io/Nemesis2-disassembly/THE-MUSIC.html"/>
-    <published>2026-10-13T02:32:24+02:00</published>
-    <updated>2026-10-13T02:32:24+02:00</updated>
-    <summary type="text">22 músicas del cartucho, sacadas ejecutando su propio motor de sonido cuadro a cuadro; lo que escribe en el PSG casa con openMSX en todos los cuadros cotejados. Lleva además el chip SCC: sus cinco canales de onda se mezclan con el PSG y se han cotejado con openMSX.</summary>
   </entry>
 </feed>

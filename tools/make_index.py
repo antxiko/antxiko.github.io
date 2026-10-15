@@ -2204,10 +2204,10 @@ DESENSAMBLADOS = [
                           f"al <b>43,7 %</b>"),
         ),
         nota=dict(
-            en="26 PSG and SCC tunes from its own engine and 29 pictures drawn "
+            en="26 PSG and SCC tunes from its own engine and 31 pictures drawn "
                "from the ROM, 8 of them animated (the batter, the pitcher, the "
                "fielders, the intro), and the menus, checked against openMSX.",
-            es="26 músicas de PSG y SCC de su propio motor y 29 imágenes dibujadas "
+            es="26 músicas de PSG y SCC de su propio motor y 31 imágenes dibujadas "
                "desde la ROM, 8 animadas (el bateador, el lanzador, los "
                "jugadores, la presentación), y los menús, cotejadas con openMSX.",
         ),
@@ -3580,6 +3580,20 @@ MSXON = [
 # nueva a vieja, una clave no existe o un proyecto se queda sin novedad.
 # --------------------------------------------------------------------------
 NOVEDADES = [
+    dict(id="pennantrace-cambio", clave="pennantrace",
+         clase="actualiza", fecha="2026-10-15T22:30:00+02:00",
+         enlace="https://antxiko.github.io/PennantRace-disassembly/THE-SCREENS.html",
+         titulo=dict(en="The Pro Yakyuu Gekitotsu Pennant Race: MEMBER CHANGE and the bases windows",
+                     es="The Pro Yakyuu Gekitotsu Pennant Race: MEMBER CHANGE y las ventanitas de las bases"),
+         resumen=dict(
+             en="Two more screens drawn from the code and checked byte for byte "
+                "against openMSX: the substitution screen, reached from the pause, "
+                "and the two little windows with first and third base on the "
+                "pitching screen.",
+             es="Dos pantallas más dibujadas desde el código y cotejadas byte a byte "
+                "con openMSX: el cambio de jugadores, al que se llega desde la "
+                "pausa, y las dos ventanitas con la primera y la tercera base de la "
+                "pantalla del lanzamiento.")),
     dict(id="pennantrace-cotejos", clave="pennantrace",
          clase="actualiza", fecha="2026-10-15T22:00:00+02:00",
          enlace="https://antxiko.github.io/PennantRace-disassembly/THE-SCREENS.html",
