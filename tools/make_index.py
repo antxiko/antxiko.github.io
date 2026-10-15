@@ -2204,10 +2204,12 @@ DESENSAMBLADOS = [
                           f"al <b>43,7 %</b>"),
         ),
         nota=dict(
-            en="26 PSG and SCC tunes from its own engine and 6 pictures drawn from "
-               "the ROM, checked against openMSX.",
-            es="26 músicas de PSG y SCC de su propio motor y 6 imágenes dibujadas "
-               "desde la ROM, cotejadas con openMSX.",
+            en="26 PSG and SCC tunes from its own engine and 22 pictures drawn "
+               "from the ROM, 8 of them animated (the batter, the pitcher, the "
+               "fielders, the intro), checked against openMSX.",
+            es="26 músicas de PSG y SCC de su propio motor y 22 imágenes dibujadas "
+               "desde la ROM, 8 animadas (el bateador, el lanzador, los "
+               "jugadores, la presentación), cotejadas con openMSX.",
         ),
     ),
     dict(
@@ -3578,6 +3580,25 @@ MSXON = [
 # nueva a vieja, una clave no existe o un proyecto se queda sin novedad.
 # --------------------------------------------------------------------------
 NOVEDADES = [
+    dict(id="pennantrace-jugadores", clave="pennantrace",
+         clase="actualiza", fecha="2026-10-15T21:00:00+02:00",
+         enlace="https://antxiko.github.io/PennantRace-disassembly/THE-SCREENS.html",
+         titulo=dict(en="The Pro Yakyuu Gekitotsu Pennant Race: the players, animated",
+                     es="The Pro Yakyuu Gekitotsu Pennant Race: los jugadores, animados"),
+         resumen=dict(
+             en="The batter's swing, the pitcher's four styles and the fielders "
+                "and runners on the field, as GIFs built the way the game builds "
+                "them: sprite attributes, colour indices and the patterns it "
+                "copies piece by piece from the VRAM, with the timing of its code. "
+                "Also the Konami logo, the animated intro, the mode menu and the "
+                "pitching signs. Checked byte for byte against the openMSX VRAM.",
+             es="El swing del bateador, los cuatro estilos del lanzador y los "
+                "defensores y corredores en el campo, en GIF montados como los "
+                "monta el juego: atributos de sprite, índices de color y los "
+                "dibujos que copia a trozos dentro de la VRAM, con los tiempos de "
+                "su código. Y el logo de Konami, la presentación animada, el menú "
+                "y los letreros del lanzamiento. Cotejado byte a byte con la VRAM "
+                "de openMSX.")),
     dict(id="pennantrace", clave="pennantrace",
          clase="nuevo", fecha="2026-10-15T20:30:00+02:00",
          titulo=dict(en="The Pro Yakyuu Gekitotsu Pennant Race: Konami's MSX2 baseball, taken apart",

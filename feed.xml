@@ -6,8 +6,16 @@
   <link rel="self" type="application/atom+xml" href="https://antxiko.github.io/feed.xml"/>
   <link rel="alternate" type="text/html" hreflang="en" href="https://antxiko.github.io/"/>
   <link rel="alternate" type="application/atom+xml" hreflang="es" href="https://antxiko.github.io/es/feed.xml"/>
-  <updated>2026-10-15T20:30:00+02:00</updated>
+  <updated>2026-10-15T21:00:00+02:00</updated>
   <author><name>antxiko</name><uri>https://github.com/antxiko</uri></author>
+  <entry>
+    <id>tag:antxiko.github.io,2026:novedad/en/pennantrace-jugadores</id>
+    <title>The Pro Yakyuu Gekitotsu Pennant Race: the players, animated</title>
+    <link rel="alternate" type="text/html" href="https://antxiko.github.io/PennantRace-disassembly/THE-SCREENS.html"/>
+    <published>2026-10-15T21:00:00+02:00</published>
+    <updated>2026-10-15T21:00:00+02:00</updated>
+    <summary type="text">The batter's swing, the pitcher's four styles and the fielders and runners on the field, as GIFs built the way the game builds them: sprite attributes, colour indices and the patterns it copies piece by piece from the VRAM, with the timing of its code. Also the Konami logo, the animated intro, the mode menu and the pitching signs. Checked byte for byte against the openMSX VRAM.</summary>
+  </entry>
   <entry>
     <id>tag:antxiko.github.io,2026:novedad/en/pennantrace</id>
     <title>The Pro Yakyuu Gekitotsu Pennant Race: Konami's MSX2 baseball, taken apart</title>
@@ -156,14 +164,6 @@
     <id>tag:antxiko.github.io,2026:novedad/en/goemon-musica</id>
     <title>Ganbare Goemon: the music, taken from its engine and checked against openMSX</title>
     <link rel="alternate" type="text/html" href="https://antxiko.github.io/GanbareGoemon-disassembly/THE-MUSIC.html"/>
-    <published>2026-10-13T02:32:24+02:00</published>
-    <updated>2026-10-13T02:32:24+02:00</updated>
-    <summary type="text">16 tunes of the cartridge, made by running its own sound engine frame by frame; the PSG writes match openMSX in every frame checked.</summary>
-  </entry>
-  <entry>
-    <id>tag:antxiko.github.io,2026:novedad/en/galious-musica</id>
-    <title>The Maze of Galious: the music, taken from its engine and checked against openMSX</title>
-    <link rel="alternate" type="text/html" href="https://antxiko.github.io/MazeOfGalious-disassembly/THE-MUSIC.html"/>
     <published>2026-10-13T02:32:24+02:00</published>
     <updated>2026-10-13T02:32:24+02:00</updated>
     <summary type="text">16 tunes of the cartridge, made by running its own sound engine frame by frame; the PSG writes match openMSX in every frame checked.</summary>
