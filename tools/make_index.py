@@ -3580,6 +3580,22 @@ MSXON = [
 # nueva a vieja, una clave no existe o un proyecto se queda sin novedad.
 # --------------------------------------------------------------------------
 NOVEDADES = [
+    dict(id="pennantrace-cotejos", clave="pennantrace",
+         clase="actualiza", fecha="2026-10-15T22:00:00+02:00",
+         enlace="https://antxiko.github.io/PennantRace-disassembly/THE-SCREENS.html",
+         titulo=dict(en="The Pro Yakyuu Gekitotsu Pennant Race: the whole field and every sign, checked",
+                     es="The Pro Yakyuu Gekitotsu Pennant Race: todo el campo y todos los letreros, cotejados"),
+         resumen=dict(
+             en="The left and right field zones, which the demo never shows, are "
+                "now checked against the openMSX VRAM from a WATCH game: 256 of 256 "
+                "lines and 248 of 256, the other 8 being the OUT the game writes on "
+                "top. The six pitching signs are checked too, LUCKY 7 by putting the "
+                "seventh inning in RAM before the first pitch.",
+             es="Las zonas izquierda y derecha del campo, que la demostración no "
+                "enseña, ya están cotejadas con la VRAM de openMSX en un partido en "
+                "WATCH: 256 de 256 líneas y 248 de 256, siendo las otras 8 el OUT que "
+                "el juego escribe encima. Y los seis letreros del lanzamiento, LUCKY 7 "
+                "poniendo la séptima entrada en la RAM antes del primer lanzamiento.")),
     dict(id="pennantrace-menus", clave="pennantrace",
          clase="actualiza", fecha="2026-10-15T21:30:00+02:00",
          enlace="https://antxiko.github.io/PennantRace-disassembly/THE-SCREENS.html",
