@@ -2204,10 +2204,10 @@ DESENSAMBLADOS = [
                           f"al <b>43,7 %</b>"),
         ),
         nota=dict(
-            en="26 PSG and SCC tunes from its own engine and 31 pictures drawn "
+            en="26 PSG and SCC tunes from its own engine and 32 pictures drawn "
                "from the ROM, 8 of them animated (the batter, the pitcher, the "
                "fielders, the intro), and the menus, checked against openMSX.",
-            es="26 músicas de PSG y SCC de su propio motor y 31 imágenes dibujadas "
+            es="26 músicas de PSG y SCC de su propio motor y 32 imágenes dibujadas "
                "desde la ROM, 8 animadas (el bateador, el lanzador, los "
                "jugadores, la presentación), y los menús, cotejadas con openMSX.",
         ),
@@ -3580,6 +3580,22 @@ MSXON = [
 # nueva a vieja, una clave no existe o un proyecto se queda sin novedad.
 # --------------------------------------------------------------------------
 NOVEDADES = [
+    dict(id="pennantrace-hoja", clave="pennantrace",
+         clase="actualiza", fecha="2026-10-15T23:00:00+02:00",
+         enlace="https://antxiko.github.io/PennantRace-disassembly/THE-SCREENS.html",
+         titulo=dict(en="The Pro Yakyuu Gekitotsu Pennant Race: the finished-game sheet",
+                     es="The Pro Yakyuu Gekitotsu Pennant Race: la hoja del partido acabado"),
+         resumen=dict(
+             en="The last screen: each team's at-bats, hits, home runs, strikeouts "
+                "and walks, from a CPU against CPU game played to the end in "
+                "openMSX at full speed, and checked at 0 bytes different. Its "
+                "scrambled top band is explained too: the game clears the screen "
+                "in four rectangles and leaves that band with whatever was there.",
+             es="La última pantalla: los bateos, hits, home runs, ponches y bases "
+                "por bolas de cada equipo, de un partido CPU contra CPU jugado hasta "
+                "el final en openMSX a toda velocidad, y cotejada a 0 bytes distintos. "
+                "Y explicado su trozo revuelto de arriba: el juego borra la pantalla en "
+                "cuatro rectángulos y esa franja se queda con lo que había.")),
     dict(id="pennantrace-cambio", clave="pennantrace",
          clase="actualiza", fecha="2026-10-15T22:30:00+02:00",
          enlace="https://antxiko.github.io/PennantRace-disassembly/THE-SCREENS.html",

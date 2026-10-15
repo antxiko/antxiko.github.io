@@ -6,8 +6,16 @@
   <link rel="self" type="application/atom+xml" href="https://antxiko.github.io/feed.xml"/>
   <link rel="alternate" type="text/html" hreflang="en" href="https://antxiko.github.io/"/>
   <link rel="alternate" type="application/atom+xml" hreflang="es" href="https://antxiko.github.io/es/feed.xml"/>
-  <updated>2026-10-15T22:30:00+02:00</updated>
+  <updated>2026-10-15T23:00:00+02:00</updated>
   <author><name>antxiko</name><uri>https://github.com/antxiko</uri></author>
+  <entry>
+    <id>tag:antxiko.github.io,2026:novedad/en/pennantrace-hoja</id>
+    <title>The Pro Yakyuu Gekitotsu Pennant Race: the finished-game sheet</title>
+    <link rel="alternate" type="text/html" href="https://antxiko.github.io/PennantRace-disassembly/THE-SCREENS.html"/>
+    <published>2026-10-15T23:00:00+02:00</published>
+    <updated>2026-10-15T23:00:00+02:00</updated>
+    <summary type="text">The last screen: each team's at-bats, hits, home runs, strikeouts and walks, from a CPU against CPU game played to the end in openMSX at full speed, and checked at 0 bytes different. Its scrambled top band is explained too: the game clears the screen in four rectangles and leaves that band with whatever was there.</summary>
+  </entry>
   <entry>
     <id>tag:antxiko.github.io,2026:novedad/en/pennantrace-cambio</id>
     <title>The Pro Yakyuu Gekitotsu Pennant Race: MEMBER CHANGE and the bases windows</title>
@@ -159,13 +167,5 @@
     <published>2026-10-13T11:00:10+02:00</published>
     <updated>2026-10-13T11:00:10+02:00</updated>
     <summary type="text">4 tunes of the cartridge, made by running its own sound engine frame by frame; the PSG writes match openMSX in every frame checked; the tunes had stalled on a value the game passes in a spare register.</summary>
-  </entry>
-  <entry>
-    <id>tag:antxiko.github.io,2026:novedad/en/twinbee-musica</id>
-    <title>TwinBee: the music, taken from its engine and checked against openMSX</title>
-    <link rel="alternate" type="text/html" href="https://antxiko.github.io/TwinBee-disassembly/THE-MUSIC.html"/>
-    <published>2026-10-13T11:00:10+02:00</published>
-    <updated>2026-10-13T11:00:10+02:00</updated>
-    <summary type="text">33 tunes of the cartridge, made by running its own sound engine frame by frame; the PSG writes match openMSX in every frame checked.</summary>
   </entry>
 </feed>
