@@ -1,13 +1,21 @@
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom" xml:lang="es">
   <title>antxiko — desensamblados comentados de juegos de 8 bits</title>
-  <subtitle>Binarios viejos de 8 bits desmontados byte a byte y comentados, con las herramientas para volver a montarlos: no se afirma nada que el binario no enseñe, y el código fuente tiene que devolver el original, byte a byte. Ahora mismo son 65 juegos de MSX.</subtitle>
+  <subtitle>Binarios viejos de 8 bits desmontados byte a byte y comentados, con las herramientas para volver a montarlos: no se afirma nada que el binario no enseñe, y el código fuente tiene que devolver el original, byte a byte. Ahora mismo son 66 juegos de MSX.</subtitle>
   <id>tag:antxiko.github.io,2026:feed/es</id>
   <link rel="self" type="application/atom+xml" href="https://antxiko.github.io/es/feed.xml"/>
   <link rel="alternate" type="text/html" hreflang="es" href="https://antxiko.github.io/es/"/>
   <link rel="alternate" type="application/atom+xml" hreflang="en" href="https://antxiko.github.io/feed.xml"/>
-  <updated>2026-10-15T00:30:00+02:00</updated>
+  <updated>2026-10-15T20:00:00+02:00</updated>
   <author><name>antxiko</name><uri>https://github.com/antxiko</uri></author>
+  <entry>
+    <id>tag:antxiko.github.io,2026:novedad/es/gamemaster2</id>
+    <title>Konami's Game Master 2: el cartucho de trucos, su SRAM, Tennis and Hockey y un biorritmo, desmontado</title>
+    <link rel="alternate" type="text/html" href="https://antxiko.github.io/GameMaster2-disassembly/"/>
+    <published>2026-10-15T20:00:00+02:00</published>
+    <updated>2026-10-15T20:00:00+02:00</updated>
+    <summary type="text">El cartucho de trucos de Konami de 1987, explicado al 100 % y comentado al 40,1 %. Cómo se cuela en 30 juegos, también los de MSX2, por H.TIMI; sus 68 firmas; el sistema de ficheros de la SRAM; el Tennis and Hockey para dos con sus reglas y nueve músicas, y el biorritmo. 24 pantallas dibujadas desde la ROM en MSX y MSX2, cotejadas con el cartucho ejecutado y con openMSX.</summary>
+  </entry>
   <entry>
     <id>tag:antxiko.github.io,2026:novedad/es/gamemaster-cuentas-67</id>
     <title>Konami's Game Master: las cuentas, rehechas con 67 cartuchos</title>
@@ -159,13 +167,5 @@
     <published>2026-10-13T02:32:24+02:00</published>
     <updated>2026-10-13T02:32:24+02:00</updated>
     <summary type="text">40 músicas del cartucho, sacadas ejecutando su propio motor de sonido cuadro a cuadro; lo que escribe en el PSG casa con openMSX en todos los cuadros cotejados.</summary>
-  </entry>
-  <entry>
-    <id>tag:antxiko.github.io,2026:novedad/es/kingkong2-musica</id>
-    <title>King Kong 2: la música, sacada del motor y cotejada con openMSX</title>
-    <link rel="alternate" type="text/html" href="https://antxiko.github.io/KingKong2-disassembly/THE-MUSIC.html"/>
-    <published>2026-10-13T02:32:24+02:00</published>
-    <updated>2026-10-13T02:32:24+02:00</updated>
-    <summary type="text">22 músicas del cartucho, sacadas ejecutando su propio motor de sonido cuadro a cuadro; lo que escribe en el PSG casa con openMSX en todos los cuadros cotejados.</summary>
   </entry>
 </feed>
