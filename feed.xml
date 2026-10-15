@@ -6,8 +6,16 @@
   <link rel="self" type="application/atom+xml" href="https://antxiko.github.io/feed.xml"/>
   <link rel="alternate" type="text/html" hreflang="en" href="https://antxiko.github.io/"/>
   <link rel="alternate" type="application/atom+xml" hreflang="es" href="https://antxiko.github.io/es/feed.xml"/>
-  <updated>2026-10-15T21:00:00+02:00</updated>
+  <updated>2026-10-15T21:30:00+02:00</updated>
   <author><name>antxiko</name><uri>https://github.com/antxiko</uri></author>
+  <entry>
+    <id>tag:antxiko.github.io,2026:novedad/en/pennantrace-menus</id>
+    <title>The Pro Yakyuu Gekitotsu Pennant Race: the menus</title>
+    <link rel="alternate" type="text/html" href="https://antxiko.github.io/PennantRace-disassembly/THE-SCREENS.html"/>
+    <published>2026-10-15T21:30:00+02:00</published>
+    <updated>2026-10-15T21:30:00+02:00</updated>
+    <summary type="text">Seven more screens drawn from the code: choosing the teams, the starting pitchers, STARTING LINE-UP, TEAM EDIT, LEAGUE SELECTION, the PENNANT round and the results and standings, with its four-step long division for the percentage. Each one checked against the openMSX VRAM at 0 bytes different. Also: the pitching screen now matches in 818 of 864 blocks, after fixing how a VDP LINE is drawn.</summary>
+  </entry>
   <entry>
     <id>tag:antxiko.github.io,2026:novedad/en/pennantrace-jugadores</id>
     <title>The Pro Yakyuu Gekitotsu Pennant Race: the players, animated</title>
@@ -159,13 +167,5 @@
     <published>2026-10-13T02:32:24+02:00</published>
     <updated>2026-10-13T02:32:24+02:00</updated>
     <summary type="text">28 tunes of the cartridge, made by running its own sound engine frame by frame; the PSG writes match openMSX in every frame checked.</summary>
-  </entry>
-  <entry>
-    <id>tag:antxiko.github.io,2026:novedad/en/goemon-musica</id>
-    <title>Ganbare Goemon: the music, taken from its engine and checked against openMSX</title>
-    <link rel="alternate" type="text/html" href="https://antxiko.github.io/GanbareGoemon-disassembly/THE-MUSIC.html"/>
-    <published>2026-10-13T02:32:24+02:00</published>
-    <updated>2026-10-13T02:32:24+02:00</updated>
-    <summary type="text">16 tunes of the cartridge, made by running its own sound engine frame by frame; the PSG writes match openMSX in every frame checked.</summary>
   </entry>
 </feed>

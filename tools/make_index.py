@@ -2204,12 +2204,12 @@ DESENSAMBLADOS = [
                           f"al <b>43,7 %</b>"),
         ),
         nota=dict(
-            en="26 PSG and SCC tunes from its own engine and 22 pictures drawn "
+            en="26 PSG and SCC tunes from its own engine and 29 pictures drawn "
                "from the ROM, 8 of them animated (the batter, the pitcher, the "
-               "fielders, the intro), checked against openMSX.",
-            es="26 músicas de PSG y SCC de su propio motor y 22 imágenes dibujadas "
+               "fielders, the intro), and the menus, checked against openMSX.",
+            es="26 músicas de PSG y SCC de su propio motor y 29 imágenes dibujadas "
                "desde la ROM, 8 animadas (el bateador, el lanzador, los "
-               "jugadores, la presentación), cotejadas con openMSX.",
+               "jugadores, la presentación), y los menús, cotejadas con openMSX.",
         ),
     ),
     dict(
@@ -3580,6 +3580,26 @@ MSXON = [
 # nueva a vieja, una clave no existe o un proyecto se queda sin novedad.
 # --------------------------------------------------------------------------
 NOVEDADES = [
+    dict(id="pennantrace-menus", clave="pennantrace",
+         clase="actualiza", fecha="2026-10-15T21:30:00+02:00",
+         enlace="https://antxiko.github.io/PennantRace-disassembly/THE-SCREENS.html",
+         titulo=dict(en="The Pro Yakyuu Gekitotsu Pennant Race: the menus",
+                     es="The Pro Yakyuu Gekitotsu Pennant Race: los menús"),
+         resumen=dict(
+             en="Seven more screens drawn from the code: choosing the teams, the "
+                "starting pitchers, STARTING LINE-UP, TEAM EDIT, LEAGUE SELECTION, "
+                "the PENNANT round and the results and standings, with its "
+                "four-step long division for the percentage. Each one checked "
+                "against the openMSX VRAM at 0 bytes different. Also: the pitching "
+                "screen now matches in 818 of 864 blocks, after fixing how a VDP "
+                "LINE is drawn.",
+             es="Siete pantallas más dibujadas desde el código: la elección de "
+                "equipos, los lanzadores iniciales, STARTING LINE-UP, TEAM EDIT, "
+                "LEAGUE SELECTION, la jornada de PENNANT y los resultados y la "
+                "clasificación, con su división larga para el porcentaje. Cada una "
+                "cotejada con la VRAM de openMSX a 0 bytes distintos. Y la pantalla "
+                "del lanzamiento coincide ahora en 818 de 864 bloques, tras "
+                "corregir cómo se pinta un LINE del VDP.")),
     dict(id="pennantrace-jugadores", clave="pennantrace",
          clase="actualiza", fecha="2026-10-15T21:00:00+02:00",
          enlace="https://antxiko.github.io/PennantRace-disassembly/THE-SCREENS.html",
