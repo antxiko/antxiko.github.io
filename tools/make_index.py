@@ -2173,6 +2173,44 @@ DESENSAMBLADOS = [
         ),
     ),
     dict(
+        clave="pennantrace",
+        grupo="konami",
+        titulo="The Pro Yakyuu Gekitotsu Pennant Race",
+        anio=1988,
+        repo="https://github.com/antxiko/PennantRace-disassembly",
+        web="https://antxiko.github.io/PennantRace-disassembly/",
+        meta=dict(
+            en="Konami &middot; MSX2 &middot; 128 KB MegaROM with SCC &middot; RC-757",
+            es="Konami &middot; MSX2 &middot; MegaROM de 128 KB con SCC &middot; RC-757",
+        ),
+        claim=dict(
+            en="Konami's <b>MSX2 baseball</b>: six teams, a <b>PENNANT</b> league "
+               "and <b>TEAM EDIT</b>, which saves to disk or to the <b>Game Master "
+               "2</b>'s SRAM. The rules, as the code has them.",
+            es="El <b>béisbol de Konami para MSX2</b>: seis equipos, una liga "
+               "<b>PENNANT</b> y <b>TEAM EDIT</b>, que graba en disco o en la SRAM "
+               "del <b>Game Master 2</b>. Las reglas, como las tiene el código.",
+        ),
+        datos=dict(
+            en=lambda i: (f"{cif(131072, i)} bytes &middot; <b>0</b> unexplained "
+                          f"&middot; reassembles <b>byte for byte</b> &middot; "
+                          f"{cif(50191, i)} of code, {cif(80881, i)} of data "
+                          f"&middot; {cif(2933, i)} routines &middot; commented "
+                          f"to <b>43.7%</b>"),
+            es=lambda i: (f"{cif(131072, i)} bytes &middot; <b>0</b> sin explicar "
+                          f"&middot; reensambla <b>byte a byte</b> &middot; "
+                          f"{cif(50191, i)} de código, {cif(80881, i)} de datos "
+                          f"&middot; {cif(2933, i)} rutinas &middot; comentado "
+                          f"al <b>43,7 %</b>"),
+        ),
+        nota=dict(
+            en="26 PSG and SCC tunes from its own engine and 6 pictures drawn from "
+               "the ROM, checked against openMSX.",
+            es="26 músicas de PSG y SCC de su propio motor y 6 imágenes dibujadas "
+               "desde la ROM, cotejadas con openMSX.",
+        ),
+    ),
+    dict(
         clave="goonies",
         grupo="konami",
         titulo="The Goonies",
@@ -3540,6 +3578,24 @@ MSXON = [
 # nueva a vieja, una clave no existe o un proyecto se queda sin novedad.
 # --------------------------------------------------------------------------
 NOVEDADES = [
+    dict(id="pennantrace", clave="pennantrace",
+         clase="nuevo", fecha="2026-10-15T20:30:00+02:00",
+         titulo=dict(en="The Pro Yakyuu Gekitotsu Pennant Race: Konami's MSX2 baseball, taken apart",
+                     es="The Pro Yakyuu Gekitotsu Pennant Race: el béisbol de Konami para MSX2, desmontado"),
+         resumen=dict(
+             en="Konami's 1988 MSX2 baseball, 100% explained and commented to "
+                "43.7%. The six teams with their cards, the rules as the code has "
+                "them (the ten-run rule, pitch speeds of 80 to 199 km/h, the TEAM "
+                "EDIT caps), the PENNANT league and how it saves to disk or to the "
+                "Game Master 2's SRAM. 26 PSG and SCC tunes from its own engine "
+                "and 6 pictures drawn from the ROM, checked against openMSX.",
+             es="El béisbol de Konami para MSX2 de 1988, explicado al 100 % y "
+                "comentado al 43,7 %. Los seis equipos con sus fichas, las reglas "
+                "como las tiene el código (las diez carreras, lanzamientos de 80 a "
+                "199 km/h, los topes de TEAM EDIT), la liga PENNANT y cómo graba en "
+                "disco o en la SRAM del Game Master 2. 26 músicas de PSG y SCC de "
+                "su propio motor y 6 imágenes dibujadas desde la ROM, cotejadas con "
+                "openMSX.")),
     dict(id="gamemaster2", clave="gamemaster2",
          clase="nuevo", fecha="2026-10-15T20:00:00+02:00",
          titulo=dict(en="Konami's Game Master 2: the cheat cartridge, its SRAM, Tennis and Hockey and a biorhythm, taken apart",
