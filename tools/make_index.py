@@ -2133,6 +2133,46 @@ DESENSAMBLADOS = [
         ),
     ),
     dict(
+        clave="gamemaster2",
+        grupo="konami",
+        titulo="Konami&rsquo;s Game Master 2",
+        anio=1987,
+        repo="https://github.com/antxiko/GameMaster2-disassembly",
+        web="https://antxiko.github.io/GameMaster2-disassembly/",
+        meta=dict(
+            en="Konami &middot; MSX &middot; 128 KB cartridge with SRAM &middot; RC-755",
+            es="Konami &middot; MSX &middot; cartucho de 128 KB con SRAM &middot; RC-755",
+        ),
+        claim=dict(
+            en="The <b>cheat cartridge</b>, second round: it gets into "
+               "<b>30 games</b>, MSX2 ones too, saves to disk or to its own "
+               "<b>SRAM</b>, and on its own brings a two-player <b>Tennis and "
+               "Hockey</b> and a <b>biorhythm</b>.",
+            es="El <b>cartucho de trucos</b>, segunda parte: se cuela en "
+               "<b>30 juegos</b>, también de MSX2, graba en disco o en su propia "
+               "<b>SRAM</b> y, solo, trae un <b>Tennis and Hockey</b> para dos y "
+               "un <b>biorritmo</b>.",
+        ),
+        datos=dict(
+            en=lambda i: (f"{cif(131072, i)} bytes &middot; <b>0</b> unexplained "
+                          f"&middot; reassembles <b>byte for byte</b> &middot; "
+                          f"{cif(36633, i)} of code, {cif(94439, i)} of data "
+                          f"&middot; {cif(2338, i)} routines &middot; commented "
+                          f"to <b>40.1%</b>"),
+            es=lambda i: (f"{cif(131072, i)} bytes &middot; <b>0</b> sin explicar "
+                          f"&middot; reensambla <b>byte a byte</b> &middot; "
+                          f"{cif(36633, i)} de código, {cif(94439, i)} de datos "
+                          f"&middot; {cif(2338, i)} rutinas &middot; comentado "
+                          f"al <b>40,1 %</b>"),
+        ),
+        nota=dict(
+            en="24 screens drawn from the ROM, on MSX and MSX2, and nine tunes "
+               "from its own engine, all checked against openMSX.",
+            es="24 pantallas dibujadas desde la ROM, en MSX y en MSX2, y nueve "
+               "músicas de su propio motor, todo cotejado con openMSX.",
+        ),
+    ),
+    dict(
         clave="goonies",
         grupo="konami",
         titulo="The Goonies",
@@ -3500,6 +3540,23 @@ MSXON = [
 # nueva a vieja, una clave no existe o un proyecto se queda sin novedad.
 # --------------------------------------------------------------------------
 NOVEDADES = [
+    dict(id="gamemaster2", clave="gamemaster2",
+         clase="nuevo", fecha="2026-10-15T20:00:00+02:00",
+         titulo=dict(en="Konami's Game Master 2: the cheat cartridge, its SRAM, Tennis and Hockey and a biorhythm, taken apart",
+                     es="Konami's Game Master 2: el cartucho de trucos, su SRAM, Tennis and Hockey y un biorritmo, desmontado"),
+         resumen=dict(
+             en="Konami's 1987 cheat cartridge, 100% explained and commented to "
+                "40.1%. How it gets into 30 games, MSX2 ones too, through H.TIMI; "
+                "its 68 signatures; the SRAM file system; the two-player Tennis "
+                "and Hockey with its rules and nine tunes; and the biorhythm. 24 "
+                "screens drawn from the ROM on MSX and MSX2, checked against the "
+                "running cartridge and openMSX.",
+             es="El cartucho de trucos de Konami de 1987, explicado al 100 % y "
+                "comentado al 40,1 %. Cómo se cuela en 30 juegos, también los de "
+                "MSX2, por H.TIMI; sus 68 firmas; el sistema de ficheros de la "
+                "SRAM; el Tennis and Hockey para dos con sus reglas y nueve "
+                "músicas, y el biorritmo. 24 pantallas dibujadas desde la ROM en "
+                "MSX y MSX2, cotejadas con el cartucho ejecutado y con openMSX.")),
     dict(id="gamemaster-cuentas-67", clave="gamemaster",
          clase="actualiza", fecha="2026-10-15T00:30:00+02:00",
          enlace="https://antxiko.github.io/GameMaster-disassembly/FINDINGS.html",
