@@ -6,8 +6,16 @@
   <link rel="self" type="application/atom+xml" href="https://antxiko.github.io/es/feed.xml"/>
   <link rel="alternate" type="text/html" hreflang="es" href="https://antxiko.github.io/es/"/>
   <link rel="alternate" type="application/atom+xml" hreflang="en" href="https://antxiko.github.io/feed.xml"/>
-  <updated>2026-10-17T11:07:59+02:00</updated>
+  <updated>2026-10-17T11:22:06+02:00</updated>
   <author><name>antxiko</name><uri>https://github.com/antxiko</uri></author>
+  <entry>
+    <id>tag:antxiko.github.io,2026:novedad/es/salamander-jefes</id>
+    <title>Salamander - Operation X: los jefes, con su nombre</title>
+    <link rel="alternate" type="text/html" href="https://antxiko.github.io/Salamander-disassembly/THE-BOSSES.html"/>
+    <published>2026-10-17T11:22:06+02:00</published>
+    <updated>2026-10-17T11:22:06+02:00</updated>
+    <summary type="text">El cartucho no nombra a sus jefes, pero la versión MSX tiene los suyos: Golem, Cruiser Tetran, Center Core, Dead End, Seducer, Enigma, Outer Limits y Metal Slave. Cada uno va con su jefe por la fase, sacada de los rótulos de la ROM, y por cómo es.</summary>
+  </entry>
   <entry>
     <id>tag:antxiko.github.io,2026:novedad/es/salamander-galerias</id>
     <title>Salamander - Operation X: todos los recorridos, enemigos y jefes en su página</title>
@@ -159,13 +167,5 @@
     <published>2026-10-14T12:00:00+02:00</published>
     <updated>2026-10-14T12:00:00+02:00</updated>
     <summary type="text">Lo que pedía theNestruo en el issue #1: una página nueva con todo el japonés de la ROM (los tenderos, los dados, la posada, las frases y los consejos en verso del viejo, lo que dice cada señor, los cuatro finales y las palabras secretas), cada texto con su dirección, quién lo pide en el código y una traducción al castellano y al inglés. Medido: solo hay dos rótulos que no pide nadie, y una frase acaba con un 0xFF antes de su cuarto renglón, que sigue en la ROM sin nadie que lo apunte.</summary>
-  </entry>
-  <entry>
-    <id>tag:antxiko.github.io,2026:novedad/es/metalgear-issue1-textos</id>
-    <title>Metal Gear: todos los textos en japonés e inglés, uno al lado del otro</title>
-    <link rel="alternate" type="text/html" href="https://antxiko.github.io/MetalGear-disassembly/THE-TEXTS.html"/>
-    <published>2026-10-13T22:30:00+02:00</published>
-    <updated>2026-10-13T22:30:00+02:00</updated>
-    <summary type="text">Lo que pedía theNestruo en el issue #1: una página nueva con los 159 textos sacados de la ROM inglesa y de la japonesa, más una traducción del japonés. La inglesa vació 69 (todos los «has conseguido...», Big Boss sobre cada objeto, las bromas de Steve sobre Diane) y, medido en el código, no los pide nunca. Además, el bloqueo de región de la japonesa, que la inglesa cambió por un ret suelto.</summary>
   </entry>
 </feed>

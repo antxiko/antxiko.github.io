@@ -3623,6 +3623,20 @@ MSXON = [
 # nueva a vieja, una clave no existe o un proyecto se queda sin novedad.
 # --------------------------------------------------------------------------
 NOVEDADES = [
+    dict(id="salamander-jefes", clave="salamander",
+         clase="actualiza", fecha="2026-10-17T11:22:06+02:00",
+         enlace="https://antxiko.github.io/Salamander-disassembly/THE-BOSSES.html",
+         titulo=dict(en="Salamander - Operation X: the bosses get their names",
+                     es="Salamander - Operation X: los jefes, con su nombre"),
+         resumen=dict(
+             en="The cartridge does not name its bosses, but the MSX version has its "
+                "own: Golem, Cruiser Tetran, Center Core, Dead End, Seducer, Enigma, "
+                "Outer Limits and Metal Slave. Each one is matched to its boss by the "
+                "stage, taken from the ROM's cards, and by its look.",
+             es="El cartucho no nombra a sus jefes, pero la versión MSX tiene los suyos: "
+                "Golem, Cruiser Tetran, Center Core, Dead End, Seducer, Enigma, Outer "
+                "Limits y Metal Slave. Cada uno va con su jefe por la fase, sacada de los "
+                "rótulos de la ROM, y por cómo es.")),
     dict(id="salamander-galerias", clave="salamander",
          clase="actualiza", fecha="2026-10-17T11:07:59+02:00",
          enlace="https://antxiko.github.io/Salamander-disassembly/THE-STAGES.html",
