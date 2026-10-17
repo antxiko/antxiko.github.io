@@ -6,8 +6,16 @@
   <link rel="self" type="application/atom+xml" href="https://antxiko.github.io/es/feed.xml"/>
   <link rel="alternate" type="text/html" hreflang="es" href="https://antxiko.github.io/es/"/>
   <link rel="alternate" type="application/atom+xml" hreflang="en" href="https://antxiko.github.io/feed.xml"/>
-  <updated>2026-10-17T11:22:06+02:00</updated>
+  <updated>2026-10-17T11:25:40+02:00</updated>
   <author><name>antxiko</name><uri>https://github.com/antxiko</uri></author>
+  <entry>
+    <id>tag:antxiko.github.io,2026:novedad/es/salamander-enemigos</id>
+    <title>Salamander - Operation X: enemigos con nombre de grupo de heavy</title>
+    <link rel="alternate" type="text/html" href="https://antxiko.github.io/Salamander-disassembly/THE-ENEMIES.html"/>
+    <published>2026-10-17T11:25:40+02:00</published>
+    <updated>2026-10-17T11:25:40+02:00</updated>
+    <summary type="text">En la versión MSX los enemigos llevan nombres de grupos de heavy metal: Celtic Frost, Nuclear Assault, M.O.D., Leper Messiah, Led Zep, Ozzy, Exodus... La página de los enemigos trae ya los 43, cada uno con el enemigo de la serie al que corresponde.</summary>
+  </entry>
   <entry>
     <id>tag:antxiko.github.io,2026:novedad/es/salamander-jefes</id>
     <title>Salamander - Operation X: los jefes, con su nombre</title>
@@ -159,13 +167,5 @@
     <published>2026-10-14T13:00:00+02:00</published>
     <updated>2026-10-14T13:00:00+02:00</updated>
     <summary type="text">La página de los textos salió rota: de los 159 textos y de los nombres de armas y objetos solo se veía la cabecera de la tabla, y cada fila iba debajo como un párrafo suelto lleno de barras. Ahora cada una es una tabla, y también los 23 rótulos. Los textos no cambian.</summary>
-  </entry>
-  <entry>
-    <id>tag:antxiko.github.io,2026:novedad/es/goemon-issue1-textos</id>
-    <title>Ganbare Goemon: todos los textos del cartucho, traducidos</title>
-    <link rel="alternate" type="text/html" href="https://antxiko.github.io/GanbareGoemon-disassembly/THE-TEXTS.html"/>
-    <published>2026-10-14T12:00:00+02:00</published>
-    <updated>2026-10-14T12:00:00+02:00</updated>
-    <summary type="text">Lo que pedía theNestruo en el issue #1: una página nueva con todo el japonés de la ROM (los tenderos, los dados, la posada, las frases y los consejos en verso del viejo, lo que dice cada señor, los cuatro finales y las palabras secretas), cada texto con su dirección, quién lo pide en el código y una traducción al castellano y al inglés. Medido: solo hay dos rótulos que no pide nadie, y una frase acaba con un 0xFF antes de su cuarto renglón, que sigue en la ROM sin nadie que lo apunte.</summary>
   </entry>
 </feed>
