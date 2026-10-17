@@ -2213,6 +2213,50 @@ DESENSAMBLADOS = [
         ),
     ),
     dict(
+        clave="parodius",
+        grupo="konami",
+        titulo="Parodius",
+        anio=1988,
+        repo="https://github.com/antxiko/Parodius-disassembly",
+        web="https://antxiko.github.io/Parodius-disassembly/",
+        meta=dict(
+            en="Konami &middot; MSX &middot; 128 KB MegaROM with SCC &middot; RC-759",
+            es="Konami &middot; MSX &middot; MegaROM de 128 KB con SCC &middot; RC-759",
+        ),
+        claim=dict(
+            en="Konami's <b>Parodius</b> for MSX: Tako the octopus and four more "
+               "characters, six stages and <b>three secret ones</b>, explosions "
+               "that shout in kana, <b>words to type in the pause</b> and the game "
+               "saved on the <b>Game Master 2</b>.",
+            es="El <b>Parodius</b> de Konami para MSX: Tako el pulpo y cuatro "
+               "personajes más, seis fases y <b>tres secretas</b>, explosiones que "
+               "gritan en kana, <b>palabras que se teclean en la pausa</b> y la "
+               "partida grabada en el <b>Game Master 2</b>.",
+        ),
+        datos=dict(
+            en=lambda i: (f"{cif(131072, i)} bytes &middot; <b>0</b> unexplained "
+                          f"&middot; reassembles <b>byte for byte</b> &middot; "
+                          f"{cif(35953, i)} of code, {cif(95119, i)} of data "
+                          f"&middot; {cif(2385, i)} routines &middot; commented "
+                          f"to <b>40.1%</b>"),
+            es=lambda i: (f"{cif(131072, i)} bytes &middot; <b>0</b> sin explicar "
+                          f"&middot; reensambla <b>byte a byte</b> &middot; "
+                          f"{cif(35953, i)} de código, {cif(95119, i)} de datos "
+                          f"&middot; {cif(2385, i)} rutinas &middot; comentado "
+                          f"al <b>40,1 %</b>"),
+        ),
+        nota=dict(
+            en="Every stage map, the five characters with all their weapons, the "
+               "bosses, the enemies, the intro and the ending drawn from the ROM, "
+               "and 18 PSG and SCC tunes from its own engine, all checked against "
+               "openMSX.",
+            es="Los mapas de todas las fases, los cinco personajes con todas sus "
+               "armas, los jefes, los enemigos, la presentación y el final dibujados "
+               "desde la ROM, y 18 músicas de PSG y SCC de su propio motor, todo "
+               "cotejado con openMSX.",
+        ),
+    ),
+    dict(
         clave="salamander",
         grupo="konami",
         titulo="Salamander - Operation X",
@@ -3623,6 +3667,25 @@ MSXON = [
 # nueva a vieja, una clave no existe o un proyecto se queda sin novedad.
 # --------------------------------------------------------------------------
 NOVEDADES = [
+    dict(id="parodius", clave="parodius",
+         clase="nuevo", fecha="2026-10-17T20:28:28+02:00",
+         titulo=dict(en="Parodius: Tako saves the Earth, taken apart",
+                     es="Parodius: Tako salva la Tierra, desmontado"),
+         resumen=dict(
+             en="Konami's 1988 Parodius for MSX, 100% explained and commented to "
+                "40.1%. The six stages and the three secret ones with their whole "
+                "maps, the five characters with every weapon firing, the six bosses, "
+                "the explosions that shout in kana, the words you can type in the "
+                "pause, the game saved on the Game Master 2, the intro and the "
+                "ending translated, and 18 PSG and SCC tunes from its own engine; "
+                "everything checked against openMSX.",
+             es="El Parodius de Konami para MSX de 1988, explicado al 100 % y "
+                "comentado al 40,1 %. Las seis fases y las tres secretas con sus "
+                "mapas enteros, los cinco personajes con cada arma disparando, los "
+                "seis jefes, las explosiones que gritan en kana, las palabras que se "
+                "teclean en la pausa, la partida grabada en el Game Master 2, la "
+                "presentación y el final traducidos, y 18 músicas de PSG y SCC de su "
+                "propio motor; todo cotejado con openMSX.")),
     dict(id="salamander-enemigos", clave="salamander",
          clase="actualiza", fecha="2026-10-17T11:25:40+02:00",
          enlace="https://antxiko.github.io/Salamander-disassembly/THE-ENEMIES.html",
