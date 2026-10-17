@@ -6,12 +6,20 @@
   <link rel="self" type="application/atom+xml" href="https://antxiko.github.io/feed.xml"/>
   <link rel="alternate" type="text/html" hreflang="en" href="https://antxiko.github.io/"/>
   <link rel="alternate" type="application/atom+xml" hreflang="es" href="https://antxiko.github.io/es/feed.xml"/>
-  <updated>2026-10-17T10:38:38+02:00</updated>
+  <updated>2026-10-17T10:57:04+02:00</updated>
   <author><name>antxiko</name><uri>https://github.com/antxiko</uri></author>
+  <entry>
+    <id>tag:antxiko.github.io,2026:novedad/en/salamander-paginas</id>
+    <title>Salamander - Operation X: the web in three blocks</title>
+    <link rel="alternate" type="text/html" href="https://antxiko.github.io/Salamander-disassembly/"/>
+    <published>2026-10-17T10:57:04+02:00</published>
+    <updated>2026-10-17T10:57:04+02:00</updated>
+    <summary type="text">The pages are rearranged: first the game (the stages, the ship and its weapons, the enemies, the bosses, the sequences, the music and the texts), then the curiosities, and at the end what is under the hood. The home page keeps the numbers and the list of pages. The old addresses lead to the new pages.</summary>
+  </entry>
   <entry>
     <id>tag:antxiko.github.io,2026:novedad/en/salamander-armas</id>
     <title>Salamander - Operation X: the intro, the story and every weapon, animated</title>
-    <link rel="alternate" type="text/html" href="https://antxiko.github.io/Salamander-disassembly/THE-GAME.html"/>
+    <link rel="alternate" type="text/html" href="https://antxiko.github.io/Salamander-disassembly/THE-SHIP.html"/>
     <published>2026-10-17T10:38:38+02:00</published>
     <updated>2026-10-17T10:38:38+02:00</updated>
     <summary type="text">The intro, the whole story and the take-off as animations, every frame painted from openMSX's VRAM the way the TMS9918 paints it. The seven gauge boxes with the names of their weapons taken from the ROM, and the ship firing each one: NORMAL, TWIN, TRIPLE, the missiles, RIPPLE, ARMING, LASER, METEO, SCREW, the options, the F.FIELD and the bombs. Plus the capsules and the six items enemies drop. The bosses have no names in the cartridge, in English or Japanese. And the Konami screen gets its blue background back.</summary>
@@ -159,13 +167,5 @@
     <published>2026-10-13T20:06:47+02:00</published>
     <updated>2026-10-13T20:06:47+02:00</updated>
     <summary type="text">What theNestruo asked for in issue #2: the eight weapons and twenty-five items with their drawings and their names in the game's font, and the two alerts, "!" and "!!", which were cut in half. The transceiver has a single portrait, Snake's; now it talks, with the three mouth drawings the code picks letter by letter.</summary>
-  </entry>
-  <entry>
-    <id>tag:antxiko.github.io,2026:novedad/en/comicbakery-issue1-tienda</id>
-    <title>Comic Bakery: the shop at the end of each day</title>
-    <link rel="alternate" type="text/html" href="https://antxiko.github.io/ComicBakery-disassembly/THE-GAME.html"/>
-    <published>2026-10-13T19:49:49+02:00</published>
-    <updated>2026-10-13T19:49:49+02:00</updated>
-    <summary type="text">As theNestruo asked in issue #1: the scene with the children at the BAKERY SHOP counter. The baker pushes in the cart, each child gets a loaf, a bonus of 600 per loaf is paid and the balloon on the roof says HEY, NICE or FINE depending on the loaves. With fewer than four, it says how many are missing and a life is lost. Taken by running the cartridge, frame by frame, with ten loaves and with three.</summary>
   </entry>
 </feed>

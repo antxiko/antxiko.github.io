@@ -3623,9 +3623,24 @@ MSXON = [
 # nueva a vieja, una clave no existe o un proyecto se queda sin novedad.
 # --------------------------------------------------------------------------
 NOVEDADES = [
+    dict(id="salamander-paginas", clave="salamander",
+         clase="actualiza", fecha="2026-10-17T10:57:04+02:00",
+         titulo=dict(en="Salamander - Operation X: the web in three blocks",
+                     es="Salamander - Operation X: la web en tres bloques"),
+         resumen=dict(
+             en="The pages are rearranged: first the game (the stages, the ship and "
+                "its weapons, the enemies, the bosses, the sequences, the music and "
+                "the texts), then the curiosities, and at the end what is under the "
+                "hood. The home page keeps the numbers and the list of pages. The old "
+                "addresses lead to the new pages.",
+             es="Las páginas se reordenan: primero el juego (las fases, la nave y sus "
+                "armas, los enemigos, los jefes, las secuencias, la música y los "
+                "textos), después las curiosidades y al final lo de por dentro. La "
+                "portada se queda con las cifras y la lista de páginas. Las "
+                "direcciones de antes llevan a las páginas nuevas.")),
     dict(id="salamander-armas", clave="salamander",
          clase="actualiza", fecha="2026-10-17T10:38:38+02:00",
-         enlace="https://antxiko.github.io/Salamander-disassembly/THE-GAME.html",
+         enlace="https://antxiko.github.io/Salamander-disassembly/THE-SHIP.html",
          titulo=dict(en="Salamander - Operation X: the intro, the story and every weapon, animated",
                      es="Salamander - Operation X: la presentación, la historia y todas las armas, animadas"),
          resumen=dict(
