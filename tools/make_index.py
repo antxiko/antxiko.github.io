@@ -3623,6 +3623,20 @@ MSXON = [
 # nueva a vieja, una clave no existe o un proyecto se queda sin novedad.
 # --------------------------------------------------------------------------
 NOVEDADES = [
+    dict(id="salamander-enemigos", clave="salamander",
+         clase="actualiza", fecha="2026-10-17T11:25:40+02:00",
+         enlace="https://antxiko.github.io/Salamander-disassembly/THE-ENEMIES.html",
+         titulo=dict(en="Salamander - Operation X: enemies named after metal bands",
+                     es="Salamander - Operation X: enemigos con nombre de grupo de heavy"),
+         resumen=dict(
+             en="In the MSX version the enemies carry heavy metal band names: Celtic "
+                "Frost, Nuclear Assault, M.O.D., Leper Messiah, Led Zep, Ozzy, Exodus... "
+                "The enemies page now lists all 43, each with the series enemy it "
+                "matches.",
+             es="En la versión MSX los enemigos llevan nombres de grupos de heavy metal: "
+                "Celtic Frost, Nuclear Assault, M.O.D., Leper Messiah, Led Zep, Ozzy, "
+                "Exodus... La página de los enemigos trae ya los 43, cada uno con el "
+                "enemigo de la serie al que corresponde.")),
     dict(id="salamander-jefes", clave="salamander",
          clase="actualiza", fecha="2026-10-17T11:22:06+02:00",
          enlace="https://antxiko.github.io/Salamander-disassembly/THE-BOSSES.html",
