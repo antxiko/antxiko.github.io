@@ -6,8 +6,16 @@
   <link rel="self" type="application/atom+xml" href="https://antxiko.github.io/feed.xml"/>
   <link rel="alternate" type="text/html" hreflang="en" href="https://antxiko.github.io/"/>
   <link rel="alternate" type="application/atom+xml" hreflang="es" href="https://antxiko.github.io/es/feed.xml"/>
-  <updated>2026-10-17T10:02:00+02:00</updated>
+  <updated>2026-10-17T10:38:38+02:00</updated>
   <author><name>antxiko</name><uri>https://github.com/antxiko</uri></author>
+  <entry>
+    <id>tag:antxiko.github.io,2026:novedad/en/salamander-armas</id>
+    <title>Salamander - Operation X: the intro, the story and every weapon, animated</title>
+    <link rel="alternate" type="text/html" href="https://antxiko.github.io/Salamander-disassembly/THE-GAME.html"/>
+    <published>2026-10-17T10:38:38+02:00</published>
+    <updated>2026-10-17T10:38:38+02:00</updated>
+    <summary type="text">The intro, the whole story and the take-off as animations, every frame painted from openMSX's VRAM the way the TMS9918 paints it. The seven gauge boxes with the names of their weapons taken from the ROM, and the ship firing each one: NORMAL, TWIN, TRIPLE, the missiles, RIPPLE, ARMING, LASER, METEO, SCREW, the options, the F.FIELD and the bombs. Plus the capsules and the six items enemies drop. The bosses have no names in the cartridge, in English or Japanese. And the Konami screen gets its blue background back.</summary>
+  </entry>
   <entry>
     <id>tag:antxiko.github.io,2026:novedad/en/salamander-juego</id>
     <title>Salamander - Operation X: the game page, tidied up</title>
@@ -159,13 +167,5 @@
     <published>2026-10-13T19:49:49+02:00</published>
     <updated>2026-10-13T19:49:49+02:00</updated>
     <summary type="text">As theNestruo asked in issue #1: the scene with the children at the BAKERY SHOP counter. The baker pushes in the cart, each child gets a loaf, a bonus of 600 per loaf is paid and the balloon on the roof says HEY, NICE or FINE depending on the loaves. With fewer than four, it says how many are missing and a life is lost. Taken by running the cartridge, frame by frame, with ten loaves and with three.</summary>
-  </entry>
-  <entry>
-    <id>tag:antxiko.github.io,2026:novedad/en/goemon-issue4-sprites-or</id>
-    <title>Ganbare Goemon: the enemies get their third colour</title>
-    <link rel="alternate" type="text/html" href="https://antxiko.github.io/GanbareGoemon-disassembly/THE-GAME.html"/>
-    <published>2026-10-13T19:11:03+02:00</published>
-    <updated>2026-10-13T19:11:03+02:00</updated>
-    <summary type="text">theNestruo saw it in issue #4: on the web the enemies had two colours and in the game three or more. The sprite drawing dropped the CC bit (0x40) of the colour; the game uses it so that a sprite joins the one before it and their colours mix with OR where they overlap. Drawn now as the V9938 does it: the rat is brown, the scroll carrier white and black, the bandit red and black.</summary>
   </entry>
 </feed>

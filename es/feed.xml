@@ -6,8 +6,16 @@
   <link rel="self" type="application/atom+xml" href="https://antxiko.github.io/es/feed.xml"/>
   <link rel="alternate" type="text/html" hreflang="es" href="https://antxiko.github.io/es/"/>
   <link rel="alternate" type="application/atom+xml" hreflang="en" href="https://antxiko.github.io/feed.xml"/>
-  <updated>2026-10-17T10:02:00+02:00</updated>
+  <updated>2026-10-17T10:38:38+02:00</updated>
   <author><name>antxiko</name><uri>https://github.com/antxiko</uri></author>
+  <entry>
+    <id>tag:antxiko.github.io,2026:novedad/es/salamander-armas</id>
+    <title>Salamander - Operation X: la presentación, la historia y todas las armas, animadas</title>
+    <link rel="alternate" type="text/html" href="https://antxiko.github.io/Salamander-disassembly/THE-GAME.html"/>
+    <published>2026-10-17T10:38:38+02:00</published>
+    <updated>2026-10-17T10:38:38+02:00</updated>
+    <summary type="text">La presentación, la historia entera y el despegue animados, cada cuadro pintado desde la VRAM de openMSX como lo pinta el TMS9918. Las siete casillas del marcador con los nombres de sus armas sacados de la ROM, y la nave disparando cada una: NORMAL, TWIN, TRIPLE, los misiles, RIPPLE, ARMING, LASER, METEO, SCREW, las opciones, el F.FIELD y las bombas. Y las cápsulas y los seis objetos que sueltan los enemigos. Los jefes no tienen nombre en el cartucho, ni en inglés ni en japonés. Y la pantalla de Konami recupera su fondo azul.</summary>
+  </entry>
   <entry>
     <id>tag:antxiko.github.io,2026:novedad/es/salamander-juego</id>
     <title>Salamander - Operation X: la página del juego, ordenada</title>
@@ -159,13 +167,5 @@
     <published>2026-10-13T19:49:49+02:00</published>
     <updated>2026-10-13T19:49:49+02:00</updated>
     <summary type="text">Como pedía theNestruo en el issue #1: la escena de los niños en el mostrador de la BAKERY SHOP. El panadero mete el carro, cada niño recibe un pan, se cobran 600 por pan y el globo del tejado dice HEY, NICE o FINE según los panes. Con menos de cuatro, dice cuántos faltan y se pierde una vida. Sacada ejecutando el cartucho, cuadro a cuadro, con diez panes y con tres.</summary>
-  </entry>
-  <entry>
-    <id>tag:antxiko.github.io,2026:novedad/es/goemon-issue4-sprites-or</id>
-    <title>Ganbare Goemon: los enemigos recuperan su tercer color</title>
-    <link rel="alternate" type="text/html" href="https://antxiko.github.io/GanbareGoemon-disassembly/THE-GAME.html"/>
-    <published>2026-10-13T19:11:03+02:00</published>
-    <updated>2026-10-13T19:11:03+02:00</updated>
-    <summary type="text">theNestruo lo vio en el issue #4: en la web los enemigos tenían dos colores y en el juego tres o más. El dibujo de los sprites tiraba el bit CC (0x40) del color; el juego lo usa para que un sprite se junte con el de antes y sus colores se sumen con OR donde se tocan. Pintados ahora como lo hace el V9938: la rata es marrón, el del rollo blanco y negro, el bandido rojo y negro.</summary>
   </entry>
 </feed>

@@ -3623,6 +3623,28 @@ MSXON = [
 # nueva a vieja, una clave no existe o un proyecto se queda sin novedad.
 # --------------------------------------------------------------------------
 NOVEDADES = [
+    dict(id="salamander-armas", clave="salamander",
+         clase="actualiza", fecha="2026-10-17T10:38:38+02:00",
+         enlace="https://antxiko.github.io/Salamander-disassembly/THE-GAME.html",
+         titulo=dict(en="Salamander - Operation X: the intro, the story and every weapon, animated",
+                     es="Salamander - Operation X: la presentación, la historia y todas las armas, animadas"),
+         resumen=dict(
+             en="The intro, the whole story and the take-off as animations, every "
+                "frame painted from openMSX's VRAM the way the TMS9918 paints it. "
+                "The seven gauge boxes with the names of their weapons taken from "
+                "the ROM, and the ship firing each one: NORMAL, TWIN, TRIPLE, the "
+                "missiles, RIPPLE, ARMING, LASER, METEO, SCREW, the options, the "
+                "F.FIELD and the bombs. Plus the capsules and the six items enemies "
+                "drop. The bosses have no names in the cartridge, in English or "
+                "Japanese. And the Konami screen gets its blue background back.",
+             es="La presentación, la historia entera y el despegue animados, cada "
+                "cuadro pintado desde la VRAM de openMSX como lo pinta el TMS9918. "
+                "Las siete casillas del marcador con los nombres de sus armas sacados "
+                "de la ROM, y la nave disparando cada una: NORMAL, TWIN, TRIPLE, los "
+                "misiles, RIPPLE, ARMING, LASER, METEO, SCREW, las opciones, el "
+                "F.FIELD y las bombas. Y las cápsulas y los seis objetos que sueltan "
+                "los enemigos. Los jefes no tienen nombre en el cartucho, ni en inglés "
+                "ni en japonés. Y la pantalla de Konami recupera su fondo azul.")),
     dict(id="salamander-juego", clave="salamander",
          clase="actualiza", fecha="2026-10-17T10:02:00+02:00",
          enlace="https://antxiko.github.io/Salamander-disassembly/THE-GAME.html",
