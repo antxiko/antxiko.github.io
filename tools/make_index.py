@@ -2213,6 +2213,49 @@ DESENSAMBLADOS = [
         ),
     ),
     dict(
+        clave="salamander",
+        grupo="konami",
+        titulo="Salamander - Operation X",
+        anio=1987,
+        repo="https://github.com/antxiko/Salamander-disassembly",
+        web="https://antxiko.github.io/Salamander-disassembly/",
+        meta=dict(
+            en="Konami &middot; MSX &middot; 128 KB MegaROM with SCC &middot; RC-758",
+            es="Konami &middot; MSX &middot; MegaROM de 128 KB con SCC &middot; RC-758",
+        ),
+        claim=dict(
+            en="Konami's <b>Salamander</b> for MSX: seven stages whose routes "
+               "turn, a <b>planet you choose</b>, eight bosses and a stage 7, "
+               "<b>OPERATION X</b>, that only exists with <b>Nemesis 2</b> in the "
+               "other slot.",
+            es="El <b>Salamander</b> de Konami para MSX: siete fases cuyo recorrido "
+               "da la vuelta, un <b>planeta a elegir</b>, ocho jefes y una fase 7, "
+               "<b>OPERATION X</b>, que solo existe con <b>Nemesis 2</b> en la otra "
+               "ranura.",
+        ),
+        datos=dict(
+            en=lambda i: (f"{cif(131072, i)} bytes &middot; <b>0</b> unexplained "
+                          f"&middot; reassembles <b>byte for byte</b> &middot; "
+                          f"{cif(52996, i)} of code, {cif(78076, i)} of data "
+                          f"&middot; {cif(3429, i)} routines &middot; commented "
+                          f"to <b>44.6%</b>"),
+            es=lambda i: (f"{cif(131072, i)} bytes &middot; <b>0</b> sin explicar "
+                          f"&middot; reensambla <b>byte a byte</b> &middot; "
+                          f"{cif(52996, i)} de código, {cif(78076, i)} de datos "
+                          f"&middot; {cif(3429, i)} rutinas &middot; comentado "
+                          f"al <b>44,6 %</b>"),
+        ),
+        nota=dict(
+            en="The whole route of each stage, the ship, the enemies, the eight "
+               "bosses, the intro and both endings drawn from the ROM and 20 PSG "
+               "and SCC tunes from its own engine, all checked against openMSX.",
+            es="El recorrido entero de cada fase, la nave, los enemigos, los ocho "
+               "jefes, la presentación y los dos finales dibujados desde la ROM y "
+               "20 músicas de PSG y SCC de su propio motor, todo cotejado con "
+               "openMSX.",
+        ),
+    ),
+    dict(
         clave="goonies",
         grupo="konami",
         titulo="The Goonies",
@@ -3580,6 +3623,25 @@ MSXON = [
 # nueva a vieja, una clave no existe o un proyecto se queda sin novedad.
 # --------------------------------------------------------------------------
 NOVEDADES = [
+    dict(id="salamander", clave="salamander",
+         clase="nuevo", fecha="2026-10-17T12:00:00+02:00",
+         titulo=dict(en="Salamander - Operation X: Konami's MSX shooter, taken apart",
+                     es="Salamander - Operation X: el matamarcianos de Konami para MSX, desmontado"),
+         resumen=dict(
+             en="Konami's 1987 Salamander for MSX, 100% explained and commented to "
+                "44.6%. The seven stages with their whole routes (in three of them "
+                "the screen turns through another map), the planet choice for "
+                "stages 3 to 5, the eight bosses, both endings, and stage 7, "
+                "OPERATION X, which only exists with Nemesis 2 in the other slot "
+                "and takes its graphics from it. 20 PSG and SCC tunes from its "
+                "own engine; everything checked against openMSX.",
+             es="El Salamander de Konami para MSX de 1987, explicado al 100 % y "
+                "comentado al 44,6 %. Las siete fases con su recorrido entero (en "
+                "tres la pantalla se desvía por otro mapa), la elección de planeta "
+                "para las fases 3 a 5, los ocho jefes, los dos finales y la fase 7, "
+                "OPERATION X, que solo existe con Nemesis 2 en la otra ranura y "
+                "saca de él sus gráficos. 20 músicas de PSG y SCC de su propio "
+                "motor; todo cotejado con openMSX.")),
     dict(id="pennantrace-hoja", clave="pennantrace",
          clase="actualiza", fecha="2026-10-15T23:00:00+02:00",
          enlace="https://antxiko.github.io/PennantRace-disassembly/THE-SCREENS.html",

@@ -1,13 +1,21 @@
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom" xml:lang="en">
   <title>antxiko — commented disassemblies of 8-bit games</title>
-  <subtitle>Old 8-bit binaries taken apart byte by byte and commented, with the tools to rebuild them: nothing gets claimed that the binary does not show, and the source has to give the original back, byte for byte. Right now that means 67 MSX games.</subtitle>
+  <subtitle>Old 8-bit binaries taken apart byte by byte and commented, with the tools to rebuild them: nothing gets claimed that the binary does not show, and the source has to give the original back, byte for byte. Right now that means 68 MSX games.</subtitle>
   <id>tag:antxiko.github.io,2026:feed/en</id>
   <link rel="self" type="application/atom+xml" href="https://antxiko.github.io/feed.xml"/>
   <link rel="alternate" type="text/html" hreflang="en" href="https://antxiko.github.io/"/>
   <link rel="alternate" type="application/atom+xml" hreflang="es" href="https://antxiko.github.io/es/feed.xml"/>
-  <updated>2026-10-15T23:00:00+02:00</updated>
+  <updated>2026-10-17T12:00:00+02:00</updated>
   <author><name>antxiko</name><uri>https://github.com/antxiko</uri></author>
+  <entry>
+    <id>tag:antxiko.github.io,2026:novedad/en/salamander</id>
+    <title>Salamander - Operation X: Konami's MSX shooter, taken apart</title>
+    <link rel="alternate" type="text/html" href="https://antxiko.github.io/Salamander-disassembly/"/>
+    <published>2026-10-17T12:00:00+02:00</published>
+    <updated>2026-10-17T12:00:00+02:00</updated>
+    <summary type="text">Konami's 1987 Salamander for MSX, 100% explained and commented to 44.6%. The seven stages with their whole routes (in three of them the screen turns through another map), the planet choice for stages 3 to 5, the eight bosses, both endings, and stage 7, OPERATION X, which only exists with Nemesis 2 in the other slot and takes its graphics from it. 20 PSG and SCC tunes from its own engine; everything checked against openMSX.</summary>
+  </entry>
   <entry>
     <id>tag:antxiko.github.io,2026:novedad/en/pennantrace-hoja</id>
     <title>The Pro Yakyuu Gekitotsu Pennant Race: the finished-game sheet</title>
@@ -159,13 +167,5 @@
     <published>2026-10-13T18:40:04+02:00</published>
     <updated>2026-10-13T18:40:04+02:00</updated>
     <summary type="text">Konami's 1987 MSX adventure, 100% explained and commented to 42.7%. The world and its dungeons, the 268 visible characters with their names, the nine action scenes with their bosses, the story in eight panels and the opening scene drawn from the ROM; the 902 Japanese texts and 42 tunes taken from the cartridge. Read in the code: a cloak that stops half the hits and a password that holds the whole game.</summary>
-  </entry>
-  <entry>
-    <id>tag:antxiko.github.io,2026:novedad/en/circus-musica</id>
-    <title>Circus Charlie: the music, taken from its engine and checked against openMSX</title>
-    <link rel="alternate" type="text/html" href="https://antxiko.github.io/CircusCharlie-disassembly/THE-MUSIC.html"/>
-    <published>2026-10-13T11:00:10+02:00</published>
-    <updated>2026-10-13T11:00:10+02:00</updated>
-    <summary type="text">4 tunes of the cartridge, made by running its own sound engine frame by frame; the PSG writes match openMSX in every frame checked; the tunes had stalled on a value the game passes in a spare register.</summary>
   </entry>
 </feed>
