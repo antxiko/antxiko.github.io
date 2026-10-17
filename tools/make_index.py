@@ -3623,6 +3623,18 @@ MSXON = [
 # nueva a vieja, una clave no existe o un proyecto se queda sin novedad.
 # --------------------------------------------------------------------------
 NOVEDADES = [
+    dict(id="salamander-galerias", clave="salamander",
+         clase="actualiza", fecha="2026-10-17T11:07:59+02:00",
+         enlace="https://antxiko.github.io/Salamander-disassembly/THE-STAGES.html",
+         titulo=dict(en="Salamander - Operation X: every route, enemy and boss on its page",
+                     es="Salamander - Operation X: todos los recorridos, enemigos y jefes en su página"),
+         resumen=dict(
+             en="The stages page now shows the seven whole routes one after another, "
+                "the enemies page the sheet of each stage, and the bosses page the "
+                "eight bosses and the stage 7 core, each with its title.",
+             es="La página de las fases enseña ya los siete recorridos enteros, uno "
+                "detrás de otro; la de los enemigos, la hoja de cada fase, y la de los "
+                "jefes, los ocho jefes y el núcleo de la fase 7, cada uno con su título.")),
     dict(id="salamander-paginas", clave="salamander",
          clase="actualiza", fecha="2026-10-17T10:57:04+02:00",
          titulo=dict(en="Salamander - Operation X: the web in three blocks",
