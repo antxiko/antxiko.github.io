@@ -6,12 +6,20 @@
   <link rel="self" type="application/atom+xml" href="https://antxiko.github.io/es/feed.xml"/>
   <link rel="alternate" type="text/html" hreflang="es" href="https://antxiko.github.io/es/"/>
   <link rel="alternate" type="application/atom+xml" hreflang="en" href="https://antxiko.github.io/feed.xml"/>
-  <updated>2026-10-17T10:38:38+02:00</updated>
+  <updated>2026-10-17T10:57:04+02:00</updated>
   <author><name>antxiko</name><uri>https://github.com/antxiko</uri></author>
+  <entry>
+    <id>tag:antxiko.github.io,2026:novedad/es/salamander-paginas</id>
+    <title>Salamander - Operation X: la web en tres bloques</title>
+    <link rel="alternate" type="text/html" href="https://antxiko.github.io/Salamander-disassembly/"/>
+    <published>2026-10-17T10:57:04+02:00</published>
+    <updated>2026-10-17T10:57:04+02:00</updated>
+    <summary type="text">Las páginas se reordenan: primero el juego (las fases, la nave y sus armas, los enemigos, los jefes, las secuencias, la música y los textos), después las curiosidades y al final lo de por dentro. La portada se queda con las cifras y la lista de páginas. Las direcciones de antes llevan a las páginas nuevas.</summary>
+  </entry>
   <entry>
     <id>tag:antxiko.github.io,2026:novedad/es/salamander-armas</id>
     <title>Salamander - Operation X: la presentación, la historia y todas las armas, animadas</title>
-    <link rel="alternate" type="text/html" href="https://antxiko.github.io/Salamander-disassembly/THE-GAME.html"/>
+    <link rel="alternate" type="text/html" href="https://antxiko.github.io/Salamander-disassembly/THE-SHIP.html"/>
     <published>2026-10-17T10:38:38+02:00</published>
     <updated>2026-10-17T10:38:38+02:00</updated>
     <summary type="text">La presentación, la historia entera y el despegue animados, cada cuadro pintado desde la VRAM de openMSX como lo pinta el TMS9918. Las siete casillas del marcador con los nombres de sus armas sacados de la ROM, y la nave disparando cada una: NORMAL, TWIN, TRIPLE, los misiles, RIPPLE, ARMING, LASER, METEO, SCREW, las opciones, el F.FIELD y las bombas. Y las cápsulas y los seis objetos que sueltan los enemigos. Los jefes no tienen nombre en el cartucho, ni en inglés ni en japonés. Y la pantalla de Konami recupera su fondo azul.</summary>
@@ -159,13 +167,5 @@
     <published>2026-10-13T20:06:47+02:00</published>
     <updated>2026-10-13T20:06:47+02:00</updated>
     <summary type="text">Lo que pedía theNestruo en el issue #2: las ocho armas y los veinticinco objetos con su dibujo y su nombre en la fuente del juego, y los dos avisos, «!» y «!!», que salían cortados por la mitad. El transceptor tiene un solo retrato, el de Snake; ahora habla, con los tres dibujos de la boca que el código elige letra a letra.</summary>
-  </entry>
-  <entry>
-    <id>tag:antxiko.github.io,2026:novedad/es/comicbakery-issue1-tienda</id>
-    <title>Comic Bakery: la tienda del final de cada jornada</title>
-    <link rel="alternate" type="text/html" href="https://antxiko.github.io/ComicBakery-disassembly/THE-GAME.html"/>
-    <published>2026-10-13T19:49:49+02:00</published>
-    <updated>2026-10-13T19:49:49+02:00</updated>
-    <summary type="text">Como pedía theNestruo en el issue #1: la escena de los niños en el mostrador de la BAKERY SHOP. El panadero mete el carro, cada niño recibe un pan, se cobran 600 por pan y el globo del tejado dice HEY, NICE o FINE según los panes. Con menos de cuatro, dice cuántos faltan y se pierde una vida. Sacada ejecutando el cartucho, cuadro a cuadro, con diez panes y con tres.</summary>
   </entry>
 </feed>
