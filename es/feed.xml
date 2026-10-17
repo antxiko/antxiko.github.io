@@ -6,14 +6,22 @@
   <link rel="self" type="application/atom+xml" href="https://antxiko.github.io/es/feed.xml"/>
   <link rel="alternate" type="text/html" hreflang="es" href="https://antxiko.github.io/es/"/>
   <link rel="alternate" type="application/atom+xml" hreflang="en" href="https://antxiko.github.io/feed.xml"/>
-  <updated>2026-10-17T12:00:00+02:00</updated>
+  <updated>2026-10-17T10:02:00+02:00</updated>
   <author><name>antxiko</name><uri>https://github.com/antxiko</uri></author>
+  <entry>
+    <id>tag:antxiko.github.io,2026:novedad/es/salamander-juego</id>
+    <title>Salamander - Operation X: la página del juego, ordenada</title>
+    <link rel="alternate" type="text/html" href="https://antxiko.github.io/Salamander-disassembly/THE-GAME.html"/>
+    <published>2026-10-17T10:02:00+02:00</published>
+    <updated>2026-10-17T10:02:00+02:00</updated>
+    <summary type="text">Una imagen por apartado con su pie, y el resto en tablas de enlaces: los siete recorridos, los enemigos de cada fase y los jefes. Y entran la presentación y los dos finales, pantalla a pantalla, cada una igual píxel a píxel a la VRAM de openMSX.</summary>
+  </entry>
   <entry>
     <id>tag:antxiko.github.io,2026:novedad/es/salamander</id>
     <title>Salamander - Operation X: el matamarcianos de Konami para MSX, desmontado</title>
     <link rel="alternate" type="text/html" href="https://antxiko.github.io/Salamander-disassembly/"/>
-    <published>2026-10-17T12:00:00+02:00</published>
-    <updated>2026-10-17T12:00:00+02:00</updated>
+    <published>2026-10-17T09:45:39+02:00</published>
+    <updated>2026-10-17T09:45:39+02:00</updated>
     <summary type="text">El Salamander de Konami para MSX de 1987, explicado al 100 % y comentado al 44,6 %. Las siete fases con su recorrido entero (en tres la pantalla se desvía por otro mapa), la elección de planeta para las fases 3 a 5, los ocho jefes, los dos finales y la fase 7, OPERATION X, que solo existe con Nemesis 2 en la otra ranura y saca de él sus gráficos. 20 músicas de PSG y SCC de su propio motor; todo cotejado con openMSX.</summary>
   </entry>
   <entry>
@@ -159,13 +167,5 @@
     <published>2026-10-13T19:11:03+02:00</published>
     <updated>2026-10-13T19:11:03+02:00</updated>
     <summary type="text">theNestruo lo vio en el issue #4: en la web los enemigos tenían dos colores y en el juego tres o más. El dibujo de los sprites tiraba el bit CC (0x40) del color; el juego lo usa para que un sprite se junte con el de antes y sus colores se sumen con OR donde se tocan. Pintados ahora como lo hace el V9938: la rata es marrón, el del rollo blanco y negro, el bandido rojo y negro.</summary>
-  </entry>
-  <entry>
-    <id>tag:antxiko.github.io,2026:novedad/es/shalom</id>
-    <title>Shalom: Knightmare III: un mundo de 512 salas, nueve jefes y la historia, desmontado</title>
-    <link rel="alternate" type="text/html" href="https://antxiko.github.io/Shalom-disassembly/"/>
-    <published>2026-10-13T18:40:04+02:00</published>
-    <updated>2026-10-13T18:40:04+02:00</updated>
-    <summary type="text">La aventura MSX de Konami de 1987, explicada al 100 % y comentada al 42,7 %. El mundo y sus mazmorras, los 268 personajes que se ven con su nombre, las nueve escenas de acción con sus jefes, la historia en ocho viñetas y la escena inicial dibujados desde la ROM; los 902 textos en japonés y 42 músicas sacados del cartucho. Leído en el código: una capa que para la mitad de los golpes y una contraseña que guarda la partida entera.</summary>
   </entry>
 </feed>

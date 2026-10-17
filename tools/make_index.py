@@ -3623,8 +3623,22 @@ MSXON = [
 # nueva a vieja, una clave no existe o un proyecto se queda sin novedad.
 # --------------------------------------------------------------------------
 NOVEDADES = [
+    dict(id="salamander-juego", clave="salamander",
+         clase="actualiza", fecha="2026-10-17T10:02:00+02:00",
+         enlace="https://antxiko.github.io/Salamander-disassembly/THE-GAME.html",
+         titulo=dict(en="Salamander - Operation X: the game page, tidied up",
+                     es="Salamander - Operation X: la página del juego, ordenada"),
+         resumen=dict(
+             en="One picture per section with its caption, and the rest in tables "
+                "of links: the seven routes, the enemies of each stage and the "
+                "bosses. The intro and both endings are in now, screen by screen, "
+                "each one identical pixel for pixel to openMSX's VRAM.",
+             es="Una imagen por apartado con su pie, y el resto en tablas de "
+                "enlaces: los siete recorridos, los enemigos de cada fase y los "
+                "jefes. Y entran la presentación y los dos finales, pantalla a "
+                "pantalla, cada una igual píxel a píxel a la VRAM de openMSX.")),
     dict(id="salamander", clave="salamander",
-         clase="nuevo", fecha="2026-10-17T12:00:00+02:00",
+         clase="nuevo", fecha="2026-10-17T09:45:39+02:00",
          titulo=dict(en="Salamander - Operation X: Konami's MSX shooter, taken apart",
                      es="Salamander - Operation X: el matamarcianos de Konami para MSX, desmontado"),
          resumen=dict(
