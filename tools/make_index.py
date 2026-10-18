@@ -3712,6 +3712,25 @@ MSXON = [
 # nueva a vieja, una clave no existe o un proyecto se queda sin novedad.
 # --------------------------------------------------------------------------
 NOVEDADES = [
+    dict(id="kingsvalley2-sprites", clave="kingsvalley2",
+         clase="actualiza", fecha="2026-10-18T23:30:00+02:00",
+         enlace="https://antxiko.github.io/KingsValley2-disassembly/VICK.html",
+         titulo=dict(en="King's Valley II: the MSX2 sprites drawn as the V9938 draws them",
+                     es="King's Valley II: los sprites de MSX2, pintados como los pinta el V9938"),
+         resumen=dict(
+             en="On the MSX2, Vick and the enemies are pairs of sprites whose colours are "
+                "ORed together where they overlap; the second sprite was being left out "
+                "wherever it did not overlap the first, so Vick's face came out black. Now "
+                "Vick, the enemies, the demos and the sequences match openMSX. Also: the "
+                "MSX objects sheet on a black background, and the SECRET COMMAND hints, "
+                "F??T???L and ??Y?????, are FESTIVAL and TRYAGAIN: they only show with the "
+                "Game Master 2 plugged in.",
+             es="En MSX2, Vick y los enemigos son parejas de sprites cuyos colores se suman "
+                "con OR donde se tapan; el segundo sprite se quedaba sin pintar donde no "
+                "tapaba al primero, y la cara de Vick salía negra. Ahora Vick, los enemigos, "
+                "las demostraciones y las secuencias casan con openMSX. Además: la hoja de "
+                "objetos de MSX con fondo negro, y las pistas de SECRET COMMAND, F??T???L y "
+                "??Y?????, son FESTIVAL y TRYAGAIN: solo salen con el Game Master 2 puesto.")),
     dict(id="kingsvalley2", clave="kingsvalley2",
          clase="nuevo", fecha="2026-10-18T22:00:00+02:00",
          titulo=dict(en="King's Valley II: the MSX and MSX2 cartridges, taken apart",
