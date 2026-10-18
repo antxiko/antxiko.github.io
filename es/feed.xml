@@ -6,8 +6,16 @@
   <link rel="self" type="application/atom+xml" href="https://antxiko.github.io/es/feed.xml"/>
   <link rel="alternate" type="text/html" hreflang="es" href="https://antxiko.github.io/es/"/>
   <link rel="alternate" type="application/atom+xml" hreflang="en" href="https://antxiko.github.io/feed.xml"/>
-  <updated>2026-10-18T22:00:00+02:00</updated>
+  <updated>2026-10-18T23:30:00+02:00</updated>
   <author><name>antxiko</name><uri>https://github.com/antxiko</uri></author>
+  <entry>
+    <id>tag:antxiko.github.io,2026:novedad/es/kingsvalley2-sprites</id>
+    <title>King's Valley II: los sprites de MSX2, pintados como los pinta el V9938</title>
+    <link rel="alternate" type="text/html" href="https://antxiko.github.io/KingsValley2-disassembly/VICK.html"/>
+    <published>2026-10-18T23:30:00+02:00</published>
+    <updated>2026-10-18T23:30:00+02:00</updated>
+    <summary type="text">En MSX2, Vick y los enemigos son parejas de sprites cuyos colores se suman con OR donde se tapan; el segundo sprite se quedaba sin pintar donde no tapaba al primero, y la cara de Vick salía negra. Ahora Vick, los enemigos, las demostraciones y las secuencias casan con openMSX. Además: la hoja de objetos de MSX con fondo negro, y las pistas de SECRET COMMAND, F??T???L y ??Y?????, son FESTIVAL y TRYAGAIN: solo salen con el Game Master 2 puesto.</summary>
+  </entry>
   <entry>
     <id>tag:antxiko.github.io,2026:novedad/es/kingsvalley2</id>
     <title>King's Valley II: los cartuchos de MSX y MSX2, desmontados</title>
@@ -159,13 +167,5 @@
     <published>2026-10-14T22:00:00+02:00</published>
     <updated>2026-10-14T22:00:00+02:00</updated>
     <summary type="text">Lo que pedía theNestruo en el issue #1: una página nueva con todo el japonés de la ROM (las 56 conversaciones, los objetos, el final y los rótulos), cada texto con su dirección y quién lo pide, al lado del inglés y el castellano de los parches de traducción de Imanok, Manuel Pazos y Ramones. De paso salió que en los dos parches el texto del final 0 se corta tras su primer renglón: un 0xFF donde iba un 0xFE. Visto en openMSX, y arreglado con un IPS de un byte por idioma, en su propia página.</summary>
-  </entry>
-  <entry>
-    <id>tag:antxiko.github.io,2026:novedad/es/goemon-issue2-pasadizos</id>
-    <title>Ganbare Goemon: los 42 pasadizos secretos, recorridos en primera persona</title>
-    <link rel="alternate" type="text/html" href="https://antxiko.github.io/GanbareGoemon-disassembly/THE-GAME.html#the-first-person-view"/>
-    <published>2026-10-14T18:00:00+02:00</published>
-    <updated>2026-10-14T18:00:00+02:00</updated>
-    <summary type="text">Lo que pedía theNestruo en el issue #2: la vista en primera persona de los pasadizos secretos, dibujada desde la ROM. Un GIF por pasadizo, recorrido desde la entrada cogiendo todo lo que hay y saliendo por la salida, y las 33 piezas con las que el juego monta la vista. Cotejado ejecutando la rutina del propio cartucho en todas las casillas y direcciones (16 696 vistas) y andando pasadizos en openMSX, iguales en cada punto.</summary>
   </entry>
 </feed>
