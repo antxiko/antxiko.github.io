@@ -1,13 +1,21 @@
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom" xml:lang="en">
   <title>antxiko — commented disassemblies of 8-bit games</title>
-  <subtitle>Old 8-bit binaries taken apart byte by byte and commented, with the tools to rebuild them: nothing gets claimed that the binary does not show, and the source has to give the original back, byte for byte. Right now that means 69 MSX games.</subtitle>
+  <subtitle>Old 8-bit binaries taken apart byte by byte and commented, with the tools to rebuild them: nothing gets claimed that the binary does not show, and the source has to give the original back, byte for byte. Right now that means 70 MSX games.</subtitle>
   <id>tag:antxiko.github.io,2026:feed/en</id>
   <link rel="self" type="application/atom+xml" href="https://antxiko.github.io/feed.xml"/>
   <link rel="alternate" type="text/html" hreflang="en" href="https://antxiko.github.io/"/>
   <link rel="alternate" type="application/atom+xml" hreflang="es" href="https://antxiko.github.io/es/feed.xml"/>
-  <updated>2026-10-17T20:28:28+02:00</updated>
+  <updated>2026-10-18T22:00:00+02:00</updated>
   <author><name>antxiko</name><uri>https://github.com/antxiko</uri></author>
+  <entry>
+    <id>tag:antxiko.github.io,2026:novedad/en/kingsvalley2</id>
+    <title>King's Valley II: the MSX and MSX2 cartridges, taken apart</title>
+    <link rel="alternate" type="text/html" href="https://antxiko.github.io/KingsValley2-disassembly/"/>
+    <published>2026-10-18T22:00:00+02:00</published>
+    <updated>2026-10-18T22:00:00+02:00</updated>
+    <summary type="text">Konami's 1988 King's Valley II, The Seal of El Giza, on its two cartridges (RC-760 for MSX, RC-761 for MSX2) in a single listing: both 100% explained and commented to 40%. The six pyramids with their 60 stages and 154 screens, Vick with each of his six tools, the four enemies with their names from the editor, the demos, the editor and where it saves, the passwords FESTIVAL and TRYAGAIN, the two hidden minigames and 16 PSG and SCC tunes from its own engine; everything drawn by running the cartridge and checked against openMSX.</summary>
+  </entry>
   <entry>
     <id>tag:antxiko.github.io,2026:novedad/en/parodius</id>
     <title>Parodius: Tako saves the Earth, taken apart</title>
@@ -159,13 +167,5 @@
     <published>2026-10-14T18:00:00+02:00</published>
     <updated>2026-10-14T18:00:00+02:00</updated>
     <summary type="text">What theNestruo asked for in issue #2: the first-person view of the secret passages, drawn from the ROM. One GIF per passage, walked from the entrance, picking up everything inside and out through the exit, plus the 33 pieces the game builds the view from. Checked by running the cartridge's own routine on every cell and direction (16,696 views) and by walking passages in openMSX, identical to the pixel.</summary>
-  </entry>
-  <entry>
-    <id>tag:antxiko.github.io,2026:novedad/en/goemon-issue3-finales</id>
-    <title>Ganbare Goemon: the four endings, drawn from the ROM</title>
-    <link rel="alternate" type="text/html" href="https://antxiko.github.io/GanbareGoemon-disassembly/THE-TEXTS.html"/>
-    <published>2026-10-14T15:00:00+02:00</published>
-    <updated>2026-10-14T15:00:00+02:00</updated>
-    <summary type="text">What theNestruo asked for in issue #3: the screen of each of the four endings, which one you get depending on whether the neighbour cartridge is in the other slot and whether the seven stages were cleared one by one, plus the last screen, the same in all four: the kanji 終 ("end") made of 16 sprites. The text was checked by running the cartridge's own routine.</summary>
   </entry>
 </feed>
