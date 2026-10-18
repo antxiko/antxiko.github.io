@@ -2213,6 +2213,51 @@ DESENSAMBLADOS = [
         ),
     ),
     dict(
+        clave="kingsvalley2",
+        grupo="konami",
+        titulo="King's Valley II",
+        anio=1988,
+        repo="https://github.com/antxiko/KingsValley2-disassembly",
+        web="https://antxiko.github.io/KingsValley2-disassembly/",
+        meta=dict(
+            en="Konami &middot; MSX and MSX2 &middot; two 128 KB MegaROMs with SCC &middot; "
+               "RC-760 and RC-761",
+            es="Konami &middot; MSX y MSX2 &middot; dos MegaROM de 128 KB con SCC &middot; "
+               "RC-760 y RC-761",
+        ),
+        claim=dict(
+            en="<b>King&rsquo;s Valley II</b>, <i>The Seal of El Giza</i>, on <b>both "
+               "cartridges</b>, MSX and MSX2, in a single listing: six pyramids and "
+               "<b>60 stages</b>, a <b>stage editor</b> that saves to tape, disk or the "
+               "Game Master 2, the passwords <b>FESTIVAL</b> and <b>TRYAGAIN</b> and two "
+               "hidden minigames.",
+            es="<b>King&rsquo;s Valley II</b>, <i>El sello de El Giza</i>, en sus <b>dos "
+               "cartuchos</b>, MSX y MSX2, en un mismo listado: seis pirámides y <b>60 "
+               "fases</b>, un <b>editor de fases</b> que graba en cinta, disco o el Game "
+               "Master 2, las contraseñas <b>FESTIVAL</b> y <b>TRYAGAIN</b> y dos "
+               "minijuegos escondidos.",
+        ),
+        datos=dict(
+            en=lambda i: (f"2 &times; {cif(131072, i)} bytes &middot; <b>0</b> unexplained "
+                          f"&middot; both reassemble <b>byte for byte</b> &middot; MSX "
+                          f"{cif(2194, i)} routines, commented to <b>40.0%</b> &middot; "
+                          f"MSX2 {cif(2234, i)} routines, commented to <b>40.2%</b>"),
+            es=lambda i: (f"2 &times; {cif(131072, i)} bytes &middot; <b>0</b> sin explicar "
+                          f"&middot; los dos reensamblan <b>byte a byte</b> &middot; MSX "
+                          f"{cif(2194, i)} rutinas, comentado al <b>40,0 %</b> &middot; "
+                          f"MSX2 {cif(2234, i)} rutinas, comentado al <b>40,2 %</b>"),
+        ),
+        nota=dict(
+            en="The maps of the 60 stages and their 154 screens, Vick with each tool, the enemies, "
+               "the demos and the ending drawn by running the cartridge, and 16 PSG and "
+               "SCC tunes from its own engine, all checked against openMSX.",
+            es="Los mapas de las 60 fases y sus 154 pantallas, Vick con cada herramienta, "
+               "los enemigos, las demostraciones y el final pintados ejecutando el "
+               "cartucho, y 16 músicas de PSG y SCC de su propio motor, todo cotejado con "
+               "openMSX.",
+        ),
+    ),
+    dict(
         clave="parodius",
         grupo="konami",
         titulo="Parodius",
@@ -3667,6 +3712,27 @@ MSXON = [
 # nueva a vieja, una clave no existe o un proyecto se queda sin novedad.
 # --------------------------------------------------------------------------
 NOVEDADES = [
+    dict(id="kingsvalley2", clave="kingsvalley2",
+         clase="nuevo", fecha="2026-10-18T22:00:00+02:00",
+         titulo=dict(en="King's Valley II: the MSX and MSX2 cartridges, taken apart",
+                     es="King's Valley II: los cartuchos de MSX y MSX2, desmontados"),
+         resumen=dict(
+             en="Konami's 1988 King's Valley II, The Seal of El Giza, on its two "
+                "cartridges (RC-760 for MSX, RC-761 for MSX2) in a single listing: both "
+                "100% explained and commented to 40%. The six pyramids with their 60 stages "
+                "and 154 screens, Vick with each of his six tools, the four enemies with "
+                "their names from the editor, the demos, the editor and where it saves, "
+                "the passwords FESTIVAL and TRYAGAIN, the two hidden minigames and 16 PSG "
+                "and SCC tunes from its own engine; everything drawn by running the "
+                "cartridge and checked against openMSX.",
+             es="El King's Valley II de Konami de 1988, El sello de El Giza, en sus dos "
+                "cartuchos (RC-760 para MSX, RC-761 para MSX2) en un mismo listado: los "
+                "dos explicados al 100 % y comentados al 40 %. Las seis pirámides con sus "
+                "60 fases y 154 pantallas, Vick con cada una de sus seis herramientas, los "
+                "cuatro enemigos con sus nombres del editor, las demostraciones, el editor "
+                "y dónde graba, las contraseñas FESTIVAL y TRYAGAIN, los dos minijuegos "
+                "escondidos y 16 músicas de PSG y SCC de su propio motor; todo pintado "
+                "ejecutando el cartucho y cotejado con openMSX.")),
     dict(id="parodius", clave="parodius",
          clase="nuevo", fecha="2026-10-17T20:28:28+02:00",
          titulo=dict(en="Parodius: Tako saves the Earth, taken apart",

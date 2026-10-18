@@ -1,13 +1,21 @@
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom" xml:lang="es">
   <title>antxiko — desensamblados comentados de juegos de 8 bits</title>
-  <subtitle>Binarios viejos de 8 bits desmontados byte a byte y comentados, con las herramientas para volver a montarlos: no se afirma nada que el binario no enseñe, y el código fuente tiene que devolver el original, byte a byte. Ahora mismo son 69 juegos de MSX.</subtitle>
+  <subtitle>Binarios viejos de 8 bits desmontados byte a byte y comentados, con las herramientas para volver a montarlos: no se afirma nada que el binario no enseñe, y el código fuente tiene que devolver el original, byte a byte. Ahora mismo son 70 juegos de MSX.</subtitle>
   <id>tag:antxiko.github.io,2026:feed/es</id>
   <link rel="self" type="application/atom+xml" href="https://antxiko.github.io/es/feed.xml"/>
   <link rel="alternate" type="text/html" hreflang="es" href="https://antxiko.github.io/es/"/>
   <link rel="alternate" type="application/atom+xml" hreflang="en" href="https://antxiko.github.io/feed.xml"/>
-  <updated>2026-10-17T20:28:28+02:00</updated>
+  <updated>2026-10-18T22:00:00+02:00</updated>
   <author><name>antxiko</name><uri>https://github.com/antxiko</uri></author>
+  <entry>
+    <id>tag:antxiko.github.io,2026:novedad/es/kingsvalley2</id>
+    <title>King's Valley II: los cartuchos de MSX y MSX2, desmontados</title>
+    <link rel="alternate" type="text/html" href="https://antxiko.github.io/KingsValley2-disassembly/"/>
+    <published>2026-10-18T22:00:00+02:00</published>
+    <updated>2026-10-18T22:00:00+02:00</updated>
+    <summary type="text">El King's Valley II de Konami de 1988, El sello de El Giza, en sus dos cartuchos (RC-760 para MSX, RC-761 para MSX2) en un mismo listado: los dos explicados al 100 % y comentados al 40 %. Las seis pirámides con sus 60 fases y 154 pantallas, Vick con cada una de sus seis herramientas, los cuatro enemigos con sus nombres del editor, las demostraciones, el editor y dónde graba, las contraseñas FESTIVAL y TRYAGAIN, los dos minijuegos escondidos y 16 músicas de PSG y SCC de su propio motor; todo pintado ejecutando el cartucho y cotejado con openMSX.</summary>
+  </entry>
   <entry>
     <id>tag:antxiko.github.io,2026:novedad/es/parodius</id>
     <title>Parodius: Tako salva la Tierra, desmontado</title>
@@ -159,13 +167,5 @@
     <published>2026-10-14T18:00:00+02:00</published>
     <updated>2026-10-14T18:00:00+02:00</updated>
     <summary type="text">Lo que pedía theNestruo en el issue #2: la vista en primera persona de los pasadizos secretos, dibujada desde la ROM. Un GIF por pasadizo, recorrido desde la entrada cogiendo todo lo que hay y saliendo por la salida, y las 33 piezas con las que el juego monta la vista. Cotejado ejecutando la rutina del propio cartucho en todas las casillas y direcciones (16 696 vistas) y andando pasadizos en openMSX, iguales en cada punto.</summary>
-  </entry>
-  <entry>
-    <id>tag:antxiko.github.io,2026:novedad/es/goemon-issue3-finales</id>
-    <title>Ganbare Goemon: los cuatro finales, dibujados desde la ROM</title>
-    <link rel="alternate" type="text/html" href="https://antxiko.github.io/GanbareGoemon-disassembly/THE-TEXTS.html"/>
-    <published>2026-10-14T15:00:00+02:00</published>
-    <updated>2026-10-14T15:00:00+02:00</updated>
-    <summary type="text">Lo que pedía theNestruo en el issue #3: la pantalla de cada uno de los cuatro finales, que sale uno u otro según haya un cartucho vecino en la otra ranura y se hayan pasado las siete fases una a una, y la última pantalla, igual en los cuatro: el kanji 終 («fin») hecho con 16 sprites. El texto se ha cotejado ejecutando la rutina del propio cartucho.</summary>
   </entry>
 </feed>
