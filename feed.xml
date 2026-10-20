@@ -6,8 +6,16 @@
   <link rel="self" type="application/atom+xml" href="https://antxiko.github.io/feed.xml"/>
   <link rel="alternate" type="text/html" hreflang="en" href="https://antxiko.github.io/"/>
   <link rel="alternate" type="application/atom+xml" hreflang="es" href="https://antxiko.github.io/es/feed.xml"/>
-  <updated>2026-10-18T23:30:00+02:00</updated>
+  <updated>2026-10-20T10:00:00+02:00</updated>
   <author><name>antxiko</name><uri>https://github.com/antxiko</uri></author>
+  <entry>
+    <id>tag:antxiko.github.io,2026:novedad/en/dunkshot-rom-a</id>
+    <title>Dunk Shot: the MSX2 patch now also fits the corrected ROM</title>
+    <link rel="alternate" type="text/html" href="https://github.com/antxiko/DunkShot-MSX2-Patch"/>
+    <published>2026-10-20T10:00:00+02:00</published>
+    <updated>2026-10-20T10:00:00+02:00</updated>
+    <summary type="text">There is a second Dunk Shot ROM (GoodMSX [a]) that fixes bugs in the fouls and the scoring. It is the same program rebuilt, with almost everything at other addresses, so the old IPS cannot be used on it: it has its own, and the same tool builds both. On an NMS 8250 it goes from 72.5 to 1.4 sprites not drawn per frame; on an MSX it plays as the original. Its commented disassembly and what differs between the two ROMs are in the Dunk Shot disassembly repository.</summary>
+  </entry>
   <entry>
     <id>tag:antxiko.github.io,2026:novedad/en/kingsvalley2-sprites</id>
     <title>King's Valley II: the MSX2 sprites drawn as the V9938 draws them</title>
@@ -159,13 +167,5 @@
     <published>2026-10-14T23:00:00+02:00</published>
     <updated>2026-10-14T23:00:00+02:00</updated>
     <summary type="text">What theNestruo asked for in issue #5: the map shown before each area, with the province name in kanji, and the whole end-of-stage scene, with the retainers coming in, bowing and the lord speaking, one per stage, plus the angry lord. The scene is the cartridge's own code run frame by frame, drawn by ours, and both are checked against openMSX.</summary>
-  </entry>
-  <entry>
-    <id>tag:antxiko.github.io,2026:novedad/en/kingkong2-issue1-textos</id>
-    <title>King Kong 2: every text, with Imanok's translation, and a fix for its ending</title>
-    <link rel="alternate" type="text/html" href="https://antxiko.github.io/KingKong2-disassembly/THE-TEXTS.html"/>
-    <published>2026-10-14T22:00:00+02:00</published>
-    <updated>2026-10-14T22:00:00+02:00</updated>
-    <summary type="text">What theNestruo asked for in issue #1: a new page with all the Japanese in the ROM (the 56 conversations, the items, the ending and the labels), each with its address and what asks for it, next to the English and Spanish of the translation patches by Imanok, Manuel Pazos and Ramones. On the way we found that in both patches the text of ending 0 stops after its first line: one 0xFF where a 0xFE should be. Seen in openMSX, and fixed with a one-byte IPS per language, on its own page.</summary>
   </entry>
 </feed>
