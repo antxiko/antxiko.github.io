@@ -3712,6 +3712,26 @@ MSXON = [
 # nueva a vieja, una clave no existe o un proyecto se queda sin novedad.
 # --------------------------------------------------------------------------
 NOVEDADES = [
+    dict(id="dunkshot-rom-a", clave="dunkshot-msx2", clase="actualiza",
+         fecha="2026-10-20T10:00:00+02:00",
+         enlace="https://github.com/antxiko/DunkShot-MSX2-Patch",
+         titulo=dict(en="Dunk Shot: the MSX2 patch now also fits the corrected ROM",
+                     es="Dunk Shot: el parche MSX2 vale ya también para la ROM corregida"),
+         resumen=dict(
+             en="There is a second Dunk Shot ROM (GoodMSX [a]) that fixes bugs in the "
+                "fouls and the scoring. It is the same program rebuilt, with almost "
+                "everything at other addresses, so the old IPS cannot be used on it: it "
+                "has its own, and the same tool builds both. On an NMS 8250 it goes from "
+                "72.5 to 1.4 sprites not drawn per frame; on an MSX it plays as the "
+                "original. Its commented disassembly and what differs between the two "
+                "ROMs are in the Dunk Shot disassembly repository.",
+             es="Hay una segunda ROM de Dunk Shot (GoodMSX [a]) que corrige fallos de "
+                "las faltas y de la puntuación. Es el mismo programa reensamblado, con "
+                "casi todo en otras direcciones, así que el IPS de siempre no sirve: "
+                "tiene el suyo, y la misma herramienta genera los dos. En un NMS 8250 "
+                "pasa de 72,5 a 1,4 sprites sin pintar por cuadro; en un MSX juega como "
+                "el original. Su desensamblado comentado y lo que cambia entre las dos "
+                "ROM están en el repositorio del desensamblado de Dunk Shot.")),
     dict(id="kingsvalley2-sprites", clave="kingsvalley2",
          clase="actualiza", fecha="2026-10-18T23:30:00+02:00",
          enlace="https://antxiko.github.io/KingsValley2-disassembly/VICK.html",
