@@ -2302,6 +2302,50 @@ DESENSAMBLADOS = [
         ),
     ),
     dict(
+        clave="contra",
+        grupo="konami",
+        titulo="Contra",
+        anio=1989,
+        repo="https://github.com/antxiko/Contra-disassembly",
+        web="https://antxiko.github.io/Contra-disassembly/",
+        meta=dict(
+            en="Konami &middot; MSX2 &middot; 128 KB MegaROM with SCC &middot; RC-762",
+            es="Konami &middot; MSX2 &middot; MegaROM de 128 KB con SCC &middot; RC-762",
+        ),
+        claim=dict(
+            en="Konami's <b>Contra</b> for MSX2: nineteen stages that go <b>screen "
+               "by screen</b>, four <b>3D bases</b> with the map of their doors, a "
+               "weapon menu opened by a capsule, <b>a stage the game always skips</b> "
+               "and the game saved on the <b>Game Master 2</b>.",
+            es="El <b>Contra</b> de Konami para MSX2: diecinueve fases que van <b>por "
+               "pantallas</b>, cuatro <b>bases en 3D</b> con el mapa de sus puertas, "
+               "un menú de armas que abre una cápsula, <b>una fase que el juego se "
+               "salta siempre</b> y la partida grabada en el <b>Game Master 2</b>.",
+        ),
+        datos=dict(
+            en=lambda i: (f"{cif(131072, i)} bytes &middot; <b>0</b> unexplained "
+                          f"&middot; reassembles <b>byte for byte</b> &middot; "
+                          f"{cif(25069, i)} of code, {cif(106003, i)} of data "
+                          f"&middot; {cif(1487, i)} routines &middot; commented "
+                          f"to <b>40.9%</b>"),
+            es=lambda i: (f"{cif(131072, i)} bytes &middot; <b>0</b> sin explicar "
+                          f"&middot; reensambla <b>byte a byte</b> &middot; "
+                          f"{cif(25069, i)} de código, {cif(106003, i)} de datos "
+                          f"&middot; {cif(1487, i)} rutinas &middot; comentado "
+                          f"al <b>40,9 %</b>"),
+        ),
+        nota=dict(
+            en="Every stage map, the doors of the four bases, the player with every "
+               "weapon, the enemies, the bosses, the demos and the ending drawn by "
+               "the cartridge itself, and 11 PSG and SCC tunes from its own engine, "
+               "all checked against openMSX.",
+            es="Los mapas de todas las fases, las puertas de las cuatro bases, el "
+               "jugador con todas sus armas, los enemigos, los jefes, las "
+               "demostraciones y el final pintados por el propio cartucho, y 11 "
+               "músicas de PSG y SCC de su propio motor, todo cotejado con openMSX.",
+        ),
+    ),
+    dict(
         clave="salamander",
         grupo="konami",
         titulo="Salamander - Operation X",
@@ -3712,6 +3756,25 @@ MSXON = [
 # nueva a vieja, una clave no existe o un proyecto se queda sin novedad.
 # --------------------------------------------------------------------------
 NOVEDADES = [
+    dict(id="contra", clave="contra",
+         clase="nuevo", fecha="2026-10-21T22:39:45+02:00",
+         titulo=dict(en="Contra: the MSX2 run and gun, taken apart",
+                     es="Contra: el de MSX2, desmontado"),
+         resumen=dict(
+             en="Konami's 1989 Contra for MSX2, 100% explained and commented to "
+                "40.9%. The nineteen stages with their whole maps and the one the "
+                "game always skips, the four 3D bases with the map of their doors, "
+                "the player with every weapon, the enemies, the bosses, the demos "
+                "and the ending, the game saved on the Game Master 2 and 11 PSG and "
+                "SCC tunes from its own engine; everything drawn by the cartridge "
+                "itself and checked against openMSX.",
+             es="El Contra de Konami para MSX2 de 1989, explicado al 100 % y "
+                "comentado al 40,9 %. Las diecinueve fases con sus mapas enteros y la "
+                "que el juego se salta siempre, las cuatro bases en 3D con el mapa de "
+                "sus puertas, el jugador con todas sus armas, los enemigos, los jefes, "
+                "las demostraciones y el final, la partida grabada en el Game Master 2 "
+                "y 11 músicas de PSG y SCC de su propio motor; todo pintado por el "
+                "propio cartucho y cotejado con openMSX.")),
     dict(id="dunkshot-rom-a", clave="dunkshot-msx2", clase="actualiza",
          fecha="2026-10-20T10:00:00+02:00",
          enlace="https://github.com/antxiko/DunkShot-MSX2-Patch",

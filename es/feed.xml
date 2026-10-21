@@ -1,13 +1,21 @@
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom" xml:lang="es">
   <title>antxiko — desensamblados comentados de juegos de 8 bits</title>
-  <subtitle>Binarios viejos de 8 bits desmontados byte a byte y comentados, con las herramientas para volver a montarlos: no se afirma nada que el binario no enseñe, y el código fuente tiene que devolver el original, byte a byte. Ahora mismo son 70 juegos de MSX.</subtitle>
+  <subtitle>Binarios viejos de 8 bits desmontados byte a byte y comentados, con las herramientas para volver a montarlos: no se afirma nada que el binario no enseñe, y el código fuente tiene que devolver el original, byte a byte. Ahora mismo son 71 juegos de MSX.</subtitle>
   <id>tag:antxiko.github.io,2026:feed/es</id>
   <link rel="self" type="application/atom+xml" href="https://antxiko.github.io/es/feed.xml"/>
   <link rel="alternate" type="text/html" hreflang="es" href="https://antxiko.github.io/es/"/>
   <link rel="alternate" type="application/atom+xml" hreflang="en" href="https://antxiko.github.io/feed.xml"/>
-  <updated>2026-10-20T10:00:00+02:00</updated>
+  <updated>2026-10-21T22:39:45+02:00</updated>
   <author><name>antxiko</name><uri>https://github.com/antxiko</uri></author>
+  <entry>
+    <id>tag:antxiko.github.io,2026:novedad/es/contra</id>
+    <title>Contra: el de MSX2, desmontado</title>
+    <link rel="alternate" type="text/html" href="https://antxiko.github.io/Contra-disassembly/"/>
+    <published>2026-10-21T22:39:45+02:00</published>
+    <updated>2026-10-21T22:39:45+02:00</updated>
+    <summary type="text">El Contra de Konami para MSX2 de 1989, explicado al 100 % y comentado al 40,9 %. Las diecinueve fases con sus mapas enteros y la que el juego se salta siempre, las cuatro bases en 3D con el mapa de sus puertas, el jugador con todas sus armas, los enemigos, los jefes, las demostraciones y el final, la partida grabada en el Game Master 2 y 11 músicas de PSG y SCC de su propio motor; todo pintado por el propio cartucho y cotejado con openMSX.</summary>
+  </entry>
   <entry>
     <id>tag:antxiko.github.io,2026:novedad/es/dunkshot-rom-a</id>
     <title>Dunk Shot: el parche MSX2 vale ya también para la ROM corregida</title>
@@ -159,13 +167,5 @@
     <published>2026-10-15T00:30:00+02:00</published>
     <updated>2026-10-15T00:30:00+02:00</updated>
     <summary type="text">La colección ha crecido desde que se publicó el Game Master, y dos de sus afirmaciones ya no se sostenían. El gancho que busca en el arranque del juego lo llevan 53 de los 60 cartuchos de Konami: los siete que no son los seis de MSX2 y la versión europea del propio Game Master. La segunda cabecera la llevan 16 juegos, no ocho, y la regla del año se cumple en todos.</summary>
-  </entry>
-  <entry>
-    <id>tag:antxiko.github.io,2026:novedad/es/goemon-issue5-sala</id>
-    <title>Ganbare Goemon: el plano de la provincia y la sala del señor, animados</title>
-    <link rel="alternate" type="text/html" href="https://antxiko.github.io/GanbareGoemon-disassembly/THE-GAME.html#the-lord-s-hall"/>
-    <published>2026-10-14T23:00:00+02:00</published>
-    <updated>2026-10-14T23:00:00+02:00</updated>
-    <summary type="text">Lo que pedía theNestruo en el issue #5: el plano que sale antes de cada zona, con el nombre de la provincia en kanji, y la escena entera del final de cada fase, con los criados que entran, se inclinan y el señor que habla, una por fase, y también el señor enfadado. La escena es el código del propio cartucho ejecutado cuadro a cuadro y dibujado con el nuestro, y las dos están cotejadas con openMSX.</summary>
   </entry>
 </feed>
