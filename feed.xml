@@ -6,8 +6,16 @@
   <link rel="self" type="application/atom+xml" href="https://antxiko.github.io/feed.xml"/>
   <link rel="alternate" type="text/html" hreflang="en" href="https://antxiko.github.io/"/>
   <link rel="alternate" type="application/atom+xml" hreflang="es" href="https://antxiko.github.io/es/feed.xml"/>
-  <updated>2026-10-20T10:00:00+02:00</updated>
+  <updated>2026-10-21T20:30:00+02:00</updated>
   <author><name>antxiko</name><uri>https://github.com/antxiko</uri></author>
+  <entry>
+    <id>tag:antxiko.github.io,2026:novedad/en/twinbee-enhanced-msx2</id>
+    <title>Twin Bee Enhanced: MSX2, pixel scroll, SCC music and Guantxip's graphics</title>
+    <link rel="alternate" type="text/html" href="https://antxiko.github.io/TwinBee-Enhanced-MSX2-Patch/"/>
+    <published>2026-10-21T20:30:00+02:00</published>
+    <updated>2026-10-21T20:30:00+02:00</updated>
+    <summary type="text">A new patch in the patches section: an IPS that turns the 1986 Twin Bee cartridge into an enhanced MSX2 version. The scenery scrolls a pixel at a time on a bitmap screen, the five stages and their bosses have new graphics adapted by Guantxip with three colours per sprite line, and the music is the SCC version from the Konami Game Collection. It needs an MSX2 and the SCC; tested in openMSX, not yet on real hardware.</summary>
+  </entry>
   <entry>
     <id>tag:antxiko.github.io,2026:novedad/en/dunkshot-rom-a</id>
     <title>Dunk Shot: the MSX2 patch now also fits the corrected ROM</title>
@@ -159,13 +167,5 @@
     <published>2026-10-15T00:30:00+02:00</published>
     <updated>2026-10-15T00:30:00+02:00</updated>
     <summary type="text">The collection has grown since the Game Master was published, and two of its claims no longer held. The hook it looks for in the game's start-up is in 53 of the 60 Konami cartridges: the seven without it are the six MSX2 ones and the European version of the Game Master itself. The second header is in 16 games, not eight, and the rule by year still holds for all of them.</summary>
-  </entry>
-  <entry>
-    <id>tag:antxiko.github.io,2026:novedad/en/goemon-issue5-sala</id>
-    <title>Ganbare Goemon: the province map and the lord's hall, animated</title>
-    <link rel="alternate" type="text/html" href="https://antxiko.github.io/GanbareGoemon-disassembly/THE-GAME.html#the-lord-s-hall"/>
-    <published>2026-10-14T23:00:00+02:00</published>
-    <updated>2026-10-14T23:00:00+02:00</updated>
-    <summary type="text">What theNestruo asked for in issue #5: the map shown before each area, with the province name in kanji, and the whole end-of-stage scene, with the retainers coming in, bowing and the lord speaking, one per stage, plus the angry lord. The scene is the cartridge's own code run frame by frame, drawn by ours, and both are checked against openMSX.</summary>
   </entry>
 </feed>
