@@ -3272,45 +3272,6 @@ PARCHES = [
                "con el mapa repintado todavía nadie",
         ),
     ),
-    dict(
-        clave="twinbee-enhanced-msx2",
-        titulo="Twin Bee Enhanced &mdash; MSX2, pixel scroll, SCC music",
-        anio=1986,
-        repo="https://github.com/antxiko/TwinBee-Enhanced-MSX2-Patch",
-        web="https://antxiko.github.io/TwinBee-Enhanced-MSX2-Patch/",
-        meta=dict(
-            en="Konami &middot; MSX2 &middot; 32 KB cartridge into a 256 KB SCC MegaROM &middot; IPS patch, unofficial",
-            es="Konami &middot; MSX2 &middot; cartucho de 32 KB a MegaROM de 256 KB con SCC &middot; parche IPS, extraoficial",
-        ),
-        claim=dict(
-            en=("An <b>enhanced Twin Bee for MSX2</b>. The scenery is a bitmap "
-               "that scrolls <b>a pixel at a time</b>, the five stages and their "
-               "five bosses wear <b>new graphics adapted by Guantxip</b>, the "
-               "sprites show <b>three colours per line</b> and the music plays on "
-               "the <b>SCC</b>, as in the Konami Game Collection. It opens with "
-               "the Konami logo of the later games, the double wave, appearing "
-               "as it does in <i>Salamander</i>."),
-            es=("Un <b>Twin Bee mejorado para MSX2</b>. El decorado es un mapa de "
-               "bits que se desplaza <b>pixel a pixel</b>, las cinco fases y sus "
-               "cinco jefes llevan <b>graficos nuevos adaptados por Guantxip</b>,"
-               " los sprites tienen <b>tres colores por linea</b> y la musica "
-               "suena por el <b>SCC</b>, como en la Konami Game Collection. Empieza"
-               " con el logo de Konami de los juegos posteriores, el de la doble "
-               "ola, apareciendo como en <i>Salamander</i>."),
-        ),
-        datos=dict(
-            en=lambda i: ("<b>134,795</b>-byte IPS &middot; <b>5</b> stages and <b>5</b> "
-               "bosses redrawn &middot; <b>256 KB</b> MegaROM with SCC &middot; "
-               "no ROM distributed"),
-            es=lambda i: ("IPS de <b>134.795</b> bytes &middot; <b>5</b> fases y <b>5</b> "
-               "jefes redibujados &middot; MegaROM de <b>256 KB</b> con SCC &middot; "
-               "no se distribuye ninguna ROM"),
-        ),
-        nota=dict(
-            en="graphics by Guantxip; tested in openMSX, the five stages played to each boss; not yet on real hardware",
-            es="graficos de Guantxip; probado en openMSX, las cinco fases jugadas hasta cada jefe; todavia no en un MSX real",
-        ),
-    ),
 ]
 
 # Las cuentas de la cabecera salen de la lista, no de escribirlas a mano: al
@@ -3751,26 +3712,6 @@ MSXON = [
 # nueva a vieja, una clave no existe o un proyecto se queda sin novedad.
 # --------------------------------------------------------------------------
 NOVEDADES = [
-    dict(id="twinbee-enhanced-msx2", clave="twinbee-enhanced-msx2", clase="nuevo",
-         fecha="2026-10-21T20:30:00+02:00",
-         titulo=dict(en="Twin Bee Enhanced: MSX2, pixel scroll, SCC music and Guantxip's graphics",
-                     es="Twin Bee Enhanced: MSX2, scroll al pixel, musica SCC y graficos de Guantxip"),
-         resumen=dict(
-             en="A new patch in the patches section: an IPS that turns the 1986 "
-                "Twin Bee cartridge into an enhanced MSX2 version. The scenery "
-                "scrolls a pixel at a time on a bitmap screen, the five stages and "
-                "their bosses have new graphics adapted by Guantxip with three "
-                "colours per sprite line, and the music is the SCC version from the "
-                "Konami Game Collection. It needs an MSX2 and the SCC; tested in "
-                "openMSX, not yet on real hardware.",
-             es="Un parche nuevo en la seccion de parches: un IPS que convierte el "
-                "cartucho de Twin Bee de 1986 en una version mejorada para MSX2. El "
-                "decorado se desplaza pixel a pixel sobre una pantalla de mapa de "
-                "bits, las cinco fases y sus jefes tienen graficos nuevos adaptados "
-                "por Guantxip con tres colores por linea de sprite, y la musica es "
-                "la version SCC de la Konami Game Collection. Hace falta un MSX2 y "
-                "el SCC; probado en openMSX, todavia no en un MSX real."),
-    ),
     dict(id="dunkshot-rom-a", clave="dunkshot-msx2", clase="actualiza",
          fecha="2026-10-20T10:00:00+02:00",
          enlace="https://github.com/antxiko/DunkShot-MSX2-Patch",
