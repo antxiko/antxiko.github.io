@@ -6,8 +6,64 @@
   <link rel="self" type="application/atom+xml" href="https://antxiko.github.io/es/feed.xml"/>
   <link rel="alternate" type="text/html" hreflang="es" href="https://antxiko.github.io/es/"/>
   <link rel="alternate" type="application/atom+xml" hreflang="en" href="https://antxiko.github.io/feed.xml"/>
-  <updated>2026-10-22T17:52:04+02:00</updated>
+  <updated>2026-10-22T18:46:50+02:00</updated>
   <author><name>antxiko</name><uri>https://github.com/antxiko</uri></author>
+  <entry>
+    <id>tag:antxiko.github.io,2026:novedad/es/kingkong2-fallo</id>
+    <title>King Kong 2: ROCKMAN y STONEMAN nunca van a por Mitchel al azar</title>
+    <link rel="alternate" type="text/html" href="https://antxiko.github.io/KingKong2-disassembly/FINDINGS.html"/>
+    <published>2026-10-22T18:46:50+02:00</published>
+    <updated>2026-10-22T18:46:50+02:00</updated>
+    <summary type="text">Una comparación que no puede cumplirse: la rama que apunta a Mitchel nunca se toma desde la elección al azar. Prueba sacada del propio código.</summary>
+  </entry>
+  <entry>
+    <id>tag:antxiko.github.io,2026:novedad/es/knightmare-fallo</id>
+    <title>Knightmare: el fotograma 0x0B nunca recibe el ajuste de fila</title>
+    <link rel="alternate" type="text/html" href="https://antxiko.github.io/Knightmare-disassembly/FINDINGS.html"/>
+    <published>2026-10-22T18:46:45+02:00</published>
+    <updated>2026-10-22T18:46:45+02:00</updated>
+    <summary type="text">Una máscara que deja 0, 4, 8 o 12 se compara con 11: no puede ser igual. Prueba sacada del código; qué fotogramas salen en una partida no se ha medido.</summary>
+  </entry>
+  <entry>
+    <id>tag:antxiko.github.io,2026:novedad/es/hinotori-fallo</id>
+    <title>Hinotori: una comparación de Gao que no puede cumplirse</title>
+    <link rel="alternate" type="text/html" href="https://antxiko.github.io/Hinotori-disassembly/FINDINGS.html"/>
+    <published>2026-10-22T18:46:40+02:00</published>
+    <updated>2026-10-22T18:46:40+02:00</updated>
+    <summary type="text">No cambia nada en el juego, porque los dos caminos llevan al mismo sitio; queda anotada en la página de hallazgos.</summary>
+  </entry>
+  <entry>
+    <id>tag:antxiko.github.io,2026:novedad/es/gamemaster2-fallo</id>
+    <title>Game Master 2: la resta de 24 bits baja el byte que no es</title>
+    <link rel="alternate" type="text/html" href="https://antxiko.github.io/GameMaster2-disassembly/FINDINGS.html"/>
+    <published>2026-10-22T18:46:35+02:00</published>
+    <updated>2026-10-22T18:46:35+02:00</updated>
+    <summary type="text">La rutina de resta del biorritmo, al pedir un préstamo, baja el cuarto byte en vez del tercero. Medido ejecutando la rutina.</summary>
+  </entry>
+  <entry>
+    <id>tag:antxiko.github.io,2026:novedad/es/nemesis3-fallos</id>
+    <title>Nemesis 3: dos comparaciones que no pueden cumplirse</title>
+    <link rel="alternate" type="text/html" href="https://antxiko.github.io/Nemesis3-disassembly/CURIOSITIES.html"/>
+    <published>2026-10-22T18:46:30+02:00</published>
+    <updated>2026-10-22T18:46:30+02:00</updated>
+    <summary type="text">El tope del jefe 4 queda en 0xE8 y no en 0xF8, y un enemigo nunca distingue la mitad de abajo de la pantalla. Pruebas lógicas sacadas del código.</summary>
+  </entry>
+  <entry>
+    <id>tag:antxiko.github.io,2026:novedad/es/nemesis2-fallos</id>
+    <title>Nemesis 2: dos comprobaciones que no pueden cumplirse</title>
+    <link rel="alternate" type="text/html" href="https://antxiko.github.io/Nemesis2-disassembly/FINDINGS.html"/>
+    <published>2026-10-22T18:46:25+02:00</published>
+    <updated>2026-10-22T18:46:25+02:00</updated>
+    <summary type="text">El jefe 2 baja hasta 0x80 y no hasta 0x68, y el recorte del borde derecho nunca se ejecuta. Pruebas lógicas del código; el efecto en pantalla no se ha medido.</summary>
+  </entry>
+  <entry>
+    <id>tag:antxiko.github.io,2026:novedad/es/supercobra-fallo</id>
+    <title>Super Cobra: el disparo del terreno ignora la fila</title>
+    <link rel="alternate" type="text/html" href="https://antxiko.github.io/SuperCobra-disassembly/FINDINGS.html"/>
+    <published>2026-10-22T18:46:20+02:00</published>
+    <updated>2026-10-22T18:46:20+02:00</updated>
+    <summary type="text">El acarreo de una comparación se pierde antes de usarse, y todo disparo del terreno en las zonas de clase 0 apunta a la nave. Prueba lógica; el efecto en partida no se ha medido.</summary>
+  </entry>
   <entry>
     <id>tag:antxiko.github.io,2026:novedad/es/metalgear-fallos</id>
     <title>Metal Gear: dos fallos del juego, medidos</title>
@@ -111,61 +167,5 @@
     <published>2026-10-17T10:38:38+02:00</published>
     <updated>2026-10-17T10:38:38+02:00</updated>
     <summary type="text">La presentación, la historia entera y el despegue animados, cada cuadro pintado desde la VRAM de openMSX como lo pinta el TMS9918. Las siete casillas del marcador con los nombres de sus armas sacados de la ROM, y la nave disparando cada una: NORMAL, TWIN, TRIPLE, los misiles, RIPPLE, ARMING, LASER, METEO, SCREW, las opciones, el F.FIELD y las bombas. Y las cápsulas y los seis objetos que sueltan los enemigos. Los jefes no tienen nombre en el cartucho, ni en inglés ni en japonés. Y la pantalla de Konami recupera su fondo azul.</summary>
-  </entry>
-  <entry>
-    <id>tag:antxiko.github.io,2026:novedad/es/salamander-juego</id>
-    <title>Salamander - Operation X: la página del juego, ordenada</title>
-    <link rel="alternate" type="text/html" href="https://antxiko.github.io/Salamander-disassembly/THE-GAME.html"/>
-    <published>2026-10-17T10:02:00+02:00</published>
-    <updated>2026-10-17T10:02:00+02:00</updated>
-    <summary type="text">Una imagen por apartado con su pie, y el resto en tablas de enlaces: los siete recorridos, los enemigos de cada fase y los jefes. Y entran la presentación y los dos finales, pantalla a pantalla, cada una igual píxel a píxel a la VRAM de openMSX.</summary>
-  </entry>
-  <entry>
-    <id>tag:antxiko.github.io,2026:novedad/es/salamander</id>
-    <title>Salamander - Operation X: el matamarcianos de Konami para MSX, desmontado</title>
-    <link rel="alternate" type="text/html" href="https://antxiko.github.io/Salamander-disassembly/"/>
-    <published>2026-10-17T09:45:39+02:00</published>
-    <updated>2026-10-17T09:45:39+02:00</updated>
-    <summary type="text">El Salamander de Konami para MSX de 1987, explicado al 100 % y comentado al 44,6 %. Las siete fases con su recorrido entero (en tres la pantalla se desvía por otro mapa), la elección de planeta para las fases 3 a 5, los ocho jefes, los dos finales y la fase 7, OPERATION X, que solo existe con Nemesis 2 en la otra ranura y saca de él sus gráficos. 20 músicas de PSG y SCC de su propio motor; todo cotejado con openMSX.</summary>
-  </entry>
-  <entry>
-    <id>tag:antxiko.github.io,2026:novedad/es/pennantrace-hoja</id>
-    <title>The Pro Yakyuu Gekitotsu Pennant Race: la hoja del partido acabado</title>
-    <link rel="alternate" type="text/html" href="https://antxiko.github.io/PennantRace-disassembly/THE-SCREENS.html"/>
-    <published>2026-10-15T23:00:00+02:00</published>
-    <updated>2026-10-15T23:00:00+02:00</updated>
-    <summary type="text">La última pantalla: los bateos, hits, home runs, ponches y bases por bolas de cada equipo, de un partido CPU contra CPU jugado hasta el final en openMSX a toda velocidad, y cotejada a 0 bytes distintos. Y explicado su trozo revuelto de arriba: el juego borra la pantalla en cuatro rectángulos y esa franja se queda con lo que había.</summary>
-  </entry>
-  <entry>
-    <id>tag:antxiko.github.io,2026:novedad/es/pennantrace-cambio</id>
-    <title>The Pro Yakyuu Gekitotsu Pennant Race: MEMBER CHANGE y las ventanitas de las bases</title>
-    <link rel="alternate" type="text/html" href="https://antxiko.github.io/PennantRace-disassembly/THE-SCREENS.html"/>
-    <published>2026-10-15T22:30:00+02:00</published>
-    <updated>2026-10-15T22:30:00+02:00</updated>
-    <summary type="text">Dos pantallas más dibujadas desde el código y cotejadas byte a byte con openMSX: el cambio de jugadores, al que se llega desde la pausa, y las dos ventanitas con la primera y la tercera base de la pantalla del lanzamiento.</summary>
-  </entry>
-  <entry>
-    <id>tag:antxiko.github.io,2026:novedad/es/pennantrace-cotejos</id>
-    <title>The Pro Yakyuu Gekitotsu Pennant Race: todo el campo y todos los letreros, cotejados</title>
-    <link rel="alternate" type="text/html" href="https://antxiko.github.io/PennantRace-disassembly/THE-SCREENS.html"/>
-    <published>2026-10-15T22:00:00+02:00</published>
-    <updated>2026-10-15T22:00:00+02:00</updated>
-    <summary type="text">Las zonas izquierda y derecha del campo, que la demostración no enseña, ya están cotejadas con la VRAM de openMSX en un partido en WATCH: 256 de 256 líneas y 248 de 256, siendo las otras 8 el OUT que el juego escribe encima. Y los seis letreros del lanzamiento, LUCKY 7 poniendo la séptima entrada en la RAM antes del primer lanzamiento.</summary>
-  </entry>
-  <entry>
-    <id>tag:antxiko.github.io,2026:novedad/es/pennantrace-menus</id>
-    <title>The Pro Yakyuu Gekitotsu Pennant Race: los menús</title>
-    <link rel="alternate" type="text/html" href="https://antxiko.github.io/PennantRace-disassembly/THE-SCREENS.html"/>
-    <published>2026-10-15T21:30:00+02:00</published>
-    <updated>2026-10-15T21:30:00+02:00</updated>
-    <summary type="text">Siete pantallas más dibujadas desde el código: la elección de equipos, los lanzadores iniciales, STARTING LINE-UP, TEAM EDIT, LEAGUE SELECTION, la jornada de PENNANT y los resultados y la clasificación, con su división larga para el porcentaje. Cada una cotejada con la VRAM de openMSX a 0 bytes distintos. Y la pantalla del lanzamiento coincide ahora en 818 de 864 bloques, tras corregir cómo se pinta un LINE del VDP.</summary>
-  </entry>
-  <entry>
-    <id>tag:antxiko.github.io,2026:novedad/es/pennantrace-jugadores</id>
-    <title>The Pro Yakyuu Gekitotsu Pennant Race: los jugadores, animados</title>
-    <link rel="alternate" type="text/html" href="https://antxiko.github.io/PennantRace-disassembly/THE-SCREENS.html"/>
-    <published>2026-10-15T21:00:00+02:00</published>
-    <updated>2026-10-15T21:00:00+02:00</updated>
-    <summary type="text">El swing del bateador, los cuatro estilos del lanzador y los defensores y corredores en el campo, en GIF montados como los monta el juego: atributos de sprite, índices de color y los dibujos que copia a trozos dentro de la VRAM, con los tiempos de su código. Y el logo de Konami, la presentación animada, el menú y los letreros del lanzamiento. Cotejado byte a byte con la VRAM de openMSX.</summary>
   </entry>
 </feed>
