@@ -2302,6 +2302,50 @@ DESENSAMBLADOS = [
         ),
     ),
     dict(
+        clave="nemesis3",
+        grupo="konami",
+        titulo="Nemesis 3 - The Eve of Destruction",
+        anio=1988,
+        repo="https://github.com/antxiko/Nemesis3-disassembly",
+        web="https://antxiko.github.io/Nemesis3-disassembly/",
+        meta=dict(
+            en="Konami &middot; MSX &middot; 256 KB MegaROM with SCC &middot; RC-764",
+            es="Konami &middot; MSX &middot; MegaROM de 256 KB con SCC &middot; RC-764",
+        ),
+        claim=dict(
+            en="Konami's <b>Nemesis 3</b>: eleven stages, but the last two only "
+               "open with <b>three secret maps</b>, four ships with their own "
+               "weapon bars, a <b>secret weapon</b> that unlocks the rest and four "
+               "<b>pause passwords</b> the game hints at with letters hidden.",
+            es="El <b>Nemesis 3</b> de Konami: once fases, pero las dos últimas solo "
+               "se abren con <b>tres mapas secretos</b>, cuatro naves con su propia "
+               "barra de armas, un <b>arma secreta</b> que desbloquea el resto y "
+               "cuatro <b>claves de la pausa</b> que el juego da con letras tapadas.",
+        ),
+        datos=dict(
+            en=lambda i: (f"{cif(262144, i)} bytes &middot; <b>0</b> unexplained "
+                          f"&middot; reassembles <b>byte for byte</b> &middot; "
+                          f"{cif(62318, i)} of code, {cif(199826, i)} of data "
+                          f"&middot; {cif(4162, i)} routines &middot; commented "
+                          f"to <b>41.3%</b>"),
+            es=lambda i: (f"{cif(262144, i)} bytes &middot; <b>0</b> sin explicar "
+                          f"&middot; reensambla <b>byte a byte</b> &middot; "
+                          f"{cif(62318, i)} de código, {cif(199826, i)} de datos "
+                          f"&middot; {cif(4162, i)} rutinas &middot; comentado "
+                          f"al <b>41,3 %</b>"),
+        ),
+        nota=dict(
+            en="Every stage route drawn from the ROM, the four ships with every "
+               "weapon firing, the enemies, the bosses, the story and the ending "
+               "animated, and 26 PSG and SCC tunes from its own engine, all checked "
+               "against openMSX.",
+            es="Cada recorrido dibujado desde la ROM, las cuatro naves con todas sus "
+               "armas disparando, los enemigos, los jefes, la historia y el final "
+               "animados, y 26 músicas de PSG y SCC de su propio motor, todo "
+               "cotejado con openMSX.",
+        ),
+    ),
+    dict(
         clave="contra",
         grupo="konami",
         titulo="Contra",
@@ -3756,6 +3800,24 @@ MSXON = [
 # nueva a vieja, una clave no existe o un proyecto se queda sin novedad.
 # --------------------------------------------------------------------------
 NOVEDADES = [
+    dict(id="nemesis3", clave="nemesis3",
+         clase="nuevo", fecha="2026-10-22T16:50:00+02:00",
+         titulo=dict(en="Nemesis 3: The Eve of Destruction, taken apart",
+                     es="Nemesis 3: The Eve of Destruction, desmontado"),
+         resumen=dict(
+             en="Konami's 1988 Nemesis 3 for MSX, 100% explained and commented to "
+                "41.3%. The eleven stages with every route drawn from the ROM, the "
+                "secret entrances and the three maps that open stages 10 and 11, the "
+                "four ships with every weapon firing, the enemies, the bosses, the "
+                "story and the ending animated, the pause passwords and 26 PSG and "
+                "SCC tunes from its own engine; all checked against openMSX.",
+             es="El Nemesis 3 de Konami para MSX de 1988, explicado al 100 % y "
+                "comentado al 41,3 %. Las once fases con cada recorrido dibujado desde "
+                "la ROM, las entradas secretas y los tres mapas que abren la 10 y la "
+                "11, las cuatro naves con todas sus armas disparando, los enemigos, "
+                "los jefes, la historia y el final animados, las claves de la pausa y "
+                "26 músicas de PSG y SCC de su propio motor; todo cotejado con "
+                "openMSX.")),
     dict(id="contra-enemigos-bases", clave="contra",
          clase="actualiza", fecha="2026-10-22T07:01:57+02:00",
          enlace="https://antxiko.github.io/Contra-disassembly/THE-ENEMIES.html",

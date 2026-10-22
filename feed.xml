@@ -1,13 +1,21 @@
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom" xml:lang="en">
   <title>antxiko — commented disassemblies of 8-bit games</title>
-  <subtitle>Old 8-bit binaries taken apart byte by byte and commented, with the tools to rebuild them: nothing gets claimed that the binary does not show, and the source has to give the original back, byte for byte. Right now that means 71 MSX games.</subtitle>
+  <subtitle>Old 8-bit binaries taken apart byte by byte and commented, with the tools to rebuild them: nothing gets claimed that the binary does not show, and the source has to give the original back, byte for byte. Right now that means 72 MSX games.</subtitle>
   <id>tag:antxiko.github.io,2026:feed/en</id>
   <link rel="self" type="application/atom+xml" href="https://antxiko.github.io/feed.xml"/>
   <link rel="alternate" type="text/html" hreflang="en" href="https://antxiko.github.io/"/>
   <link rel="alternate" type="application/atom+xml" hreflang="es" href="https://antxiko.github.io/es/feed.xml"/>
-  <updated>2026-10-22T07:01:57+02:00</updated>
+  <updated>2026-10-22T16:50:00+02:00</updated>
   <author><name>antxiko</name><uri>https://github.com/antxiko</uri></author>
+  <entry>
+    <id>tag:antxiko.github.io,2026:novedad/en/nemesis3</id>
+    <title>Nemesis 3: The Eve of Destruction, taken apart</title>
+    <link rel="alternate" type="text/html" href="https://antxiko.github.io/Nemesis3-disassembly/"/>
+    <published>2026-10-22T16:50:00+02:00</published>
+    <updated>2026-10-22T16:50:00+02:00</updated>
+    <summary type="text">Konami's 1988 Nemesis 3 for MSX, 100% explained and commented to 41.3%. The eleven stages with every route drawn from the ROM, the secret entrances and the three maps that open stages 10 and 11, the four ships with every weapon firing, the enemies, the bosses, the story and the ending animated, the pause passwords and 26 PSG and SCC tunes from its own engine; all checked against openMSX.</summary>
+  </entry>
   <entry>
     <id>tag:antxiko.github.io,2026:novedad/en/contra-enemigos-bases</id>
     <title>Contra: the enemies of each stage, and the route through each base</title>
@@ -159,13 +167,5 @@
     <published>2026-10-15T20:30:00+02:00</published>
     <updated>2026-10-15T20:30:00+02:00</updated>
     <summary type="text">Konami's 1988 MSX2 baseball, 100% explained and commented to 43.7%. The six teams with their cards, the rules as the code has them (the ten-run rule, pitch speeds of 80 to 199 km/h, the TEAM EDIT caps), the PENNANT league and how it saves to disk or to the Game Master 2's SRAM. 26 PSG and SCC tunes from its own engine and 6 pictures drawn from the ROM, checked against openMSX.</summary>
-  </entry>
-  <entry>
-    <id>tag:antxiko.github.io,2026:novedad/en/gamemaster2</id>
-    <title>Konami's Game Master 2: the cheat cartridge, its SRAM, Tennis and Hockey and a biorhythm, taken apart</title>
-    <link rel="alternate" type="text/html" href="https://antxiko.github.io/GameMaster2-disassembly/"/>
-    <published>2026-10-15T20:00:00+02:00</published>
-    <updated>2026-10-15T20:00:00+02:00</updated>
-    <summary type="text">Konami's 1987 cheat cartridge, 100% explained and commented to 40.1%. How it gets into 30 games, MSX2 ones too, through H.TIMI; its 68 signatures; the SRAM file system; the two-player Tennis and Hockey with its rules and nine tunes; and the biorhythm. 24 screens drawn from the ROM on MSX and MSX2, checked against the running cartridge and openMSX.</summary>
   </entry>
 </feed>
