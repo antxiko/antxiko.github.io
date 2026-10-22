@@ -3800,6 +3800,20 @@ MSXON = [
 # nueva a vieja, una clave no existe o un proyecto se queda sin novedad.
 # --------------------------------------------------------------------------
 NOVEDADES = [
+    dict(id="metalgear-fallos", clave="metalgear",
+         clase="actualiza", fecha="2026-10-22T17:52:04+02:00",
+         enlace="https://antxiko.github.io/MetalGear-disassembly/FINDINGS.html",
+         titulo=dict(en="Metal Gear: two bugs in the game, measured",
+                     es="Metal Gear: dos fallos del juego, medidos"),
+         resumen=dict(
+             en="Two bugs found by Manuel Pazos, now confirmed by running the "
+                "cartridge's own routines: the weapon and equipment windows leave "
+                "gaps when two slots in a row are empty, and only the slow guards "
+                "ever drop a ration or ammo. Thanks to Néstor for bringing them in.",
+             es="Dos fallos que encontró Manuel Pazos, comprobados ejecutando las "
+                "rutinas del propio cartucho: las ventanas de armas y de equipo dejan "
+                "huecos cuando hay dos seguidos, y solo los guardias lentos sueltan "
+                "alguna vez una ración o munición. Gracias a Néstor por traerlos.")),
     dict(id="nemesis3", clave="nemesis3",
          clase="nuevo", fecha="2026-10-22T16:50:00+02:00",
          titulo=dict(en="Nemesis 3: The Eve of Destruction, taken apart",
