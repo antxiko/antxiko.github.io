@@ -2314,11 +2314,11 @@ DESENSAMBLADOS = [
         ),
         claim=dict(
             en="Konami's <b>Contra</b> for MSX2: nineteen stages that go <b>screen "
-               "by screen</b>, four <b>3D bases</b> with the map of their doors, a "
+               "by screen</b>, four <b>3D bases</b> with the route to their core, a "
                "weapon menu opened by a capsule, <b>a stage the game always skips</b> "
                "and the game saved on the <b>Game Master 2</b>.",
             es="El <b>Contra</b> de Konami para MSX2: diecinueve fases que van <b>por "
-               "pantallas</b>, cuatro <b>bases en 3D</b> con el mapa de sus puertas, "
+               "pantallas</b>, cuatro <b>bases en 3D</b> con la ruta hasta su núcleo, "
                "un menú de armas que abre una cápsula, <b>una fase que el juego se "
                "salta siempre</b> y la partida grabada en el <b>Game Master 2</b>.",
         ),
@@ -2335,11 +2335,11 @@ DESENSAMBLADOS = [
                           f"al <b>40,9 %</b>"),
         ),
         nota=dict(
-            en="Every stage map, the doors of the four bases, the player with every "
+            en="Every stage map, the route of the four bases, the player with every "
                "weapon, the enemies, the bosses, the demos and the ending drawn by "
                "the cartridge itself, and 11 PSG and SCC tunes from its own engine, "
                "all checked against openMSX.",
-            es="Los mapas de todas las fases, las puertas de las cuatro bases, el "
+            es="Los mapas de todas las fases, la ruta de las cuatro bases, el "
                "jugador con todas sus armas, los enemigos, los jefes, las "
                "demostraciones y el final pintados por el propio cartucho, y 11 "
                "músicas de PSG y SCC de su propio motor, todo cotejado con openMSX.",
@@ -3756,6 +3756,21 @@ MSXON = [
 # nueva a vieja, una clave no existe o un proyecto se queda sin novedad.
 # --------------------------------------------------------------------------
 NOVEDADES = [
+    dict(id="contra-enemigos-bases", clave="contra",
+         clase="actualiza", fecha="2026-10-22T07:01:57+02:00",
+         enlace="https://antxiko.github.io/Contra-disassembly/THE-ENEMIES.html",
+         titulo=dict(en="Contra: the enemies of each stage, and the route through each base",
+                     es="Contra: los enemigos de cada fase, y la ruta de cada base"),
+         resumen=dict(
+             en="The enemy sheet is now one row per stage, every figure with its "
+                "stage's palette (none caught in the fade-in) and lined up in equal "
+                "cells. And each 3D base now shows the route from the entrance to the "
+                "core: the door to take in every room and where the other one leads.",
+             es="La hoja de enemigos va ahora por fases, cada figura con la paleta de "
+                "su fase (ninguna cogida en el fundido de entrada) y alineada en "
+                "casillas iguales. Y cada base en 3D trae la ruta de la entrada al "
+                "núcleo: la puerta que hay que tomar en cada sala y adónde lleva la "
+                "otra.")),
     dict(id="contra", clave="contra",
          clase="nuevo", fecha="2026-10-21T22:39:45+02:00",
          titulo=dict(en="Contra: the MSX2 run and gun, taken apart",

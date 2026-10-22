@@ -6,8 +6,16 @@
   <link rel="self" type="application/atom+xml" href="https://antxiko.github.io/es/feed.xml"/>
   <link rel="alternate" type="text/html" hreflang="es" href="https://antxiko.github.io/es/"/>
   <link rel="alternate" type="application/atom+xml" hreflang="en" href="https://antxiko.github.io/feed.xml"/>
-  <updated>2026-10-21T22:39:45+02:00</updated>
+  <updated>2026-10-22T07:01:57+02:00</updated>
   <author><name>antxiko</name><uri>https://github.com/antxiko</uri></author>
+  <entry>
+    <id>tag:antxiko.github.io,2026:novedad/es/contra-enemigos-bases</id>
+    <title>Contra: los enemigos de cada fase, y la ruta de cada base</title>
+    <link rel="alternate" type="text/html" href="https://antxiko.github.io/Contra-disassembly/THE-ENEMIES.html"/>
+    <published>2026-10-22T07:01:57+02:00</published>
+    <updated>2026-10-22T07:01:57+02:00</updated>
+    <summary type="text">La hoja de enemigos va ahora por fases, cada figura con la paleta de su fase (ninguna cogida en el fundido de entrada) y alineada en casillas iguales. Y cada base en 3D trae la ruta de la entrada al núcleo: la puerta que hay que tomar en cada sala y adónde lleva la otra.</summary>
+  </entry>
   <entry>
     <id>tag:antxiko.github.io,2026:novedad/es/contra</id>
     <title>Contra: el de MSX2, desmontado</title>
@@ -159,13 +167,5 @@
     <published>2026-10-15T20:00:00+02:00</published>
     <updated>2026-10-15T20:00:00+02:00</updated>
     <summary type="text">El cartucho de trucos de Konami de 1987, explicado al 100 % y comentado al 40,1 %. Cómo se cuela en 30 juegos, también los de MSX2, por H.TIMI; sus 68 firmas; el sistema de ficheros de la SRAM; el Tennis and Hockey para dos con sus reglas y nueve músicas, y el biorritmo. 24 pantallas dibujadas desde la ROM en MSX y MSX2, cotejadas con el cartucho ejecutado y con openMSX.</summary>
-  </entry>
-  <entry>
-    <id>tag:antxiko.github.io,2026:novedad/es/gamemaster-cuentas-67</id>
-    <title>Konami's Game Master: las cuentas, rehechas con 67 cartuchos</title>
-    <link rel="alternate" type="text/html" href="https://antxiko.github.io/GameMaster-disassembly/FINDINGS.html"/>
-    <published>2026-10-15T00:30:00+02:00</published>
-    <updated>2026-10-15T00:30:00+02:00</updated>
-    <summary type="text">La colección ha crecido desde que se publicó el Game Master, y dos de sus afirmaciones ya no se sostenían. El gancho que busca en el arranque del juego lo llevan 53 de los 60 cartuchos de Konami: los siete que no son los seis de MSX2 y la versión europea del propio Game Master. La segunda cabecera la llevan 16 juegos, no ocho, y la regla del año se cumple en todos.</summary>
   </entry>
 </feed>
