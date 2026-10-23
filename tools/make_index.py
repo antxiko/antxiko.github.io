@@ -2346,6 +2346,48 @@ DESENSAMBLADOS = [
         ),
     ),
     dict(
+        clave="majutsushi",
+        grupo="konami",
+        titulo="Hai no Majutsushi - Mahjong 2",
+        anio=1989,
+        repo="https://github.com/antxiko/Majutsushi-disassembly",
+        web="https://antxiko.github.io/Majutsushi-disassembly/",
+        meta=dict(
+            en="Konami &middot; MSX2 &middot; 128 KB MegaROM with a DAC &middot; RC-765",
+            es="Konami &middot; MSX2 &middot; MegaROM de 128 KB con DAC &middot; RC-765",
+        ),
+        claim=dict(
+            en="Konami's <b>Japanese mahjong</b> for four, against eight of its own "
+               "characters whose <b>playing style drifts</b> with the hands you win; "
+               "its <b>yaku measured by running its own code</b> and eight digital "
+               "voices decoded from the ROM.",
+            es="El <b>mahjong japonés</b> de Konami para cuatro, contra ocho de sus "
+               "propios personajes cuyo <b>estilo de juego se desplaza</b> con las "
+               "manos que ganas; sus <b>yaku medidos ejecutando su propio código</b> "
+               "y ocho voces digitales decodificadas de la ROM.",
+        ),
+        datos=dict(
+            en=lambda i: (f"{cif(131072, i)} bytes &middot; <b>0</b> unexplained "
+                          f"&middot; reassembles <b>byte for byte</b> &middot; "
+                          f"{cif(39764, i)} of code, {cif(91308, i)} of data "
+                          f"&middot; {cif(2448, i)} routines &middot; commented "
+                          f"to <b>25.9%</b>"),
+            es=lambda i: (f"{cif(131072, i)} bytes &middot; <b>0</b> sin explicar "
+                          f"&middot; reensambla <b>byte a byte</b> &middot; "
+                          f"{cif(39764, i)} de código, {cif(91308, i)} de datos "
+                          f"&middot; {cif(2448, i)} rutinas &middot; comentado "
+                          f"al <b>25,9 %</b>"),
+        ),
+        nota=dict(
+            en="The screens in order, the eight characters with their seven style "
+               "counters, the ten rules, every yaku code and the eight voices as "
+               "audio; the pictures are openMSX screenshots.",
+            es="Las pantallas en orden, los ocho personajes con sus siete contadores "
+               "de estilo, las diez reglas, cada código de yaku y las ocho voces en "
+               "audio; las imágenes son capturas de openMSX.",
+        ),
+    ),
+    dict(
         clave="contra",
         grupo="konami",
         titulo="Contra",
@@ -3800,6 +3842,22 @@ MSXON = [
 # nueva a vieja, una clave no existe o un proyecto se queda sin novedad.
 # --------------------------------------------------------------------------
 NOVEDADES = [
+    dict(id="majutsushi", clave="majutsushi",
+         clase="nuevo", fecha="2026-10-23T23:30:00+02:00",
+         titulo=dict(en="Hai no Majutsushi - Mahjong 2, taken apart",
+                     es="Hai no Majutsushi - Mahjong 2, desmontado"),
+         resumen=dict(
+             en="Konami's 1989 Japanese mahjong for MSX2, 100% explained and "
+                "commented to 25.9%. The screens in order, the eight characters and "
+                "the seven counters that give each its style (and drift with the hands "
+                "you win), the ten rules, the yaku measured by running the game's own "
+                "code, and the eight digital voices decoded from the ROM.",
+             es="El mahjong japonés de Konami para MSX2 de 1989, explicado al 100 % y "
+                "comentado al 25,9 %. Las pantallas en orden, los ocho personajes y "
+                "los siete contadores que dan su estilo a cada uno (y que se "
+                "desplazan con las manos que ganas), las diez reglas, los yaku "
+                "medidos ejecutando el código del propio juego y las ocho voces "
+                "digitales decodificadas de la ROM.")),
     dict(id="kingkong2-fallo", clave="kingkong2",
          clase="actualiza", fecha="2026-10-22T18:46:50+02:00",
          enlace="https://antxiko.github.io/KingKong2-disassembly/FINDINGS.html",

@@ -1,13 +1,21 @@
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom" xml:lang="en">
   <title>antxiko — commented disassemblies of 8-bit games</title>
-  <subtitle>Old 8-bit binaries taken apart byte by byte and commented, with the tools to rebuild them: nothing gets claimed that the binary does not show, and the source has to give the original back, byte for byte. Right now that means 72 MSX games.</subtitle>
+  <subtitle>Old 8-bit binaries taken apart byte by byte and commented, with the tools to rebuild them: nothing gets claimed that the binary does not show, and the source has to give the original back, byte for byte. Right now that means 73 MSX games.</subtitle>
   <id>tag:antxiko.github.io,2026:feed/en</id>
   <link rel="self" type="application/atom+xml" href="https://antxiko.github.io/feed.xml"/>
   <link rel="alternate" type="text/html" hreflang="en" href="https://antxiko.github.io/"/>
   <link rel="alternate" type="application/atom+xml" hreflang="es" href="https://antxiko.github.io/es/feed.xml"/>
-  <updated>2026-10-22T18:46:50+02:00</updated>
+  <updated>2026-10-23T23:30:00+02:00</updated>
   <author><name>antxiko</name><uri>https://github.com/antxiko</uri></author>
+  <entry>
+    <id>tag:antxiko.github.io,2026:novedad/en/majutsushi</id>
+    <title>Hai no Majutsushi - Mahjong 2, taken apart</title>
+    <link rel="alternate" type="text/html" href="https://antxiko.github.io/Majutsushi-disassembly/"/>
+    <published>2026-10-23T23:30:00+02:00</published>
+    <updated>2026-10-23T23:30:00+02:00</updated>
+    <summary type="text">Konami's 1989 Japanese mahjong for MSX2, 100% explained and commented to 25.9%. The screens in order, the eight characters and the seven counters that give each its style (and drift with the hands you win), the ten rules, the yaku measured by running the game's own code, and the eight digital voices decoded from the ROM.</summary>
+  </entry>
   <entry>
     <id>tag:antxiko.github.io,2026:novedad/en/kingkong2-fallo</id>
     <title>King Kong 2: ROCKMAN and STONEMAN never head for Mitchel at random</title>
@@ -159,13 +167,5 @@
     <published>2026-10-17T10:57:04+02:00</published>
     <updated>2026-10-17T10:57:04+02:00</updated>
     <summary type="text">The pages are rearranged: first the game (the stages, the ship and its weapons, the enemies, the bosses, the sequences, the music and the texts), then the curiosities, and at the end what is under the hood. The home page keeps the numbers and the list of pages. The old addresses lead to the new pages.</summary>
-  </entry>
-  <entry>
-    <id>tag:antxiko.github.io,2026:novedad/en/salamander-armas</id>
-    <title>Salamander - Operation X: the intro, the story and every weapon, animated</title>
-    <link rel="alternate" type="text/html" href="https://antxiko.github.io/Salamander-disassembly/THE-SHIP.html"/>
-    <published>2026-10-17T10:38:38+02:00</published>
-    <updated>2026-10-17T10:38:38+02:00</updated>
-    <summary type="text">The intro, the whole story and the take-off as animations, every frame painted from openMSX's VRAM the way the TMS9918 paints it. The seven gauge boxes with the names of their weapons taken from the ROM, and the ship firing each one: NORMAL, TWIN, TRIPLE, the missiles, RIPPLE, ARMING, LASER, METEO, SCREW, the options, the F.FIELD and the bombs. Plus the capsules and the six items enemies drop. The bosses have no names in the cartridge, in English or Japanese. And the Konami screen gets its blue background back.</summary>
   </entry>
 </feed>
