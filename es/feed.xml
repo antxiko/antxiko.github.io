@@ -1,13 +1,21 @@
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom" xml:lang="es">
   <title>antxiko — desensamblados comentados de juegos de 8 bits</title>
-  <subtitle>Binarios viejos de 8 bits desmontados byte a byte y comentados, con las herramientas para volver a montarlos: no se afirma nada que el binario no enseñe, y el código fuente tiene que devolver el original, byte a byte. Ahora mismo son 72 juegos de MSX.</subtitle>
+  <subtitle>Binarios viejos de 8 bits desmontados byte a byte y comentados, con las herramientas para volver a montarlos: no se afirma nada que el binario no enseñe, y el código fuente tiene que devolver el original, byte a byte. Ahora mismo son 73 juegos de MSX.</subtitle>
   <id>tag:antxiko.github.io,2026:feed/es</id>
   <link rel="self" type="application/atom+xml" href="https://antxiko.github.io/es/feed.xml"/>
   <link rel="alternate" type="text/html" hreflang="es" href="https://antxiko.github.io/es/"/>
   <link rel="alternate" type="application/atom+xml" hreflang="en" href="https://antxiko.github.io/feed.xml"/>
-  <updated>2026-10-22T18:46:50+02:00</updated>
+  <updated>2026-10-23T23:30:00+02:00</updated>
   <author><name>antxiko</name><uri>https://github.com/antxiko</uri></author>
+  <entry>
+    <id>tag:antxiko.github.io,2026:novedad/es/majutsushi</id>
+    <title>Hai no Majutsushi - Mahjong 2, desmontado</title>
+    <link rel="alternate" type="text/html" href="https://antxiko.github.io/Majutsushi-disassembly/"/>
+    <published>2026-10-23T23:30:00+02:00</published>
+    <updated>2026-10-23T23:30:00+02:00</updated>
+    <summary type="text">El mahjong japonés de Konami para MSX2 de 1989, explicado al 100 % y comentado al 25,9 %. Las pantallas en orden, los ocho personajes y los siete contadores que dan su estilo a cada uno (y que se desplazan con las manos que ganas), las diez reglas, los yaku medidos ejecutando el código del propio juego y las ocho voces digitales decodificadas de la ROM.</summary>
+  </entry>
   <entry>
     <id>tag:antxiko.github.io,2026:novedad/es/kingkong2-fallo</id>
     <title>King Kong 2: ROCKMAN y STONEMAN nunca van a por Mitchel al azar</title>
@@ -159,13 +167,5 @@
     <published>2026-10-17T10:57:04+02:00</published>
     <updated>2026-10-17T10:57:04+02:00</updated>
     <summary type="text">Las páginas se reordenan: primero el juego (las fases, la nave y sus armas, los enemigos, los jefes, las secuencias, la música y los textos), después las curiosidades y al final lo de por dentro. La portada se queda con las cifras y la lista de páginas. Las direcciones de antes llevan a las páginas nuevas.</summary>
-  </entry>
-  <entry>
-    <id>tag:antxiko.github.io,2026:novedad/es/salamander-armas</id>
-    <title>Salamander - Operation X: la presentación, la historia y todas las armas, animadas</title>
-    <link rel="alternate" type="text/html" href="https://antxiko.github.io/Salamander-disassembly/THE-SHIP.html"/>
-    <published>2026-10-17T10:38:38+02:00</published>
-    <updated>2026-10-17T10:38:38+02:00</updated>
-    <summary type="text">La presentación, la historia entera y el despegue animados, cada cuadro pintado desde la VRAM de openMSX como lo pinta el TMS9918. Las siete casillas del marcador con los nombres de sus armas sacados de la ROM, y la nave disparando cada una: NORMAL, TWIN, TRIPLE, los misiles, RIPPLE, ARMING, LASER, METEO, SCREW, las opciones, el F.FIELD y las bombas. Y las cápsulas y los seis objetos que sueltan los enemigos. Los jefes no tienen nombre en el cartucho, ni en inglés ni en japonés. Y la pantalla de Konami recupera su fondo azul.</summary>
   </entry>
 </feed>
