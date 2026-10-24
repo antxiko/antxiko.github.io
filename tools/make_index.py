@@ -3359,25 +3359,28 @@ PARCHES = [
         ),
         claim=dict(
             en="A Japanese mahjong with every menu in kanji. Press <b>F1</b> on the "
-               "first menu and <b>five pages in English</b> explain how to play, the "
-               "two menus, the calls, the rivals and the music keys. The hook fits "
-               "because the menu&rsquo;s own <b>61 bytes</b> are written again, "
-               "doing the same in less room; the tutorial and its font go in "
-               "stretches of 0xFF that, measured in openMSX, nobody reads.",
+               "first menu and <b>nine screens in English</b> teach the tiles, the "
+               "sets, the calls, riichi and what each menu entry means &mdash; drawn "
+               "with <b>the game&rsquo;s own tiles, letters and kanji</b>, so the patch "
+               "carries no font and no picture. The hook fits because the menu&rsquo;s "
+               "own 61 bytes are written again in less room; the screens, packed three "
+               "letters to two bytes, fill stretches of 0xFF that nobody reads.",
             es="Un mahjong japonés con todos los menús en kanji. Con <b>F1</b> en el "
-               "primer menú, <b>cinco páginas en inglés</b> explican cómo se juega, "
-               "los dos menús, las llamadas, los rivales y las teclas de la música. "
-               "El gancho cabe porque los <b>61 bytes</b> del propio menú se escriben "
-               "de nuevo, haciendo lo mismo en menos sitio; el tutorial y su fuente "
-               "van en tramos de 0xFF que, medido en openMSX, nadie lee.",
+               "primer menú, <b>nueve pantallas en inglés</b> enseñan las fichas, las "
+               "combinaciones, las llamadas, el riichi y qué es cada opción de los menús "
+               "&mdash;dibujadas con <b>las fichas, las letras y los kanji del propio "
+               "juego</b>, así que el parche no lleva ni fuente ni dibujos&mdash;. El "
+               "gancho cabe porque los 61 bytes del propio menú se escriben de nuevo en "
+               "menos sitio; las pantallas, empaquetadas a tres letras en dos bytes, "
+               "llenan tramos de 0xFF que nadie lee.",
         ),
         datos=dict(
-            en=lambda i: (f"{cif(1264, i)} bytes changed in <b>6</b> places "
-                          f"&middot; {cif(1302, i)}-byte IPS &middot; <b>5</b> "
-                          f"tutorial pages &middot; no ROM distributed"),
-            es=lambda i: (f"{cif(1264, i)} bytes cambiados en <b>6</b> sitios "
-                          f"&middot; IPS de {cif(1302, i)} bytes &middot; <b>5</b> "
-                          f"páginas de tutorial &middot; no se distribuye ninguna ROM"),
+            en=lambda i: (f"{cif(1313, i)} bytes changed in <b>6</b> places "
+                          f"&middot; {cif(1351, i)}-byte IPS &middot; <b>9</b> "
+                          f"tutorial screens &middot; no ROM distributed"),
+            es=lambda i: (f"{cif(1313, i)} bytes cambiados en <b>6</b> sitios "
+                          f"&middot; IPS de {cif(1351, i)} bytes &middot; <b>9</b> "
+                          f"pantallas de tutorial &middot; no se distribuye ninguna ROM"),
         ),
         nota=dict(
             en="tested in openMSX; not yet on real hardware",
@@ -3879,6 +3882,21 @@ MSXON = [
 # nueva a vieja, una clave no existe o un proyecto se queda sin novedad.
 # --------------------------------------------------------------------------
 NOVEDADES = [
+    dict(id="majutsushi-tutorial-imagenes", clave="majutsushi-tutorial",
+         clase="actualiza", fecha="2026-10-24T17:00:00+02:00",
+         enlace="https://antxiko.github.io/Majutsushi-TutorialPatch/",
+         titulo=dict(en="Hai no Majutsushi tutorial, now with the tiles",
+                     es="El tutorial de Hai no Majutsushi, ahora con las fichas"),
+         resumen=dict(
+             en="Text alone did not teach anyone mahjong. The tutorial is now nine "
+                "screens drawn with the game's own tiles, letters and kanji: the suits, "
+                "winds and dragons, the goal, the sets, the calls, riichi and tsumo, and "
+                "each menu entry beside its kanji.",
+             es="Con texto solo no se aprende mahjong. El tutorial son ahora nueve "
+                "pantallas dibujadas con las fichas, las letras y los kanji del propio "
+                "juego: los palos, los vientos y dragones, el objetivo, las "
+                "combinaciones, las llamadas, el riichi y el tsumo, y cada opción de los "
+                "menús junto a sus kanji.")),
     dict(id="majutsushi-tutorial-gif", clave="majutsushi-tutorial",
          clase="actualiza", fecha="2026-10-24T13:30:00+02:00",
          enlace="https://antxiko.github.io/Majutsushi-TutorialPatch/",

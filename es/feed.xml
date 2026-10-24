@@ -6,8 +6,16 @@
   <link rel="self" type="application/atom+xml" href="https://antxiko.github.io/es/feed.xml"/>
   <link rel="alternate" type="text/html" hreflang="es" href="https://antxiko.github.io/es/"/>
   <link rel="alternate" type="application/atom+xml" hreflang="en" href="https://antxiko.github.io/feed.xml"/>
-  <updated>2026-10-24T13:30:00+02:00</updated>
+  <updated>2026-10-24T17:00:00+02:00</updated>
   <author><name>antxiko</name><uri>https://github.com/antxiko</uri></author>
+  <entry>
+    <id>tag:antxiko.github.io,2026:novedad/es/majutsushi-tutorial-imagenes</id>
+    <title>El tutorial de Hai no Majutsushi, ahora con las fichas</title>
+    <link rel="alternate" type="text/html" href="https://antxiko.github.io/Majutsushi-TutorialPatch/"/>
+    <published>2026-10-24T17:00:00+02:00</published>
+    <updated>2026-10-24T17:00:00+02:00</updated>
+    <summary type="text">Con texto solo no se aprende mahjong. El tutorial son ahora nueve pantallas dibujadas con las fichas, las letras y los kanji del propio juego: los palos, los vientos y dragones, el objetivo, las combinaciones, las llamadas, el riichi y el tsumo, y cada opción de los menús junto a sus kanji.</summary>
+  </entry>
   <entry>
     <id>tag:antxiko.github.io,2026:novedad/es/majutsushi-tutorial-gif</id>
     <title>Parche tutorial de Hai no Majutsushi: velo en marcha</title>
@@ -159,13 +167,5 @@
     <published>2026-10-17T20:28:28+02:00</published>
     <updated>2026-10-17T20:28:28+02:00</updated>
     <summary type="text">El Parodius de Konami para MSX de 1988, explicado al 100 % y comentado al 40,1 %. Las seis fases y las tres secretas con sus mapas enteros, los cinco personajes con cada arma disparando, los seis jefes, las explosiones que gritan en kana, las palabras que se teclean en la pausa, la partida grabada en el Game Master 2, la presentación y el final traducidos, y 18 músicas de PSG y SCC de su propio motor; todo cotejado con openMSX.</summary>
-  </entry>
-  <entry>
-    <id>tag:antxiko.github.io,2026:novedad/es/salamander-enemigos</id>
-    <title>Salamander - Operation X: enemigos con nombre de grupo de heavy</title>
-    <link rel="alternate" type="text/html" href="https://antxiko.github.io/Salamander-disassembly/THE-ENEMIES.html"/>
-    <published>2026-10-17T11:25:40+02:00</published>
-    <updated>2026-10-17T11:25:40+02:00</updated>
-    <summary type="text">En la versión MSX los enemigos llevan nombres de grupos de heavy metal: Celtic Frost, Nuclear Assault, M.O.D., Leper Messiah, Led Zep, Ozzy, Exodus... La página de los enemigos trae ya los 43, cada uno con el enemigo de la serie al que corresponde.</summary>
   </entry>
 </feed>
