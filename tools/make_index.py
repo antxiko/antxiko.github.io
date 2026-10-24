@@ -2369,13 +2369,13 @@ DESENSAMBLADOS = [
         datos=dict(
             en=lambda i: (f"{cif(131072, i)} bytes &middot; <b>0</b> unexplained "
                           f"&middot; reassembles <b>byte for byte</b> &middot; "
-                          f"{cif(39764, i)} of code, {cif(91308, i)} of data "
-                          f"&middot; {cif(2448, i)} routines &middot; commented "
+                          f"{cif(39774, i)} of code, {cif(91298, i)} of data "
+                          f"&middot; {cif(2450, i)} routines &middot; commented "
                           f"to <b>25.9%</b>"),
             es=lambda i: (f"{cif(131072, i)} bytes &middot; <b>0</b> sin explicar "
                           f"&middot; reensambla <b>byte a byte</b> &middot; "
-                          f"{cif(39764, i)} de código, {cif(91308, i)} de datos "
-                          f"&middot; {cif(2448, i)} rutinas &middot; comentado "
+                          f"{cif(39774, i)} de código, {cif(91298, i)} de datos "
+                          f"&middot; {cif(2450, i)} rutinas &middot; comentado "
                           f"al <b>25,9 %</b>"),
         ),
         nota=dict(
@@ -3348,6 +3348,43 @@ PARCHES = [
         ),
     ),
     dict(
+        clave="majutsushi-tutorial",
+        titulo="Hai no Majutsushi &mdash; tutorial patch",
+        anio=1989,
+        repo="https://github.com/antxiko/Majutsushi-TutorialPatch",
+        web="https://antxiko.github.io/Majutsushi-TutorialPatch/",
+        meta=dict(
+            en="Konami &middot; MSX2 &middot; RC-765 &middot; IPS patch, unofficial",
+            es="Konami &middot; MSX2 &middot; RC-765 &middot; parche IPS, extraoficial",
+        ),
+        claim=dict(
+            en="A Japanese mahjong with every menu in kanji. Press <b>F1</b> on the "
+               "first menu and <b>five pages in English</b> explain how to play, the "
+               "two menus, the calls, the rivals and the music keys. The hook fits "
+               "because the menu&rsquo;s own <b>61 bytes</b> are written again, "
+               "doing the same in less room; the tutorial and its font go in "
+               "stretches of 0xFF that, measured in openMSX, nobody reads.",
+            es="Un mahjong japonés con todos los menús en kanji. Con <b>F1</b> en el "
+               "primer menú, <b>cinco páginas en inglés</b> explican cómo se juega, "
+               "los dos menús, las llamadas, los rivales y las teclas de la música. "
+               "El gancho cabe porque los <b>61 bytes</b> del propio menú se escriben "
+               "de nuevo, haciendo lo mismo en menos sitio; el tutorial y su fuente "
+               "van en tramos de 0xFF que, medido en openMSX, nadie lee.",
+        ),
+        datos=dict(
+            en=lambda i: (f"{cif(1264, i)} bytes changed in <b>6</b> places "
+                          f"&middot; {cif(1302, i)}-byte IPS &middot; <b>5</b> "
+                          f"tutorial pages &middot; no ROM distributed"),
+            es=lambda i: (f"{cif(1264, i)} bytes cambiados en <b>6</b> sitios "
+                          f"&middot; IPS de {cif(1302, i)} bytes &middot; <b>5</b> "
+                          f"páginas de tutorial &middot; no se distribuye ninguna ROM"),
+        ),
+        nota=dict(
+            en="tested in openMSX; not yet on real hardware",
+            es="probado en openMSX; todavía no en una máquina real",
+        ),
+    ),
+    dict(
         clave="warinmiddleearth-patch",
         titulo="War in Middle Earth &mdash; Araubi&rsquo;s patch",
         anio=1989,
@@ -3842,6 +3879,33 @@ MSXON = [
 # nueva a vieja, una clave no existe o un proyecto se queda sin novedad.
 # --------------------------------------------------------------------------
 NOVEDADES = [
+    dict(id="majutsushi-musica", clave="majutsushi",
+         clase="actualiza", fecha="2026-10-24T12:05:00+02:00",
+         enlace="https://antxiko.github.io/Majutsushi-disassembly/THE-MUSIC.html",
+         titulo=dict(en="Hai no Majutsushi: the music, all 48 yaku measured, and what a game reads",
+                     es="Hai no Majutsushi: la música, los 48 yaku medidos y lo que lee una partida"),
+         resumen=dict(
+             en="Fourteen PSG tunes and effects played by the cartridge's own engine (the "
+                "title tune checked against openMSX frame by frame), with F1-F5 choosing "
+                "the background music; every yaku code now seen coming out of the game; "
+                "and fifteen minutes of play with a watchpoint on every ROM read.",
+             es="Catorce músicas y efectos del PSG tocados por el motor del propio cartucho "
+                "(la del título, cotejada con openMSX cuadro a cuadro), con F1-F5 eligiendo "
+                "la música de fondo; cada código de yaku visto salir del juego; y quince "
+                "minutos de partida vigilando cada lectura de la ROM.")),
+    dict(id="majutsushi-tutorial", clave="majutsushi-tutorial",
+         otras=["majutsushi"],
+         clase="nuevo", fecha="2026-10-24T12:00:00+02:00",
+         enlace="https://antxiko.github.io/Majutsushi-TutorialPatch/",
+         titulo=dict(en="Hai no Majutsushi gets a tutorial in English",
+                     es="Hai no Majutsushi estrena un tutorial en inglés"),
+         resumen=dict(
+             en="An IPS patch: F1 on the first menu opens five pages that explain "
+                "how to play, the two menus, the calls, the rivals and the music "
+                "keys. Everything else in the game is unchanged.",
+             es="Un parche IPS: F1 en el primer menú abre cinco páginas que explican "
+                "cómo se juega, los dos menús, las llamadas, los rivales y las teclas "
+                "de la música. El resto del juego no cambia.")),
     dict(id="majutsushi", clave="majutsushi",
          clase="nuevo", fecha="2026-10-23T23:30:00+02:00",
          titulo=dict(en="Hai no Majutsushi - Mahjong 2, taken apart",
