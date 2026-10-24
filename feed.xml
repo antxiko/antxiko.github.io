@@ -6,8 +6,24 @@
   <link rel="self" type="application/atom+xml" href="https://antxiko.github.io/feed.xml"/>
   <link rel="alternate" type="text/html" hreflang="en" href="https://antxiko.github.io/"/>
   <link rel="alternate" type="application/atom+xml" hreflang="es" href="https://antxiko.github.io/es/feed.xml"/>
-  <updated>2026-10-23T23:30:00+02:00</updated>
+  <updated>2026-10-24T12:05:00+02:00</updated>
   <author><name>antxiko</name><uri>https://github.com/antxiko</uri></author>
+  <entry>
+    <id>tag:antxiko.github.io,2026:novedad/en/majutsushi-musica</id>
+    <title>Hai no Majutsushi: the music, all 48 yaku measured, and what a game reads</title>
+    <link rel="alternate" type="text/html" href="https://antxiko.github.io/Majutsushi-disassembly/THE-MUSIC.html"/>
+    <published>2026-10-24T12:05:00+02:00</published>
+    <updated>2026-10-24T12:05:00+02:00</updated>
+    <summary type="text">Fourteen PSG tunes and effects played by the cartridge's own engine (the title tune checked against openMSX frame by frame), with F1-F5 choosing the background music; every yaku code now seen coming out of the game; and fifteen minutes of play with a watchpoint on every ROM read.</summary>
+  </entry>
+  <entry>
+    <id>tag:antxiko.github.io,2026:novedad/en/majutsushi-tutorial</id>
+    <title>Hai no Majutsushi gets a tutorial in English</title>
+    <link rel="alternate" type="text/html" href="https://antxiko.github.io/Majutsushi-TutorialPatch/"/>
+    <published>2026-10-24T12:00:00+02:00</published>
+    <updated>2026-10-24T12:00:00+02:00</updated>
+    <summary type="text">An IPS patch: F1 on the first menu opens five pages that explain how to play, the two menus, the calls, the rivals and the music keys. Everything else in the game is unchanged.</summary>
+  </entry>
   <entry>
     <id>tag:antxiko.github.io,2026:novedad/en/majutsushi</id>
     <title>Hai no Majutsushi - Mahjong 2, taken apart</title>
@@ -151,21 +167,5 @@
     <published>2026-10-17T11:22:06+02:00</published>
     <updated>2026-10-17T11:22:06+02:00</updated>
     <summary type="text">The cartridge does not name its bosses, but the MSX version has its own: Golem, Cruiser Tetran, Center Core, Dead End, Seducer, Enigma, Outer Limits and Metal Slave. Each one is matched to its boss by the stage, taken from the ROM's cards, and by its look.</summary>
-  </entry>
-  <entry>
-    <id>tag:antxiko.github.io,2026:novedad/en/salamander-galerias</id>
-    <title>Salamander - Operation X: every route, enemy and boss on its page</title>
-    <link rel="alternate" type="text/html" href="https://antxiko.github.io/Salamander-disassembly/THE-STAGES.html"/>
-    <published>2026-10-17T11:07:59+02:00</published>
-    <updated>2026-10-17T11:07:59+02:00</updated>
-    <summary type="text">The stages page now shows the seven whole routes one after another, the enemies page the sheet of each stage, and the bosses page the eight bosses and the stage 7 core, each with its title.</summary>
-  </entry>
-  <entry>
-    <id>tag:antxiko.github.io,2026:novedad/en/salamander-paginas</id>
-    <title>Salamander - Operation X: the web in three blocks</title>
-    <link rel="alternate" type="text/html" href="https://antxiko.github.io/Salamander-disassembly/"/>
-    <published>2026-10-17T10:57:04+02:00</published>
-    <updated>2026-10-17T10:57:04+02:00</updated>
-    <summary type="text">The pages are rearranged: first the game (the stages, the ship and its weapons, the enemies, the bosses, the sequences, the music and the texts), then the curiosities, and at the end what is under the hood. The home page keeps the numbers and the list of pages. The old addresses lead to the new pages.</summary>
   </entry>
 </feed>
