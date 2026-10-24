@@ -3349,7 +3349,7 @@ PARCHES = [
     ),
     dict(
         clave="majutsushi-tutorial",
-        titulo="Hai no Majutsushi &mdash; tutorial patch",
+        titulo="Hai no Majutsushi &mdash; English translation and tutorial",
         anio=1989,
         repo="https://github.com/antxiko/Majutsushi-TutorialPatch",
         web="https://antxiko.github.io/Majutsushi-TutorialPatch/",
@@ -3358,28 +3358,28 @@ PARCHES = [
             es="Konami &middot; MSX2 &middot; RC-765 &middot; parche IPS, extraoficial",
         ),
         claim=dict(
-            en="A Japanese mahjong with every menu in kanji. Press <b>F1</b> on the "
-               "first menu and <b>nine screens in English</b> teach the tiles, the "
-               "sets, the calls, riichi and what each menu entry means &mdash; drawn "
-               "with <b>the game&rsquo;s own tiles, letters and kanji</b>, so the patch "
-               "carries no font and no picture. The hook fits because the menu&rsquo;s "
-               "own 61 bytes are written again in less room; the screens, packed three "
-               "letters to two bytes, fill stretches of 0xFF that nobody reads.",
-            es="Un mahjong japonés con todos los menús en kanji. Con <b>F1</b> en el "
-               "primer menú, <b>nueve pantallas en inglés</b> enseñan las fichas, las "
-               "combinaciones, las llamadas, el riichi y qué es cada opción de los menús "
-               "&mdash;dibujadas con <b>las fichas, las letras y los kanji del propio "
-               "juego</b>, así que el parche no lleva ni fuente ni dibujos&mdash;. El "
-               "gancho cabe porque los 61 bytes del propio menú se escriben de nuevo en "
-               "menos sitio; las pantallas, empaquetadas a tres letras en dos bytes, "
-               "llenan tramos de 0xFF que nadie lee.",
+            en="A Japanese mahjong, now <b>in English</b>: the title logo, the attract "
+               "introduction, every menu, the yaku and the scores, the call-outs and the "
+               "numbers and winds on the tiles. The kanji font becomes pairs of Latin "
+               "letters, the strings move and every pointer is corrected; the logo, the "
+               "big MAHJONG over the jigsaw and the tile faces in their four sizes are "
+               "drawn again within the cartridge&rsquo;s own tile budgets. And <b>F1</b> "
+               "on the first menu opens <b>nine screens</b> that teach the game.",
+            es="Un mahjong japonés, ahora <b>en inglés</b>: el logotipo del título, la "
+               "presentación de la demo, todos los menús, los yaku y los puntos, los "
+               "rótulos de las llamadas y los números y los vientos de las fichas. La "
+               "fuente de kanji pasa a parejas de letras latinas, las cadenas cambian de "
+               "sitio y se corrige cada puntero; el logotipo, el MAHJONG grande sobre el "
+               "puzle y las caras de las fichas en sus cuatro tallas se dibujan de nuevo "
+               "dentro de los tiles que ya tiene el cartucho. Y con <b>F1</b> en el primer "
+               "menú, <b>nueve pantallas</b> enseñan a jugar.",
         ),
         datos=dict(
-            en=lambda i: (f"{cif(1313, i)} bytes changed in <b>6</b> places "
-                          f"&middot; {cif(1351, i)}-byte IPS &middot; <b>9</b> "
+            en=lambda i: (f"{cif(19652, i)} bytes changed &middot; "
+                          f"{cif(22997, i)}-byte IPS &middot; <b>9</b> "
                           f"tutorial screens &middot; no ROM distributed"),
-            es=lambda i: (f"{cif(1313, i)} bytes cambiados en <b>6</b> sitios "
-                          f"&middot; IPS de {cif(1351, i)} bytes &middot; <b>9</b> "
+            es=lambda i: (f"{cif(19652, i)} bytes cambiados &middot; "
+                          f"IPS de {cif(22997, i)} bytes &middot; <b>9</b> "
                           f"pantallas de tutorial &middot; no se distribuye ninguna ROM"),
         ),
         nota=dict(
@@ -3882,6 +3882,22 @@ MSXON = [
 # nueva a vieja, una clave no existe o un proyecto se queda sin novedad.
 # --------------------------------------------------------------------------
 NOVEDADES = [
+    dict(id="majutsushi-ingles", clave="majutsushi-tutorial",
+         clase="actualiza", fecha="2026-10-24T18:05:43+02:00",
+         enlace="https://antxiko.github.io/Majutsushi-TutorialPatch/",
+         titulo=dict(en="Hai no Majutsushi, in English",
+                     es="Hai no Majutsushi, en inglés"),
+         resumen=dict(
+             en="The tutorial patch is now a full English translation: menus, rules, "
+                "rivals, call menus, yaku and scores, the call-outs, the title logo "
+                "(TILE MAGICIAN), the attract introduction with MAHJONG over the jigsaw, "
+                "and digits and E S W N on the tiles in their four sizes. The tutorial "
+                "is still on F1.",
+             es="El parche del tutorial es ahora una traducción entera al inglés: "
+                "menús, reglas, rivales, menús de llamada, yaku y puntos, los rótulos, "
+                "el logotipo del título (TILE MAGICIAN), la presentación de la demo con "
+                "MAHJONG sobre el puzle, y cifras y E S W N en las fichas en sus cuatro "
+                "tallas. El tutorial sigue en F1.")),
     dict(id="majutsushi-tutorial-imagenes", clave="majutsushi-tutorial",
          clase="actualiza", fecha="2026-10-24T17:00:00+02:00",
          enlace="https://antxiko.github.io/Majutsushi-TutorialPatch/",

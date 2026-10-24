@@ -6,8 +6,16 @@
   <link rel="self" type="application/atom+xml" href="https://antxiko.github.io/es/feed.xml"/>
   <link rel="alternate" type="text/html" hreflang="es" href="https://antxiko.github.io/es/"/>
   <link rel="alternate" type="application/atom+xml" hreflang="en" href="https://antxiko.github.io/feed.xml"/>
-  <updated>2026-10-24T17:00:00+02:00</updated>
+  <updated>2026-10-24T18:05:43+02:00</updated>
   <author><name>antxiko</name><uri>https://github.com/antxiko</uri></author>
+  <entry>
+    <id>tag:antxiko.github.io,2026:novedad/es/majutsushi-ingles</id>
+    <title>Hai no Majutsushi, en inglés</title>
+    <link rel="alternate" type="text/html" href="https://antxiko.github.io/Majutsushi-TutorialPatch/"/>
+    <published>2026-10-24T18:05:43+02:00</published>
+    <updated>2026-10-24T18:05:43+02:00</updated>
+    <summary type="text">El parche del tutorial es ahora una traducción entera al inglés: menús, reglas, rivales, menús de llamada, yaku y puntos, los rótulos, el logotipo del título (TILE MAGICIAN), la presentación de la demo con MAHJONG sobre el puzle, y cifras y E S W N en las fichas en sus cuatro tallas. El tutorial sigue en F1.</summary>
+  </entry>
   <entry>
     <id>tag:antxiko.github.io,2026:novedad/es/majutsushi-tutorial-imagenes</id>
     <title>El tutorial de Hai no Majutsushi, ahora con las fichas</title>
@@ -159,13 +167,5 @@
     <published>2026-10-18T22:00:00+02:00</published>
     <updated>2026-10-18T22:00:00+02:00</updated>
     <summary type="text">El King's Valley II de Konami de 1988, El sello de El Giza, en sus dos cartuchos (RC-760 para MSX, RC-761 para MSX2) en un mismo listado: los dos explicados al 100 % y comentados al 40 %. Las seis pirámides con sus 60 fases y 154 pantallas, Vick con cada una de sus seis herramientas, los cuatro enemigos con sus nombres del editor, las demostraciones, el editor y dónde graba, las contraseñas FESTIVAL y TRYAGAIN, los dos minijuegos escondidos y 16 músicas de PSG y SCC de su propio motor; todo pintado ejecutando el cartucho y cotejado con openMSX.</summary>
-  </entry>
-  <entry>
-    <id>tag:antxiko.github.io,2026:novedad/es/parodius</id>
-    <title>Parodius: Tako salva la Tierra, desmontado</title>
-    <link rel="alternate" type="text/html" href="https://antxiko.github.io/Parodius-disassembly/"/>
-    <published>2026-10-17T20:28:28+02:00</published>
-    <updated>2026-10-17T20:28:28+02:00</updated>
-    <summary type="text">El Parodius de Konami para MSX de 1988, explicado al 100 % y comentado al 40,1 %. Las seis fases y las tres secretas con sus mapas enteros, los cinco personajes con cada arma disparando, los seis jefes, las explosiones que gritan en kana, las palabras que se teclean en la pausa, la partida grabada en el Game Master 2, la presentación y el final traducidos, y 18 músicas de PSG y SCC de su propio motor; todo cotejado con openMSX.</summary>
   </entry>
 </feed>
