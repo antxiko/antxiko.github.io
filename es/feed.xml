@@ -1,13 +1,21 @@
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom" xml:lang="es">
   <title>antxiko — desensamblados comentados de juegos de 8 bits</title>
-  <subtitle>Binarios viejos de 8 bits desmontados byte a byte y comentados, con las herramientas para volver a montarlos: no se afirma nada que el binario no enseñe, y el código fuente tiene que devolver el original, byte a byte. Ahora mismo son 73 juegos de MSX.</subtitle>
+  <subtitle>Binarios viejos de 8 bits desmontados byte a byte y comentados, con las herramientas para volver a montarlos: no se afirma nada que el binario no enseñe, y el código fuente tiene que devolver el original, byte a byte. Ahora mismo son 74 juegos de MSX.</subtitle>
   <id>tag:antxiko.github.io,2026:feed/es</id>
   <link rel="self" type="application/atom+xml" href="https://antxiko.github.io/es/feed.xml"/>
   <link rel="alternate" type="text/html" hreflang="es" href="https://antxiko.github.io/es/"/>
   <link rel="alternate" type="application/atom+xml" hreflang="en" href="https://antxiko.github.io/feed.xml"/>
-  <updated>2026-10-24T18:05:43+02:00</updated>
+  <updated>2026-10-25T09:30:00+02:00</updated>
   <author><name>antxiko</name><uri>https://github.com/antxiko</uri></author>
+  <entry>
+    <id>tag:antxiko.github.io,2026:novedad/es/pennantrace2</id>
+    <title>Gekitotsu Pennant Race 2, desmontado</title>
+    <link rel="alternate" type="text/html" href="https://antxiko.github.io/PennantRace2-disassembly/"/>
+    <published>2026-10-25T09:30:00+02:00</published>
+    <updated>2026-10-25T09:30:00+02:00</updated>
+    <summary type="text">El Gekitotsu Pennant Race 2 de Konami para MSX2 de 1989, explicado al 100 % y comentado al 40,4 %. Las pantallas, los dos estadios enteros, la pantalla del lanzamiento, el swing del bateador, los rótulos y la hoja dibujados desde la ROM con las rutinas del propio cartucho, los seis equipos con todos sus jugadores y cómo sale el 防御率, los textos, el truco de SELECT y 17 músicas de PSG y SCC de su propio motor; todo cotejado con openMSX.</summary>
+  </entry>
   <entry>
     <id>tag:antxiko.github.io,2026:novedad/es/majutsushi-ingles</id>
     <title>Hai no Majutsushi, en inglés</title>
@@ -159,13 +167,5 @@
     <published>2026-10-18T23:30:00+02:00</published>
     <updated>2026-10-18T23:30:00+02:00</updated>
     <summary type="text">En MSX2, Vick y los enemigos son parejas de sprites cuyos colores se suman con OR donde se tapan; el segundo sprite se quedaba sin pintar donde no tapaba al primero, y la cara de Vick salía negra. Ahora Vick, los enemigos, las demostraciones y las secuencias casan con openMSX. Además: la hoja de objetos de MSX con fondo negro, y las pistas de SECRET COMMAND, F??T???L y ??Y?????, son FESTIVAL y TRYAGAIN: solo salen con el Game Master 2 puesto.</summary>
-  </entry>
-  <entry>
-    <id>tag:antxiko.github.io,2026:novedad/es/kingsvalley2</id>
-    <title>King's Valley II: los cartuchos de MSX y MSX2, desmontados</title>
-    <link rel="alternate" type="text/html" href="https://antxiko.github.io/KingsValley2-disassembly/"/>
-    <published>2026-10-18T22:00:00+02:00</published>
-    <updated>2026-10-18T22:00:00+02:00</updated>
-    <summary type="text">El King's Valley II de Konami de 1988, El sello de El Giza, en sus dos cartuchos (RC-760 para MSX, RC-761 para MSX2) en un mismo listado: los dos explicados al 100 % y comentados al 40 %. Las seis pirámides con sus 60 fases y 154 pantallas, Vick con cada una de sus seis herramientas, los cuatro enemigos con sus nombres del editor, las demostraciones, el editor y dónde graba, las contraseñas FESTIVAL y TRYAGAIN, los dos minijuegos escondidos y 16 músicas de PSG y SCC de su propio motor; todo pintado ejecutando el cartucho y cotejado con openMSX.</summary>
   </entry>
 </feed>

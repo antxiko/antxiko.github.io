@@ -2213,6 +2213,50 @@ DESENSAMBLADOS = [
         ),
     ),
     dict(
+        clave="pennantrace2",
+        grupo="konami",
+        titulo="Gekitotsu Pennant Race 2",
+        anio=1989,
+        repo="https://github.com/antxiko/PennantRace2-disassembly",
+        web="https://antxiko.github.io/PennantRace2-disassembly/",
+        meta=dict(
+            en="Konami &middot; MSX2 &middot; 128 KB MegaROM with SCC &middot; RC-766",
+            es="Konami &middot; MSX2 &middot; MegaROM de 128 KB con SCC &middot; RC-766",
+        ),
+        claim=dict(
+            en="The second <b>MSX2 baseball</b> from Konami: two stadiums, six teams "
+               "(animals, heroes...), a league and TEAM EDIT. The <b>ERA</b> of each "
+               "pitcher is not in the ROM: the game <b>works it out</b> from his other "
+               "figures. And a <b>SELECT trick</b> to hand each role to either pad.",
+            es="El segundo <b>béisbol de Konami para MSX2</b>: dos estadios, seis "
+               "equipos (animales, héroes...), una liga y TEAM EDIT. El <b>防御率</b> "
+               "de cada lanzador no está en la ROM: el juego lo <b>calcula</b> con sus "
+               "otras cifras. Y un <b>truco de SELECT</b> para dar cada papel a un mando.",
+        ),
+        datos=dict(
+            en=lambda i: (f"{cif(131072, i)} bytes &middot; <b>0</b> unexplained "
+                          f"&middot; reassembles <b>byte for byte</b> &middot; "
+                          f"{cif(54945, i)} of code, {cif(76127, i)} of data "
+                          f"&middot; {cif(3533, i)} routines &middot; commented "
+                          f"to <b>40.4%</b>"),
+            es=lambda i: (f"{cif(131072, i)} bytes &middot; <b>0</b> sin explicar "
+                          f"&middot; reensambla <b>byte a byte</b> &middot; "
+                          f"{cif(54945, i)} de código, {cif(76127, i)} de datos "
+                          f"&middot; {cif(3533, i)} rutinas &middot; comentado "
+                          f"al <b>40,4 %</b>"),
+        ),
+        nota=dict(
+            en="Both stadiums whole, the pitching screen, the swing, the signs and "
+               "the team sheet drawn from the ROM, the six teams with every player, "
+               "and 17 PSG and SCC tunes from its own engine, all checked against "
+               "openMSX.",
+            es="Los dos estadios enteros, la pantalla del lanzamiento, el swing, los "
+               "rótulos y la hoja dibujados desde la ROM, los seis equipos con todos "
+               "sus jugadores y 17 músicas de PSG y SCC de su propio motor, todo "
+               "cotejado con openMSX.",
+        ),
+    ),
+    dict(
         clave="kingsvalley2",
         grupo="konami",
         titulo="King's Valley II",
@@ -3882,6 +3926,25 @@ MSXON = [
 # nueva a vieja, una clave no existe o un proyecto se queda sin novedad.
 # --------------------------------------------------------------------------
 NOVEDADES = [
+    dict(id="pennantrace2", clave="pennantrace2",
+         clase="nuevo", fecha="2026-10-25T09:30:00+02:00",
+         titulo=dict(en="Gekitotsu Pennant Race 2, taken apart",
+                     es="Gekitotsu Pennant Race 2, desmontado"),
+         resumen=dict(
+             en="Konami's 1989 Gekitotsu Pennant Race 2 for MSX2, 100% explained and "
+                "commented to 40.4%. The screens, both stadiums whole, the pitching "
+                "screen, the batter's swing, the play signs and the team sheet drawn "
+                "from the ROM with the cartridge's own routines, the six teams with "
+                "every player and how the ERA is worked out, the texts, the SELECT "
+                "trick and 17 PSG and SCC tunes from its own engine; all checked "
+                "against openMSX.",
+             es="El Gekitotsu Pennant Race 2 de Konami para MSX2 de 1989, explicado al "
+                "100 % y comentado al 40,4 %. Las pantallas, los dos estadios enteros, "
+                "la pantalla del lanzamiento, el swing del bateador, los rótulos y la "
+                "hoja dibujados desde la ROM con las rutinas del propio cartucho, los "
+                "seis equipos con todos sus jugadores y cómo sale el 防御率, los textos, "
+                "el truco de SELECT y 17 músicas de PSG y SCC de su propio motor; todo "
+                "cotejado con openMSX.")),
     dict(id="majutsushi-ingles", clave="majutsushi-tutorial",
          clase="actualiza", fecha="2026-10-24T18:05:43+02:00",
          enlace="https://antxiko.github.io/Majutsushi-TutorialPatch/",
