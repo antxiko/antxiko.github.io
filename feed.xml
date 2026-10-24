@@ -6,8 +6,16 @@
   <link rel="self" type="application/atom+xml" href="https://antxiko.github.io/feed.xml"/>
   <link rel="alternate" type="text/html" hreflang="en" href="https://antxiko.github.io/"/>
   <link rel="alternate" type="application/atom+xml" hreflang="es" href="https://antxiko.github.io/es/feed.xml"/>
-  <updated>2026-10-24T12:05:00+02:00</updated>
+  <updated>2026-10-24T13:30:00+02:00</updated>
   <author><name>antxiko</name><uri>https://github.com/antxiko</uri></author>
+  <entry>
+    <id>tag:antxiko.github.io,2026:novedad/en/majutsushi-tutorial-gif</id>
+    <title>Hai no Majutsushi tutorial patch: see it running</title>
+    <link rel="alternate" type="text/html" href="https://antxiko.github.io/Majutsushi-TutorialPatch/"/>
+    <published>2026-10-24T13:30:00+02:00</published>
+    <updated>2026-10-24T13:30:00+02:00</updated>
+    <summary type="text">The patch's page now opens with an animation of the tutorial, taken from the patched cartridge in openMSX: the menu, F1, the five pages and back to the menu.</summary>
+  </entry>
   <entry>
     <id>tag:antxiko.github.io,2026:novedad/en/majutsushi-musica</id>
     <title>Hai no Majutsushi: the music, all 48 yaku measured, and what a game reads</title>
@@ -159,13 +167,5 @@
     <published>2026-10-17T11:25:40+02:00</published>
     <updated>2026-10-17T11:25:40+02:00</updated>
     <summary type="text">In the MSX version the enemies carry heavy metal band names: Celtic Frost, Nuclear Assault, M.O.D., Leper Messiah, Led Zep, Ozzy, Exodus... The enemies page now lists all 43, each with the series enemy it matches.</summary>
-  </entry>
-  <entry>
-    <id>tag:antxiko.github.io,2026:novedad/en/salamander-jefes</id>
-    <title>Salamander - Operation X: the bosses get their names</title>
-    <link rel="alternate" type="text/html" href="https://antxiko.github.io/Salamander-disassembly/THE-BOSSES.html"/>
-    <published>2026-10-17T11:22:06+02:00</published>
-    <updated>2026-10-17T11:22:06+02:00</updated>
-    <summary type="text">The cartridge does not name its bosses, but the MSX version has its own: Golem, Cruiser Tetran, Center Core, Dead End, Seducer, Enigma, Outer Limits and Metal Slave. Each one is matched to its boss by the stage, taken from the ROM's cards, and by its look.</summary>
   </entry>
 </feed>

@@ -3879,6 +3879,18 @@ MSXON = [
 # nueva a vieja, una clave no existe o un proyecto se queda sin novedad.
 # --------------------------------------------------------------------------
 NOVEDADES = [
+    dict(id="majutsushi-tutorial-gif", clave="majutsushi-tutorial",
+         clase="actualiza", fecha="2026-10-24T13:30:00+02:00",
+         enlace="https://antxiko.github.io/Majutsushi-TutorialPatch/",
+         titulo=dict(en="Hai no Majutsushi tutorial patch: see it running",
+                     es="Parche tutorial de Hai no Majutsushi: velo en marcha"),
+         resumen=dict(
+             en="The patch's page now opens with an animation of the tutorial, taken "
+                "from the patched cartridge in openMSX: the menu, F1, the five pages "
+                "and back to the menu.",
+             es="La página del parche abre ahora con una animación del tutorial, sacada "
+                "del cartucho parcheado en openMSX: el menú, F1, las cinco páginas y "
+                "de vuelta al menú.")),
     dict(id="majutsushi-musica", clave="majutsushi",
          clase="actualiza", fecha="2026-10-24T12:05:00+02:00",
          enlace="https://antxiko.github.io/Majutsushi-disassembly/THE-MUSIC.html",

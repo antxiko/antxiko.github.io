@@ -6,8 +6,16 @@
   <link rel="self" type="application/atom+xml" href="https://antxiko.github.io/es/feed.xml"/>
   <link rel="alternate" type="text/html" hreflang="es" href="https://antxiko.github.io/es/"/>
   <link rel="alternate" type="application/atom+xml" hreflang="en" href="https://antxiko.github.io/feed.xml"/>
-  <updated>2026-10-24T12:05:00+02:00</updated>
+  <updated>2026-10-24T13:30:00+02:00</updated>
   <author><name>antxiko</name><uri>https://github.com/antxiko</uri></author>
+  <entry>
+    <id>tag:antxiko.github.io,2026:novedad/es/majutsushi-tutorial-gif</id>
+    <title>Parche tutorial de Hai no Majutsushi: velo en marcha</title>
+    <link rel="alternate" type="text/html" href="https://antxiko.github.io/Majutsushi-TutorialPatch/"/>
+    <published>2026-10-24T13:30:00+02:00</published>
+    <updated>2026-10-24T13:30:00+02:00</updated>
+    <summary type="text">La página del parche abre ahora con una animación del tutorial, sacada del cartucho parcheado en openMSX: el menú, F1, las cinco páginas y de vuelta al menú.</summary>
+  </entry>
   <entry>
     <id>tag:antxiko.github.io,2026:novedad/es/majutsushi-musica</id>
     <title>Hai no Majutsushi: la música, los 48 yaku medidos y lo que lee una partida</title>
@@ -159,13 +167,5 @@
     <published>2026-10-17T11:25:40+02:00</published>
     <updated>2026-10-17T11:25:40+02:00</updated>
     <summary type="text">En la versión MSX los enemigos llevan nombres de grupos de heavy metal: Celtic Frost, Nuclear Assault, M.O.D., Leper Messiah, Led Zep, Ozzy, Exodus... La página de los enemigos trae ya los 43, cada uno con el enemigo de la serie al que corresponde.</summary>
-  </entry>
-  <entry>
-    <id>tag:antxiko.github.io,2026:novedad/es/salamander-jefes</id>
-    <title>Salamander - Operation X: los jefes, con su nombre</title>
-    <link rel="alternate" type="text/html" href="https://antxiko.github.io/Salamander-disassembly/THE-BOSSES.html"/>
-    <published>2026-10-17T11:22:06+02:00</published>
-    <updated>2026-10-17T11:22:06+02:00</updated>
-    <summary type="text">El cartucho no nombra a sus jefes, pero la versión MSX tiene los suyos: Golem, Cruiser Tetran, Center Core, Dead End, Seducer, Enigma, Outer Limits y Metal Slave. Cada uno va con su jefe por la fase, sacada de los rótulos de la ROM, y por cómo es.</summary>
   </entry>
 </feed>
