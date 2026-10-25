@@ -6,8 +6,16 @@
   <link rel="self" type="application/atom+xml" href="https://antxiko.github.io/feed.xml"/>
   <link rel="alternate" type="text/html" hreflang="en" href="https://antxiko.github.io/"/>
   <link rel="alternate" type="application/atom+xml" hreflang="es" href="https://antxiko.github.io/es/feed.xml"/>
-  <updated>2026-10-25T09:30:00+02:00</updated>
+  <updated>2026-10-25T19:00:00+01:00</updated>
   <author><name>antxiko</name><uri>https://github.com/antxiko</uri></author>
+  <entry>
+    <id>tag:antxiko.github.io,2026:novedad/en/codigo-compartido-konami</id>
+    <title>What Konami's cartridges share, routine by routine</title>
+    <link rel="alternate" type="text/html" href="https://antxiko.github.io/MSX-disassembly-database/THE-ROUTINES.html"/>
+    <published>2026-10-25T19:00:00+01:00</published>
+    <updated>2026-10-25T19:00:00+01:00</updated>
+    <summary type="text">The 58 Konami disassemblies in the series compared with each other instruction by instruction, with the addresses set aside: 1,252 of the 1,653 pairs share at least one block of code. The games' code pages now list the cartridges each one shares the most with, and the whole matrix is on The routines, in the series database. Nemesis 2 and Salamander lead with 210 blocks; Pro Yakyuu and Pennant Race 2 share 119.</summary>
+  </entry>
   <entry>
     <id>tag:antxiko.github.io,2026:novedad/en/pennantrace2</id>
     <title>Gekitotsu Pennant Race 2, taken apart</title>
@@ -159,13 +167,5 @@
     <published>2026-10-20T10:00:00+02:00</published>
     <updated>2026-10-20T10:00:00+02:00</updated>
     <summary type="text">There is a second Dunk Shot ROM (GoodMSX [a]) that fixes bugs in the fouls and the scoring. It is the same program rebuilt, with almost everything at other addresses, so the old IPS cannot be used on it: it has its own, and the same tool builds both. On an NMS 8250 it goes from 72.5 to 1.4 sprites not drawn per frame; on an MSX it plays as the original. Its commented disassembly and what differs between the two ROMs are in the Dunk Shot disassembly repository.</summary>
-  </entry>
-  <entry>
-    <id>tag:antxiko.github.io,2026:novedad/en/kingsvalley2-sprites</id>
-    <title>King's Valley II: the MSX2 sprites drawn as the V9938 draws them</title>
-    <link rel="alternate" type="text/html" href="https://antxiko.github.io/KingsValley2-disassembly/VICK.html"/>
-    <published>2026-10-18T23:30:00+02:00</published>
-    <updated>2026-10-18T23:30:00+02:00</updated>
-    <summary type="text">On the MSX2, Vick and the enemies are pairs of sprites whose colours are ORed together where they overlap; the second sprite was being left out wherever it did not overlap the first, so Vick's face came out black. Now Vick, the enemies, the demos and the sequences match openMSX. Also: the MSX objects sheet on a black background, and the SECRET COMMAND hints, F??T???L and ??Y?????, are FESTIVAL and TRYAGAIN: they only show with the Game Master 2 plugged in.</summary>
   </entry>
 </feed>
