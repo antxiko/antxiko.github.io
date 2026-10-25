@@ -3926,6 +3926,35 @@ MSXON = [
 # nueva a vieja, una clave no existe o un proyecto se queda sin novedad.
 # --------------------------------------------------------------------------
 NOVEDADES = [
+    dict(id="codigo-compartido-konami", clave="serie-db",
+         otras=["timepilot", "frogger", "supercobra", "athletic", "antarctic", "monkey",
+                "billiards", "mahjong", "hyperolympic1", "hyperolympic2", "circus", "magicaltree",
+                "comicbakery", "hyperrally", "skyjaguar", "golf", "mopiranger", "roadfighter",
+                "pingpong", "soccer", "kingsvalley", "baseball", "knightmare", "penguinadventure",
+                "vampirekiller", "goemon", "synthesizer", "nemesis2", "usas", "shalom",
+                "metalgear", "galious", "kingkong2", "qbert", "hinotori", "twinbee",
+                "boxing", "yiearkungfu2", "yiearkungfu", "tennis", "hypersports1", "hypersports2",
+                "hypersports3", "gamemaster", "gamemaster2", "pennantrace", "pennantrace2", "kingsvalley2",
+                "parodius", "nemesis3", "majutsushi", "contra", "salamander", "goonies",
+                "cabbagepatch", "pippols", "nemesis", "f1spirit"],
+         clase="actualiza", fecha="2026-10-25T19:00:00+01:00",
+         enlace="https://antxiko.github.io/MSX-disassembly-database/THE-ROUTINES.html",
+         titulo=dict(en="What Konami's cartridges share, routine by routine",
+                     es="Lo que comparten los cartuchos de Konami, rutina a rutina"),
+         resumen=dict(
+             en="The 58 Konami disassemblies in the series compared with each other "
+                "instruction by instruction, with the addresses set aside: 1,252 of the "
+                "1,653 pairs share at least one block of code. The games' code pages now "
+                "list the cartridges each one shares the most with, and the whole matrix is on "
+                "The routines, in the series database. Nemesis 2 and Salamander lead with "
+                "210 blocks; Pro Yakyuu and Pennant Race 2 share 119.",
+             es="Los 58 desensamblados de Konami de la serie, comparados entre sí "
+                "instrucción por instrucción y sin mirar las direcciones: 1.252 de las "
+                "1.653 parejas comparten al menos un bloque de código. Las páginas del "
+                "código de los juegos dicen ahora con qué cartuchos comparte más cada uno, y la "
+                "matriz entera está en Las rutinas, en la base de datos de la serie. "
+                "Nemesis 2 y Salamander van primero, con 210 bloques; el Pro Yakyuu y el "
+                "Pennant Race 2 comparten 119.")),
     dict(id="pennantrace2", clave="pennantrace2",
          clase="nuevo", fecha="2026-10-25T09:30:00+02:00",
          titulo=dict(en="Gekitotsu Pennant Race 2, taken apart",
