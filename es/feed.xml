@@ -6,8 +6,16 @@
   <link rel="self" type="application/atom+xml" href="https://antxiko.github.io/es/feed.xml"/>
   <link rel="alternate" type="text/html" hreflang="es" href="https://antxiko.github.io/es/"/>
   <link rel="alternate" type="application/atom+xml" hreflang="en" href="https://antxiko.github.io/feed.xml"/>
-  <updated>2026-10-28T19:00:00+01:00</updated>
+  <updated>2026-10-29T00:30:00+01:00</updated>
   <author><name>antxiko</name><uri>https://github.com/antxiko</uri></author>
+  <entry>
+    <id>tag:antxiko.github.io,2026:novedad/es/metalgear2-gif</id>
+    <title>Metal Gear 2: todo lo animado, jugado por el cartucho</title>
+    <link rel="alternate" type="text/html" href="https://antxiko.github.io/MetalGear2-disassembly/"/>
+    <published>2026-10-29T00:30:00+01:00</published>
+    <updated>2026-10-29T00:30:00+01:00</updated>
+    <summary type="text">Las once peleas en orden de aparición, 22 enemigos distintos, lo que hace Snake y el radar, todo en GIF jugado por el cartucho al ritmo del MSX (un cuadro del juego cada 5 del VDP, medido en openMSX); la presentación y el final enteros en un GIF cada uno; cada arma y cada cosa con su dibujo; las conversaciones del transceptor junto a su traducción; los dos huevos, una boa y un búho. Arreglados los sprites rotos de los jefes y el ruido del radar, dos fallos del emulador.</summary>
+  </entry>
   <entry>
     <id>tag:antxiko.github.io,2026:novedad/es/metalgear2</id>
     <title>Metal Gear 2: Solid Snake, desmontado</title>
@@ -159,13 +167,5 @@
     <published>2026-10-22T07:01:57+02:00</published>
     <updated>2026-10-22T07:01:57+02:00</updated>
     <summary type="text">La hoja de enemigos va ahora por fases, cada figura con la paleta de su fase (ninguna cogida en el fundido de entrada) y alineada en casillas iguales. Y cada base en 3D trae la ruta de la entrada al núcleo: la puerta que hay que tomar en cada sala y adónde lleva la otra.</summary>
-  </entry>
-  <entry>
-    <id>tag:antxiko.github.io,2026:novedad/es/contra</id>
-    <title>Contra: el de MSX2, desmontado</title>
-    <link rel="alternate" type="text/html" href="https://antxiko.github.io/Contra-disassembly/"/>
-    <published>2026-10-21T22:39:45+02:00</published>
-    <updated>2026-10-21T22:39:45+02:00</updated>
-    <summary type="text">El Contra de Konami para MSX2 de 1989, explicado al 100 % y comentado al 40,9 %. Las diecinueve fases con sus mapas enteros y la que el juego se salta siempre, las cuatro bases en 3D con el mapa de sus puertas, el jugador con todas sus armas, los enemigos, los jefes, las demostraciones y el final, la partida grabada en el Game Master 2 y 11 músicas de PSG y SCC de su propio motor; todo pintado por el propio cartucho y cotejado con openMSX.</summary>
   </entry>
 </feed>
