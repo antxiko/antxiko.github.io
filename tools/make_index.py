@@ -3972,6 +3972,21 @@ MSXON = [
 # nueva a vieja, una clave no existe o un proyecto se queda sin novedad.
 # --------------------------------------------------------------------------
 NOVEDADES = [
+    dict(id="metalgear2-bigboss", clase="actualiza", clave="metalgear2",
+         fecha="2026-10-29T03:30:00+01:00",
+         titulo=dict(en="Metal Gear 2: the BIG BOSS fight, and sprite sheets",
+                     es="Metal Gear 2: la pelea con BIG BOSS y las hojas de sprites"),
+         resumen=dict(
+             en="The BIG BOSS fight now plays whole: the game starts it on the way back into "
+                "zone 0x12 after GREY FOX, and the boss waits for Snake in room 6; checked "
+                "against openMSX arriving the same way. Snake is drawn in every fight GIF, and "
+                "next to the GIFs there are sprite sheets again, every drawing only once: Snake, "
+                "the enemies and each boss.",
+             es="La pelea con BIG BOSS sale ya entera: el juego la arranca al volver a la zona "
+                "0x12 tras GREY FOX, y el jefe espera a Snake en la sala 6; cotejada con openMSX "
+                "llegando por el mismo camino. Snake sale en todos los GIF de las peleas, y junto "
+                "a los GIF vuelven las hojas de sprites, cada dibujo una sola vez: Snake, los "
+                "enemigos y cada jefe.")),
     dict(id="metalgear2-gif", clave="metalgear2",
          clase="actualiza", fecha="2026-10-29T00:30:00+01:00",
          titulo=dict(en="Metal Gear 2: everything animated, played by the cartridge",

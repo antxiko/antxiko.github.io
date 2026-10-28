@@ -6,8 +6,16 @@
   <link rel="self" type="application/atom+xml" href="https://antxiko.github.io/es/feed.xml"/>
   <link rel="alternate" type="text/html" hreflang="es" href="https://antxiko.github.io/es/"/>
   <link rel="alternate" type="application/atom+xml" hreflang="en" href="https://antxiko.github.io/feed.xml"/>
-  <updated>2026-10-29T00:30:00+01:00</updated>
+  <updated>2026-10-29T03:30:00+01:00</updated>
   <author><name>antxiko</name><uri>https://github.com/antxiko</uri></author>
+  <entry>
+    <id>tag:antxiko.github.io,2026:novedad/es/metalgear2-bigboss</id>
+    <title>Metal Gear 2: la pelea con BIG BOSS y las hojas de sprites</title>
+    <link rel="alternate" type="text/html" href="https://antxiko.github.io/MetalGear2-disassembly/"/>
+    <published>2026-10-29T03:30:00+01:00</published>
+    <updated>2026-10-29T03:30:00+01:00</updated>
+    <summary type="text">La pelea con BIG BOSS sale ya entera: el juego la arranca al volver a la zona 0x12 tras GREY FOX, y el jefe espera a Snake en la sala 6; cotejada con openMSX llegando por el mismo camino. Snake sale en todos los GIF de las peleas, y junto a los GIF vuelven las hojas de sprites, cada dibujo una sola vez: Snake, los enemigos y cada jefe.</summary>
+  </entry>
   <entry>
     <id>tag:antxiko.github.io,2026:novedad/es/metalgear2-gif</id>
     <title>Metal Gear 2: todo lo animado, jugado por el cartucho</title>
@@ -159,13 +167,5 @@
     <published>2026-10-22T16:50:00+02:00</published>
     <updated>2026-10-22T16:50:00+02:00</updated>
     <summary type="text">El Nemesis 3 de Konami para MSX de 1988, explicado al 100 % y comentado al 41,3 %. Las once fases con cada recorrido dibujado desde la ROM, las entradas secretas y los tres mapas que abren la 10 y la 11, las cuatro naves con todas sus armas disparando, los enemigos, los jefes, la historia y el final animados, las claves de la pausa y 26 músicas de PSG y SCC de su propio motor; todo cotejado con openMSX.</summary>
-  </entry>
-  <entry>
-    <id>tag:antxiko.github.io,2026:novedad/es/contra-enemigos-bases</id>
-    <title>Contra: los enemigos de cada fase, y la ruta de cada base</title>
-    <link rel="alternate" type="text/html" href="https://antxiko.github.io/Contra-disassembly/THE-ENEMIES.html"/>
-    <published>2026-10-22T07:01:57+02:00</published>
-    <updated>2026-10-22T07:01:57+02:00</updated>
-    <summary type="text">La hoja de enemigos va ahora por fases, cada figura con la paleta de su fase (ninguna cogida en el fundido de entrada) y alineada en casillas iguales. Y cada base en 3D trae la ruta de la entrada al núcleo: la puerta que hay que tomar en cada sala y adónde lleva la otra.</summary>
   </entry>
 </feed>
