@@ -2257,6 +2257,52 @@ DESENSAMBLADOS = [
         ),
     ),
     dict(
+        clave="metalgear2",
+        grupo="konami",
+        titulo="Metal Gear 2: Solid Snake",
+        anio=1990,
+        repo="https://github.com/antxiko/MetalGear2-disassembly",
+        web="https://antxiko.github.io/MetalGear2-disassembly/",
+        meta=dict(
+            en="Konami &middot; MSX2 &middot; 512 KB MegaROM with SCC &middot; RC-767",
+            es="Konami &middot; MSX2 &middot; MegaROM de 512 KB con SCC &middot; RC-767",
+        ),
+        claim=dict(
+            en="<b>All of Zanzibar Land painted by the cartridge itself</b>: 20 zones, "
+               "274 rooms and 57 special rooms, Snake, the enemies and the eleven boss "
+               "fights, checked against openMSX. Every transceiver conversation, a "
+               "<b>debug monitor</b> switched off by two bytes, an MSX that says "
+               "<b>VRAM:OIK</b> and a radio that only plays with the cigarettes.",
+            es="<b>Zanzibar Land entera pintada por el propio cartucho</b>: 20 zonas, "
+               "274 salas y 57 especiales, Snake, los enemigos y las once peleas, "
+               "cotejados con openMSX. Todas las conversaciones del transceptor, un "
+               "<b>monitor de depuraci&oacute;n</b> apagado con dos bytes, un MSX que "
+               "dice <b>VRAM:OIK</b> y una radio que solo suena con el tabaco.",
+        ),
+        datos=dict(
+            en=lambda i: (f"{cif(524288, i)} bytes &middot; <b>0</b> unexplained "
+                          f"&middot; reassembles <b>byte for byte</b> &middot; "
+                          f"{cif(118147, i)} of code, {cif(406141, i)} of data "
+                          f"&middot; {cif(7673, i)} routines &middot; commented "
+                          f"to <b>45.9%</b>"),
+            es=lambda i: (f"{cif(524288, i)} bytes &middot; <b>0</b> sin explicar "
+                          f"&middot; reensambla <b>byte a byte</b> &middot; "
+                          f"{cif(118147, i)} de código, {cif(406141, i)} de datos "
+                          f"&middot; {cif(7673, i)} rutinas &middot; comentado "
+                          f"al <b>45,9 %</b>"),
+        ),
+        nota=dict(
+            en="The maps with their enemies, Snake's 98 drawings, the weapons, the "
+               "equipment, the radar, the portraits, the intro and the ending painted "
+               "by the cartridge running, the texts and 44 PSG and SCC tunes from its "
+               "own engine, all checked against openMSX.",
+            es="Los mapas con sus enemigos, los 98 dibujos de Snake, las armas, el "
+               "equipo, el radar, los retratos, la presentación y el final pintados "
+               "por el cartucho ejecutado, los textos y 44 músicas de PSG y SCC de su "
+               "propio motor, todo cotejado con openMSX.",
+        ),
+    ),
+    dict(
         clave="kingsvalley2",
         grupo="konami",
         titulo="King's Valley II",
@@ -3926,6 +3972,25 @@ MSXON = [
 # nueva a vieja, una clave no existe o un proyecto se queda sin novedad.
 # --------------------------------------------------------------------------
 NOVEDADES = [
+    dict(id="metalgear2", clave="metalgear2",
+         clase="nuevo", fecha="2026-10-28T19:00:00+01:00",
+         titulo=dict(en="Metal Gear 2: Solid Snake, taken apart",
+                     es="Metal Gear 2: Solid Snake, desmontado"),
+         resumen=dict(
+             en="Konami's 1990 Metal Gear 2: Solid Snake for MSX2, its 512 KB "
+                "100% explained and commented to 45.9%. The 20 zones with their 274 "
+                "rooms and 57 special rooms, Snake, the enemies, the eleven boss fights, "
+                "the weapons, the equipment, the radar and the sequences painted by the "
+                "cartridge itself and checked against openMSX; every transceiver "
+                "conversation, the texts, 44 PSG and SCC tunes from its own engine and "
+                "the debug monitor hidden in the last bank.",
+             es="El Metal Gear 2: Solid Snake de Konami para MSX2 de 1990, sus 512 KB "
+                "explicados al 100 % y comentados al 45,9 %. Las 20 zonas con sus 274 "
+                "salas y 57 especiales, Snake, los enemigos, las once peleas, las armas, "
+                "el equipo, el radar y las secuencias pintados por el propio cartucho y "
+                "cotejados con openMSX; todas las conversaciones del transceptor, los "
+                "textos, 44 músicas de PSG y SCC de su propio motor y el monitor de "
+                "depuración escondido en el último banco.")),
     dict(id="codigo-compartido-konami", clave="serie-db",
          otras=["timepilot", "frogger", "supercobra", "athletic", "antarctic", "monkey",
                 "billiards", "mahjong", "hyperolympic1", "hyperolympic2", "circus", "magicaltree",
