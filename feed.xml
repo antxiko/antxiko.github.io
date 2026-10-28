@@ -1,13 +1,21 @@
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom" xml:lang="en">
   <title>antxiko — commented disassemblies of 8-bit games</title>
-  <subtitle>Old 8-bit binaries taken apart byte by byte and commented, with the tools to rebuild them: nothing gets claimed that the binary does not show, and the source has to give the original back, byte for byte. Right now that means 74 MSX games.</subtitle>
+  <subtitle>Old 8-bit binaries taken apart byte by byte and commented, with the tools to rebuild them: nothing gets claimed that the binary does not show, and the source has to give the original back, byte for byte. Right now that means 75 MSX games.</subtitle>
   <id>tag:antxiko.github.io,2026:feed/en</id>
   <link rel="self" type="application/atom+xml" href="https://antxiko.github.io/feed.xml"/>
   <link rel="alternate" type="text/html" hreflang="en" href="https://antxiko.github.io/"/>
   <link rel="alternate" type="application/atom+xml" hreflang="es" href="https://antxiko.github.io/es/feed.xml"/>
-  <updated>2026-10-25T19:00:00+01:00</updated>
+  <updated>2026-10-28T19:00:00+01:00</updated>
   <author><name>antxiko</name><uri>https://github.com/antxiko</uri></author>
+  <entry>
+    <id>tag:antxiko.github.io,2026:novedad/en/metalgear2</id>
+    <title>Metal Gear 2: Solid Snake, taken apart</title>
+    <link rel="alternate" type="text/html" href="https://antxiko.github.io/MetalGear2-disassembly/"/>
+    <published>2026-10-28T19:00:00+01:00</published>
+    <updated>2026-10-28T19:00:00+01:00</updated>
+    <summary type="text">Konami's 1990 Metal Gear 2: Solid Snake for MSX2, its 512 KB 100% explained and commented to 45.9%. The 20 zones with their 274 rooms and 57 special rooms, Snake, the enemies, the eleven boss fights, the weapons, the equipment, the radar and the sequences painted by the cartridge itself and checked against openMSX; every transceiver conversation, the texts, 44 PSG and SCC tunes from its own engine and the debug monitor hidden in the last bank.</summary>
+  </entry>
   <entry>
     <id>tag:antxiko.github.io,2026:novedad/en/codigo-compartido-konami</id>
     <title>What Konami's cartridges share, routine by routine</title>
@@ -159,13 +167,5 @@
     <published>2026-10-21T22:39:45+02:00</published>
     <updated>2026-10-21T22:39:45+02:00</updated>
     <summary type="text">Konami's 1989 Contra for MSX2, 100% explained and commented to 40.9%. The nineteen stages with their whole maps and the one the game always skips, the four 3D bases with the map of their doors, the player with every weapon, the enemies, the bosses, the demos and the ending, the game saved on the Game Master 2 and 11 PSG and SCC tunes from its own engine; everything drawn by the cartridge itself and checked against openMSX.</summary>
-  </entry>
-  <entry>
-    <id>tag:antxiko.github.io,2026:novedad/en/dunkshot-rom-a</id>
-    <title>Dunk Shot: the MSX2 patch now also fits the corrected ROM</title>
-    <link rel="alternate" type="text/html" href="https://github.com/antxiko/DunkShot-MSX2-Patch"/>
-    <published>2026-10-20T10:00:00+02:00</published>
-    <updated>2026-10-20T10:00:00+02:00</updated>
-    <summary type="text">There is a second Dunk Shot ROM (GoodMSX [a]) that fixes bugs in the fouls and the scoring. It is the same program rebuilt, with almost everything at other addresses, so the old IPS cannot be used on it: it has its own, and the same tool builds both. On an NMS 8250 it goes from 72.5 to 1.4 sprites not drawn per frame; on an MSX it plays as the original. Its commented disassembly and what differs between the two ROMs are in the Dunk Shot disassembly repository.</summary>
   </entry>
 </feed>
