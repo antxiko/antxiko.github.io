@@ -6,8 +6,16 @@
   <link rel="self" type="application/atom+xml" href="https://antxiko.github.io/feed.xml"/>
   <link rel="alternate" type="text/html" hreflang="en" href="https://antxiko.github.io/"/>
   <link rel="alternate" type="application/atom+xml" hreflang="es" href="https://antxiko.github.io/es/feed.xml"/>
-  <updated>2026-10-29T00:30:00+01:00</updated>
+  <updated>2026-10-29T03:30:00+01:00</updated>
   <author><name>antxiko</name><uri>https://github.com/antxiko</uri></author>
+  <entry>
+    <id>tag:antxiko.github.io,2026:novedad/en/metalgear2-bigboss</id>
+    <title>Metal Gear 2: the BIG BOSS fight, and sprite sheets</title>
+    <link rel="alternate" type="text/html" href="https://antxiko.github.io/MetalGear2-disassembly/"/>
+    <published>2026-10-29T03:30:00+01:00</published>
+    <updated>2026-10-29T03:30:00+01:00</updated>
+    <summary type="text">The BIG BOSS fight now plays whole: the game starts it on the way back into zone 0x12 after GREY FOX, and the boss waits for Snake in room 6; checked against openMSX arriving the same way. Snake is drawn in every fight GIF, and next to the GIFs there are sprite sheets again, every drawing only once: Snake, the enemies and each boss.</summary>
+  </entry>
   <entry>
     <id>tag:antxiko.github.io,2026:novedad/en/metalgear2-gif</id>
     <title>Metal Gear 2: everything animated, played by the cartridge</title>
@@ -159,13 +167,5 @@
     <published>2026-10-22T16:50:00+02:00</published>
     <updated>2026-10-22T16:50:00+02:00</updated>
     <summary type="text">Konami's 1988 Nemesis 3 for MSX, 100% explained and commented to 41.3%. The eleven stages with every route drawn from the ROM, the secret entrances and the three maps that open stages 10 and 11, the four ships with every weapon firing, the enemies, the bosses, the story and the ending animated, the pause passwords and 26 PSG and SCC tunes from its own engine; all checked against openMSX.</summary>
-  </entry>
-  <entry>
-    <id>tag:antxiko.github.io,2026:novedad/en/contra-enemigos-bases</id>
-    <title>Contra: the enemies of each stage, and the route through each base</title>
-    <link rel="alternate" type="text/html" href="https://antxiko.github.io/Contra-disassembly/THE-ENEMIES.html"/>
-    <published>2026-10-22T07:01:57+02:00</published>
-    <updated>2026-10-22T07:01:57+02:00</updated>
-    <summary type="text">The enemy sheet is now one row per stage, every figure with its stage's palette (none caught in the fade-in) and lined up in equal cells. And each 3D base now shows the route from the entrance to the core: the door to take in every room and where the other one leads.</summary>
   </entry>
 </feed>
