@@ -3972,6 +3972,24 @@ MSXON = [
 # nueva a vieja, una clave no existe o un proyecto se queda sin novedad.
 # --------------------------------------------------------------------------
 NOVEDADES = [
+    dict(id="metalgear2-gif", clave="metalgear2",
+         clase="actualiza", fecha="2026-10-29T00:30:00+01:00",
+         titulo=dict(en="Metal Gear 2: everything animated, played by the cartridge",
+                     es="Metal Gear 2: todo lo animado, jugado por el cartucho"),
+         resumen=dict(
+             en="The eleven boss fights in order of appearance, 22 different enemies, Snake's "
+                "moves and the radar, all as GIFs played by the cartridge at the MSX's own pace "
+                "(one game frame every 5 of the VDP, measured in openMSX); the whole intro and "
+                "ending in one GIF each; every weapon and item with its drawing; the transceiver "
+                "conversations side by side with their translation; the two eggs, a boa and an "
+                "owl. Fixed: broken boss sprites and a noisy radar, both faults of the emulator.",
+             es="Las once peleas en orden de aparición, 22 enemigos distintos, lo que hace Snake "
+                "y el radar, todo en GIF jugado por el cartucho al ritmo del MSX (un cuadro del "
+                "juego cada 5 del VDP, medido en openMSX); la presentación y el final enteros en "
+                "un GIF cada uno; cada arma y cada cosa con su dibujo; las conversaciones del "
+                "transceptor junto a su traducción; los dos huevos, una boa y un búho. "
+                "Arreglados los sprites rotos de los jefes y el ruido del radar, dos fallos "
+                "del emulador.")),
     dict(id="metalgear2", clave="metalgear2",
          clase="nuevo", fecha="2026-10-28T19:00:00+01:00",
          titulo=dict(en="Metal Gear 2: Solid Snake, taken apart",
