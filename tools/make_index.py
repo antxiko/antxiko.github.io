@@ -2303,6 +2303,51 @@ DESENSAMBLADOS = [
         ),
     ),
     dict(
+        clave="spacemanbow",
+        grupo="konami",
+        titulo="Space Manbow",
+        anio=1989,
+        repo="https://github.com/antxiko/SpaceManbow-disassembly",
+        web="https://antxiko.github.io/SpaceManbow-disassembly/",
+        meta=dict(
+            en="Konami &middot; MSX2 &middot; 256 KB MegaROM with SCC &middot; RC-768",
+            es="Konami &middot; MSX2 &middot; MegaROM de 256 KB con SCC &middot; RC-768",
+        ),
+        claim=dict(
+            en="<b>The nine stages drawn whole from the ROM</b> with the cartridge's own "
+               "map engine, checked tile by tile. Every capsule, the enemies and the nine "
+               "bosses played by the cartridge, a <b>demo recorder</b> left inside, debug "
+               "keys behind one byte and a stage tune that <b>never repeats</b>.",
+            es="<b>Las nueve fases dibujadas enteras desde la ROM</b> con el motor del mapa "
+               "del propio cartucho, cotejadas casilla a casilla. Cada c&aacute;psula, los "
+               "enemigos y los nueve jefes jugados por el cartucho, un <b>grabador de "
+               "demostraciones</b> que se qued&oacute; dentro, teclas de depuraci&oacute;n "
+               "detr&aacute;s de un byte y una m&uacute;sica que <b>no se repite nunca</b>.",
+        ),
+        datos=dict(
+            en=lambda i: (f"{cif(262144, i)} bytes &middot; <b>0</b> unexplained "
+                          f"&middot; reassembles <b>byte for byte</b> &middot; "
+                          f"{cif(45520, i)} of code, {cif(216624, i)} of data "
+                          f"&middot; {cif(3142, i)} routines &middot; commented "
+                          f"to <b>40.9%</b>"),
+            es=lambda i: (f"{cif(262144, i)} bytes &middot; <b>0</b> sin explicar "
+                          f"&middot; reensambla <b>byte a byte</b> &middot; "
+                          f"{cif(45520, i)} de código, {cif(216624, i)} de datos "
+                          f"&middot; {cif(3142, i)} rutinas &middot; comentado "
+                          f"al <b>40,9 %</b>"),
+        ),
+        nota=dict(
+            en="The stages and the logo drawn from the ROM; the ship, the enemies, the "
+               "bosses, the intro and the ending in GIF played by the cartridge at the "
+               "pace measured in openMSX; 19 SCC tunes from its own engine, checked "
+               "against openMSX.",
+            es="Las fases y el logotipo dibujados desde la ROM; la nave, los enemigos, "
+               "los jefes, la presentación y el final en GIF jugados por el cartucho al "
+               "ritmo medido en openMSX; 19 músicas del SCC de su propio motor, "
+               "cotejadas con openMSX.",
+        ),
+    ),
+    dict(
         clave="kingsvalley2",
         grupo="konami",
         titulo="King's Valley II",
@@ -3972,6 +4017,26 @@ MSXON = [
 # nueva a vieja, una clave no existe o un proyecto se queda sin novedad.
 # --------------------------------------------------------------------------
 NOVEDADES = [
+    dict(id="spacemanbow", clase="nuevo", clave="spacemanbow",
+         fecha="2026-10-30T21:00:00+01:00",
+         titulo=dict(en="Space Manbow, taken apart",
+                     es="Space Manbow, desmontado"),
+         resumen=dict(
+             en="Konami's 1989 Space Manbow for MSX2, its 256 KB 100% explained and "
+                "commented to 40.9%. The nine stages drawn whole from the ROM with the "
+                "cartridge's own map engine and checked tile by tile; the ship and every "
+                "capsule, the enemies and the nine bosses, the intro and the ending in GIF "
+                "played by the cartridge at the MSX's pace; the texts translated, 19 SCC "
+                "tunes from its own engine checked against openMSX, and the debug keys and "
+                "demo recorder left inside.",
+             es="El Space Manbow de Konami para MSX2 de 1989, sus 256 KB explicados al "
+                "100 % y comentados al 40,9 %. Las nueve fases dibujadas enteras desde la "
+                "ROM con el motor del mapa del propio cartucho y cotejadas casilla a "
+                "casilla; la nave y cada cápsula, los enemigos y los nueve jefes, la "
+                "presentación y el final en GIF jugados por el cartucho al ritmo del MSX; "
+                "los textos traducidos, 19 músicas del SCC de su propio motor cotejadas "
+                "con openMSX, y las teclas de depuración y el grabador de demostraciones "
+                "que se quedaron dentro.")),
     dict(id="metalgear2-metalgear", clase="actualiza", clave="metalgear2",
          fecha="2026-10-29T15:30:00+01:00",
          enlace="https://antxiko.github.io/MetalGear2-disassembly/UNDER-THE-HOOD.html",

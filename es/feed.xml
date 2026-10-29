@@ -1,13 +1,21 @@
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom" xml:lang="es">
   <title>antxiko — desensamblados comentados de juegos de 8 bits</title>
-  <subtitle>Binarios viejos de 8 bits desmontados byte a byte y comentados, con las herramientas para volver a montarlos: no se afirma nada que el binario no enseñe, y el código fuente tiene que devolver el original, byte a byte. Ahora mismo son 75 juegos de MSX.</subtitle>
+  <subtitle>Binarios viejos de 8 bits desmontados byte a byte y comentados, con las herramientas para volver a montarlos: no se afirma nada que el binario no enseñe, y el código fuente tiene que devolver el original, byte a byte. Ahora mismo son 76 juegos de MSX.</subtitle>
   <id>tag:antxiko.github.io,2026:feed/es</id>
   <link rel="self" type="application/atom+xml" href="https://antxiko.github.io/es/feed.xml"/>
   <link rel="alternate" type="text/html" hreflang="es" href="https://antxiko.github.io/es/"/>
   <link rel="alternate" type="application/atom+xml" hreflang="en" href="https://antxiko.github.io/feed.xml"/>
-  <updated>2026-10-29T15:30:00+01:00</updated>
+  <updated>2026-10-30T21:00:00+01:00</updated>
   <author><name>antxiko</name><uri>https://github.com/antxiko</uri></author>
+  <entry>
+    <id>tag:antxiko.github.io,2026:novedad/es/spacemanbow</id>
+    <title>Space Manbow, desmontado</title>
+    <link rel="alternate" type="text/html" href="https://antxiko.github.io/SpaceManbow-disassembly/"/>
+    <published>2026-10-30T21:00:00+01:00</published>
+    <updated>2026-10-30T21:00:00+01:00</updated>
+    <summary type="text">El Space Manbow de Konami para MSX2 de 1989, sus 256 KB explicados al 100 % y comentados al 40,9 %. Las nueve fases dibujadas enteras desde la ROM con el motor del mapa del propio cartucho y cotejadas casilla a casilla; la nave y cada cápsula, los enemigos y los nueve jefes, la presentación y el final en GIF jugados por el cartucho al ritmo del MSX; los textos traducidos, 19 músicas del SCC de su propio motor cotejadas con openMSX, y las teclas de depuración y el grabador de demostraciones que se quedaron dentro.</summary>
+  </entry>
   <entry>
     <id>tag:antxiko.github.io,2026:novedad/es/metalgear2-metalgear</id>
     <title>Metal Gear 2: lo que comparte con Metal Gear</title>
@@ -159,13 +167,5 @@
     <published>2026-10-22T18:46:30+02:00</published>
     <updated>2026-10-22T18:46:30+02:00</updated>
     <summary type="text">El tope del jefe 4 queda en 0xE8 y no en 0xF8, y un enemigo nunca distingue la mitad de abajo de la pantalla. Pruebas lógicas sacadas del código.</summary>
-  </entry>
-  <entry>
-    <id>tag:antxiko.github.io,2026:novedad/es/nemesis2-fallos</id>
-    <title>Nemesis 2: dos comprobaciones que no pueden cumplirse</title>
-    <link rel="alternate" type="text/html" href="https://antxiko.github.io/Nemesis2-disassembly/FINDINGS.html"/>
-    <published>2026-10-22T18:46:25+02:00</published>
-    <updated>2026-10-22T18:46:25+02:00</updated>
-    <summary type="text">El jefe 2 baja hasta 0x80 y no hasta 0x68, y el recorte del borde derecho nunca se ejecuta. Pruebas lógicas del código; el efecto en pantalla no se ha medido.</summary>
   </entry>
 </feed>
