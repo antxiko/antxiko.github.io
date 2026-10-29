@@ -3972,6 +3972,23 @@ MSXON = [
 # nueva a vieja, una clave no existe o un proyecto se queda sin novedad.
 # --------------------------------------------------------------------------
 NOVEDADES = [
+    dict(id="metalgear2-metalgear", clase="actualiza", clave="metalgear2",
+         fecha="2026-10-29T15:30:00+01:00",
+         enlace="https://antxiko.github.io/MetalGear2-disassembly/UNDER-THE-HOOD.html",
+         titulo=dict(en="Metal Gear 2: what it shares with Metal Gear",
+                     es="Metal Gear 2: lo que comparte con Metal Gear"),
+         resumen=dict(
+             en="Both listings compared instruction by instruction: 1,484 bytes of code in runs of 16 "
+                "bytes or more, 1.3 % of Metal Gear 2 (3.3 % of Metal Gear). What repeats is Konami's "
+                "MSX2 library: the VDP, 1-3 bit characters turned into 4, the joystick, the Konami logo "
+                "and the start-up. Sound, bank switching, texts and the guards' intelligence share "
+                "nothing; the aiming is the same calculation, rewritten. 578 bytes of identical data.",
+             es="Los dos listados comparados instrucción a instrucción: 1.484 bytes de código en tramos "
+                "de 16 bytes o más, el 1,3 % de Metal Gear 2 (el 3,3 % de Metal Gear). Lo que se repite "
+                "es la biblioteca de MSX2 de Konami: el VDP, los caracteres de 1 a 3 bits pasados a 4, "
+                "el mando, el logotipo de Konami y el arranque. El sonido, los cambios de banco, los "
+                "textos y la inteligencia de los guardias no comparten nada; la puntería es el mismo "
+                "cálculo, reescrito. 578 bytes de datos iguales.")),
     dict(id="metalgear2-textos", clase="actualiza", clave="metalgear2",
          fecha="2026-10-29T08:21:00+01:00",
          titulo=dict(en="Metal Gear 2: all the texts translated, in story order",

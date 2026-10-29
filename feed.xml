@@ -6,8 +6,16 @@
   <link rel="self" type="application/atom+xml" href="https://antxiko.github.io/feed.xml"/>
   <link rel="alternate" type="text/html" hreflang="en" href="https://antxiko.github.io/"/>
   <link rel="alternate" type="application/atom+xml" hreflang="es" href="https://antxiko.github.io/es/feed.xml"/>
-  <updated>2026-10-29T08:21:00+01:00</updated>
+  <updated>2026-10-29T15:30:00+01:00</updated>
   <author><name>antxiko</name><uri>https://github.com/antxiko</uri></author>
+  <entry>
+    <id>tag:antxiko.github.io,2026:novedad/en/metalgear2-metalgear</id>
+    <title>Metal Gear 2: what it shares with Metal Gear</title>
+    <link rel="alternate" type="text/html" href="https://antxiko.github.io/MetalGear2-disassembly/UNDER-THE-HOOD.html"/>
+    <published>2026-10-29T15:30:00+01:00</published>
+    <updated>2026-10-29T15:30:00+01:00</updated>
+    <summary type="text">Both listings compared instruction by instruction: 1,484 bytes of code in runs of 16 bytes or more, 1.3 % of Metal Gear 2 (3.3 % of Metal Gear). What repeats is Konami's MSX2 library: the VDP, 1-3 bit characters turned into 4, the joystick, the Konami logo and the start-up. Sound, bank switching, texts and the guards' intelligence share nothing; the aiming is the same calculation, rewritten. 578 bytes of identical data.</summary>
+  </entry>
   <entry>
     <id>tag:antxiko.github.io,2026:novedad/en/metalgear2-textos</id>
     <title>Metal Gear 2: all the texts translated, in story order</title>
@@ -159,13 +167,5 @@
     <published>2026-10-22T18:46:25+02:00</published>
     <updated>2026-10-22T18:46:25+02:00</updated>
     <summary type="text">Boss 2 goes down to 0x80 instead of 0x68, and the right-edge clipping never runs. Logical proofs from the code; the effect on screen is not measured.</summary>
-  </entry>
-  <entry>
-    <id>tag:antxiko.github.io,2026:novedad/en/supercobra-fallo</id>
-    <title>Super Cobra: the terrain's shot ignores the row</title>
-    <link rel="alternate" type="text/html" href="https://antxiko.github.io/SuperCobra-disassembly/FINDINGS.html"/>
-    <published>2026-10-22T18:46:20+02:00</published>
-    <updated>2026-10-22T18:46:20+02:00</updated>
-    <summary type="text">The carry of one comparison is lost before it is used, so every terrain shot in class 0 zones aims at the ship. Logical proof; effect in a game not measured.</summary>
   </entry>
 </feed>
