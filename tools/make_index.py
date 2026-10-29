@@ -3972,6 +3972,25 @@ MSXON = [
 # nueva a vieja, una clave no existe o un proyecto se queda sin novedad.
 # --------------------------------------------------------------------------
 NOVEDADES = [
+    dict(id="metalgear2-cotejo", clase="actualiza", clave="metalgear2",
+         fecha="2026-10-29T07:00:00+01:00",
+         titulo=dict(en="Metal Gear 2: checked again, and fixed",
+                     es="Metal Gear 2: cotejado otra vez, y arreglado"),
+         resumen=dict(
+             en="The enemies are now played in their whole room (the old boxes hid their movement "
+                "and gave a sleeping soldier sprites by force), eleven different ones, each with "
+                "its name. Snake's punch is trigger 2 and now shows. RUNNING MAN, Pettrovich and "
+                "GREY FOX play their fights to the end, doing what each one waits for from the "
+                "player, and every message can be read. The radar of the weapon screens is clean, "
+                "and OVER is translated as it should be. NIGHT SIGHT and the start of several "
+                "fights checked against openMSX.",
+             es="Los enemigos salen ahora jugados en su sala entera (los recuadros de antes "
+                "escondían su movimiento y a un soldado dormido le daban sprites a la fuerza), "
+                "once distintos y cada uno con su nombre. El golpe de Snake es el disparo 2 y ya "
+                "se ve. RUNNING MAN, Pettrovich y GREY FOX acaban su pelea, haciendo lo que cada "
+                "uno espera del jugador, y todos los mensajes se leen. El radar de las pantallas "
+                "de armas sale limpio y OVER se traduce como «cambio». NIGHT SIGHT y el principio "
+                "de varias peleas, cotejados con openMSX.")),
     dict(id="metalgear2-bigboss", clase="actualiza", clave="metalgear2",
          fecha="2026-10-29T03:30:00+01:00",
          titulo=dict(en="Metal Gear 2: the BIG BOSS fight, and sprite sheets",

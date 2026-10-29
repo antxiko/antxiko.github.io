@@ -6,8 +6,16 @@
   <link rel="self" type="application/atom+xml" href="https://antxiko.github.io/feed.xml"/>
   <link rel="alternate" type="text/html" hreflang="en" href="https://antxiko.github.io/"/>
   <link rel="alternate" type="application/atom+xml" hreflang="es" href="https://antxiko.github.io/es/feed.xml"/>
-  <updated>2026-10-29T03:30:00+01:00</updated>
+  <updated>2026-10-29T07:00:00+01:00</updated>
   <author><name>antxiko</name><uri>https://github.com/antxiko</uri></author>
+  <entry>
+    <id>tag:antxiko.github.io,2026:novedad/en/metalgear2-cotejo</id>
+    <title>Metal Gear 2: checked again, and fixed</title>
+    <link rel="alternate" type="text/html" href="https://antxiko.github.io/MetalGear2-disassembly/"/>
+    <published>2026-10-29T07:00:00+01:00</published>
+    <updated>2026-10-29T07:00:00+01:00</updated>
+    <summary type="text">The enemies are now played in their whole room (the old boxes hid their movement and gave a sleeping soldier sprites by force), eleven different ones, each with its name. Snake's punch is trigger 2 and now shows. RUNNING MAN, Pettrovich and GREY FOX play their fights to the end, doing what each one waits for from the player, and every message can be read. The radar of the weapon screens is clean, and OVER is translated as it should be. NIGHT SIGHT and the start of several fights checked against openMSX.</summary>
+  </entry>
   <entry>
     <id>tag:antxiko.github.io,2026:novedad/en/metalgear2-bigboss</id>
     <title>Metal Gear 2: the BIG BOSS fight, and sprite sheets</title>
@@ -159,13 +167,5 @@
     <published>2026-10-22T17:52:04+02:00</published>
     <updated>2026-10-22T17:52:04+02:00</updated>
     <summary type="text">Two bugs found by Manuel Pazos, now confirmed by running the cartridge's own routines: the weapon and equipment windows leave gaps when two slots in a row are empty, and only the slow guards ever drop a ration or ammo. Thanks to Néstor for bringing them in.</summary>
-  </entry>
-  <entry>
-    <id>tag:antxiko.github.io,2026:novedad/en/nemesis3</id>
-    <title>Nemesis 3: The Eve of Destruction, taken apart</title>
-    <link rel="alternate" type="text/html" href="https://antxiko.github.io/Nemesis3-disassembly/"/>
-    <published>2026-10-22T16:50:00+02:00</published>
-    <updated>2026-10-22T16:50:00+02:00</updated>
-    <summary type="text">Konami's 1988 Nemesis 3 for MSX, 100% explained and commented to 41.3%. The eleven stages with every route drawn from the ROM, the secret entrances and the three maps that open stages 10 and 11, the four ships with every weapon firing, the enemies, the bosses, the story and the ending animated, the pause passwords and 26 PSG and SCC tunes from its own engine; all checked against openMSX.</summary>
   </entry>
 </feed>
