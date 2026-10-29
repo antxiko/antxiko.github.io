@@ -3972,6 +3972,25 @@ MSXON = [
 # nueva a vieja, una clave no existe o un proyecto se queda sin novedad.
 # --------------------------------------------------------------------------
 NOVEDADES = [
+    dict(id="metalgear2-textos", clase="actualiza", clave="metalgear2",
+         fecha="2026-10-29T08:21:00+01:00",
+         titulo=dict(en="Metal Gear 2: all the texts translated, in story order",
+                     es="Metal Gear 2: todos los textos traducidos, por la historia"),
+         resumen=dict(
+             en="The transceiver and the texts are now one page: the conversations, the 211 messages "
+                "of the scenes (Natasha, the sewers, the bridge, Holly, BIG BOSS, the ending, the "
+                "children) in story order, and the signs, every one next to its translation; the "
+                "weapon and equipment descriptions too. Also: boss sprite sheets without one-colour "
+                "flashes, enemy GIFs without a stray Snake, a screen for each part of the intro and "
+                "the ending, and tunes 0x6B and 0x6E checked along every path a tune is asked for: "
+                "nothing reaches them.",
+             es="El transceptor y los textos son ya una sola página: las conversaciones, los 211 "
+                "mensajes de las escenas (Natasha, las alcantarillas, el puente, Holly, BIG BOSS, el "
+                "final, los niños) en el orden de la historia, y los letreros, cada uno al lado de su "
+                "traducción; también las descripciones de las armas y el equipo. Además: hojas de los "
+                "jefes sin los destellos de un color, GIF de enemigos sin un Snake fuera de sitio, una "
+                "pantalla de cada parte de la presentación y del final, y las músicas 0x6B y 0x6E "
+                "comprobadas por todos los caminos por los que se pide una música: nada llega a ellas.")),
     dict(id="metalgear2-cotejo", clase="actualiza", clave="metalgear2",
          fecha="2026-10-29T07:00:00+01:00",
          titulo=dict(en="Metal Gear 2: checked again, and fixed",
