@@ -6,8 +6,16 @@
   <link rel="self" type="application/atom+xml" href="https://antxiko.github.io/es/feed.xml"/>
   <link rel="alternate" type="text/html" hreflang="es" href="https://antxiko.github.io/es/"/>
   <link rel="alternate" type="application/atom+xml" hreflang="en" href="https://antxiko.github.io/feed.xml"/>
-  <updated>2026-10-30T21:00:00+01:00</updated>
+  <updated>2026-10-30T23:00:00+01:00</updated>
   <author><name>antxiko</name><uri>https://github.com/antxiko</uri></author>
+  <entry>
+    <id>tag:antxiko.github.io,2026:novedad/es/spacemanbow-demostracion</id>
+    <title>Space Manbow: dónde se separa la demostración del MSX</title>
+    <link rel="alternate" type="text/html" href="https://antxiko.github.io/SpaceManbow-disassembly/THE-SEQUENCES.html"/>
+    <published>2026-10-30T23:00:00+01:00</published>
+    <updated>2026-10-30T23:00:00+01:00</updated>
+    <summary type="text">Por qué no está la demostración grabada, medido: la RAM al empezar cada cuadro de juego en openMSX contra el cartucho ejecutado. Hasta el cuadro 67 la partida es la misma y solo difiere lo que mueve la interrupción; en el 68 un disparo da en el MSX y aquí no.</summary>
+  </entry>
   <entry>
     <id>tag:antxiko.github.io,2026:novedad/es/spacemanbow</id>
     <title>Space Manbow, desmontado</title>
@@ -159,13 +167,5 @@
     <published>2026-10-22T18:46:35+02:00</published>
     <updated>2026-10-22T18:46:35+02:00</updated>
     <summary type="text">La rutina de resta del biorritmo, al pedir un préstamo, baja el cuarto byte en vez del tercero. Medido ejecutando la rutina.</summary>
-  </entry>
-  <entry>
-    <id>tag:antxiko.github.io,2026:novedad/es/nemesis3-fallos</id>
-    <title>Nemesis 3: dos comparaciones que no pueden cumplirse</title>
-    <link rel="alternate" type="text/html" href="https://antxiko.github.io/Nemesis3-disassembly/CURIOSITIES.html"/>
-    <published>2026-10-22T18:46:30+02:00</published>
-    <updated>2026-10-22T18:46:30+02:00</updated>
-    <summary type="text">El tope del jefe 4 queda en 0xE8 y no en 0xF8, y un enemigo nunca distingue la mitad de abajo de la pantalla. Pruebas lógicas sacadas del código.</summary>
   </entry>
 </feed>

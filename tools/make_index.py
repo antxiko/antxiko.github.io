@@ -4017,6 +4017,20 @@ MSXON = [
 # nueva a vieja, una clave no existe o un proyecto se queda sin novedad.
 # --------------------------------------------------------------------------
 NOVEDADES = [
+    dict(id="spacemanbow-demostracion", clase="actualiza", clave="spacemanbow",
+         fecha="2026-10-30T23:00:00+01:00",
+         enlace="https://antxiko.github.io/SpaceManbow-disassembly/THE-SEQUENCES.html",
+         titulo=dict(en="Space Manbow: where the demo parts from the MSX",
+                     es="Space Manbow: dónde se separa la demostración del MSX"),
+         resumen=dict(
+             en="Why the recorded demo is not on the page, measured: the RAM at the "
+                "start of every game frame in openMSX against the running cartridge. Up "
+                "to frame 67 the game is the same and only what the interrupt moves "
+                "differs; in frame 68 a shot hits on the MSX and misses here.",
+             es="Por qué no está la demostración grabada, medido: la RAM al empezar "
+                "cada cuadro de juego en openMSX contra el cartucho ejecutado. Hasta el "
+                "cuadro 67 la partida es la misma y solo difiere lo que mueve la "
+                "interrupción; en el 68 un disparo da en el MSX y aquí no.")),
     dict(id="spacemanbow", clase="nuevo", clave="spacemanbow",
          fecha="2026-10-30T21:00:00+01:00",
          titulo=dict(en="Space Manbow, taken apart",
