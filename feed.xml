@@ -6,8 +6,16 @@
   <link rel="self" type="application/atom+xml" href="https://antxiko.github.io/feed.xml"/>
   <link rel="alternate" type="text/html" hreflang="en" href="https://antxiko.github.io/"/>
   <link rel="alternate" type="application/atom+xml" hreflang="es" href="https://antxiko.github.io/es/feed.xml"/>
-  <updated>2026-10-30T23:00:00+01:00</updated>
+  <updated>2026-10-30T23:30:00+01:00</updated>
   <author><name>antxiko</name><uri>https://github.com/antxiko</uri></author>
+  <entry>
+    <id>tag:antxiko.github.io,2026:novedad/en/spacemanbow-enemigos-sueltos</id>
+    <title>Space Manbow: each enemy on its own, the capsules and a font nobody loads</title>
+    <link rel="alternate" type="text/html" href="https://antxiko.github.io/SpaceManbow-disassembly/THE-ENEMIES.html"/>
+    <published>2026-10-30T23:30:00+01:00</published>
+    <updated>2026-10-30T23:30:00+01:00</updated>
+    <summary type="text">79 of the 82 enemy types cut out one by one, painted by the cartridge: each type removed from a copy of the game and what stops being seen. The seven capsule drawings, stage 6's boss fight whole (182 s), the code shared with the other Konami cartridges, a bug hunt (one harmless read of unwritten RAM in the whole game) and an unused font with a loader nothing calls. And the demo: with the Z80 counted in clock cycles it still parts at frame 68, so the pace is not the cause.</summary>
+  </entry>
   <entry>
     <id>tag:antxiko.github.io,2026:novedad/en/spacemanbow-demostracion</id>
     <title>Space Manbow: where the demo parts from the MSX</title>
@@ -159,13 +167,5 @@
     <published>2026-10-22T18:46:40+02:00</published>
     <updated>2026-10-22T18:46:40+02:00</updated>
     <summary type="text">It makes no difference to the game, because both paths lead to the same place; noted on the findings page.</summary>
-  </entry>
-  <entry>
-    <id>tag:antxiko.github.io,2026:novedad/en/gamemaster2-fallo</id>
-    <title>Game Master 2: the 24-bit subtraction lowers the wrong byte</title>
-    <link rel="alternate" type="text/html" href="https://antxiko.github.io/GameMaster2-disassembly/FINDINGS.html"/>
-    <published>2026-10-22T18:46:35+02:00</published>
-    <updated>2026-10-22T18:46:35+02:00</updated>
-    <summary type="text">The biorhythm's subtraction routine, on a borrow, lowers the fourth byte instead of the third. Measured by running the routine.</summary>
   </entry>
 </feed>

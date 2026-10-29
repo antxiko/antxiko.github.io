@@ -4017,6 +4017,27 @@ MSXON = [
 # nueva a vieja, una clave no existe o un proyecto se queda sin novedad.
 # --------------------------------------------------------------------------
 NOVEDADES = [
+    dict(id="spacemanbow-enemigos-sueltos", clase="actualiza", clave="spacemanbow",
+         fecha="2026-10-30T23:30:00+01:00",
+         enlace="https://antxiko.github.io/SpaceManbow-disassembly/THE-ENEMIES.html",
+         titulo=dict(en="Space Manbow: each enemy on its own, the capsules and a font nobody loads",
+                     es="Space Manbow: cada enemigo suelto, las cápsulas y una fuente que nadie carga"),
+         resumen=dict(
+             en="79 of the 82 enemy types cut out one by one, painted by the cartridge: "
+                "each type removed from a copy of the game and what stops being seen. The "
+                "seven capsule drawings, stage 6's boss fight whole (182 s), the code shared "
+                "with the other Konami cartridges, a bug hunt (one harmless read of "
+                "unwritten RAM in the whole game) and an unused font with a loader nothing "
+                "calls. And the demo: with the Z80 counted in clock cycles it still parts "
+                "at frame 68, so the pace is not the cause.",
+             es="79 de los 82 tipos de enemigo recortados uno a uno, pintados por el "
+                "cartucho: cada tipo quitado de una copia de la partida y lo que deja de "
+                "verse. Los siete dibujos de las cápsulas, la pelea del jefe de la fase 6 "
+                "entera (182 s), el código compartido con los otros Konami, una caza de "
+                "fallos (una lectura de RAM sin escribir, inocua, en todo el juego) y una "
+                "fuente sin usar con un cargador que nada llama. Y la demostración: con el "
+                "Z80 contado por ciclos se sigue separando en el cuadro 68, así que el ritmo "
+                "no es la causa.")),
     dict(id="spacemanbow-demostracion", clase="actualiza", clave="spacemanbow",
          fecha="2026-10-30T23:00:00+01:00",
          enlace="https://antxiko.github.io/SpaceManbow-disassembly/THE-SEQUENCES.html",
