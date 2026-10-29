@@ -6,8 +6,16 @@
   <link rel="self" type="application/atom+xml" href="https://antxiko.github.io/es/feed.xml"/>
   <link rel="alternate" type="text/html" hreflang="es" href="https://antxiko.github.io/es/"/>
   <link rel="alternate" type="application/atom+xml" hreflang="en" href="https://antxiko.github.io/feed.xml"/>
-  <updated>2026-10-29T07:00:00+01:00</updated>
+  <updated>2026-10-29T08:21:00+01:00</updated>
   <author><name>antxiko</name><uri>https://github.com/antxiko</uri></author>
+  <entry>
+    <id>tag:antxiko.github.io,2026:novedad/es/metalgear2-textos</id>
+    <title>Metal Gear 2: todos los textos traducidos, por la historia</title>
+    <link rel="alternate" type="text/html" href="https://antxiko.github.io/MetalGear2-disassembly/"/>
+    <published>2026-10-29T08:21:00+01:00</published>
+    <updated>2026-10-29T08:21:00+01:00</updated>
+    <summary type="text">El transceptor y los textos son ya una sola página: las conversaciones, los 211 mensajes de las escenas (Natasha, las alcantarillas, el puente, Holly, BIG BOSS, el final, los niños) en el orden de la historia, y los letreros, cada uno al lado de su traducción; también las descripciones de las armas y el equipo. Además: hojas de los jefes sin los destellos de un color, GIF de enemigos sin un Snake fuera de sitio, una pantalla de cada parte de la presentación y del final, y las músicas 0x6B y 0x6E comprobadas por todos los caminos por los que se pide una música: nada llega a ellas.</summary>
+  </entry>
   <entry>
     <id>tag:antxiko.github.io,2026:novedad/es/metalgear2-cotejo</id>
     <title>Metal Gear 2: cotejado otra vez, y arreglado</title>
@@ -159,13 +167,5 @@
     <published>2026-10-22T18:46:20+02:00</published>
     <updated>2026-10-22T18:46:20+02:00</updated>
     <summary type="text">El acarreo de una comparación se pierde antes de usarse, y todo disparo del terreno en las zonas de clase 0 apunta a la nave. Prueba lógica; el efecto en partida no se ha medido.</summary>
-  </entry>
-  <entry>
-    <id>tag:antxiko.github.io,2026:novedad/es/metalgear-fallos</id>
-    <title>Metal Gear: dos fallos del juego, medidos</title>
-    <link rel="alternate" type="text/html" href="https://antxiko.github.io/MetalGear-disassembly/FINDINGS.html"/>
-    <published>2026-10-22T17:52:04+02:00</published>
-    <updated>2026-10-22T17:52:04+02:00</updated>
-    <summary type="text">Dos fallos que encontró Manuel Pazos, comprobados ejecutando las rutinas del propio cartucho: las ventanas de armas y de equipo dejan huecos cuando hay dos seguidos, y solo los guardias lentos sueltan alguna vez una ración o munición. Gracias a Néstor por traerlos.</summary>
   </entry>
 </feed>
