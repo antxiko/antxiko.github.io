@@ -6,8 +6,16 @@
   <link rel="self" type="application/atom+xml" href="https://antxiko.github.io/feed.xml"/>
   <link rel="alternate" type="text/html" hreflang="en" href="https://antxiko.github.io/"/>
   <link rel="alternate" type="application/atom+xml" hreflang="es" href="https://antxiko.github.io/es/feed.xml"/>
-  <updated>2026-10-30T23:30:00+01:00</updated>
+  <updated>2026-10-30T23:45:00+01:00</updated>
   <author><name>antxiko</name><uri>https://github.com/antxiko</uri></author>
+  <entry>
+    <id>tag:antxiko.github.io,2026:novedad/en/spacemanbow-demostraciones</id>
+    <title>Space Manbow: the three demos, recorded in openMSX</title>
+    <link rel="alternate" type="text/html" href="https://antxiko.github.io/SpaceManbow-disassembly/THE-SEQUENCES.html"/>
+    <published>2026-10-30T23:45:00+01:00</published>
+    <updated>2026-10-30T23:45:00+01:00</updated>
+    <summary type="text">The three recorded demos, whole (stages 1, 2 and 4): since the running cartridge parts from the MSX at frame 68, they are recorded in openMSX, dumping the VRAM, the palette and the registers of every VDP frame, and painted with the same code as the other GIFs. Checked against openMSX screenshots, 0 different pixels; for that the drawing code had two fixes that also redo the other GIFs: register 18 moves the sprites too, and the line interrupts' registers arrive a few lines late.</summary>
+  </entry>
   <entry>
     <id>tag:antxiko.github.io,2026:novedad/en/spacemanbow-enemigos-sueltos</id>
     <title>Space Manbow: each enemy on its own, the capsules and a font nobody loads</title>
@@ -159,13 +167,5 @@
     <published>2026-10-22T18:46:45+02:00</published>
     <updated>2026-10-22T18:46:45+02:00</updated>
     <summary type="text">A mask that leaves 0, 4, 8 or 12 compared with 11: it can never be equal. Proved from the code; which frames appear in a game is not measured.</summary>
-  </entry>
-  <entry>
-    <id>tag:antxiko.github.io,2026:novedad/en/hinotori-fallo</id>
-    <title>Hinotori: a comparison for Gao that can never match</title>
-    <link rel="alternate" type="text/html" href="https://antxiko.github.io/Hinotori-disassembly/FINDINGS.html"/>
-    <published>2026-10-22T18:46:40+02:00</published>
-    <updated>2026-10-22T18:46:40+02:00</updated>
-    <summary type="text">It makes no difference to the game, because both paths lead to the same place; noted on the findings page.</summary>
   </entry>
 </feed>

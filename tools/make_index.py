@@ -4017,6 +4017,27 @@ MSXON = [
 # nueva a vieja, una clave no existe o un proyecto se queda sin novedad.
 # --------------------------------------------------------------------------
 NOVEDADES = [
+    dict(id="spacemanbow-demostraciones", clase="actualiza", clave="spacemanbow",
+         fecha="2026-10-30T23:45:00+01:00",
+         enlace="https://antxiko.github.io/SpaceManbow-disassembly/THE-SEQUENCES.html",
+         titulo=dict(en="Space Manbow: the three demos, recorded in openMSX",
+                     es="Space Manbow: las tres demostraciones, grabadas en openMSX"),
+         resumen=dict(
+             en="The three recorded demos, whole (stages 1, 2 and 4): since the running "
+                "cartridge parts from the MSX at frame 68, they are recorded in openMSX, "
+                "dumping the VRAM, the palette and the registers of every VDP frame, and "
+                "painted with the same code as the other GIFs. Checked against openMSX "
+                "screenshots, 0 different pixels; for that the drawing code had two fixes "
+                "that also redo the other GIFs: register 18 moves the sprites too, and the "
+                "line interrupts' registers arrive a few lines late.",
+             es="Las tres demostraciones grabadas, enteras (fases 1, 2 y 4): como el "
+                "cartucho ejecutado se separa del MSX en el cuadro 68, se graban en "
+                "openMSX, volcando la VRAM, la paleta y los registros de cada cuadro del "
+                "VDP, y se pintan con el mismo código que los demás GIF. Cotejadas con "
+                "capturas de openMSX, 0 puntos distintos; para eso el dibujador tuvo dos "
+                "arreglos que rehacen también los otros GIF: el registro 18 corre también "
+                "los sprites, y los registros de las interrupciones de línea llegan unas "
+                "líneas tarde.")),
     dict(id="spacemanbow-enemigos-sueltos", clase="actualiza", clave="spacemanbow",
          fecha="2026-10-30T23:30:00+01:00",
          enlace="https://antxiko.github.io/SpaceManbow-disassembly/THE-ENEMIES.html",
