@@ -2348,6 +2348,48 @@ DESENSAMBLADOS = [
         ),
     ),
     dict(
+        clave="quarth",
+        grupo="konami",
+        titulo="Quarth",
+        anio=1990,
+        repo="https://github.com/antxiko/Quarth-disassembly",
+        web="https://antxiko.github.io/Quarth-disassembly/",
+        meta=dict(
+            en="Konami &middot; MSX2 &middot; 128 KB MegaROM with SCC &middot; RC-769",
+            es="Konami &middot; MSX2 &middot; MegaROM de 128 KB con SCC &middot; RC-769",
+        ),
+        claim=dict(
+            en="The ten stages, the three demos and the ending <b>recorded in openMSX</b> "
+               "frame by frame and painted by our own code. A <b>rules caption</b> the game "
+               "never shows, a demo recorder nobody switches on and the <b>Metal Gear 2</b> "
+               "sound engine inside.",
+            es="Las diez fases, las tres demostraciones y el final <b>grabados en openMSX</b> "
+               "cuadro a cuadro y pintados con c&oacute;digo nuestro. Un <b>r&oacute;tulo de "
+               "reglas</b> que el juego no ense&ntilde;a nunca, un grabador de demostraciones "
+               "que nadie enciende y el motor de sonido de <b>Metal Gear 2</b> dentro.",
+        ),
+        datos=dict(
+            en=lambda i: (f"{cif(131072, i)} bytes &middot; <b>0</b> unexplained "
+                          f"&middot; reassembles <b>byte for byte</b> &middot; "
+                          f"{cif(19889, i)} of code, {cif(111183, i)} of data "
+                          f"&middot; {cif(1234, i)} routines &middot; commented "
+                          f"to <b>40.3%</b>"),
+            es=lambda i: (f"{cif(131072, i)} bytes &middot; <b>0</b> sin explicar "
+                          f"&middot; reensambla <b>byte a byte</b> &middot; "
+                          f"{cif(19889, i)} de código, {cif(111183, i)} de datos "
+                          f"&middot; {cif(1234, i)} rutinas &middot; comentado "
+                          f"al <b>40,3 %</b>"),
+        ),
+        nota=dict(
+            en="The menu, the three modes, the ten stages, the pause and losing in GIF, "
+               "the intro, the demos and the ending whole; the texts and credits, and "
+               "19 SCC tunes from its own engine, checked against openMSX.",
+            es="El menú, los tres modos, las diez fases, la pausa y perder en GIF, la "
+               "presentación, las demostraciones y el final enteros; los textos y los "
+               "créditos, y 19 músicas del SCC de su propio motor, cotejadas con openMSX.",
+        ),
+    ),
+    dict(
         clave="kingsvalley2",
         grupo="konami",
         titulo="King's Valley II",
@@ -4017,8 +4059,25 @@ MSXON = [
 # nueva a vieja, una clave no existe o un proyecto se queda sin novedad.
 # --------------------------------------------------------------------------
 NOVEDADES = [
+    dict(id="quarth", clase="nuevo", clave="quarth",
+         fecha="2026-10-30T15:20:00+01:00",
+         titulo=dict(en="Quarth, taken apart",
+                     es="Quarth, desmontado"),
+         resumen=dict(
+             en="Konami's 1990 Quarth for MSX2, its 128 KB 100% explained and commented "
+                "to 40.3%. The menu, the three modes, the ten stages, the pause and losing, "
+                "the intro, the three demos and the ending, recorded in openMSX frame by "
+                "frame and painted in GIF; 19 SCC tunes from its own engine (Metal Gear 2's) "
+                "checked against openMSX; the texts and the credits, and a rules caption "
+                "the game never shows.",
+             es="El Quarth de Konami para MSX2 de 1990, sus 128 KB explicados al 100 % y "
+                "comentados al 40,3 %. El menú, los tres modos, las diez fases, la pausa y "
+                "perder, la presentación, las tres demostraciones y el final, grabados en "
+                "openMSX cuadro a cuadro y pintados en GIF; 19 músicas del SCC de su propio "
+                "motor (el de Metal Gear 2) cotejadas con openMSX; los textos y los "
+                "créditos, y un rótulo de reglas que el juego no enseña nunca.")),
     dict(id="spacemanbow-demostraciones", clase="actualiza", clave="spacemanbow",
-         fecha="2026-10-30T23:45:00+01:00",
+         fecha="2026-10-30T08:53:00+01:00",
          enlace="https://antxiko.github.io/SpaceManbow-disassembly/THE-SEQUENCES.html",
          titulo=dict(en="Space Manbow: the three demos, recorded in openMSX",
                      es="Space Manbow: las tres demostraciones, grabadas en openMSX"),
@@ -4039,7 +4098,7 @@ NOVEDADES = [
                 "los sprites, y los registros de las interrupciones de línea llegan unas "
                 "líneas tarde.")),
     dict(id="spacemanbow-enemigos-sueltos", clase="actualiza", clave="spacemanbow",
-         fecha="2026-10-30T23:30:00+01:00",
+         fecha="2026-10-29T23:47:00+01:00",
          enlace="https://antxiko.github.io/SpaceManbow-disassembly/THE-ENEMIES.html",
          titulo=dict(en="Space Manbow: each enemy on its own, the capsules and a font nobody loads",
                      es="Space Manbow: cada enemigo suelto, las cápsulas y una fuente que nadie carga"),
@@ -4060,7 +4119,7 @@ NOVEDADES = [
                 "Z80 contado por ciclos se sigue separando en el cuadro 68, así que el ritmo "
                 "no es la causa.")),
     dict(id="spacemanbow-demostracion", clase="actualiza", clave="spacemanbow",
-         fecha="2026-10-30T23:00:00+01:00",
+         fecha="2026-10-29T22:22:00+01:00",
          enlace="https://antxiko.github.io/SpaceManbow-disassembly/THE-SEQUENCES.html",
          titulo=dict(en="Space Manbow: where the demo parts from the MSX",
                      es="Space Manbow: dónde se separa la demostración del MSX"),
@@ -4074,7 +4133,7 @@ NOVEDADES = [
                 "cuadro 67 la partida es la misma y solo difiere lo que mueve la "
                 "interrupción; en el 68 un disparo da en el MSX y aquí no.")),
     dict(id="spacemanbow", clase="nuevo", clave="spacemanbow",
-         fecha="2026-10-30T21:00:00+01:00",
+         fecha="2026-10-29T20:06:00+01:00",
          titulo=dict(en="Space Manbow, taken apart",
                      es="Space Manbow, desmontado"),
          resumen=dict(

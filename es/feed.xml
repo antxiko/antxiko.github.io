@@ -1,43 +1,51 @@
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom" xml:lang="es">
   <title>antxiko — desensamblados comentados de juegos de 8 bits</title>
-  <subtitle>Binarios viejos de 8 bits desmontados byte a byte y comentados, con las herramientas para volver a montarlos: no se afirma nada que el binario no enseñe, y el código fuente tiene que devolver el original, byte a byte. Ahora mismo son 76 juegos de MSX.</subtitle>
+  <subtitle>Binarios viejos de 8 bits desmontados byte a byte y comentados, con las herramientas para volver a montarlos: no se afirma nada que el binario no enseñe, y el código fuente tiene que devolver el original, byte a byte. Ahora mismo son 77 juegos de MSX.</subtitle>
   <id>tag:antxiko.github.io,2026:feed/es</id>
   <link rel="self" type="application/atom+xml" href="https://antxiko.github.io/es/feed.xml"/>
   <link rel="alternate" type="text/html" hreflang="es" href="https://antxiko.github.io/es/"/>
   <link rel="alternate" type="application/atom+xml" hreflang="en" href="https://antxiko.github.io/feed.xml"/>
-  <updated>2026-10-30T23:45:00+01:00</updated>
+  <updated>2026-10-30T15:20:00+01:00</updated>
   <author><name>antxiko</name><uri>https://github.com/antxiko</uri></author>
+  <entry>
+    <id>tag:antxiko.github.io,2026:novedad/es/quarth</id>
+    <title>Quarth, desmontado</title>
+    <link rel="alternate" type="text/html" href="https://antxiko.github.io/Quarth-disassembly/"/>
+    <published>2026-10-30T15:20:00+01:00</published>
+    <updated>2026-10-30T15:20:00+01:00</updated>
+    <summary type="text">El Quarth de Konami para MSX2 de 1990, sus 128 KB explicados al 100 % y comentados al 40,3 %. El menú, los tres modos, las diez fases, la pausa y perder, la presentación, las tres demostraciones y el final, grabados en openMSX cuadro a cuadro y pintados en GIF; 19 músicas del SCC de su propio motor (el de Metal Gear 2) cotejadas con openMSX; los textos y los créditos, y un rótulo de reglas que el juego no enseña nunca.</summary>
+  </entry>
   <entry>
     <id>tag:antxiko.github.io,2026:novedad/es/spacemanbow-demostraciones</id>
     <title>Space Manbow: las tres demostraciones, grabadas en openMSX</title>
     <link rel="alternate" type="text/html" href="https://antxiko.github.io/SpaceManbow-disassembly/THE-SEQUENCES.html"/>
-    <published>2026-10-30T23:45:00+01:00</published>
-    <updated>2026-10-30T23:45:00+01:00</updated>
+    <published>2026-10-30T08:53:00+01:00</published>
+    <updated>2026-10-30T08:53:00+01:00</updated>
     <summary type="text">Las tres demostraciones grabadas, enteras (fases 1, 2 y 4): como el cartucho ejecutado se separa del MSX en el cuadro 68, se graban en openMSX, volcando la VRAM, la paleta y los registros de cada cuadro del VDP, y se pintan con el mismo código que los demás GIF. Cotejadas con capturas de openMSX, 0 puntos distintos; para eso el dibujador tuvo dos arreglos que rehacen también los otros GIF: el registro 18 corre también los sprites, y los registros de las interrupciones de línea llegan unas líneas tarde.</summary>
   </entry>
   <entry>
     <id>tag:antxiko.github.io,2026:novedad/es/spacemanbow-enemigos-sueltos</id>
     <title>Space Manbow: cada enemigo suelto, las cápsulas y una fuente que nadie carga</title>
     <link rel="alternate" type="text/html" href="https://antxiko.github.io/SpaceManbow-disassembly/THE-ENEMIES.html"/>
-    <published>2026-10-30T23:30:00+01:00</published>
-    <updated>2026-10-30T23:30:00+01:00</updated>
+    <published>2026-10-29T23:47:00+01:00</published>
+    <updated>2026-10-29T23:47:00+01:00</updated>
     <summary type="text">79 de los 82 tipos de enemigo recortados uno a uno, pintados por el cartucho: cada tipo quitado de una copia de la partida y lo que deja de verse. Los siete dibujos de las cápsulas, la pelea del jefe de la fase 6 entera (182 s), el código compartido con los otros Konami, una caza de fallos (una lectura de RAM sin escribir, inocua, en todo el juego) y una fuente sin usar con un cargador que nada llama. Y la demostración: con el Z80 contado por ciclos se sigue separando en el cuadro 68, así que el ritmo no es la causa.</summary>
   </entry>
   <entry>
     <id>tag:antxiko.github.io,2026:novedad/es/spacemanbow-demostracion</id>
     <title>Space Manbow: dónde se separa la demostración del MSX</title>
     <link rel="alternate" type="text/html" href="https://antxiko.github.io/SpaceManbow-disassembly/THE-SEQUENCES.html"/>
-    <published>2026-10-30T23:00:00+01:00</published>
-    <updated>2026-10-30T23:00:00+01:00</updated>
+    <published>2026-10-29T22:22:00+01:00</published>
+    <updated>2026-10-29T22:22:00+01:00</updated>
     <summary type="text">Por qué no está la demostración grabada, medido: la RAM al empezar cada cuadro de juego en openMSX contra el cartucho ejecutado. Hasta el cuadro 67 la partida es la misma y solo difiere lo que mueve la interrupción; en el 68 un disparo da en el MSX y aquí no.</summary>
   </entry>
   <entry>
     <id>tag:antxiko.github.io,2026:novedad/es/spacemanbow</id>
     <title>Space Manbow, desmontado</title>
     <link rel="alternate" type="text/html" href="https://antxiko.github.io/SpaceManbow-disassembly/"/>
-    <published>2026-10-30T21:00:00+01:00</published>
-    <updated>2026-10-30T21:00:00+01:00</updated>
+    <published>2026-10-29T20:06:00+01:00</published>
+    <updated>2026-10-29T20:06:00+01:00</updated>
     <summary type="text">El Space Manbow de Konami para MSX2 de 1989, sus 256 KB explicados al 100 % y comentados al 40,9 %. Las nueve fases dibujadas enteras desde la ROM con el motor del mapa del propio cartucho y cotejadas casilla a casilla; la nave y cada cápsula, los enemigos y los nueve jefes, la presentación y el final en GIF jugados por el cartucho al ritmo del MSX; los textos traducidos, 19 músicas del SCC de su propio motor cotejadas con openMSX, y las teclas de depuración y el grabador de demostraciones que se quedaron dentro.</summary>
   </entry>
   <entry>
@@ -159,13 +167,5 @@
     <published>2026-10-22T18:46:50+02:00</published>
     <updated>2026-10-22T18:46:50+02:00</updated>
     <summary type="text">Una comparación que no puede cumplirse: la rama que apunta a Mitchel nunca se toma desde la elección al azar. Prueba sacada del propio código.</summary>
-  </entry>
-  <entry>
-    <id>tag:antxiko.github.io,2026:novedad/es/knightmare-fallo</id>
-    <title>Knightmare: el fotograma 0x0B nunca recibe el ajuste de fila</title>
-    <link rel="alternate" type="text/html" href="https://antxiko.github.io/Knightmare-disassembly/FINDINGS.html"/>
-    <published>2026-10-22T18:46:45+02:00</published>
-    <updated>2026-10-22T18:46:45+02:00</updated>
-    <summary type="text">Una máscara que deja 0, 4, 8 o 12 se compara con 11: no puede ser igual. Prueba sacada del código; qué fotogramas salen en una partida no se ha medido.</summary>
   </entry>
 </feed>
