@@ -1,13 +1,29 @@
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom" xml:lang="es">
   <title>antxiko — desensamblados comentados de juegos de 8 bits</title>
-  <subtitle>Binarios viejos de 8 bits desmontados byte a byte y comentados, con las herramientas para volver a montarlos: no se afirma nada que el binario no enseñe, y el código fuente tiene que devolver el original, byte a byte. Ahora mismo son 78 juegos de MSX.</subtitle>
+  <subtitle>Binarios viejos de 8 bits desmontados byte a byte y comentados, con las herramientas para volver a montarlos: no se afirma nada que el binario no enseñe, y el código fuente tiene que devolver el original, byte a byte. Ahora mismo son 79 juegos de MSX.</subtitle>
   <id>tag:antxiko.github.io,2026:feed/es</id>
   <link rel="self" type="application/atom+xml" href="https://antxiko.github.io/es/feed.xml"/>
   <link rel="alternate" type="text/html" hreflang="es" href="https://antxiko.github.io/es/"/>
   <link rel="alternate" type="application/atom+xml" hreflang="en" href="https://antxiko.github.io/feed.xml"/>
-  <updated>2026-10-31T11:16:41+01:00</updated>
+  <updated>2026-10-31T11:48:35+01:00</updated>
   <author><name>antxiko</name><uri>https://github.com/antxiko</uri></author>
+  <entry>
+    <id>tag:antxiko.github.io,2026:novedad/es/sparkie-codigo-compartido</id>
+    <title>Sparkie: el código que comparte con los demás Konami</title>
+    <link rel="alternate" type="text/html" href="https://antxiko.github.io/Sparkie-disassembly/UNDER-THE-HOOD.html"/>
+    <published>2026-10-31T11:48:35+01:00</published>
+    <updated>2026-10-31T11:48:35+01:00</updated>
+    <summary type="text">Sparkie comparado instrucción por instrucción con los otros 62 cartuchos de Konami de la serie: ninguno comparte un solo bloque con él.</summary>
+  </entry>
+  <entry>
+    <id>tag:antxiko.github.io,2026:novedad/es/junofirst</id>
+    <title>Juno First, desmontado</title>
+    <link rel="alternate" type="text/html" href="https://antxiko.github.io/JunoFirst-disassembly/"/>
+    <published>2026-10-31T11:48:10+01:00</published>
+    <updated>2026-10-31T11:48:10+01:00</updated>
+    <summary type="text">Juno First, de Konami para Sony en 1983: sus 8 KB explicados al 100 % y comentados al 41,8 %. Las oleadas, la cápsula y su astronauta, el WARP, la oleada especial y el final de la oleada jugados en GIF; los sprites, la nave y la figura de la oleada desde el cartucho, cotejados con openMSX; cuatro músicas de su propio motor, enteras; y el código que comparte con los demás Konami de la serie.</summary>
+  </entry>
   <entry>
     <id>tag:antxiko.github.io,2026:novedad/es/sparkie</id>
     <title>Sparkie, desmontado</title>
@@ -151,21 +167,5 @@
     <published>2026-10-24T12:05:00+02:00</published>
     <updated>2026-10-24T12:05:00+02:00</updated>
     <summary type="text">Catorce músicas y efectos del PSG tocados por el motor del propio cartucho (la del título, cotejada con openMSX cuadro a cuadro), con F1-F5 eligiendo la música de fondo; cada código de yaku visto salir del juego; y quince minutos de partida vigilando cada lectura de la ROM.</summary>
-  </entry>
-  <entry>
-    <id>tag:antxiko.github.io,2026:novedad/es/majutsushi-tutorial</id>
-    <title>Hai no Majutsushi estrena un tutorial en inglés</title>
-    <link rel="alternate" type="text/html" href="https://antxiko.github.io/Majutsushi-TutorialPatch/"/>
-    <published>2026-10-24T12:00:00+02:00</published>
-    <updated>2026-10-24T12:00:00+02:00</updated>
-    <summary type="text">Un parche IPS: F1 en el primer menú abre cinco páginas que explican cómo se juega, los dos menús, las llamadas, los rivales y las teclas de la música. El resto del juego no cambia.</summary>
-  </entry>
-  <entry>
-    <id>tag:antxiko.github.io,2026:novedad/es/majutsushi</id>
-    <title>Hai no Majutsushi - Mahjong 2, desmontado</title>
-    <link rel="alternate" type="text/html" href="https://antxiko.github.io/Majutsushi-disassembly/"/>
-    <published>2026-10-23T23:30:00+02:00</published>
-    <updated>2026-10-23T23:30:00+02:00</updated>
-    <summary type="text">El mahjong japonés de Konami para MSX2 de 1989, explicado al 100 % y comentado al 25,9 %. Las pantallas en orden, los ocho personajes y los siete contadores que dan su estilo a cada uno (y que se desplazan con las manos que ganas), las diez reglas, los yaku medidos ejecutando el código del propio juego y las ocho voces digitales decodificadas de la ROM.</summary>
   </entry>
 </feed>

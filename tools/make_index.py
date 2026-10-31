@@ -2431,6 +2431,48 @@ DESENSAMBLADOS = [
         ),
     ),
     dict(
+        clave="junofirst",
+        grupo="konami-otros",
+        titulo="Juno First",
+        anio=1983,
+        repo="https://github.com/antxiko/JunoFirst-disassembly",
+        web="https://antxiko.github.io/JunoFirst-disassembly/",
+        meta=dict(
+            en="Konami for Sony &middot; MSX &middot; 8 KB cartridge in page 0",
+            es="Konami para Sony &middot; MSX &middot; cartucho de 8 KB en la p&aacute;gina 0",
+        ),
+        claim=dict(
+            en="A shoot'em up on a field in perspective made of <b>screen letters</b>. "
+               "Written for <b>page 0</b>, without the BIOS; its tables sit <b>behind "
+               "the call</b> that reads them, and its random numbers are the bytes of "
+               "its own interrupt.",
+            es="Un matamarcianos sobre un campo en perspectiva hecho de <b>letras</b>. "
+               "Escrito para la <b>p&aacute;gina 0</b>, sin la BIOS; sus tablas van "
+               "<b>detr&aacute;s del call</b> que las lee, y su azar son los bytes de su "
+               "propia interrupci&oacute;n.",
+        ),
+        datos=dict(
+            en=lambda i: (f"{cif(8192, i)} bytes &middot; <b>0</b> unexplained "
+                          f"&middot; reassembles <b>byte for byte</b> &middot; "
+                          f"{cif(5627, i)} of code, {cif(2565, i)} of data "
+                          f"&middot; {cif(359, i)} routines &middot; commented "
+                          f"to <b>41.8%</b>"),
+            es=lambda i: (f"{cif(8192, i)} bytes &middot; <b>0</b> sin explicar "
+                          f"&middot; reensambla <b>byte a byte</b> &middot; "
+                          f"{cif(5627, i)} de código, {cif(2565, i)} de datos "
+                          f"&middot; {cif(359, i)} rutinas &middot; comentado "
+                          f"al <b>41,8 %</b>"),
+        ),
+        nota=dict(
+            en="The waves, the capsule and its astronaut, the WARP and the special wave "
+               "played in GIF; the sprites and the screens from the cartridge, checked "
+               "against openMSX; four tunes from its own engine, checked against openMSX.",
+            es="Las oleadas, la cápsula y su astronauta, el WARP y la oleada especial "
+               "jugados en GIF; los sprites y las pantallas desde el cartucho, cotejados "
+               "con openMSX; cuatro músicas de su propio motor, cotejadas con openMSX.",
+        ),
+    ),
+    dict(
         clave="kingsvalley2",
         grupo="konami",
         titulo="King's Valley II",
@@ -4102,6 +4144,33 @@ MSXON = [
 # nueva a vieja, una clave no existe o un proyecto se queda sin novedad.
 # --------------------------------------------------------------------------
 NOVEDADES = [
+    dict(id="sparkie-codigo-compartido", clase="actualiza", clave="sparkie",
+         fecha="2026-10-31T11:48:35+01:00",
+         enlace="https://antxiko.github.io/Sparkie-disassembly/UNDER-THE-HOOD.html",
+         titulo=dict(en="Sparkie: the code it shares with the other Konami cartridges",
+                     es="Sparkie: el código que comparte con los demás Konami"),
+         resumen=dict(
+             en="Sparkie compared instruction by instruction with the other 62 Konami "
+                "cartridges in the series: none shares a single block with it.",
+             es="Sparkie comparado instrucción por instrucción con los otros 62 cartuchos "
+                "de Konami de la serie: ninguno comparte un solo bloque con él.")),
+    dict(id="junofirst", clase="nuevo", clave="junofirst",
+         fecha="2026-10-31T11:48:10+01:00",
+         titulo=dict(en="Juno First, taken apart",
+                     es="Juno First, desmontado"),
+         resumen=dict(
+             en="Juno First, made by Konami for Sony in 1983: its 8 KB 100% explained and "
+                "commented to 41.8%. The waves, the capsule and its astronaut, the WARP, the "
+                "special wave and the end of the wave played in GIF; the sprites, the ship "
+                "and the wave picture from the cartridge, checked against openMSX; four tunes "
+                "from its own engine, whole; and the code it shares with the other Konami "
+                "cartridges in the series.",
+             es="Juno First, de Konami para Sony en 1983: sus 8 KB explicados al 100 % y "
+                "comentados al 41,8 %. Las oleadas, la cápsula y su astronauta, el WARP, la "
+                "oleada especial y el final de la oleada jugados en GIF; los sprites, la nave "
+                "y la figura de la oleada desde el cartucho, cotejados con openMSX; cuatro "
+                "músicas de su propio motor, enteras; y el código que comparte con los demás "
+                "Konami de la serie.")),
     dict(id="sparkie", clase="nuevo", clave="sparkie",
          fecha="2026-10-31T11:16:41+01:00",
          titulo=dict(en="Sparkie, taken apart",
