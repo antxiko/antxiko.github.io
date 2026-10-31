@@ -2473,6 +2473,50 @@ DESENSAMBLADOS = [
         ),
     ),
     dict(
+        clave="crazytrain",
+        grupo="konami-otros",
+        titulo="Crazy Train",
+        anio=1983,
+        repo="https://github.com/antxiko/CrazyTrain-disassembly",
+        web="https://antxiko.github.io/CrazyTrain-disassembly/",
+        meta=dict(
+            en="Konami for Sony &middot; MSX &middot; 8 KB cartridge in page 0",
+            es="Konami para Sony &middot; MSX &middot; cartucho de 8 KB en la p&aacute;gina 0",
+        ),
+        claim=dict(
+            en="A <b>sliding-tile puzzle</b> with a train on top: you push the tiles, "
+               "the train runs by itself. Written for <b>page 0</b>, without the BIOS; "
+               "each train carries <b>its own code in RAM</b>, which rewrites itself to "
+               "read its script.",
+            es="Un <b>puzle de piezas deslizantes</b> con un tren encima: t&uacute; "
+               "empujas las piezas y el tren va solo. Escrito para la <b>p&aacute;gina "
+               "0</b>, sin la BIOS; cada tren lleva <b>su propio c&oacute;digo en la "
+               "RAM</b>, que se reescribe para leer su guion.",
+        ),
+        datos=dict(
+            en=lambda i: (f"{cif(8192, i)} bytes &middot; <b>0</b> unexplained "
+                          f"&middot; reassembles <b>byte for byte</b> &middot; "
+                          f"{cif(4423, i)} of code, {cif(3769, i)} of data "
+                          f"&middot; {cif(280, i)} routines &middot; commented "
+                          f"to <b>42.2%</b>"),
+            es=lambda i: (f"{cif(8192, i)} bytes &middot; <b>0</b> sin explicar "
+                          f"&middot; reensambla <b>byte a byte</b> &middot; "
+                          f"{cif(4423, i)} de código, {cif(3769, i)} de datos "
+                          f"&middot; {cif(280, i)} rutinas &middot; comentado "
+                          f"al <b>42,2 %</b>"),
+        ),
+        nota=dict(
+            en="The pushes, the stations, the black trains, the crashes and the cleared "
+               "stage played in GIF; the first eight boards from the ROM, checked dot by "
+               "dot against openMSX; three tunes and a chime from its own engine, checked "
+               "against openMSX; four bugs, measured.",
+            es="Los empujones, las estaciones, los trenes negros, los choques y la fase "
+               "superada jugados en GIF; los ocho primeros tableros desde la ROM, "
+               "cotejados punto a punto con openMSX; tres músicas y una campanilla de su "
+               "propio motor, cotejadas con openMSX; cuatro fallos, medidos.",
+        ),
+    ),
+    dict(
         clave="kingsvalley2",
         grupo="konami",
         titulo="King's Valley II",
@@ -4144,6 +4188,23 @@ MSXON = [
 # nueva a vieja, una clave no existe o un proyecto se queda sin novedad.
 # --------------------------------------------------------------------------
 NOVEDADES = [
+    dict(id="crazytrain", clase="nuevo", clave="crazytrain",
+         fecha="2026-10-31T12:44:00+01:00",
+         titulo=dict(en="Crazy Train, taken apart",
+                     es="Crazy Train, desmontado"),
+         resumen=dict(
+             en="Crazy Train, made by Konami for Sony in 1983: its 8 KB 100% explained and "
+                "commented to 42.2%. The pushes, the stations, the black trains, the "
+                "crashes and the cleared stage played in GIF; the first eight boards from "
+                "the ROM, checked dot by dot against openMSX; the tunes from its own "
+                "engine; four measured bugs; and the code it shares with the other Konami "
+                "cartridges in the series.",
+             es="Crazy Train, de Konami para Sony en 1983: sus 8 KB explicados al 100 % y "
+                "comentados al 42,2 %. Los empujones, las estaciones, los trenes negros, "
+                "los choques y la fase superada jugados en GIF; los ocho primeros tableros "
+                "desde la ROM, cotejados punto a punto con openMSX; las músicas de su "
+                "propio motor; cuatro fallos medidos; y el código que comparte con los "
+                "demás Konami de la serie.")),
     dict(id="sparkie-codigo-compartido", clase="actualiza", clave="sparkie",
          fecha="2026-10-31T11:48:35+01:00",
          enlace="https://antxiko.github.io/Sparkie-disassembly/UNDER-THE-HOOD.html",
