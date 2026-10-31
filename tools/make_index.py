@@ -2390,6 +2390,47 @@ DESENSAMBLADOS = [
         ),
     ),
     dict(
+        clave="sparkie",
+        grupo="konami-otros",
+        titulo="Sparkie",
+        anio=1983,
+        repo="https://github.com/antxiko/Sparkie-disassembly",
+        web="https://antxiko.github.io/Sparkie-disassembly/",
+        meta=dict(
+            en="Konami for Sony &middot; MSX &middot; 8 KB cartridge in page 0",
+            es="Konami para Sony &middot; MSX &middot; cartucho de 8 KB en la p&aacute;gina 0",
+        ),
+        claim=dict(
+            en="A spark that paints a maze blue while fire creatures chase it. Written "
+               "for <b>page 0</b>, it never goes back to the BIOS; its Sony start-up screen "
+               "is <b>made of its own code</b>, and the score <b>breaks past one million</b>.",
+            es="Una chispa que pinta de azul un laberinto mientras la persiguen bichos de "
+               "fuego. Escrito para la <b>p&aacute;gina 0</b>, no vuelve nunca a la BIOS; su "
+               "pantalla de Sony est&aacute; <b>hecha de su propio c&oacute;digo</b>, y el "
+               "marcador <b>se rompe al pasar del mill&oacute;n</b>.",
+        ),
+        datos=dict(
+            en=lambda i: (f"{cif(8192, i)} bytes &middot; <b>0</b> unexplained "
+                          f"&middot; reassembles <b>byte for byte</b> &middot; "
+                          f"{cif(5039, i)} of code, {cif(3153, i)} of data "
+                          f"&middot; {cif(393, i)} routines &middot; commented "
+                          f"to <b>40.7%</b>"),
+            es=lambda i: (f"{cif(8192, i)} bytes &middot; <b>0</b> sin explicar "
+                          f"&middot; reensambla <b>byte a byte</b> &middot; "
+                          f"{cif(5039, i)} de código, {cif(3153, i)} de datos "
+                          f"&middot; {cif(393, i)} rutinas &middot; comentado "
+                          f"al <b>40,7 %</b>"),
+        ),
+        nota=dict(
+            en="The four mazes drawn from the ROM and checked against openMSX; the game "
+               "played in GIF; the characters, the texts and the two tunes from its own "
+               "engine, checked against openMSX.",
+            es="Los cuatro laberintos dibujados desde la ROM y cotejados con openMSX; la "
+               "partida jugada en GIF; los personajes, los textos y las dos músicas de su "
+               "propio motor, cotejadas con openMSX.",
+        ),
+    ),
+    dict(
         clave="kingsvalley2",
         grupo="konami",
         titulo="King's Valley II",
@@ -3276,6 +3317,8 @@ DESENSAMBLADOS = [
 # para la generacion (ver comprueba()).
 GRUPOS = [
     dict(id="konami", titulo=dict(en="Konami", es="Konami")),
+    dict(id="konami-otros", titulo=dict(en="Konami, published by others",
+                                        es="Konami, publicados por otros")),
     dict(id="msx-exclusive", titulo=dict(en="MSX Exclusive", es="Exclusivos de MSX")),
     dict(id="ports", titulo=dict(en="Ports", es="Conversiones")),
 ]
@@ -4059,6 +4102,23 @@ MSXON = [
 # nueva a vieja, una clave no existe o un proyecto se queda sin novedad.
 # --------------------------------------------------------------------------
 NOVEDADES = [
+    dict(id="sparkie", clase="nuevo", clave="sparkie",
+         fecha="2026-10-31T11:16:41+01:00",
+         titulo=dict(en="Sparkie, taken apart",
+                     es="Sparkie, desmontado"),
+         resumen=dict(
+             en="Sparkie, made by Konami for Sony in 1983: its 8 KB 100% explained and "
+                "commented to 40.7%. The four mazes drawn from the ROM and checked against "
+                "openMSX byte by byte; the bucket and its wave, the shots, the burning "
+                "blocks, the bonus, TIME OVER and GAME OVER played in GIF; the characters, "
+                "the texts and the two tunes from its own sound engine; and a score that "
+                "breaks past one million points.",
+             es="Sparkie, de Konami para Sony en 1983: sus 8 KB explicados al 100 % y "
+                "comentados al 40,7 %. Los cuatro laberintos dibujados desde la ROM y "
+                "cotejados con openMSX byte a byte; el cubo y su ola, los disparos, los "
+                "bloques que arden, el premio, TIME OVER y GAME OVER jugados en GIF; los "
+                "personajes, los textos y las dos músicas de su propio motor de sonido; y "
+                "un marcador que se rompe al pasar del millón de puntos.")),
     dict(id="quarth", clase="nuevo", clave="quarth",
          fecha="2026-10-30T15:20:00+01:00",
          titulo=dict(en="Quarth, taken apart",
