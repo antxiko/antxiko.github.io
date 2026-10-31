@@ -2517,6 +2517,51 @@ DESENSAMBLADOS = [
         ),
     ),
     dict(
+        clave="pooyan",
+        grupo="konami-otros",
+        titulo="Konami's Pooyan",
+        anio=1985,
+        repo="https://github.com/antxiko/Pooyan-disassembly",
+        web="https://antxiko.github.io/Pooyan-disassembly/",
+        meta=dict(
+            en="Konami for Hudson Soft &middot; MSX &middot; 16 KB Bee Card",
+            es="Konami para Hudson Soft &middot; MSX &middot; Bee Card de 16 KB",
+        ),
+        claim=dict(
+            en="Mother pig in a basket against the <b>balloon wolves</b>. It came on a "
+               "Hudson <b>Bee Card</b>, not a cartridge; it leans on the BIOS, and its "
+               "main loop <b>never waits for the frame</b>: 3 to 5 turns per frame, "
+               "measured in openMSX.",
+            es="La madre cerdita en su cesta contra los <b>lobos de los globos</b>. "
+               "Sali&oacute; en una <b>Bee Card</b> de Hudson, no en cartucho; se apoya "
+               "en la BIOS, y su bucle <b>nunca espera al cuadro</b>: de 3 a 5 vueltas "
+               "por cuadro, medidas en openMSX.",
+        ),
+        datos=dict(
+            en=lambda i: (f"{cif(16384, i)} bytes &middot; <b>0</b> unexplained "
+                          f"&middot; reassembles <b>byte for byte</b> &middot; "
+                          f"{cif(6240, i)} of code, {cif(10144, i)} of data "
+                          f"&middot; {cif(342, i)} routines &middot; commented "
+                          f"to <b>42.7%</b>"),
+            es=lambda i: (f"{cif(16384, i)} bytes &middot; <b>0</b> sin explicar "
+                          f"&middot; reensambla <b>byte a byte</b> &middot; "
+                          f"{cif(6240, i)} de código, {cif(10144, i)} de datos "
+                          f"&middot; {cif(342, i)} rutinas &middot; comentado "
+                          f"al <b>42,7 %</b>"),
+        ),
+        nota=dict(
+            en="The even, odd and bonus rounds, the magenta wolf, the ladder, the stone "
+               "and the boulder played in GIF; the logo and the two screens from the ROM, "
+               "checked dot by dot against openMSX; seven tunes from its own engine, "
+               "identical to openMSX frame by frame; the bugs, measured.",
+            es="Las rondas pares, las impares y la de bonus, el lobo magenta, la "
+               "escalera, la piedra y la roca jugados en GIF; el logotipo y las dos "
+               "pantallas desde la ROM, cotejados punto a punto con openMSX; siete "
+               "músicas de su propio motor, idénticas a openMSX cuadro a cuadro; los "
+               "fallos, medidos.",
+        ),
+    ),
+    dict(
         clave="kingsvalley2",
         grupo="konami",
         titulo="King's Valley II",
@@ -4188,6 +4233,27 @@ MSXON = [
 # nueva a vieja, una clave no existe o un proyecto se queda sin novedad.
 # --------------------------------------------------------------------------
 NOVEDADES = [
+    dict(id="pooyan", clase="nuevo", clave="pooyan",
+         fecha="2026-10-31T14:30:00+01:00",
+         titulo=dict(en="Konami's Pooyan, taken apart",
+                     es="Konami's Pooyan, desmontado"),
+         resumen=dict(
+             en="Konami's Pooyan, by Konami and Hudson Soft in 1985 on a Bee Card: its "
+                "16 KB 100% explained and commented to 42.7%. The rounds where the wolves "
+                "come down, the ones where they climb to the rock and the bonus round, the "
+                "magenta wolf, the ladder, the stone and the boulder played in GIF; the "
+                "logo and the two screens from the ROM, checked against openMSX; seven "
+                "tunes from its own engine, identical to openMSX; a loop that never waits "
+                "for the frame and a script that skips its first step, measured; and the "
+                "code it shares with the other Konami cartridges in the series.",
+             es="Konami's Pooyan, de Konami y Hudson Soft en 1985 en una Bee Card: sus "
+                "16 KB explicados al 100 % y comentados al 42,7 %. Las rondas en que los "
+                "lobos bajan, en las que suben a la roca y la de bonus, el lobo magenta, "
+                "la escalera, la piedra y la roca jugados en GIF; el logotipo y las dos "
+                "pantallas desde la ROM, cotejados con openMSX; siete músicas de su propio "
+                "motor, idénticas a openMSX; un bucle que nunca espera al cuadro y un "
+                "guion que se salta su primer paso, medidos; y el código que comparte con "
+                "los demás Konami de la serie.")),
     dict(id="crazytrain", clase="nuevo", clave="crazytrain",
          fecha="2026-10-31T12:44:00+01:00",
          titulo=dict(en="Crazy Train, taken apart",
