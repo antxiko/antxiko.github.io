@@ -1,13 +1,21 @@
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom" xml:lang="es">
   <title>antxiko — desensamblados comentados de juegos de 8 bits</title>
-  <subtitle>Binarios viejos de 8 bits desmontados byte a byte y comentados, con las herramientas para volver a montarlos: no se afirma nada que el binario no enseñe, y el código fuente tiene que devolver el original, byte a byte. Ahora mismo son 79 juegos de MSX.</subtitle>
+  <subtitle>Binarios viejos de 8 bits desmontados byte a byte y comentados, con las herramientas para volver a montarlos: no se afirma nada que el binario no enseñe, y el código fuente tiene que devolver el original, byte a byte. Ahora mismo son 80 juegos de MSX.</subtitle>
   <id>tag:antxiko.github.io,2026:feed/es</id>
   <link rel="self" type="application/atom+xml" href="https://antxiko.github.io/es/feed.xml"/>
   <link rel="alternate" type="text/html" hreflang="es" href="https://antxiko.github.io/es/"/>
   <link rel="alternate" type="application/atom+xml" hreflang="en" href="https://antxiko.github.io/feed.xml"/>
-  <updated>2026-10-31T11:48:35+01:00</updated>
+  <updated>2026-10-31T12:44:00+01:00</updated>
   <author><name>antxiko</name><uri>https://github.com/antxiko</uri></author>
+  <entry>
+    <id>tag:antxiko.github.io,2026:novedad/es/crazytrain</id>
+    <title>Crazy Train, desmontado</title>
+    <link rel="alternate" type="text/html" href="https://antxiko.github.io/CrazyTrain-disassembly/"/>
+    <published>2026-10-31T12:44:00+01:00</published>
+    <updated>2026-10-31T12:44:00+01:00</updated>
+    <summary type="text">Crazy Train, de Konami para Sony en 1983: sus 8 KB explicados al 100 % y comentados al 42,2 %. Los empujones, las estaciones, los trenes negros, los choques y la fase superada jugados en GIF; los ocho primeros tableros desde la ROM, cotejados punto a punto con openMSX; las músicas de su propio motor; cuatro fallos medidos; y el código que comparte con los demás Konami de la serie.</summary>
+  </entry>
   <entry>
     <id>tag:antxiko.github.io,2026:novedad/es/sparkie-codigo-compartido</id>
     <title>Sparkie: el código que comparte con los demás Konami</title>
@@ -159,13 +167,5 @@
     <published>2026-10-24T13:30:00+02:00</published>
     <updated>2026-10-24T13:30:00+02:00</updated>
     <summary type="text">La página del parche abre ahora con una animación del tutorial, sacada del cartucho parcheado en openMSX: el menú, F1, las cinco páginas y de vuelta al menú.</summary>
-  </entry>
-  <entry>
-    <id>tag:antxiko.github.io,2026:novedad/es/majutsushi-musica</id>
-    <title>Hai no Majutsushi: la música, los 48 yaku medidos y lo que lee una partida</title>
-    <link rel="alternate" type="text/html" href="https://antxiko.github.io/Majutsushi-disassembly/THE-MUSIC.html"/>
-    <published>2026-10-24T12:05:00+02:00</published>
-    <updated>2026-10-24T12:05:00+02:00</updated>
-    <summary type="text">Catorce músicas y efectos del PSG tocados por el motor del propio cartucho (la del título, cotejada con openMSX cuadro a cuadro), con F1-F5 eligiendo la música de fondo; cada código de yaku visto salir del juego; y quince minutos de partida vigilando cada lectura de la ROM.</summary>
   </entry>
 </feed>
