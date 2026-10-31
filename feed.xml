@@ -1,13 +1,21 @@
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom" xml:lang="en">
   <title>antxiko — commented disassemblies of 8-bit games</title>
-  <subtitle>Old 8-bit binaries taken apart byte by byte and commented, with the tools to rebuild them: nothing gets claimed that the binary does not show, and the source has to give the original back, byte for byte. Right now that means 77 MSX games.</subtitle>
+  <subtitle>Old 8-bit binaries taken apart byte by byte and commented, with the tools to rebuild them: nothing gets claimed that the binary does not show, and the source has to give the original back, byte for byte. Right now that means 78 MSX games.</subtitle>
   <id>tag:antxiko.github.io,2026:feed/en</id>
   <link rel="self" type="application/atom+xml" href="https://antxiko.github.io/feed.xml"/>
   <link rel="alternate" type="text/html" hreflang="en" href="https://antxiko.github.io/"/>
   <link rel="alternate" type="application/atom+xml" hreflang="es" href="https://antxiko.github.io/es/feed.xml"/>
-  <updated>2026-10-30T15:20:00+01:00</updated>
+  <updated>2026-10-31T11:16:41+01:00</updated>
   <author><name>antxiko</name><uri>https://github.com/antxiko</uri></author>
+  <entry>
+    <id>tag:antxiko.github.io,2026:novedad/en/sparkie</id>
+    <title>Sparkie, taken apart</title>
+    <link rel="alternate" type="text/html" href="https://antxiko.github.io/Sparkie-disassembly/"/>
+    <published>2026-10-31T11:16:41+01:00</published>
+    <updated>2026-10-31T11:16:41+01:00</updated>
+    <summary type="text">Sparkie, made by Konami for Sony in 1983: its 8 KB 100% explained and commented to 40.7%. The four mazes drawn from the ROM and checked against openMSX byte by byte; the bucket and its wave, the shots, the burning blocks, the bonus, TIME OVER and GAME OVER played in GIF; the characters, the texts and the two tunes from its own sound engine; and a score that breaks past one million points.</summary>
+  </entry>
   <entry>
     <id>tag:antxiko.github.io,2026:novedad/en/quarth</id>
     <title>Quarth, taken apart</title>
@@ -159,13 +167,5 @@
     <published>2026-10-23T23:30:00+02:00</published>
     <updated>2026-10-23T23:30:00+02:00</updated>
     <summary type="text">Konami's 1989 Japanese mahjong for MSX2, 100% explained and commented to 25.9%. The screens in order, the eight characters and the seven counters that give each its style (and drift with the hands you win), the ten rules, the yaku measured by running the game's own code, and the eight digital voices decoded from the ROM.</summary>
-  </entry>
-  <entry>
-    <id>tag:antxiko.github.io,2026:novedad/en/kingkong2-fallo</id>
-    <title>King Kong 2: ROCKMAN and STONEMAN never head for Mitchel at random</title>
-    <link rel="alternate" type="text/html" href="https://antxiko.github.io/KingKong2-disassembly/FINDINGS.html"/>
-    <published>2026-10-22T18:46:50+02:00</published>
-    <updated>2026-10-22T18:46:50+02:00</updated>
-    <summary type="text">A comparison that can never be met: the branch that aims at Mitchel is never taken from the random choice. Proved by the code itself.</summary>
   </entry>
 </feed>
