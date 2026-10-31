@@ -1,13 +1,21 @@
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom" xml:lang="en">
   <title>antxiko — commented disassemblies of 8-bit games</title>
-  <subtitle>Old 8-bit binaries taken apart byte by byte and commented, with the tools to rebuild them: nothing gets claimed that the binary does not show, and the source has to give the original back, byte for byte. Right now that means 80 MSX games.</subtitle>
+  <subtitle>Old 8-bit binaries taken apart byte by byte and commented, with the tools to rebuild them: nothing gets claimed that the binary does not show, and the source has to give the original back, byte for byte. Right now that means 81 MSX games.</subtitle>
   <id>tag:antxiko.github.io,2026:feed/en</id>
   <link rel="self" type="application/atom+xml" href="https://antxiko.github.io/feed.xml"/>
   <link rel="alternate" type="text/html" hreflang="en" href="https://antxiko.github.io/"/>
   <link rel="alternate" type="application/atom+xml" hreflang="es" href="https://antxiko.github.io/es/feed.xml"/>
-  <updated>2026-10-31T12:44:00+01:00</updated>
+  <updated>2026-10-31T14:30:00+01:00</updated>
   <author><name>antxiko</name><uri>https://github.com/antxiko</uri></author>
+  <entry>
+    <id>tag:antxiko.github.io,2026:novedad/en/pooyan</id>
+    <title>Konami's Pooyan, taken apart</title>
+    <link rel="alternate" type="text/html" href="https://antxiko.github.io/Pooyan-disassembly/"/>
+    <published>2026-10-31T14:30:00+01:00</published>
+    <updated>2026-10-31T14:30:00+01:00</updated>
+    <summary type="text">Konami's Pooyan, by Konami and Hudson Soft in 1985 on a Bee Card: its 16 KB 100% explained and commented to 42.7%. The rounds where the wolves come down, the ones where they climb to the rock and the bonus round, the magenta wolf, the ladder, the stone and the boulder played in GIF; the logo and the two screens from the ROM, checked against openMSX; seven tunes from its own engine, identical to openMSX; a loop that never waits for the frame and a script that skips its first step, measured; and the code it shares with the other Konami cartridges in the series.</summary>
+  </entry>
   <entry>
     <id>tag:antxiko.github.io,2026:novedad/en/crazytrain</id>
     <title>Crazy Train, taken apart</title>
@@ -159,13 +167,5 @@
     <published>2026-10-24T17:00:00+02:00</published>
     <updated>2026-10-24T17:00:00+02:00</updated>
     <summary type="text">Text alone did not teach anyone mahjong. The tutorial is now nine screens drawn with the game's own tiles, letters and kanji: the suits, winds and dragons, the goal, the sets, the calls, riichi and tsumo, and each menu entry beside its kanji.</summary>
-  </entry>
-  <entry>
-    <id>tag:antxiko.github.io,2026:novedad/en/majutsushi-tutorial-gif</id>
-    <title>Hai no Majutsushi tutorial patch: see it running</title>
-    <link rel="alternate" type="text/html" href="https://antxiko.github.io/Majutsushi-TutorialPatch/"/>
-    <published>2026-10-24T13:30:00+02:00</published>
-    <updated>2026-10-24T13:30:00+02:00</updated>
-    <summary type="text">The patch's page now opens with an animation of the tutorial, taken from the patched cartridge in openMSX: the menu, F1, the five pages and back to the menu.</summary>
   </entry>
 </feed>

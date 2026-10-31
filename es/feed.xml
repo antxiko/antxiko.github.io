@@ -1,13 +1,21 @@
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom" xml:lang="es">
   <title>antxiko — desensamblados comentados de juegos de 8 bits</title>
-  <subtitle>Binarios viejos de 8 bits desmontados byte a byte y comentados, con las herramientas para volver a montarlos: no se afirma nada que el binario no enseñe, y el código fuente tiene que devolver el original, byte a byte. Ahora mismo son 80 juegos de MSX.</subtitle>
+  <subtitle>Binarios viejos de 8 bits desmontados byte a byte y comentados, con las herramientas para volver a montarlos: no se afirma nada que el binario no enseñe, y el código fuente tiene que devolver el original, byte a byte. Ahora mismo son 81 juegos de MSX.</subtitle>
   <id>tag:antxiko.github.io,2026:feed/es</id>
   <link rel="self" type="application/atom+xml" href="https://antxiko.github.io/es/feed.xml"/>
   <link rel="alternate" type="text/html" hreflang="es" href="https://antxiko.github.io/es/"/>
   <link rel="alternate" type="application/atom+xml" hreflang="en" href="https://antxiko.github.io/feed.xml"/>
-  <updated>2026-10-31T12:44:00+01:00</updated>
+  <updated>2026-10-31T14:30:00+01:00</updated>
   <author><name>antxiko</name><uri>https://github.com/antxiko</uri></author>
+  <entry>
+    <id>tag:antxiko.github.io,2026:novedad/es/pooyan</id>
+    <title>Konami's Pooyan, desmontado</title>
+    <link rel="alternate" type="text/html" href="https://antxiko.github.io/Pooyan-disassembly/"/>
+    <published>2026-10-31T14:30:00+01:00</published>
+    <updated>2026-10-31T14:30:00+01:00</updated>
+    <summary type="text">Konami's Pooyan, de Konami y Hudson Soft en 1985 en una Bee Card: sus 16 KB explicados al 100 % y comentados al 42,7 %. Las rondas en que los lobos bajan, en las que suben a la roca y la de bonus, el lobo magenta, la escalera, la piedra y la roca jugados en GIF; el logotipo y las dos pantallas desde la ROM, cotejados con openMSX; siete músicas de su propio motor, idénticas a openMSX; un bucle que nunca espera al cuadro y un guion que se salta su primer paso, medidos; y el código que comparte con los demás Konami de la serie.</summary>
+  </entry>
   <entry>
     <id>tag:antxiko.github.io,2026:novedad/es/crazytrain</id>
     <title>Crazy Train, desmontado</title>
@@ -159,13 +167,5 @@
     <published>2026-10-24T17:00:00+02:00</published>
     <updated>2026-10-24T17:00:00+02:00</updated>
     <summary type="text">Con texto solo no se aprende mahjong. El tutorial son ahora nueve pantallas dibujadas con las fichas, las letras y los kanji del propio juego: los palos, los vientos y dragones, el objetivo, las combinaciones, las llamadas, el riichi y el tsumo, y cada opción de los menús junto a sus kanji.</summary>
-  </entry>
-  <entry>
-    <id>tag:antxiko.github.io,2026:novedad/es/majutsushi-tutorial-gif</id>
-    <title>Parche tutorial de Hai no Majutsushi: velo en marcha</title>
-    <link rel="alternate" type="text/html" href="https://antxiko.github.io/Majutsushi-TutorialPatch/"/>
-    <published>2026-10-24T13:30:00+02:00</published>
-    <updated>2026-10-24T13:30:00+02:00</updated>
-    <summary type="text">La página del parche abre ahora con una animación del tutorial, sacada del cartucho parcheado en openMSX: el menú, F1, las cinco páginas y de vuelta al menú.</summary>
   </entry>
 </feed>
