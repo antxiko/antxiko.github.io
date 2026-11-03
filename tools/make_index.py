@@ -3494,6 +3494,63 @@ def es_cinta(p):
 # desensamblados, que son de juegos desmontados.
 PARCHES = [
     dict(
+        clave="fred-msx1", titulo="Fred &mdash; ZX Spectrum to MSX", anio=1984,
+        repo="https://github.com/antxiko/Fred-MSX1", web="",
+        meta=dict(
+            en="Quicksilva &middot; MSX &middot; 64 KB ASCII16 cartridge &middot; IPS patch, unofficial",
+            es="Quicksilva &middot; MSX &middot; cartucho ASCII16 de 64 KB &middot; parche IPS, extraoficial"),
+        claim=dict(
+            en=("The original Spectrum engine, converted into an MSX cartridge with a "
+                "<b>native SCREEN 2 tile renderer</b>, VBlank presentation, redefinable "
+                "keys and non-blocking PSG sound. Its tracking map now <b>scrolls around "
+                "Fred</b>, marked with a red hardware sprite; objects cannot be generated "
+                "on top of each other, and held fire delays repetition. The repository "
+                "includes the <b>disassembly</b> and all patch sources."),
+            es=("El motor original de Spectrum, convertido en cartucho de MSX con un "
+                "<b>renderer nativo de tiles en SCREEN 2</b>, presentaci&oacute;n en VBlank, "
+                "teclas redefinibles y sonido PSG sin bloquear el juego. El mapa de "
+                "seguimiento ahora <b>se desplaza alrededor de Fred</b>, marcado con un "
+                "sprite rojo; los objetos no pueden generarse uno encima de otro y el "
+                "disparo mantenido retrasa la repetici&oacute;n. Incluye el "
+                "<b>desensamblado</b> y todas las fuentes del parche.")),
+        datos=dict(
+            en=lambda i: ("<b>8,394</b>-byte IPS &middot; <b>64 KB</b> output &middot; "
+                          "normalised user-supplied base &middot; no ROM distributed"),
+            es=lambda i: ("IPS de <b>8.394</b> bytes &middot; resultado de <b>64 KB</b> "
+                          "&middot; base normalizada aportada por el usuario &middot; no se "
+                          "distribuye ninguna ROM")),
+        nota=dict(
+            en="completed from beginning to end by Araubi; automated openMSX tests; not tested on real hardware",
+            es="completado de principio a fin por Araubi; pruebas autom&aacute;ticas en openMSX; no probado en hardware real")),
+    dict(
+        clave="ant-attack-msx1", titulo="Ant Attack &mdash; ZX Spectrum to MSX", anio=1983,
+        repo="https://github.com/antxiko/Ant-Attack-MSX1", web="",
+        meta=dict(
+            en="Quicksilva &middot; MSX &middot; 64 KB ASCII16 cartridge &middot; IPS patch, unofficial",
+            es="Quicksilva &middot; MSX &middot; cartucho ASCII16 de 64 KB &middot; parche IPS, extraoficial"),
+        claim=dict(
+            en=("The Spectrum engine running as an MSX cartridge, with <b>SCREEN 2, "
+                "keyboard, menus and PSG</b> supplied by a native layer. The isometric "
+                "renderer sends only changed cells to the VDP. It adds rotational or "
+                "directional control, key redefinition, corrected camera tracking, a new "
+                "HUD and beeper sequences adapted to the PSG. The repository includes "
+                "the <b>disassembly</b> and patch sources."),
+            es=("El motor de Spectrum funcionando como cartucho de MSX, con <b>SCREEN 2, "
+                "teclado, men&uacute;s y PSG</b> aportados por una capa nativa. El renderer "
+                "isom&eacute;trico solo env&iacute;a al VDP las casillas modificadas. A&ntilde;ade "
+                "control rotatorio o direccional, redefinici&oacute;n de teclas, seguimiento "
+                "de c&aacute;mara corregido, un HUD nuevo y las secuencias del beeper "
+                "adaptadas al PSG. Incluye el <b>desensamblado</b> y las fuentes.")),
+        datos=dict(
+            en=lambda i: ("<b>13,974</b>-byte IPS &middot; <b>64 KB</b> output &middot; "
+                          "normalised user-supplied base &middot; no ROM distributed"),
+            es=lambda i: ("IPS de <b>13.974</b> bytes &middot; resultado de <b>64 KB</b> "
+                          "&middot; base normalizada aportada por el usuario &middot; no se "
+                          "distribuye ninguna ROM")),
+        nota=dict(
+            en="completed from beginning to end by Araubi; automated openMSX tests; not tested on real hardware",
+            es="completado de principio a fin por Araubi; pruebas autom&aacute;ticas en openMSX; no probado en hardware real")),
+    dict(
         clave="galious-yamanooto",
         titulo="The Maze of Galious &mdash; saves on the Yamanooto",
         anio=1987,
@@ -4233,6 +4290,19 @@ MSXON = [
 # nueva a vieja, una clave no existe o un proyecto se queda sin novedad.
 # --------------------------------------------------------------------------
 NOVEDADES = [
+    dict(id="fred-ant-attack-msx", clase="nuevo", clave="fred-msx1",
+         otras=("ant-attack-msx1",), fecha="2026-11-03T13:00:00+01:00",
+         titulo=dict(en="Fred and Ant Attack come to the MSX",
+                     es="Fred y Ant Attack llegan al MSX"),
+         resumen=dict(
+             en="Two Quicksilva Spectrum games converted into 64 KB MSX cartridges: "
+                "native SCREEN 2 rendering, keyboard and PSG layers, disassemblies, "
+                "reproducible IPS patches and no game image distributed. Araubi completed "
+                "both games from beginning to end.",
+             es="Dos juegos de Quicksilva para Spectrum convertidos en cartuchos de 64 KB "
+                "para MSX: renderizado nativo en SCREEN 2, capas de teclado y PSG, "
+                "desensamblados, parches IPS reproducibles y ninguna imagen del juego "
+                "distribuida. Araubi complet&oacute; los dos juegos de principio a fin.")),
     dict(id="pooyan", clase="nuevo", clave="pooyan",
          fecha="2026-10-31T14:30:00+01:00",
          titulo=dict(en="Konami's Pooyan, taken apart",

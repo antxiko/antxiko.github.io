@@ -6,8 +6,16 @@
   <link rel="self" type="application/atom+xml" href="https://antxiko.github.io/es/feed.xml"/>
   <link rel="alternate" type="text/html" hreflang="es" href="https://antxiko.github.io/es/"/>
   <link rel="alternate" type="application/atom+xml" hreflang="en" href="https://antxiko.github.io/feed.xml"/>
-  <updated>2026-10-31T14:30:00+01:00</updated>
+  <updated>2026-11-03T13:00:00+01:00</updated>
   <author><name>antxiko</name><uri>https://github.com/antxiko</uri></author>
+  <entry>
+    <id>tag:antxiko.github.io,2026:novedad/es/fred-ant-attack-msx</id>
+    <title>Fred y Ant Attack llegan al MSX</title>
+    <link rel="alternate" type="text/html" href="https://github.com/antxiko/Fred-MSX1"/>
+    <published>2026-11-03T13:00:00+01:00</published>
+    <updated>2026-11-03T13:00:00+01:00</updated>
+    <summary type="text">Dos juegos de Quicksilva para Spectrum convertidos en cartuchos de 64 KB para MSX: renderizado nativo en SCREEN 2, capas de teclado y PSG, desensamblados, parches IPS reproducibles y ninguna imagen del juego distribuida. Araubi completó los dos juegos de principio a fin.</summary>
+  </entry>
   <entry>
     <id>tag:antxiko.github.io,2026:novedad/es/pooyan</id>
     <title>Konami's Pooyan, desmontado</title>
@@ -159,13 +167,5 @@
     <published>2026-10-24T18:05:43+02:00</published>
     <updated>2026-10-24T18:05:43+02:00</updated>
     <summary type="text">El parche del tutorial es ahora una traducción entera al inglés: menús, reglas, rivales, menús de llamada, yaku y puntos, los rótulos, el logotipo del título (TILE MAGICIAN), la presentación de la demo con MAHJONG sobre el puzle, y cifras y E S W N en las fichas en sus cuatro tallas. El tutorial sigue en F1.</summary>
-  </entry>
-  <entry>
-    <id>tag:antxiko.github.io,2026:novedad/es/majutsushi-tutorial-imagenes</id>
-    <title>El tutorial de Hai no Majutsushi, ahora con las fichas</title>
-    <link rel="alternate" type="text/html" href="https://antxiko.github.io/Majutsushi-TutorialPatch/"/>
-    <published>2026-10-24T17:00:00+02:00</published>
-    <updated>2026-10-24T17:00:00+02:00</updated>
-    <summary type="text">Con texto solo no se aprende mahjong. El tutorial son ahora nueve pantallas dibujadas con las fichas, las letras y los kanji del propio juego: los palos, los vientos y dragones, el objetivo, las combinaciones, las llamadas, el riichi y el tsumo, y cada opción de los menús junto a sus kanji.</summary>
   </entry>
 </feed>
