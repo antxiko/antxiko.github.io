@@ -11,7 +11,7 @@
   <entry>
     <id>tag:antxiko.github.io,2026:novedad/es/fred-ant-attack-msx</id>
     <title>Fred y Ant Attack llegan al MSX</title>
-    <link rel="alternate" type="text/html" href="https://github.com/antxiko/Fred-MSX1"/>
+    <link rel="alternate" type="text/html" href="https://antxiko.github.io/Fred-MSX1/"/>
     <published>2026-11-03T13:00:00+01:00</published>
     <updated>2026-11-03T13:00:00+01:00</updated>
     <summary type="text">Dos juegos de Quicksilva para Spectrum convertidos en cartuchos de 64 KB para MSX: renderizado nativo en SCREEN 2, capas de teclado y PSG, desensamblados, parches IPS reproducibles y ninguna imagen del juego distribuida. Araubi completó los dos juegos de principio a fin.</summary>
