@@ -3495,7 +3495,8 @@ def es_cinta(p):
 PARCHES = [
     dict(
         clave="fred-msx1", titulo="Fred &mdash; ZX Spectrum to MSX", anio=1984,
-        repo="https://github.com/antxiko/Fred-MSX1", web="",
+        repo="https://github.com/antxiko/Fred-MSX1",
+        web="https://antxiko.github.io/Fred-MSX1/",
         meta=dict(
             en="Quicksilva &middot; MSX &middot; 64 KB ASCII16 cartridge &middot; IPS patch, unofficial",
             es="Quicksilva &middot; MSX &middot; cartucho ASCII16 de 64 KB &middot; parche IPS, extraoficial"),
@@ -3524,7 +3525,8 @@ PARCHES = [
             es="completado de principio a fin por Araubi; pruebas autom&aacute;ticas en openMSX; no probado en hardware real")),
     dict(
         clave="ant-attack-msx1", titulo="Ant Attack &mdash; ZX Spectrum to MSX", anio=1983,
-        repo="https://github.com/antxiko/Ant-Attack-MSX1", web="",
+        repo="https://github.com/antxiko/Ant-Attack-MSX1",
+        web="https://antxiko.github.io/Ant-Attack-MSX1/",
         meta=dict(
             en="Quicksilva &middot; MSX &middot; 64 KB ASCII16 cartridge &middot; IPS patch, unofficial",
             es="Quicksilva &middot; MSX &middot; cartucho ASCII16 de 64 KB &middot; parche IPS, extraoficial"),
