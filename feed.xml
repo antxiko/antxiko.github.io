@@ -6,8 +6,16 @@
   <link rel="self" type="application/atom+xml" href="https://antxiko.github.io/feed.xml"/>
   <link rel="alternate" type="text/html" hreflang="en" href="https://antxiko.github.io/"/>
   <link rel="alternate" type="application/atom+xml" hreflang="es" href="https://antxiko.github.io/es/feed.xml"/>
-  <updated>2026-10-31T14:30:00+01:00</updated>
+  <updated>2026-11-03T13:00:00+01:00</updated>
   <author><name>antxiko</name><uri>https://github.com/antxiko</uri></author>
+  <entry>
+    <id>tag:antxiko.github.io,2026:novedad/en/fred-ant-attack-msx</id>
+    <title>Fred and Ant Attack come to the MSX</title>
+    <link rel="alternate" type="text/html" href="https://github.com/antxiko/Fred-MSX1"/>
+    <published>2026-11-03T13:00:00+01:00</published>
+    <updated>2026-11-03T13:00:00+01:00</updated>
+    <summary type="text">Two Quicksilva Spectrum games converted into 64 KB MSX cartridges: native SCREEN 2 rendering, keyboard and PSG layers, disassemblies, reproducible IPS patches and no game image distributed. Araubi completed both games from beginning to end.</summary>
+  </entry>
   <entry>
     <id>tag:antxiko.github.io,2026:novedad/en/pooyan</id>
     <title>Konami's Pooyan, taken apart</title>
@@ -159,13 +167,5 @@
     <published>2026-10-24T18:05:43+02:00</published>
     <updated>2026-10-24T18:05:43+02:00</updated>
     <summary type="text">The tutorial patch is now a full English translation: menus, rules, rivals, call menus, yaku and scores, the call-outs, the title logo (TILE MAGICIAN), the attract introduction with MAHJONG over the jigsaw, and digits and E S W N on the tiles in their four sizes. The tutorial is still on F1.</summary>
-  </entry>
-  <entry>
-    <id>tag:antxiko.github.io,2026:novedad/en/majutsushi-tutorial-imagenes</id>
-    <title>Hai no Majutsushi tutorial, now with the tiles</title>
-    <link rel="alternate" type="text/html" href="https://antxiko.github.io/Majutsushi-TutorialPatch/"/>
-    <published>2026-10-24T17:00:00+02:00</published>
-    <updated>2026-10-24T17:00:00+02:00</updated>
-    <summary type="text">Text alone did not teach anyone mahjong. The tutorial is now nine screens drawn with the game's own tiles, letters and kanji: the suits, winds and dragons, the goal, the sets, the calls, riichi and tsumo, and each menu entry beside its kanji.</summary>
   </entry>
 </feed>
