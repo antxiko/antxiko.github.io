@@ -6,8 +6,16 @@
   <link rel="self" type="application/atom+xml" href="https://antxiko.github.io/es/feed.xml"/>
   <link rel="alternate" type="text/html" hreflang="es" href="https://antxiko.github.io/es/"/>
   <link rel="alternate" type="application/atom+xml" hreflang="en" href="https://antxiko.github.io/feed.xml"/>
-  <updated>2026-11-12T18:00:00+01:00</updated>
+  <updated>2026-11-12T19:00:00+01:00</updated>
   <author><name>antxiko</name><uri>https://github.com/antxiko</uri></author>
+  <entry>
+    <id>tag:antxiko.github.io,2026:novedad/es/pachinkoufo-sprites</id>
+    <title>Pachinko U.F.O.: los sprites, montados desde la ROM</title>
+    <link rel="alternate" type="text/html" href="https://antxiko.github.io/PachinkoUFO-disassembly/THE-SPRITES.html"/>
+    <published>2026-11-12T19:00:00+01:00</published>
+    <updated>2026-11-12T19:00:00+01:00</updated>
+    <summary type="text">Una página nueva: el lanzador, los molinillos, la bola y los OVNIs en sus pasos y colores, y los OVNIs cuadro a cuadro, todo montado desde las propias tablas del cartucho. Cotejado con openMSX: la tabla de dibujos idéntica en 43.152 cuadros y la tabla de sprites entera en 15.263.</summary>
+  </entry>
   <entry>
     <id>tag:antxiko.github.io,2026:novedad/es/excitingjockey-sprites</id>
     <title>Exciting Jockey: los sprites, montados desde la ROM</title>
@@ -159,13 +167,5 @@
     <published>2026-10-29T07:00:00+01:00</published>
     <updated>2026-10-29T07:00:00+01:00</updated>
     <summary type="text">Los enemigos salen ahora jugados en su sala entera (los recuadros de antes escondían su movimiento y a un soldado dormido le daban sprites a la fuerza), once distintos y cada uno con su nombre. El golpe de Snake es el disparo 2 y ya se ve. RUNNING MAN, Pettrovich y GREY FOX acaban su pelea, haciendo lo que cada uno espera del jugador, y todos los mensajes se leen. El radar de las pantallas de armas sale limpio y OVER se traduce como «cambio». NIGHT SIGHT y el principio de varias peleas, cotejados con openMSX.</summary>
-  </entry>
-  <entry>
-    <id>tag:antxiko.github.io,2026:novedad/es/metalgear2-bigboss</id>
-    <title>Metal Gear 2: la pelea con BIG BOSS y las hojas de sprites</title>
-    <link rel="alternate" type="text/html" href="https://antxiko.github.io/MetalGear2-disassembly/"/>
-    <published>2026-10-29T03:30:00+01:00</published>
-    <updated>2026-10-29T03:30:00+01:00</updated>
-    <summary type="text">La pelea con BIG BOSS sale ya entera: el juego la arranca al volver a la zona 0x12 tras GREY FOX, y el jefe espera a Snake en la sala 6; cotejada con openMSX llegando por el mismo camino. Snake sale en todos los GIF de las peleas, y junto a los GIF vuelven las hojas de sprites, cada dibujo una sola vez: Snake, los enemigos y cada jefe.</summary>
   </entry>
 </feed>

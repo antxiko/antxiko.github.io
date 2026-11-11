@@ -4901,6 +4901,14 @@ MSXON = [
 # nueva a vieja, una clave no existe o un proyecto se queda sin novedad.
 # --------------------------------------------------------------------------
 NOVEDADES = [
+    dict(id="pachinkoufo-sprites", clase="actualiza", clave="pachinkoufo",
+         fecha="2026-11-12T19:00:00+01:00",
+         enlace="https://antxiko.github.io/PachinkoUFO-disassembly/THE-SPRITES.html",
+         titulo=dict(en='Pachinko U.F.O.: the sprites, put together from the ROM',
+                     es='Pachinko U.F.O.: los sprites, montados desde la ROM'),
+         resumen=dict(
+             en="A new page: the launcher, the windmills, the ball and the U.F.O.s in their steps and colours, and the U.F.O.s frame by frame, all built from the cartridge's own tables. Checked against openMSX: the drawing table identical on 43,152 frames and the whole sprite table on 15,263.",
+             es='Una p&aacute;gina nueva: el lanzador, los molinillos, la bola y los OVNIs en sus pasos y colores, y los OVNIs cuadro a cuadro, todo montado desde las propias tablas del cartucho. Cotejado con openMSX: la tabla de dibujos id&eacute;ntica en 43.152 cuadros y la tabla de sprites entera en 15.263.')),
     dict(id="excitingjockey-sprites", clase="actualiza", clave="excitingjockey",
          fecha="2026-11-12T18:00:00+01:00",
          enlace="https://antxiko.github.io/ExcitingJockey-disassembly/THE-SPRITES.html",
