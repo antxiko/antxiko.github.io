@@ -4901,6 +4901,14 @@ MSXON = [
 # nueva a vieja, una clave no existe o un proyecto se queda sin novedad.
 # --------------------------------------------------------------------------
 NOVEDADES = [
+    dict(id="iceworld-sprites", clase="actualiza", clave="iceworld",
+         fecha="2026-11-12T21:00:00+01:00",
+         enlace="https://antxiko.github.io/IceWorld-disassembly/THE-SPRITES.html",
+         titulo=dict(en='Ice World: the sprites, put together from the ROM',
+                     es='Ice World: los sprites, montados desde la ROM'),
+         resumen=dict(
+             en="A new page: the hero in his four directions with the hammer, hitting and losing, the thrown hammer and the points, and the two creatures, which are not sprites but pieces of tiles, walking, crushed and hatching, all built from the cartridge's own tables and code. Checked against openMSX: the hero identical on 48,058 frames and the creatures on 35,621, 0 different.",
+             es='Una p&aacute;gina nueva: el protagonista en sus cuatro direcciones con el martillo, pegando y perdiendo, el martillo lanzado y los puntos, y los dos bichos, que no son sprites sino piezas de casillas, andando, aplastados y saliendo del huevo, todo montado desde las propias tablas y el c&oacute;digo del cartucho. Cotejado con openMSX: el protagonista id&eacute;ntico en 48.058 cuadros y los bichos en 35.621, 0 distintos.')),
     dict(id="carfighter-sprites", clase="actualiza", clave="carfighter",
          fecha="2026-11-12T20:00:00+01:00",
          enlace="https://antxiko.github.io/CarFighter-disassembly/THE-SPRITES.html",
