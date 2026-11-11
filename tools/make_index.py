@@ -4901,6 +4901,14 @@ MSXON = [
 # nueva a vieja, una clave no existe o un proyecto se queda sin novedad.
 # --------------------------------------------------------------------------
 NOVEDADES = [
+    dict(id="carfighter-sprites", clase="actualiza", clave="carfighter",
+         fecha="2026-11-12T20:00:00+01:00",
+         enlace="https://antxiko.github.io/CarFighter-disassembly/THE-SPRITES.html",
+         titulo=dict(en='Car Fighter: the sprites, put together from the ROM',
+                     es='Car Fighter: los sprites, montados desde la ROM'),
+         resumen=dict(
+             en="A new page: the car in its four directions, the other cars and the truck, hit twice and blowing up, the bomb, the shot and the loose things, and the blast frame by frame, all built from the cartridge's own tables and code. Checked against openMSX: the drawing table identical on 49,805 frames, the cars on 41,057 and the trucks on 1,786.",
+             es='Una p&aacute;gina nueva: el coche en sus cuatro direcciones, los otros coches y el cami&oacute;n, tocados y estallando, la bomba, el disparo y las cosas sueltas, y el estallido cuadro a cuadro, todo montado desde las propias tablas y el c&oacute;digo del cartucho. Cotejado con openMSX: la tabla de dibujos id&eacute;ntica en 49.805 cuadros, los coches en 41.057 y los camiones en 1.786.')),
     dict(id="pachinkoufo-sprites", clase="actualiza", clave="pachinkoufo",
          fecha="2026-11-12T19:00:00+01:00",
          enlace="https://antxiko.github.io/PachinkoUFO-disassembly/THE-SPRITES.html",

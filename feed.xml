@@ -6,8 +6,16 @@
   <link rel="self" type="application/atom+xml" href="https://antxiko.github.io/feed.xml"/>
   <link rel="alternate" type="text/html" hreflang="en" href="https://antxiko.github.io/"/>
   <link rel="alternate" type="application/atom+xml" hreflang="es" href="https://antxiko.github.io/es/feed.xml"/>
-  <updated>2026-11-12T19:00:00+01:00</updated>
+  <updated>2026-11-12T20:00:00+01:00</updated>
   <author><name>antxiko</name><uri>https://github.com/antxiko</uri></author>
+  <entry>
+    <id>tag:antxiko.github.io,2026:novedad/en/carfighter-sprites</id>
+    <title>Car Fighter: the sprites, put together from the ROM</title>
+    <link rel="alternate" type="text/html" href="https://antxiko.github.io/CarFighter-disassembly/THE-SPRITES.html"/>
+    <published>2026-11-12T20:00:00+01:00</published>
+    <updated>2026-11-12T20:00:00+01:00</updated>
+    <summary type="text">A new page: the car in its four directions, the other cars and the truck, hit twice and blowing up, the bomb, the shot and the loose things, and the blast frame by frame, all built from the cartridge's own tables and code. Checked against openMSX: the drawing table identical on 49,805 frames, the cars on 41,057 and the trucks on 1,786.</summary>
+  </entry>
   <entry>
     <id>tag:antxiko.github.io,2026:novedad/en/pachinkoufo-sprites</id>
     <title>Pachinko U.F.O.: the sprites, put together from the ROM</title>
@@ -159,13 +167,5 @@
     <published>2026-10-29T08:21:00+01:00</published>
     <updated>2026-10-29T08:21:00+01:00</updated>
     <summary type="text">The transceiver and the texts are now one page: the conversations, the 211 messages of the scenes (Natasha, the sewers, the bridge, Holly, BIG BOSS, the ending, the children) in story order, and the signs, every one next to its translation; the weapon and equipment descriptions too. Also: boss sprite sheets without one-colour flashes, enemy GIFs without a stray Snake, a screen for each part of the intro and the ending, and tunes 0x6B and 0x6E checked along every path a tune is asked for: nothing reaches them.</summary>
-  </entry>
-  <entry>
-    <id>tag:antxiko.github.io,2026:novedad/en/metalgear2-cotejo</id>
-    <title>Metal Gear 2: checked again, and fixed</title>
-    <link rel="alternate" type="text/html" href="https://antxiko.github.io/MetalGear2-disassembly/"/>
-    <published>2026-10-29T07:00:00+01:00</published>
-    <updated>2026-10-29T07:00:00+01:00</updated>
-    <summary type="text">The enemies are now played in their whole room (the old boxes hid their movement and gave a sleeping soldier sprites by force), eleven different ones, each with its name. Snake's punch is trigger 2 and now shows. RUNNING MAN, Pettrovich and GREY FOX play their fights to the end, doing what each one waits for from the player, and every message can be read. The radar of the weapon screens is clean, and OVER is translated as it should be. NIGHT SIGHT and the start of several fights checked against openMSX.</summary>
   </entry>
 </feed>
