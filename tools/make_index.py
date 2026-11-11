@@ -3888,6 +3888,166 @@ DESENSAMBLADOS = [
             es='El título sale de ejecutar la ROM, cotejado con openMSX punto a punto; la presentación de CASIO, la demostración, las fases, el BONUS GAME, el final, el selector de fase, STOP y F1, jugados en GIF en openMSX; las cinco músicas, de su propio motor de sonido, idénticas a openMSX cuadro a cuadro.',
         ),
     ),
+    dict(
+        clave="stoneofwisdom",
+        grupo="casio",
+        titulo='The Stone of Wisdom',
+        anio=1986,
+        repo="https://github.com/antxiko/StoneOfWisdom-disassembly",
+        web="https://antxiko.github.io/StoneOfWisdom-disassembly/",
+        meta=dict(
+            en="Casio &middot; MSX &middot; 32 KB cartridge",
+            es="Casio &middot; MSX &middot; cartucho de 32 KB",
+        ),
+        claim=dict(
+            en='Fifty-eight rooms seen from above, in four scenes: the hero throws his weapon, opens chests, breaks blocks, buys hieroglyphs with stones and looks in every scene for the stone that gives him a title, which is also the password to come back; at the end, the sage. The title and the 58 rooms come from running the ROM (the title, checked against openMSX point by point); the game in GIF, played in openMSX; the nine tunes that play, from its own engine, identical to openMSX frame by frame.',
+            es='Cincuenta y ocho salas vistas desde arriba, en cuatro escenas: el protagonista lanza su arma, abre cofres, rompe bloques, compra jerogl&iacute;ficos con piedras y busca en cada escena la piedra que le da un t&iacute;tulo, que es tambi&eacute;n la contrase&ntilde;a para volver; al final, el sabio. El t&iacute;tulo y las 58 salas salen de ejecutar la ROM (el t&iacute;tulo, cotejado con openMSX punto a punto); la partida en GIF, jugada en openMSX; las nueve m&uacute;sicas que suenan, de su propio motor, id&eacute;nticas a openMSX cuadro a cuadro.',
+        ),
+        datos=dict(
+            en=lambda i: (f"{cif(32768, i)} bytes &middot; <b>0</b> unexplained "
+                          f"&middot; reassembles <b>byte for byte</b> &middot; "
+                          f"{cif(12649, i)} of code, {cif(20119, i)} of data "
+                          f"&middot; {cif(672, i)} routines &middot; commented "
+                          f"to <b>41.6%</b>"),
+            es=lambda i: (f"{cif(32768, i)} bytes &middot; <b>0</b> sin explicar "
+                          f"&middot; reensambla <b>byte a byte</b> &middot; "
+                          f"{cif(12649, i)} de código, {cif(20119, i)} de datos "
+                          f"&middot; {cif(672, i)} rutinas &middot; comentado "
+                          f"al <b>41,6 %</b>"),
+        ),
+        nota=dict(
+            en="The title comes from running the ROM, checked against openMSX point by point; the 58 rooms, from running their builder; the CASIO intro, the demo, the password, the game, the shop, the scene's stone, the sage and both endings, played in GIF in openMSX; the nine tunes that play, from its own sound engine, identical to openMSX frame by frame.",
+            es='El título sale de ejecutar la ROM, cotejado con openMSX punto a punto; las 58 salas, de ejecutar su montaje; la presentación de CASIO, la demostración, la contraseña, la partida, la tienda, la piedra de la escena, el sabio y los dos finales, jugados en GIF en openMSX; las nueve músicas que suenan, de su propio motor de sonido, idénticas a openMSX cuadro a cuadro.',
+        ),
+    ),
+    dict(
+        clave="sealofhades",
+        grupo="casio",
+        titulo='The Seal of Hades',
+        anio=1986,
+        repo="https://github.com/antxiko/SealOfHades-disassembly",
+        web="https://antxiko.github.io/SealOfHades-disassembly/",
+        meta=dict(
+            en="Casio &middot; MSX &middot; 32 KB cartridge",
+            es="Casio &middot; MSX &middot; cartucho de 32 KB",
+        ),
+        claim=dict(
+            en="A shoot-'em-up on foot, going up: Leon shoots, breaks the ground blocks to get what they keep, watches his air and his power, and at the end of each of the six scenes beats the stone guardian. If he finds The Stone of Wisdom in another slot, he starts stronger. The title comes from running the ROM, checked against openMSX point by point; the game in GIF, played in openMSX; the twelve tunes that play, from its own engine, identical to openMSX frame by frame.",
+            es='Un matamarcianos a pie, hacia arriba: Leon dispara, rompe los bloques del suelo para sacar lo que guardan, vigila el aire y la fuerza, y al final de cada una de las seis escenas vence al guardi&aacute;n de piedra. Si encuentra The Stone of Wisdom en otro slot, empieza m&aacute;s fuerte. El t&iacute;tulo sale de ejecutar la ROM, cotejado con openMSX punto a punto; la partida en GIF, jugada en openMSX; las doce m&uacute;sicas que suenan, de su propio motor, id&eacute;nticas a openMSX cuadro a cuadro.',
+        ),
+        datos=dict(
+            en=lambda i: (f"{cif(32768, i)} bytes &middot; <b>0</b> unexplained "
+                          f"&middot; reassembles <b>byte for byte</b> &middot; "
+                          f"{cif(9874, i)} of code, {cif(22894, i)} of data "
+                          f"&middot; {cif(612, i)} routines &middot; commented "
+                          f"to <b>41.5%</b>"),
+            es=lambda i: (f"{cif(32768, i)} bytes &middot; <b>0</b> sin explicar "
+                          f"&middot; reensambla <b>byte a byte</b> &middot; "
+                          f"{cif(9874, i)} de código, {cif(22894, i)} de datos "
+                          f"&middot; {cif(612, i)} rutinas &middot; comentado "
+                          f"al <b>41,5 %</b>"),
+        ),
+        nota=dict(
+            en='The title comes from running the ROM, checked against openMSX point by point; the CASIO intro, the demo, the game, the guardian, the six scenes and the ending, played in GIF in openMSX; the twelve tunes that play, from its own sound engine, identical to openMSX frame by frame.',
+            es='El título sale de ejecutar la ROM, cotejado con openMSX punto a punto; la presentación de CASIO, la demostración, la partida, el guardián, las seis escenas y el final, jugados en GIF en openMSX; las doce músicas que suenan, de su propio motor de sonido, idénticas a openMSX cuadro a cuadro.',
+        ),
+    ),
+    dict(
+        clave="youkaiyashiki",
+        grupo="casio",
+        titulo='Youkai Yashiki',
+        anio=1986,
+        repo="https://github.com/antxiko/YoukaiYashiki-disassembly",
+        web="https://antxiko.github.io/YoukaiYashiki-disassembly/",
+        meta=dict(
+            en="Casio &middot; MSX &middot; 32 KB cartridge",
+            es="Casio &middot; MSX &middot; cartucho de 32 KB",
+        ),
+        claim=dict(
+            en='A platform game through five haunted places, from the graveyard to the mansion, screen by screen by ladders and doors: the hero jumps, throws his weapon at the y&#333;kai, picks up what he finds and in each place beats the event that guards it. The title comes from running the ROM, checked against openMSX point by point; the game in GIF, played in openMSX; the tunes, from its own engine, identical to openMSX frame by frame in those that play in the recordings.',
+            es='Un juego de plataformas por cinco lugares encantados, del cementerio a la mansi&oacute;n, pantalla a pantalla por escaleras y puertas: el protagonista salta, lanza su arma contra los y&#333;kai, recoge lo que encuentra y en cada sala vence al suceso que la guarda. El t&iacute;tulo sale de ejecutar la ROM, cotejado con openMSX punto a punto; la partida en GIF, jugada en openMSX; las m&uacute;sicas, de su propio motor, id&eacute;nticas a openMSX cuadro a cuadro en las que suenan en las grabaciones.',
+        ),
+        datos=dict(
+            en=lambda i: (f"{cif(32768, i)} bytes &middot; <b>0</b> unexplained "
+                          f"&middot; reassembles <b>byte for byte</b> &middot; "
+                          f"{cif(14711, i)} of code, {cif(18057, i)} of data "
+                          f"&middot; {cif(878, i)} routines &middot; commented "
+                          f"to <b>40.5%</b>"),
+            es=lambda i: (f"{cif(32768, i)} bytes &middot; <b>0</b> sin explicar "
+                          f"&middot; reensambla <b>byte a byte</b> &middot; "
+                          f"{cif(14711, i)} de código, {cif(18057, i)} de datos "
+                          f"&middot; {cif(878, i)} rutinas &middot; comentado "
+                          f"al <b>40,5 %</b>"),
+        ),
+        nota=dict(
+            en='The title comes from running the ROM, checked against openMSX point by point; the CASIO intro, the demo, the game, GAME OVER and the five places, played in GIF in openMSX; the ten tunes, from its own sound engine, the five that play in the recordings identical to openMSX frame by frame.',
+            es='El título sale de ejecutar la ROM, cotejado con openMSX punto a punto; la presentación de CASIO, la demostración, la partida, GAME OVER y los cinco lugares, jugados en GIF en openMSX; las diez músicas, de su propio motor de sonido, y las cinco que suenan en las grabaciones idénticas a openMSX cuadro a cuadro.',
+        ),
+    ),
+    dict(
+        clave="issunboushi",
+        grupo="casio",
+        titulo='Issun-boushi no Donnamondai',
+        anio=1987,
+        repo="https://github.com/antxiko/IssunBoushi-disassembly",
+        web="https://antxiko.github.io/IssunBoushi-disassembly/",
+        meta=dict(
+            en="Casio &middot; MSX &middot; 32 KB cartridge",
+            es="Casio &middot; MSX &middot; cartucho de 32 KB",
+        ),
+        claim=dict(
+            en='Issun-b&#333;shi, the one-inch boy of the tale, goes up the river in his bowl: he dodges logs, skewers fish, birds and whatever comes out of the bank, picks up what they leave and, once ashore, takes on the oni of each scene. Five scenes and an ending. The title comes from running the ROM, checked against openMSX point by point; the game in GIF, played in openMSX; the eight tunes, from its own engine, identical to openMSX frame by frame.',
+            es='Issun-b&#333;shi, el ni&ntilde;o de una pulgada del cuento, sube el r&iacute;o en su cuenco: esquiva troncos, ensarta peces, p&aacute;jaros y lo que sale de la orilla, recoge lo que dejan y, al llegar a tierra, se las ve con el oni de cada escena. Cinco escenas y un final. El t&iacute;tulo sale de ejecutar la ROM, cotejado con openMSX punto a punto; la partida en GIF, jugada en openMSX; las ocho m&uacute;sicas, de su propio motor, id&eacute;nticas a openMSX cuadro a cuadro.',
+        ),
+        datos=dict(
+            en=lambda i: (f"{cif(32768, i)} bytes &middot; <b>0</b> unexplained "
+                          f"&middot; reassembles <b>byte for byte</b> &middot; "
+                          f"{cif(8488, i)} of code, {cif(24280, i)} of data "
+                          f"&middot; {cif(483, i)} routines &middot; commented "
+                          f"to <b>60.6%</b>"),
+            es=lambda i: (f"{cif(32768, i)} bytes &middot; <b>0</b> sin explicar "
+                          f"&middot; reensambla <b>byte a byte</b> &middot; "
+                          f"{cif(8488, i)} de código, {cif(24280, i)} de datos "
+                          f"&middot; {cif(483, i)} rutinas &middot; comentado "
+                          f"al <b>60,6 %</b>"),
+        ),
+        nota=dict(
+            en='The title comes from running the ROM, checked against openMSX point by point; the CASIO intro, the demo, the river, GAME OVER, the five oni and the ending, played in GIF in openMSX; the eight tunes, from its own sound engine, identical to openMSX frame by frame.',
+            es='El título sale de ejecutar la ROM, cotejado con openMSX punto a punto; la presentación de CASIO, la demostración, el río, GAME OVER, los cinco oni y el final, jugados en GIF en openMSX; las ocho músicas, de su propio motor de sonido, idénticas a openMSX cuadro a cuadro.',
+        ),
+    ),
+    dict(
+        clave="gameland",
+        grupo="casio",
+        titulo='Game Land',
+        anio=1984,
+        repo="https://github.com/antxiko/GameLand-disassembly",
+        web="https://antxiko.github.io/GameLand-disassembly/",
+        meta=dict(
+            en="Casio &middot; MSX &middot; 32 KB cartridge",
+            es="Casio &middot; MSX &middot; cartucho de 32 KB",
+        ),
+        claim=dict(
+            en='Game Land is not a game: it is a cartridge for making games without programming. You pick the kind (a shooting game or a maze) and the background, draw it with LINE, BOX, CIRCLE and PAINT, make the characters dot by dot or from its 20 samples, compose the tunes on a staff, decide how each one moves and play it; then you save it to tape. Here it is, all of it, from the inside: 26,084 bytes of code, with an engine that plays what you make and its own drawing library.',
+            es='Game Land no es un juego: es un cartucho para hacer juegos sin programar. Se elige la clase (de combate o de laberinto) y el fondo, se dibuja con LINE, BOX, CIRCLE y PAINT, se hacen los personajes punto a punto o con sus 20 muestras, se componen las m&uacute;sicas en un pentagrama, se decide c&oacute;mo se mueve cada uno y se juega; despu&eacute;s se guarda en cinta. Aqu&iacute; est&aacute; entero por dentro: 26.084 bytes de c&oacute;digo, con un motor que juega lo que se hace y una biblioteca de dibujo propia.',
+        ),
+        datos=dict(
+            en=lambda i: (f"{cif(32768, i)} bytes &middot; <b>0</b> unexplained "
+                          f"&middot; reassembles <b>byte for byte</b> &middot; "
+                          f"{cif(26084, i)} of code, {cif(6684, i)} of data "
+                          f"&middot; {cif(1904, i)} routines &middot; commented "
+                          f"to <b>46.0%</b>"),
+            es=lambda i: (f"{cif(32768, i)} bytes &middot; <b>0</b> sin explicar "
+                          f"&middot; reensambla <b>byte a byte</b> &middot; "
+                          f"{cif(26084, i)} de código, {cif(6684, i)} de datos "
+                          f"&middot; {cif(1904, i)} rutinas &middot; comentado "
+                          f"al <b>46,0 %</b>"),
+        ),
+        nota=dict(
+            en='The intro, the menus, a background drawn with its tools and two characters from its samples, recorded in openMSX on a Casio PV-16 with a script taken from the listing; the menus in Japanese and translated; the four sample tunes from its own sound engine, the title one identical to openMSX frame by frame.',
+            es='La presentación, los menús, un fondo dibujado con sus herramientas y dos personajes con sus muestras, grabados en openMSX en un Casio PV-16 con un guion sacado del listado; los menús en japonés y traducidos; las cuatro músicas de muestra de su propio motor de sonido, la del título idéntica a openMSX cuadro a cuadro.',
+        ),
+    ),
 ]
 
 # Los desensamblados van en tres grupos, cada uno una parte de su seccion. Aqui
@@ -4741,6 +4901,24 @@ MSXON = [
 # nueva a vieja, una clave no existe o un proyecto se queda sin novedad.
 # --------------------------------------------------------------------------
 NOVEDADES = [
+    dict(id="casio-cinco", clase="nuevo", clave="gameland",
+         otras=["stoneofwisdom", "sealofhades", "youkaiyashiki", "issunboushi"],
+         fecha="2026-11-12T12:00:00+01:00",
+         titulo=dict(en="Five more Casio cartridges, Game Land among them",
+                     es="Cinco cartuchos m&aacute;s de Casio, con Game Land"),
+         resumen=dict(
+             en="The Stone of Wisdom, The Seal of Hades, Youkai Yashiki, Issun-boushi no Donnamondai "
+                "and Game Land, Casio's 1984 kit for making games without programming. Each one 100% "
+                "explained, reassembled byte for byte and commented to 40% or more; the games played in "
+                "GIF in openMSX and, in Game Land, a background drawn with its own LINE, BOX, CIRCLE and "
+                "PAINT and two characters from its samples; the music from each cartridge's own sound "
+                "engine, checked against openMSX.",
+             es="The Stone of Wisdom, The Seal of Hades, Youkai Yashiki, Issun-boushi no Donnamondai y "
+                "Game Land, el cartucho de Casio de 1984 para hacer juegos sin programar. Cada uno "
+                "explicado al 100 %, reensamblado byte a byte y comentado al 40 % o m&aacute;s; las "
+                "partidas, jugadas en GIF en openMSX y, en Game Land, un fondo dibujado con su propio LINE, "
+                "BOX, CIRCLE y PAINT y dos personajes con sus muestras; las m&uacute;sicas, del propio motor "
+                "de sonido de cada cartucho, cotejadas con openMSX.")),
     dict(id="casio-catorce", clase="nuevo", clave="skicommand",
          otras=["excitingbaseball", "excitingjockey", "pachinkoufo", "carfighter", "iceworld",
                 "iganinpouchou", "exoidez", "shindobaddo", "eaglefighter", "exoidezarea5",
