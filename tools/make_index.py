@@ -4901,6 +4901,22 @@ MSXON = [
 # nueva a vieja, una clave no existe o un proyecto se queda sin novedad.
 # --------------------------------------------------------------------------
 NOVEDADES = [
+    dict(id="skicommand-sprites", clase="actualiza", clave="skicommand",
+         fecha="2026-11-12T16:00:00+01:00",
+         enlace="https://antxiko.github.io/SkiCommand-disassembly/THE-SPRITES.html",
+         titulo=dict(en="Ski Command: the sprites, put together from the ROM",
+                     es="Ski Command: los sprites, montados desde la ROM"),
+         resumen=dict(
+             en="A new page: the skier's eleven drawings, the seven enemies in their four sizes and knocked down, "
+                "the flying machine in its three colours and hit, and the course objects, all built from the "
+                "cartridge's own tables; the jump and the crash frame by frame as the code does them. Checked "
+                "against openMSX: the sprite drawing table identical on 17,989 frames, the skier and the machine "
+                "with 0 different frames.",
+             es="Una p&aacute;gina nueva: los once dibujos del esquiador, los siete enemigos en sus cuatro "
+                "tama&ntilde;os y derribados, el aparato en sus tres colores y tocado, y los objetos de la pista, "
+                "todo montado desde las propias tablas del cartucho; el salto y la ca&iacute;da cuadro a cuadro "
+                "como los hace el c&oacute;digo. Cotejado con openMSX: la tabla de dibujos de los sprites "
+                "id&eacute;ntica en 17.989 cuadros, el esquiador y el aparato con 0 cuadros distintos.")),
     dict(id="casio-cinco", clase="nuevo", clave="gameland",
          otras=["stoneofwisdom", "sealofhades", "youkaiyashiki", "issunboushi"],
          fecha="2026-11-12T12:00:00+01:00",
