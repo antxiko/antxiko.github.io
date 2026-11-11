@@ -4901,6 +4901,14 @@ MSXON = [
 # nueva a vieja, una clave no existe o un proyecto se queda sin novedad.
 # --------------------------------------------------------------------------
 NOVEDADES = [
+    dict(id="iganinpouchou-sprites", clase="actualiza", clave="iganinpouchou",
+         fecha="2026-11-12T22:00:00+01:00",
+         enlace="https://antxiko.github.io/IgaNinpouchou-disassembly/THE-SPRITES.html",
+         titulo=dict(en='Iga Ninpouchou: the sprites, put together from the ROM',
+                     es='Iga Ninpouchou: los sprites, montados desde la ROM'),
+         resumen=dict(
+             en="A new page: the ninja walking, jumping, crouching and hit, almost invisible with the object, and his star; the ninja on the floors, who get two colours from a single sprite by showing body and details in turns; the arrow, the balls, the stars and what falls, all built from the cartridge's own tables and code. Checked against openMSX: the ninja identical on 19,464 frames, 0 different. And a fix: type 8 throws balls, not arrows; the arrow is type 1.",
+             es='Una p&aacute;gina nueva: el ninja andando, saltando, agachado y tocado, casi invisible con el objeto, y su estrella; los ninja de los pisos, que sacan dos colores de un solo sprite ense&ntilde;ando cuerpo y detalles por turnos; la flecha, las bolas, las estrellas y lo que cae, todo montado desde las propias tablas y el c&oacute;digo del cartucho. Cotejado con openMSX: el ninja id&eacute;ntico en 19.464 cuadros, 0 distintos. Y una correcci&oacute;n: el tipo 8 tira bolas, no flechas; la flecha es el tipo 1.')),
     dict(id="iceworld-sprites", clase="actualiza", clave="iceworld",
          fecha="2026-11-12T21:00:00+01:00",
          enlace="https://antxiko.github.io/IceWorld-disassembly/THE-SPRITES.html",
