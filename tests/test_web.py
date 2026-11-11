@@ -227,12 +227,13 @@ class TestPortada(unittest.TestCase):
         """Konami en su grupo, y aparte los que hizo Konami y publico otro
         (Sony, Hudson: "Konami for ..." en su ficha), que no llevan RC; los tres de golf que no son de Konami, Ale
         Hop!, Temptations, Colt 36, Demonia, El Descubrimiento de America y
-        Bomber Man en los exclusivos de MSX; el resto en las conversiones. Y
+        Bomber Man en los exclusivos de MSX; los de Casio ("Casio" en su ficha) en
+        el suyo; el resto en las conversiones. Y
         ninguno vacio."""
         mi = modulo()
         mi.comprueba()
         self.assertEqual([g["id"] for g in mi.GRUPOS],
-                         ["konami", "konami-otros", "msx-exclusive", "ports"])
+                         ["konami", "konami-otros", "msx-exclusive", "ports", "casio"])
         claves = {p["clave"] for p in mi.DESENSAMBLADOS}
         por_grupo = {g["id"]: {p["clave"] for p in mi.del_grupo(g["id"])}
                      for g in mi.GRUPOS}
@@ -240,13 +241,15 @@ class TestPortada(unittest.TestCase):
                  if p["meta"]["en"].startswith("Konami for ")}
         konami = {p["clave"] for p in mi.DESENSAMBLADOS
                   if p["meta"]["en"].startswith("Konami")} - otros
-        exclusivos = {"3dgolf", "holeinone", "holeinonepro", "casioworldopen",
+        exclusivos = {"3dgolf", "holeinone", "holeinonepro",
                       "alehop", "temptations", "colt36", "demonia",
                       "descubrimiento", "bomberman", "dunkshot"}
         self.assertEqual(por_grupo["konami"], konami)
         self.assertEqual(por_grupo["konami-otros"], otros)
         self.assertEqual(por_grupo["msx-exclusive"], exclusivos)
-        self.assertEqual(por_grupo["ports"], claves - konami - otros - exclusivos)
+        casio = {p["clave"] for p in mi.DESENSAMBLADOS if p["meta"]["en"].startswith("Casio")}
+        self.assertEqual(por_grupo["casio"], casio)
+        self.assertEqual(por_grupo["ports"], claves - konami - otros - exclusivos - casio)
         for gid, en_el in por_grupo.items():
             self.assertTrue(en_el, "el grupo %s se ha quedado sin juegos" % gid)
         # la lista crece, no encoge: los diecinueve publicados siguen ahi

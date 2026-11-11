@@ -711,7 +711,7 @@ DESENSAMBLADOS = [
     ),
     dict(
         clave="casioworldopen",
-        grupo="msx-exclusive",
+        grupo="casio",
         titulo="Casio World Open",
         anio=1985,
         repo="https://github.com/antxiko/CasioWorldOpen-disassembly",
@@ -3440,6 +3440,454 @@ DESENSAMBLADOS = [
                "hubiera en memoria.",
         ),
     ),
+    dict(
+        clave="skicommand",
+        grupo="casio",
+        titulo='Ski Command',
+        anio=1984,
+        repo="https://github.com/antxiko/SkiCommand-disassembly",
+        web="https://antxiko.github.io/SkiCommand-disassembly/",
+        meta=dict(
+            en="Casio &middot; MSX &middot; 16 KB cartridge",
+            es="Casio &middot; MSX &middot; cartucho de 16 KB",
+        ),
+        claim=dict(
+            en="A commando skis downhill between trees, enemy skiers and a flying machine that drops things from the air: the course and its four stretches of snow, the bonus and the title from the ROM's bytes, checked dot by dot against openMSX; the game, the jump, the bends, the flying machine, the crash and the bonus played in GIF, and the six tunes from its own engine, identical to openMSX frame by frame.",
+            es='Un comando baja esquiando entre &aacute;rboles, esquiadores enemigos y un aparato que suelta cosas desde el aire: la pista y sus cuatro tramos de nieve, el bonus y el t&iacute;tulo desde los bytes de la ROM, cotejados punto a punto con openMSX; la partida, el salto, las curvas, el aparato, la ca&iacute;da y el bonus jugados en GIF, y las seis m&uacute;sicas de su propio motor, id&eacute;nticas a openMSX cuadro a cuadro.',
+        ),
+        datos=dict(
+            en=lambda i: (f"{cif(16384, i)} bytes &middot; <b>0</b> unexplained "
+                          f"&middot; reassembles <b>byte for byte</b> &middot; "
+                          f"{cif(6260, i)} of code, {cif(10124, i)} of data "
+                          f"&middot; {cif(326, i)} routines &middot; commented "
+                          f"to <b>40.8%</b>"),
+            es=lambda i: (f"{cif(16384, i)} bytes &middot; <b>0</b> sin explicar "
+                          f"&middot; reensambla <b>byte a byte</b> &middot; "
+                          f"{cif(6260, i)} de código, {cif(10124, i)} de datos "
+                          f"&middot; {cif(326, i)} rutinas &middot; comentado "
+                          f"al <b>40,8 %</b>"),
+        ),
+        nota=dict(
+            en='The logo, the title, the course with its four stretches of snow and the bonus come from running the ROM, checked dot by dot against openMSX; the game, the jump, the bends, the flying machine, the crash, PATTERN CLEAR, the bonus and GAME OVER, played in GIF; the six tunes, from its own sound engine and identical to openMSX frame by frame.',
+            es='El logotipo, el título, la pista con sus cuatro tramos de nieve y el bonus salen de ejecutar la ROM, cotejados punto a punto con openMSX; la partida, el salto, las curvas, el aparato, la caída, PATTERN CLEAR, el bonus y el GAME OVER, jugados en GIF; las seis músicas, de su propio motor de sonido e idénticas a openMSX cuadro a cuadro.',
+        ),
+    ),
+    dict(
+        clave="excitingbaseball",
+        grupo="casio",
+        titulo='Exciting Baseball',
+        anio=1984,
+        repo="https://github.com/antxiko/ExcitingBaseball-disassembly",
+        web="https://antxiko.github.io/ExcitingBaseball-disassembly/",
+        meta=dict(
+            en="Casio &middot; MSX &middot; 16 KB cartridge",
+            es="Casio &middot; MSX &middot; cartucho de 16 KB",
+        ),
+        claim=dict(
+            en="The Japanese high-school baseball tournament, against the computer or between two: the bracket of the eight regions, the pitcher, the timed swing, the runners, the fielders drawn in tiles and the computer playing with its own joystick; the screens from the ROM's bytes, checked against openMSX; the plays in GIF and the four tunes from its own engine, identical to openMSX frame by frame.",
+            es='El torneo de b&eacute;isbol de los institutos japoneses, contra el ordenador o entre dos: el cuadro de las ocho regiones, el lanzador, el swing a tiempo, los corredores, la defensa en casillas y el ordenador que juega con su propio mando; las pantallas desde los bytes de la ROM, cotejadas con openMSX; las jugadas en GIF y las cuatro m&uacute;sicas de su propio motor, id&eacute;nticas a openMSX cuadro a cuadro.',
+        ),
+        datos=dict(
+            en=lambda i: (f"{cif(16384, i)} bytes &middot; <b>0</b> unexplained "
+                          f"&middot; reassembles <b>byte for byte</b> &middot; "
+                          f"{cif(11827, i)} of code, {cif(4557, i)} of data "
+                          f"&middot; {cif(706, i)} routines &middot; commented "
+                          f"to <b>42.4%</b>"),
+            es=lambda i: (f"{cif(16384, i)} bytes &middot; <b>0</b> sin explicar "
+                          f"&middot; reensambla <b>byte a byte</b> &middot; "
+                          f"{cif(11827, i)} de código, {cif(4557, i)} de datos "
+                          f"&middot; {cif(706, i)} rutinas &middot; comentado "
+                          f"al <b>42,4 %</b>"),
+        ),
+        nota=dict(
+            en='The selection, the field, the tournament bracket and the region choice come from running the ROM, checked against openMSX; the pitch, the hit, the plays, CHANGE and a run, played in GIF; the four tunes, from its own sound engine and identical to openMSX frame by frame.',
+            es='La selección, el campo, el cuadro del torneo y la elección de región salen de ejecutar la ROM, cotejados con openMSX; el lanzamiento, el bateo, las jugadas, el CHANGE y una carrera, jugados en GIF; las cuatro músicas, de su propio motor de sonido e idénticas a openMSX cuadro a cuadro.',
+        ),
+    ),
+    dict(
+        clave="excitingjockey",
+        grupo="casio",
+        titulo='Exciting Jockey',
+        anio=1984,
+        repo="https://github.com/antxiko/ExcitingJockey-disassembly",
+        web="https://antxiko.github.io/ExcitingJockey-disassembly/",
+        meta=dict(
+            en="Casio &middot; MSX &middot; 16 KB cartridge",
+            es="Casio &middot; MSX &middot; cartucho de 16 KB",
+        ),
+        claim=dict(
+            en="Steeplechase with four horses: riding one with the whip and the jump, or betting between one and four players on the pairs that finish first and second. The nine races, the fences, the water jumps and the shrubs, the falls and the thrown jockey, the odds that come from each horse's strength; the screen from the ROM's bytes, checked against openMSX; the races in GIF and the seven tunes from its own engine, identical to openMSX frame by frame.",
+            es='Carreras de obst&aacute;culos con cuatro caballos: llevar uno con el l&aacute;tigo y el salto, o apostar entre uno y cuatro jugadores a las parejas que llegan primero y segundo. Las nueve carreras, las vallas, las r&iacute;as y las matas, las ca&iacute;das y el jinete despedido, las cuotas que salen de la fuerza de cada caballo; la pantalla desde los bytes de la ROM, cotejada con openMSX; las carreras en GIF y las siete m&uacute;sicas de su propio motor, id&eacute;nticas a openMSX cuadro a cuadro.',
+        ),
+        datos=dict(
+            en=lambda i: (f"{cif(16384, i)} bytes &middot; <b>0</b> unexplained "
+                          f"&middot; reassembles <b>byte for byte</b> &middot; "
+                          f"{cif(9039, i)} of code, {cif(7345, i)} of data "
+                          f"&middot; {cif(505, i)} routines &middot; commented "
+                          f"to <b>42.4%</b>"),
+            es=lambda i: (f"{cif(16384, i)} bytes &middot; <b>0</b> sin explicar "
+                          f"&middot; reensambla <b>byte a byte</b> &middot; "
+                          f"{cif(9039, i)} de código, {cif(7345, i)} de datos "
+                          f"&middot; {cif(505, i)} rutinas &middot; comentado "
+                          f"al <b>42,4 %</b>"),
+        ),
+        nota=dict(
+            en='The selection comes from running the ROM, checked against openMSX; the start, the jump, the fall, the shrub, the finish, the bets and the payout, played in GIF; the seven tunes, from its own sound engine and identical to openMSX frame by frame.',
+            es='La selección sale de ejecutar la ROM, cotejada con openMSX; la salida, el salto, la caída, la mata, la meta, las apuestas y el pago, jugados en GIF; las siete músicas, de su propio motor de sonido e idénticas a openMSX cuadro a cuadro.',
+        ),
+    ),
+    dict(
+        clave="pachinkoufo",
+        grupo="casio",
+        titulo='Pachinko U.F.O.',
+        anio=1984,
+        repo="https://github.com/antxiko/PachinkoUFO-disassembly",
+        web="https://antxiko.github.io/PachinkoUFO-disassembly/",
+        meta=dict(
+            en="Casio &middot; MSX &middot; 16 KB cartridge",
+            es="Casio &middot; MSX &middot; cartucho de 16 KB",
+        ),
+        claim=dict(
+            en="A pachinko machine, then another and another: the one whose centre opens, the one with the slot machine and the one with the UFOs. The strength of each ball, the pins in a bitmap whose half is a mirror, the pockets, the V, the openings and the big UFO; the title from the ROM's bytes, checked against openMSX; the three machines in GIF and the four tunes from its own engine, identical to openMSX frame by frame.",
+            es='Una m&aacute;quina de pachinko, y luego otra y otra: la del centro que se abre, la del tragaperras y la de los OVNIs. La fuerza de cada bola, los clavos en un mapa de bits con su mitad en espejo, los agujeros, la V, las aperturas y el OVNI grande; el t&iacute;tulo desde los bytes de la ROM, cotejado con openMSX; las tres m&aacute;quinas en GIF y las cuatro m&uacute;sicas de su propio motor, id&eacute;nticas a openMSX cuadro a cuadro.',
+        ),
+        datos=dict(
+            en=lambda i: (f"{cif(16384, i)} bytes &middot; <b>0</b> unexplained "
+                          f"&middot; reassembles <b>byte for byte</b> &middot; "
+                          f"{cif(5591, i)} of code, {cif(10793, i)} of data "
+                          f"&middot; {cif(372, i)} routines &middot; commented "
+                          f"to <b>42.0%</b>"),
+            es=lambda i: (f"{cif(16384, i)} bytes &middot; <b>0</b> sin explicar "
+                          f"&middot; reensambla <b>byte a byte</b> &middot; "
+                          f"{cif(5591, i)} de código, {cif(10793, i)} de datos "
+                          f"&middot; {cif(372, i)} rutinas &middot; comentado "
+                          f"al <b>42,0 %</b>"),
+        ),
+        nota=dict(
+            en='The title comes from running the ROM, checked against openMSX; the three machines, the shot, the centre that opens and the UFOs, played in GIF; the four tunes, from its own sound engine and identical to openMSX frame by frame.',
+            es='El título sale de ejecutar la ROM, cotejado con openMSX; las tres máquinas, el tiro, el centro que se abre y los OVNIs, jugados en GIF; las cuatro músicas, de su propio motor de sonido e idénticas a openMSX cuadro a cuadro.',
+        ),
+    ),
+    dict(
+        clave="carfighter",
+        grupo="casio",
+        titulo='Car Fighter',
+        anio=1985,
+        repo="https://github.com/antxiko/CarFighter-disassembly",
+        web="https://antxiko.github.io/CarFighter-disassembly/",
+        meta=dict(
+            en="Casio &middot; MSX &middot; 16 KB cartridge",
+            es="Casio &middot; MSX &middot; cartucho de 16 KB",
+        ),
+        claim=dict(
+            en="From San Francisco to Washington by road, in eight zones: the fuel burnt according to the speed, the crashes from 130 km/h up, the cars that chase, the truck that takes three bombs and the map between zones. The title from the ROM's bytes, checked against openMSX; the eight zones, the map, the crashes, CHECK POINT and GOAL in GIF, and the four tunes from its own engine, identical to openMSX frame by frame.",
+            es='De San Francisco a Washington por carretera, en ocho zonas: la gasolina que se gasta seg&uacute;n la velocidad, los choques a partir de 130 km/h, los coches que persiguen, el cami&oacute;n que aguanta tres bombas y el mapa entre zona y zona. El t&iacute;tulo desde los bytes de la ROM, cotejado con openMSX; las ocho zonas, el mapa, los choques, CHECK POINT y GOAL en GIF, y las cuatro m&uacute;sicas de su propio motor, id&eacute;nticas a openMSX cuadro a cuadro.',
+        ),
+        datos=dict(
+            en=lambda i: (f"{cif(16384, i)} bytes &middot; <b>0</b> unexplained "
+                          f"&middot; reassembles <b>byte for byte</b> &middot; "
+                          f"{cif(7865, i)} of code, {cif(8519, i)} of data "
+                          f"&middot; {cif(522, i)} routines &middot; commented "
+                          f"to <b>40.7%</b>"),
+            es=lambda i: (f"{cif(16384, i)} bytes &middot; <b>0</b> sin explicar "
+                          f"&middot; reensambla <b>byte a byte</b> &middot; "
+                          f"{cif(7865, i)} de código, {cif(8519, i)} de datos "
+                          f"&middot; {cif(522, i)} rutinas &middot; comentado "
+                          f"al <b>40,7 %</b>"),
+        ),
+        nota=dict(
+            en='The title comes from running the ROM, checked against openMSX; the eight zones, the map, the crashes, the truck, CHECK POINT and GOAL, played in GIF; the four tunes, from its own sound engine and identical to openMSX frame by frame.',
+            es='El título sale de ejecutar la ROM, cotejado con openMSX; las ocho zonas, el mapa, los choques, el camión, CHECK POINT y GOAL, jugados en GIF; las cuatro músicas, de su propio motor de sonido e idénticas a openMSX cuadro a cuadro.',
+        ),
+    ),
+    dict(
+        clave="iceworld",
+        grupo="casio",
+        titulo='Ice World',
+        anio=1985,
+        repo="https://github.com/antxiko/IceWorld-disassembly",
+        web="https://antxiko.github.io/IceWorld-disassembly/",
+        meta=dict(
+            en="Casio &middot; MSX &middot; 16 KB cartridge",
+            es="Casio &middot; MSX &middot; cartucho de 16 KB",
+        ),
+        claim=dict(
+            en="Fifty mazes of ice: the hammer that breaks blocks, the L-shaped pieces put together in pairs, the eggs that crack and the creatures that look for the hero. The ten keywords, the bonus stage every five and the end with its kanji; the title from the ROM's bytes, checked against openMSX; the game in GIF and the five tunes from its own engine, identical to openMSX frame by frame.",
+            es='Cincuenta laberintos de hielo: el martillo que rompe bloques, las piezas en L que se juntan por parejas, los huevos que se rompen y los bichos que buscan al protagonista. Las diez contrase&ntilde;as, la fase de premio cada cinco y el final con sus kanji; el t&iacute;tulo desde los bytes de la ROM, cotejado con openMSX; la partida en GIF y las cinco m&uacute;sicas de su propio motor, id&eacute;nticas a openMSX cuadro a cuadro.',
+        ),
+        datos=dict(
+            en=lambda i: (f"{cif(16384, i)} bytes &middot; <b>0</b> unexplained "
+                          f"&middot; reassembles <b>byte for byte</b> &middot; "
+                          f"{cif(8645, i)} of code, {cif(7739, i)} of data "
+                          f"&middot; {cif(571, i)} routines &middot; commented "
+                          f"to <b>41.8%</b>"),
+            es=lambda i: (f"{cif(16384, i)} bytes &middot; <b>0</b> sin explicar "
+                          f"&middot; reensambla <b>byte a byte</b> &middot; "
+                          f"{cif(8645, i)} de código, {cif(7739, i)} de datos "
+                          f"&middot; {cif(571, i)} rutinas &middot; comentado "
+                          f"al <b>41,8 %</b>"),
+        ),
+        nota=dict(
+            en='The title comes from running the ROM, checked against openMSX; the KEYWORD, the stages, the hammer, the bonus stage and the end, played in GIF; the five tunes, from its own sound engine and identical to openMSX frame by frame.',
+            es='El título sale de ejecutar la ROM, cotejado con openMSX; la KEYWORD, las fases, el martillo, la fase de premio y el final, jugados en GIF; las cinco músicas, de su propio motor de sonido e idénticas a openMSX cuadro a cuadro.',
+        ),
+    ),
+    dict(
+        clave="iganinpouchou",
+        grupo="casio",
+        titulo='Iga Ninpouchou',
+        anio=1985,
+        repo="https://github.com/antxiko/IgaNinpouchou-disassembly",
+        web="https://antxiko.github.io/IgaNinpouchou-disassembly/",
+        meta=dict(
+            en="Casio &middot; MSX &middot; 16 KB cartridge",
+            es="Casio &middot; MSX &middot; cartucho de 16 KB",
+        ),
+        claim=dict(
+            en="A ninja breaks into a castle: in front of the wall he knocks down ten so the gate opens; inside, he pulls the cord of every kakejiku looking for the secret scroll, which is only in the last one, and climbs the tower. The maps of the five stages from RAM; the title from the ROM's bytes, checked against openMSX; the game in GIF and the five tunes from its own engine, identical to openMSX frame by frame.",
+            es='Un ninja entra en un castillo: delante de la muralla tumba a diez para que se abra la puerta; dentro, tira del cord&oacute;n de cada kakejiku buscando el rollo secreto, que solo est&aacute; en el &uacute;ltimo, y sube por la torre. Los mapas de las cinco fases desde la RAM; el t&iacute;tulo desde los bytes de la ROM, cotejado con openMSX; la partida en GIF y las cinco m&uacute;sicas de su propio motor, id&eacute;nticas a openMSX cuadro a cuadro.',
+        ),
+        datos=dict(
+            en=lambda i: (f"{cif(16384, i)} bytes &middot; <b>0</b> unexplained "
+                          f"&middot; reassembles <b>byte for byte</b> &middot; "
+                          f"{cif(9296, i)} of code, {cif(7088, i)} of data "
+                          f"&middot; {cif(644, i)} routines &middot; commented "
+                          f"to <b>40.6%</b>"),
+            es=lambda i: (f"{cif(16384, i)} bytes &middot; <b>0</b> sin explicar "
+                          f"&middot; reensambla <b>byte a byte</b> &middot; "
+                          f"{cif(9296, i)} de código, {cif(7088, i)} de datos "
+                          f"&middot; {cif(644, i)} rutinas &middot; comentado "
+                          f"al <b>40,6 %</b>"),
+        ),
+        nota=dict(
+            en='The title comes from running the ROM, checked against openMSX; the maps of the five stages from RAM; the gate, the kakejiku and the secret scroll, the doors and the tower, played in GIF; the five tunes, from its own sound engine and identical to openMSX frame by frame.',
+            es='El título sale de ejecutar la ROM, cotejado con openMSX; los mapas de las cinco fases, desde la RAM; la puerta, los kakejiku y el rollo secreto, las puertas y la torre, jugados en GIF; las cinco músicas, de su propio motor de sonido e idénticas a openMSX cuadro a cuadro.',
+        ),
+    ),
+    dict(
+        clave="exoidez",
+        grupo="casio",
+        titulo='Exoide-Z',
+        anio=1986,
+        repo="https://github.com/antxiko/ExoideZ-disassembly",
+        web="https://antxiko.github.io/ExoideZ-disassembly/",
+        meta=dict(
+            en="Casio &middot; MSX &middot; 16 KB cartridge",
+            es="Casio &middot; MSX &middot; cartucho de 16 KB",
+        ),
+        claim=dict(
+            en="A ship flies up a space station that the game builds piece by piece, shoots the waves and the ground targets, spins three capsules and at the end turns into a robot to break the big robot with its fists; the whole game runs in the interrupt, with 23 tasks. The title from the ROM's bytes, checked against openMSX; the stations built with its own code; the game in GIF and the five tunes from its own engine, identical to openMSX frame by frame.",
+            es='Una nave sube por una estaci&oacute;n espacial que el juego monta trozo a trozo, dispara a las oleadas y a los blancos del suelo, gira tres c&aacute;psulas y al final se transforma en robot para romper a pu&ntilde;etazos al robot grande; todo el juego corre en la interrupci&oacute;n, con 23 tareas. El t&iacute;tulo desde los bytes de la ROM, cotejado con openMSX; las estaciones montadas con su c&oacute;digo; la partida en GIF y las cinco m&uacute;sicas de su propio motor, id&eacute;nticas a openMSX cuadro a cuadro.',
+        ),
+        datos=dict(
+            en=lambda i: (f"{cif(16384, i)} bytes &middot; <b>0</b> unexplained "
+                          f"&middot; reassembles <b>byte for byte</b> &middot; "
+                          f"{cif(9611, i)} of code, {cif(6773, i)} of data "
+                          f"&middot; {cif(487, i)} routines &middot; commented "
+                          f"to <b>40.4%</b>"),
+            es=lambda i: (f"{cif(16384, i)} bytes &middot; <b>0</b> sin explicar "
+                          f"&middot; reensambla <b>byte a byte</b> &middot; "
+                          f"{cif(9611, i)} de código, {cif(6773, i)} de datos "
+                          f"&middot; {cif(487, i)} rutinas &middot; comentado "
+                          f"al <b>40,4 %</b>"),
+        ),
+        nota=dict(
+            en="The title comes from running the ROM, checked against openMSX; the stations built with the ROM's own code; the waves, the capsules, the transformation, the big robot and the count, played in GIF; the five tunes, from its own sound engine and identical to openMSX frame by frame.",
+            es='El título sale de ejecutar la ROM, cotejado con openMSX; las estaciones, montadas con el propio código de la ROM; las oleadas, las cápsulas, la transformación, el robot grande y el recuento, jugados en GIF; las cinco músicas, de su propio motor de sonido e idénticas a openMSX cuadro a cuadro.',
+        ),
+    ),
+    dict(
+        clave="shindobaddo",
+        grupo="casio",
+        titulo='Shindobaddo Nanatsu no Bouken',
+        anio=1986,
+        repo="https://github.com/antxiko/Shindobaddo-disassembly",
+        web="https://antxiko.github.io/Shindobaddo-disassembly/",
+        meta=dict(
+            en="Casio &middot; MSX &middot; 16 KB cartridge",
+            es="Casio &middot; MSX &middot; cartucho de 16 KB",
+        ),
+        claim=dict(
+            en='Sindbad crosses seven islands of platforms and ladders, knocks his enemies down with his scimitar or with a somersault and, once he has felled the ones that open the island, looks for the way out; a giant bird carries him from island to island. The whole game runs in the interrupt. The title comes from running the ROM, checked against openMSX; the seven islands, from the recorded RAM; the game in GIF and the tunes from its own engine, identical to openMSX frame by frame.',
+            es='Simbad recorre siete islas de plataformas y escaleras, derriba a sus enemigos con el alfanje o con un salto mortal y, cuando ha derribado a los que abren la isla, busca la salida; un p&aacute;jaro gigante lo lleva de isla en isla. Todo el juego corre en la interrupci&oacute;n. El t&iacute;tulo sale de ejecutar la ROM, cotejado con openMSX; las siete islas, de la RAM grabada; la partida en GIF y las m&uacute;sicas de su propio motor, id&eacute;nticas a openMSX cuadro a cuadro.',
+        ),
+        datos=dict(
+            en=lambda i: (f"{cif(16384, i)} bytes &middot; <b>0</b> unexplained "
+                          f"&middot; reassembles <b>byte for byte</b> &middot; "
+                          f"{cif(10686, i)} of code, {cif(5698, i)} of data "
+                          f"&middot; {cif(639, i)} routines &middot; commented "
+                          f"to <b>40.7%</b>"),
+            es=lambda i: (f"{cif(16384, i)} bytes &middot; <b>0</b> sin explicar "
+                          f"&middot; reensambla <b>byte a byte</b> &middot; "
+                          f"{cif(10686, i)} de código, {cif(5698, i)} de datos "
+                          f"&middot; {cif(639, i)} rutinas &middot; comentado "
+                          f"al <b>40,7 %</b>"),
+        ),
+        nota=dict(
+            en='The title comes from running the ROM, checked against openMSX; the seven islands, from the RAM the ROM builds; the scimitar, the somersault, the bird and the end of an island, played in GIF; the five tunes, from its own sound engine and identical to openMSX frame by frame.',
+            es='El título sale de ejecutar la ROM, cotejado con openMSX; las siete islas, de la RAM que monta la ROM; el alfanje, el salto mortal, el pájaro y el final de una isla, jugados en GIF; las cinco músicas, de su propio motor de sonido e idénticas a openMSX cuadro a cuadro.',
+        ),
+    ),
+    dict(
+        clave="eaglefighter",
+        grupo="casio",
+        titulo='Eagle Fighter',
+        anio=1985,
+        repo="https://github.com/antxiko/EagleFighter-disassembly",
+        web="https://antxiko.github.io/EagleFighter-disassembly/",
+        meta=dict(
+            en="Casio &middot; MSX &middot; 32 KB cartridge",
+            es="Casio &middot; MSX &middot; cartucho de 32 KB",
+        ),
+        claim=dict(
+            en='A fighter takes off from a runway in perspective, shoots down the waves of enemy planes, comes back and lands; the fuel runs down and what is left is paid in points. Sixteen stages. The title comes from running the ROM, checked against openMSX; the game in GIF, played in openMSX by a pilot that takes off, fights and lands; the tunes, from its own engine; the four that play, identical to openMSX frame by frame.',
+            es='Un caza despega de una pista en perspectiva, derriba las oleadas de aviones enemigos, vuelve y aterriza; el combustible se gasta y lo que queda se cobra en puntos. Diecis&eacute;is fases. El t&iacute;tulo sale de ejecutar la ROM, cotejado con openMSX; la partida en GIF, jugada en openMSX por un piloto que despega, combate y aterriza; las m&uacute;sicas, de su propio motor; las cuatro que suenan, id&eacute;nticas a openMSX cuadro a cuadro.',
+        ),
+        datos=dict(
+            en=lambda i: (f"{cif(32768, i)} bytes &middot; <b>0</b> unexplained "
+                          f"&middot; reassembles <b>byte for byte</b> &middot; "
+                          f"{cif(9880, i)} of code, {cif(22888, i)} of data "
+                          f"&middot; {cif(533, i)} routines &middot; commented "
+                          f"to <b>40.0%</b>"),
+            es=lambda i: (f"{cif(32768, i)} bytes &middot; <b>0</b> sin explicar "
+                          f"&middot; reensambla <b>byte a byte</b> &middot; "
+                          f"{cif(9880, i)} de código, {cif(22888, i)} de datos "
+                          f"&middot; {cif(533, i)} rutinas &middot; comentado "
+                          f"al <b>40,0 %</b>"),
+        ),
+        nota=dict(
+            en='The title comes from running the ROM, checked against openMSX; take-off, combat, landing, LANDING BONUS and GAME OVER, played in GIF by a pilot in openMSX; the five tunes, from its own sound engine; the four the game plays, identical to openMSX frame by frame.',
+            es='El título sale de ejecutar la ROM, cotejado con openMSX; el despegue, el combate, el aterrizaje, LANDING BONUS y GAME OVER, jugados en GIF por un piloto en openMSX; las cinco músicas, de su propio motor de sonido; las cuatro que suenan, idénticas a openMSX cuadro a cuadro.',
+        ),
+    ),
+    dict(
+        clave="exoidezarea5",
+        grupo="casio",
+        titulo='Exoide-Z Area 5',
+        anio=1986,
+        repo="https://github.com/antxiko/ExoideZArea5-disassembly",
+        web="https://antxiko.github.io/ExoideZArea5-disassembly/",
+        meta=dict(
+            en="Casio &middot; MSX &middot; 32 KB cartridge",
+            es="Casio &middot; MSX &middot; cartucho de 32 KB",
+        ),
+        claim=dict(
+            en='A ship climbs a long map of bases and stars, breaks the ground targets to charge T.POWER, stops the roulette and destroys the fortresses that close the stages: one, two and three; at the end, an enemy that pulls the ship into its core. The title comes from running the ROM, checked against openMSX point by point; the game in GIF, played in openMSX from start to end; the tunes, from its own engine, and the six heard in the recordings, identical to openMSX frame by frame.',
+            es='Una nave sube por un mapa largo de bases y estrellas, rompe los objetos de tierra para cargar T.POWER, para la ruleta y destruye las fortalezas que cierran las fases: una, dos y tres; al final, un enemigo que atrae a la nave hacia su n&uacute;cleo. El t&iacute;tulo sale de ejecutar la ROM, cotejado con openMSX punto a punto; la partida en GIF, jugada en openMSX de principio a fin; las m&uacute;sicas, de su propio motor, y las seis que sonaron en las grabaciones, id&eacute;nticas a openMSX cuadro a cuadro.',
+        ),
+        datos=dict(
+            en=lambda i: (f"{cif(32768, i)} bytes &middot; <b>0</b> unexplained "
+                          f"&middot; reassembles <b>byte for byte</b> &middot; "
+                          f"{cif(10969, i)} of code, {cif(21799, i)} of data "
+                          f"&middot; {cif(608, i)} routines &middot; commented "
+                          f"to <b>40.2%</b>"),
+            es=lambda i: (f"{cif(32768, i)} bytes &middot; <b>0</b> sin explicar "
+                          f"&middot; reensambla <b>byte a byte</b> &middot; "
+                          f"{cif(10969, i)} de código, {cif(21799, i)} de datos "
+                          f"&middot; {cif(608, i)} rutinas &middot; comentado "
+                          f"al <b>40,2 %</b>"),
+        ),
+        nota=dict(
+            en='The title comes from running the ROM, checked against openMSX point by point; the CASIO intro, the credits, the demo, the four stages, the roulette, the fortresses, the enemy at the end and GAME OVER, played in GIF in openMSX; the seven tunes, from its own sound engine; the six heard in the recordings, identical to openMSX frame by frame.',
+            es='El título sale de ejecutar la ROM, cotejado con openMSX punto a punto; la presentación de CASIO, los créditos, la demostración, las cuatro fases, la ruleta, las fortalezas, el enemigo del final y GAME OVER, jugados en GIF en openMSX; las siete músicas, de su propio motor de sonido; las seis que sonaron en las grabaciones, idénticas a openMSX cuadro a cuadro.',
+        ),
+    ),
+    dict(
+        clave="igamangetsu",
+        grupo="casio",
+        titulo='Iga Ninpouchou Mangetsu-jou no Tatakai',
+        anio=1986,
+        repo="https://github.com/antxiko/IgaNinpouchouMangetsujou-disassembly",
+        web="https://antxiko.github.io/IgaNinpouchouMangetsujou-disassembly/",
+        meta=dict(
+            en="Casio &middot; MSX &middot; 32 KB cartridge",
+            es="Casio &middot; MSX &middot; cartucho de 32 KB",
+        ),
+        claim=dict(
+            en='An Iga ninja crosses the bridge, gets into the castle and climbs to its tower: seven stages, three rounds and a moon that works as a clock. With the first Iga Ninpouchou in the other slot, the moon stops. The title comes from running the ROM, checked against openMSX point by point; the game in GIF, played in openMSX; the five tunes, from its own engine, identical to openMSX frame by frame.',
+            es='Un ninja de Iga cruza el puente, entra en el castillo y sube hasta su torre: siete fases, tres vueltas y una luna que hace de reloj. Con el primer Iga Ninpouchou puesto en el otro slot, la luna se para. El t&iacute;tulo sale de ejecutar la ROM, cotejado con openMSX punto a punto; la partida en GIF, jugada en openMSX; las cinco m&uacute;sicas, de su propio motor, id&eacute;nticas a openMSX cuadro a cuadro.',
+        ),
+        datos=dict(
+            en=lambda i: (f"{cif(32768, i)} bytes &middot; <b>0</b> unexplained "
+                          f"&middot; reassembles <b>byte for byte</b> &middot; "
+                          f"{cif(10863, i)} of code, {cif(21905, i)} of data "
+                          f"&middot; {cif(631, i)} routines &middot; commented "
+                          f"to <b>46.2%</b>"),
+            es=lambda i: (f"{cif(32768, i)} bytes &middot; <b>0</b> sin explicar "
+                          f"&middot; reensambla <b>byte a byte</b> &middot; "
+                          f"{cif(10863, i)} de código, {cif(21905, i)} de datos "
+                          f"&middot; {cif(631, i)} rutinas &middot; comentado "
+                          f"al <b>46,2 %</b>"),
+        ),
+        nota=dict(
+            en='The title comes from running the ROM, checked against openMSX point by point; the CASIO intro, the demo, the seven stages, a chest, the boss and IGA2, the ending, the two cartridges, STOP, F1 and the continue trick, played in GIF in openMSX; the five tunes, from its own sound engine, identical to openMSX frame by frame.',
+            es='El título sale de ejecutar la ROM, cotejado con openMSX punto a punto; la presentación de CASIO, la demostración, las siete fases, un cofre, el jefe e IGA2, el final, los dos cartuchos, STOP, F1 y el truco de continuar, jugados en GIF en openMSX; las cinco músicas, de su propio motor de sonido, idénticas a openMSX cuadro a cuadro.',
+        ),
+    ),
+    dict(
+        clave="koneko",
+        grupo="casio",
+        titulo='Koneko no Daibouken',
+        anio=1986,
+        repo="https://github.com/antxiko/KonekoNoDaibouken-disassembly",
+        web="https://antxiko.github.io/KonekoNoDaibouken-disassembly/",
+        meta=dict(
+            en="Casio &middot; MSX &middot; 32 KB cartridge",
+            es="Casio &middot; MSX &middot; cartucho de 32 KB",
+        ),
+        claim=dict(
+            en='A kitten crosses three towns, PEACH, APPLE and LEMON, of six stages each: meadows, forests, waterfalls, lakes, bricks and cities, against the clock, jumping and throwing what it finds; at the end of each stage a balloon rises, and the last three spell CAT. The title comes from running the ROM, checked against openMSX point by point; the game in GIF, played in openMSX; the five tunes, from its own engine, identical to openMSX frame by frame.',
+            es='Un gatito cruza tres pueblos, PEACH, APPLE y LEMON, de seis fases cada uno: prados, bosques, cascadas, lagos, ladrillos y ciudades, contra el reloj, saltando y tirando lo que encuentra; al final de cada fase sube un globo, y los tres &uacute;ltimos dicen CAT. El t&iacute;tulo sale de ejecutar la ROM, cotejado con openMSX punto a punto; la partida en GIF, jugada en openMSX; las cinco m&uacute;sicas, de su propio motor, id&eacute;nticas a openMSX cuadro a cuadro.',
+        ),
+        datos=dict(
+            en=lambda i: (f"{cif(32768, i)} bytes &middot; <b>0</b> unexplained "
+                          f"&middot; reassembles <b>byte for byte</b> &middot; "
+                          f"{cif(10785, i)} of code, {cif(21983, i)} of data "
+                          f"&middot; {cif(625, i)} routines &middot; commented "
+                          f"to <b>41.9%</b>"),
+            es=lambda i: (f"{cif(32768, i)} bytes &middot; <b>0</b> sin explicar "
+                          f"&middot; reensambla <b>byte a byte</b> &middot; "
+                          f"{cif(10785, i)} de código, {cif(21983, i)} de datos "
+                          f"&middot; {cif(625, i)} rutinas &middot; comentado "
+                          f"al <b>41,9 %</b>"),
+        ),
+        nota=dict(
+            en='The title comes from running the ROM, checked against openMSX point by point; the CASIO intro, the demo, the six scenes, a balloon, the end of a stage, a town cleared, the ending, STOP, F1 and the continue trick, played in GIF in openMSX; the five tunes, from its own sound engine, identical to openMSX frame by frame.',
+            es='El título sale de ejecutar la ROM, cotejado con openMSX punto a punto; la presentación de CASIO, la demostración, las seis escenas, un globo, el final de una fase, un pueblo superado, el final, STOP, F1 y el truco de continuar, jugados en GIF en openMSX; las cinco músicas, de su propio motor de sonido, idénticas a openMSX cuadro a cuadro.',
+        ),
+    ),
+    dict(
+        clave="moai",
+        grupo="casio",
+        titulo='Moai no Hihou',
+        anio=1986,
+        repo="https://github.com/antxiko/MoaiNoHihou-disassembly",
+        web="https://antxiko.github.io/MoaiNoHihou-disassembly/",
+        meta=dict(
+            en="Casio &middot; MSX &middot; 32 KB cartridge",
+            es="Casio &middot; MSX &middot; cartucho de 32 KB",
+        ),
+        claim=dict(
+            en='Thirty-two mazes of rock, one per screen, with the exit at the top and a minute or more on the clock: the hero breaks the blocks with blows, they fall with whatever sits on them, he lays his own to climb and dodges the ones that walk, roll and fly; every fourth stage is a BONUS GAME. The title comes from running the ROM, checked against openMSX point by point; the game in GIF, played in openMSX; the five tunes, from its own engine, identical to openMSX frame by frame.',
+            es='Treinta y dos laberintos de rocas, uno por pantalla, con la salida arriba y un minuto o m&aacute;s de reloj: el protagonista rompe a golpes los bloques, que caen con lo que tienen encima, pone los suyos para subir y esquiva a los que andan, ruedan y vuelan; cada cuarta fase es un BONUS GAME. El t&iacute;tulo sale de ejecutar la ROM, cotejado con openMSX punto a punto; la partida en GIF, jugada en openMSX; las cinco m&uacute;sicas, de su propio motor, id&eacute;nticas a openMSX cuadro a cuadro.',
+        ),
+        datos=dict(
+            en=lambda i: (f"{cif(32768, i)} bytes &middot; <b>0</b> unexplained "
+                          f"&middot; reassembles <b>byte for byte</b> &middot; "
+                          f"{cif(11848, i)} of code, {cif(20920, i)} of data "
+                          f"&middot; {cif(695, i)} routines &middot; commented "
+                          f"to <b>42.1%</b>"),
+            es=lambda i: (f"{cif(32768, i)} bytes &middot; <b>0</b> sin explicar "
+                          f"&middot; reensambla <b>byte a byte</b> &middot; "
+                          f"{cif(11848, i)} de código, {cif(20920, i)} de datos "
+                          f"&middot; {cif(695, i)} rutinas &middot; comentado "
+                          f"al <b>42,1 %</b>"),
+        ),
+        nota=dict(
+            en='The title comes from running the ROM, checked against openMSX point by point; the CASIO intro, the demo, the stages, the BONUS GAME, the ending, the stage select, STOP and F1, played in GIF in openMSX; the five tunes, from its own sound engine, identical to openMSX frame by frame.',
+            es='El título sale de ejecutar la ROM, cotejado con openMSX punto a punto; la presentación de CASIO, la demostración, las fases, el BONUS GAME, el final, el selector de fase, STOP y F1, jugados en GIF en openMSX; las cinco músicas, de su propio motor de sonido, idénticas a openMSX cuadro a cuadro.',
+        ),
+    ),
 ]
 
 # Los desensamblados van en tres grupos, cada uno una parte de su seccion. Aqui
@@ -3452,6 +3900,7 @@ GRUPOS = [
                                         es="Konami, publicados por otros")),
     dict(id="msx-exclusive", titulo=dict(en="MSX Exclusive", es="Exclusivos de MSX")),
     dict(id="ports", titulo=dict(en="Ports", es="Conversiones")),
+    dict(id="casio", titulo=dict(en="Casio", es="Casio")),
 ]
 
 
@@ -4292,6 +4741,30 @@ MSXON = [
 # nueva a vieja, una clave no existe o un proyecto se queda sin novedad.
 # --------------------------------------------------------------------------
 NOVEDADES = [
+    dict(id="casio-catorce", clase="nuevo", clave="skicommand",
+         otras=["excitingbaseball", "excitingjockey", "pachinkoufo", "carfighter", "iceworld",
+                "iganinpouchou", "exoidez", "shindobaddo", "eaglefighter", "exoidezarea5",
+                "igamangetsu", "koneko", "moai"],
+         fecha="2026-11-11T20:00:00+01:00",
+         titulo=dict(en="Fourteen Casio cartridges, taken apart",
+                     es="Catorce cartuchos de Casio, desmontados"),
+         resumen=dict(
+             en="Fourteen MSX cartridges by Casio, from 1984 to 1986: Ski Command, Exciting "
+                "Baseball, Exciting Jockey, Pachinko U.F.O., Car Fighter, Ice World, Iga "
+                "Ninpouchou, Exoide-Z, Shindobaddo Nanatsu no Bouken, Eagle Fighter, Exoide-Z "
+                "Area 5, Iga Ninpouchou Mangetsu-jou no Tatakai, Koneko no Daibouken and Moai no "
+                "Hihou. Each one 100% explained, reassembled byte for byte and commented to 40% "
+                "or more; the titles from running the ROM, checked against openMSX; the games "
+                "played in GIF in openMSX; the music from each cartridge's own sound engine, "
+                "checked against openMSX frame by frame.",
+             es="Catorce cartuchos de Casio para MSX, de 1984 a 1986: Ski Command, Exciting "
+                "Baseball, Exciting Jockey, Pachinko U.F.O., Car Fighter, Ice World, Iga "
+                "Ninpouchou, Exoide-Z, Shindobaddo Nanatsu no Bouken, Eagle Fighter, Exoide-Z "
+                "Area 5, Iga Ninpouchou Mangetsu-jou no Tatakai, Koneko no Daibouken y Moai no "
+                "Hihou. Cada uno explicado al 100 %, reensamblado byte a byte y comentado al 40 % "
+                "o más; los títulos, de ejecutar la ROM, cotejados con openMSX; las partidas, "
+                "jugadas en GIF en openMSX; las músicas, del propio motor de sonido de cada "
+                "cartucho, cotejadas con openMSX cuadro a cuadro.")),
     dict(id="fred-ant-attack-msx", clase="nuevo", clave="fred-msx1",
          otras=("ant-attack-msx1",), fecha="2026-11-03T13:00:00+01:00",
          titulo=dict(en="Fred and Ant Attack come to the MSX",
