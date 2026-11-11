@@ -4901,6 +4901,19 @@ MSXON = [
 # nueva a vieja, una clave no existe o un proyecto se queda sin novedad.
 # --------------------------------------------------------------------------
 NOVEDADES = [
+    dict(id="excitingbaseball-sprites", clase="actualiza", clave="excitingbaseball",
+         fecha="2026-11-12T17:00:00+01:00",
+         enlace="https://antxiko.github.io/ExcitingBaseball-disassembly/THE-SPRITES.html",
+         titulo=dict(en="Exciting Baseball: the sprites, put together from the ROM",
+                     es="Exciting Baseball: los sprites, montados desde la ROM"),
+         resumen=dict(
+             en="A new page: every sprite drawing, with the left-hander's flipped on the fly, and the batter "
+                "through his swing frame by frame, all built from the cartridge's own tables. Checked against "
+                "openMSX: the drawing table identical on 11,922 frames and the batter on 5,989 with 0 different.",
+             es="Una p&aacute;gina nueva: todos los dibujos de los sprites, con los del zurdo girados al vuelo, y el "
+                "bateador en su swing cuadro a cuadro, todo montado desde las propias tablas del cartucho. "
+                "Cotejado con openMSX: la tabla de dibujos id&eacute;ntica en 11.922 cuadros y el bateador en "
+                "5.989, con 0 distintos.")),
     dict(id="skicommand-sprites", clase="actualiza", clave="skicommand",
          fecha="2026-11-12T16:00:00+01:00",
          enlace="https://antxiko.github.io/SkiCommand-disassembly/THE-SPRITES.html",
