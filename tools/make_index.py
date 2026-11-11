@@ -4901,6 +4901,14 @@ MSXON = [
 # nueva a vieja, una clave no existe o un proyecto se queda sin novedad.
 # --------------------------------------------------------------------------
 NOVEDADES = [
+    dict(id="excitingjockey-sprites", clase="actualiza", clave="excitingjockey",
+         fecha="2026-11-12T18:00:00+01:00",
+         enlace="https://antxiko.github.io/ExcitingJockey-disassembly/THE-SPRITES.html",
+         titulo=dict(en='Exciting Jockey: the sprites, put together from the ROM',
+                     es='Exciting Jockey: los sprites, montados desde la ROM'),
+         resumen=dict(
+             en="A new page: the horse's ten drawings in the four colours, its four animations (gallop, jump, fall and on the ground) at the pace the code walks them, and the jockey, all built from the cartridge's own tables. Checked against openMSX: the drawing table identical on 44,335 frames and the horses on 62,625.",
+             es='Una p&aacute;gina nueva: los diez dibujos del caballo en los cuatro colores, sus cuatro animaciones (galope, salto, ca&iacute;da y en el suelo) al ritmo al que las recorre el c&oacute;digo, y el jinete, todo montado desde las propias tablas del cartucho. Cotejado con openMSX: la tabla de dibujos id&eacute;ntica en 44.335 cuadros y los caballos en 62.625.')),
     dict(id="excitingbaseball-sprites", clase="actualiza", clave="excitingbaseball",
          fecha="2026-11-12T17:00:00+01:00",
          enlace="https://antxiko.github.io/ExcitingBaseball-disassembly/THE-SPRITES.html",
