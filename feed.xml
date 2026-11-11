@@ -6,8 +6,16 @@
   <link rel="self" type="application/atom+xml" href="https://antxiko.github.io/feed.xml"/>
   <link rel="alternate" type="text/html" hreflang="en" href="https://antxiko.github.io/"/>
   <link rel="alternate" type="application/atom+xml" hreflang="es" href="https://antxiko.github.io/es/feed.xml"/>
-  <updated>2026-11-12T17:00:00+01:00</updated>
+  <updated>2026-11-12T18:00:00+01:00</updated>
   <author><name>antxiko</name><uri>https://github.com/antxiko</uri></author>
+  <entry>
+    <id>tag:antxiko.github.io,2026:novedad/en/excitingjockey-sprites</id>
+    <title>Exciting Jockey: the sprites, put together from the ROM</title>
+    <link rel="alternate" type="text/html" href="https://antxiko.github.io/ExcitingJockey-disassembly/THE-SPRITES.html"/>
+    <published>2026-11-12T18:00:00+01:00</published>
+    <updated>2026-11-12T18:00:00+01:00</updated>
+    <summary type="text">A new page: the horse's ten drawings in the four colours, its four animations (gallop, jump, fall and on the ground) at the pace the code walks them, and the jockey, all built from the cartridge's own tables. Checked against openMSX: the drawing table identical on 44,335 frames and the horses on 62,625.</summary>
+  </entry>
   <entry>
     <id>tag:antxiko.github.io,2026:novedad/en/excitingbaseball-sprites</id>
     <title>Exciting Baseball: the sprites, put together from the ROM</title>
@@ -159,13 +167,5 @@
     <published>2026-10-29T03:30:00+01:00</published>
     <updated>2026-10-29T03:30:00+01:00</updated>
     <summary type="text">The BIG BOSS fight now plays whole: the game starts it on the way back into zone 0x12 after GREY FOX, and the boss waits for Snake in room 6; checked against openMSX arriving the same way. Snake is drawn in every fight GIF, and next to the GIFs there are sprite sheets again, every drawing only once: Snake, the enemies and each boss.</summary>
-  </entry>
-  <entry>
-    <id>tag:antxiko.github.io,2026:novedad/en/metalgear2-gif</id>
-    <title>Metal Gear 2: everything animated, played by the cartridge</title>
-    <link rel="alternate" type="text/html" href="https://antxiko.github.io/MetalGear2-disassembly/"/>
-    <published>2026-10-29T00:30:00+01:00</published>
-    <updated>2026-10-29T00:30:00+01:00</updated>
-    <summary type="text">The eleven boss fights in order of appearance, 22 different enemies, Snake's moves and the radar, all as GIFs played by the cartridge at the MSX's own pace (one game frame every 5 of the VDP, measured in openMSX); the whole intro and ending in one GIF each; every weapon and item with its drawing; the transceiver conversations side by side with their translation; the two eggs, a boa and an owl. Fixed: broken boss sprites and a noisy radar, both faults of the emulator.</summary>
   </entry>
 </feed>

@@ -6,8 +6,16 @@
   <link rel="self" type="application/atom+xml" href="https://antxiko.github.io/es/feed.xml"/>
   <link rel="alternate" type="text/html" hreflang="es" href="https://antxiko.github.io/es/"/>
   <link rel="alternate" type="application/atom+xml" hreflang="en" href="https://antxiko.github.io/feed.xml"/>
-  <updated>2026-11-12T17:00:00+01:00</updated>
+  <updated>2026-11-12T18:00:00+01:00</updated>
   <author><name>antxiko</name><uri>https://github.com/antxiko</uri></author>
+  <entry>
+    <id>tag:antxiko.github.io,2026:novedad/es/excitingjockey-sprites</id>
+    <title>Exciting Jockey: los sprites, montados desde la ROM</title>
+    <link rel="alternate" type="text/html" href="https://antxiko.github.io/ExcitingJockey-disassembly/THE-SPRITES.html"/>
+    <published>2026-11-12T18:00:00+01:00</published>
+    <updated>2026-11-12T18:00:00+01:00</updated>
+    <summary type="text">Una página nueva: los diez dibujos del caballo en los cuatro colores, sus cuatro animaciones (galope, salto, caída y en el suelo) al ritmo al que las recorre el código, y el jinete, todo montado desde las propias tablas del cartucho. Cotejado con openMSX: la tabla de dibujos idéntica en 44.335 cuadros y los caballos en 62.625.</summary>
+  </entry>
   <entry>
     <id>tag:antxiko.github.io,2026:novedad/es/excitingbaseball-sprites</id>
     <title>Exciting Baseball: los sprites, montados desde la ROM</title>
@@ -159,13 +167,5 @@
     <published>2026-10-29T03:30:00+01:00</published>
     <updated>2026-10-29T03:30:00+01:00</updated>
     <summary type="text">La pelea con BIG BOSS sale ya entera: el juego la arranca al volver a la zona 0x12 tras GREY FOX, y el jefe espera a Snake en la sala 6; cotejada con openMSX llegando por el mismo camino. Snake sale en todos los GIF de las peleas, y junto a los GIF vuelven las hojas de sprites, cada dibujo una sola vez: Snake, los enemigos y cada jefe.</summary>
-  </entry>
-  <entry>
-    <id>tag:antxiko.github.io,2026:novedad/es/metalgear2-gif</id>
-    <title>Metal Gear 2: todo lo animado, jugado por el cartucho</title>
-    <link rel="alternate" type="text/html" href="https://antxiko.github.io/MetalGear2-disassembly/"/>
-    <published>2026-10-29T00:30:00+01:00</published>
-    <updated>2026-10-29T00:30:00+01:00</updated>
-    <summary type="text">Las once peleas en orden de aparición, 22 enemigos distintos, lo que hace Snake y el radar, todo en GIF jugado por el cartucho al ritmo del MSX (un cuadro del juego cada 5 del VDP, medido en openMSX); la presentación y el final enteros en un GIF cada uno; cada arma y cada cosa con su dibujo; las conversaciones del transceptor junto a su traducción; los dos huevos, una boa y un búho. Arreglados los sprites rotos de los jefes y el ruido del radar, dos fallos del emulador.</summary>
   </entry>
 </feed>
