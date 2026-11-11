@@ -6,8 +6,16 @@
   <link rel="self" type="application/atom+xml" href="https://antxiko.github.io/feed.xml"/>
   <link rel="alternate" type="text/html" hreflang="en" href="https://antxiko.github.io/"/>
   <link rel="alternate" type="application/atom+xml" hreflang="es" href="https://antxiko.github.io/es/feed.xml"/>
-  <updated>2026-11-12T20:00:00+01:00</updated>
+  <updated>2026-11-12T21:00:00+01:00</updated>
   <author><name>antxiko</name><uri>https://github.com/antxiko</uri></author>
+  <entry>
+    <id>tag:antxiko.github.io,2026:novedad/en/iceworld-sprites</id>
+    <title>Ice World: the sprites, put together from the ROM</title>
+    <link rel="alternate" type="text/html" href="https://antxiko.github.io/IceWorld-disassembly/THE-SPRITES.html"/>
+    <published>2026-11-12T21:00:00+01:00</published>
+    <updated>2026-11-12T21:00:00+01:00</updated>
+    <summary type="text">A new page: the hero in his four directions with the hammer, hitting and losing, the thrown hammer and the points, and the two creatures, which are not sprites but pieces of tiles, walking, crushed and hatching, all built from the cartridge's own tables and code. Checked against openMSX: the hero identical on 48,058 frames and the creatures on 35,621, 0 different.</summary>
+  </entry>
   <entry>
     <id>tag:antxiko.github.io,2026:novedad/en/carfighter-sprites</id>
     <title>Car Fighter: the sprites, put together from the ROM</title>
@@ -159,13 +167,5 @@
     <published>2026-10-29T15:30:00+01:00</published>
     <updated>2026-10-29T15:30:00+01:00</updated>
     <summary type="text">Both listings compared instruction by instruction: 1,484 bytes of code in runs of 16 bytes or more, 1.3 % of Metal Gear 2 (3.3 % of Metal Gear). What repeats is Konami's MSX2 library: the VDP, 1-3 bit characters turned into 4, the joystick, the Konami logo and the start-up. Sound, bank switching, texts and the guards' intelligence share nothing; the aiming is the same calculation, rewritten. 578 bytes of identical data.</summary>
-  </entry>
-  <entry>
-    <id>tag:antxiko.github.io,2026:novedad/en/metalgear2-textos</id>
-    <title>Metal Gear 2: all the texts translated, in story order</title>
-    <link rel="alternate" type="text/html" href="https://antxiko.github.io/MetalGear2-disassembly/"/>
-    <published>2026-10-29T08:21:00+01:00</published>
-    <updated>2026-10-29T08:21:00+01:00</updated>
-    <summary type="text">The transceiver and the texts are now one page: the conversations, the 211 messages of the scenes (Natasha, the sewers, the bridge, Holly, BIG BOSS, the ending, the children) in story order, and the signs, every one next to its translation; the weapon and equipment descriptions too. Also: boss sprite sheets without one-colour flashes, enemy GIFs without a stray Snake, a screen for each part of the intro and the ending, and tunes 0x6B and 0x6E checked along every path a tune is asked for: nothing reaches them.</summary>
   </entry>
 </feed>
