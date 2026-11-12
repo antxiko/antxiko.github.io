@@ -4901,6 +4901,14 @@ MSXON = [
 # nueva a vieja, una clave no existe o un proyecto se queda sin novedad.
 # --------------------------------------------------------------------------
 NOVEDADES = [
+    dict(id="sealofhades-sprites", clase="actualiza", clave="sealofhades",
+         fecha="2026-11-13T07:00:00+01:00",
+         enlace="https://antxiko.github.io/SealOfHades-disassembly/THE-SPRITES.html",
+         titulo=dict(en='The Seal of Hades: the sprites, put together from the ROM',
+                     es='The Seal of Hades: los sprites, montados desde la ROM'),
+         resumen=dict(
+             en="A new page: the hero in his four sprites with the colours of each power, his shots, every kind of enemy with its two sprites and its drawings, and the big and small explosions, all built from the cartridge's own tables and code. Checked against openMSX: the hero identical on 41,128 frames and the enemies on 90,076.",
+             es='Una p&aacute;gina nueva: el protagonista en sus cuatro sprites con los colores de cada poder, sus disparos, cada tipo de enemigo con sus dos sprites y sus dibujos, y las explosiones grande y chica, todo montado desde las propias tablas y el c&oacute;digo del cartucho. Cotejado con openMSX: el protagonista id&eacute;ntico en 41.128 cuadros y los enemigos en 90.076.')),
     dict(id="stoneofwisdom-sprites", clase="actualiza", clave="stoneofwisdom",
          fecha="2026-11-13T06:00:00+01:00",
          enlace="https://antxiko.github.io/StoneOfWisdom-disassembly/THE-SPRITES.html",
