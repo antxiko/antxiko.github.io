@@ -6,8 +6,16 @@
   <link rel="self" type="application/atom+xml" href="https://antxiko.github.io/es/feed.xml"/>
   <link rel="alternate" type="text/html" hreflang="es" href="https://antxiko.github.io/es/"/>
   <link rel="alternate" type="application/atom+xml" hreflang="en" href="https://antxiko.github.io/feed.xml"/>
-  <updated>2026-11-13T18:00:00+01:00</updated>
+  <updated>2026-11-13T19:00:00+01:00</updated>
   <author><name>antxiko</name><uri>https://github.com/antxiko</uri></author>
+  <entry>
+    <id>tag:antxiko.github.io,2026:novedad/es/shindobaddo-fallos</id>
+    <title>Shindobaddo: secretos y fallos</title>
+    <link rel="alternate" type="text/html" href="https://antxiko.github.io/Shindobaddo-disassembly/SECRETS-AND-BUGS.html"/>
+    <published>2026-11-13T19:00:00+01:00</published>
+    <updated>2026-11-13T19:00:00+01:00</updated>
+    <summary type="text">Una página nueva con la caza por el código: las teclas al encender, los mandos, y un fallo ejecutado con la rutina del juego: pasado el millón, el récord nuevo borra la cifra alta de los dos, y puntos y récord caen a 400.</summary>
+  </entry>
   <entry>
     <id>tag:antxiko.github.io,2026:novedad/es/exoidez-fallos</id>
     <title>Exoide-Z: secretos y fallos</title>
@@ -159,13 +167,5 @@
     <published>2026-11-13T00:00:00+01:00</published>
     <updated>2026-11-13T00:00:00+01:00</updated>
     <summary type="text">Una página nueva: Simbad andando, golpeando con el alfanje, en las escaleras, rebotando, cayendo y muerto, el pájaro gigante con sus dos dibujos de alas y los enemigos, que son casillas, todo pintado ejecutando las propias rutinas del juego. Cotejado con openMSX: Simbad idéntico en 17.021 cuadros y las casillas de los enemigos en 22.205, 0 distintos.</summary>
-  </entry>
-  <entry>
-    <id>tag:antxiko.github.io,2026:novedad/es/exoidez-sprites</id>
-    <title>Exoide-Z: los sprites, montados desde la ROM</title>
-    <link rel="alternate" type="text/html" href="https://antxiko.github.io/ExoideZ-disassembly/THE-SPRITES.html"/>
-    <published>2026-11-12T23:00:00+01:00</published>
-    <updated>2026-11-12T23:00:00+01:00</updated>
-    <summary type="text">Una página nueva: la nave y su sombra, el robot en que se convierte y sus puñetazos, las explosiones, los cinco enemigos en sus cuatro colores, las cápsulas y el robot grande de cada ronda, todo montado desde el cartucho, cuyas propias rutinas se ejecutan aquí para hacer los dibujos con sus espejos. Cotejado con openMSX: los enemigos idénticos en 45.717 cuadros y la nave en 22.246, 0 distintos.</summary>
   </entry>
 </feed>

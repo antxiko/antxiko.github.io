@@ -4901,6 +4901,14 @@ MSXON = [
 # nueva a vieja, una clave no existe o un proyecto se queda sin novedad.
 # --------------------------------------------------------------------------
 NOVEDADES = [
+    dict(id="shindobaddo-fallos", clase="actualiza", clave="shindobaddo",
+         fecha="2026-11-13T19:00:00+01:00",
+         enlace="https://antxiko.github.io/Shindobaddo-disassembly/SECRETS-AND-BUGS.html",
+         titulo=dict(en='Shindobaddo: secrets and bugs',
+                     es='Shindobaddo: secretos y fallos'),
+         resumen=dict(
+             en='A new page with the hunt through the code: the keys at power-on, the controls, and a bug run with the game routine: past a million points, a new high score clears the top digit of both, and the score and the high score drop to 400.',
+             es='Una p&aacute;gina nueva con la caza por el c&oacute;digo: las teclas al encender, los mandos, y un fallo ejecutado con la rutina del juego: pasado el mill&oacute;n, el r&eacute;cord nuevo borra la cifra alta de los dos, y puntos y r&eacute;cord caen a 400.')),
     dict(id="exoidez-fallos", clase="actualiza", clave="exoidez",
          fecha="2026-11-13T18:00:00+01:00",
          enlace="https://antxiko.github.io/ExoideZ-disassembly/SECRETS-AND-BUGS.html",
