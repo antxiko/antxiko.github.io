@@ -4901,6 +4901,14 @@ MSXON = [
 # nueva a vieja, una clave no existe o un proyecto se queda sin novedad.
 # --------------------------------------------------------------------------
 NOVEDADES = [
+    dict(id="youkaiyashiki-sprites", clase="actualiza", clave="youkaiyashiki",
+         fecha="2026-11-13T08:00:00+01:00",
+         enlace="https://antxiko.github.io/YoukaiYashiki-disassembly/THE-SPRITES.html",
+         titulo=dict(en='Youkai Yashiki: the sprites, put together from the ROM',
+                     es='Youkai Yashiki: los sprites, montados desde la ROM'),
+         resumen=dict(
+             en="A new page: the hero standing and walking in his two sprites, his weapon to each side, and the drawings and colours the code gives the ghosts, all built from the cartridge's own tables. Checked against openMSX: the hero identical on 26,999 frames and the weapon on 13,221, 0 different.",
+             es='Una p&aacute;gina nueva: el protagonista de pie y andando en sus dos sprites, su arma hacia cada lado, y los dibujos y colores que el c&oacute;digo da a los fantasmas, todo montado desde las propias tablas del cartucho. Cotejado con openMSX: el protagonista id&eacute;ntico en 26.999 cuadros y el arma en 13.221, 0 distintos.')),
     dict(id="sealofhades-sprites", clase="actualiza", clave="sealofhades",
          fecha="2026-11-13T07:00:00+01:00",
          enlace="https://antxiko.github.io/SealOfHades-disassembly/THE-SPRITES.html",

@@ -6,8 +6,16 @@
   <link rel="self" type="application/atom+xml" href="https://antxiko.github.io/feed.xml"/>
   <link rel="alternate" type="text/html" hreflang="en" href="https://antxiko.github.io/"/>
   <link rel="alternate" type="application/atom+xml" hreflang="es" href="https://antxiko.github.io/es/feed.xml"/>
-  <updated>2026-11-13T07:00:00+01:00</updated>
+  <updated>2026-11-13T08:00:00+01:00</updated>
   <author><name>antxiko</name><uri>https://github.com/antxiko</uri></author>
+  <entry>
+    <id>tag:antxiko.github.io,2026:novedad/en/youkaiyashiki-sprites</id>
+    <title>Youkai Yashiki: the sprites, put together from the ROM</title>
+    <link rel="alternate" type="text/html" href="https://antxiko.github.io/YoukaiYashiki-disassembly/THE-SPRITES.html"/>
+    <published>2026-11-13T08:00:00+01:00</published>
+    <updated>2026-11-13T08:00:00+01:00</updated>
+    <summary type="text">A new page: the hero standing and walking in his two sprites, his weapon to each side, and the drawings and colours the code gives the ghosts, all built from the cartridge's own tables. Checked against openMSX: the hero identical on 26,999 frames and the weapon on 13,221, 0 different.</summary>
+  </entry>
   <entry>
     <id>tag:antxiko.github.io,2026:novedad/en/sealofhades-sprites</id>
     <title>The Seal of Hades: the sprites, put together from the ROM</title>
@@ -159,13 +167,5 @@
     <published>2026-11-03T13:00:00+01:00</published>
     <updated>2026-11-03T13:00:00+01:00</updated>
     <summary type="text">Two Quicksilva Spectrum games converted into 64 KB MSX cartridges: native SCREEN 2 rendering, keyboard and PSG layers, disassemblies, reproducible IPS patches and no game image distributed. Araubi completed both games from beginning to end.</summary>
-  </entry>
-  <entry>
-    <id>tag:antxiko.github.io,2026:novedad/en/pooyan</id>
-    <title>Konami's Pooyan, taken apart</title>
-    <link rel="alternate" type="text/html" href="https://antxiko.github.io/Pooyan-disassembly/"/>
-    <published>2026-10-31T14:30:00+01:00</published>
-    <updated>2026-10-31T14:30:00+01:00</updated>
-    <summary type="text">Konami's Pooyan, by Konami and Hudson Soft in 1985 on a Bee Card: its 16 KB 100% explained and commented to 42.7%. The rounds where the wolves come down, the ones where they climb to the rock and the bonus round, the magenta wolf, the ladder, the stone and the boulder played in GIF; the logo and the two screens from the ROM, checked against openMSX; seven tunes from its own engine, identical to openMSX; a loop that never waits for the frame and a script that skips its first step, measured; and the code it shares with the other Konami cartridges in the series.</summary>
   </entry>
 </feed>
