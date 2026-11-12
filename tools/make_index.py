@@ -4901,6 +4901,14 @@ MSXON = [
 # nueva a vieja, una clave no existe o un proyecto se queda sin novedad.
 # --------------------------------------------------------------------------
 NOVEDADES = [
+    dict(id="stoneofwisdom-sprites", clase="actualiza", clave="stoneofwisdom",
+         fecha="2026-11-13T06:00:00+01:00",
+         enlace="https://antxiko.github.io/StoneOfWisdom-disassembly/THE-SPRITES.html",
+         titulo=dict(en='The Stone of Wisdom: the sprites, put together from the ROM',
+                     es='The Stone of Wisdom: los sprites, montados desde la ROM'),
+         resumen=dict(
+             en="A new page: the hero to the four sides with his steps, his weapon in each direction, every kind of enemy, the stone, the sage in three sprites and the explosion, all built from the cartridge's own tables and code. Checked against openMSX: the enemies identical on 73,362 frames, the weapon on 5,818 and the hero on 29,434.",
+             es='Una p&aacute;gina nueva: el protagonista hacia los cuatro lados con sus pasos, su arma en cada direcci&oacute;n, cada tipo de enemigo, la piedra, el sabio en tres sprites y la explosi&oacute;n, todo montado desde las propias tablas y el c&oacute;digo del cartucho. Cotejado con openMSX: los enemigos id&eacute;nticos en 73.362 cuadros, el arma en 5.818 y el protagonista en 29.434.')),
     dict(id="moai-sprites", clase="actualiza", clave="moai",
          fecha="2026-11-13T05:00:00+01:00",
          enlace="https://antxiko.github.io/MoaiNoHihou-disassembly/THE-SPRITES.html",
