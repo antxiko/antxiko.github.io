@@ -6,8 +6,32 @@
   <link rel="self" type="application/atom+xml" href="https://antxiko.github.io/es/feed.xml"/>
   <link rel="alternate" type="text/html" hreflang="es" href="https://antxiko.github.io/es/"/>
   <link rel="alternate" type="application/atom+xml" hreflang="en" href="https://antxiko.github.io/feed.xml"/>
-  <updated>2026-11-15T13:00:00+01:00</updated>
+  <updated>2026-11-15T16:00:00+01:00</updated>
   <author><name>antxiko</name><uri>https://github.com/antxiko</uri></author>
+  <entry>
+    <id>tag:antxiko.github.io,2026:novedad/es/youkaiyashiki-dibujos</id>
+    <title>Youkai Yashiki: los 64 dibujos de los sprites</title>
+    <link rel="alternate" type="text/html" href="https://antxiko.github.io/YoukaiYashiki-disassembly/THE-SPRITES.html"/>
+    <published>2026-11-15T16:00:00+01:00</published>
+    <updated>2026-11-15T16:00:00+01:00</updated>
+    <summary type="text">Cada dibujo de la tabla de sprites con el codigo que lo pone; el 0x90 es el unico sin uso. La pausa, grabada. Gracias a Nestor Sancho.</summary>
+  </entry>
+  <entry>
+    <id>tag:antxiko.github.io,2026:novedad/es/eaglefighter-repostaje</id>
+    <title>Eagle Fighter: el repostaje en vuelo</title>
+    <link rel="alternate" type="text/html" href="https://antxiko.github.io/EagleFighter-disassembly/THE-GAME.html"/>
+    <published>2026-11-15T15:00:00+01:00</published>
+    <updated>2026-11-15T15:00:00+01:00</updated>
+    <summary type="text">La cisterna que solo sale desde la fase 3, forzada en openMSX: baja, cuatro avisos, el avion se engancha y llena el deposito.</summary>
+  </entry>
+  <entry>
+    <id>tag:antxiko.github.io,2026:novedad/es/pachinkoufo-tragaperras</id>
+    <title>Pachinko UFO: la tragaperras girando</title>
+    <link rel="alternate" type="text/html" href="https://antxiko.github.io/PachinkoUFO-disassembly/THE-MACHINES.html"/>
+    <published>2026-11-15T14:00:00+01:00</published>
+    <updated>2026-11-15T14:00:00+01:00</updated>
+    <summary type="text">La tragaperras del tablero, forzada en openMSX, gira en un GIF: tres cifras, 0, 5 y 5, y sin premio.</summary>
+  </entry>
   <entry>
     <id>tag:antxiko.github.io,2026:novedad/es/excitingjockey-pistas</id>
     <title>Exciting Jockey: las nueve pistas enteras</title>
@@ -143,29 +167,5 @@
     <published>2026-11-14T12:00:00+01:00</published>
     <updated>2026-11-14T12:00:00+01:00</updated>
     <summary type="text">Una página nueva con la caza por el código: las cinco teclas, F1 y la demostración que juega la BIOS, un récord que pasados los 9.999.990 se pisa con los puntos ya dados la vuelta, así que los dos caen a cero, los cursores y el mando que se mezclan, y las vidas por puntos que prometía el listado y el juego no da.</summary>
-  </entry>
-  <entry>
-    <id>tag:antxiko.github.io,2026:novedad/es/sealofhades-fallos</id>
-    <title>The Seal of Hades: secretos y fallos</title>
-    <link rel="alternate" type="text/html" href="https://antxiko.github.io/SealOfHades-disassembly/SECRETS-AND-BUGS.html"/>
-    <published>2026-11-14T11:00:00+01:00</published>
-    <updated>2026-11-14T11:00:00+01:00</updated>
-    <summary type="text">Una página nueva con la caza por el código: las teclas escondidas y el otro cartucho, un récord que pasados los 9.999.990 se pisa con los puntos ya dados la vuelta, así que los dos caen a cero, los cursores y el mando que se mezclan, y la vida de más a los 30.000 ejecutada y comprobada.</summary>
-  </entry>
-  <entry>
-    <id>tag:antxiko.github.io,2026:novedad/es/stoneofwisdom-fallos</id>
-    <title>The Stone of Wisdom: secretos y fallos</title>
-    <link rel="alternate" type="text/html" href="https://antxiko.github.io/StoneOfWisdom-disassembly/SECRETS-AND-BUGS.html"/>
-    <published>2026-11-14T10:00:00+01:00</published>
-    <updated>2026-11-14T10:00:00+01:00</updated>
-    <summary type="text">Una página nueva con la caza por el código: las teclas escondidas y las contraseñas que son los títulos, un récord que pasados los 9.999.990 se pisa con los puntos ya dados la vuelta, así que los dos caen a cero, los cursores y el mando que se mezclan, y una marca a los 50.000 puntos que nadie lee.</summary>
-  </entry>
-  <entry>
-    <id>tag:antxiko.github.io,2026:novedad/es/moai-fallos</id>
-    <title>Moai no Hihou: secretos y fallos</title>
-    <link rel="alternate" type="text/html" href="https://antxiko.github.io/MoaiNoHihou-disassembly/SECRETS-AND-BUGS.html"/>
-    <published>2026-11-14T09:00:00+01:00</published>
-    <updated>2026-11-14T09:00:00+01:00</updated>
-    <summary type="text">Una página nueva con la caza por el código: el selector de fase y las otras teclas escondidas en una tabla, enemigos aplastados que puntúan con bytes leídos en medio del código (hasta 16.400 en vez de 100-500, ejecutado con la rutina del juego), unos puntos sin tope, y los cursores y el mando sumados.</summary>
   </entry>
 </feed>

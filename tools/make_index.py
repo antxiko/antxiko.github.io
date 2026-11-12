@@ -4902,7 +4902,7 @@ MSXON = [
 # --------------------------------------------------------------------------
 NOVEDADES = [
     dict(id="youkaiyashiki-dibujos", clase="actualiza", clave="youkaiyashiki",
-         fecha="2026-11-12",
+         fecha="2026-11-15T16:00:00+01:00",
          enlace="https://antxiko.github.io/YoukaiYashiki-disassembly/THE-SPRITES.html",
          titulo=dict(en='Youkai Yashiki: the 64 sprite drawings',
                      es='Youkai Yashiki: los 64 dibujos de los sprites'),
@@ -4910,7 +4910,7 @@ NOVEDADES = [
              en='Every drawing in the sprite table with the code that sets it; 0x90 is the only unused one. The pause, recorded. Thanks to Nestor Sancho.',
              es='Cada dibujo de la tabla de sprites con el codigo que lo pone; el 0x90 es el unico sin uso. La pausa, grabada. Gracias a Nestor Sancho.')),
     dict(id="eaglefighter-repostaje", clase="actualiza", clave="eaglefighter",
-         fecha="2026-11-12",
+         fecha="2026-11-15T15:00:00+01:00",
          enlace="https://antxiko.github.io/EagleFighter-disassembly/THE-GAME.html",
          titulo=dict(en='Eagle Fighter: the in-flight refuelling',
                      es='Eagle Fighter: el repostaje en vuelo'),
@@ -4918,7 +4918,7 @@ NOVEDADES = [
              en='The tanker that only comes from stage 3, forced in openMSX: it comes down, four warnings, the plane hooks on and fills up.',
              es='La cisterna que solo sale desde la fase 3, forzada en openMSX: baja, cuatro avisos, el avion se engancha y llena el deposito.')),
     dict(id="pachinkoufo-tragaperras", clase="actualiza", clave="pachinkoufo",
-         fecha="2026-11-12",
+         fecha="2026-11-15T14:00:00+01:00",
          enlace="https://antxiko.github.io/PachinkoUFO-disassembly/THE-MACHINES.html",
          titulo=dict(en='Pachinko UFO: the slot machine spinning',
                      es='Pachinko UFO: la tragaperras girando'),
