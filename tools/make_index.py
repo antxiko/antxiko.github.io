@@ -4901,6 +4901,14 @@ MSXON = [
 # nueva a vieja, una clave no existe o un proyecto se queda sin novedad.
 # --------------------------------------------------------------------------
 NOVEDADES = [
+    dict(id="eaglefighter-fases", clase="actualiza", clave="eaglefighter",
+         fecha="2026-11-15T11:00:00+01:00",
+         enlace="https://antxiko.github.io/EagleFighter-disassembly/THE-STAGES.html",
+         titulo=dict(en='Eagle Fighter: the sixteen stage screens',
+                     es='Eagle Fighter: las diecis&eacute;is pantallas de fase'),
+         resumen=dict(
+             en='The screen every stage starts with, built by running the ROM: the game has no map, and what changes is the ground colour and the horizon, which repeat every eight stages. Checked against the two recorded stages.',
+             es='La pantalla con la que empieza cada fase, montada ejecutando la ROM: el juego no tiene mapa, y lo que cambia es el color del suelo y el horizonte, que se repiten cada ocho fases. Cotejada con las dos fases grabadas.')),
     dict(id="exoidezarea5-mapa", clase="actualiza", clave="exoidezarea5",
          fecha="2026-11-15T10:00:00+01:00",
          enlace="https://antxiko.github.io/ExoideZArea5-disassembly/THE-STAGES.html",

@@ -6,8 +6,16 @@
   <link rel="self" type="application/atom+xml" href="https://antxiko.github.io/feed.xml"/>
   <link rel="alternate" type="text/html" hreflang="en" href="https://antxiko.github.io/"/>
   <link rel="alternate" type="application/atom+xml" hreflang="es" href="https://antxiko.github.io/es/feed.xml"/>
-  <updated>2026-11-15T10:00:00+01:00</updated>
+  <updated>2026-11-15T11:00:00+01:00</updated>
   <author><name>antxiko</name><uri>https://github.com/antxiko</uri></author>
+  <entry>
+    <id>tag:antxiko.github.io,2026:novedad/en/eaglefighter-fases</id>
+    <title>Eagle Fighter: the sixteen stage screens</title>
+    <link rel="alternate" type="text/html" href="https://antxiko.github.io/EagleFighter-disassembly/THE-STAGES.html"/>
+    <published>2026-11-15T11:00:00+01:00</published>
+    <updated>2026-11-15T11:00:00+01:00</updated>
+    <summary type="text">The screen every stage starts with, built by running the ROM: the game has no map, and what changes is the ground colour and the horizon, which repeat every eight stages. Checked against the two recorded stages.</summary>
+  </entry>
   <entry>
     <id>tag:antxiko.github.io,2026:novedad/en/exoidezarea5-mapa</id>
     <title>Exoide-Z Area 5: the whole map</title>
@@ -159,13 +167,5 @@
     <published>2026-11-13T22:00:00+01:00</published>
     <updated>2026-11-13T22:00:00+01:00</updated>
     <summary type="text">A new page with the hunt through the code: the six hidden tricks in one table, a high score that is overwritten with the wrapped score past 9,999,990 so both drop to zero, and the cursor keys and joystick mixed into another direction.</summary>
-  </entry>
-  <entry>
-    <id>tag:antxiko.github.io,2026:novedad/en/exoidezarea5-fallos</id>
-    <title>Exoide-Z Area 5: secrets and bugs</title>
-    <link rel="alternate" type="text/html" href="https://antxiko.github.io/ExoideZArea5-disassembly/SECRETS-AND-BUGS.html"/>
-    <published>2026-11-13T21:00:00+01:00</published>
-    <updated>2026-11-13T21:00:00+01:00</updated>
-    <summary type="text">A new page with the hunt through the code: TAB and CAPS on the title, a high score that is overwritten with the wrapped score past 9,999,990 so both drop to zero, and the cursor keys and joystick mixed into another direction.</summary>
   </entry>
 </feed>
