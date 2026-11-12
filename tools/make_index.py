@@ -4901,6 +4901,14 @@ MSXON = [
 # nueva a vieja, una clave no existe o un proyecto se queda sin novedad.
 # --------------------------------------------------------------------------
 NOVEDADES = [
+    dict(id="issunboushi-mapas", clase="actualiza", clave="issunboushi",
+         fecha="2026-11-15T09:00:00+01:00",
+         enlace="https://antxiko.github.io/IssunBoushi-disassembly/THE-SCENES.html",
+         titulo=dict(en='Issun-boushi no Donnamondai: the maps of the five scenes',
+                     es='Issun-boushi no Donnamondai: los mapas de las cinco escenas'),
+         resumen=dict(
+             en='Each scene whole: the river as the game scrolls it (every row reversed) and the land where the oni waits, built by running the ROM and checked against the recordings.',
+             es='Cada escena entera: el r&iacute;o tal como lo corre el juego (cada fila al rev&eacute;s) y la tierra donde espera el oni, montados ejecutando la ROM y cotejados con las grabaciones.')),
     dict(id="youkaiyashiki-planos", clase="actualiza", clave="youkaiyashiki",
          fecha="2026-11-14T23:00:00+01:00",
          enlace="https://antxiko.github.io/YoukaiYashiki-disassembly/THE-PLACES.html",
