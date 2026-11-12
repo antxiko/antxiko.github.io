@@ -6,8 +6,16 @@
   <link rel="self" type="application/atom+xml" href="https://antxiko.github.io/es/feed.xml"/>
   <link rel="alternate" type="text/html" hreflang="es" href="https://antxiko.github.io/es/"/>
   <link rel="alternate" type="application/atom+xml" hreflang="en" href="https://antxiko.github.io/feed.xml"/>
-  <updated>2026-11-13T05:00:00+01:00</updated>
+  <updated>2026-11-13T06:00:00+01:00</updated>
   <author><name>antxiko</name><uri>https://github.com/antxiko</uri></author>
+  <entry>
+    <id>tag:antxiko.github.io,2026:novedad/es/stoneofwisdom-sprites</id>
+    <title>The Stone of Wisdom: los sprites, montados desde la ROM</title>
+    <link rel="alternate" type="text/html" href="https://antxiko.github.io/StoneOfWisdom-disassembly/THE-SPRITES.html"/>
+    <published>2026-11-13T06:00:00+01:00</published>
+    <updated>2026-11-13T06:00:00+01:00</updated>
+    <summary type="text">Una página nueva: el protagonista hacia los cuatro lados con sus pasos, su arma en cada dirección, cada tipo de enemigo, la piedra, el sabio en tres sprites y la explosión, todo montado desde las propias tablas y el código del cartucho. Cotejado con openMSX: los enemigos idénticos en 73.362 cuadros, el arma en 5.818 y el protagonista en 29.434.</summary>
+  </entry>
   <entry>
     <id>tag:antxiko.github.io,2026:novedad/es/moai-sprites</id>
     <title>Moai no Hihou: los sprites, montados desde la ROM</title>
@@ -159,13 +167,5 @@
     <published>2026-10-31T12:44:00+01:00</published>
     <updated>2026-10-31T12:44:00+01:00</updated>
     <summary type="text">Crazy Train, de Konami para Sony en 1983: sus 8 KB explicados al 100 % y comentados al 42,2 %. Los empujones, las estaciones, los trenes negros, los choques y la fase superada jugados en GIF; los ocho primeros tableros desde la ROM, cotejados punto a punto con openMSX; las músicas de su propio motor; cuatro fallos medidos; y el código que comparte con los demás Konami de la serie.</summary>
-  </entry>
-  <entry>
-    <id>tag:antxiko.github.io,2026:novedad/es/sparkie-codigo-compartido</id>
-    <title>Sparkie: el código que comparte con los demás Konami</title>
-    <link rel="alternate" type="text/html" href="https://antxiko.github.io/Sparkie-disassembly/UNDER-THE-HOOD.html"/>
-    <published>2026-10-31T11:48:35+01:00</published>
-    <updated>2026-10-31T11:48:35+01:00</updated>
-    <summary type="text">Sparkie comparado instrucción por instrucción con los otros 62 cartuchos de Konami de la serie: ninguno comparte un solo bloque con él.</summary>
   </entry>
 </feed>
