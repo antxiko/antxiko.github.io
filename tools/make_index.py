@@ -4901,6 +4901,14 @@ MSXON = [
 # nueva a vieja, una clave no existe o un proyecto se queda sin novedad.
 # --------------------------------------------------------------------------
 NOVEDADES = [
+    dict(id="moai-sprites", clase="actualiza", clave="moai",
+         fecha="2026-11-13T05:00:00+01:00",
+         enlace="https://antxiko.github.io/MoaiNoHihou-disassembly/THE-SPRITES.html",
+         titulo=dict(en='Moai no Hihou: the sprites, put together from the ROM',
+                     es='Moai no Hihou: los sprites, montados desde la ROM'),
+         resumen=dict(
+             en="A new page: the hero standing, walking, jumping, punching, waiting and dying, each from its own table, and the ten kinds of things on the map with the drawings they change through, all built from the cartridge's own tables and code. Checked against openMSX: the things identical on 21,879 frames and the hero on 57,403.",
+             es='Una p&aacute;gina nueva: el protagonista de pie, andando, saltando, golpeando, esperando y muriendo, cada cosa desde su propia tabla, y los diez tipos de cosas del mapa con los dibujos por los que cambian, todo montado desde las propias tablas y el c&oacute;digo del cartucho. Cotejado con openMSX: las cosas id&eacute;nticas en 21.879 cuadros y el protagonista en 57.403.')),
     dict(id="koneko-sprites", clase="actualiza", clave="koneko",
          fecha="2026-11-13T04:00:00+01:00",
          enlace="https://antxiko.github.io/KonekoNoDaibouken-disassembly/THE-SPRITES.html",

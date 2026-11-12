@@ -6,8 +6,16 @@
   <link rel="self" type="application/atom+xml" href="https://antxiko.github.io/feed.xml"/>
   <link rel="alternate" type="text/html" hreflang="en" href="https://antxiko.github.io/"/>
   <link rel="alternate" type="application/atom+xml" hreflang="es" href="https://antxiko.github.io/es/feed.xml"/>
-  <updated>2026-11-13T04:00:00+01:00</updated>
+  <updated>2026-11-13T05:00:00+01:00</updated>
   <author><name>antxiko</name><uri>https://github.com/antxiko</uri></author>
+  <entry>
+    <id>tag:antxiko.github.io,2026:novedad/en/moai-sprites</id>
+    <title>Moai no Hihou: the sprites, put together from the ROM</title>
+    <link rel="alternate" type="text/html" href="https://antxiko.github.io/MoaiNoHihou-disassembly/THE-SPRITES.html"/>
+    <published>2026-11-13T05:00:00+01:00</published>
+    <updated>2026-11-13T05:00:00+01:00</updated>
+    <summary type="text">A new page: the hero standing, walking, jumping, punching, waiting and dying, each from its own table, and the ten kinds of things on the map with the drawings they change through, all built from the cartridge's own tables and code. Checked against openMSX: the things identical on 21,879 frames and the hero on 57,403.</summary>
+  </entry>
   <entry>
     <id>tag:antxiko.github.io,2026:novedad/en/koneko-sprites</id>
     <title>Koneko no Daibouken: the sprites, put together from the ROM</title>
@@ -159,13 +167,5 @@
     <published>2026-10-31T11:48:35+01:00</published>
     <updated>2026-10-31T11:48:35+01:00</updated>
     <summary type="text">Sparkie compared instruction by instruction with the other 62 Konami cartridges in the series: none shares a single block with it.</summary>
-  </entry>
-  <entry>
-    <id>tag:antxiko.github.io,2026:novedad/en/junofirst</id>
-    <title>Juno First, taken apart</title>
-    <link rel="alternate" type="text/html" href="https://antxiko.github.io/JunoFirst-disassembly/"/>
-    <published>2026-10-31T11:48:10+01:00</published>
-    <updated>2026-10-31T11:48:10+01:00</updated>
-    <summary type="text">Juno First, made by Konami for Sony in 1983: its 8 KB 100% explained and commented to 41.8%. The waves, the capsule and its astronaut, the WARP, the special wave and the end of the wave played in GIF; the sprites, the ship and the wave picture from the cartridge, checked against openMSX; four tunes from its own engine, whole; and the code it shares with the other Konami cartridges in the series.</summary>
   </entry>
 </feed>
