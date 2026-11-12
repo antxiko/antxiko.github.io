@@ -4901,6 +4901,14 @@ MSXON = [
 # nueva a vieja, una clave no existe o un proyecto se queda sin novedad.
 # --------------------------------------------------------------------------
 NOVEDADES = [
+    dict(id="exoidezarea5-sprites", clase="actualiza", clave="exoidezarea5",
+         fecha="2026-11-13T02:00:00+01:00",
+         enlace="https://antxiko.github.io/ExoideZArea5-disassembly/THE-SPRITES.html",
+         titulo=dict(en='Exoide-Z Area 5: the sprites, put together from the ROM',
+                     es='Exoide-Z Area 5: los sprites, montados desde la ROM'),
+         resumen=dict(
+             en="A new page: the ship and its hit, every kind of enemy with the drawings it turns through and the colour that blinks, the big ship of the end, the bullets and the explosion, all built from the cartridge's own tables and code. Checked against openMSX: the ship identical on 55,725 frames and the enemies on 63,347.",
+             es='Una p&aacute;gina nueva: la nave y cuando la tocan, cada tipo de enemigo con los dibujos por los que gira y el color que parpadea, la nave grande del final, las balas y la explosi&oacute;n, todo montado desde las propias tablas y el c&oacute;digo del cartucho. Cotejado con openMSX: la nave id&eacute;ntica en 55.725 cuadros y los enemigos en 63.347.')),
     dict(id="eaglefighter-sprites", clase="actualiza", clave="eaglefighter",
          fecha="2026-11-13T01:00:00+01:00",
          enlace="https://antxiko.github.io/EagleFighter-disassembly/THE-SPRITES.html",
