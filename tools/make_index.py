@@ -4901,6 +4901,14 @@ MSXON = [
 # nueva a vieja, una clave no existe o un proyecto se queda sin novedad.
 # --------------------------------------------------------------------------
 NOVEDADES = [
+    dict(id="excitingjockey-pistas", clase="actualiza", clave="excitingjockey",
+         fecha="2026-11-15T13:00:00+01:00",
+         enlace="https://antxiko.github.io/ExcitingJockey-disassembly/THE-RACES.html",
+         titulo=dict(en='Exciting Jockey: the nine whole tracks',
+                     es='Exciting Jockey: las nueve pistas enteras'),
+         resumen=dict(
+             en='Every race from the start to the finish, 1,200 to 3,600 metres, built by running the ROM column by column the way the track scrolls, with its bushes, signs, fences and water jumps.',
+             es='Cada carrera de la salida a la meta, de 1.200 a 3.600 metros, montada ejecutando la ROM columna a columna como corre la pista, con sus arbustos, carteles, vallas y r&iacute;as.')),
     dict(id="iceworld-mapas", clase="actualiza", clave="iceworld",
          fecha="2026-11-15T12:00:00+01:00",
          enlace="https://antxiko.github.io/IceWorld-disassembly/THE-STAGES.html",
