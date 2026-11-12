@@ -4901,6 +4901,14 @@ MSXON = [
 # nueva a vieja, una clave no existe o un proyecto se queda sin novedad.
 # --------------------------------------------------------------------------
 NOVEDADES = [
+    dict(id="shindobaddo-sprites", clase="actualiza", clave="shindobaddo",
+         fecha="2026-11-13T00:00:00+01:00",
+         enlace="https://antxiko.github.io/Shindobaddo-disassembly/THE-SPRITES.html",
+         titulo=dict(en='Shindobaddo: the sprites, put together from the ROM',
+                     es='Shindobaddo: los sprites, montados desde la ROM'),
+         resumen=dict(
+             en="A new page: Sindbad walking, striking with his scimitar, on the ladders, bouncing, falling and dead, the giant bird with its two wing drawings and the enemies, which are tiles, all drawn by running the game's own routines. Checked against openMSX: Sindbad identical on 17,021 frames and the enemies' tiles on 22,205, 0 different.",
+             es='Una p&aacute;gina nueva: Simbad andando, golpeando con el alfanje, en las escaleras, rebotando, cayendo y muerto, el p&aacute;jaro gigante con sus dos dibujos de alas y los enemigos, que son casillas, todo pintado ejecutando las propias rutinas del juego. Cotejado con openMSX: Simbad id&eacute;ntico en 17.021 cuadros y las casillas de los enemigos en 22.205, 0 distintos.')),
     dict(id="exoidez-sprites", clase="actualiza", clave="exoidez",
          fecha="2026-11-12T23:00:00+01:00",
          enlace="https://antxiko.github.io/ExoideZ-disassembly/THE-SPRITES.html",
