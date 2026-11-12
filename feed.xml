@@ -6,8 +6,16 @@
   <link rel="self" type="application/atom+xml" href="https://antxiko.github.io/feed.xml"/>
   <link rel="alternate" type="text/html" hreflang="en" href="https://antxiko.github.io/"/>
   <link rel="alternate" type="application/atom+xml" hreflang="es" href="https://antxiko.github.io/es/feed.xml"/>
-  <updated>2026-11-13T00:00:00+01:00</updated>
+  <updated>2026-11-13T01:00:00+01:00</updated>
   <author><name>antxiko</name><uri>https://github.com/antxiko</uri></author>
+  <entry>
+    <id>tag:antxiko.github.io,2026:novedad/en/eaglefighter-sprites</id>
+    <title>Eagle Fighter: the sprites, put together from the ROM</title>
+    <link rel="alternate" type="text/html" href="https://antxiko.github.io/EagleFighter-disassembly/THE-SPRITES.html"/>
+    <published>2026-11-13T01:00:00+01:00</published>
+    <updated>2026-11-13T01:00:00+01:00</updated>
+    <summary type="text">A new page: the plane on the runway, in the air with the controller in its eight directions and crashed, the enemies of every type with their drawings to each side, the big one, the shots and the explosions, all built from the cartridge's own tables and code. Checked against openMSX: the enemies identical on 8,018 frames and the plane on 12,642.</summary>
+  </entry>
   <entry>
     <id>tag:antxiko.github.io,2026:novedad/en/shindobaddo-sprites</id>
     <title>Shindobaddo: the sprites, put together from the ROM</title>
@@ -159,13 +167,5 @@
     <published>2026-10-30T08:53:00+01:00</published>
     <updated>2026-10-30T08:53:00+01:00</updated>
     <summary type="text">The three recorded demos, whole (stages 1, 2 and 4): since the running cartridge parts from the MSX at frame 68, they are recorded in openMSX, dumping the VRAM, the palette and the registers of every VDP frame, and painted with the same code as the other GIFs. Checked against openMSX screenshots, 0 different pixels; for that the drawing code had two fixes that also redo the other GIFs: register 18 moves the sprites too, and the line interrupts' registers arrive a few lines late.</summary>
-  </entry>
-  <entry>
-    <id>tag:antxiko.github.io,2026:novedad/en/spacemanbow-enemigos-sueltos</id>
-    <title>Space Manbow: each enemy on its own, the capsules and a font nobody loads</title>
-    <link rel="alternate" type="text/html" href="https://antxiko.github.io/SpaceManbow-disassembly/THE-ENEMIES.html"/>
-    <published>2026-10-29T23:47:00+01:00</published>
-    <updated>2026-10-29T23:47:00+01:00</updated>
-    <summary type="text">79 of the 82 enemy types cut out one by one, painted by the cartridge: each type removed from a copy of the game and what stops being seen. The seven capsule drawings, stage 6's boss fight whole (182 s), the code shared with the other Konami cartridges, a bug hunt (one harmless read of unwritten RAM in the whole game) and an unused font with a loader nothing calls. And the demo: with the Z80 counted in clock cycles it still parts at frame 68, so the pace is not the cause.</summary>
   </entry>
 </feed>
