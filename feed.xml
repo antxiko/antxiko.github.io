@@ -6,8 +6,16 @@
   <link rel="self" type="application/atom+xml" href="https://antxiko.github.io/feed.xml"/>
   <link rel="alternate" type="text/html" hreflang="en" href="https://antxiko.github.io/"/>
   <link rel="alternate" type="application/atom+xml" hreflang="es" href="https://antxiko.github.io/es/feed.xml"/>
-  <updated>2026-11-14T23:00:00+01:00</updated>
+  <updated>2026-11-15T09:00:00+01:00</updated>
   <author><name>antxiko</name><uri>https://github.com/antxiko</uri></author>
+  <entry>
+    <id>tag:antxiko.github.io,2026:novedad/en/issunboushi-mapas</id>
+    <title>Issun-boushi no Donnamondai: the maps of the five scenes</title>
+    <link rel="alternate" type="text/html" href="https://antxiko.github.io/IssunBoushi-disassembly/THE-SCENES.html"/>
+    <published>2026-11-15T09:00:00+01:00</published>
+    <updated>2026-11-15T09:00:00+01:00</updated>
+    <summary type="text">Each scene whole: the river as the game scrolls it (every row reversed) and the land where the oni waits, built by running the ROM and checked against the recordings.</summary>
+  </entry>
   <entry>
     <id>tag:antxiko.github.io,2026:novedad/en/youkaiyashiki-planos</id>
     <title>Youkai Yashiki: the plans of the places</title>
@@ -159,13 +167,5 @@
     <published>2026-11-13T20:00:00+01:00</published>
     <updated>2026-11-13T20:00:00+01:00</updated>
     <summary type="text">A new page with the hunt through the code: no hidden keys, the extra ten points per stage added in binary so the big plane is worth 0, 10 and 20 on stages 14 to 16, the cursor keys and joystick added together, and a score with no cap.</summary>
-  </entry>
-  <entry>
-    <id>tag:antxiko.github.io,2026:novedad/en/shindobaddo-fallos</id>
-    <title>Shindobaddo: secrets and bugs</title>
-    <link rel="alternate" type="text/html" href="https://antxiko.github.io/Shindobaddo-disassembly/SECRETS-AND-BUGS.html"/>
-    <published>2026-11-13T19:00:00+01:00</published>
-    <updated>2026-11-13T19:00:00+01:00</updated>
-    <summary type="text">A new page with the hunt through the code: the keys at power-on, the controls, and a bug run with the game routine: past a million points, a new high score clears the top digit of both, and the score and the high score drop to 400.</summary>
   </entry>
 </feed>
