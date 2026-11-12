@@ -6,8 +6,16 @@
   <link rel="self" type="application/atom+xml" href="https://antxiko.github.io/es/feed.xml"/>
   <link rel="alternate" type="text/html" hreflang="es" href="https://antxiko.github.io/es/"/>
   <link rel="alternate" type="application/atom+xml" hreflang="en" href="https://antxiko.github.io/feed.xml"/>
-  <updated>2026-11-15T12:00:00+01:00</updated>
+  <updated>2026-11-15T13:00:00+01:00</updated>
   <author><name>antxiko</name><uri>https://github.com/antxiko</uri></author>
+  <entry>
+    <id>tag:antxiko.github.io,2026:novedad/es/excitingjockey-pistas</id>
+    <title>Exciting Jockey: las nueve pistas enteras</title>
+    <link rel="alternate" type="text/html" href="https://antxiko.github.io/ExcitingJockey-disassembly/THE-RACES.html"/>
+    <published>2026-11-15T13:00:00+01:00</published>
+    <updated>2026-11-15T13:00:00+01:00</updated>
+    <summary type="text">Cada carrera de la salida a la meta, de 1.200 a 3.600 metros, montada ejecutando la ROM columna a columna como corre la pista, con sus arbustos, carteles, vallas y rías.</summary>
+  </entry>
   <entry>
     <id>tag:antxiko.github.io,2026:novedad/es/iceworld-mapas</id>
     <title>Ice World: los 52 mapas</title>
@@ -159,13 +167,5 @@
     <published>2026-11-14T09:00:00+01:00</published>
     <updated>2026-11-14T09:00:00+01:00</updated>
     <summary type="text">Una página nueva con la caza por el código: el selector de fase y las otras teclas escondidas en una tabla, enemigos aplastados que puntúan con bytes leídos en medio del código (hasta 16.400 en vez de 100-500, ejecutado con la rutina del juego), unos puntos sin tope, y los cursores y el mando sumados.</summary>
-  </entry>
-  <entry>
-    <id>tag:antxiko.github.io,2026:novedad/es/koneko-fallos</id>
-    <title>Koneko no Daibouken: secretos y fallos</title>
-    <link rel="alternate" type="text/html" href="https://antxiko.github.io/KonekoNoDaibouken-disassembly/SECRETS-AND-BUGS.html"/>
-    <published>2026-11-13T23:00:00+01:00</published>
-    <updated>2026-11-13T23:00:00+01:00</updated>
-    <summary type="text">Una página nueva con la caza por el código: las listas de las fases siguen detrás de la casita de la meta, con dos pantallas que no salen en ningún otro sitio (un tronco en el prado en la 2-2 y una cascada en la 3-3, montadas ejecutando la ROM), un récord que cae a cero pasados los 9.999.990, y los cursores y el mando que se mezclan.</summary>
   </entry>
 </feed>
