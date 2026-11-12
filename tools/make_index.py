@@ -4901,6 +4901,14 @@ MSXON = [
 # nueva a vieja, una clave no existe o un proyecto se queda sin novedad.
 # --------------------------------------------------------------------------
 NOVEDADES = [
+    dict(id="casioworldopen-swing", clase="actualiza", clave="casioworldopen",
+         fecha="2026-11-14T16:00:00+01:00",
+         enlace="https://antxiko.github.io/CasioWorldOpen-disassembly/THE-3D-VIEW.html",
+         titulo=dict(en='Casio World Open: the swing, played',
+                     es='Casio World Open: el swing, jugado'),
+         resumen=dict(
+             en='The golfer swing recorded in openMSX: the frame changes every 8 frames, and the top of the backswing only shows if the power goes past 0x40. Two GIFs on the front page, every recorded frame checked against the pieces the ROM gives for it.',
+             es='El swing del golfista grabado en openMSX: el fotograma cambia cada 8 cuadros, y el de arriba del todo solo sale si la fuerza pasa de 0x40. Dos GIF en la portada, cada cuadro grabado cotejado con las piezas que da la ROM.')),
     dict(id="koneko-escondidas", clase="actualiza", clave="koneko",
          fecha="2026-11-14T15:00:00+01:00",
          enlace="https://antxiko.github.io/KonekoNoDaibouken-disassembly/SECRETS-AND-BUGS.html",
