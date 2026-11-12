@@ -4901,6 +4901,22 @@ MSXON = [
 # nueva a vieja, una clave no existe o un proyecto se queda sin novedad.
 # --------------------------------------------------------------------------
 NOVEDADES = [
+    dict(id="gameland-textos", clase="actualiza", clave="gameland",
+         fecha="2026-11-14T18:00:00+01:00",
+         enlace="https://antxiko.github.io/GameLand-disassembly/THE-TEXTS.html",
+         titulo=dict(en='Game Land: the texts',
+                     es='Game Land: los textos'),
+         resumen=dict(
+             en='A new page with the 51 menus, 47 messages and the labels of the program, taken straight from the ROM and translated; the arrows in the menus turn out to be the cartridge own drawings.',
+             es='Una p&aacute;gina nueva con los 51 men&uacute;s, los 47 avisos y los r&oacute;tulos del programa, sacados directamente de la ROM y traducidos; las flechas de los men&uacute;s resultan ser dibujos del propio cartucho.')),
+    dict(id="issunboushi-textos", clase="actualiza", clave="issunboushi",
+         fecha="2026-11-14T17:00:00+01:00",
+         enlace="https://antxiko.github.io/IssunBoushi-disassembly/THE-TEXTS.html",
+         titulo=dict(en='Issun-boushi no Donnamondai: the texts',
+                     es='Issun-boushi no Donnamondai: los textos'),
+         resumen=dict(
+             en='A new page with every text in the ROM, where the code writes it and its translation, from the CASIO intro to どんなもんだい in the ending.',
+             es='Una p&aacute;gina nueva con todos los textos de la ROM, d&oacute;nde los escribe el c&oacute;digo y su traducci&oacute;n, de la presentaci&oacute;n de CASIO al どんなもんだい del final.')),
     dict(id="casioworldopen-swing", clase="actualiza", clave="casioworldopen",
          fecha="2026-11-14T16:00:00+01:00",
          enlace="https://antxiko.github.io/CasioWorldOpen-disassembly/THE-3D-VIEW.html",
