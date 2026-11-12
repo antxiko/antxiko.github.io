@@ -6,8 +6,16 @@
   <link rel="self" type="application/atom+xml" href="https://antxiko.github.io/es/feed.xml"/>
   <link rel="alternate" type="text/html" hreflang="es" href="https://antxiko.github.io/es/"/>
   <link rel="alternate" type="application/atom+xml" hreflang="en" href="https://antxiko.github.io/feed.xml"/>
-  <updated>2026-11-13T10:00:00+01:00</updated>
+  <updated>2026-11-13T11:00:00+01:00</updated>
   <author><name>antxiko</name><uri>https://github.com/antxiko</uri></author>
+  <entry>
+    <id>tag:antxiko.github.io,2026:novedad/es/skicommand-fallos</id>
+    <title>Ski Command: secretos y fallos</title>
+    <link rel="alternate" type="text/html" href="https://antxiko.github.io/SkiCommand-disassembly/SECRETS-AND-BUGS.html"/>
+    <published>2026-11-13T11:00:00+01:00</published>
+    <updated>2026-11-13T11:00:00+01:00</updated>
+    <summary type="text">Una página nueva con la caza por el código: ni teclas escondidas ni pantallas sin usar, y un fallo comprobado ejecutando la propia rutina del juego: pasados los 999.900 puntos el marcador pierde la primera cifra y dice 000000, mientras el récord se queda en 999.900.</summary>
+  </entry>
   <entry>
     <id>tag:antxiko.github.io,2026:novedad/es/gameland-sprites</id>
     <title>Game Land: los sprites del propio programa, desde la ROM</title>
@@ -159,13 +167,5 @@
     <published>2026-11-12T16:00:00+01:00</published>
     <updated>2026-11-12T16:00:00+01:00</updated>
     <summary type="text">Una página nueva: los once dibujos del esquiador, los siete enemigos en sus cuatro tamaños y derribados, el aparato en sus tres colores y tocado, y los objetos de la pista, todo montado desde las propias tablas del cartucho; el salto y la caída cuadro a cuadro como los hace el código. Cotejado con openMSX: la tabla de dibujos de los sprites idéntica en 17.989 cuadros, el esquiador y el aparato con 0 cuadros distintos.</summary>
-  </entry>
-  <entry>
-    <id>tag:antxiko.github.io,2026:novedad/es/casio-cinco</id>
-    <title>Cinco cartuchos más de Casio, con Game Land</title>
-    <link rel="alternate" type="text/html" href="https://antxiko.github.io/GameLand-disassembly/"/>
-    <published>2026-11-12T12:00:00+01:00</published>
-    <updated>2026-11-12T12:00:00+01:00</updated>
-    <summary type="text">The Stone of Wisdom, The Seal of Hades, Youkai Yashiki, Issun-boushi no Donnamondai y Game Land, el cartucho de Casio de 1984 para hacer juegos sin programar. Cada uno explicado al 100 %, reensamblado byte a byte y comentado al 40 % o más; las partidas, jugadas en GIF en openMSX y, en Game Land, un fondo dibujado con su propio LINE, BOX, CIRCLE y PAINT y dos personajes con sus muestras; las músicas, del propio motor de sonido de cada cartucho, cotejadas con openMSX.</summary>
   </entry>
 </feed>

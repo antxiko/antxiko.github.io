@@ -4901,6 +4901,14 @@ MSXON = [
 # nueva a vieja, una clave no existe o un proyecto se queda sin novedad.
 # --------------------------------------------------------------------------
 NOVEDADES = [
+    dict(id="skicommand-fallos", clase="actualiza", clave="skicommand",
+         fecha="2026-11-13T11:00:00+01:00",
+         enlace="https://antxiko.github.io/SkiCommand-disassembly/SECRETS-AND-BUGS.html",
+         titulo=dict(en='Ski Command: secrets and bugs',
+                     es='Ski Command: secretos y fallos'),
+         resumen=dict(
+             en="A new page with the hunt through the code: no hidden keys or unused screens, and a bug checked by running the game's own routine: past 999,900 points the score loses its first figure and shows 000000, while the high score stays at 999,900.",
+             es='Una p&aacute;gina nueva con la caza por el c&oacute;digo: ni teclas escondidas ni pantallas sin usar, y un fallo comprobado ejecutando la propia rutina del juego: pasados los 999.900 puntos el marcador pierde la primera cifra y dice 000000, mientras el r&eacute;cord se queda en 999.900.')),
     dict(id="gameland-sprites", clase="actualiza", clave="gameland",
          fecha="2026-11-13T10:00:00+01:00",
          enlace="https://antxiko.github.io/GameLand-disassembly/THE-SPRITES.html",

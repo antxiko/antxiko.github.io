@@ -6,8 +6,16 @@
   <link rel="self" type="application/atom+xml" href="https://antxiko.github.io/feed.xml"/>
   <link rel="alternate" type="text/html" hreflang="en" href="https://antxiko.github.io/"/>
   <link rel="alternate" type="application/atom+xml" hreflang="es" href="https://antxiko.github.io/es/feed.xml"/>
-  <updated>2026-11-13T10:00:00+01:00</updated>
+  <updated>2026-11-13T11:00:00+01:00</updated>
   <author><name>antxiko</name><uri>https://github.com/antxiko</uri></author>
+  <entry>
+    <id>tag:antxiko.github.io,2026:novedad/en/skicommand-fallos</id>
+    <title>Ski Command: secrets and bugs</title>
+    <link rel="alternate" type="text/html" href="https://antxiko.github.io/SkiCommand-disassembly/SECRETS-AND-BUGS.html"/>
+    <published>2026-11-13T11:00:00+01:00</published>
+    <updated>2026-11-13T11:00:00+01:00</updated>
+    <summary type="text">A new page with the hunt through the code: no hidden keys or unused screens, and a bug checked by running the game's own routine: past 999,900 points the score loses its first figure and shows 000000, while the high score stays at 999,900.</summary>
+  </entry>
   <entry>
     <id>tag:antxiko.github.io,2026:novedad/en/gameland-sprites</id>
     <title>Game Land: the program's own sprites, from the ROM</title>
@@ -159,13 +167,5 @@
     <published>2026-11-12T16:00:00+01:00</published>
     <updated>2026-11-12T16:00:00+01:00</updated>
     <summary type="text">A new page: the skier's eleven drawings, the seven enemies in their four sizes and knocked down, the flying machine in its three colours and hit, and the course objects, all built from the cartridge's own tables; the jump and the crash frame by frame as the code does them. Checked against openMSX: the sprite drawing table identical on 17,989 frames, the skier and the machine with 0 different frames.</summary>
-  </entry>
-  <entry>
-    <id>tag:antxiko.github.io,2026:novedad/en/casio-cinco</id>
-    <title>Five more Casio cartridges, Game Land among them</title>
-    <link rel="alternate" type="text/html" href="https://antxiko.github.io/GameLand-disassembly/"/>
-    <published>2026-11-12T12:00:00+01:00</published>
-    <updated>2026-11-12T12:00:00+01:00</updated>
-    <summary type="text">The Stone of Wisdom, The Seal of Hades, Youkai Yashiki, Issun-boushi no Donnamondai and Game Land, Casio's 1984 kit for making games without programming. Each one 100% explained, reassembled byte for byte and commented to 40% or more; the games played in GIF in openMSX and, in Game Land, a background drawn with its own LINE, BOX, CIRCLE and PAINT and two characters from its samples; the music from each cartridge's own sound engine, checked against openMSX.</summary>
   </entry>
 </feed>
