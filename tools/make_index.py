@@ -4901,6 +4901,14 @@ MSXON = [
 # nueva a vieja, una clave no existe o un proyecto se queda sin novedad.
 # --------------------------------------------------------------------------
 NOVEDADES = [
+    dict(id="youkaiyashiki-fallos", clase="actualiza", clave="youkaiyashiki",
+         fecha="2026-11-14T12:00:00+01:00",
+         enlace="https://antxiko.github.io/YoukaiYashiki-disassembly/SECRETS-AND-BUGS.html",
+         titulo=dict(en='Youkai Yashiki: secrets and bugs',
+                     es='Youkai Yashiki: secretos y fallos'),
+         resumen=dict(
+             en='A new page with the hunt through the code: the five keys, F1 and the demo that plays the BIOS, a high score that is overwritten with the wrapped score past 9,999,990 so both drop to zero, the cursor keys and joystick mixed, and the lives for points that the listing promised and the game does not give.',
+             es='Una p&aacute;gina nueva con la caza por el c&oacute;digo: las cinco teclas, F1 y la demostraci&oacute;n que juega la BIOS, un r&eacute;cord que pasados los 9.999.990 se pisa con los puntos ya dados la vuelta, as&iacute; que los dos caen a cero, los cursores y el mando que se mezclan, y las vidas por puntos que promet&iacute;a el listado y el juego no da.')),
     dict(id="sealofhades-fallos", clase="actualiza", clave="sealofhades",
          fecha="2026-11-14T11:00:00+01:00",
          enlace="https://antxiko.github.io/SealOfHades-disassembly/SECRETS-AND-BUGS.html",
