@@ -4901,6 +4901,14 @@ MSXON = [
 # nueva a vieja, una clave no existe o un proyecto se queda sin novedad.
 # --------------------------------------------------------------------------
 NOVEDADES = [
+    dict(id="exoidez-sprites", clase="actualiza", clave="exoidez",
+         fecha="2026-11-12T23:00:00+01:00",
+         enlace="https://antxiko.github.io/ExoideZ-disassembly/THE-SPRITES.html",
+         titulo=dict(en='Exoide-Z: the sprites, put together from the ROM',
+                     es='Exoide-Z: los sprites, montados desde la ROM'),
+         resumen=dict(
+             en='A new page: the ship and its shadow, the robot it turns into and its punches, the explosions, the five enemies in their four colours, the capsules and the big robot of each round, all built from the cartridge, whose own routines are run here to make the drawings with their mirror copies. Checked against openMSX: the enemies identical on 45,717 frames and the ship on 22,246, 0 different.',
+             es='Una p&aacute;gina nueva: la nave y su sombra, el robot en que se convierte y sus pu&ntilde;etazos, las explosiones, los cinco enemigos en sus cuatro colores, las c&aacute;psulas y el robot grande de cada ronda, todo montado desde el cartucho, cuyas propias rutinas se ejecutan aqu&iacute; para hacer los dibujos con sus espejos. Cotejado con openMSX: los enemigos id&eacute;nticos en 45.717 cuadros y la nave en 22.246, 0 distintos.')),
     dict(id="iganinpouchou-sprites", clase="actualiza", clave="iganinpouchou",
          fecha="2026-11-12T22:00:00+01:00",
          enlace="https://antxiko.github.io/IgaNinpouchou-disassembly/THE-SPRITES.html",
