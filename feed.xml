@@ -6,8 +6,16 @@
   <link rel="self" type="application/atom+xml" href="https://antxiko.github.io/feed.xml"/>
   <link rel="alternate" type="text/html" hreflang="en" href="https://antxiko.github.io/"/>
   <link rel="alternate" type="application/atom+xml" hreflang="es" href="https://antxiko.github.io/es/feed.xml"/>
-  <updated>2026-11-14T22:00:00+01:00</updated>
+  <updated>2026-11-14T23:00:00+01:00</updated>
   <author><name>antxiko</name><uri>https://github.com/antxiko</uri></author>
+  <entry>
+    <id>tag:antxiko.github.io,2026:novedad/en/youkaiyashiki-planos</id>
+    <title>Youkai Yashiki: the plans of the places</title>
+    <link rel="alternate" type="text/html" href="https://antxiko.github.io/YoukaiYashiki-disassembly/THE-PLACES.html"/>
+    <published>2026-11-14T23:00:00+01:00</published>
+    <updated>2026-11-14T23:00:00+01:00</updated>
+    <summary type="text">Every screen of every place in its spot on the plan, built by running the ROM, including a sixth place reached by five doors that no recording had visited, and four screens that are on no plan.</summary>
+  </entry>
   <entry>
     <id>tag:antxiko.github.io,2026:novedad/en/sealofhades-mapas</id>
     <title>The Seal of Hades: the maps of the six scenes</title>
@@ -159,13 +167,5 @@
     <published>2026-11-13T19:00:00+01:00</published>
     <updated>2026-11-13T19:00:00+01:00</updated>
     <summary type="text">A new page with the hunt through the code: the keys at power-on, the controls, and a bug run with the game routine: past a million points, a new high score clears the top digit of both, and the score and the high score drop to 400.</summary>
-  </entry>
-  <entry>
-    <id>tag:antxiko.github.io,2026:novedad/en/exoidez-fallos</id>
-    <title>Exoide-Z: secrets and bugs</title>
-    <link rel="alternate" type="text/html" href="https://antxiko.github.io/ExoideZ-disassembly/SECRETS-AND-BUGS.html"/>
-    <published>2026-11-13T18:00:00+01:00</published>
-    <updated>2026-11-13T18:00:00+01:00</updated>
-    <summary type="text">A new page with the hunt through the code: keys 0-7 at power-on that make the ship crash-proof, the controller chosen by the title button, and a seven-digit score that the in-game scoreboard shows with six, so a million reads 000000.</summary>
   </entry>
 </feed>
