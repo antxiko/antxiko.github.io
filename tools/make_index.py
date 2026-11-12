@@ -4901,6 +4901,14 @@ MSXON = [
 # nueva a vieja, una clave no existe o un proyecto se queda sin novedad.
 # --------------------------------------------------------------------------
 NOVEDADES = [
+    dict(id="iganinpouchou-fallos", clase="actualiza", clave="iganinpouchou",
+         fecha="2026-11-13T17:00:00+01:00",
+         enlace="https://antxiko.github.io/IgaNinpouchou-disassembly/SECRETS-AND-BUGS.html",
+         titulo=dict(en='Iga Ninpouchou: secrets and bugs',
+                     es='Iga Ninpouchou: secretos y fallos'),
+         resumen=dict(
+             en='A new page with the hunt through the code: no hidden keys, the score cap that leaves 990,000, and the cursor keys and joystick that, used at once, send the ninja the other way (right and down go left).',
+             es='Una p&aacute;gina nueva con la caza por el c&oacute;digo: ninguna tecla escondida, el tope de los puntos que deja 990.000, y los cursores y el mando que, a la vez, mandan al ninja al otro lado (derecha y abajo van a la izquierda).')),
     dict(id="iceworld-fallos", clase="actualiza", clave="iceworld",
          fecha="2026-11-13T16:00:00+01:00",
          enlace="https://antxiko.github.io/IceWorld-disassembly/SECRETS-AND-BUGS.html",

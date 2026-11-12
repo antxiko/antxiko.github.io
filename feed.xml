@@ -6,8 +6,16 @@
   <link rel="self" type="application/atom+xml" href="https://antxiko.github.io/feed.xml"/>
   <link rel="alternate" type="text/html" hreflang="en" href="https://antxiko.github.io/"/>
   <link rel="alternate" type="application/atom+xml" hreflang="es" href="https://antxiko.github.io/es/feed.xml"/>
-  <updated>2026-11-13T16:00:00+01:00</updated>
+  <updated>2026-11-13T17:00:00+01:00</updated>
   <author><name>antxiko</name><uri>https://github.com/antxiko</uri></author>
+  <entry>
+    <id>tag:antxiko.github.io,2026:novedad/en/iganinpouchou-fallos</id>
+    <title>Iga Ninpouchou: secrets and bugs</title>
+    <link rel="alternate" type="text/html" href="https://antxiko.github.io/IgaNinpouchou-disassembly/SECRETS-AND-BUGS.html"/>
+    <published>2026-11-13T17:00:00+01:00</published>
+    <updated>2026-11-13T17:00:00+01:00</updated>
+    <summary type="text">A new page with the hunt through the code: no hidden keys, the score cap that leaves 990,000, and the cursor keys and joystick that, used at once, send the ninja the other way (right and down go left).</summary>
+  </entry>
   <entry>
     <id>tag:antxiko.github.io,2026:novedad/en/iceworld-fallos</id>
     <title>Ice World: secrets and bugs</title>
@@ -159,13 +167,5 @@
     <published>2026-11-12T22:00:00+01:00</published>
     <updated>2026-11-12T22:00:00+01:00</updated>
     <summary type="text">A new page: the ninja walking, jumping, crouching and hit, almost invisible with the object, and his star; the ninja on the floors, who get two colours from a single sprite by showing body and details in turns; the arrow, the balls, the stars and what falls, all built from the cartridge's own tables and code. Checked against openMSX: the ninja identical on 19,464 frames, 0 different. And a fix: type 8 throws balls, not arrows; the arrow is type 1.</summary>
-  </entry>
-  <entry>
-    <id>tag:antxiko.github.io,2026:novedad/en/iceworld-sprites</id>
-    <title>Ice World: the sprites, put together from the ROM</title>
-    <link rel="alternate" type="text/html" href="https://antxiko.github.io/IceWorld-disassembly/THE-SPRITES.html"/>
-    <published>2026-11-12T21:00:00+01:00</published>
-    <updated>2026-11-12T21:00:00+01:00</updated>
-    <summary type="text">A new page: the hero in his four directions with the hammer, hitting and losing, the thrown hammer and the points, and the two creatures, which are not sprites but pieces of tiles, walking, crushed and hatching, all built from the cartridge's own tables and code. Checked against openMSX: the hero identical on 48,058 frames and the creatures on 35,621, 0 different.</summary>
   </entry>
 </feed>
