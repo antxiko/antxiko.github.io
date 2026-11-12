@@ -4901,6 +4901,14 @@ MSXON = [
 # nueva a vieja, una clave no existe o un proyecto se queda sin novedad.
 # --------------------------------------------------------------------------
 NOVEDADES = [
+    dict(id="exoidezarea5-mapa", clase="actualiza", clave="exoidezarea5",
+         fecha="2026-11-15T10:00:00+01:00",
+         enlace="https://antxiko.github.io/ExoideZArea5-disassembly/THE-STAGES.html",
+         titulo=dict(en='Exoide-Z Area 5: the whole map',
+                     es='Exoide-Z Area 5: el mapa entero'),
+         resumen=dict(
+             en='The whole trip, all 81 positions, built by running the ROM in order on the same machine, with every change of tiles, and checked against the recording that goes through them all.',
+             es='El viaje entero, las 81 posiciones, montado ejecutando la ROM en orden sobre la misma m&aacute;quina, con cada cambio de casillas, y cotejado con la grabaci&oacute;n que pasa por todas.')),
     dict(id="issunboushi-mapas", clase="actualiza", clave="issunboushi",
          fecha="2026-11-15T09:00:00+01:00",
          enlace="https://antxiko.github.io/IssunBoushi-disassembly/THE-SCENES.html",
