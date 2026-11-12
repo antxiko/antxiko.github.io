@@ -6,8 +6,16 @@
   <link rel="self" type="application/atom+xml" href="https://antxiko.github.io/feed.xml"/>
   <link rel="alternate" type="text/html" hreflang="en" href="https://antxiko.github.io/"/>
   <link rel="alternate" type="application/atom+xml" hreflang="es" href="https://antxiko.github.io/es/feed.xml"/>
-  <updated>2026-11-13T01:00:00+01:00</updated>
+  <updated>2026-11-13T02:00:00+01:00</updated>
   <author><name>antxiko</name><uri>https://github.com/antxiko</uri></author>
+  <entry>
+    <id>tag:antxiko.github.io,2026:novedad/en/exoidezarea5-sprites</id>
+    <title>Exoide-Z Area 5: the sprites, put together from the ROM</title>
+    <link rel="alternate" type="text/html" href="https://antxiko.github.io/ExoideZArea5-disassembly/THE-SPRITES.html"/>
+    <published>2026-11-13T02:00:00+01:00</published>
+    <updated>2026-11-13T02:00:00+01:00</updated>
+    <summary type="text">A new page: the ship and its hit, every kind of enemy with the drawings it turns through and the colour that blinks, the big ship of the end, the bullets and the explosion, all built from the cartridge's own tables and code. Checked against openMSX: the ship identical on 55,725 frames and the enemies on 63,347.</summary>
+  </entry>
   <entry>
     <id>tag:antxiko.github.io,2026:novedad/en/eaglefighter-sprites</id>
     <title>Eagle Fighter: the sprites, put together from the ROM</title>
@@ -159,13 +167,5 @@
     <published>2026-10-30T15:20:00+01:00</published>
     <updated>2026-10-30T15:20:00+01:00</updated>
     <summary type="text">Konami's 1990 Quarth for MSX2, its 128 KB 100% explained and commented to 40.3%. The menu, the three modes, the ten stages, the pause and losing, the intro, the three demos and the ending, recorded in openMSX frame by frame and painted in GIF; 19 SCC tunes from its own engine (Metal Gear 2's) checked against openMSX; the texts and the credits, and a rules caption the game never shows.</summary>
-  </entry>
-  <entry>
-    <id>tag:antxiko.github.io,2026:novedad/en/spacemanbow-demostraciones</id>
-    <title>Space Manbow: the three demos, recorded in openMSX</title>
-    <link rel="alternate" type="text/html" href="https://antxiko.github.io/SpaceManbow-disassembly/THE-SEQUENCES.html"/>
-    <published>2026-10-30T08:53:00+01:00</published>
-    <updated>2026-10-30T08:53:00+01:00</updated>
-    <summary type="text">The three recorded demos, whole (stages 1, 2 and 4): since the running cartridge parts from the MSX at frame 68, they are recorded in openMSX, dumping the VRAM, the palette and the registers of every VDP frame, and painted with the same code as the other GIFs. Checked against openMSX screenshots, 0 different pixels; for that the drawing code had two fixes that also redo the other GIFs: register 18 moves the sprites too, and the line interrupts' registers arrive a few lines late.</summary>
   </entry>
 </feed>
