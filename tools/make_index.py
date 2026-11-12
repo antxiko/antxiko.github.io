@@ -4901,6 +4901,14 @@ MSXON = [
 # nueva a vieja, una clave no existe o un proyecto se queda sin novedad.
 # --------------------------------------------------------------------------
 NOVEDADES = [
+    dict(id="moai-mapas", clase="actualiza", clave="moai",
+         fecha="2026-11-14T20:00:00+01:00",
+         enlace="https://antxiko.github.io/MoaiNoHihou-disassembly/THE-STAGES.html",
+         titulo=dict(en='Moai no Hihou: the maps of the 32 stages',
+                     es='Moai no Hihou: los mapas de las 32 fases'),
+         resumen=dict(
+             en='All 32 stages whole, built by running the ROM the way the game builds them when the view scrolls, and checked against the recording: half of the recorded frames come out identical tile for tile.',
+             es='Las 32 fases enteras, montadas ejecutando la ROM como las monta el juego al mover la vista, y cotejadas con la grabaci&oacute;n: la mitad de los cuadros grabados salen iguales casilla a casilla.')),
     dict(id="koneko-mapas", clase="actualiza", clave="koneko",
          fecha="2026-11-14T19:00:00+01:00",
          enlace="https://antxiko.github.io/KonekoNoDaibouken-disassembly/THE-STAGES.html",
