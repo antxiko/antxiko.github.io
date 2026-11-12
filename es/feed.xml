@@ -6,8 +6,16 @@
   <link rel="self" type="application/atom+xml" href="https://antxiko.github.io/es/feed.xml"/>
   <link rel="alternate" type="text/html" hreflang="es" href="https://antxiko.github.io/es/"/>
   <link rel="alternate" type="application/atom+xml" hreflang="en" href="https://antxiko.github.io/feed.xml"/>
-  <updated>2026-11-15T09:00:00+01:00</updated>
+  <updated>2026-11-15T10:00:00+01:00</updated>
   <author><name>antxiko</name><uri>https://github.com/antxiko</uri></author>
+  <entry>
+    <id>tag:antxiko.github.io,2026:novedad/es/exoidezarea5-mapa</id>
+    <title>Exoide-Z Area 5: el mapa entero</title>
+    <link rel="alternate" type="text/html" href="https://antxiko.github.io/ExoideZArea5-disassembly/THE-STAGES.html"/>
+    <published>2026-11-15T10:00:00+01:00</published>
+    <updated>2026-11-15T10:00:00+01:00</updated>
+    <summary type="text">El viaje entero, las 81 posiciones, montado ejecutando la ROM en orden sobre la misma máquina, con cada cambio de casillas, y cotejado con la grabación que pasa por todas.</summary>
+  </entry>
   <entry>
     <id>tag:antxiko.github.io,2026:novedad/es/issunboushi-mapas</id>
     <title>Issun-boushi no Donnamondai: los mapas de las cinco escenas</title>
@@ -159,13 +167,5 @@
     <published>2026-11-13T21:00:00+01:00</published>
     <updated>2026-11-13T21:00:00+01:00</updated>
     <summary type="text">Una página nueva con la caza por el código: TAB y CAPS en el título, un récord que pasados los 9.999.990 se pisa con los puntos ya dados la vuelta, así que los dos caen a cero, y los cursores y el mando que se mezclan en otra dirección.</summary>
-  </entry>
-  <entry>
-    <id>tag:antxiko.github.io,2026:novedad/es/eaglefighter-fallos</id>
-    <title>Eagle Fighter: secretos y fallos</title>
-    <link rel="alternate" type="text/html" href="https://antxiko.github.io/EagleFighter-disassembly/SECRETS-AND-BUGS.html"/>
-    <published>2026-11-13T20:00:00+01:00</published>
-    <updated>2026-11-13T20:00:00+01:00</updated>
-    <summary type="text">Una página nueva con la caza por el código: ninguna tecla escondida, los diez puntos de más por fase sumados en binario, así que el grande vale 0, 10 y 20 en las fases 14 a 16, los cursores y el mando sumados, y unos puntos sin tope.</summary>
   </entry>
 </feed>
