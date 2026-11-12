@@ -6,8 +6,16 @@
   <link rel="self" type="application/atom+xml" href="https://antxiko.github.io/feed.xml"/>
   <link rel="alternate" type="text/html" hreflang="en" href="https://antxiko.github.io/"/>
   <link rel="alternate" type="application/atom+xml" hreflang="es" href="https://antxiko.github.io/es/feed.xml"/>
-  <updated>2026-11-14T10:00:00+01:00</updated>
+  <updated>2026-11-14T11:00:00+01:00</updated>
   <author><name>antxiko</name><uri>https://github.com/antxiko</uri></author>
+  <entry>
+    <id>tag:antxiko.github.io,2026:novedad/en/sealofhades-fallos</id>
+    <title>The Seal of Hades: secrets and bugs</title>
+    <link rel="alternate" type="text/html" href="https://antxiko.github.io/SealOfHades-disassembly/SECRETS-AND-BUGS.html"/>
+    <published>2026-11-14T11:00:00+01:00</published>
+    <updated>2026-11-14T11:00:00+01:00</updated>
+    <summary type="text">A new page with the hunt through the code: the hidden keys and the other cartridge, a high score that is overwritten with the wrapped score past 9,999,990 so both drop to zero, the cursor keys and joystick mixed, and the extra life at 30,000 run and checked.</summary>
+  </entry>
   <entry>
     <id>tag:antxiko.github.io,2026:novedad/en/stoneofwisdom-fallos</id>
     <title>The Stone of Wisdom: secrets and bugs</title>
@@ -159,13 +167,5 @@
     <published>2026-11-13T07:00:00+01:00</published>
     <updated>2026-11-13T07:00:00+01:00</updated>
     <summary type="text">A new page: the hero in his four sprites with the colours of each power, his shots, every kind of enemy with its two sprites and its drawings, and the big and small explosions, all built from the cartridge's own tables and code. Checked against openMSX: the hero identical on 41,128 frames and the enemies on 90,076.</summary>
-  </entry>
-  <entry>
-    <id>tag:antxiko.github.io,2026:novedad/en/stoneofwisdom-sprites</id>
-    <title>The Stone of Wisdom: the sprites, put together from the ROM</title>
-    <link rel="alternate" type="text/html" href="https://antxiko.github.io/StoneOfWisdom-disassembly/THE-SPRITES.html"/>
-    <published>2026-11-13T06:00:00+01:00</published>
-    <updated>2026-11-13T06:00:00+01:00</updated>
-    <summary type="text">A new page: the hero to the four sides with his steps, his weapon in each direction, every kind of enemy, the stone, the sage in three sprites and the explosion, all built from the cartridge's own tables and code. Checked against openMSX: the enemies identical on 73,362 frames, the weapon on 5,818 and the hero on 29,434.</summary>
   </entry>
 </feed>
