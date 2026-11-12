@@ -4901,6 +4901,14 @@ MSXON = [
 # nueva a vieja, una clave no existe o un proyecto se queda sin novedad.
 # --------------------------------------------------------------------------
 NOVEDADES = [
+    dict(id="carfighter-fallos", clase="actualiza", clave="carfighter",
+         fecha="2026-11-13T15:00:00+01:00",
+         enlace="https://antxiko.github.io/CarFighter-disassembly/SECRETS-AND-BUGS.html",
+         titulo=dict(en='Car Fighter: secrets and bugs',
+                     es='Car Fighter: secretos y fallos'),
+         resumen=dict(
+             en='A new page with the hunt through the code: no hidden keys, the cursor keys and the joystick that, used at once, send the car somewhere else (right and down turn left), and the score run and checked up to 999,999.',
+             es='Una p&aacute;gina nueva con la caza por el c&oacute;digo: ninguna tecla escondida, los cursores y el mando que, a la vez, mandan el coche a otro sitio (derecha y abajo giran a la izquierda), y los puntos ejecutados y comprobados hasta 999.999.')),
     dict(id="pachinkoufo-fallos", clase="actualiza", clave="pachinkoufo",
          fecha="2026-11-13T14:00:00+01:00",
          enlace="https://antxiko.github.io/PachinkoUFO-disassembly/SECRETS-AND-BUGS.html",
