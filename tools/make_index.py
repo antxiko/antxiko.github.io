@@ -4901,6 +4901,14 @@ MSXON = [
 # nueva a vieja, una clave no existe o un proyecto se queda sin novedad.
 # --------------------------------------------------------------------------
 NOVEDADES = [
+    dict(id="pachinkoufo-fallos", clase="actualiza", clave="pachinkoufo",
+         fecha="2026-11-13T14:00:00+01:00",
+         enlace="https://antxiko.github.io/PachinkoUFO-disassembly/SECRETS-AND-BUGS.html",
+         titulo=dict(en='Pachinko U.F.O.: secrets and bugs',
+                     es='Pachinko U.F.O.: secretos y fallos'),
+         resumen=dict(
+             en='A new page with the hunt through the code: a ball that drops in after the last one saves the game (but only if it pays exactly 10), GAME OVER at 9,000 balls, a wait that is not reset after being saved, and the tile that was taken for the strength turns out to be the tray of balls.',
+             es='Una p&aacute;gina nueva con la caza por el c&oacute;digo: una bola que entra despu&eacute;s de la &uacute;ltima salva la partida (pero solo si paga 10 justas), el GAME OVER con 9.000 bolas, una espera que no vuelve a cero tras salvarse, y la casilla que se tom&oacute; por la fuerza resulta ser la bandeja de bolas.')),
     dict(id="excitingjockey-fallos", clase="actualiza", clave="excitingjockey",
          fecha="2026-11-13T13:00:00+01:00",
          enlace="https://antxiko.github.io/ExcitingJockey-disassembly/SECRETS-AND-BUGS.html",
