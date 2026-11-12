@@ -6,8 +6,16 @@
   <link rel="self" type="application/atom+xml" href="https://antxiko.github.io/es/feed.xml"/>
   <link rel="alternate" type="text/html" hreflang="es" href="https://antxiko.github.io/es/"/>
   <link rel="alternate" type="application/atom+xml" hreflang="en" href="https://antxiko.github.io/feed.xml"/>
-  <updated>2026-11-13T17:00:00+01:00</updated>
+  <updated>2026-11-13T18:00:00+01:00</updated>
   <author><name>antxiko</name><uri>https://github.com/antxiko</uri></author>
+  <entry>
+    <id>tag:antxiko.github.io,2026:novedad/es/exoidez-fallos</id>
+    <title>Exoide-Z: secretos y fallos</title>
+    <link rel="alternate" type="text/html" href="https://antxiko.github.io/ExoideZ-disassembly/SECRETS-AND-BUGS.html"/>
+    <published>2026-11-13T18:00:00+01:00</published>
+    <updated>2026-11-13T18:00:00+01:00</updated>
+    <summary type="text">Una página nueva con la caza por el código: las teclas 0-7 al encender que hacen la nave invulnerable, el mando que elige el botón del título, y unos puntos de siete cifras que el marcador de la partida enseña con seis: un millón sale 000000.</summary>
+  </entry>
   <entry>
     <id>tag:antxiko.github.io,2026:novedad/es/iganinpouchou-fallos</id>
     <title>Iga Ninpouchou: secretos y fallos</title>
@@ -159,13 +167,5 @@
     <published>2026-11-12T23:00:00+01:00</published>
     <updated>2026-11-12T23:00:00+01:00</updated>
     <summary type="text">Una página nueva: la nave y su sombra, el robot en que se convierte y sus puñetazos, las explosiones, los cinco enemigos en sus cuatro colores, las cápsulas y el robot grande de cada ronda, todo montado desde el cartucho, cuyas propias rutinas se ejecutan aquí para hacer los dibujos con sus espejos. Cotejado con openMSX: los enemigos idénticos en 45.717 cuadros y la nave en 22.246, 0 distintos.</summary>
-  </entry>
-  <entry>
-    <id>tag:antxiko.github.io,2026:novedad/es/iganinpouchou-sprites</id>
-    <title>Iga Ninpouchou: los sprites, montados desde la ROM</title>
-    <link rel="alternate" type="text/html" href="https://antxiko.github.io/IgaNinpouchou-disassembly/THE-SPRITES.html"/>
-    <published>2026-11-12T22:00:00+01:00</published>
-    <updated>2026-11-12T22:00:00+01:00</updated>
-    <summary type="text">Una página nueva: el ninja andando, saltando, agachado y tocado, casi invisible con el objeto, y su estrella; los ninja de los pisos, que sacan dos colores de un solo sprite enseñando cuerpo y detalles por turnos; la flecha, las bolas, las estrellas y lo que cae, todo montado desde las propias tablas y el código del cartucho. Cotejado con openMSX: el ninja idéntico en 19.464 cuadros, 0 distintos. Y una corrección: el tipo 8 tira bolas, no flechas; la flecha es el tipo 1.</summary>
   </entry>
 </feed>

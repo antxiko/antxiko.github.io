@@ -4901,6 +4901,14 @@ MSXON = [
 # nueva a vieja, una clave no existe o un proyecto se queda sin novedad.
 # --------------------------------------------------------------------------
 NOVEDADES = [
+    dict(id="exoidez-fallos", clase="actualiza", clave="exoidez",
+         fecha="2026-11-13T18:00:00+01:00",
+         enlace="https://antxiko.github.io/ExoideZ-disassembly/SECRETS-AND-BUGS.html",
+         titulo=dict(en='Exoide-Z: secrets and bugs',
+                     es='Exoide-Z: secretos y fallos'),
+         resumen=dict(
+             en='A new page with the hunt through the code: keys 0-7 at power-on that make the ship crash-proof, the controller chosen by the title button, and a seven-digit score that the in-game scoreboard shows with six, so a million reads 000000.',
+             es='Una p&aacute;gina nueva con la caza por el c&oacute;digo: las teclas 0-7 al encender que hacen la nave invulnerable, el mando que elige el bot&oacute;n del t&iacute;tulo, y unos puntos de siete cifras que el marcador de la partida ense&ntilde;a con seis: un mill&oacute;n sale 000000.')),
     dict(id="iganinpouchou-fallos", clase="actualiza", clave="iganinpouchou",
          fecha="2026-11-13T17:00:00+01:00",
          enlace="https://antxiko.github.io/IgaNinpouchou-disassembly/SECRETS-AND-BUGS.html",
