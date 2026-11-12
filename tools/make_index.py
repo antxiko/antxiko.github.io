@@ -4901,6 +4901,14 @@ MSXON = [
 # nueva a vieja, una clave no existe o un proyecto se queda sin novedad.
 # --------------------------------------------------------------------------
 NOVEDADES = [
+    dict(id="moai-fallos", clase="actualiza", clave="moai",
+         fecha="2026-11-14T09:00:00+01:00",
+         enlace="https://antxiko.github.io/MoaiNoHihou-disassembly/SECRETS-AND-BUGS.html",
+         titulo=dict(en='Moai no Hihou: secrets and bugs',
+                     es='Moai no Hihou: secretos y fallos'),
+         resumen=dict(
+             en='A new page with the hunt through the code: the stage selector and the other hidden keys in one table, crushed enemies that score with bytes read from the middle of the code (up to 16,400 instead of 100-500, run with the game routine), a score with no cap, and the cursor keys and joystick added.',
+             es='Una p&aacute;gina nueva con la caza por el c&oacute;digo: el selector de fase y las otras teclas escondidas en una tabla, enemigos aplastados que punt&uacute;an con bytes le&iacute;dos en medio del c&oacute;digo (hasta 16.400 en vez de 100-500, ejecutado con la rutina del juego), unos puntos sin tope, y los cursores y el mando sumados.')),
     dict(id="koneko-fallos", clase="actualiza", clave="koneko",
          fecha="2026-11-13T23:00:00+01:00",
          enlace="https://antxiko.github.io/KonekoNoDaibouken-disassembly/SECRETS-AND-BUGS.html",
