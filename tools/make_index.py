@@ -4901,6 +4901,14 @@ MSXON = [
 # nueva a vieja, una clave no existe o un proyecto se queda sin novedad.
 # --------------------------------------------------------------------------
 NOVEDADES = [
+    dict(id="issunboushi-sprites", clase="actualiza", clave="issunboushi",
+         fecha="2026-11-13T09:00:00+01:00",
+         enlace="https://antxiko.github.io/IssunBoushi-disassembly/THE-SPRITES.html",
+         titulo=dict(en='Issun-boushi no Donnamondai: the sprites, put together from the ROM',
+                     es='Issun-boushi no Donnamondai: los sprites, montados desde la ROM'),
+         resumen=dict(
+             en="A new page: Issun-boushi to each side on land, with the copy of his drawings turned the other way that the game makes, and on the river in his rocking bowl, every enemy with its two sprites and the character of the end, all built from the cartridge's own tables and code. Checked against openMSX: Issun-boushi identical on 26,364 frames and the bowl on 15,967.",
+             es='Una p&aacute;gina nueva: Issun-boushi a cada lado en tierra, con la copia de sus dibujos vuelta al otro lado que hace el juego, y en el r&iacute;o en su cuenco que se mece, cada enemigo con sus dos sprites y el personaje del final, todo montado desde las propias tablas y el c&oacute;digo del cartucho. Cotejado con openMSX: Issun-boushi id&eacute;ntico en 26.364 cuadros y el cuenco en 15.967.')),
     dict(id="youkaiyashiki-sprites", clase="actualiza", clave="youkaiyashiki",
          fecha="2026-11-13T08:00:00+01:00",
          enlace="https://antxiko.github.io/YoukaiYashiki-disassembly/THE-SPRITES.html",

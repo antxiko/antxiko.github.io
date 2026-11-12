@@ -6,8 +6,16 @@
   <link rel="self" type="application/atom+xml" href="https://antxiko.github.io/feed.xml"/>
   <link rel="alternate" type="text/html" hreflang="en" href="https://antxiko.github.io/"/>
   <link rel="alternate" type="application/atom+xml" hreflang="es" href="https://antxiko.github.io/es/feed.xml"/>
-  <updated>2026-11-13T08:00:00+01:00</updated>
+  <updated>2026-11-13T09:00:00+01:00</updated>
   <author><name>antxiko</name><uri>https://github.com/antxiko</uri></author>
+  <entry>
+    <id>tag:antxiko.github.io,2026:novedad/en/issunboushi-sprites</id>
+    <title>Issun-boushi no Donnamondai: the sprites, put together from the ROM</title>
+    <link rel="alternate" type="text/html" href="https://antxiko.github.io/IssunBoushi-disassembly/THE-SPRITES.html"/>
+    <published>2026-11-13T09:00:00+01:00</published>
+    <updated>2026-11-13T09:00:00+01:00</updated>
+    <summary type="text">A new page: Issun-boushi to each side on land, with the copy of his drawings turned the other way that the game makes, and on the river in his rocking bowl, every enemy with its two sprites and the character of the end, all built from the cartridge's own tables and code. Checked against openMSX: Issun-boushi identical on 26,364 frames and the bowl on 15,967.</summary>
+  </entry>
   <entry>
     <id>tag:antxiko.github.io,2026:novedad/en/youkaiyashiki-sprites</id>
     <title>Youkai Yashiki: the sprites, put together from the ROM</title>
@@ -159,13 +167,5 @@
     <published>2026-11-11T20:00:00+01:00</published>
     <updated>2026-11-11T20:00:00+01:00</updated>
     <summary type="text">Fourteen MSX cartridges by Casio, from 1984 to 1986: Ski Command, Exciting Baseball, Exciting Jockey, Pachinko U.F.O., Car Fighter, Ice World, Iga Ninpouchou, Exoide-Z, Shindobaddo Nanatsu no Bouken, Eagle Fighter, Exoide-Z Area 5, Iga Ninpouchou Mangetsu-jou no Tatakai, Koneko no Daibouken and Moai no Hihou. Each one 100% explained, reassembled byte for byte and commented to 40% or more; the titles from running the ROM, checked against openMSX; the games played in GIF in openMSX; the music from each cartridge's own sound engine, checked against openMSX frame by frame.</summary>
-  </entry>
-  <entry>
-    <id>tag:antxiko.github.io,2026:novedad/en/fred-ant-attack-msx</id>
-    <title>Fred and Ant Attack come to the MSX</title>
-    <link rel="alternate" type="text/html" href="https://antxiko.github.io/Fred-MSX1/"/>
-    <published>2026-11-03T13:00:00+01:00</published>
-    <updated>2026-11-03T13:00:00+01:00</updated>
-    <summary type="text">Two Quicksilva Spectrum games converted into 64 KB MSX cartridges: native SCREEN 2 rendering, keyboard and PSG layers, disassemblies, reproducible IPS patches and no game image distributed. Araubi completed both games from beginning to end.</summary>
   </entry>
 </feed>
