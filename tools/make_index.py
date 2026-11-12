@@ -4901,6 +4901,14 @@ MSXON = [
 # nueva a vieja, una clave no existe o un proyecto se queda sin novedad.
 # --------------------------------------------------------------------------
 NOVEDADES = [
+    dict(id="sealofhades-mapas", clase="actualiza", clave="sealofhades",
+         fecha="2026-11-14T22:00:00+01:00",
+         enlace="https://antxiko.github.io/SealOfHades-disassembly/THE-SCENES.html",
+         titulo=dict(en='The Seal of Hades: the maps of the six scenes',
+                     es='The Seal of Hades: los mapas de las seis escenas'),
+         resumen=dict(
+             en='The eleven screens of every scene, bottom to top, built by running the ROM with each screen tile set, and checked against the recording through the scrolling window.',
+             es='Las once pantallas de cada escena, de abajo arriba, montadas ejecutando la ROM con el juego de casillas de cada pantalla, y cotejadas con la grabaci&oacute;n a trav&eacute;s de la ventana que corre.')),
     dict(id="igamangetsu-mapas", clase="actualiza", clave="igamangetsu",
          fecha="2026-11-14T21:00:00+01:00",
          enlace="https://antxiko.github.io/IgaNinpouchouMangetsujou-disassembly/THE-STAGES.html",
