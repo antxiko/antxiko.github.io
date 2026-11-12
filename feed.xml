@@ -6,8 +6,16 @@
   <link rel="self" type="application/atom+xml" href="https://antxiko.github.io/feed.xml"/>
   <link rel="alternate" type="text/html" hreflang="en" href="https://antxiko.github.io/"/>
   <link rel="alternate" type="application/atom+xml" hreflang="es" href="https://antxiko.github.io/es/feed.xml"/>
-  <updated>2026-11-14T21:00:00+01:00</updated>
+  <updated>2026-11-14T22:00:00+01:00</updated>
   <author><name>antxiko</name><uri>https://github.com/antxiko</uri></author>
+  <entry>
+    <id>tag:antxiko.github.io,2026:novedad/en/sealofhades-mapas</id>
+    <title>The Seal of Hades: the maps of the six scenes</title>
+    <link rel="alternate" type="text/html" href="https://antxiko.github.io/SealOfHades-disassembly/THE-SCENES.html"/>
+    <published>2026-11-14T22:00:00+01:00</published>
+    <updated>2026-11-14T22:00:00+01:00</updated>
+    <summary type="text">The eleven screens of every scene, bottom to top, built by running the ROM with each screen tile set, and checked against the recording through the scrolling window.</summary>
+  </entry>
   <entry>
     <id>tag:antxiko.github.io,2026:novedad/en/igamangetsu-mapas</id>
     <title>Iga Ninpouchou Mangetsu-jou: the maps of the seven stages</title>
@@ -159,13 +167,5 @@
     <published>2026-11-13T18:00:00+01:00</published>
     <updated>2026-11-13T18:00:00+01:00</updated>
     <summary type="text">A new page with the hunt through the code: keys 0-7 at power-on that make the ship crash-proof, the controller chosen by the title button, and a seven-digit score that the in-game scoreboard shows with six, so a million reads 000000.</summary>
-  </entry>
-  <entry>
-    <id>tag:antxiko.github.io,2026:novedad/en/iganinpouchou-fallos</id>
-    <title>Iga Ninpouchou: secrets and bugs</title>
-    <link rel="alternate" type="text/html" href="https://antxiko.github.io/IgaNinpouchou-disassembly/SECRETS-AND-BUGS.html"/>
-    <published>2026-11-13T17:00:00+01:00</published>
-    <updated>2026-11-13T17:00:00+01:00</updated>
-    <summary type="text">A new page with the hunt through the code: no hidden keys, the score cap that leaves 990,000, and the cursor keys and joystick that, used at once, send the ninja the other way (right and down go left).</summary>
   </entry>
 </feed>
