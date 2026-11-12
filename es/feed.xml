@@ -6,8 +6,16 @@
   <link rel="self" type="application/atom+xml" href="https://antxiko.github.io/es/feed.xml"/>
   <link rel="alternate" type="text/html" hreflang="es" href="https://antxiko.github.io/es/"/>
   <link rel="alternate" type="application/atom+xml" hreflang="en" href="https://antxiko.github.io/feed.xml"/>
-  <updated>2026-11-13T12:00:00+01:00</updated>
+  <updated>2026-11-13T13:00:00+01:00</updated>
   <author><name>antxiko</name><uri>https://github.com/antxiko</uri></author>
+  <entry>
+    <id>tag:antxiko.github.io,2026:novedad/es/excitingjockey-fallos</id>
+    <title>Exciting Jockey: secretos y fallos</title>
+    <link rel="alternate" type="text/html" href="https://antxiko.github.io/ExcitingJockey-disassembly/SECRETS-AND-BUGS.html"/>
+    <published>2026-11-13T13:00:00+01:00</published>
+    <updated>2026-11-13T13:00:00+01:00</updated>
+    <summary type="text">Una página nueva con la caza por el código: ninguna tecla escondida, el pago que pierde un acarreo y deja el dinero a cero pasados los 999.900, y la cola del látigo que repite y pierde latigazos con más de ocho, las dos cosas ejecutadas y medidas.</summary>
+  </entry>
   <entry>
     <id>tag:antxiko.github.io,2026:novedad/es/excitingbaseball-fallos</id>
     <title>Exciting Baseball: secretos y fallos</title>
@@ -159,13 +167,5 @@
     <published>2026-11-12T18:00:00+01:00</published>
     <updated>2026-11-12T18:00:00+01:00</updated>
     <summary type="text">Una página nueva: los diez dibujos del caballo en los cuatro colores, sus cuatro animaciones (galope, salto, caída y en el suelo) al ritmo al que las recorre el código, y el jinete, todo montado desde las propias tablas del cartucho. Cotejado con openMSX: la tabla de dibujos idéntica en 44.335 cuadros y los caballos en 62.625.</summary>
-  </entry>
-  <entry>
-    <id>tag:antxiko.github.io,2026:novedad/es/excitingbaseball-sprites</id>
-    <title>Exciting Baseball: los sprites, montados desde la ROM</title>
-    <link rel="alternate" type="text/html" href="https://antxiko.github.io/ExcitingBaseball-disassembly/THE-SPRITES.html"/>
-    <published>2026-11-12T17:00:00+01:00</published>
-    <updated>2026-11-12T17:00:00+01:00</updated>
-    <summary type="text">Una página nueva: todos los dibujos de los sprites, con los del zurdo girados al vuelo, y el bateador en su swing cuadro a cuadro, todo montado desde las propias tablas del cartucho. Cotejado con openMSX: la tabla de dibujos idéntica en 11.922 cuadros y el bateador en 5.989, con 0 distintos.</summary>
   </entry>
 </feed>
