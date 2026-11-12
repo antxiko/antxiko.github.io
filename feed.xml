@@ -6,8 +6,16 @@
   <link rel="self" type="application/atom+xml" href="https://antxiko.github.io/feed.xml"/>
   <link rel="alternate" type="text/html" hreflang="en" href="https://antxiko.github.io/"/>
   <link rel="alternate" type="application/atom+xml" hreflang="es" href="https://antxiko.github.io/es/feed.xml"/>
-  <updated>2026-11-13T11:00:00+01:00</updated>
+  <updated>2026-11-13T12:00:00+01:00</updated>
   <author><name>antxiko</name><uri>https://github.com/antxiko</uri></author>
+  <entry>
+    <id>tag:antxiko.github.io,2026:novedad/en/excitingbaseball-fallos</id>
+    <title>Exciting Baseball: secrets and bugs</title>
+    <link rel="alternate" type="text/html" href="https://antxiko.github.io/ExcitingBaseball-disassembly/SECRETS-AND-BUGS.html"/>
+    <published>2026-11-13T12:00:00+01:00</published>
+    <updated>2026-11-13T12:00:00+01:00</updated>
+    <summary type="text">A new page with the hunt through the code: every key the game reads and none hidden, the music bug that clears a vibrato in the BIOS instead of in the channel, and the scoreboard and the end of the game run and checked.</summary>
+  </entry>
   <entry>
     <id>tag:antxiko.github.io,2026:novedad/en/skicommand-fallos</id>
     <title>Ski Command: secrets and bugs</title>
@@ -159,13 +167,5 @@
     <published>2026-11-12T17:00:00+01:00</published>
     <updated>2026-11-12T17:00:00+01:00</updated>
     <summary type="text">A new page: every sprite drawing, with the left-hander's flipped on the fly, and the batter through his swing frame by frame, all built from the cartridge's own tables. Checked against openMSX: the drawing table identical on 11,922 frames and the batter on 5,989 with 0 different.</summary>
-  </entry>
-  <entry>
-    <id>tag:antxiko.github.io,2026:novedad/en/skicommand-sprites</id>
-    <title>Ski Command: the sprites, put together from the ROM</title>
-    <link rel="alternate" type="text/html" href="https://antxiko.github.io/SkiCommand-disassembly/THE-SPRITES.html"/>
-    <published>2026-11-12T16:00:00+01:00</published>
-    <updated>2026-11-12T16:00:00+01:00</updated>
-    <summary type="text">A new page: the skier's eleven drawings, the seven enemies in their four sizes and knocked down, the flying machine in its three colours and hit, and the course objects, all built from the cartridge's own tables; the jump and the crash frame by frame as the code does them. Checked against openMSX: the sprite drawing table identical on 17,989 frames, the skier and the machine with 0 different frames.</summary>
   </entry>
 </feed>

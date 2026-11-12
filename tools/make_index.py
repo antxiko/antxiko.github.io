@@ -4901,6 +4901,14 @@ MSXON = [
 # nueva a vieja, una clave no existe o un proyecto se queda sin novedad.
 # --------------------------------------------------------------------------
 NOVEDADES = [
+    dict(id="excitingbaseball-fallos", clase="actualiza", clave="excitingbaseball",
+         fecha="2026-11-13T12:00:00+01:00",
+         enlace="https://antxiko.github.io/ExcitingBaseball-disassembly/SECRETS-AND-BUGS.html",
+         titulo=dict(en='Exciting Baseball: secrets and bugs',
+                     es='Exciting Baseball: secretos y fallos'),
+         resumen=dict(
+             en='A new page with the hunt through the code: every key the game reads and none hidden, the music bug that clears a vibrato in the BIOS instead of in the channel, and the scoreboard and the end of the game run and checked.',
+             es='Una p&aacute;gina nueva con la caza por el c&oacute;digo: todas las teclas que lee el juego y ninguna escondida, el fallo de la m&uacute;sica que borra un vibrato en la BIOS en vez de en el canal, y el marcador y el final de la partida ejecutados y comprobados.')),
     dict(id="skicommand-fallos", clase="actualiza", clave="skicommand",
          fecha="2026-11-13T11:00:00+01:00",
          enlace="https://antxiko.github.io/SkiCommand-disassembly/SECRETS-AND-BUGS.html",
