@@ -6,8 +6,24 @@
   <link rel="self" type="application/atom+xml" href="https://antxiko.github.io/es/feed.xml"/>
   <link rel="alternate" type="text/html" hreflang="es" href="https://antxiko.github.io/es/"/>
   <link rel="alternate" type="application/atom+xml" hreflang="en" href="https://antxiko.github.io/feed.xml"/>
-  <updated>2026-11-14T16:00:00+01:00</updated>
+  <updated>2026-11-14T18:00:00+01:00</updated>
   <author><name>antxiko</name><uri>https://github.com/antxiko</uri></author>
+  <entry>
+    <id>tag:antxiko.github.io,2026:novedad/es/gameland-textos</id>
+    <title>Game Land: los textos</title>
+    <link rel="alternate" type="text/html" href="https://antxiko.github.io/GameLand-disassembly/THE-TEXTS.html"/>
+    <published>2026-11-14T18:00:00+01:00</published>
+    <updated>2026-11-14T18:00:00+01:00</updated>
+    <summary type="text">Una página nueva con los 51 menús, los 47 avisos y los rótulos del programa, sacados directamente de la ROM y traducidos; las flechas de los menús resultan ser dibujos del propio cartucho.</summary>
+  </entry>
+  <entry>
+    <id>tag:antxiko.github.io,2026:novedad/es/issunboushi-textos</id>
+    <title>Issun-boushi no Donnamondai: los textos</title>
+    <link rel="alternate" type="text/html" href="https://antxiko.github.io/IssunBoushi-disassembly/THE-TEXTS.html"/>
+    <published>2026-11-14T17:00:00+01:00</published>
+    <updated>2026-11-14T17:00:00+01:00</updated>
+    <summary type="text">Una página nueva con todos los textos de la ROM, dónde los escribe el código y su traducción, de la presentación de CASIO al どんなもんだい del final.</summary>
+  </entry>
   <entry>
     <id>tag:antxiko.github.io,2026:novedad/es/casioworldopen-swing</id>
     <title>Casio World Open: el swing, jugado</title>
@@ -151,21 +167,5 @@
     <published>2026-11-13T14:00:00+01:00</published>
     <updated>2026-11-13T14:00:00+01:00</updated>
     <summary type="text">Una página nueva con la caza por el código: una bola que entra después de la última salva la partida (pero solo si paga 10 justas), el GAME OVER con 9.000 bolas, una espera que no vuelve a cero tras salvarse, y la casilla que se tomó por la fuerza resulta ser la bandeja de bolas.</summary>
-  </entry>
-  <entry>
-    <id>tag:antxiko.github.io,2026:novedad/es/excitingjockey-fallos</id>
-    <title>Exciting Jockey: secretos y fallos</title>
-    <link rel="alternate" type="text/html" href="https://antxiko.github.io/ExcitingJockey-disassembly/SECRETS-AND-BUGS.html"/>
-    <published>2026-11-13T13:00:00+01:00</published>
-    <updated>2026-11-13T13:00:00+01:00</updated>
-    <summary type="text">Una página nueva con la caza por el código: ninguna tecla escondida, el pago que pierde un acarreo y deja el dinero a cero pasados los 999.900, y la cola del látigo que repite y pierde latigazos con más de ocho, las dos cosas ejecutadas y medidas.</summary>
-  </entry>
-  <entry>
-    <id>tag:antxiko.github.io,2026:novedad/es/excitingbaseball-fallos</id>
-    <title>Exciting Baseball: secretos y fallos</title>
-    <link rel="alternate" type="text/html" href="https://antxiko.github.io/ExcitingBaseball-disassembly/SECRETS-AND-BUGS.html"/>
-    <published>2026-11-13T12:00:00+01:00</published>
-    <updated>2026-11-13T12:00:00+01:00</updated>
-    <summary type="text">Una página nueva con la caza por el código: todas las teclas que lee el juego y ninguna escondida, el fallo de la música que borra un vibrato en la BIOS en vez de en el canal, y el marcador y el final de la partida ejecutados y comprobados.</summary>
   </entry>
 </feed>
