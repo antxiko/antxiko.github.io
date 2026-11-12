@@ -6,8 +6,16 @@
   <link rel="self" type="application/atom+xml" href="https://antxiko.github.io/es/feed.xml"/>
   <link rel="alternate" type="text/html" hreflang="es" href="https://antxiko.github.io/es/"/>
   <link rel="alternate" type="application/atom+xml" hreflang="en" href="https://antxiko.github.io/feed.xml"/>
-  <updated>2026-11-14T22:00:00+01:00</updated>
+  <updated>2026-11-14T23:00:00+01:00</updated>
   <author><name>antxiko</name><uri>https://github.com/antxiko</uri></author>
+  <entry>
+    <id>tag:antxiko.github.io,2026:novedad/es/youkaiyashiki-planos</id>
+    <title>Youkai Yashiki: los planos de los lugares</title>
+    <link rel="alternate" type="text/html" href="https://antxiko.github.io/YoukaiYashiki-disassembly/THE-PLACES.html"/>
+    <published>2026-11-14T23:00:00+01:00</published>
+    <updated>2026-11-14T23:00:00+01:00</updated>
+    <summary type="text">Todas las pantallas de cada lugar en su sitio del plano, montadas ejecutando la ROM, con un sexto lugar al que llevan cinco puertas y que ninguna grabación había visitado, y cuatro pantallas que no están en ningún plano.</summary>
+  </entry>
   <entry>
     <id>tag:antxiko.github.io,2026:novedad/es/sealofhades-mapas</id>
     <title>The Seal of Hades: los mapas de las seis escenas</title>
@@ -159,13 +167,5 @@
     <published>2026-11-13T19:00:00+01:00</published>
     <updated>2026-11-13T19:00:00+01:00</updated>
     <summary type="text">Una página nueva con la caza por el código: las teclas al encender, los mandos, y un fallo ejecutado con la rutina del juego: pasado el millón, el récord nuevo borra la cifra alta de los dos, y puntos y récord caen a 400.</summary>
-  </entry>
-  <entry>
-    <id>tag:antxiko.github.io,2026:novedad/es/exoidez-fallos</id>
-    <title>Exoide-Z: secretos y fallos</title>
-    <link rel="alternate" type="text/html" href="https://antxiko.github.io/ExoideZ-disassembly/SECRETS-AND-BUGS.html"/>
-    <published>2026-11-13T18:00:00+01:00</published>
-    <updated>2026-11-13T18:00:00+01:00</updated>
-    <summary type="text">Una página nueva con la caza por el código: las teclas 0-7 al encender que hacen la nave invulnerable, el mando que elige el botón del título, y unos puntos de siete cifras que el marcador de la partida enseña con seis: un millón sale 000000.</summary>
   </entry>
 </feed>

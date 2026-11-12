@@ -4901,6 +4901,14 @@ MSXON = [
 # nueva a vieja, una clave no existe o un proyecto se queda sin novedad.
 # --------------------------------------------------------------------------
 NOVEDADES = [
+    dict(id="youkaiyashiki-planos", clase="actualiza", clave="youkaiyashiki",
+         fecha="2026-11-14T23:00:00+01:00",
+         enlace="https://antxiko.github.io/YoukaiYashiki-disassembly/THE-PLACES.html",
+         titulo=dict(en='Youkai Yashiki: the plans of the places',
+                     es='Youkai Yashiki: los planos de los lugares'),
+         resumen=dict(
+             en='Every screen of every place in its spot on the plan, built by running the ROM, including a sixth place reached by five doors that no recording had visited, and four screens that are on no plan.',
+             es='Todas las pantallas de cada lugar en su sitio del plano, montadas ejecutando la ROM, con un sexto lugar al que llevan cinco puertas y que ninguna grabaci&oacute;n hab&iacute;a visitado, y cuatro pantallas que no est&aacute;n en ning&uacute;n plano.')),
     dict(id="sealofhades-mapas", clase="actualiza", clave="sealofhades",
          fecha="2026-11-14T22:00:00+01:00",
          enlace="https://antxiko.github.io/SealOfHades-disassembly/THE-SCENES.html",
