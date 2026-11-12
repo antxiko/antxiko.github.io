@@ -6,8 +6,16 @@
   <link rel="self" type="application/atom+xml" href="https://antxiko.github.io/feed.xml"/>
   <link rel="alternate" type="text/html" hreflang="en" href="https://antxiko.github.io/"/>
   <link rel="alternate" type="application/atom+xml" hreflang="es" href="https://antxiko.github.io/es/feed.xml"/>
-  <updated>2026-11-14T15:00:00+01:00</updated>
+  <updated>2026-11-14T16:00:00+01:00</updated>
   <author><name>antxiko</name><uri>https://github.com/antxiko</uri></author>
+  <entry>
+    <id>tag:antxiko.github.io,2026:novedad/en/casioworldopen-swing</id>
+    <title>Casio World Open: the swing, played</title>
+    <link rel="alternate" type="text/html" href="https://antxiko.github.io/CasioWorldOpen-disassembly/THE-3D-VIEW.html"/>
+    <published>2026-11-14T16:00:00+01:00</published>
+    <updated>2026-11-14T16:00:00+01:00</updated>
+    <summary type="text">The golfer swing recorded in openMSX: the frame changes every 8 frames, and the top of the backswing only shows if the power goes past 0x40. Two GIFs on the front page, every recorded frame checked against the pieces the ROM gives for it.</summary>
+  </entry>
   <entry>
     <id>tag:antxiko.github.io,2026:novedad/en/koneko-escondidas</id>
     <title>Koneko no Daibouken: the hidden screens, played</title>
@@ -159,13 +167,5 @@
     <published>2026-11-13T12:00:00+01:00</published>
     <updated>2026-11-13T12:00:00+01:00</updated>
     <summary type="text">A new page with the hunt through the code: every key the game reads and none hidden, the music bug that clears a vibrato in the BIOS instead of in the channel, and the scoreboard and the end of the game run and checked.</summary>
-  </entry>
-  <entry>
-    <id>tag:antxiko.github.io,2026:novedad/en/skicommand-fallos</id>
-    <title>Ski Command: secrets and bugs</title>
-    <link rel="alternate" type="text/html" href="https://antxiko.github.io/SkiCommand-disassembly/SECRETS-AND-BUGS.html"/>
-    <published>2026-11-13T11:00:00+01:00</published>
-    <updated>2026-11-13T11:00:00+01:00</updated>
-    <summary type="text">A new page with the hunt through the code: no hidden keys or unused screens, and a bug checked by running the game's own routine: past 999,900 points the score loses its first figure and shows 000000, while the high score stays at 999,900.</summary>
   </entry>
 </feed>
