@@ -4901,6 +4901,14 @@ MSXON = [
 # nueva a vieja, una clave no existe o un proyecto se queda sin novedad.
 # --------------------------------------------------------------------------
 NOVEDADES = [
+    dict(id="gameland-sprites", clase="actualiza", clave="gameland",
+         fecha="2026-11-13T10:00:00+01:00",
+         enlace="https://antxiko.github.io/GameLand-disassembly/THE-SPRITES.html",
+         titulo=dict(en="Game Land: the program's own sprites, from the ROM",
+                     es='Game Land: los sprites del propio programa, desde la ROM'),
+         resumen=dict(
+             en="A new page: Game Land lets you draw your own characters, so the only sprites in the ROM are the program's own, the cursors of its editors, a pattern and the clefs of the music editor, drawn here by running its own routine. Checked against openMSX: identical on 27,043 frames, 0 different.",
+             es='Una p&aacute;gina nueva: Game Land deja dibujar los personajes, as&iacute; que los &uacute;nicos sprites de la ROM son los del propio programa, los cursores de sus editores, una trama y las claves del editor de m&uacute;sica, pintados aqu&iacute; ejecutando su propia rutina. Cotejado con openMSX: id&eacute;nticos en 27.043 cuadros, 0 distintos.')),
     dict(id="issunboushi-sprites", clase="actualiza", clave="issunboushi",
          fecha="2026-11-13T09:00:00+01:00",
          enlace="https://antxiko.github.io/IssunBoushi-disassembly/THE-SPRITES.html",
