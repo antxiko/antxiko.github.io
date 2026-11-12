@@ -6,8 +6,16 @@
   <link rel="self" type="application/atom+xml" href="https://antxiko.github.io/es/feed.xml"/>
   <link rel="alternate" type="text/html" hreflang="es" href="https://antxiko.github.io/es/"/>
   <link rel="alternate" type="application/atom+xml" hreflang="en" href="https://antxiko.github.io/feed.xml"/>
-  <updated>2026-11-14T14:00:00+01:00</updated>
+  <updated>2026-11-14T15:00:00+01:00</updated>
   <author><name>antxiko</name><uri>https://github.com/antxiko</uri></author>
+  <entry>
+    <id>tag:antxiko.github.io,2026:novedad/es/koneko-escondidas</id>
+    <title>Koneko no Daibouken: las pantallas escondidas, jugadas</title>
+    <link rel="alternate" type="text/html" href="https://antxiko.github.io/KonekoNoDaibouken-disassembly/SECRETS-AND-BUGS.html"/>
+    <published>2026-11-14T15:00:00+01:00</published>
+    <updated>2026-11-14T15:00:00+01:00</updated>
+    <summary type="text">Las dos pantallas de detrás de la casita de la meta, ahora en openMSX: un gancho en el cambio de pantalla manda al gatito más allá de la casita en la 2-2 y la 3-3, y el juego mete el tronco del prado y la cascada con sus enemigos. Dos GIF nuevos, cotejados con las pantallas montadas desde la ROM.</summary>
+  </entry>
   <entry>
     <id>tag:antxiko.github.io,2026:novedad/es/gameland-fallos</id>
     <title>Game Land: secretos y fallos</title>
@@ -159,13 +167,5 @@
     <published>2026-11-13T11:00:00+01:00</published>
     <updated>2026-11-13T11:00:00+01:00</updated>
     <summary type="text">Una página nueva con la caza por el código: ni teclas escondidas ni pantallas sin usar, y un fallo comprobado ejecutando la propia rutina del juego: pasados los 999.900 puntos el marcador pierde la primera cifra y dice 000000, mientras el récord se queda en 999.900.</summary>
-  </entry>
-  <entry>
-    <id>tag:antxiko.github.io,2026:novedad/es/gameland-sprites</id>
-    <title>Game Land: los sprites del propio programa, desde la ROM</title>
-    <link rel="alternate" type="text/html" href="https://antxiko.github.io/GameLand-disassembly/THE-SPRITES.html"/>
-    <published>2026-11-13T10:00:00+01:00</published>
-    <updated>2026-11-13T10:00:00+01:00</updated>
-    <summary type="text">Una página nueva: Game Land deja dibujar los personajes, así que los únicos sprites de la ROM son los del propio programa, los cursores de sus editores, una trama y las claves del editor de música, pintados aquí ejecutando su propia rutina. Cotejado con openMSX: idénticos en 27.043 cuadros, 0 distintos.</summary>
   </entry>
 </feed>

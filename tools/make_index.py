@@ -4901,6 +4901,14 @@ MSXON = [
 # nueva a vieja, una clave no existe o un proyecto se queda sin novedad.
 # --------------------------------------------------------------------------
 NOVEDADES = [
+    dict(id="koneko-escondidas", clase="actualiza", clave="koneko",
+         fecha="2026-11-14T15:00:00+01:00",
+         enlace="https://antxiko.github.io/KonekoNoDaibouken-disassembly/SECRETS-AND-BUGS.html",
+         titulo=dict(en='Koneko no Daibouken: the hidden screens, played',
+                     es='Koneko no Daibouken: las pantallas escondidas, jugadas'),
+         resumen=dict(
+             en='The two screens behind the goal house, now in openMSX: a hook on the screen change sends the kitten past the house on 2-2 and 3-3, and the game scrolls in the log in the meadow and the waterfall with their enemies. Two new GIFs, checked against the screens built from the ROM.',
+             es='Las dos pantallas de detr&aacute;s de la casita de la meta, ahora en openMSX: un gancho en el cambio de pantalla manda al gatito m&aacute;s all&aacute; de la casita en la 2-2 y la 3-3, y el juego mete el tronco del prado y la cascada con sus enemigos. Dos GIF nuevos, cotejados con las pantallas montadas desde la ROM.')),
     dict(id="gameland-fallos", clase="actualiza", clave="gameland",
          fecha="2026-11-14T14:00:00+01:00",
          enlace="https://antxiko.github.io/GameLand-disassembly/SECRETS-AND-BUGS.html",

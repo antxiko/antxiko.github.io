@@ -6,8 +6,16 @@
   <link rel="self" type="application/atom+xml" href="https://antxiko.github.io/feed.xml"/>
   <link rel="alternate" type="text/html" hreflang="en" href="https://antxiko.github.io/"/>
   <link rel="alternate" type="application/atom+xml" hreflang="es" href="https://antxiko.github.io/es/feed.xml"/>
-  <updated>2026-11-14T14:00:00+01:00</updated>
+  <updated>2026-11-14T15:00:00+01:00</updated>
   <author><name>antxiko</name><uri>https://github.com/antxiko</uri></author>
+  <entry>
+    <id>tag:antxiko.github.io,2026:novedad/en/koneko-escondidas</id>
+    <title>Koneko no Daibouken: the hidden screens, played</title>
+    <link rel="alternate" type="text/html" href="https://antxiko.github.io/KonekoNoDaibouken-disassembly/SECRETS-AND-BUGS.html"/>
+    <published>2026-11-14T15:00:00+01:00</published>
+    <updated>2026-11-14T15:00:00+01:00</updated>
+    <summary type="text">The two screens behind the goal house, now in openMSX: a hook on the screen change sends the kitten past the house on 2-2 and 3-3, and the game scrolls in the log in the meadow and the waterfall with their enemies. Two new GIFs, checked against the screens built from the ROM.</summary>
+  </entry>
   <entry>
     <id>tag:antxiko.github.io,2026:novedad/en/gameland-fallos</id>
     <title>Game Land: secrets and bugs</title>
@@ -159,13 +167,5 @@
     <published>2026-11-13T11:00:00+01:00</published>
     <updated>2026-11-13T11:00:00+01:00</updated>
     <summary type="text">A new page with the hunt through the code: no hidden keys or unused screens, and a bug checked by running the game's own routine: past 999,900 points the score loses its first figure and shows 000000, while the high score stays at 999,900.</summary>
-  </entry>
-  <entry>
-    <id>tag:antxiko.github.io,2026:novedad/en/gameland-sprites</id>
-    <title>Game Land: the program's own sprites, from the ROM</title>
-    <link rel="alternate" type="text/html" href="https://antxiko.github.io/GameLand-disassembly/THE-SPRITES.html"/>
-    <published>2026-11-13T10:00:00+01:00</published>
-    <updated>2026-11-13T10:00:00+01:00</updated>
-    <summary type="text">A new page: Game Land lets you draw your own characters, so the only sprites in the ROM are the program's own, the cursors of its editors, a pattern and the clefs of the music editor, drawn here by running its own routine. Checked against openMSX: identical on 27,043 frames, 0 different.</summary>
   </entry>
 </feed>
