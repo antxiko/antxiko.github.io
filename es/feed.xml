@@ -6,8 +6,16 @@
   <link rel="self" type="application/atom+xml" href="https://antxiko.github.io/es/feed.xml"/>
   <link rel="alternate" type="text/html" hreflang="es" href="https://antxiko.github.io/es/"/>
   <link rel="alternate" type="application/atom+xml" hreflang="en" href="https://antxiko.github.io/feed.xml"/>
-  <updated>2026-11-12T22:00:00+01:00</updated>
+  <updated>2026-11-12T23:00:00+01:00</updated>
   <author><name>antxiko</name><uri>https://github.com/antxiko</uri></author>
+  <entry>
+    <id>tag:antxiko.github.io,2026:novedad/es/exoidez-sprites</id>
+    <title>Exoide-Z: los sprites, montados desde la ROM</title>
+    <link rel="alternate" type="text/html" href="https://antxiko.github.io/ExoideZ-disassembly/THE-SPRITES.html"/>
+    <published>2026-11-12T23:00:00+01:00</published>
+    <updated>2026-11-12T23:00:00+01:00</updated>
+    <summary type="text">Una página nueva: la nave y su sombra, el robot en que se convierte y sus puñetazos, las explosiones, los cinco enemigos en sus cuatro colores, las cápsulas y el robot grande de cada ronda, todo montado desde el cartucho, cuyas propias rutinas se ejecutan aquí para hacer los dibujos con sus espejos. Cotejado con openMSX: los enemigos idénticos en 45.717 cuadros y la nave en 22.246, 0 distintos.</summary>
+  </entry>
   <entry>
     <id>tag:antxiko.github.io,2026:novedad/es/iganinpouchou-sprites</id>
     <title>Iga Ninpouchou: los sprites, montados desde la ROM</title>
@@ -159,13 +167,5 @@
     <published>2026-10-29T22:22:00+01:00</published>
     <updated>2026-10-29T22:22:00+01:00</updated>
     <summary type="text">Por qué no está la demostración grabada, medido: la RAM al empezar cada cuadro de juego en openMSX contra el cartucho ejecutado. Hasta el cuadro 67 la partida es la misma y solo difiere lo que mueve la interrupción; en el 68 un disparo da en el MSX y aquí no.</summary>
-  </entry>
-  <entry>
-    <id>tag:antxiko.github.io,2026:novedad/es/spacemanbow</id>
-    <title>Space Manbow, desmontado</title>
-    <link rel="alternate" type="text/html" href="https://antxiko.github.io/SpaceManbow-disassembly/"/>
-    <published>2026-10-29T20:06:00+01:00</published>
-    <updated>2026-10-29T20:06:00+01:00</updated>
-    <summary type="text">El Space Manbow de Konami para MSX2 de 1989, sus 256 KB explicados al 100 % y comentados al 40,9 %. Las nueve fases dibujadas enteras desde la ROM con el motor del mapa del propio cartucho y cotejadas casilla a casilla; la nave y cada cápsula, los enemigos y los nueve jefes, la presentación y el final en GIF jugados por el cartucho al ritmo del MSX; los textos traducidos, 19 músicas del SCC de su propio motor cotejadas con openMSX, y las teclas de depuración y el grabador de demostraciones que se quedaron dentro.</summary>
   </entry>
 </feed>
