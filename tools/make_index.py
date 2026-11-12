@@ -4901,6 +4901,14 @@ MSXON = [
 # nueva a vieja, una clave no existe o un proyecto se queda sin novedad.
 # --------------------------------------------------------------------------
 NOVEDADES = [
+    dict(id="igamangetsu-mapas", clase="actualiza", clave="igamangetsu",
+         fecha="2026-11-14T21:00:00+01:00",
+         enlace="https://antxiko.github.io/IgaNinpouchouMangetsujou-disassembly/THE-STAGES.html",
+         titulo=dict(en='Iga Ninpouchou Mangetsu-jou: the maps of the seven stages',
+                     es='Iga Ninpouchou Mangetsu-jou: los mapas de las siete fases'),
+         resumen=dict(
+             en='The bridge, the courtyard, the four castle floors and the boss tower, every screen built by running the ROM and checked against the recording: 9,255 of 10,958 aligned frames come out identical.',
+             es='El puente, el patio, los cuatro pisos del castillo y la torre del jefe, cada pantalla montada ejecutando la ROM y cotejada con la grabaci&oacute;n: 9.255 de 10.958 cuadros alineados salen iguales.')),
     dict(id="moai-mapas", clase="actualiza", clave="moai",
          fecha="2026-11-14T20:00:00+01:00",
          enlace="https://antxiko.github.io/MoaiNoHihou-disassembly/THE-STAGES.html",
