@@ -4901,6 +4901,14 @@ MSXON = [
 # nueva a vieja, una clave no existe o un proyecto se queda sin novedad.
 # --------------------------------------------------------------------------
 NOVEDADES = [
+    dict(id="eaglefighter-sprites", clase="actualiza", clave="eaglefighter",
+         fecha="2026-11-13T01:00:00+01:00",
+         enlace="https://antxiko.github.io/EagleFighter-disassembly/THE-SPRITES.html",
+         titulo=dict(en='Eagle Fighter: the sprites, put together from the ROM',
+                     es='Eagle Fighter: los sprites, montados desde la ROM'),
+         resumen=dict(
+             en="A new page: the plane on the runway, in the air with the controller in its eight directions and crashed, the enemies of every type with their drawings to each side, the big one, the shots and the explosions, all built from the cartridge's own tables and code. Checked against openMSX: the enemies identical on 8,018 frames and the plane on 12,642.",
+             es='Una p&aacute;gina nueva: el avi&oacute;n en la pista, en el aire con la palanca en sus ocho direcciones y estrellado, los enemigos de cada tipo con sus dibujos hacia cada lado, el grande, los tiros y las explosiones, todo montado desde las propias tablas y el c&oacute;digo del cartucho. Cotejado con openMSX: los enemigos id&eacute;nticos en 8.018 cuadros y el avi&oacute;n en 12.642.')),
     dict(id="shindobaddo-sprites", clase="actualiza", clave="shindobaddo",
          fecha="2026-11-13T00:00:00+01:00",
          enlace="https://antxiko.github.io/Shindobaddo-disassembly/THE-SPRITES.html",
