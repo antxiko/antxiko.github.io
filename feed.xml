@@ -6,8 +6,16 @@
   <link rel="self" type="application/atom+xml" href="https://antxiko.github.io/feed.xml"/>
   <link rel="alternate" type="text/html" hreflang="en" href="https://antxiko.github.io/"/>
   <link rel="alternate" type="application/atom+xml" hreflang="es" href="https://antxiko.github.io/es/feed.xml"/>
-  <updated>2026-11-13T03:00:00+01:00</updated>
+  <updated>2026-11-13T04:00:00+01:00</updated>
   <author><name>antxiko</name><uri>https://github.com/antxiko</uri></author>
+  <entry>
+    <id>tag:antxiko.github.io,2026:novedad/en/koneko-sprites</id>
+    <title>Koneko no Daibouken: the sprites, put together from the ROM</title>
+    <link rel="alternate" type="text/html" href="https://antxiko.github.io/KonekoNoDaibouken-disassembly/THE-SPRITES.html"/>
+    <published>2026-11-13T04:00:00+01:00</published>
+    <updated>2026-11-13T04:00:00+01:00</updated>
+    <summary type="text">A new page: the kitten facing each way, hit, jumping, crouching and carrying something on its head, and every creature by its type, with the drawing table built for each scene, where the same number is a different creature, all from the cartridge's own tables and code. Checked against openMSX: the creatures identical on 150,573 frames and the kitten on 61,070.</summary>
+  </entry>
   <entry>
     <id>tag:antxiko.github.io,2026:novedad/en/igamangetsu-sprites</id>
     <title>Iga Ninpouchou: Mangetsu-jou: the sprites, put together from the ROM</title>
@@ -159,13 +167,5 @@
     <published>2026-10-31T11:48:10+01:00</published>
     <updated>2026-10-31T11:48:10+01:00</updated>
     <summary type="text">Juno First, made by Konami for Sony in 1983: its 8 KB 100% explained and commented to 41.8%. The waves, the capsule and its astronaut, the WARP, the special wave and the end of the wave played in GIF; the sprites, the ship and the wave picture from the cartridge, checked against openMSX; four tunes from its own engine, whole; and the code it shares with the other Konami cartridges in the series.</summary>
-  </entry>
-  <entry>
-    <id>tag:antxiko.github.io,2026:novedad/en/sparkie</id>
-    <title>Sparkie, taken apart</title>
-    <link rel="alternate" type="text/html" href="https://antxiko.github.io/Sparkie-disassembly/"/>
-    <published>2026-10-31T11:16:41+01:00</published>
-    <updated>2026-10-31T11:16:41+01:00</updated>
-    <summary type="text">Sparkie, made by Konami for Sony in 1983: its 8 KB 100% explained and commented to 40.7%. The four mazes drawn from the ROM and checked against openMSX byte by byte; the bucket and its wave, the shots, the burning blocks, the bonus, TIME OVER and GAME OVER played in GIF; the characters, the texts and the two tunes from its own sound engine; and a score that breaks past one million points.</summary>
   </entry>
 </feed>

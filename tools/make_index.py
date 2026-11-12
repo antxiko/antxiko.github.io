@@ -4901,6 +4901,14 @@ MSXON = [
 # nueva a vieja, una clave no existe o un proyecto se queda sin novedad.
 # --------------------------------------------------------------------------
 NOVEDADES = [
+    dict(id="koneko-sprites", clase="actualiza", clave="koneko",
+         fecha="2026-11-13T04:00:00+01:00",
+         enlace="https://antxiko.github.io/KonekoNoDaibouken-disassembly/THE-SPRITES.html",
+         titulo=dict(en='Koneko no Daibouken: the sprites, put together from the ROM',
+                     es='Koneko no Daibouken: los sprites, montados desde la ROM'),
+         resumen=dict(
+             en="A new page: the kitten facing each way, hit, jumping, crouching and carrying something on its head, and every creature by its type, with the drawing table built for each scene, where the same number is a different creature, all from the cartridge's own tables and code. Checked against openMSX: the creatures identical on 150,573 frames and the kitten on 61,070.",
+             es='Una p&aacute;gina nueva: el gatito mirando a cada lado, tocado, saltando, agachado y llevando algo en la cabeza, y cada bicho por su tipo, con la tabla de dibujos montada para cada escena, donde un mismo n&uacute;mero es un bicho distinto, todo desde las propias tablas y el c&oacute;digo del cartucho. Cotejado con openMSX: los bichos id&eacute;nticos en 150.573 cuadros y el gatito en 61.070.')),
     dict(id="igamangetsu-sprites", clase="actualiza", clave="igamangetsu",
          fecha="2026-11-13T03:00:00+01:00",
          enlace="https://antxiko.github.io/IgaNinpouchouMangetsujou-disassembly/THE-SPRITES.html",
