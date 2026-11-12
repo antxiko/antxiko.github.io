@@ -4901,6 +4901,14 @@ MSXON = [
 # nueva a vieja, una clave no existe o un proyecto se queda sin novedad.
 # --------------------------------------------------------------------------
 NOVEDADES = [
+    dict(id="iceworld-fallos", clase="actualiza", clave="iceworld",
+         fecha="2026-11-13T16:00:00+01:00",
+         enlace="https://antxiko.github.io/IceWorld-disassembly/SECRETS-AND-BUGS.html",
+         titulo=dict(en='Ice World: secrets and bugs',
+                     es='Ice World: secretos y fallos'),
+         resumen=dict(
+             en='A new page with the hunt through the code: the ten passwords, F1 and F2 that no text mentions, stage 00 and an extra life after stage 9, the up-left diagonal that leaves the player standing still, the cursor keys and joystick added together, and a score with no cap that goes back to zero.',
+             es='Una p&aacute;gina nueva con la caza por el c&oacute;digo: las diez contrase&ntilde;as, F1 y F2 que ning&uacute;n texto cuenta, la fase 00 y una vida m&aacute;s tras la 9, la diagonal arriba-izquierda que deja quieto al protagonista, los cursores y el mando sumados, y unos puntos sin tope que vuelven a cero.')),
     dict(id="carfighter-fallos", clase="actualiza", clave="carfighter",
          fecha="2026-11-13T15:00:00+01:00",
          enlace="https://antxiko.github.io/CarFighter-disassembly/SECRETS-AND-BUGS.html",

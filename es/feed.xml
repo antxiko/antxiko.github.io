@@ -6,8 +6,16 @@
   <link rel="self" type="application/atom+xml" href="https://antxiko.github.io/es/feed.xml"/>
   <link rel="alternate" type="text/html" hreflang="es" href="https://antxiko.github.io/es/"/>
   <link rel="alternate" type="application/atom+xml" hreflang="en" href="https://antxiko.github.io/feed.xml"/>
-  <updated>2026-11-13T15:00:00+01:00</updated>
+  <updated>2026-11-13T16:00:00+01:00</updated>
   <author><name>antxiko</name><uri>https://github.com/antxiko</uri></author>
+  <entry>
+    <id>tag:antxiko.github.io,2026:novedad/es/iceworld-fallos</id>
+    <title>Ice World: secretos y fallos</title>
+    <link rel="alternate" type="text/html" href="https://antxiko.github.io/IceWorld-disassembly/SECRETS-AND-BUGS.html"/>
+    <published>2026-11-13T16:00:00+01:00</published>
+    <updated>2026-11-13T16:00:00+01:00</updated>
+    <summary type="text">Una página nueva con la caza por el código: las diez contraseñas, F1 y F2 que ningún texto cuenta, la fase 00 y una vida más tras la 9, la diagonal arriba-izquierda que deja quieto al protagonista, los cursores y el mando sumados, y unos puntos sin tope que vuelven a cero.</summary>
+  </entry>
   <entry>
     <id>tag:antxiko.github.io,2026:novedad/es/carfighter-fallos</id>
     <title>Car Fighter: secretos y fallos</title>
@@ -159,13 +167,5 @@
     <published>2026-11-12T21:00:00+01:00</published>
     <updated>2026-11-12T21:00:00+01:00</updated>
     <summary type="text">Una página nueva: el protagonista en sus cuatro direcciones con el martillo, pegando y perdiendo, el martillo lanzado y los puntos, y los dos bichos, que no son sprites sino piezas de casillas, andando, aplastados y saliendo del huevo, todo montado desde las propias tablas y el código del cartucho. Cotejado con openMSX: el protagonista idéntico en 48.058 cuadros y los bichos en 35.621, 0 distintos.</summary>
-  </entry>
-  <entry>
-    <id>tag:antxiko.github.io,2026:novedad/es/carfighter-sprites</id>
-    <title>Car Fighter: los sprites, montados desde la ROM</title>
-    <link rel="alternate" type="text/html" href="https://antxiko.github.io/CarFighter-disassembly/THE-SPRITES.html"/>
-    <published>2026-11-12T20:00:00+01:00</published>
-    <updated>2026-11-12T20:00:00+01:00</updated>
-    <summary type="text">Una página nueva: el coche en sus cuatro direcciones, los otros coches y el camión, tocados y estallando, la bomba, el disparo y las cosas sueltas, y el estallido cuadro a cuadro, todo montado desde las propias tablas y el código del cartucho. Cotejado con openMSX: la tabla de dibujos idéntica en 49.805 cuadros, los coches en 41.057 y los camiones en 1.786.</summary>
   </entry>
 </feed>
