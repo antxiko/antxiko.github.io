@@ -6,8 +6,16 @@
   <link rel="self" type="application/atom+xml" href="https://antxiko.github.io/es/feed.xml"/>
   <link rel="alternate" type="text/html" hreflang="es" href="https://antxiko.github.io/es/"/>
   <link rel="alternate" type="application/atom+xml" hreflang="en" href="https://antxiko.github.io/feed.xml"/>
-  <updated>2026-11-15T10:00:00+01:00</updated>
+  <updated>2026-11-15T11:00:00+01:00</updated>
   <author><name>antxiko</name><uri>https://github.com/antxiko</uri></author>
+  <entry>
+    <id>tag:antxiko.github.io,2026:novedad/es/eaglefighter-fases</id>
+    <title>Eagle Fighter: las dieciséis pantallas de fase</title>
+    <link rel="alternate" type="text/html" href="https://antxiko.github.io/EagleFighter-disassembly/THE-STAGES.html"/>
+    <published>2026-11-15T11:00:00+01:00</published>
+    <updated>2026-11-15T11:00:00+01:00</updated>
+    <summary type="text">La pantalla con la que empieza cada fase, montada ejecutando la ROM: el juego no tiene mapa, y lo que cambia es el color del suelo y el horizonte, que se repiten cada ocho fases. Cotejada con las dos fases grabadas.</summary>
+  </entry>
   <entry>
     <id>tag:antxiko.github.io,2026:novedad/es/exoidezarea5-mapa</id>
     <title>Exoide-Z Area 5: el mapa entero</title>
@@ -159,13 +167,5 @@
     <published>2026-11-13T22:00:00+01:00</published>
     <updated>2026-11-13T22:00:00+01:00</updated>
     <summary type="text">Una página nueva con la caza por el código: los seis trucos escondidos en una tabla, un récord que pasados los 9.999.990 se pisa con los puntos ya dados la vuelta, así que los dos caen a cero, y los cursores y el mando que se mezclan en otra dirección.</summary>
-  </entry>
-  <entry>
-    <id>tag:antxiko.github.io,2026:novedad/es/exoidezarea5-fallos</id>
-    <title>Exoide-Z Area 5: secretos y fallos</title>
-    <link rel="alternate" type="text/html" href="https://antxiko.github.io/ExoideZArea5-disassembly/SECRETS-AND-BUGS.html"/>
-    <published>2026-11-13T21:00:00+01:00</published>
-    <updated>2026-11-13T21:00:00+01:00</updated>
-    <summary type="text">Una página nueva con la caza por el código: TAB y CAPS en el título, un récord que pasados los 9.999.990 se pisa con los puntos ya dados la vuelta, así que los dos caen a cero, y los cursores y el mando que se mezclan en otra dirección.</summary>
   </entry>
 </feed>
