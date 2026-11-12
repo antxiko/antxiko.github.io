@@ -4901,6 +4901,14 @@ MSXON = [
 # nueva a vieja, una clave no existe o un proyecto se queda sin novedad.
 # --------------------------------------------------------------------------
 NOVEDADES = [
+    dict(id="igamangetsu-sprites", clase="actualiza", clave="igamangetsu",
+         fecha="2026-11-13T03:00:00+01:00",
+         enlace="https://antxiko.github.io/IgaNinpouchouMangetsujou-disassembly/THE-SPRITES.html",
+         titulo=dict(en='Iga Ninpouchou: Mangetsu-jou: the sprites, put together from the ROM',
+                     es='Iga Ninpouchou: Mangetsu-jou: los sprites, montados desde la ROM'),
+         resumen=dict(
+             en="A new page: the ninja facing each side, jumping, falling, crouching and hit, the enemy ninja of every type and stage, the stars, arrows and things that fall, and the five-sprite boss in the colours of each round, all built from the cartridge's own tables and code. Checked against openMSX: the ninja identical on 76,679 frames and the enemy ninja on 60,362.",
+             es='Una p&aacute;gina nueva: el ninja mirando a cada lado, saltando, cayendo, agachado y tocado, los ninja enemigos de cada tipo y fase, las estrellas, flechas y cosas que caen, y el jefe de cinco sprites en los colores de cada vuelta, todo montado desde las propias tablas y el c&oacute;digo del cartucho. Cotejado con openMSX: el ninja id&eacute;ntico en 76.679 cuadros y los ninja enemigos en 60.362.')),
     dict(id="exoidezarea5-sprites", clase="actualiza", clave="exoidezarea5",
          fecha="2026-11-13T02:00:00+01:00",
          enlace="https://antxiko.github.io/ExoideZArea5-disassembly/THE-SPRITES.html",
