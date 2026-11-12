@@ -6,8 +6,16 @@
   <link rel="self" type="application/atom+xml" href="https://antxiko.github.io/feed.xml"/>
   <link rel="alternate" type="text/html" hreflang="en" href="https://antxiko.github.io/"/>
   <link rel="alternate" type="application/atom+xml" hreflang="es" href="https://antxiko.github.io/es/feed.xml"/>
-  <updated>2026-11-13T09:00:00+01:00</updated>
+  <updated>2026-11-13T10:00:00+01:00</updated>
   <author><name>antxiko</name><uri>https://github.com/antxiko</uri></author>
+  <entry>
+    <id>tag:antxiko.github.io,2026:novedad/en/gameland-sprites</id>
+    <title>Game Land: the program's own sprites, from the ROM</title>
+    <link rel="alternate" type="text/html" href="https://antxiko.github.io/GameLand-disassembly/THE-SPRITES.html"/>
+    <published>2026-11-13T10:00:00+01:00</published>
+    <updated>2026-11-13T10:00:00+01:00</updated>
+    <summary type="text">A new page: Game Land lets you draw your own characters, so the only sprites in the ROM are the program's own, the cursors of its editors, a pattern and the clefs of the music editor, drawn here by running its own routine. Checked against openMSX: identical on 27,043 frames, 0 different.</summary>
+  </entry>
   <entry>
     <id>tag:antxiko.github.io,2026:novedad/en/issunboushi-sprites</id>
     <title>Issun-boushi no Donnamondai: the sprites, put together from the ROM</title>
@@ -159,13 +167,5 @@
     <published>2026-11-12T12:00:00+01:00</published>
     <updated>2026-11-12T12:00:00+01:00</updated>
     <summary type="text">The Stone of Wisdom, The Seal of Hades, Youkai Yashiki, Issun-boushi no Donnamondai and Game Land, Casio's 1984 kit for making games without programming. Each one 100% explained, reassembled byte for byte and commented to 40% or more; the games played in GIF in openMSX and, in Game Land, a background drawn with its own LINE, BOX, CIRCLE and PAINT and two characters from its samples; the music from each cartridge's own sound engine, checked against openMSX.</summary>
-  </entry>
-  <entry>
-    <id>tag:antxiko.github.io,2026:novedad/en/casio-catorce</id>
-    <title>Fourteen Casio cartridges, taken apart</title>
-    <link rel="alternate" type="text/html" href="https://antxiko.github.io/SkiCommand-disassembly/"/>
-    <published>2026-11-11T20:00:00+01:00</published>
-    <updated>2026-11-11T20:00:00+01:00</updated>
-    <summary type="text">Fourteen MSX cartridges by Casio, from 1984 to 1986: Ski Command, Exciting Baseball, Exciting Jockey, Pachinko U.F.O., Car Fighter, Ice World, Iga Ninpouchou, Exoide-Z, Shindobaddo Nanatsu no Bouken, Eagle Fighter, Exoide-Z Area 5, Iga Ninpouchou Mangetsu-jou no Tatakai, Koneko no Daibouken and Moai no Hihou. Each one 100% explained, reassembled byte for byte and commented to 40% or more; the titles from running the ROM, checked against openMSX; the games played in GIF in openMSX; the music from each cartridge's own sound engine, checked against openMSX frame by frame.</summary>
   </entry>
 </feed>
