@@ -6,8 +6,16 @@
   <link rel="self" type="application/atom+xml" href="https://antxiko.github.io/es/feed.xml"/>
   <link rel="alternate" type="text/html" hreflang="es" href="https://antxiko.github.io/es/"/>
   <link rel="alternate" type="application/atom+xml" hreflang="en" href="https://antxiko.github.io/feed.xml"/>
-  <updated>2026-11-13T14:00:00+01:00</updated>
+  <updated>2026-11-13T15:00:00+01:00</updated>
   <author><name>antxiko</name><uri>https://github.com/antxiko</uri></author>
+  <entry>
+    <id>tag:antxiko.github.io,2026:novedad/es/carfighter-fallos</id>
+    <title>Car Fighter: secretos y fallos</title>
+    <link rel="alternate" type="text/html" href="https://antxiko.github.io/CarFighter-disassembly/SECRETS-AND-BUGS.html"/>
+    <published>2026-11-13T15:00:00+01:00</published>
+    <updated>2026-11-13T15:00:00+01:00</updated>
+    <summary type="text">Una página nueva con la caza por el código: ninguna tecla escondida, los cursores y el mando que, a la vez, mandan el coche a otro sitio (derecha y abajo giran a la izquierda), y los puntos ejecutados y comprobados hasta 999.999.</summary>
+  </entry>
   <entry>
     <id>tag:antxiko.github.io,2026:novedad/es/pachinkoufo-fallos</id>
     <title>Pachinko U.F.O.: secretos y fallos</title>
@@ -159,13 +167,5 @@
     <published>2026-11-12T20:00:00+01:00</published>
     <updated>2026-11-12T20:00:00+01:00</updated>
     <summary type="text">Una página nueva: el coche en sus cuatro direcciones, los otros coches y el camión, tocados y estallando, la bomba, el disparo y las cosas sueltas, y el estallido cuadro a cuadro, todo montado desde las propias tablas y el código del cartucho. Cotejado con openMSX: la tabla de dibujos idéntica en 49.805 cuadros, los coches en 41.057 y los camiones en 1.786.</summary>
-  </entry>
-  <entry>
-    <id>tag:antxiko.github.io,2026:novedad/es/pachinkoufo-sprites</id>
-    <title>Pachinko U.F.O.: los sprites, montados desde la ROM</title>
-    <link rel="alternate" type="text/html" href="https://antxiko.github.io/PachinkoUFO-disassembly/THE-SPRITES.html"/>
-    <published>2026-11-12T19:00:00+01:00</published>
-    <updated>2026-11-12T19:00:00+01:00</updated>
-    <summary type="text">Una página nueva: el lanzador, los molinillos, la bola y los OVNIs en sus pasos y colores, y los OVNIs cuadro a cuadro, todo montado desde las propias tablas del cartucho. Cotejado con openMSX: la tabla de dibujos idéntica en 43.152 cuadros y la tabla de sprites entera en 15.263.</summary>
   </entry>
 </feed>
