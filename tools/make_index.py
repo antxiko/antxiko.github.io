@@ -4901,6 +4901,14 @@ MSXON = [
 # nueva a vieja, una clave no existe o un proyecto se queda sin novedad.
 # --------------------------------------------------------------------------
 NOVEDADES = [
+    dict(id="iceworld-mapas", clase="actualiza", clave="iceworld",
+         fecha="2026-11-15T12:00:00+01:00",
+         enlace="https://antxiko.github.io/IceWorld-disassembly/THE-STAGES.html",
+         titulo=dict(en='Ice World: the 52 maps',
+                     es='Ice World: los 52 mapas'),
+         resumen=dict(
+             en='Every maze the game counts, built by running the ROM the way each stage starts, and checked against the seven recorded stages: all identical.',
+             es='Todos los laberintos que cuenta el juego, montados ejecutando la ROM como empieza cada fase, y cotejados con las siete fases grabadas: todas iguales.')),
     dict(id="eaglefighter-fases", clase="actualiza", clave="eaglefighter",
          fecha="2026-11-15T11:00:00+01:00",
          enlace="https://antxiko.github.io/EagleFighter-disassembly/THE-STAGES.html",

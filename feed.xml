@@ -6,8 +6,16 @@
   <link rel="self" type="application/atom+xml" href="https://antxiko.github.io/feed.xml"/>
   <link rel="alternate" type="text/html" hreflang="en" href="https://antxiko.github.io/"/>
   <link rel="alternate" type="application/atom+xml" hreflang="es" href="https://antxiko.github.io/es/feed.xml"/>
-  <updated>2026-11-15T11:00:00+01:00</updated>
+  <updated>2026-11-15T12:00:00+01:00</updated>
   <author><name>antxiko</name><uri>https://github.com/antxiko</uri></author>
+  <entry>
+    <id>tag:antxiko.github.io,2026:novedad/en/iceworld-mapas</id>
+    <title>Ice World: the 52 maps</title>
+    <link rel="alternate" type="text/html" href="https://antxiko.github.io/IceWorld-disassembly/THE-STAGES.html"/>
+    <published>2026-11-15T12:00:00+01:00</published>
+    <updated>2026-11-15T12:00:00+01:00</updated>
+    <summary type="text">Every maze the game counts, built by running the ROM the way each stage starts, and checked against the seven recorded stages: all identical.</summary>
+  </entry>
   <entry>
     <id>tag:antxiko.github.io,2026:novedad/en/eaglefighter-fases</id>
     <title>Eagle Fighter: the sixteen stage screens</title>
@@ -159,13 +167,5 @@
     <published>2026-11-13T23:00:00+01:00</published>
     <updated>2026-11-13T23:00:00+01:00</updated>
     <summary type="text">A new page with the hunt through the code: the stage lists go on past the goal house, with two screens that appear nowhere else (a log in the meadow on 2-2 and a waterfall on 3-3, built by running the ROM), a high score that drops to zero past 9,999,990, and the cursor keys and joystick mixed.</summary>
-  </entry>
-  <entry>
-    <id>tag:antxiko.github.io,2026:novedad/en/igamangetsu-fallos</id>
-    <title>Iga Ninpouchou Mangetsu-jou: secrets and bugs</title>
-    <link rel="alternate" type="text/html" href="https://antxiko.github.io/IgaNinpouchouMangetsujou-disassembly/SECRETS-AND-BUGS.html"/>
-    <published>2026-11-13T22:00:00+01:00</published>
-    <updated>2026-11-13T22:00:00+01:00</updated>
-    <summary type="text">A new page with the hunt through the code: the six hidden tricks in one table, a high score that is overwritten with the wrapped score past 9,999,990 so both drop to zero, and the cursor keys and joystick mixed into another direction.</summary>
   </entry>
 </feed>

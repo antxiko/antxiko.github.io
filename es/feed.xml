@@ -6,8 +6,16 @@
   <link rel="self" type="application/atom+xml" href="https://antxiko.github.io/es/feed.xml"/>
   <link rel="alternate" type="text/html" hreflang="es" href="https://antxiko.github.io/es/"/>
   <link rel="alternate" type="application/atom+xml" hreflang="en" href="https://antxiko.github.io/feed.xml"/>
-  <updated>2026-11-15T11:00:00+01:00</updated>
+  <updated>2026-11-15T12:00:00+01:00</updated>
   <author><name>antxiko</name><uri>https://github.com/antxiko</uri></author>
+  <entry>
+    <id>tag:antxiko.github.io,2026:novedad/es/iceworld-mapas</id>
+    <title>Ice World: los 52 mapas</title>
+    <link rel="alternate" type="text/html" href="https://antxiko.github.io/IceWorld-disassembly/THE-STAGES.html"/>
+    <published>2026-11-15T12:00:00+01:00</published>
+    <updated>2026-11-15T12:00:00+01:00</updated>
+    <summary type="text">Todos los laberintos que cuenta el juego, montados ejecutando la ROM como empieza cada fase, y cotejados con las siete fases grabadas: todas iguales.</summary>
+  </entry>
   <entry>
     <id>tag:antxiko.github.io,2026:novedad/es/eaglefighter-fases</id>
     <title>Eagle Fighter: las dieciséis pantallas de fase</title>
@@ -159,13 +167,5 @@
     <published>2026-11-13T23:00:00+01:00</published>
     <updated>2026-11-13T23:00:00+01:00</updated>
     <summary type="text">Una página nueva con la caza por el código: las listas de las fases siguen detrás de la casita de la meta, con dos pantallas que no salen en ningún otro sitio (un tronco en el prado en la 2-2 y una cascada en la 3-3, montadas ejecutando la ROM), un récord que cae a cero pasados los 9.999.990, y los cursores y el mando que se mezclan.</summary>
-  </entry>
-  <entry>
-    <id>tag:antxiko.github.io,2026:novedad/es/igamangetsu-fallos</id>
-    <title>Iga Ninpouchou Mangetsu-jou: secretos y fallos</title>
-    <link rel="alternate" type="text/html" href="https://antxiko.github.io/IgaNinpouchouMangetsujou-disassembly/SECRETS-AND-BUGS.html"/>
-    <published>2026-11-13T22:00:00+01:00</published>
-    <updated>2026-11-13T22:00:00+01:00</updated>
-    <summary type="text">Una página nueva con la caza por el código: los seis trucos escondidos en una tabla, un récord que pasados los 9.999.990 se pisa con los puntos ya dados la vuelta, así que los dos caen a cero, y los cursores y el mando que se mezclan en otra dirección.</summary>
   </entry>
 </feed>
