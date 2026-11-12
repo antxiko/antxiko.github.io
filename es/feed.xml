@@ -6,8 +6,16 @@
   <link rel="self" type="application/atom+xml" href="https://antxiko.github.io/es/feed.xml"/>
   <link rel="alternate" type="text/html" hreflang="es" href="https://antxiko.github.io/es/"/>
   <link rel="alternate" type="application/atom+xml" hreflang="en" href="https://antxiko.github.io/feed.xml"/>
-  <updated>2026-11-13T21:00:00+01:00</updated>
+  <updated>2026-11-13T22:00:00+01:00</updated>
   <author><name>antxiko</name><uri>https://github.com/antxiko</uri></author>
+  <entry>
+    <id>tag:antxiko.github.io,2026:novedad/es/igamangetsu-fallos</id>
+    <title>Iga Ninpouchou Mangetsu-jou: secretos y fallos</title>
+    <link rel="alternate" type="text/html" href="https://antxiko.github.io/IgaNinpouchouMangetsujou-disassembly/SECRETS-AND-BUGS.html"/>
+    <published>2026-11-13T22:00:00+01:00</published>
+    <updated>2026-11-13T22:00:00+01:00</updated>
+    <summary type="text">Una página nueva con la caza por el código: los seis trucos escondidos en una tabla, un récord que pasados los 9.999.990 se pisa con los puntos ya dados la vuelta, así que los dos caen a cero, y los cursores y el mando que se mezclan en otra dirección.</summary>
+  </entry>
   <entry>
     <id>tag:antxiko.github.io,2026:novedad/es/exoidezarea5-fallos</id>
     <title>Exoide-Z Area 5: secretos y fallos</title>
@@ -159,13 +167,5 @@
     <published>2026-11-13T03:00:00+01:00</published>
     <updated>2026-11-13T03:00:00+01:00</updated>
     <summary type="text">Una página nueva: el ninja mirando a cada lado, saltando, cayendo, agachado y tocado, los ninja enemigos de cada tipo y fase, las estrellas, flechas y cosas que caen, y el jefe de cinco sprites en los colores de cada vuelta, todo montado desde las propias tablas y el código del cartucho. Cotejado con openMSX: el ninja idéntico en 76.679 cuadros y los ninja enemigos en 60.362.</summary>
-  </entry>
-  <entry>
-    <id>tag:antxiko.github.io,2026:novedad/es/exoidezarea5-sprites</id>
-    <title>Exoide-Z Area 5: los sprites, montados desde la ROM</title>
-    <link rel="alternate" type="text/html" href="https://antxiko.github.io/ExoideZArea5-disassembly/THE-SPRITES.html"/>
-    <published>2026-11-13T02:00:00+01:00</published>
-    <updated>2026-11-13T02:00:00+01:00</updated>
-    <summary type="text">Una página nueva: la nave y cuando la tocan, cada tipo de enemigo con los dibujos por los que gira y el color que parpadea, la nave grande del final, las balas y la explosión, todo montado desde las propias tablas y el código del cartucho. Cotejado con openMSX: la nave idéntica en 55.725 cuadros y los enemigos en 63.347.</summary>
   </entry>
 </feed>

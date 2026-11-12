@@ -4901,6 +4901,14 @@ MSXON = [
 # nueva a vieja, una clave no existe o un proyecto se queda sin novedad.
 # --------------------------------------------------------------------------
 NOVEDADES = [
+    dict(id="igamangetsu-fallos", clase="actualiza", clave="igamangetsu",
+         fecha="2026-11-13T22:00:00+01:00",
+         enlace="https://antxiko.github.io/IgaNinpouchouMangetsujou-disassembly/SECRETS-AND-BUGS.html",
+         titulo=dict(en='Iga Ninpouchou Mangetsu-jou: secrets and bugs',
+                     es='Iga Ninpouchou Mangetsu-jou: secretos y fallos'),
+         resumen=dict(
+             en='A new page with the hunt through the code: the six hidden tricks in one table, a high score that is overwritten with the wrapped score past 9,999,990 so both drop to zero, and the cursor keys and joystick mixed into another direction.',
+             es='Una p&aacute;gina nueva con la caza por el c&oacute;digo: los seis trucos escondidos en una tabla, un r&eacute;cord que pasados los 9.999.990 se pisa con los puntos ya dados la vuelta, as&iacute; que los dos caen a cero, y los cursores y el mando que se mezclan en otra direcci&oacute;n.')),
     dict(id="exoidezarea5-fallos", clase="actualiza", clave="exoidezarea5",
          fecha="2026-11-13T21:00:00+01:00",
          enlace="https://antxiko.github.io/ExoideZArea5-disassembly/SECRETS-AND-BUGS.html",
