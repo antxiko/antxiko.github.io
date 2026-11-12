@@ -6,8 +6,16 @@
   <link rel="self" type="application/atom+xml" href="https://antxiko.github.io/feed.xml"/>
   <link rel="alternate" type="text/html" hreflang="en" href="https://antxiko.github.io/"/>
   <link rel="alternate" type="application/atom+xml" hreflang="es" href="https://antxiko.github.io/es/feed.xml"/>
-  <updated>2026-11-12T23:00:00+01:00</updated>
+  <updated>2026-11-13T00:00:00+01:00</updated>
   <author><name>antxiko</name><uri>https://github.com/antxiko</uri></author>
+  <entry>
+    <id>tag:antxiko.github.io,2026:novedad/en/shindobaddo-sprites</id>
+    <title>Shindobaddo: the sprites, put together from the ROM</title>
+    <link rel="alternate" type="text/html" href="https://antxiko.github.io/Shindobaddo-disassembly/THE-SPRITES.html"/>
+    <published>2026-11-13T00:00:00+01:00</published>
+    <updated>2026-11-13T00:00:00+01:00</updated>
+    <summary type="text">A new page: Sindbad walking, striking with his scimitar, on the ladders, bouncing, falling and dead, the giant bird with its two wing drawings and the enemies, which are tiles, all drawn by running the game's own routines. Checked against openMSX: Sindbad identical on 17,021 frames and the enemies' tiles on 22,205, 0 different.</summary>
+  </entry>
   <entry>
     <id>tag:antxiko.github.io,2026:novedad/en/exoidez-sprites</id>
     <title>Exoide-Z: the sprites, put together from the ROM</title>
@@ -159,13 +167,5 @@
     <published>2026-10-29T23:47:00+01:00</published>
     <updated>2026-10-29T23:47:00+01:00</updated>
     <summary type="text">79 of the 82 enemy types cut out one by one, painted by the cartridge: each type removed from a copy of the game and what stops being seen. The seven capsule drawings, stage 6's boss fight whole (182 s), the code shared with the other Konami cartridges, a bug hunt (one harmless read of unwritten RAM in the whole game) and an unused font with a loader nothing calls. And the demo: with the Z80 counted in clock cycles it still parts at frame 68, so the pace is not the cause.</summary>
-  </entry>
-  <entry>
-    <id>tag:antxiko.github.io,2026:novedad/en/spacemanbow-demostracion</id>
-    <title>Space Manbow: where the demo parts from the MSX</title>
-    <link rel="alternate" type="text/html" href="https://antxiko.github.io/SpaceManbow-disassembly/THE-SEQUENCES.html"/>
-    <published>2026-10-29T22:22:00+01:00</published>
-    <updated>2026-10-29T22:22:00+01:00</updated>
-    <summary type="text">Why the recorded demo is not on the page, measured: the RAM at the start of every game frame in openMSX against the running cartridge. Up to frame 67 the game is the same and only what the interrupt moves differs; in frame 68 a shot hits on the MSX and misses here.</summary>
   </entry>
 </feed>
