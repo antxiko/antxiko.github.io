@@ -4901,6 +4901,14 @@ MSXON = [
 # nueva a vieja, una clave no existe o un proyecto se queda sin novedad.
 # --------------------------------------------------------------------------
 NOVEDADES = [
+    dict(id="excitingjockey-fallos", clase="actualiza", clave="excitingjockey",
+         fecha="2026-11-13T13:00:00+01:00",
+         enlace="https://antxiko.github.io/ExcitingJockey-disassembly/SECRETS-AND-BUGS.html",
+         titulo=dict(en='Exciting Jockey: secrets and bugs',
+                     es='Exciting Jockey: secretos y fallos'),
+         resumen=dict(
+             en='A new page with the hunt through the code: no hidden keys, the payout that loses a carry so the money goes back to zero past 999,900, and the whip queue that repeats and loses lashes with more than eight, both run and measured.',
+             es='Una p&aacute;gina nueva con la caza por el c&oacute;digo: ninguna tecla escondida, el pago que pierde un acarreo y deja el dinero a cero pasados los 999.900, y la cola del l&aacute;tigo que repite y pierde latigazos con m&aacute;s de ocho, las dos cosas ejecutadas y medidas.')),
     dict(id="excitingbaseball-fallos", clase="actualiza", clave="excitingbaseball",
          fecha="2026-11-13T12:00:00+01:00",
          enlace="https://antxiko.github.io/ExcitingBaseball-disassembly/SECRETS-AND-BUGS.html",
