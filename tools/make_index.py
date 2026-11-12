@@ -4901,6 +4901,14 @@ MSXON = [
 # nueva a vieja, una clave no existe o un proyecto se queda sin novedad.
 # --------------------------------------------------------------------------
 NOVEDADES = [
+    dict(id="koneko-mapas", clase="actualiza", clave="koneko",
+         fecha="2026-11-14T19:00:00+01:00",
+         enlace="https://antxiko.github.io/KonekoNoDaibouken-disassembly/THE-STAGES.html",
+         titulo=dict(en='Koneko no Daibouken: the maps of the 18 stages',
+                     es='Koneko no Daibouken: los mapas de las 18 fases'),
+         resumen=dict(
+             en='Every screen of every stage, built by running the ROM with the tiles of its scene, in three maps (one per town), checked against the recorded screens.',
+             es='Todas las pantallas de todas las fases, montadas ejecutando la ROM con las casillas de su escena, en tres mapas (uno por pueblo), cotejados con las pantallas grabadas.')),
     dict(id="gameland-textos", clase="actualiza", clave="gameland",
          fecha="2026-11-14T18:00:00+01:00",
          enlace="https://antxiko.github.io/GameLand-disassembly/THE-TEXTS.html",
