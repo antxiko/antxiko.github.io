@@ -4901,6 +4901,14 @@ MSXON = [
 # nueva a vieja, una clave no existe o un proyecto se queda sin novedad.
 # --------------------------------------------------------------------------
 NOVEDADES = [
+    dict(id="koneko-fallos", clase="actualiza", clave="koneko",
+         fecha="2026-11-13T23:00:00+01:00",
+         enlace="https://antxiko.github.io/KonekoNoDaibouken-disassembly/SECRETS-AND-BUGS.html",
+         titulo=dict(en='Koneko no Daibouken: secrets and bugs',
+                     es='Koneko no Daibouken: secretos y fallos'),
+         resumen=dict(
+             en='A new page with the hunt through the code: the stage lists go on past the goal house, with two screens that appear nowhere else (a log in the meadow on 2-2 and a waterfall on 3-3, built by running the ROM), a high score that drops to zero past 9,999,990, and the cursor keys and joystick mixed.',
+             es='Una p&aacute;gina nueva con la caza por el c&oacute;digo: las listas de las fases siguen detr&aacute;s de la casita de la meta, con dos pantallas que no salen en ning&uacute;n otro sitio (un tronco en el prado en la 2-2 y una cascada en la 3-3, montadas ejecutando la ROM), un r&eacute;cord que cae a cero pasados los 9.999.990, y los cursores y el mando que se mezclan.')),
     dict(id="igamangetsu-fallos", clase="actualiza", clave="igamangetsu",
          fecha="2026-11-13T22:00:00+01:00",
          enlace="https://antxiko.github.io/IgaNinpouchouMangetsujou-disassembly/SECRETS-AND-BUGS.html",
