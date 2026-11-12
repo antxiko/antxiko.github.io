@@ -4901,6 +4901,14 @@ MSXON = [
 # nueva a vieja, una clave no existe o un proyecto se queda sin novedad.
 # --------------------------------------------------------------------------
 NOVEDADES = [
+    dict(id="exoidezarea5-fallos", clase="actualiza", clave="exoidezarea5",
+         fecha="2026-11-13T21:00:00+01:00",
+         enlace="https://antxiko.github.io/ExoideZArea5-disassembly/SECRETS-AND-BUGS.html",
+         titulo=dict(en='Exoide-Z Area 5: secrets and bugs',
+                     es='Exoide-Z Area 5: secretos y fallos'),
+         resumen=dict(
+             en='A new page with the hunt through the code: TAB and CAPS on the title, a high score that is overwritten with the wrapped score past 9,999,990 so both drop to zero, and the cursor keys and joystick mixed into another direction.',
+             es='Una p&aacute;gina nueva con la caza por el c&oacute;digo: TAB y CAPS en el t&iacute;tulo, un r&eacute;cord que pasados los 9.999.990 se pisa con los puntos ya dados la vuelta, as&iacute; que los dos caen a cero, y los cursores y el mando que se mezclan en otra direcci&oacute;n.')),
     dict(id="eaglefighter-fallos", clase="actualiza", clave="eaglefighter",
          fecha="2026-11-13T20:00:00+01:00",
          enlace="https://antxiko.github.io/EagleFighter-disassembly/SECRETS-AND-BUGS.html",
