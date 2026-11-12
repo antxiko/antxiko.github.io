@@ -4901,6 +4901,14 @@ MSXON = [
 # nueva a vieja, una clave no existe o un proyecto se queda sin novedad.
 # --------------------------------------------------------------------------
 NOVEDADES = [
+    dict(id="stoneofwisdom-fallos", clase="actualiza", clave="stoneofwisdom",
+         fecha="2026-11-14T10:00:00+01:00",
+         enlace="https://antxiko.github.io/StoneOfWisdom-disassembly/SECRETS-AND-BUGS.html",
+         titulo=dict(en='The Stone of Wisdom: secrets and bugs',
+                     es='The Stone of Wisdom: secretos y fallos'),
+         resumen=dict(
+             en='A new page with the hunt through the code: the hidden keys and the passwords that are the titles, a high score that is overwritten with the wrapped score past 9,999,990 so both drop to zero, the cursor keys and joystick mixed, and a flag at 50,000 points that nobody reads.',
+             es='Una p&aacute;gina nueva con la caza por el c&oacute;digo: las teclas escondidas y las contrase&ntilde;as que son los t&iacute;tulos, un r&eacute;cord que pasados los 9.999.990 se pisa con los puntos ya dados la vuelta, as&iacute; que los dos caen a cero, los cursores y el mando que se mezclan, y una marca a los 50.000 puntos que nadie lee.')),
     dict(id="moai-fallos", clase="actualiza", clave="moai",
          fecha="2026-11-14T09:00:00+01:00",
          enlace="https://antxiko.github.io/MoaiNoHihou-disassembly/SECRETS-AND-BUGS.html",

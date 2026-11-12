@@ -6,8 +6,16 @@
   <link rel="self" type="application/atom+xml" href="https://antxiko.github.io/feed.xml"/>
   <link rel="alternate" type="text/html" hreflang="en" href="https://antxiko.github.io/"/>
   <link rel="alternate" type="application/atom+xml" hreflang="es" href="https://antxiko.github.io/es/feed.xml"/>
-  <updated>2026-11-14T09:00:00+01:00</updated>
+  <updated>2026-11-14T10:00:00+01:00</updated>
   <author><name>antxiko</name><uri>https://github.com/antxiko</uri></author>
+  <entry>
+    <id>tag:antxiko.github.io,2026:novedad/en/stoneofwisdom-fallos</id>
+    <title>The Stone of Wisdom: secrets and bugs</title>
+    <link rel="alternate" type="text/html" href="https://antxiko.github.io/StoneOfWisdom-disassembly/SECRETS-AND-BUGS.html"/>
+    <published>2026-11-14T10:00:00+01:00</published>
+    <updated>2026-11-14T10:00:00+01:00</updated>
+    <summary type="text">A new page with the hunt through the code: the hidden keys and the passwords that are the titles, a high score that is overwritten with the wrapped score past 9,999,990 so both drop to zero, the cursor keys and joystick mixed, and a flag at 50,000 points that nobody reads.</summary>
+  </entry>
   <entry>
     <id>tag:antxiko.github.io,2026:novedad/en/moai-fallos</id>
     <title>Moai no Hihou: secrets and bugs</title>
@@ -159,13 +167,5 @@
     <published>2026-11-13T06:00:00+01:00</published>
     <updated>2026-11-13T06:00:00+01:00</updated>
     <summary type="text">A new page: the hero to the four sides with his steps, his weapon in each direction, every kind of enemy, the stone, the sage in three sprites and the explosion, all built from the cartridge's own tables and code. Checked against openMSX: the enemies identical on 73,362 frames, the weapon on 5,818 and the hero on 29,434.</summary>
-  </entry>
-  <entry>
-    <id>tag:antxiko.github.io,2026:novedad/en/moai-sprites</id>
-    <title>Moai no Hihou: the sprites, put together from the ROM</title>
-    <link rel="alternate" type="text/html" href="https://antxiko.github.io/MoaiNoHihou-disassembly/THE-SPRITES.html"/>
-    <published>2026-11-13T05:00:00+01:00</published>
-    <updated>2026-11-13T05:00:00+01:00</updated>
-    <summary type="text">A new page: the hero standing, walking, jumping, punching, waiting and dying, each from its own table, and the ten kinds of things on the map with the drawings they change through, all built from the cartridge's own tables and code. Checked against openMSX: the things identical on 21,879 frames and the hero on 57,403.</summary>
   </entry>
 </feed>
