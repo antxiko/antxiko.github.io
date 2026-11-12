@@ -6,8 +6,16 @@
   <link rel="self" type="application/atom+xml" href="https://antxiko.github.io/feed.xml"/>
   <link rel="alternate" type="text/html" hreflang="en" href="https://antxiko.github.io/"/>
   <link rel="alternate" type="application/atom+xml" hreflang="es" href="https://antxiko.github.io/es/feed.xml"/>
-  <updated>2026-11-14T13:00:00+01:00</updated>
+  <updated>2026-11-14T14:00:00+01:00</updated>
   <author><name>antxiko</name><uri>https://github.com/antxiko</uri></author>
+  <entry>
+    <id>tag:antxiko.github.io,2026:novedad/en/gameland-fallos</id>
+    <title>Game Land: secrets and bugs</title>
+    <link rel="alternate" type="text/html" href="https://antxiko.github.io/GameLand-disassembly/SECRETS-AND-BUGS.html"/>
+    <published>2026-11-14T14:00:00+01:00</published>
+    <updated>2026-11-14T14:00:00+01:00</updated>
+    <summary type="text">A new page with the hunt through the code: HOME and the second cartridge, the tablet, how the keyboard is read, the score of the games made with it that goes back to zero past 999,990, and the extra lives run and checked.</summary>
+  </entry>
   <entry>
     <id>tag:antxiko.github.io,2026:novedad/en/issunboushi-fallos</id>
     <title>Issun-boushi no Donnamondai: secrets and bugs</title>
@@ -159,13 +167,5 @@
     <published>2026-11-13T10:00:00+01:00</published>
     <updated>2026-11-13T10:00:00+01:00</updated>
     <summary type="text">A new page: Game Land lets you draw your own characters, so the only sprites in the ROM are the program's own, the cursors of its editors, a pattern and the clefs of the music editor, drawn here by running its own routine. Checked against openMSX: identical on 27,043 frames, 0 different.</summary>
-  </entry>
-  <entry>
-    <id>tag:antxiko.github.io,2026:novedad/en/issunboushi-sprites</id>
-    <title>Issun-boushi no Donnamondai: the sprites, put together from the ROM</title>
-    <link rel="alternate" type="text/html" href="https://antxiko.github.io/IssunBoushi-disassembly/THE-SPRITES.html"/>
-    <published>2026-11-13T09:00:00+01:00</published>
-    <updated>2026-11-13T09:00:00+01:00</updated>
-    <summary type="text">A new page: Issun-boushi to each side on land, with the copy of his drawings turned the other way that the game makes, and on the river in his rocking bowl, every enemy with its two sprites and the character of the end, all built from the cartridge's own tables and code. Checked against openMSX: Issun-boushi identical on 26,364 frames and the bowl on 15,967.</summary>
   </entry>
 </feed>

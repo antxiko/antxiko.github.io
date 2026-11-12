@@ -4901,6 +4901,14 @@ MSXON = [
 # nueva a vieja, una clave no existe o un proyecto se queda sin novedad.
 # --------------------------------------------------------------------------
 NOVEDADES = [
+    dict(id="gameland-fallos", clase="actualiza", clave="gameland",
+         fecha="2026-11-14T14:00:00+01:00",
+         enlace="https://antxiko.github.io/GameLand-disassembly/SECRETS-AND-BUGS.html",
+         titulo=dict(en='Game Land: secrets and bugs',
+                     es='Game Land: secretos y fallos'),
+         resumen=dict(
+             en='A new page with the hunt through the code: HOME and the second cartridge, the tablet, how the keyboard is read, the score of the games made with it that goes back to zero past 999,990, and the extra lives run and checked.',
+             es='Una p&aacute;gina nueva con la caza por el c&oacute;digo: HOME y el segundo cartucho, la tableta, c&oacute;mo se lee el teclado, los puntos de los juegos hechos con &eacute;l que vuelven a cero pasados los 999.990, y las vidas de m&aacute;s ejecutadas y comprobadas.')),
     dict(id="issunboushi-fallos", clase="actualiza", clave="issunboushi",
          fecha="2026-11-14T13:00:00+01:00",
          enlace="https://antxiko.github.io/IssunBoushi-disassembly/SECRETS-AND-BUGS.html",
