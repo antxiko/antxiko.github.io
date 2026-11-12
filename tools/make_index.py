@@ -4901,6 +4901,14 @@ MSXON = [
 # nueva a vieja, una clave no existe o un proyecto se queda sin novedad.
 # --------------------------------------------------------------------------
 NOVEDADES = [
+    dict(id="sealofhades-fallos", clase="actualiza", clave="sealofhades",
+         fecha="2026-11-14T11:00:00+01:00",
+         enlace="https://antxiko.github.io/SealOfHades-disassembly/SECRETS-AND-BUGS.html",
+         titulo=dict(en='The Seal of Hades: secrets and bugs',
+                     es='The Seal of Hades: secretos y fallos'),
+         resumen=dict(
+             en='A new page with the hunt through the code: the hidden keys and the other cartridge, a high score that is overwritten with the wrapped score past 9,999,990 so both drop to zero, the cursor keys and joystick mixed, and the extra life at 30,000 run and checked.',
+             es='Una p&aacute;gina nueva con la caza por el c&oacute;digo: las teclas escondidas y el otro cartucho, un r&eacute;cord que pasados los 9.999.990 se pisa con los puntos ya dados la vuelta, as&iacute; que los dos caen a cero, los cursores y el mando que se mezclan, y la vida de m&aacute;s a los 30.000 ejecutada y comprobada.')),
     dict(id="stoneofwisdom-fallos", clase="actualiza", clave="stoneofwisdom",
          fecha="2026-11-14T10:00:00+01:00",
          enlace="https://antxiko.github.io/StoneOfWisdom-disassembly/SECRETS-AND-BUGS.html",
