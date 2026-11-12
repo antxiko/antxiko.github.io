@@ -4901,6 +4901,14 @@ MSXON = [
 # nueva a vieja, una clave no existe o un proyecto se queda sin novedad.
 # --------------------------------------------------------------------------
 NOVEDADES = [
+    dict(id="eaglefighter-fallos", clase="actualiza", clave="eaglefighter",
+         fecha="2026-11-13T20:00:00+01:00",
+         enlace="https://antxiko.github.io/EagleFighter-disassembly/SECRETS-AND-BUGS.html",
+         titulo=dict(en='Eagle Fighter: secrets and bugs',
+                     es='Eagle Fighter: secretos y fallos'),
+         resumen=dict(
+             en='A new page with the hunt through the code: no hidden keys, the extra ten points per stage added in binary so the big plane is worth 0, 10 and 20 on stages 14 to 16, the cursor keys and joystick added together, and a score with no cap.',
+             es='Una p&aacute;gina nueva con la caza por el c&oacute;digo: ninguna tecla escondida, los diez puntos de m&aacute;s por fase sumados en binario, as&iacute; que el grande vale 0, 10 y 20 en las fases 14 a 16, los cursores y el mando sumados, y unos puntos sin tope.')),
     dict(id="shindobaddo-fallos", clase="actualiza", clave="shindobaddo",
          fecha="2026-11-13T19:00:00+01:00",
          enlace="https://antxiko.github.io/Shindobaddo-disassembly/SECRETS-AND-BUGS.html",
