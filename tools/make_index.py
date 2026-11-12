@@ -4901,6 +4901,14 @@ MSXON = [
 # nueva a vieja, una clave no existe o un proyecto se queda sin novedad.
 # --------------------------------------------------------------------------
 NOVEDADES = [
+    dict(id="issunboushi-fallos", clase="actualiza", clave="issunboushi",
+         fecha="2026-11-14T13:00:00+01:00",
+         enlace="https://antxiko.github.io/IssunBoushi-disassembly/SECRETS-AND-BUGS.html",
+         titulo=dict(en='Issun-boushi no Donnamondai: secrets and bugs',
+                     es='Issun-boushi no Donnamondai: secretos y fallos'),
+         resumen=dict(
+             en='A new page with the hunt through the code: TAB and CAPS, the demo that plays the cartridge header, a high score that is overwritten with the wrapped score past 9,999,990 so both drop to zero, the cursor keys and joystick mixed, and the life at 10,000 run and checked.',
+             es='Una p&aacute;gina nueva con la caza por el c&oacute;digo: TAB y CAPS, la demostraci&oacute;n que juega la cabecera del cartucho, un r&eacute;cord que pasados los 9.999.990 se pisa con los puntos ya dados la vuelta, as&iacute; que los dos caen a cero, los cursores y el mando que se mezclan, y la vida de los 10.000 ejecutada y comprobada.')),
     dict(id="youkaiyashiki-fallos", clase="actualiza", clave="youkaiyashiki",
          fecha="2026-11-14T12:00:00+01:00",
          enlace="https://antxiko.github.io/YoukaiYashiki-disassembly/SECRETS-AND-BUGS.html",
