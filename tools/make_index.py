@@ -2390,6 +2390,52 @@ DESENSAMBLADOS = [
         ),
     ),
     dict(
+        clave="uranaisensation",
+        grupo="konami",
+        titulo="Konami's Uranai Sensation",
+        anio=1988,
+        repo="https://github.com/antxiko/UranaiSensation-disassembly",
+        web="https://antxiko.github.io/UranaiSensation-disassembly/",
+        meta=dict(
+            en="Konami &middot; MSX2 &middot; 720 KB disk &middot; RA003",
+            es="Konami &middot; MSX2 &middot; disquete de 720 KB &middot; RA003",
+        ),
+        claim=dict(
+            en="The first <b>disk</b> in the series: no MSX-DOS, a boot of its own and 41 "
+               "parts loaded by sector. Four fortunes &mdash; blood type, omikuji, "
+               "horoscope, palm reading &mdash; with their screens <b>painted by running "
+               "the disk</b> and their texts translated. The blood-type percentage is the "
+               "sum of three tables, and the omikuji's luck is a byte of the "
+               "<b>sound driver's code</b>.",
+            es="El primer <b>disquete</b> de la serie: sin MSX-DOS, con un arranque propio "
+               "y 41 partes cargadas por sector. Las cuatro adivinaciones &mdash;grupo "
+               "sangu&iacute;neo, omikuji, hor&oacute;scopo, lectura de la mano&mdash; con "
+               "sus pantallas <b>pintadas ejecutando el disco</b> y sus textos traducidos. "
+               "El porcentaje del grupo sangu&iacute;neo es la suma de tres tablas, y la "
+               "suerte de la omikuji, un byte del <b>c&oacute;digo del sonido</b>.",
+        ),
+        datos=dict(
+            en=lambda i: (f"{cif(1440, i)} sectors &middot; <b>0</b> unexplained "
+                          f"&middot; rebuilds the disk <b>byte for byte</b> &middot; "
+                          f"{cif(59164, i)} of code, {cif(60132, i)} of data "
+                          f"&middot; {cif(4234, i)} routines &middot; commented "
+                          f"to <b>0.3%</b>"),
+            es=lambda i: (f"{cif(1440, i)} sectores &middot; <b>0</b> sin explicar "
+                          f"&middot; rehace el disco <b>byte a byte</b> &middot; "
+                          f"{cif(59164, i)} de código, {cif(60132, i)} de datos "
+                          f"&middot; {cif(4234, i)} rutinas &middot; comentado "
+                          f"al <b>0,3 %</b>"),
+        ),
+        nota=dict(
+            en="Every sector of the disk with its owner; the screens from our own Z80 and "
+               "V9938 running the disk, the main one checked against openMSX (0 bytes "
+               "different in the 128 KB of VRAM); the eight omikuji levels forced.",
+            es="Cada sector del disco con su dueño; las pantallas, de nuestro propio Z80 y "
+               "V9938 ejecutando el disco, la principal cotejada con openMSX (0 bytes "
+               "distintos en los 128 KB de la VRAM); los ocho niveles de la omikuji forzados.",
+        ),
+    ),
+    dict(
         clave="sparkie",
         grupo="konami-otros",
         titulo="Sparkie",
@@ -4065,13 +4111,15 @@ GRUPOS = [
 
 
 def rc_de(p):
-    """El numero de catalogo del cartucho, o None si no lleva.
+    """El numero de catalogo, como (serie, numero), o None si no lleva.
 
     Sale del campo 'meta', que es donde ya esta escrito -"RC-743"- para que no
-    haya que apuntarlo dos veces y se puedan desincronizar.
+    haya que apuntarlo dos veces y se puedan desincronizar. Los cartuchos son la
+    serie RC (0); los disquetes, la RA (1, "RA003" en Generation MSX), y van
+    detras de todos los cartuchos: mezclar las dos series seria inventar fechas.
     """
-    m = re.search(r"RC-(\d+)", p["meta"]["es"])
-    return int(m.group(1)) if m else None
+    m = re.search(r"R([CA])-?(\d+)", p["meta"]["es"])
+    return ("CA".index(m.group(1)), int(m.group(2))) if m else None
 
 
 def del_grupo(gid):
@@ -4901,6 +4949,27 @@ MSXON = [
 # nueva a vieja, una clave no existe o un proyecto se queda sin novedad.
 # --------------------------------------------------------------------------
 NOVEDADES = [
+    dict(id="uranaisensation", clase="nuevo", clave="uranaisensation",
+         fecha="2026-11-15T18:00:00+01:00",
+         titulo=dict(en="Konami's Uranai Sensation, taken apart: the first disk",
+                     es="Konami's Uranai Sensation, desmontado: el primer disquete"),
+         resumen=dict(
+             en="Konami's fortune teller for MSX2 (1988), the first disk in the series: every "
+                "one of its 1,440 sectors with its owner and the disk rebuilt byte for byte. "
+                "The screens painted by running the disk, the texts translated, how the "
+                "blood-type percentage is worked out and where the omikuji's luck comes from.",
+             es="El adivino de Konami para MSX2 (1988), el primer disquete de la serie: sus "
+                "1.440 sectores, cada uno con su dueño, y el disco rehecho byte a byte. Las "
+                "pantallas pintadas ejecutando el disco, los textos traducidos, cómo se "
+                "calcula el porcentaje del grupo sanguíneo y de dónde sale la suerte de la omikuji.")),
+    dict(id="youkaiyashiki-jefes-final", clase="actualiza", clave="youkaiyashiki",
+         fecha="2026-11-15T17:00:00+01:00",
+         enlace="https://antxiko.github.io/YoukaiYashiki-disassembly/THE-PLACES.html",
+         titulo=dict(en='Youkai Yashiki: the bosses, the ending and the yokai type by type',
+                     es='Youkai Yashiki: los jefes, el final y los yokai tipo a tipo'),
+         resumen=dict(
+             en='The five events painted by running the game, each with its GIF; the girl of the ending; the 23 enemy types checked over 35,966 frames. Two new bugs. Thanks to Nestor Sancho.',
+             es='Los cinco sucesos pintados ejecutando el juego, cada uno con su GIF; la chica del final; los 23 tipos de enemigo cotejados en 35.966 cuadros. Dos fallos nuevos. Gracias a Nestor Sancho.')),
     dict(id="youkaiyashiki-dibujos", clase="actualiza", clave="youkaiyashiki",
          fecha="2026-11-15T16:00:00+01:00",
          enlace="https://antxiko.github.io/YoukaiYashiki-disassembly/THE-SPRITES.html",
