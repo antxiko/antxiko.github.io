@@ -1,13 +1,29 @@
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom" xml:lang="en">
   <title>antxiko — commented disassemblies of 8-bit games</title>
-  <subtitle>Old 8-bit binaries taken apart byte by byte and commented, with the tools to rebuild them: nothing gets claimed that the binary does not show, and the source has to give the original back, byte for byte. Right now that means 100 MSX games.</subtitle>
+  <subtitle>Old 8-bit binaries taken apart byte by byte and commented, with the tools to rebuild them: nothing gets claimed that the binary does not show, and the source has to give the original back, byte for byte. Right now that means 101 MSX games.</subtitle>
   <id>tag:antxiko.github.io,2026:feed/en</id>
   <link rel="self" type="application/atom+xml" href="https://antxiko.github.io/feed.xml"/>
   <link rel="alternate" type="text/html" hreflang="en" href="https://antxiko.github.io/"/>
   <link rel="alternate" type="application/atom+xml" hreflang="es" href="https://antxiko.github.io/es/feed.xml"/>
-  <updated>2026-11-15T16:00:00+01:00</updated>
+  <updated>2026-11-15T18:00:00+01:00</updated>
   <author><name>antxiko</name><uri>https://github.com/antxiko</uri></author>
+  <entry>
+    <id>tag:antxiko.github.io,2026:novedad/en/uranaisensation</id>
+    <title>Konami's Uranai Sensation, taken apart: the first disk</title>
+    <link rel="alternate" type="text/html" href="https://antxiko.github.io/UranaiSensation-disassembly/"/>
+    <published>2026-11-15T18:00:00+01:00</published>
+    <updated>2026-11-15T18:00:00+01:00</updated>
+    <summary type="text">Konami's fortune teller for MSX2 (1988), the first disk in the series: every one of its 1,440 sectors with its owner and the disk rebuilt byte for byte. The screens painted by running the disk, the texts translated, how the blood-type percentage is worked out and where the omikuji's luck comes from.</summary>
+  </entry>
+  <entry>
+    <id>tag:antxiko.github.io,2026:novedad/en/youkaiyashiki-jefes-final</id>
+    <title>Youkai Yashiki: the bosses, the ending and the yokai type by type</title>
+    <link rel="alternate" type="text/html" href="https://antxiko.github.io/YoukaiYashiki-disassembly/THE-PLACES.html"/>
+    <published>2026-11-15T17:00:00+01:00</published>
+    <updated>2026-11-15T17:00:00+01:00</updated>
+    <summary type="text">The five events painted by running the game, each with its GIF; the girl of the ending; the 23 enemy types checked over 35,966 frames. Two new bugs. Thanks to Nestor Sancho.</summary>
+  </entry>
   <entry>
     <id>tag:antxiko.github.io,2026:novedad/en/youkaiyashiki-dibujos</id>
     <title>Youkai Yashiki: the 64 sprite drawings</title>
@@ -151,21 +167,5 @@
     <published>2026-11-14T14:00:00+01:00</published>
     <updated>2026-11-14T14:00:00+01:00</updated>
     <summary type="text">A new page with the hunt through the code: HOME and the second cartridge, the tablet, how the keyboard is read, the score of the games made with it that goes back to zero past 999,990, and the extra lives run and checked.</summary>
-  </entry>
-  <entry>
-    <id>tag:antxiko.github.io,2026:novedad/en/issunboushi-fallos</id>
-    <title>Issun-boushi no Donnamondai: secrets and bugs</title>
-    <link rel="alternate" type="text/html" href="https://antxiko.github.io/IssunBoushi-disassembly/SECRETS-AND-BUGS.html"/>
-    <published>2026-11-14T13:00:00+01:00</published>
-    <updated>2026-11-14T13:00:00+01:00</updated>
-    <summary type="text">A new page with the hunt through the code: TAB and CAPS, the demo that plays the cartridge header, a high score that is overwritten with the wrapped score past 9,999,990 so both drop to zero, the cursor keys and joystick mixed, and the life at 10,000 run and checked.</summary>
-  </entry>
-  <entry>
-    <id>tag:antxiko.github.io,2026:novedad/en/youkaiyashiki-fallos</id>
-    <title>Youkai Yashiki: secrets and bugs</title>
-    <link rel="alternate" type="text/html" href="https://antxiko.github.io/YoukaiYashiki-disassembly/SECRETS-AND-BUGS.html"/>
-    <published>2026-11-14T12:00:00+01:00</published>
-    <updated>2026-11-14T12:00:00+01:00</updated>
-    <summary type="text">A new page with the hunt through the code: the five keys, F1 and the demo that plays the BIOS, a high score that is overwritten with the wrapped score past 9,999,990 so both drop to zero, the cursor keys and joystick mixed, and the lives for points that the listing promised and the game does not give.</summary>
   </entry>
 </feed>
