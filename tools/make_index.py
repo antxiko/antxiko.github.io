@@ -2391,7 +2391,7 @@ DESENSAMBLADOS = [
     ),
     dict(
         clave="uranaisensation",
-        grupo="konami",
+        grupo="konami-disco",
         titulo="Konami's Uranai Sensation",
         anio=1988,
         repo="https://github.com/antxiko/UranaiSensation-disassembly",
@@ -2433,6 +2433,51 @@ DESENSAMBLADOS = [
             es="Cada sector del disco con su dueño; las pantallas, de nuestro propio Z80 y "
                "V9938 ejecutando el disco, la principal cotejada con openMSX (0 bytes "
                "distintos en los 128 KB de la VRAM); los ocho niveles de la omikuji forzados.",
+        ),
+    ),
+    dict(
+        clave="snatcher",
+        grupo="konami-disco",
+        titulo="Snatcher",
+        anio=1988,
+        repo="https://github.com/antxiko/Snatcher-disassembly",
+        web="https://antxiko.github.io/Snatcher-disassembly/",
+        meta=dict(
+            en="Konami &middot; MSX2 + sound cartridge &middot; three 720 KB disks &middot; RA004",
+            es="Konami &middot; MSX2 + cartucho de sonido &middot; tres disquetes de 720 KB &middot; RA004",
+        ),
+        claim=dict(
+            en="Hideo Kojima&rsquo;s cyberpunk adventure, its <b>three disks</b> taken apart: "
+               "the loader, the engine, the script interpreter and the sound driver of its "
+               "SCC+ cartridge. The story as a <b>map of its 251 scenes</b> (with a spoiler "
+               "warning), 154 pictures <b>painted by the engine itself</b> and 45 tunes "
+               "played by its own driver. Konami&rsquo;s <b>debugger</b> is still on disk 1.",
+            es="La aventura ciberpunk de Hideo Kojima, sus <b>tres disquetes</b> desmontados: "
+               "el cargador, el motor, el int&eacute;rprete del guion y el controlador de "
+               "sonido de su cartucho SCC+. La historia como un <b>mapa de sus 251 "
+               "escenas</b> (con aviso de destripes), 154 dibujos <b>pintados por el propio "
+               "motor</b> y 45 m&uacute;sicas tocadas por su controlador. El "
+               "<b>depurador</b> de Konami sigue en el disco 1.",
+        ),
+        datos=dict(
+            en=lambda i: (f"{cif(4320, i)} sectors &middot; rebuilds the three disks "
+                          f"<b>byte for byte</b> &middot; 17 code modules, {cif(35104, i)} of "
+                          f"code &middot; {cif(2195, i)} routines &middot; commented to "
+                          f"<b>42.1%</b> &middot; the data formats byte by byte"),
+            es=lambda i: (f"{cif(4320, i)} sectores &middot; rehace los tres discos "
+                          f"<b>byte a byte</b> &middot; 17 m&oacute;dulos de c&oacute;digo, "
+                          f"{cif(35104, i)} de c&oacute;digo &middot; {cif(2195, i)} rutinas "
+                          f"&middot; comentado al <b>42,1 %</b> &middot; los formatos de los "
+                          f"datos byte a byte"),
+        ),
+        nota=dict(
+            en="The game run from the three disks by our own Z80, V9938 and SCC+; the "
+               "pictures decompressed here match the engine pixel for pixel, and one of "
+               "them matches openMSX byte for byte; for each tune, the bytes its driver reads.",
+            es="El juego ejecutado desde los tres discos por nuestro propio Z80, V9938 y "
+               "SCC+; los dibujos descomprimidos aqu&iacute; dan los mismos p&iacute;xeles "
+               "que el motor, y uno, los mismos bytes que openMSX; de cada m&uacute;sica, "
+               "los bytes que lee su controlador.",
         ),
     ),
     dict(
@@ -4096,12 +4141,14 @@ DESENSAMBLADOS = [
     ),
 ]
 
+# Los disquetes de Konami (catalogo RA) van en su propio grupo, detras de los cartuchos.
 # Los desensamblados van en tres grupos, cada uno una parte de su seccion. Aqui
 # esta el orden y el rotulo de cada grupo; a que grupo va cada juego lo dice el
 # propio juego en 'grupo'. Un grupo que no este aqui, o que se quede sin juegos,
 # para la generacion (ver comprueba()).
 GRUPOS = [
     dict(id="konami", titulo=dict(en="Konami", es="Konami")),
+    dict(id="konami-disco", titulo=dict(en="Konami on disk", es="Konami en disquete")),
     dict(id="konami-otros", titulo=dict(en="Konami, published by others",
                                         es="Konami, publicados por otros")),
     dict(id="msx-exclusive", titulo=dict(en="MSX Exclusive", es="Exclusivos de MSX")),
@@ -4144,6 +4191,10 @@ def del_grupo(gid):
 
 def es_cinta(p):
     return "cinta" in p["meta"]["es"]
+
+
+def es_disco(p):
+    return "disquete" in p["meta"]["es"]
 
 
 # LOS PARCHES. Otra clase de proyecto: aqui no se documenta un cartucho, se
@@ -4518,7 +4569,8 @@ PARCHES = [
 # terminados que tienen alguna pregunta abierta.
 N_JUEGOS = len(DESENSAMBLADOS)
 N_CINTAS = sum(1 for p in DESENSAMBLADOS if es_cinta(p))
-N_CARTUCHOS = N_JUEGOS - N_CINTAS
+N_DISCOS = sum(1 for p in DESENSAMBLADOS if es_disco(p))
+N_CARTUCHOS = N_JUEGOS - N_CINTAS - N_DISCOS
 N_TERMINADOS = sum(1 for p in DESENSAMBLADOS if p.get("terminado", True))
 N_CON_WEB = sum(1 for p in DESENSAMBLADOS if p.get("web"))
 ANIOS = "%d-%d" % (min(p["anio"] for p in DESENSAMBLADOS),
@@ -4527,9 +4579,9 @@ ANIOS = "%d-%d" % (min(p["anio"] for p in DESENSAMBLADOS),
 # Rotulo de cuenta de un grupo: '12 cartridges', '4 tapes' o, si hay de las dos
 # clases, '3 games'. Sale de la lista, como las demas cuentas.
 CUENTA = dict(
-    en=dict(cinta=("tape", "tapes"), cartucho=("cartridge", "cartridges"),
+    en=dict(cinta=("tape", "tapes"), cartucho=("cartridge", "cartridges"), disco=("game", "games"),
             juego=("game", "games")),
-    es=dict(cinta=("cinta", "cintas"), cartucho=("cartucho", "cartuchos"),
+    es=dict(cinta=("cinta", "cintas"), cartucho=("cartucho", "cartuchos"), disco=("juego", "juegos"),
             juego=("juego", "juegos")),
 )
 
@@ -4537,7 +4589,9 @@ CUENTA = dict(
 def cuenta(proyectos, idioma):
     n = len(proyectos)
     cintas = sum(1 for p in proyectos if es_cinta(p))
-    clase = "cinta" if cintas == n else "cartucho" if cintas == 0 else "juego"
+    discos = sum(1 for p in proyectos if es_disco(p))
+    clase = ("cinta" if cintas == n else "disco" if discos == n
+             else "cartucho" if cintas == discos == 0 else "juego")
     return f"{n} {CUENTA[idioma][clase][n != 1]}"
 
 
@@ -4949,6 +5003,19 @@ MSXON = [
 # nueva a vieja, una clave no existe o un proyecto se queda sin novedad.
 # --------------------------------------------------------------------------
 NOVEDADES = [
+    dict(id="snatcher", clase="nuevo", clave="snatcher",
+         fecha="2026-11-15T19:00:00+01:00",
+         titulo=dict(en="Snatcher, taken apart: three disks, and a new section for Konami on disk",
+                     es="Snatcher, desmontado: tres disquetes, y una sección nueva para los disquetes de Konami"),
+         resumen=dict(
+             en="Konami's cyberpunk adventure for MSX2 (1988): its 4,320 sectors with their owners "
+                "and the three disks rebuilt byte for byte. A map of the 251 scenes of the script "
+                "(spoilers!), 154 pictures painted by the engine, 45 tunes played by its own driver "
+                "and the debugger Konami left on disk 1. Uranai Sensation moves to the new section.",
+             es="La aventura ciberpunk de Konami para MSX2 (1988): sus 4.320 sectores con su dueño "
+                "y los tres discos rehechos byte a byte. Un mapa de las 251 escenas del guion (¡con "
+                "destripes!), 154 dibujos pintados por el motor, 45 músicas tocadas por su controlador "
+                "y el depurador que Konami se dejó en el disco 1. Uranai Sensation pasa a la sección nueva.")),
     dict(id="uranaisensation", clase="nuevo", clave="uranaisensation",
          fecha="2026-11-15T18:00:00+01:00",
          titulo=dict(en="Konami's Uranai Sensation, taken apart: the first disk",
@@ -8112,13 +8179,13 @@ CATEGORIAS = [
         titulo=dict(en="The disassemblies", es="Los desensamblados"),
         menu=dict(en="Disassemblies", es="Desensamblados"),
         intro=dict(
-            en=f"{N_JUEGOS} games for the MSX, {N_CINTAS} off cassette tapes "
-               f"and {N_CARTUCHOS} off cartridges, taken apart byte by byte and "
+            en=f"{N_JUEGOS} games for the MSX, {N_CINTAS} off cassette tapes, "
+               f"{N_CARTUCHOS} off cartridges and {N_DISCOS} off disks, taken apart byte by byte and "
                f"commented. {N_TERMINADOS} of them are finished: every byte "
                f"accounted for, and the source giving the original back byte for "
                f"byte. The ones still in progress say so.",
-            es=f"{N_JUEGOS} juegos de MSX, {N_CINTAS} de cinta de cassette y "
-               f"{N_CARTUCHOS} de cartucho, desmontados byte a byte y comentados. "
+            es=f"{N_JUEGOS} juegos de MSX, {N_CINTAS} de cinta de cassette, "
+               f"{N_CARTUCHOS} de cartucho y {N_DISCOS} de disquete, desmontados byte a byte y comentados. "
                f"{N_TERMINADOS} están terminados: cada byte explicado y el código "
                f"fuente devolviendo el original byte a byte. Los que siguen en "
                f"marcha lo dicen.",
@@ -8225,7 +8292,7 @@ TXT = dict(
               f"Right now that means {N_JUEGOS} MSX games.",
         ficha=[f"<b>{N_JUEGOS}</b> games", f"<b>{ANIOS}</b>",
                "MSX",
-               f"<b>{N_CINTAS}</b> tapes &middot; <b>{N_CARTUCHOS}</b> cartridges"],
+               f"<b>{N_CINTAS}</b> tapes &middot; <b>{N_CARTUCHOS}</b> cartridges &middot; <b>{N_DISCOS}</b> disks"],
         menu_gh="GitHub",
         menu_feed="Feed",
         entrar="Open the section",
@@ -8239,6 +8306,7 @@ TXT = dict(
                 (str(N_CON_WEB), "with a website"),
                 (str(N_CINTAS), "cassette tapes"),
                 (str(N_CARTUCHOS), "cartridges"),
+                (str(N_DISCOS), "games on disk"),
                 ("3", "builds of Antarctic Adventure")],
         met=["Every project follows the same rule: nothing gets claimed that the "
              "binary does not show. <code>make</code> extracts the game from the "
@@ -8275,7 +8343,7 @@ TXT = dict(
               f"original, byte a byte. Ahora mismo son {N_JUEGOS} juegos de MSX.",
         ficha=[f"<b>{N_JUEGOS}</b> juegos", f"<b>{ANIOS}</b>",
                "MSX",
-               f"<b>{N_CINTAS}</b> cintas &middot; <b>{N_CARTUCHOS}</b> cartuchos"],
+               f"<b>{N_CINTAS}</b> cintas &middot; <b>{N_CARTUCHOS}</b> cartuchos &middot; <b>{N_DISCOS}</b> disquetes"],
         menu_gh="GitHub",
         menu_feed="Novedades",
         entrar="Entrar en la sección",
@@ -8289,6 +8357,7 @@ TXT = dict(
                 (str(N_CON_WEB), "con web publicada"),
                 (str(N_CINTAS), "cintas de cassette"),
                 (str(N_CARTUCHOS), "cartuchos"),
+                (str(N_DISCOS), "juegos en disquete"),
                 ("3", "compilaciones de Antarctic Adventure")],
         met=["Todos los proyectos siguen la misma regla: no se afirma nada que el "
              "binario no enseñe. <code>make</code> extrae el juego de la cinta o "
