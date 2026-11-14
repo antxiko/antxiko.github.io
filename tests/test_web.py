@@ -176,8 +176,8 @@ class TestPortada(unittest.TestCase):
         mi = modulo()
 
         self.assertEqual(mi.N_JUEGOS, len(mi.DESENSAMBLADOS))
-        self.assertEqual(mi.N_CINTAS + mi.N_CARTUCHOS, mi.N_JUEGOS,
-                         "cintas + cartuchos tiene que dar el total")
+        self.assertEqual(mi.N_CINTAS + mi.N_CARTUCHOS + mi.N_DISCOS, mi.N_JUEGOS,
+                         "cintas + cartuchos + disquetes tiene que dar el total")
         for nombre, n in (("terminados", mi.N_TERMINADOS),
                           ("con web", mi.N_CON_WEB),
                           ("cintas", mi.N_CINTAS),
@@ -233,23 +233,27 @@ class TestPortada(unittest.TestCase):
         mi = modulo()
         mi.comprueba()
         self.assertEqual([g["id"] for g in mi.GRUPOS],
-                         ["konami", "konami-otros", "msx-exclusive", "ports", "casio"])
+                         ["konami", "konami-disco", "konami-otros", "msx-exclusive", "ports", "casio"])
         claves = {p["clave"] for p in mi.DESENSAMBLADOS}
         por_grupo = {g["id"]: {p["clave"] for p in mi.del_grupo(g["id"])}
                      for g in mi.GRUPOS}
         otros = {p["clave"] for p in mi.DESENSAMBLADOS
                  if p["meta"]["en"].startswith("Konami for ")}
+        discos = {p["clave"] for p in mi.DESENSAMBLADOS
+                  if p["meta"]["en"].startswith("Konami") and " disk" in p["meta"]["en"]}
         konami = {p["clave"] for p in mi.DESENSAMBLADOS
-                  if p["meta"]["en"].startswith("Konami")} - otros
+                  if p["meta"]["en"].startswith("Konami")} - otros - discos
         exclusivos = {"3dgolf", "holeinone", "holeinonepro",
                       "alehop", "temptations", "colt36", "demonia",
                       "descubrimiento", "bomberman", "dunkshot"}
         self.assertEqual(por_grupo["konami"], konami)
+        self.assertEqual(por_grupo["konami-disco"], discos)
+        self.assertEqual(discos, {"uranaisensation", "snatcher"})
         self.assertEqual(por_grupo["konami-otros"], otros)
         self.assertEqual(por_grupo["msx-exclusive"], exclusivos)
         casio = {p["clave"] for p in mi.DESENSAMBLADOS if p["meta"]["en"].startswith("Casio")}
         self.assertEqual(por_grupo["casio"], casio)
-        self.assertEqual(por_grupo["ports"], claves - konami - otros - exclusivos - casio)
+        self.assertEqual(por_grupo["ports"], claves - konami - discos - otros - exclusivos - casio)
         for gid, en_el in por_grupo.items():
             self.assertTrue(en_el, "el grupo %s se ha quedado sin juegos" % gid)
         # la lista crece, no encoge: los diecinueve publicados siguen ahi
