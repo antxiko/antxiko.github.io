@@ -4560,6 +4560,43 @@ PARCHES = [
                "con el mapa repintado todavía nadie",
         ),
     ),
+    dict(
+        clave="twinbee-enhanced",
+        titulo="Twin Bee Enhanced (MSX2)",
+        anio=1986,
+        repo="https://github.com/antxiko/TwinBee-Enhanced-MSX2-Patch",
+        web="https://antxiko.github.io/TwinBee-Enhanced-MSX2-Patch/",
+        meta=dict(
+            en="Konami &middot; MSX &rarr; MSX2 + SCC &middot; RC-740 &middot; IPS patch, unofficial",
+            es="Konami &middot; MSX &rarr; MSX2 + SCC &middot; RC-740 &middot; parche IPS, extraoficial",
+        ),
+        claim=dict(
+            en="The 32 KB cartridge turned into an <b>MSX2</b> game: the scenery "
+               "scrolls <b>a pixel at a time</b> on a Screen 5 bitmap, the five "
+               "stages and their five bosses wear <b>Guantxip&rsquo;s graphics</b>, "
+               "two sprites laid on top of each other give <b>three colours per "
+               "line</b>, and the music plays on the <b>SCC</b>, as in the Konami "
+               "Game Collection. F1 pauses the game with the scoreboard.",
+            es="El cartucho de 32 KB convertido en un juego de <b>MSX2</b>: el "
+               "decorado se desplaza <b>píxel a píxel</b> sobre un mapa de bits de "
+               "Screen 5, las cinco fases y sus cinco jefes llevan <b>los gráficos "
+               "de Guantxip</b>, dos sprites superpuestos dan <b>tres colores por "
+               "línea</b> y la música suena por el <b>SCC</b>, como en la Konami "
+               "Game Collection. F1 pausa el juego con el marcador.",
+        ),
+        datos=dict(
+            en=lambda i: (f"{cif(140977, i)}-byte IPS &middot; <b>5</b> stages and "
+                          "<b>5</b> bosses redrawn &middot; <b>256 KB</b> MegaROM with "
+                          "SCC &middot; no ROM distributed"),
+            es=lambda i: (f"IPS de {cif(140977, i)} bytes &middot; <b>5</b> fases y "
+                          "<b>5</b> jefes redibujados &middot; MegaROM de <b>256 KB</b> "
+                          "con SCC &middot; no se distribuye ninguna ROM"),
+        ),
+        nota=dict(
+            en="the whole game played in openMSX (C-BIOS and Sony HB-F900); not yet on real hardware",
+            es="el juego entero jugado en openMSX (C-BIOS y Sony HB-F900); todavía no en una máquina real",
+        ),
+    ),
 ]
 
 # Las cuentas de la cabecera salen de la lista, no de escribirlas a mano: al
@@ -5003,6 +5040,19 @@ MSXON = [
 # nueva a vieja, una clave no existe o un proyecto se queda sin novedad.
 # --------------------------------------------------------------------------
 NOVEDADES = [
+    dict(id="twinbee-enhanced", clase="nuevo", clave="twinbee-enhanced",
+         fecha="2026-11-15T20:00:00+01:00",
+         titulo=dict(en="Twin Bee Enhanced: the MSX2 patch with Guantxip's graphics and SCC music",
+                     es="Twin Bee Enhanced: el parche para MSX2 con los gráficos de Guantxip y música SCC"),
+         resumen=dict(
+             en="Konami's Twin Bee (1986) on MSX2: pixel scroll on a bitmap screen, the five stages "
+                "and their bosses with Guantxip's graphics, three colours per sprite line, the SCC "
+                "music of the Konami Game Collection and a pause with the scoreboard. An IPS for "
+                "your own dump; no ROM distributed.",
+             es="El Twin Bee de Konami (1986) en MSX2: scroll al píxel sobre un mapa de bits, las cinco "
+                "fases y sus jefes con los gráficos de Guantxip, tres colores por línea de sprite, la "
+                "música SCC de la Konami Game Collection y una pausa con el marcador. Un IPS para tu "
+                "propio volcado; no se distribuye ninguna ROM.")),
     dict(id="snatcher", clase="nuevo", clave="snatcher",
          fecha="2026-11-15T19:00:00+01:00",
          titulo=dict(en="Snatcher, taken apart: three disks, and a new section for Konami on disk",
