@@ -6,8 +6,16 @@
   <link rel="self" type="application/atom+xml" href="https://antxiko.github.io/es/feed.xml"/>
   <link rel="alternate" type="text/html" hreflang="es" href="https://antxiko.github.io/es/"/>
   <link rel="alternate" type="application/atom+xml" hreflang="en" href="https://antxiko.github.io/feed.xml"/>
-  <updated>2026-11-15T20:00:00+01:00</updated>
+  <updated>2026-11-15T21:00:00+01:00</updated>
   <author><name>antxiko</name><uri>https://github.com/antxiko</uri></author>
+  <entry>
+    <id>tag:antxiko.github.io,2026:novedad/es/pooyan-arcade</id>
+    <title>Pooyan con los gráficos de la recreativa: un parche para MSX2, en curso</title>
+    <link rel="alternate" type="text/html" href="https://antxiko.github.io/Pooyan-Arcade-MSX2-Patch/"/>
+    <published>2026-11-15T21:00:00+01:00</published>
+    <updated>2026-11-15T21:00:00+01:00</updated>
+    <summary type="text">El Pooyan de MSX (Konami y Hudson Soft, 1985) en un MSX2 con los gráficos de la recreativa de 1982: sprites en parejas para tres colores por línea, las casillas, el logotipo y la paleta de la recreativa, y su bonus de las fresas. Trabajo en curso; un IPS para tu propio volcado, no se distribuye ninguna ROM.</summary>
+  </entry>
   <entry>
     <id>tag:antxiko.github.io,2026:novedad/es/twinbee-enhanced</id>
     <title>Twin Bee Enhanced: el parche para MSX2 con los gráficos de Guantxip y música SCC</title>
@@ -159,13 +167,5 @@
     <published>2026-11-14T17:00:00+01:00</published>
     <updated>2026-11-14T17:00:00+01:00</updated>
     <summary type="text">Una página nueva con todos los textos de la ROM, dónde los escribe el código y su traducción, de la presentación de CASIO al どんなもんだい del final.</summary>
-  </entry>
-  <entry>
-    <id>tag:antxiko.github.io,2026:novedad/es/casioworldopen-swing</id>
-    <title>Casio World Open: el swing, jugado</title>
-    <link rel="alternate" type="text/html" href="https://antxiko.github.io/CasioWorldOpen-disassembly/THE-3D-VIEW.html"/>
-    <published>2026-11-14T16:00:00+01:00</published>
-    <updated>2026-11-14T16:00:00+01:00</updated>
-    <summary type="text">El swing del golfista grabado en openMSX: el fotograma cambia cada 8 cuadros, y el de arriba del todo solo sale si la fuerza pasa de 0x40. Dos GIF en la portada, cada cuadro grabado cotejado con las piezas que da la ROM.</summary>
   </entry>
 </feed>

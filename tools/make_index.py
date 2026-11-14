@@ -4597,6 +4597,41 @@ PARCHES = [
             es="el juego entero jugado en openMSX (C-BIOS y Sony HB-F900); todavía no en una máquina real",
         ),
     ),
+    dict(
+        clave="pooyan-arcade",
+        titulo="Pooyan with the arcade graphics (MSX2)",
+        anio=1985,
+        repo="https://github.com/antxiko/Pooyan-Arcade-MSX2-Patch",
+        web="https://antxiko.github.io/Pooyan-Arcade-MSX2-Patch/",
+        meta=dict(
+            en="Konami / Hudson Soft &middot; MSX &rarr; MSX2 &middot; 16 KB cartridge &middot; IPS patch, unofficial",
+            es="Konami / Hudson Soft &middot; MSX &rarr; MSX2 &middot; cartucho de 16 KB &middot; parche IPS, extraoficial",
+        ),
+        claim=dict(
+            en="The MSX game, with its horizontal screen, its logic and its sounds, wearing the "
+               "<b>graphics of Konami&rsquo;s 1982 arcade machine</b>: every sprite redrawn as "
+               "<b>two sprites laid on top of each other, three colours per line</b>; the tree, "
+               "the cliff and the bonus rebuilt from the arcade&rsquo;s own tiles on the MSX "
+               "layout, with its logo, letters, basket, pulley and palette. And the arcade&rsquo;s "
+               "<b>second bonus stage</b>, the strawberry one, now alternates with the MSX one.",
+            es="El juego de MSX, con su pantalla horizontal, su lógica y sus sonidos, con "
+               "<b>los gráficos de la recreativa de Konami de 1982</b>: cada sprite redibujado "
+               "como <b>dos sprites superpuestos, tres colores por línea</b>; el árbol, el "
+               "acantilado y el bonus montados con las casillas de la recreativa sobre la "
+               "geometría del MSX, con su logotipo, letras, cesta, polea y paleta. Y el "
+               "<b>segundo bonus</b> de la recreativa, el de las fresas, que ahora alterna con el del MSX.",
+        ),
+        datos=dict(
+            en=lambda i: (f"{cif(16279, i)}-byte IPS &middot; <b>32 KB</b> output &middot; "
+                          "<b>64</b> sprite patterns &middot; no ROM or arcade file distributed"),
+            es=lambda i: (f"IPS de {cif(16279, i)} bytes &middot; salida de <b>32 KB</b> &middot; "
+                          "<b>64</b> patrones de sprite &middot; no se distribuye ninguna ROM ni fichero de la recreativa"),
+        ),
+        nota=dict(
+            en="work in progress: playable in openMSX, not yet on real hardware",
+            es="trabajo en curso: jugable en openMSX, todavía no en una máquina real",
+        ),
+    ),
 ]
 
 # Las cuentas de la cabecera salen de la lista, no de escribirlas a mano: al
@@ -5040,6 +5075,19 @@ MSXON = [
 # nueva a vieja, una clave no existe o un proyecto se queda sin novedad.
 # --------------------------------------------------------------------------
 NOVEDADES = [
+    dict(id="pooyan-arcade", clase="nuevo", clave="pooyan-arcade",
+         fecha="2026-11-15T21:00:00+01:00",
+         titulo=dict(en="Pooyan with the arcade graphics: a work-in-progress MSX2 patch",
+                     es="Pooyan con los gráficos de la recreativa: un parche para MSX2, en curso"),
+         resumen=dict(
+             en="The MSX Pooyan (Konami and Hudson Soft, 1985) on an MSX2 with the graphics of the "
+                "1982 arcade machine: sprites in pairs for three colours per line, the arcade's tiles, "
+                "logo and palette, and its strawberry bonus stage. Work in progress; an IPS for your "
+                "own dump, no ROM distributed.",
+             es="El Pooyan de MSX (Konami y Hudson Soft, 1985) en un MSX2 con los gráficos de la "
+                "recreativa de 1982: sprites en parejas para tres colores por línea, las casillas, el "
+                "logotipo y la paleta de la recreativa, y su bonus de las fresas. Trabajo en curso; un "
+                "IPS para tu propio volcado, no se distribuye ninguna ROM.")),
     dict(id="twinbee-enhanced", clase="nuevo", clave="twinbee-enhanced",
          fecha="2026-11-15T20:00:00+01:00",
          titulo=dict(en="Twin Bee Enhanced: the MSX2 patch with Guantxip's graphics and SCC music",

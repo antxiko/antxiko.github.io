@@ -6,8 +6,16 @@
   <link rel="self" type="application/atom+xml" href="https://antxiko.github.io/feed.xml"/>
   <link rel="alternate" type="text/html" hreflang="en" href="https://antxiko.github.io/"/>
   <link rel="alternate" type="application/atom+xml" hreflang="es" href="https://antxiko.github.io/es/feed.xml"/>
-  <updated>2026-11-15T20:00:00+01:00</updated>
+  <updated>2026-11-15T21:00:00+01:00</updated>
   <author><name>antxiko</name><uri>https://github.com/antxiko</uri></author>
+  <entry>
+    <id>tag:antxiko.github.io,2026:novedad/en/pooyan-arcade</id>
+    <title>Pooyan with the arcade graphics: a work-in-progress MSX2 patch</title>
+    <link rel="alternate" type="text/html" href="https://antxiko.github.io/Pooyan-Arcade-MSX2-Patch/"/>
+    <published>2026-11-15T21:00:00+01:00</published>
+    <updated>2026-11-15T21:00:00+01:00</updated>
+    <summary type="text">The MSX Pooyan (Konami and Hudson Soft, 1985) on an MSX2 with the graphics of the 1982 arcade machine: sprites in pairs for three colours per line, the arcade's tiles, logo and palette, and its strawberry bonus stage. Work in progress; an IPS for your own dump, no ROM distributed.</summary>
+  </entry>
   <entry>
     <id>tag:antxiko.github.io,2026:novedad/en/twinbee-enhanced</id>
     <title>Twin Bee Enhanced: the MSX2 patch with Guantxip's graphics and SCC music</title>
@@ -159,13 +167,5 @@
     <published>2026-11-14T17:00:00+01:00</published>
     <updated>2026-11-14T17:00:00+01:00</updated>
     <summary type="text">A new page with every text in the ROM, where the code writes it and its translation, from the CASIO intro to どんなもんだい in the ending.</summary>
-  </entry>
-  <entry>
-    <id>tag:antxiko.github.io,2026:novedad/en/casioworldopen-swing</id>
-    <title>Casio World Open: the swing, played</title>
-    <link rel="alternate" type="text/html" href="https://antxiko.github.io/CasioWorldOpen-disassembly/THE-3D-VIEW.html"/>
-    <published>2026-11-14T16:00:00+01:00</published>
-    <updated>2026-11-14T16:00:00+01:00</updated>
-    <summary type="text">The golfer swing recorded in openMSX: the frame changes every 8 frames, and the top of the backswing only shows if the power goes past 0x40. Two GIFs on the front page, every recorded frame checked against the pieces the ROM gives for it.</summary>
   </entry>
 </feed>
