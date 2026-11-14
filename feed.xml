@@ -6,8 +6,16 @@
   <link rel="self" type="application/atom+xml" href="https://antxiko.github.io/feed.xml"/>
   <link rel="alternate" type="text/html" hreflang="en" href="https://antxiko.github.io/"/>
   <link rel="alternate" type="application/atom+xml" hreflang="es" href="https://antxiko.github.io/es/feed.xml"/>
-  <updated>2026-11-15T19:00:00+01:00</updated>
+  <updated>2026-11-15T20:00:00+01:00</updated>
   <author><name>antxiko</name><uri>https://github.com/antxiko</uri></author>
+  <entry>
+    <id>tag:antxiko.github.io,2026:novedad/en/twinbee-enhanced</id>
+    <title>Twin Bee Enhanced: the MSX2 patch with Guantxip's graphics and SCC music</title>
+    <link rel="alternate" type="text/html" href="https://antxiko.github.io/TwinBee-Enhanced-MSX2-Patch/"/>
+    <published>2026-11-15T20:00:00+01:00</published>
+    <updated>2026-11-15T20:00:00+01:00</updated>
+    <summary type="text">Konami's Twin Bee (1986) on MSX2: pixel scroll on a bitmap screen, the five stages and their bosses with Guantxip's graphics, three colours per sprite line, the SCC music of the Konami Game Collection and a pause with the scoreboard. An IPS for your own dump; no ROM distributed.</summary>
+  </entry>
   <entry>
     <id>tag:antxiko.github.io,2026:novedad/en/snatcher</id>
     <title>Snatcher, taken apart: three disks, and a new section for Konami on disk</title>
@@ -159,13 +167,5 @@
     <published>2026-11-14T16:00:00+01:00</published>
     <updated>2026-11-14T16:00:00+01:00</updated>
     <summary type="text">The golfer swing recorded in openMSX: the frame changes every 8 frames, and the top of the backswing only shows if the power goes past 0x40. Two GIFs on the front page, every recorded frame checked against the pieces the ROM gives for it.</summary>
-  </entry>
-  <entry>
-    <id>tag:antxiko.github.io,2026:novedad/en/koneko-escondidas</id>
-    <title>Koneko no Daibouken: the hidden screens, played</title>
-    <link rel="alternate" type="text/html" href="https://antxiko.github.io/KonekoNoDaibouken-disassembly/SECRETS-AND-BUGS.html"/>
-    <published>2026-11-14T15:00:00+01:00</published>
-    <updated>2026-11-14T15:00:00+01:00</updated>
-    <summary type="text">The two screens behind the goal house, now in openMSX: a hook on the screen change sends the kitten past the house on 2-2 and 3-3, and the game scrolls in the log in the meadow and the waterfall with their enemies. Two new GIFs, checked against the screens built from the ROM.</summary>
   </entry>
 </feed>
