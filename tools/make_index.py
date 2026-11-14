@@ -4622,9 +4622,9 @@ PARCHES = [
                "<b>segundo bonus</b> de la recreativa, el de las fresas, que ahora alterna con el del MSX.",
         ),
         datos=dict(
-            en=lambda i: (f"{cif(16279, i)}-byte IPS &middot; <b>32 KB</b> output &middot; "
+            en=lambda i: (f"{cif(16291, i)}-byte IPS &middot; <b>32 KB</b> output &middot; "
                           "<b>64</b> sprite patterns &middot; no ROM or arcade file distributed"),
-            es=lambda i: (f"IPS de {cif(16279, i)} bytes &middot; salida de <b>32 KB</b> &middot; "
+            es=lambda i: (f"IPS de {cif(16291, i)} bytes &middot; salida de <b>32 KB</b> &middot; "
                           "<b>64</b> patrones de sprite &middot; no se distribuye ninguna ROM ni fichero de la recreativa"),
         ),
         nota=dict(
