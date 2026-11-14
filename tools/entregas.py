@@ -44,13 +44,13 @@ PATCH = os.path.join(os.path.dirname(RAIZ), "WARINMIDDLEEARTH_PATCH")
 # Una entrada por fichero entregado, la mas nueva ARRIBA.
 ENTREGAS = [
     dict(origen=os.path.join(PATCH, "builds", "WIME05.ROM"),
-         fecha="2026-09-18", para="Ruben",
+         fecha="2026-09-18", para="Araubi",
          titulo="War in Middle Earth &mdash; cartucho, version 5",
          que="La WIME04 con el menu de antes de la batalla arreglado: el que "
              "enseña las unidades una a una con el cartel &laquo;Comienza la "
              "Batalla&raquo;. Iba a <b>32 cambios por segundo</b> y ahora va a "
              "<b>5,33</b>, seis veces mas lento, al mismo ritmo que el cursor "
-             "del mapa. Lo encontro Ruben probando la WIME04 y se midio con su "
+             "del mapa. Lo encontro Araubi probando la WIME04 y se midio con su "
              "partida grabada.<br><br>Lo demas que trae sobre la WIME03: <b>las "
              "figuras de la batalla ya no salen rotas</b> (de 4.096 bytes del "
              "tablero habia 1.544 que no llegaban a la pantalla); el fondo de "
