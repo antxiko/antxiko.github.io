@@ -5075,6 +5075,24 @@ MSXON = [
 # nueva a vieja, una clave no existe o un proyecto se queda sin novedad.
 # --------------------------------------------------------------------------
 NOVEDADES = [
+    dict(id="warinmiddleearth-cartucho-mejorado-rom", clave="warinmiddleearth-patch",
+         clase="actualiza", fecha="2026-11-15T22:00:00+01:00",
+         enlace="https://antxiko.github.io/WarinMiddleEarth-MSX-Patch/",
+         titulo=dict(en="War in Middle Earth: the enhanced cartridge, as a patch that gives the ROM",
+                     es="War in Middle Earth: el cartucho mejorado, con un parche que da la ROM"),
+         resumen=dict(
+             en="The game is silent on tape; the enhanced cartridge now plays three songs by "
+                "Araubi (menu, map and battles; the M key mutes them), has three new pictures "
+                "for start-up, victory and defeat, spells six place names in full and no longer "
+                "draws the overview map striped. Download war_cartucho.bps from the site and apply "
+                "it with RomPatcher.js or Floating IPS to your own tape: you get the 64 KB ROM. "
+                "The site is reordered too, with the download at hand on every page.",
+             es="El juego es mudo en cinta; el cartucho mejorado toca ahora tres canciones de "
+                "Araubi (menú, mapa y batallas; la tecla M las calla), tiene tres ilustraciones "
+                "nuevas para el arranque, la victoria y la derrota, escribe enteros seis nombres de "
+                "lugar y ya no dibuja rayado el mapa general. Descarga war_cartucho.bps de la web y "
+                "aplícalo con RomPatcher.js o Floating IPS a tu propia cinta: sale la ROM de 64 KB. "
+                "La web, además, ordenada y con la descarga a mano en todas las páginas.")),
     dict(id="pooyan-arcade", clase="nuevo", clave="pooyan-arcade",
          fecha="2026-11-15T21:00:00+01:00",
          titulo=dict(en="Pooyan with the arcade graphics: a work-in-progress MSX2 patch",

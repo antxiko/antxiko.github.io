@@ -6,8 +6,16 @@
   <link rel="self" type="application/atom+xml" href="https://antxiko.github.io/es/feed.xml"/>
   <link rel="alternate" type="text/html" hreflang="es" href="https://antxiko.github.io/es/"/>
   <link rel="alternate" type="application/atom+xml" hreflang="en" href="https://antxiko.github.io/feed.xml"/>
-  <updated>2026-11-15T21:00:00+01:00</updated>
+  <updated>2026-11-15T22:00:00+01:00</updated>
   <author><name>antxiko</name><uri>https://github.com/antxiko</uri></author>
+  <entry>
+    <id>tag:antxiko.github.io,2026:novedad/es/warinmiddleearth-cartucho-mejorado-rom</id>
+    <title>War in Middle Earth: el cartucho mejorado, con un parche que da la ROM</title>
+    <link rel="alternate" type="text/html" href="https://antxiko.github.io/WarinMiddleEarth-MSX-Patch/"/>
+    <published>2026-11-15T22:00:00+01:00</published>
+    <updated>2026-11-15T22:00:00+01:00</updated>
+    <summary type="text">El juego es mudo en cinta; el cartucho mejorado toca ahora tres canciones de Araubi (menú, mapa y batallas; la tecla M las calla), tiene tres ilustraciones nuevas para el arranque, la victoria y la derrota, escribe enteros seis nombres de lugar y ya no dibuja rayado el mapa general. Descarga war_cartucho.bps de la web y aplícalo con RomPatcher.js o Floating IPS a tu propia cinta: sale la ROM de 64 KB. La web, además, ordenada y con la descarga a mano en todas las páginas.</summary>
+  </entry>
   <entry>
     <id>tag:antxiko.github.io,2026:novedad/es/pooyan-arcade</id>
     <title>Pooyan con los gráficos de la recreativa: un parche para MSX2, en curso</title>
@@ -159,13 +167,5 @@
     <published>2026-11-14T18:00:00+01:00</published>
     <updated>2026-11-14T18:00:00+01:00</updated>
     <summary type="text">Una página nueva con los 51 menús, los 47 avisos y los rótulos del programa, sacados directamente de la ROM y traducidos; las flechas de los menús resultan ser dibujos del propio cartucho.</summary>
-  </entry>
-  <entry>
-    <id>tag:antxiko.github.io,2026:novedad/es/issunboushi-textos</id>
-    <title>Issun-boushi no Donnamondai: los textos</title>
-    <link rel="alternate" type="text/html" href="https://antxiko.github.io/IssunBoushi-disassembly/THE-TEXTS.html"/>
-    <published>2026-11-14T17:00:00+01:00</published>
-    <updated>2026-11-14T17:00:00+01:00</updated>
-    <summary type="text">Una página nueva con todos los textos de la ROM, dónde los escribe el código y su traducción, de la presentación de CASIO al どんなもんだい del final.</summary>
   </entry>
 </feed>

@@ -6,8 +6,16 @@
   <link rel="self" type="application/atom+xml" href="https://antxiko.github.io/feed.xml"/>
   <link rel="alternate" type="text/html" hreflang="en" href="https://antxiko.github.io/"/>
   <link rel="alternate" type="application/atom+xml" hreflang="es" href="https://antxiko.github.io/es/feed.xml"/>
-  <updated>2026-11-15T21:00:00+01:00</updated>
+  <updated>2026-11-15T22:00:00+01:00</updated>
   <author><name>antxiko</name><uri>https://github.com/antxiko</uri></author>
+  <entry>
+    <id>tag:antxiko.github.io,2026:novedad/en/warinmiddleearth-cartucho-mejorado-rom</id>
+    <title>War in Middle Earth: the enhanced cartridge, as a patch that gives the ROM</title>
+    <link rel="alternate" type="text/html" href="https://antxiko.github.io/WarinMiddleEarth-MSX-Patch/"/>
+    <published>2026-11-15T22:00:00+01:00</published>
+    <updated>2026-11-15T22:00:00+01:00</updated>
+    <summary type="text">The game is silent on tape; the enhanced cartridge now plays three songs by Araubi (menu, map and battles; the M key mutes them), has three new pictures for start-up, victory and defeat, spells six place names in full and no longer draws the overview map striped. Download war_cartucho.bps from the site and apply it with RomPatcher.js or Floating IPS to your own tape: you get the 64 KB ROM. The site is reordered too, with the download at hand on every page.</summary>
+  </entry>
   <entry>
     <id>tag:antxiko.github.io,2026:novedad/en/pooyan-arcade</id>
     <title>Pooyan with the arcade graphics: a work-in-progress MSX2 patch</title>
@@ -159,13 +167,5 @@
     <published>2026-11-14T18:00:00+01:00</published>
     <updated>2026-11-14T18:00:00+01:00</updated>
     <summary type="text">A new page with the 51 menus, 47 messages and the labels of the program, taken straight from the ROM and translated; the arrows in the menus turn out to be the cartridge own drawings.</summary>
-  </entry>
-  <entry>
-    <id>tag:antxiko.github.io,2026:novedad/en/issunboushi-textos</id>
-    <title>Issun-boushi no Donnamondai: the texts</title>
-    <link rel="alternate" type="text/html" href="https://antxiko.github.io/IssunBoushi-disassembly/THE-TEXTS.html"/>
-    <published>2026-11-14T17:00:00+01:00</published>
-    <updated>2026-11-14T17:00:00+01:00</updated>
-    <summary type="text">A new page with every text in the ROM, where the code writes it and its translation, from the CASIO intro to どんなもんだい in the ending.</summary>
   </entry>
 </feed>
